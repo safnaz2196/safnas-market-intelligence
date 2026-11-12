@@ -1,0 +1,18 @@
+'use strict';
+const {test}=require('node:test');const assert=require('node:assert/strict');const d=require('./data-core.cjs');const ml=require('./ml-core.cjs');
+test('CSE timestamps are dated price observations',()=>{const raw=[{d:Date.UTC(2026,9,1),v:19000},{d:Date.UTC(2026,9,2),v:19005},{d:Date.UTC(2026,9,1),v:19010}];assert.deepEqual(d.standardize(raw),[{date:'2026-10-01',close:19010},{date:'2026-10-02',close:19005}]);});
+test('unexpected CSE payload is rejected, not invented',()=>assert.throws(()=>d.parseCSE({error:'blocked'})));
+test('older observations kept when next fetch fails',()=>assert.deepEqual(d.mergeSeries([{date:'2026-09-01',close:7}],[]),[{date:'2026-09-01',close:7}]));
+test('stale data is visibly flagged',()=>{assert.equal(d.stale('2026-09-01',new Date('2026-11-11T04:00:00Z')),true);assert.equal(d.stale('2026-11-10',new Date('2026-11-11T04:00:00Z')),false)});
+test('World Bank refuses unexpected payloads',()=>assert.throws(()=>d.parseWorldBank('LKA','NY.GDP.MKTP.KD.ZG',[{},{country:'bad'}])));
+test('valid World Bank indicators are sorted',()=>{const x=d.parseWorldBank('LKA','NY.GDP.MKTP.KD.ZG',[{},[{date:'2025',value:5.3},{date:'2024',value:2.1},{date:'2023',value:null}]]);assert.equal(x.asOf,'2025');assert.equal(x.points.length,2);});
+test('no model edge unless independently audited',()=>assert.deepEqual(d.reportQuality({ok:true,edgeDemonstrated:false}),{status:'no_proven_edge',reason:'Independent backtest did not beat the simple baseline convincingly'}));
+test('short history does not produce a trained prediction',()=>assert.equal(ml.trainAndValidate(Array.from({length:60},(_,i)=>({date:new Date(Date.UTC(2026,0,i+1)).toISOString().slice(0,10),close:19000+i})),5,new Date('2026-04-01')).ok,false));
+test('individual share snapshots do not imply recommendations',()=>{const xs=d.parseStockSnapshot({reqAllStock:[{symbol:'COMB.N0000',price:137.2,turnover:1000},{symbol:'NONSENSE',price:-3}]});assert.equal(xs.length,1);assert.equal(xs[0].ticker,'COMB.N0000')});
+test('FX parse rejects invalid observations',()=>assert.deepEqual(d.parseFx([{date:'2026-11-10',rate:340},{date:'2026-11-11',rate:'oops'}]),[{date:'2026-11-10',rate:340}]));
+
+test('RSS news includes real publisher URLs and dated headlines only',()=>{const xml='<rss><channel><item><title><![CDATA[Sri Lanka stocks recover &amp; more]]></title><link>https://economynext.com/stocks-100/</link><pubDate>Tue, 10 Nov 2026 08:00:00 GMT</pubDate></item><item><title>unsafe</title><link>https://evil.example.com/</link><pubDate>Tue, 10 Nov 2026 08:00:00 GMT</pubDate></item></channel></rss>';const list=d.parseNewsRSS(xml);assert.equal(list.length,1);assert.equal(list[0].date,'2026-11-10');assert.match(list[0].title,/stocks recover/)});
+
+const journal=require('./journal.cjs');
+test('journal stores one forecast per observation date and horizon',()=>{const s=[{date:'2026-11-10',close:100}],m={5:{ok:true,upScore:.69,edgeDemonstrated:false}};const now=new Date('2026-11-11');let j=journal.updateJournal([],s,m,now);assert.equal(j.entries.length,1);assert.equal(j.entries[0].status,'pending');j=journal.updateJournal(j.entries,s,m,now);assert.equal(j.entries.length,1);});
+test('journal checks the outcome only after five later actual observations',()=>{let s=Array.from({length:5},(_,i)=>({date:`2026-11-${String(i+10).padStart(2,'0')}`,close:100+i}));let j=journal.updateJournal([],s,{5:{ok:true,upScore:.7,edgeDemonstrated:false}},new Date('2026-11-14'));assert.equal(j.entries[0].status,'pending');s=[...s,...Array.from({length:5},(_,i)=>({date:`2026-11-${String(i+15).padStart(2,'0')}`,close:110+i}))];j=journal.updateJournal(j.entries,s,{},new Date('2026-11-20'));assert.equal(j.entries[0].status,'resolved');assert.equal(j.entries[0].directionCorrect,true);});

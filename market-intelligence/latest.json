@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": null,
+  "status": "not_activated",
+  "market": {"aspi": {"available": false, "reason": "Background collector has not run yet", "points": []}},
+  "economy": {}, "forex": null, "shares": [],
+  "warnings": ["Activate the GitHub Actions workflow in a PUBLIC market-data-only repository to collect and retrain while the website is closed."],
+  "disclaimer": "No data is fabricated. Historic model performance does not guarantee future investment returns."
+}
