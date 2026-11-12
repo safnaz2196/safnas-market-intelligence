@@ -1,19 +1,22 @@
 {
   "schemaVersion": 1,
-  "engineVersion": "3.5",
-  "generatedAt": "2026-11-12T05:49:41.060Z",
+  "engineVersion": "4.0",
+  "advancedModels": [
+    "logit",
+    "patterns",
+    "blend",
+    "forest",
+    "boost"
+  ],
+  "generatedAt": "2026-11-12T20:19:58.673Z",
   "status": "updated",
   "market": {
     "aspi": {
       "available": true,
-      "asOf": "2026-11-11",
-      "close": 22038.28,
-      "observations": 240,
+      "asOf": "2026-11-12",
+      "close": 22157.4,
+      "observations": 241,
       "points": [
-        {
-          "date": "2026-08-11",
-          "close": 21403.05
-        },
         {
           "date": "2026-08-12",
           "close": 21436.18
@@ -269,159 +272,183 @@
         {
           "date": "2026-11-11",
           "close": 22038.28
+        },
+        {
+          "date": "2026-11-12",
+          "close": 22157.4
         }
       ],
       "model5": {
         "ok": true,
-        "observations": 240,
-        "labeled": 205,
+        "observations": 241,
+        "labeled": 206,
         "horizon": 5,
-        "asOf": "2026-11-11",
-        "latest": 22038.28,
-        "ageDays": 1,
+        "asOf": "2026-11-12",
+        "latest": 22157.4,
+        "ageDays": 0,
         "direction": "Indecisive / sideways",
-        "upScore": 0.5691,
-        "edgeDemonstrated": false,
-        "quality": "Limited evidence",
-        "model": "Fixed 50/50 model blend",
-        "trainingSamples": 205,
+        "upScore": 0.5324,
+        "edgeDemonstrated": true,
+        "quality": "Better historical fit",
+        "model": "Random forest · shallow trees",
+        "trainingSamples": 206,
         "validationSamples": 33,
         "validation": {
           "accuracy": 63.6,
-          "baselineAccuracy": 63.6,
-          "balancedAccuracy": 50,
-          "brier": 0.2271,
-          "baselineBrier": 0.2328
+          "baselineAccuracy": 60.6,
+          "balancedAccuracy": 53.8,
+          "brier": 0.2219,
+          "baselineBrier": 0.2388
         },
         "candidates": [
           {
+            "model": "forest",
+            "accuracy": 77.6,
+            "brier": 0.1996
+          },
+          {
             "model": "blend",
-            "accuracy": 68,
+            "accuracy": 67.3,
             "brier": 0.201
           },
           {
             "model": "patterns",
-            "accuracy": 68,
-            "brier": 0.2055
+            "accuracy": 67.3,
+            "brier": 0.206
+          },
+          {
+            "model": "boost",
+            "accuracy": 73.5,
+            "brier": 0.2079
           },
           {
             "model": "logit",
-            "accuracy": 66,
-            "brier": 0.2113
+            "accuracy": 67.3,
+            "brier": 0.2118
           }
         ],
         "features": [
           {
             "name": "RSI (14)",
-            "weight": 0.4442029772762869,
-            "magnitude": 0.4442029772762869,
-            "current": 0.7657
+            "weight": 0.440796252416612,
+            "magnitude": 0.440796252416612,
+            "current": 0.793
           },
           {
             "name": "5–20 average spread",
-            "weight": 0.4200250424374427,
-            "magnitude": 0.4200250424374427,
-            "current": 0.0575
+            "weight": 0.4243747179618587,
+            "magnitude": 0.4243747179618587,
+            "current": 0.0617
           },
           {
             "name": "20-session drawdown",
-            "weight": -0.38332815149206584,
-            "magnitude": 0.38332815149206584,
-            "current": -0.0053
+            "weight": -0.3869767208385609,
+            "magnitude": 0.3869767208385609,
+            "current": 0
           },
           {
             "name": "20-session momentum",
-            "weight": -0.36361142268269947,
-            "magnitude": 0.36361142268269947,
-            "current": 0.1073
+            "weight": -0.3608363907282778,
+            "magnitude": 0.3608363907282778,
+            "current": 0.1023
           },
           {
             "name": "5-session momentum",
-            "weight": -0.16565466974034207,
-            "magnitude": 0.16565466974034207,
-            "current": 0.0704
+            "weight": -0.16579200644426723,
+            "magnitude": 0.16579200644426723,
+            "current": 0.0475
           }
         ],
-        "lastLabelDate": "2026-11-11",
+        "lastLabelDate": "2026-11-12",
         "description": "Three learner candidates are compared on two chronological periods; a later, untouched audit period reports historical accuracy. Each split has a label-horizon gap. Scores are NOT calibrated odds or investment advice."
       },
       "model20": {
         "ok": true,
-        "observations": 240,
-        "labeled": 190,
+        "observations": 241,
+        "labeled": 191,
         "horizon": 20,
-        "asOf": "2026-11-11",
-        "latest": 22038.28,
-        "ageDays": 1,
-        "direction": "Indecisive / sideways",
-        "upScore": 0.5531,
+        "asOf": "2026-11-12",
+        "latest": 22157.4,
+        "ageDays": 0,
+        "direction": "Downward lean",
+        "upScore": 0.4035,
         "edgeDemonstrated": false,
         "quality": "Limited evidence",
-        "model": "Nearest-pattern learner",
-        "trainingSamples": 190,
+        "model": "Random forest · shallow trees",
+        "trainingSamples": 191,
         "validationSamples": 31,
         "validation": {
-          "accuracy": 71,
-          "baselineAccuracy": 80.6,
-          "balancedAccuracy": 82,
-          "brier": 0.2037,
-          "baselineBrier": 0.2198
+          "accuracy": 74.2,
+          "baselineAccuracy": 77.4,
+          "balancedAccuracy": 83.3,
+          "brier": 0.1703,
+          "baselineBrier": 0.2251
         },
         "candidates": [
           {
+            "model": "forest",
+            "accuracy": 80.4,
+            "brier": 0.1548
+          },
+          {
             "model": "patterns",
-            "accuracy": 75.6,
-            "brier": 0.1842
+            "accuracy": 76.1,
+            "brier": 0.1804
+          },
+          {
+            "model": "boost",
+            "accuracy": 56.5,
+            "brier": 0.1808
           },
           {
             "model": "blend",
-            "accuracy": 73.3,
-            "brier": 0.1866
+            "accuracy": 73.9,
+            "brier": 0.1832
           },
           {
             "model": "logit",
-            "accuracy": 64.4,
-            "brier": 0.2006
+            "accuracy": 65.2,
+            "brier": 0.1977
           }
         ],
         "features": [
           {
             "name": "20-session drawdown",
-            "weight": -0.941848185255398,
-            "magnitude": 0.941848185255398,
-            "current": -0.0053
+            "weight": -0.9453622998723046,
+            "magnitude": 0.9453622998723046,
+            "current": 0
           },
           {
             "name": "20-session momentum",
-            "weight": -0.5381889000746359,
-            "magnitude": 0.5381889000746359,
-            "current": 0.1073
+            "weight": -0.5380237307419415,
+            "magnitude": 0.5380237307419415,
+            "current": 0.1023
           },
           {
             "name": "Short-term acceleration",
-            "weight": 0.5217301083715936,
-            "magnitude": 0.5217301083715936,
-            "current": 0.0435
+            "weight": 0.5217977506238753,
+            "magnitude": 0.5217977506238753,
+            "current": 0.0219
           },
           {
             "name": "20-session volatility",
-            "weight": 0.1974851352404432,
-            "magnitude": 0.1974851352404432,
-            "current": 0.0112
+            "weight": 0.1937098711125127,
+            "magnitude": 0.1937098711125127,
+            "current": 0.0111
           },
           {
             "name": "5-session momentum",
-            "weight": 0.16320515489400525,
-            "magnitude": 0.16320515489400525,
-            "current": 0.0704
+            "weight": 0.16280571569696722,
+            "magnitude": 0.16280571569696722,
+            "current": 0.0475
           }
         ],
-        "lastLabelDate": "2026-11-11",
+        "lastLabelDate": "2026-11-12",
         "description": "Three learner candidates are compared on two chronological periods; a later, untouched audit period reports historical accuracy. Each split has a label-horizon gap. Scores are NOT calibrated odds or investment advice."
       },
       "quality5": {
-        "status": "no_proven_edge",
-        "reason": "Independent backtest did not beat the simple baseline convincingly"
+        "status": "limited_statistical_edge",
+        "reason": "Some historical edge observed; no guarantee of future performance"
       },
       "quality20": {
         "status": "no_proven_edge",
@@ -432,23 +459,23 @@
       "notice": null
     },
     "sl20": {
-      "value": 6331.82,
-      "changePercent": -0.2705937942983147,
-      "retrievedAt": "2026-11-12T05:49:44.961Z",
+      "value": 6365.57,
+      "changePercent": 0.26,
+      "retrievedAt": "2026-11-12T20:22:16.729Z",
       "sourceURL": "https://www.cse.lk/api/snpData",
       "note": "Retrieved snapshot; source may not include a reliable trade date."
     },
     "marketSummary": null,
     "regime": {
       "available": true,
-      "asOf": "2026-11-11",
-      "observations": 240,
-      "annualizedVolatilityPct": 17.75,
-      "volatilityPercentile": 77.1,
-      "drawdown60Pct": -0.53,
-      "momentum5Pct": 7.29,
-      "momentum20Pct": 11.33,
-      "momentum60Pct": 1.95,
+      "asOf": "2026-11-12",
+      "observations": 241,
+      "annualizedVolatilityPct": 17.65,
+      "volatilityPercentile": 76.7,
+      "drawdown60Pct": 0,
+      "momentum5Pct": 4.86,
+      "momentum20Pct": 10.77,
+      "momentum60Pct": 3.16,
       "regime": "Sideways / mixed",
       "risk": "Moderate",
       "method": "20-session historical volatility and 60-session drawdown; descriptive, not a price forecast."
@@ -800,100 +827,100 @@
   },
   "forex": {
     "asOf": "2026-11-12",
-    "rate": 332.14,
-    "source": "Frankfurter blended published daily reference rates",
+    "rate": 332.46,
+    "source": "Frankfurter daily FX reference",
     "sourceURL": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=LKR"
   },
   "shares": [],
   "headlines": [
     {
-      "title": "Sri Lanka Deputy Speaker, US envoy discuss security and bilateral ties",
-      "url": "https://economynext.com/sri-lanka-deputy-speaker-us-envoy-discuss-security-and-bilateral-ties-289810/",
+      "title": "Sri Lanka’s 2027 budget unveils middle class tax relief, eyes record capital spending",
+      "url": "https://economynext.com/sri-lankas-2027-budget-unveils-middle-class-tax-relief-eyes-record-capital-spending-290046/",
       "date": "2026-11-12",
       "publisher": "EconomyNext"
     },
     {
-      "title": "Sri Lanka rupee at 332.40/50 to US dollar spot, bond yields steady",
-      "url": "https://economynext.com/sri-lanka-rupee-at-332-40-50-to-us-dollar-spot-bond-yields-steady-289802/",
+      "title": "Sri Lanka’s new budget motivates students’ investment in risky assets",
+      "url": "https://economynext.com/sri-lankas-new-budget-motivates-students-investment-in-risky-assets-290043/",
       "date": "2026-11-12",
       "publisher": "EconomyNext"
     },
     {
-      "title": "PREVIEW-Sri Lanka unveils 2027 budget amid oil shocks, missing mega-projects, eyes next IMF deal",
-      "url": "https://economynext.com/preview-sri-lanka-unveils-2027-budget-amid-oil-shocks-missing-mega-projects-eyes-next-imf-deal-289811/",
+      "title": "Sri Lanka rupee closes at 332.50/60 to US dollar spot, bond yields down",
+      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-50-60-to-us-dollar-spot-bond-yields-down-290037/",
       "date": "2026-11-12",
       "publisher": "EconomyNext"
     },
     {
-      "title": "Sri Lanka Customs’ October revenue exceeds target by 4.9-pct",
-      "url": "https://economynext.com/sri-lanka-customs-october-revenue-exceeds-target-by-4-9-pct-289798/",
-      "date": "2026-11-11",
+      "title": "Sri Lanka cuts import taxes on 3 essential foods, raises levy on sugar",
+      "url": "https://economynext.com/sri-lanka-cuts-import-taxes-on-3-essential-foods-raises-levy-on-sugar-290026/",
+      "date": "2026-11-12",
       "publisher": "EconomyNext"
     },
     {
-      "title": "Sri Lanka rupee closes at 332.37/42 to US dollar spot, bond yields steady",
-      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-37-42-to-us-dollar-spot-bond-yields-steady-289792/",
-      "date": "2026-11-11",
+      "title": "Sri Lanka to forego Rs.28.4bn in next year on income tax, CESS, VAT revisions",
+      "url": "https://economynext.com/sri-lanka-to-forego-rs-28-4bn-in-next-year-on-income-tax-cess-vat-revisions-290008/",
+      "date": "2026-11-12",
       "publisher": "EconomyNext"
     },
     {
-      "title": "Sri Lanka Treasury bill yields hold broadly steady, less bills sold",
-      "url": "https://economynext.com/sri-lanka-treasury-bill-yields-hold-broadly-steady-less-bills-sold-289785/",
-      "date": "2026-11-11",
+      "title": "Sri Lanka to cut CESS on 800 import items by 25-pct, scrap PAL on newsprint, solar batteries",
+      "url": "https://economynext.com/sri-lanka-to-cut-cess-on-800-import-items-by-25-pct-scrap-pal-on-newsprint-solar-batteries-290016/",
+      "date": "2026-11-12",
       "publisher": "EconomyNext"
     },
     {
-      "title": "Dialog Axiata Sept quarter net profit surges 62-pct to Rs9.25bn",
-      "url": "https://economynext.com/dialog-axiata-sept-quarter-net-profit-surges-62-pct-to-rs9-25bn-289765/",
-      "date": "2026-11-11",
+      "title": "Sri Lanka’s national budget 2027 promises tax relief, capital spending",
+      "url": "https://economynext.com/sri-lankas-national-budget-2027-promises-tax-relief-capital-spending-289998/",
+      "date": "2026-11-12",
       "publisher": "EconomyNext"
     },
     {
-      "title": "Sri Lanka’s Odel Sept quarter net loss widens 8.4-pct to Rs704mn",
-      "url": "https://economynext.com/sri-lankas-odel-sept-quarter-net-loss-widens-8-4-pct-to-rs704mn-289767/",
-      "date": "2026-11-11",
+      "title": "Sri Lanka to exempt books from value added tax: President",
+      "url": "https://economynext.com/sri-lanka-to-exempt-books-from-value-added-tax-president-289996/",
+      "date": "2026-11-12",
       "publisher": "EconomyNext"
     },
     {
-      "title": "Sri Lanka stocks close down 0.41-pct, banks lead turnover",
-      "url": "https://economynext.com/sri-lanka-stocks-close-down-0-41-pct-banks-lead-turnover-289769/",
-      "date": "2026-11-11",
+      "title": "Sri Lanka relaxes personal income tax threshold in 2027 budget",
+      "url": "https://economynext.com/sri-lanka-relaxes-personal-income-tax-threshold-in-2027-budget-289981/",
+      "date": "2026-11-12",
       "publisher": "EconomyNext"
     },
     {
-      "title": "Sri Lanka president reviews final 2027 Budget proposals ahead of presentation",
-      "url": "https://economynext.com/sri-lanka-president-reviews-final-2027-budget-proposals-ahead-of-presentation-289755/",
-      "date": "2026-11-11",
+      "title": "Sri Lanka to waive dual citizenship fees for spouses, children under heritage program",
+      "url": "https://economynext.com/sri-lanka-to-waive-dual-citizenship-fees-for-spouses-children-under-heritage-program-289979/",
+      "date": "2026-11-12",
       "publisher": "EconomyNext"
     },
     {
-      "title": "Sri Lanka central bank flags Crosslink for unauthorized deposit-taking",
-      "url": "https://economynext.com/sri-lanka-central-bank-flags-crosslink-for-unauthorized-deposit-taking-289745/",
-      "date": "2026-11-11",
+      "title": "Sri Lanka allocates Rs800mn for Bimsaviya, Rs140mn for land digitization",
+      "url": "https://economynext.com/sri-lanka-allocates-rs800mn-for-bimsaviya-rs140mn-for-land-digitization-289972/",
+      "date": "2026-11-12",
       "publisher": "EconomyNext"
     },
     {
-      "title": "Sri Lanka regulator restricts specific Ernst & Young partners following NDB fraud",
-      "url": "https://economynext.com/sri-lanka-regulator-restricts-specific-ernst-young-partners-following-ndb-fraud-289738/",
-      "date": "2026-11-11",
+      "title": "Sri Lanka bourse gains 0.56-pct amid 2027 budget speech",
+      "url": "https://economynext.com/sri-lanka-bourse-gains-0-56-pct-amid-2027-budget-speech-289969/",
+      "date": "2026-11-12",
       "publisher": "EconomyNext"
     },
     {
-      "title": "Sri Lanka launches 5-day business name registration pilot",
-      "url": "https://economynext.com/sri-lanka-launches-5-day-business-name-registration-pilot-289708/",
-      "date": "2026-11-11",
+      "title": "Sri Lanka abolishes Tourism Development Levy from next year",
+      "url": "https://economynext.com/sri-lanka-abolishes-tourism-development-levy-from-next-year-289970/",
+      "date": "2026-11-12",
       "publisher": "EconomyNext"
     },
     {
-      "title": "Sri Lanka stocks trend lower; Materials lead turnover",
-      "url": "https://economynext.com/sri-lanka-stocks-trend-lower-materials-lead-turnover-289711/",
-      "date": "2026-11-11",
+      "title": "Sri Lanka to build domestic flight terminal at BIA: President",
+      "url": "https://economynext.com/sri-lanka-to-build-domestic-flight-terminal-at-bia-president-289954/",
+      "date": "2026-11-12",
       "publisher": "EconomyNext"
     },
     {
-      "title": "Sri Lanka rupee at 332.33/38 to US dollar spot, bond yields drop further",
-      "url": "https://economynext.com/sri-lanka-rupee-at-332-33-38-to-us-dollar-spot-bond-yields-drop-further-289683/",
-      "date": "2026-11-11",
+      "title": "Sri Lanka to enter expanded economic partnership with UAE, Oman: President",
+      "url": "https://economynext.com/sri-lanka-to-enter-expanded-economic-partnership-with-uae-oman-president-289956/",
+      "date": "2026-11-12",
       "publisher": "EconomyNext"
     }
   ],
@@ -970,7 +997,7 @@
       "aspi": {
         "status": "available",
         "label": "CSE dated ASPI closes",
-        "asOf": "2026-11-11"
+        "asOf": "2026-11-12"
       },
       "economy": {
         "status": "available",
@@ -1004,10 +1031,82 @@
       }
     }
   },
+  "sourceHealth": {
+    "aspi": {
+      "status": "current",
+      "asOf": "2026-11-12",
+      "ageDays": 0,
+      "ageYears": null,
+      "lastAttemptAt": "2026-11-12T20:19:58.673Z",
+      "lastSuccessAt": "2026-11-12T20:19:58.673Z",
+      "failures": 0,
+      "note": "CSE daily closes validated and appended to dated archive"
+    },
+    "macro": {
+      "status": "current",
+      "asOf": "2025",
+      "ageDays": null,
+      "ageYears": 1,
+      "lastAttemptAt": "2026-11-12T20:19:58.673Z",
+      "lastSuccessAt": "2026-11-12T20:19:58.673Z",
+      "failures": 0,
+      "note": "4 of 6 annual indicators refreshed"
+    },
+    "forex": {
+      "status": "current",
+      "asOf": "2026-11-12",
+      "ageDays": 0,
+      "ageYears": null,
+      "lastAttemptAt": "2026-11-12T20:19:58.673Z",
+      "lastSuccessAt": "2026-11-12T20:19:58.673Z",
+      "failures": 0,
+      "note": "Provider response accepted"
+    },
+    "shares": {
+      "status": "unavailable",
+      "asOf": null,
+      "ageDays": null,
+      "ageYears": null,
+      "lastAttemptAt": "2026-11-12T20:19:58.673Z",
+      "lastSuccessAt": null,
+      "failures": 1,
+      "note": "HTTP 400"
+    },
+    "sl20": {
+      "status": "retrieved_only",
+      "asOf": "2026-11-12",
+      "ageDays": 0,
+      "ageYears": null,
+      "lastAttemptAt": "2026-11-12T20:19:58.673Z",
+      "lastSuccessAt": "2026-11-12T20:19:58.673Z",
+      "failures": 0,
+      "note": "Index snapshot retrieved; official trade date not verified"
+    },
+    "turnover": {
+      "status": "unavailable",
+      "asOf": null,
+      "ageDays": null,
+      "ageYears": null,
+      "lastAttemptAt": "2026-11-12T20:19:58.673Z",
+      "lastSuccessAt": null,
+      "failures": 1,
+      "note": "Daily turnover not reported"
+    },
+    "headlines": {
+      "status": "current",
+      "asOf": "2026-11-12",
+      "ageDays": 0,
+      "ageYears": null,
+      "lastAttemptAt": "2026-11-12T20:19:58.673Z",
+      "lastSuccessAt": "2026-11-12T20:19:58.673Z",
+      "failures": 0,
+      "note": "Provider response accepted"
+    }
+  },
   "learning": {
     "summary": {
-      "total": 2,
-      "pending": 2,
+      "total": 4,
+      "pending": 4,
       "resolved": 0,
       "correct": 0,
       "wrong": 0,
@@ -1039,6 +1138,32 @@
         "backtestEdge": false,
         "status": "pending",
         "caution": "Not a calibrated rise probability or investment signal"
+      },
+      {
+        "id": "ASPI:5:2026-11-12",
+        "market": "ASPI",
+        "horizon": 5,
+        "observationDate": "2026-11-12",
+        "createdAt": "2026-11-12T20:19:58.673Z",
+        "baseClose": 22157.4,
+        "signal": "Indecisive",
+        "diagnosticScore": 0.5324,
+        "backtestEdge": true,
+        "status": "pending",
+        "caution": "Not a calibrated rise probability or investment signal"
+      },
+      {
+        "id": "ASPI:20:2026-11-12",
+        "market": "ASPI",
+        "horizon": 20,
+        "observationDate": "2026-11-12",
+        "createdAt": "2026-11-12T20:19:58.673Z",
+        "baseClose": 22157.4,
+        "signal": "Down",
+        "diagnosticScore": 0.4035,
+        "backtestEdge": false,
+        "status": "pending",
+        "caution": "Not a calibrated rise probability or investment signal"
       }
     ]
   },
@@ -1050,9 +1175,26 @@
     "sec": "https://www.sec.gov.lk/"
   },
   "warnings": [
-    "Stock snapshots unavailable: HTTP 400",
-    "Market turnover unavailable: Daily turnover not reported",
-    "Publisher context unavailable: Publisher did not return an RSS feed"
+    "World Bank annualInflation: This operation was aborted",
+    "World Bank remittancesGDP: This operation was aborted",
+    "shares: HTTP 400",
+    "turnover: Daily turnover not reported"
   ],
-  "disclaimer": "Educational market research only. Historical ML performance is not a reliable investment forecast. No specific security is recommended."
+  "disclaimer": "Educational research only. Reliable data collection does not establish predictive skill or guarantee returns. No specific security is recommended.",
+  "reliability": {
+    "currentSources": 4,
+    "staleSources": 0,
+    "retrievedOnlySources": 1,
+    "unavailableSources": 2,
+    "totalSources": 7,
+    "marketAsOf": "2026-11-12",
+    "marketSessionCount": 241,
+    "auditedModels": 2,
+    "modelCount": 2,
+    "edgeModels": 1,
+    "modelClaim": "Limited historical statistical edge — not investment advice",
+    "dataLimit": "The public CSE chart endpoint supplies roughly one trailing year. Older dates require permitted, verified historical data; no synthetic backfill.",
+    "refreshedAt": "2026-11-12T20:19:58.673Z",
+    "disclaimer": "Source health is not model accuracy or probability of market growth."
+  }
 }

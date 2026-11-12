@@ -1,0 +1,72 @@
+{
+  "aspi": {
+    "status": "current",
+    "asOf": "2026-11-12",
+    "ageDays": 0,
+    "ageYears": null,
+    "lastAttemptAt": "2026-11-12T20:19:58.673Z",
+    "lastSuccessAt": "2026-11-12T20:19:58.673Z",
+    "failures": 0,
+    "note": "CSE daily closes validated and appended to dated archive"
+  },
+  "macro": {
+    "status": "current",
+    "asOf": "2025",
+    "ageDays": null,
+    "ageYears": 1,
+    "lastAttemptAt": "2026-11-12T20:19:58.673Z",
+    "lastSuccessAt": "2026-11-12T20:19:58.673Z",
+    "failures": 0,
+    "note": "4 of 6 annual indicators refreshed"
+  },
+  "forex": {
+    "status": "current",
+    "asOf": "2026-11-12",
+    "ageDays": 0,
+    "ageYears": null,
+    "lastAttemptAt": "2026-11-12T20:19:58.673Z",
+    "lastSuccessAt": "2026-11-12T20:19:58.673Z",
+    "failures": 0,
+    "note": "Provider response accepted"
+  },
+  "shares": {
+    "status": "unavailable",
+    "asOf": null,
+    "ageDays": null,
+    "ageYears": null,
+    "lastAttemptAt": "2026-11-12T20:19:58.673Z",
+    "lastSuccessAt": null,
+    "failures": 1,
+    "note": "HTTP 400"
+  },
+  "sl20": {
+    "status": "retrieved_only",
+    "asOf": "2026-11-12",
+    "ageDays": 0,
+    "ageYears": null,
+    "lastAttemptAt": "2026-11-12T20:19:58.673Z",
+    "lastSuccessAt": "2026-11-12T20:19:58.673Z",
+    "failures": 0,
+    "note": "Index snapshot retrieved; official trade date not verified"
+  },
+  "turnover": {
+    "status": "unavailable",
+    "asOf": null,
+    "ageDays": null,
+    "ageYears": null,
+    "lastAttemptAt": "2026-11-12T20:19:58.673Z",
+    "lastSuccessAt": null,
+    "failures": 1,
+    "note": "Daily turnover not reported"
+  },
+  "headlines": {
+    "status": "current",
+    "asOf": "2026-11-12",
+    "ageDays": 0,
+    "ageYears": null,
+    "lastAttemptAt": "2026-11-12T20:19:58.673Z",
+    "lastSuccessAt": "2026-11-12T20:19:58.673Z",
+    "failures": 0,
+    "note": "Provider response accepted"
+  }
+}
