@@ -1,0 +1,34 @@
+name: Sri Lanka market intelligence — scheduled public research
+on:
+  schedule:
+    # Weekdays at 08:00 and 18:00 Sri Lanka time (UTC+05:30).
+    - cron: '30 2 * * 1-5'
+    - cron: '30 12 * * 1-5'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: sri-lanka-daily-public-feed
+  cancel-in-progress: false
+jobs:
+  retrain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate data parsers and learner behavior (offline)
+        run: node --test collector/*.test.cjs
+      - name: Collect public market observations and retrain
+        run: node collector/update.cjs
+      - name: Store published research snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add market-intelligence/
+          if ! git diff --staged --quiet; then
+            git commit -m "Update Sri Lanka market and model audit snapshots"
+            git push
+          fi
