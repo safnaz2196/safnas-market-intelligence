@@ -101,7 +101,7 @@ async function collect(now=new Date(),injected={}){
  write('prediction-journal.json',journalResult);
  const macroEvidence=intelligence.macroAudit(macro,now.getUTCFullYear());
  const snapshot={
-  schemaVersion:1,engineVersion:'3.6',generatedAt:nowISO,
+  schemaVersion:1,engineVersion:'4.0',advancedModels:['logit','patterns','blend','forest','boost'],generatedAt:nowISO,
   status:gotCSE&&aspi.available?'updated':aspi.available?'partial':'limited',
   market:{aspi,sl20,marketSummary,regime:intelligence.marketRisk(series,now)},economy:macro,forex,shares,headlines,
   evidence:{macro:macroEvidence,companies:intelligence.companyCoverage(shares),
@@ -114,7 +114,7 @@ async function collect(now=new Date(),injected={}){
  snapshot.reliability=reliable.overallQuality(snapshot,now);
  write('source-health.json',health);
  write('latest.json',snapshot);
- console.log(JSON.stringify({engine:'3.6',status:snapshot.status,aspiAsOf:aspi.asOf,aspiCloses:aspi.observations,
+ console.log(JSON.stringify({engine:'4.0',status:snapshot.status,aspiAsOf:aspi.asOf,aspiCloses:aspi.observations,
   model5:aspi.quality5?.status,model20:aspi.quality20?.status,annualIndicators:macroEvidence.available,
   datedSources:snapshot.reliability.currentSources,retrievedOnly:snapshot.reliability.retrievedOnlySources,
   forecastOutcomes:journalResult.summary.resolved,warnings:errors.length}));
