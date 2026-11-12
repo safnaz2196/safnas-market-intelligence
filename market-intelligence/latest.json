@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T04:37:17.424Z",
+  "engineVersion": "3.5",
+  "generatedAt": "2026-11-12T05:49:41.060Z",
   "status": "updated",
   "market": {
     "aspi": {
@@ -271,41 +272,417 @@
         }
       ],
       "model5": {
-        "ok": false,
+        "ok": true,
         "observations": 240,
         "labeled": 205,
         "horizon": 5,
-        "reason": "Not enough strictly held-out observations for a leakage-free validation."
+        "asOf": "2026-11-11",
+        "latest": 22038.28,
+        "ageDays": 1,
+        "direction": "Indecisive / sideways",
+        "upScore": 0.5691,
+        "edgeDemonstrated": false,
+        "quality": "Limited evidence",
+        "model": "Fixed 50/50 model blend",
+        "trainingSamples": 205,
+        "validationSamples": 33,
+        "validation": {
+          "accuracy": 63.6,
+          "baselineAccuracy": 63.6,
+          "balancedAccuracy": 50,
+          "brier": 0.2271,
+          "baselineBrier": 0.2328
+        },
+        "candidates": [
+          {
+            "model": "blend",
+            "accuracy": 68,
+            "brier": 0.201
+          },
+          {
+            "model": "patterns",
+            "accuracy": 68,
+            "brier": 0.2055
+          },
+          {
+            "model": "logit",
+            "accuracy": 66,
+            "brier": 0.2113
+          }
+        ],
+        "features": [
+          {
+            "name": "RSI (14)",
+            "weight": 0.4442029772762869,
+            "magnitude": 0.4442029772762869,
+            "current": 0.7657
+          },
+          {
+            "name": "5–20 average spread",
+            "weight": 0.4200250424374427,
+            "magnitude": 0.4200250424374427,
+            "current": 0.0575
+          },
+          {
+            "name": "20-session drawdown",
+            "weight": -0.38332815149206584,
+            "magnitude": 0.38332815149206584,
+            "current": -0.0053
+          },
+          {
+            "name": "20-session momentum",
+            "weight": -0.36361142268269947,
+            "magnitude": 0.36361142268269947,
+            "current": 0.1073
+          },
+          {
+            "name": "5-session momentum",
+            "weight": -0.16565466974034207,
+            "magnitude": 0.16565466974034207,
+            "current": 0.0704
+          }
+        ],
+        "lastLabelDate": "2026-11-11",
+        "description": "Three learner candidates are compared on two chronological periods; a later, untouched audit period reports historical accuracy. Each split has a label-horizon gap. Scores are NOT calibrated odds or investment advice."
       },
       "model20": {
-        "ok": false,
+        "ok": true,
         "observations": 240,
         "labeled": 190,
         "horizon": 20,
-        "reason": "Not enough strictly held-out observations for a leakage-free validation."
+        "asOf": "2026-11-11",
+        "latest": 22038.28,
+        "ageDays": 1,
+        "direction": "Indecisive / sideways",
+        "upScore": 0.5531,
+        "edgeDemonstrated": false,
+        "quality": "Limited evidence",
+        "model": "Nearest-pattern learner",
+        "trainingSamples": 190,
+        "validationSamples": 31,
+        "validation": {
+          "accuracy": 71,
+          "baselineAccuracy": 80.6,
+          "balancedAccuracy": 82,
+          "brier": 0.2037,
+          "baselineBrier": 0.2198
+        },
+        "candidates": [
+          {
+            "model": "patterns",
+            "accuracy": 75.6,
+            "brier": 0.1842
+          },
+          {
+            "model": "blend",
+            "accuracy": 73.3,
+            "brier": 0.1866
+          },
+          {
+            "model": "logit",
+            "accuracy": 64.4,
+            "brier": 0.2006
+          }
+        ],
+        "features": [
+          {
+            "name": "20-session drawdown",
+            "weight": -0.941848185255398,
+            "magnitude": 0.941848185255398,
+            "current": -0.0053
+          },
+          {
+            "name": "20-session momentum",
+            "weight": -0.5381889000746359,
+            "magnitude": 0.5381889000746359,
+            "current": 0.1073
+          },
+          {
+            "name": "Short-term acceleration",
+            "weight": 0.5217301083715936,
+            "magnitude": 0.5217301083715936,
+            "current": 0.0435
+          },
+          {
+            "name": "20-session volatility",
+            "weight": 0.1974851352404432,
+            "magnitude": 0.1974851352404432,
+            "current": 0.0112
+          },
+          {
+            "name": "5-session momentum",
+            "weight": 0.16320515489400525,
+            "magnitude": 0.16320515489400525,
+            "current": 0.0704
+          }
+        ],
+        "lastLabelDate": "2026-11-11",
+        "description": "Three learner candidates are compared on two chronological periods; a later, untouched audit period reports historical accuracy. Each split has a label-horizon gap. Scores are NOT calibrated odds or investment advice."
       },
       "quality5": {
-        "status": "unavailable",
-        "reason": "Not enough strictly held-out observations for a leakage-free validation."
+        "status": "no_proven_edge",
+        "reason": "Independent backtest did not beat the simple baseline convincingly"
       },
       "quality20": {
-        "status": "unavailable",
-        "reason": "Not enough strictly held-out observations for a leakage-free validation."
+        "status": "no_proven_edge",
+        "reason": "Independent backtest did not beat the simple baseline convincingly"
       },
       "source": "CSE public website API (undocumented; availability and reuse terms may change)",
       "sourceURL": "https://www.cse.lk/api/chartData",
       "notice": null
     },
     "sl20": {
-      "value": 6342.12,
-      "changePercent": -0.10836352181445898,
-      "retrievedAt": "2026-11-12T04:37:42.591Z",
+      "value": 6331.82,
+      "changePercent": -0.2705937942983147,
+      "retrievedAt": "2026-11-12T05:49:44.961Z",
       "sourceURL": "https://www.cse.lk/api/snpData",
       "note": "Retrieved snapshot; source may not include a reliable trade date."
     },
-    "marketSummary": null
+    "marketSummary": null,
+    "regime": {
+      "available": true,
+      "asOf": "2026-11-11",
+      "observations": 240,
+      "annualizedVolatilityPct": 17.75,
+      "volatilityPercentile": 77.1,
+      "drawdown60Pct": -0.53,
+      "momentum5Pct": 7.29,
+      "momentum20Pct": 11.33,
+      "momentum60Pct": 1.95,
+      "regime": "Sideways / mixed",
+      "risk": "Moderate",
+      "method": "20-session historical volatility and 60-session drawdown; descriptive, not a price forecast."
+    }
   },
   "economy": {
+    "gdpGrowth": {
+      "country": "LKA",
+      "indicator": "NY.GDP.MKTP.KD.ZG",
+      "period": "annual",
+      "points": [
+        {
+          "year": "2014",
+          "value": 6.37797889684965
+        },
+        {
+          "year": "2015",
+          "value": 4.20595547501601
+        },
+        {
+          "year": "2016",
+          "value": 5.05362488993089
+        },
+        {
+          "year": "2017",
+          "value": 6.46068127080994
+        },
+        {
+          "year": "2018",
+          "value": 2.31008425504933
+        },
+        {
+          "year": "2019",
+          "value": -0.220483886824823
+        },
+        {
+          "year": "2020",
+          "value": -4.62451503712715
+        },
+        {
+          "year": "2021",
+          "value": 4.2074764950026
+        },
+        {
+          "year": "2022",
+          "value": -7.34919311146656
+        },
+        {
+          "year": "2023",
+          "value": -2.0289296690344
+        },
+        {
+          "year": "2024",
+          "value": 4.99241614398109
+        },
+        {
+          "year": "2025",
+          "value": 4.9534339114043
+        }
+      ],
+      "asOf": "2025",
+      "source": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=LK"
+    },
+    "annualInflation": {
+      "country": "LKA",
+      "indicator": "FP.CPI.TOTL.ZG",
+      "period": "annual",
+      "points": [
+        {
+          "year": "2014",
+          "value": 3.17900228236059
+        },
+        {
+          "year": "2015",
+          "value": 3.76836783062096
+        },
+        {
+          "year": "2016",
+          "value": 3.95888846593069
+        },
+        {
+          "year": "2017",
+          "value": 7.70413767850601
+        },
+        {
+          "year": "2018",
+          "value": 2.135037737132
+        },
+        {
+          "year": "2019",
+          "value": 3.52839358231811
+        },
+        {
+          "year": "2020",
+          "value": 6.15394508391737
+        },
+        {
+          "year": "2021",
+          "value": 7.01478071238194
+        },
+        {
+          "year": "2022",
+          "value": 49.7211021114327
+        },
+        {
+          "year": "2023",
+          "value": 16.5411742279831
+        },
+        {
+          "year": "2024",
+          "value": -0.42936004906973
+        },
+        {
+          "year": "2025",
+          "value": -4.76386036960982
+        }
+      ],
+      "asOf": "2025",
+      "source": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=LK"
+    },
+    "remittancesGDP": {
+      "country": "LKA",
+      "indicator": "BX.TRF.PWKR.DT.GD.ZS",
+      "period": "annual",
+      "points": [
+        {
+          "year": "2014",
+          "value": 8.52566411916688
+        },
+        {
+          "year": "2015",
+          "value": 8.22623894980981
+        },
+        {
+          "year": "2016",
+          "value": 8.25208423100115
+        },
+        {
+          "year": "2017",
+          "value": 7.61931281877923
+        },
+        {
+          "year": "2018",
+          "value": 7.45689609377593
+        },
+        {
+          "year": "2019",
+          "value": 7.58292152118561
+        },
+        {
+          "year": "2020",
+          "value": 8.4666695107936
+        },
+        {
+          "year": "2021",
+          "value": 6.23540006537571
+        },
+        {
+          "year": "2022",
+          "value": 5.15135988688752
+        },
+        {
+          "year": "2023",
+          "value": 7.16290737039539
+        },
+        {
+          "year": "2024",
+          "value": 6.74752055316036
+        },
+        {
+          "year": "2025",
+          "value": 7.63208359426157
+        }
+      ],
+      "asOf": "2025",
+      "source": "https://data.worldbank.org/indicator/BX.TRF.PWKR.DT.GD.ZS?locations=LK"
+    },
+    "unemployment": {
+      "country": "LKA",
+      "indicator": "SL.UEM.TOTL.ZS",
+      "period": "annual",
+      "points": [
+        {
+          "year": "2014",
+          "value": 4.157
+        },
+        {
+          "year": "2015",
+          "value": 4.519
+        },
+        {
+          "year": "2016",
+          "value": 4.242
+        },
+        {
+          "year": "2017",
+          "value": 4.046
+        },
+        {
+          "year": "2018",
+          "value": 4.318
+        },
+        {
+          "year": "2019",
+          "value": 4.67
+        },
+        {
+          "year": "2020",
+          "value": 5.364
+        },
+        {
+          "year": "2021",
+          "value": 4.981
+        },
+        {
+          "year": "2022",
+          "value": 4.528
+        },
+        {
+          "year": "2023",
+          "value": 4.528
+        },
+        {
+          "year": "2024",
+          "value": 4.239
+        },
+        {
+          "year": "2025",
+          "value": 4.005
+        }
+      ],
+      "asOf": "2025",
+      "source": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=LK"
+    },
     "currentAccountGDP": {
       "country": "LKA",
       "indicator": "BN.CAB.XOKA.GD.ZS",
@@ -363,11 +740,63 @@
       "asOf": "2025",
       "source": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=LK"
     },
-    "gdpGrowth": null,
-    "annualInflation": null,
-    "remittancesGDP": null,
-    "unemployment": null,
-    "exportsGDP": null
+    "exportsGDP": {
+      "country": "LKA",
+      "indicator": "NE.EXP.GNFS.ZS",
+      "period": "annual",
+      "points": [
+        {
+          "year": "2009",
+          "value": 21.328366243783
+        },
+        {
+          "year": "2015",
+          "value": 19.893383820467
+        },
+        {
+          "year": "2016",
+          "value": 19.824036042668
+        },
+        {
+          "year": "2017",
+          "value": 20.2242000359935
+        },
+        {
+          "year": "2018",
+          "value": 21.4462486145463
+        },
+        {
+          "year": "2019",
+          "value": 21.8235309246323
+        },
+        {
+          "year": "2020",
+          "value": 15.4576399170356
+        },
+        {
+          "year": "2021",
+          "value": 16.9214215897796
+        },
+        {
+          "year": "2022",
+          "value": 21.5595624612904
+        },
+        {
+          "year": "2023",
+          "value": 20.5995283672112
+        },
+        {
+          "year": "2024",
+          "value": 19.7559774138192
+        },
+        {
+          "year": "2025",
+          "value": 18.9673796128721
+        }
+      ],
+      "asOf": "2025",
+      "source": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=LK"
+    }
   },
   "forex": {
     "asOf": "2026-11-12",
@@ -468,16 +897,150 @@
       "publisher": "EconomyNext"
     }
   ],
+  "evidence": {
+    "macro": {
+      "available": 6,
+      "total": 6,
+      "indicators": {
+        "gdpGrowth": {
+          "available": true,
+          "asOf": "2025",
+          "value": 4.953,
+          "observationAgeYears": 1,
+          "code": "NY.GDP.MKTP.KD.ZG",
+          "source": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=LK"
+        },
+        "annualInflation": {
+          "available": true,
+          "asOf": "2025",
+          "value": -4.764,
+          "observationAgeYears": 1,
+          "code": "FP.CPI.TOTL.ZG",
+          "source": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=LK"
+        },
+        "remittancesGDP": {
+          "available": true,
+          "asOf": "2025",
+          "value": 7.632,
+          "observationAgeYears": 1,
+          "code": "BX.TRF.PWKR.DT.GD.ZS",
+          "source": "https://data.worldbank.org/indicator/BX.TRF.PWKR.DT.GD.ZS?locations=LK"
+        },
+        "unemployment": {
+          "available": true,
+          "asOf": "2025",
+          "value": 4.005,
+          "observationAgeYears": 1,
+          "code": "SL.UEM.TOTL.ZS",
+          "source": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=LK"
+        },
+        "currentAccountGDP": {
+          "available": true,
+          "asOf": "2025",
+          "value": 1.58,
+          "observationAgeYears": 1,
+          "code": "BN.CAB.XOKA.GD.ZS",
+          "source": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=LK"
+        },
+        "exportsGDP": {
+          "available": true,
+          "asOf": "2025",
+          "value": 18.967,
+          "observationAgeYears": 1,
+          "code": "NE.EXP.GNFS.ZS",
+          "source": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=LK"
+        }
+      },
+      "notice": "Annual macro data may lag and be revised. Not a monthly forecast."
+    },
+    "companies": {
+      "count": 0,
+      "fundamentalsAvailable": false,
+      "companyPredictionsAvailable": false,
+      "notice": "Company snapshots unavailable; no stock ratings created.",
+      "requiredForFundamentals": [
+        "Audited earnings and cash flow",
+        "Debt and interest coverage",
+        "As-of dated valuations",
+        "Corporate actions and adjusted prices",
+        "Liquidity and free float"
+      ]
+    },
+    "sources": {
+      "aspi": {
+        "status": "available",
+        "label": "CSE dated ASPI closes",
+        "asOf": "2026-11-11"
+      },
+      "economy": {
+        "status": "available",
+        "label": "World Bank indicators (6/6)",
+        "asOf": null
+      },
+      "forex": {
+        "status": "available",
+        "label": "USD/LKR exchange reference",
+        "asOf": "2026-11-12"
+      },
+      "shares": {
+        "status": "unavailable",
+        "label": "CSE share snapshots (not audited fundamentals)",
+        "asOf": null
+      },
+      "sl20": {
+        "status": "available",
+        "label": "S&P SL20 snapshot",
+        "asOf": null
+      },
+      "turnover": {
+        "status": "unavailable",
+        "label": "CSE market turnover",
+        "asOf": null
+      },
+      "headlines": {
+        "status": "available",
+        "label": "Publisher headlines (not ML features)",
+        "asOf": null
+      }
+    }
+  },
   "learning": {
     "summary": {
-      "total": 0,
-      "pending": 0,
+      "total": 2,
+      "pending": 2,
       "resolved": 0,
       "correct": 0,
       "wrong": 0,
       "historicalHitRate": null
     },
-    "recent": []
+    "recent": [
+      {
+        "id": "ASPI:5:2026-11-11",
+        "market": "ASPI",
+        "horizon": 5,
+        "observationDate": "2026-11-11",
+        "createdAt": "2026-11-12T05:49:41.060Z",
+        "baseClose": 22038.28,
+        "signal": "Indecisive",
+        "diagnosticScore": 0.5691,
+        "backtestEdge": false,
+        "status": "pending",
+        "caution": "Not a calibrated rise probability or investment signal"
+      },
+      {
+        "id": "ASPI:20:2026-11-11",
+        "market": "ASPI",
+        "horizon": 20,
+        "observationDate": "2026-11-11",
+        "createdAt": "2026-11-12T05:49:41.060Z",
+        "baseClose": 22038.28,
+        "signal": "Indecisive",
+        "diagnosticScore": 0.5531,
+        "backtestEdge": false,
+        "status": "pending",
+        "caution": "Not a calibrated rise probability or investment signal"
+      }
+    ]
   },
   "sources": {
     "cse": "https://www.cse.lk/",
@@ -487,11 +1050,6 @@
     "sec": "https://www.sec.gov.lk/"
   },
   "warnings": [
-    "gdpGrowth unavailable: This operation was aborted",
-    "annualInflation unavailable: This operation was aborted",
-    "remittancesGDP unavailable: This operation was aborted",
-    "unemployment unavailable: This operation was aborted",
-    "exportsGDP unavailable: This operation was aborted",
     "Stock snapshots unavailable: HTTP 400",
     "Market turnover unavailable: Daily turnover not reported",
     "Publisher context unavailable: Publisher did not return an RSS feed"
