@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T04:35:07.529Z",
+  "generatedAt": "2026-11-12T04:37:17.424Z",
   "status": "updated",
   "market": {
     "aspi": {
@@ -297,21 +297,77 @@
       "notice": null
     },
     "sl20": {
-      "value": 6344.96,
-      "changePercent": -0.06363206804221137,
-      "retrievedAt": "2026-11-12T04:35:10.811Z",
+      "value": 6342.12,
+      "changePercent": -0.10836352181445898,
+      "retrievedAt": "2026-11-12T04:37:42.591Z",
       "sourceURL": "https://www.cse.lk/api/snpData",
       "note": "Retrieved snapshot; source may not include a reliable trade date."
     },
     "marketSummary": null
   },
   "economy": {
-    "unemployment": null,
-    "exportsGDP": null,
-    "remittancesGDP": null,
+    "currentAccountGDP": {
+      "country": "LKA",
+      "indicator": "BN.CAB.XOKA.GD.ZS",
+      "period": "annual",
+      "points": [
+        {
+          "year": "2014",
+          "value": -2.4084055719608
+        },
+        {
+          "year": "2015",
+          "value": -2.21267766608825
+        },
+        {
+          "year": "2016",
+          "value": -1.97999493165089
+        },
+        {
+          "year": "2017",
+          "value": -2.44676434907529
+        },
+        {
+          "year": "2018",
+          "value": -2.96352841915886
+        },
+        {
+          "year": "2019",
+          "value": -2.07126631647204
+        },
+        {
+          "year": "2020",
+          "value": -1.40761495020571
+        },
+        {
+          "year": "2021",
+          "value": -3.70866603299244
+        },
+        {
+          "year": "2022",
+          "value": -1.95359411068217
+        },
+        {
+          "year": "2023",
+          "value": 1.71159541534781
+        },
+        {
+          "year": "2024",
+          "value": 1.21195613729145
+        },
+        {
+          "year": "2025",
+          "value": 1.57989637194729
+        }
+      ],
+      "asOf": "2025",
+      "source": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=LK"
+    },
+    "gdpGrowth": null,
     "annualInflation": null,
-    "currentAccountGDP": null,
-    "gdpGrowth": null
+    "remittancesGDP": null,
+    "unemployment": null,
+    "exportsGDP": null
   },
   "forex": {
     "asOf": "2026-11-12",
@@ -431,14 +487,14 @@
     "sec": "https://www.sec.gov.lk/"
   },
   "warnings": [
-    "unemployment unavailable: HTTP 502",
-    "exportsGDP unavailable: HTTP 502",
-    "remittancesGDP unavailable: HTTP 502",
-    "annualInflation unavailable: HTTP 502",
-    "currentAccountGDP unavailable: HTTP 502",
-    "gdpGrowth unavailable: HTTP 502",
+    "gdpGrowth unavailable: This operation was aborted",
+    "annualInflation unavailable: This operation was aborted",
+    "remittancesGDP unavailable: This operation was aborted",
+    "unemployment unavailable: This operation was aborted",
+    "exportsGDP unavailable: This operation was aborted",
     "Stock snapshots unavailable: HTTP 400",
-    "Market turnover unavailable: Daily turnover not reported"
+    "Market turnover unavailable: Daily turnover not reported",
+    "Publisher context unavailable: Publisher did not return an RSS feed"
   ],
   "disclaimer": "Educational market research only. Historical ML performance is not a reliable investment forecast. No specific security is recommended."
 }
