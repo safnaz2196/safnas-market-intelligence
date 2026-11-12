@@ -1,9 +1,444 @@
 {
   "schemaVersion": 1,
-  "generatedAt": null,
-  "status": "not_activated",
-  "market": {"aspi": {"available": false, "reason": "Background collector has not run yet", "points": []}},
-  "economy": {}, "forex": null, "shares": [],
-  "warnings": ["Activate the GitHub Actions workflow in a PUBLIC market-data-only repository to collect and retrain while the website is closed."],
-  "disclaimer": "No data is fabricated. Historic model performance does not guarantee future investment returns."
+  "generatedAt": "2026-11-12T04:35:07.529Z",
+  "status": "updated",
+  "market": {
+    "aspi": {
+      "available": true,
+      "asOf": "2026-11-11",
+      "close": 22038.28,
+      "observations": 240,
+      "points": [
+        {
+          "date": "2026-08-11",
+          "close": 21403.05
+        },
+        {
+          "date": "2026-08-12",
+          "close": 21436.18
+        },
+        {
+          "date": "2026-08-13",
+          "close": 21539
+        },
+        {
+          "date": "2026-08-14",
+          "close": 21644.01
+        },
+        {
+          "date": "2026-08-17",
+          "close": 21616.88
+        },
+        {
+          "date": "2026-08-18",
+          "close": 21479.07
+        },
+        {
+          "date": "2026-08-19",
+          "close": 21428.72
+        },
+        {
+          "date": "2026-08-20",
+          "close": 21429.65
+        },
+        {
+          "date": "2026-08-21",
+          "close": 21416.61
+        },
+        {
+          "date": "2026-08-24",
+          "close": 21362.18
+        },
+        {
+          "date": "2026-08-25",
+          "close": 21300.9
+        },
+        {
+          "date": "2026-08-28",
+          "close": 21322.86
+        },
+        {
+          "date": "2026-08-31",
+          "close": 21338.84
+        },
+        {
+          "date": "2026-09-01",
+          "close": 21318.31
+        },
+        {
+          "date": "2026-09-02",
+          "close": 21325.64
+        },
+        {
+          "date": "2026-09-03",
+          "close": 21395.11
+        },
+        {
+          "date": "2026-09-04",
+          "close": 21620.44
+        },
+        {
+          "date": "2026-09-07",
+          "close": 21635.03
+        },
+        {
+          "date": "2026-09-08",
+          "close": 21542.23
+        },
+        {
+          "date": "2026-09-09",
+          "close": 21466
+        },
+        {
+          "date": "2026-09-10",
+          "close": 21372.45
+        },
+        {
+          "date": "2026-09-11",
+          "close": 21398.53
+        },
+        {
+          "date": "2026-09-14",
+          "close": 21310.47
+        },
+        {
+          "date": "2026-09-15",
+          "close": 21262.13
+        },
+        {
+          "date": "2026-09-16",
+          "close": 21133.41
+        },
+        {
+          "date": "2026-09-17",
+          "close": 21033.11
+        },
+        {
+          "date": "2026-09-18",
+          "close": 21062.47
+        },
+        {
+          "date": "2026-09-21",
+          "close": 20980.55
+        },
+        {
+          "date": "2026-09-22",
+          "close": 21116.29
+        },
+        {
+          "date": "2026-09-23",
+          "close": 21097.46
+        },
+        {
+          "date": "2026-09-24",
+          "close": 21066.89
+        },
+        {
+          "date": "2026-09-25",
+          "close": 21064.44
+        },
+        {
+          "date": "2026-09-28",
+          "close": 20955.56
+        },
+        {
+          "date": "2026-09-29",
+          "close": 20847.26
+        },
+        {
+          "date": "2026-09-30",
+          "close": 20812.93
+        },
+        {
+          "date": "2026-10-01",
+          "close": 20877.65
+        },
+        {
+          "date": "2026-10-02",
+          "close": 20812.64
+        },
+        {
+          "date": "2026-10-05",
+          "close": 20651.17
+        },
+        {
+          "date": "2026-10-06",
+          "close": 20650.23
+        },
+        {
+          "date": "2026-10-07",
+          "close": 20517.55
+        },
+        {
+          "date": "2026-10-08",
+          "close": 20257.14
+        },
+        {
+          "date": "2026-10-09",
+          "close": 20316.91
+        },
+        {
+          "date": "2026-10-12",
+          "close": 20260.06
+        },
+        {
+          "date": "2026-10-13",
+          "close": 20096.14
+        },
+        {
+          "date": "2026-10-14",
+          "close": 19796.06
+        },
+        {
+          "date": "2026-10-15",
+          "close": 20003.2
+        },
+        {
+          "date": "2026-10-16",
+          "close": 20185.05
+        },
+        {
+          "date": "2026-10-19",
+          "close": 20087.86
+        },
+        {
+          "date": "2026-10-20",
+          "close": 19983.78
+        },
+        {
+          "date": "2026-10-21",
+          "close": 19955.97
+        },
+        {
+          "date": "2026-10-22",
+          "close": 19721.1
+        },
+        {
+          "date": "2026-10-23",
+          "close": 19688.77
+        },
+        {
+          "date": "2026-10-26",
+          "close": 19640.56
+        },
+        {
+          "date": "2026-10-27",
+          "close": 19727.58
+        },
+        {
+          "date": "2026-10-28",
+          "close": 19969.58
+        },
+        {
+          "date": "2026-10-29",
+          "close": 20249.21
+        },
+        {
+          "date": "2026-10-30",
+          "close": 20142.33
+        },
+        {
+          "date": "2026-11-02",
+          "close": 20092.26
+        },
+        {
+          "date": "2026-11-03",
+          "close": 20119.64
+        },
+        {
+          "date": "2026-11-04",
+          "close": 20541.12
+        },
+        {
+          "date": "2026-11-05",
+          "close": 21130.3
+        },
+        {
+          "date": "2026-11-06",
+          "close": 21239.65
+        },
+        {
+          "date": "2026-11-09",
+          "close": 21531.37
+        },
+        {
+          "date": "2026-11-10",
+          "close": 22155.34
+        },
+        {
+          "date": "2026-11-11",
+          "close": 22038.28
+        }
+      ],
+      "model5": {
+        "ok": false,
+        "observations": 240,
+        "labeled": 205,
+        "horizon": 5,
+        "reason": "Not enough strictly held-out observations for a leakage-free validation."
+      },
+      "model20": {
+        "ok": false,
+        "observations": 240,
+        "labeled": 190,
+        "horizon": 20,
+        "reason": "Not enough strictly held-out observations for a leakage-free validation."
+      },
+      "quality5": {
+        "status": "unavailable",
+        "reason": "Not enough strictly held-out observations for a leakage-free validation."
+      },
+      "quality20": {
+        "status": "unavailable",
+        "reason": "Not enough strictly held-out observations for a leakage-free validation."
+      },
+      "source": "CSE public website API (undocumented; availability and reuse terms may change)",
+      "sourceURL": "https://www.cse.lk/api/chartData",
+      "notice": null
+    },
+    "sl20": {
+      "value": 6344.96,
+      "changePercent": -0.06363206804221137,
+      "retrievedAt": "2026-11-12T04:35:10.811Z",
+      "sourceURL": "https://www.cse.lk/api/snpData",
+      "note": "Retrieved snapshot; source may not include a reliable trade date."
+    },
+    "marketSummary": null
+  },
+  "economy": {
+    "unemployment": null,
+    "exportsGDP": null,
+    "remittancesGDP": null,
+    "annualInflation": null,
+    "currentAccountGDP": null,
+    "gdpGrowth": null
+  },
+  "forex": {
+    "asOf": "2026-11-12",
+    "rate": 332.14,
+    "source": "Frankfurter blended published daily reference rates",
+    "sourceURL": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=LKR"
+  },
+  "shares": [],
+  "headlines": [
+    {
+      "title": "Sri Lanka Deputy Speaker, US envoy discuss security and bilateral ties",
+      "url": "https://economynext.com/sri-lanka-deputy-speaker-us-envoy-discuss-security-and-bilateral-ties-289810/",
+      "date": "2026-11-12",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka rupee at 332.40/50 to US dollar spot, bond yields steady",
+      "url": "https://economynext.com/sri-lanka-rupee-at-332-40-50-to-us-dollar-spot-bond-yields-steady-289802/",
+      "date": "2026-11-12",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "PREVIEW-Sri Lanka unveils 2027 budget amid oil shocks, missing mega-projects, eyes next IMF deal",
+      "url": "https://economynext.com/preview-sri-lanka-unveils-2027-budget-amid-oil-shocks-missing-mega-projects-eyes-next-imf-deal-289811/",
+      "date": "2026-11-12",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka Customs’ October revenue exceeds target by 4.9-pct",
+      "url": "https://economynext.com/sri-lanka-customs-october-revenue-exceeds-target-by-4-9-pct-289798/",
+      "date": "2026-11-11",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka rupee closes at 332.37/42 to US dollar spot, bond yields steady",
+      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-37-42-to-us-dollar-spot-bond-yields-steady-289792/",
+      "date": "2026-11-11",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka Treasury bill yields hold broadly steady, less bills sold",
+      "url": "https://economynext.com/sri-lanka-treasury-bill-yields-hold-broadly-steady-less-bills-sold-289785/",
+      "date": "2026-11-11",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Dialog Axiata Sept quarter net profit surges 62-pct to Rs9.25bn",
+      "url": "https://economynext.com/dialog-axiata-sept-quarter-net-profit-surges-62-pct-to-rs9-25bn-289765/",
+      "date": "2026-11-11",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka’s Odel Sept quarter net loss widens 8.4-pct to Rs704mn",
+      "url": "https://economynext.com/sri-lankas-odel-sept-quarter-net-loss-widens-8-4-pct-to-rs704mn-289767/",
+      "date": "2026-11-11",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka stocks close down 0.41-pct, banks lead turnover",
+      "url": "https://economynext.com/sri-lanka-stocks-close-down-0-41-pct-banks-lead-turnover-289769/",
+      "date": "2026-11-11",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka president reviews final 2027 Budget proposals ahead of presentation",
+      "url": "https://economynext.com/sri-lanka-president-reviews-final-2027-budget-proposals-ahead-of-presentation-289755/",
+      "date": "2026-11-11",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka central bank flags Crosslink for unauthorized deposit-taking",
+      "url": "https://economynext.com/sri-lanka-central-bank-flags-crosslink-for-unauthorized-deposit-taking-289745/",
+      "date": "2026-11-11",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka regulator restricts specific Ernst & Young partners following NDB fraud",
+      "url": "https://economynext.com/sri-lanka-regulator-restricts-specific-ernst-young-partners-following-ndb-fraud-289738/",
+      "date": "2026-11-11",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka launches 5-day business name registration pilot",
+      "url": "https://economynext.com/sri-lanka-launches-5-day-business-name-registration-pilot-289708/",
+      "date": "2026-11-11",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka stocks trend lower; Materials lead turnover",
+      "url": "https://economynext.com/sri-lanka-stocks-trend-lower-materials-lead-turnover-289711/",
+      "date": "2026-11-11",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka rupee at 332.33/38 to US dollar spot, bond yields drop further",
+      "url": "https://economynext.com/sri-lanka-rupee-at-332-33-38-to-us-dollar-spot-bond-yields-drop-further-289683/",
+      "date": "2026-11-11",
+      "publisher": "EconomyNext"
+    }
+  ],
+  "learning": {
+    "summary": {
+      "total": 0,
+      "pending": 0,
+      "resolved": 0,
+      "correct": 0,
+      "wrong": 0,
+      "historicalHitRate": null
+    },
+    "recent": []
+  },
+  "sources": {
+    "cse": "https://www.cse.lk/",
+    "cbsl": "https://www.cbsl.gov.lk/en/statistics/economic-indicators/daily-indicators",
+    "worldbank": "https://api.worldbank.org/v2/country/LKA",
+    "fx": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=LKR",
+    "sec": "https://www.sec.gov.lk/"
+  },
+  "warnings": [
+    "unemployment unavailable: HTTP 502",
+    "exportsGDP unavailable: HTTP 502",
+    "remittancesGDP unavailable: HTTP 502",
+    "annualInflation unavailable: HTTP 502",
+    "currentAccountGDP unavailable: HTTP 502",
+    "gdpGrowth unavailable: HTTP 502",
+    "Stock snapshots unavailable: HTTP 400",
+    "Market turnover unavailable: Daily turnover not reported"
+  ],
+  "disclaimer": "Educational market research only. Historical ML performance is not a reliable investment forecast. No specific security is recommended."
 }
