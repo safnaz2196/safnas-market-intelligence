@@ -3,6 +3,7 @@
 (function(root,factory){const mod=factory();if(typeof module==='object'&&module.exports)module.exports=mod;root.__sfMarketML=mod;})(typeof globalThis!=='undefined'?globalThis:this,function(){
 'use strict';
 const EPS=1e-8, MIN_TRAIN=75;
+const advanced=typeof require==='function'?require('./advanced-models.cjs'):null;
 const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
 const mean=v=>v.reduce((s,x)=>s+x,0)/Math.max(1,v.length);
 const sigmoid=z=>z>35?1:z< -35?0:1/(1+Math.exp(-z));
@@ -59,9 +60,14 @@ function patternPredict(model,x){const point=normalized(x,model.sc),dist=model.r
 }
 const brier=(p,y)=>(p-y)**2;
 function classify(p){return p>=.5?1:0;}
+function learner(mode,records){
+ if(mode==='forest'&&advanced){const m=advanced.forestFit(records);return x=>advanced.forestPredict(m,x)}
+ if(mode==='boost'&&advanced){const m=advanced.boostFit(records);return x=>advanced.boostPredict(m,x)}
+ const logit=mode!=='patterns'?fitLogit(records):null,patterns=mode!=='logit'?fitPatterns(records):null;
+ return x=>mode==='logit'?logitPredict(logit,x):mode==='patterns'?patternPredict(patterns,x):.5*logitPredict(logit,x)+.5*patternPredict(patterns,x);
+}
 function evaluateSet(train,test,mode){
- const logit=mode!=='patterns'?fitLogit(train):null,patterns=mode!=='logit'?fitPatterns(train):null;
- const predict=x=>mode==='logit'?logitPredict(logit,x):mode==='patterns'?patternPredict(patterns,x):.5*logitPredict(logit,x)+.5*patternPredict(patterns,x);
+ const predict=learner(mode,train);
  const prior=mean(train.map(v=>v.y));return test.map(row=>({date:row.date,actual:row.y,p:predict(row.x),baseP:prior,baseClass:prior>=.5?1:0}));
 }
 // Explicit purging: a training target must finish BEFORE the first validation feature date.
@@ -82,7 +88,7 @@ function trainAndValidate(raw,horizon=5,now=new Date()){
  const last=series.at(-1),ageDays=Math.floor((Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate())-Date.parse(last.date+'T00:00:00Z'))/86400000);
  if(ageDays>7||ageDays< -1)return {...output,asOf:last.date,reason:`Latest close is ${ageDays} days old. Refresh verified market data before training.`};
  const folds=makeFolds(items,horizon);if(folds.length<2)return {...output,reason:'Two purged validation periods require more dated closes.'};
- const candidates=['logit','patterns','blend'].map(mode=>{
+ const candidates=['logit','patterns','blend',...(advanced?['forest','boost']:[])].map(mode=>{
   const observed=[];for(const fold of folds)observed.push(...evaluateSet(fold.train,fold.test,mode));
   return {mode,...score(observed)};
  });
@@ -93,15 +99,14 @@ function trainAndValidate(raw,horizon=5,now=new Date()){
  const auditStart=Math.floor(items.length*.84),auditTraining=items.slice(0,Math.max(0,auditStart-horizon)),auditItems=items.slice(auditStart);
  if(auditTraining.length<MIN_TRAIN||auditItems.length<22)return {...output,reason:'Not enough untouched dates for an independent forecast audit.'};
  const audit=score(evaluateSet(auditTraining,auditItems,winner));
- const finalLogit=winner!=='patterns'?fitLogit(items):null,finalPatterns=winner!=='logit'?fitPatterns(items):null;
  const current=features(series,series.length-1);
  if(!current)return {...output,reason:'Latest indicators are incomplete.'};
- const upScore=winner==='logit'?logitPredict(finalLogit,current):winner==='patterns'?patternPredict(finalPatterns,current):.5*logitPredict(finalLogit,current)+.5*patternPredict(finalPatterns,current);
+ const upScore=learner(winner,items)(current);
  const direction=upScore>=.57?'Upward lean':upScore<=.43?'Downward lean':'Indecisive / sideways';
  const edge=(audit.brier<audit.baselineBrier-.002)&&(audit.accuracy>=audit.baselineAccuracy+.006)&&(audit.balancedAccuracy===null||audit.balancedAccuracy>=.5);
  const coefficients=fitLogit(items);const featureRanks=featureNames.map((name,j)=>({name,weight:coefficients.w[j],magnitude:Math.abs(coefficients.w[j]),current:round(current[j],4)})).sort((a,b)=>b.magnitude-a.magnitude);
  const count=folds.reduce((n,f)=>n+f.test.length,0);
- return {...output,ok:true,asOf:last.date,latest:last.close,ageDays,horizon,direction,upScore:round(upScore,4),edgeDemonstrated:edge,quality:!edge?'Limited evidence':audit.accuracy>=.58?'Better historical fit':'Modest historical fit',model:winner==='logit'?'Regularized logistic model':winner==='patterns'?'Nearest-pattern learner':'Fixed 50/50 model blend',trainingSamples:items.length,validationSamples:audit.n,validation:{accuracy:round(audit.accuracy*100,1),baselineAccuracy:round(audit.baselineAccuracy*100,1),balancedAccuracy:audit.balancedAccuracy===null?null:round(audit.balancedAccuracy*100,1),brier:round(audit.brier,4),baselineBrier:round(audit.baselineBrier,4)},candidates:candidates.map(c=>({model:c.mode,accuracy:round(c.accuracy*100,1),brier:round(c.brier,4)})),features:featureRanks.slice(0,5),lastLabelDate:items.at(-1).labelDate,description:'Three learner candidates are compared on two chronological periods; a later, untouched audit period reports historical accuracy. Each split has a label-horizon gap. Scores are NOT calibrated odds or investment advice.'};
+ return {...output,ok:true,asOf:last.date,latest:last.close,ageDays,horizon,direction,upScore:round(upScore,4),edgeDemonstrated:edge,quality:!edge?'Limited evidence':audit.accuracy>=.58?'Better historical fit':'Modest historical fit',model:({logit:'Regularized logistic model',patterns:'Nearest-pattern learner',blend:'Fixed 50/50 model blend',forest:'Random forest · shallow trees',boost:'Gradient boosted stumps'})[winner],trainingSamples:items.length,validationSamples:audit.n,validation:{accuracy:round(audit.accuracy*100,1),baselineAccuracy:round(audit.baselineAccuracy*100,1),balancedAccuracy:audit.balancedAccuracy===null?null:round(audit.balancedAccuracy*100,1),brier:round(audit.brier,4),baselineBrier:round(audit.baselineBrier,4)},candidates:candidates.map(c=>({model:c.mode,accuracy:round(c.accuracy*100,1),brier:round(c.brier,4)})),features:featureRanks.slice(0,5),lastLabelDate:items.at(-1).labelDate,description:'Three learner candidates are compared on two chronological periods; a later, untouched audit period reports historical accuracy. Each split has a label-horizon gap. Scores are NOT calibrated odds or investment advice.'};
 }
 return {cleanSeries,features,examples,fitLogit,logitPredict,fitPatterns,patternPredict,makeFolds,trainAndValidate,score};
 });
