@@ -1,0 +1,11 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),r=require('./reliability-core.cjs');
+const day=i=>new Date(Date.UTC(2026,8,1+i)).toISOString().slice(0,10);
+const prices=Array.from({length:35},(_,i)=>({date:day(i),close:21000+i*4}));
+test('source prices are accepted without inventing backfill',()=>assert.equal(r.validatePriceSample(prices,[],new Date('2026-11-12')).length,35));
+test('future market dates are refused',()=>assert.throws(()=>r.validatePriceSample([...prices,{date:'2027-02-01',close:23000}],[],new Date('2026-11-12')),/future-dated/));
+test('large one-day price spikes are refused',()=>{const p=prices.map(x=>({...x}));p[15].close=190000;assert.throws(()=>r.validatePriceSample(p,[],new Date('2026-11-12')),/implausible/);});
+test('bulk World Bank response groups observations by indicator',()=>{const x=r.parseWorldBankBulk([{},[{indicator:{id:'NY.GDP.MKTP.KD.ZG'},date:'2025',value:5},{indicator:{id:'FP.CPI.TOTL.ZG'},date:'2025',value:2.3},{indicator:{id:'FP.CPI.TOTL.ZG'},date:'2024',value:null}]]);assert.equal(x.gdpGrowth.asOf,'2025');assert.equal(x.annualInflation.points.length,1);});
+test('source outage is marked cached rather than fresh',()=>{const now=new Date('2026-11-12');const a=r.sourceHealth({},'aspi',{success:true,asOf:'2026-11-11',now});const b=r.sourceHealth({aspi:a},'aspi',{success:false,now,reason:'HTTP 429'});assert.equal(b.status,'cached');});
+test('retrieved share quotes are not treated as dated trades',()=>{const x=r.sourceHealth({},'shares',{success:true,asOf:'2026-11-12',now:new Date('2026-11-12'),dateIsRetrieved:true});assert.equal(x.status,'retrieved_only');});
+test('missing independent validation does not imply a model advantage',()=>{const q=r.overallQuality({market:{aspi:{available:true,model5:{ok:false},model20:{ok:false}}}});assert.equal(q.auditedModels,0);assert.match(q.modelClaim,/not yet validated/);});
