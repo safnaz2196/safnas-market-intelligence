@@ -4,8 +4,8 @@
     "asOf": "2026-11-13",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-13T09:53:59.505Z",
-    "lastSuccessAt": "2026-11-13T09:53:59.505Z",
+    "lastAttemptAt": "2026-11-13T19:57:54.963Z",
+    "lastSuccessAt": "2026-11-13T19:57:54.963Z",
     "failures": 0,
     "note": "CSE daily closes validated and appended to dated archive"
   },
@@ -14,8 +14,8 @@
     "asOf": "2025",
     "ageDays": null,
     "ageYears": 1,
-    "lastAttemptAt": "2026-11-13T09:53:59.505Z",
-    "lastSuccessAt": "2026-11-13T09:53:59.505Z",
+    "lastAttemptAt": "2026-11-13T19:57:54.963Z",
+    "lastSuccessAt": "2026-11-13T19:57:54.963Z",
     "failures": 0,
     "note": "6 of 6 annual indicators refreshed"
   },
@@ -24,8 +24,8 @@
     "asOf": "2026-11-13",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-13T09:53:59.505Z",
-    "lastSuccessAt": "2026-11-13T09:53:59.505Z",
+    "lastAttemptAt": "2026-11-13T19:57:54.963Z",
+    "lastSuccessAt": "2026-11-13T19:57:54.963Z",
     "failures": 0,
     "note": "Provider response accepted"
   },
@@ -34,9 +34,9 @@
     "asOf": null,
     "ageDays": null,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-13T09:53:59.505Z",
+    "lastAttemptAt": "2026-11-13T19:57:54.963Z",
     "lastSuccessAt": null,
-    "failures": 2,
+    "failures": 3,
     "note": "HTTP 400"
   },
   "sl20": {
@@ -44,8 +44,8 @@
     "asOf": "2026-11-13",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-13T09:53:59.505Z",
-    "lastSuccessAt": "2026-11-13T09:53:59.505Z",
+    "lastAttemptAt": "2026-11-13T19:57:54.963Z",
+    "lastSuccessAt": "2026-11-13T19:57:54.963Z",
     "failures": 0,
     "note": "Index snapshot retrieved; official trade date not verified"
   },
@@ -54,9 +54,9 @@
     "asOf": null,
     "ageDays": null,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-13T09:53:59.505Z",
+    "lastAttemptAt": "2026-11-13T19:57:54.963Z",
     "lastSuccessAt": null,
-    "failures": 2,
+    "failures": 3,
     "note": "Daily turnover not reported"
   },
   "headlines": {
@@ -64,8 +64,8 @@
     "asOf": "2026-11-13",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-13T09:53:59.505Z",
-    "lastSuccessAt": "2026-11-13T09:53:59.505Z",
+    "lastAttemptAt": "2026-11-13T19:57:54.963Z",
+    "lastSuccessAt": "2026-11-13T19:57:54.963Z",
     "failures": 0,
     "note": "Provider response accepted"
   }

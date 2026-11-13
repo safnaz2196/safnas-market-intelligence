@@ -8,7 +8,7 @@
     "forest",
     "boost"
   ],
-  "generatedAt": "2026-11-13T09:53:59.505Z",
+  "generatedAt": "2026-11-13T19:57:54.963Z",
   "status": "updated",
   "market": {
     "aspi": {
@@ -459,9 +459,9 @@
       "notice": null
     },
     "sl20": {
-      "value": 6298.02,
-      "changePercent": -1.0611775536204928,
-      "retrievedAt": "2026-11-13T09:54:02.255Z",
+      "value": 6293.72,
+      "changePercent": -1.13,
+      "retrievedAt": "2026-11-13T19:57:58.978Z",
       "sourceURL": "https://www.cse.lk/api/snpData",
       "note": "Retrieved snapshot; source may not include a reliable trade date."
     },
@@ -827,12 +827,24 @@
   },
   "forex": {
     "asOf": "2026-11-13",
-    "rate": 332.5,
+    "rate": 333.38,
     "source": "Frankfurter daily FX reference",
     "sourceURL": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=LKR"
   },
   "shares": [],
   "headlines": [
+    {
+      "title": "Sri Lanka budget ignores provincial polls while stripping council powers: MP",
+      "url": "https://economynext.com/sri-lanka-budget-ignores-provincial-polls-while-stripping-council-powers-mp-290141/",
+      "date": "2026-11-13",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka stocks close down 0.60-pct, dragged by HNB and LOLC",
+      "url": "https://economynext.com/sri-lanka-stocks-close-down-0-60-pct-dragged-by-hnb-and-lolc-290131/",
+      "date": "2026-11-13",
+      "publisher": "EconomyNext"
+    },
     {
       "title": "Sri Lanka MP slams budget speech for omitting Tamil national question",
       "url": "https://economynext.com/sri-lanka-mp-slams-budget-speech-for-omitting-tamil-national-question-290119/",
@@ -908,18 +920,6 @@
     {
       "title": "Sri Lanka to forego Rs.28.4bn in next year on income tax, CESS, VAT revisions",
       "url": "https://economynext.com/sri-lanka-to-forego-rs-28-4bn-in-next-year-on-income-tax-cess-vat-revisions-290008/",
-      "date": "2026-11-12",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka to cut CESS on 800 import items by 25-pct, scrap PAL on newsprint, solar batteries",
-      "url": "https://economynext.com/sri-lanka-to-cut-cess-on-800-import-items-by-25-pct-scrap-pal-on-newsprint-solar-batteries-290016/",
-      "date": "2026-11-12",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka’s national budget 2027 promises tax relief, capital spending",
-      "url": "https://economynext.com/sri-lankas-national-budget-2027-promises-tax-relief-capital-spending-289998/",
       "date": "2026-11-12",
       "publisher": "EconomyNext"
     }
@@ -1037,8 +1037,8 @@
       "asOf": "2026-11-13",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-13T09:53:59.505Z",
-      "lastSuccessAt": "2026-11-13T09:53:59.505Z",
+      "lastAttemptAt": "2026-11-13T19:57:54.963Z",
+      "lastSuccessAt": "2026-11-13T19:57:54.963Z",
       "failures": 0,
       "note": "CSE daily closes validated and appended to dated archive"
     },
@@ -1047,8 +1047,8 @@
       "asOf": "2025",
       "ageDays": null,
       "ageYears": 1,
-      "lastAttemptAt": "2026-11-13T09:53:59.505Z",
-      "lastSuccessAt": "2026-11-13T09:53:59.505Z",
+      "lastAttemptAt": "2026-11-13T19:57:54.963Z",
+      "lastSuccessAt": "2026-11-13T19:57:54.963Z",
       "failures": 0,
       "note": "6 of 6 annual indicators refreshed"
     },
@@ -1057,8 +1057,8 @@
       "asOf": "2026-11-13",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-13T09:53:59.505Z",
-      "lastSuccessAt": "2026-11-13T09:53:59.505Z",
+      "lastAttemptAt": "2026-11-13T19:57:54.963Z",
+      "lastSuccessAt": "2026-11-13T19:57:54.963Z",
       "failures": 0,
       "note": "Provider response accepted"
     },
@@ -1067,9 +1067,9 @@
       "asOf": null,
       "ageDays": null,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-13T09:53:59.505Z",
+      "lastAttemptAt": "2026-11-13T19:57:54.963Z",
       "lastSuccessAt": null,
-      "failures": 2,
+      "failures": 3,
       "note": "HTTP 400"
     },
     "sl20": {
@@ -1077,8 +1077,8 @@
       "asOf": "2026-11-13",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-13T09:53:59.505Z",
-      "lastSuccessAt": "2026-11-13T09:53:59.505Z",
+      "lastAttemptAt": "2026-11-13T19:57:54.963Z",
+      "lastSuccessAt": "2026-11-13T19:57:54.963Z",
       "failures": 0,
       "note": "Index snapshot retrieved; official trade date not verified"
     },
@@ -1087,9 +1087,9 @@
       "asOf": null,
       "ageDays": null,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-13T09:53:59.505Z",
+      "lastAttemptAt": "2026-11-13T19:57:54.963Z",
       "lastSuccessAt": null,
-      "failures": 2,
+      "failures": 3,
       "note": "Daily turnover not reported"
     },
     "headlines": {
@@ -1097,8 +1097,8 @@
       "asOf": "2026-11-13",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-13T09:53:59.505Z",
-      "lastSuccessAt": "2026-11-13T09:53:59.505Z",
+      "lastAttemptAt": "2026-11-13T19:57:54.963Z",
+      "lastSuccessAt": "2026-11-13T19:57:54.963Z",
       "failures": 0,
       "note": "Provider response accepted"
     }
@@ -1218,7 +1218,7 @@
     "edgeModels": 1,
     "modelClaim": "Limited historical statistical edge — not investment advice",
     "dataLimit": "The public CSE chart endpoint supplies roughly one trailing year. Older dates require permitted, verified historical data; no synthetic backfill.",
-    "refreshedAt": "2026-11-13T09:53:59.505Z",
+    "refreshedAt": "2026-11-13T19:57:54.963Z",
     "disclaimer": "Source health is not model accuracy or probability of market growth."
   }
 }
