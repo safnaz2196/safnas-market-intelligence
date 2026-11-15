@@ -1,0 +1,45 @@
+name: Safnas Finance Gold Alerts — Free iOS Push
+on:
+  schedule:
+    # Best-effort every 15 min; GitHub may delay/skip some scheduled runs.
+    - cron: '7,22,37,52 * * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'normal = check price; test = send TEST push to subscribed devices'
+        required: false
+        type: choice
+        default: normal
+        options:
+          - normal
+          - test
+permissions:
+  contents: read
+concurrency:
+  group: safnas-free-gold-push
+  cancel-in-progress: false
+jobs:
+  gold_alerts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install worker dependencies
+        working-directory: gold-push-worker
+        run: npm install --omit=dev --no-audit --no-fund
+      - name: Validate alert calculations
+        working-directory: gold-push-worker
+        run: npm test
+      - name: Check market movements and send iOS Web Push
+        working-directory: gold-push-worker
+        env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+          GOLD_PUSH_VAPID_PUBLIC_KEY: ${{ secrets.GOLD_PUSH_VAPID_PUBLIC_KEY }}
+          GOLD_PUSH_VAPID_PRIVATE_KEY: ${{ secrets.GOLD_PUSH_VAPID_PRIVATE_KEY }}
+          GOLD_ALERT_MODE: ${{ inputs.mode == 'test' && 'test' || 'normal' }}
+        run: npm run check
