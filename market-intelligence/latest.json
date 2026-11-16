@@ -8,7 +8,7 @@
     "forest",
     "boost"
   ],
-  "generatedAt": "2026-11-16T10:05:03.856Z",
+  "generatedAt": "2026-11-16T22:27:35.626Z",
   "status": "updated",
   "market": {
     "aspi": {
@@ -461,7 +461,7 @@
     "sl20": {
       "value": 6199.84,
       "changePercent": -1.49,
-      "retrievedAt": "2026-11-16T10:05:51.091Z",
+      "retrievedAt": "2026-11-16T22:27:38.840Z",
       "sourceURL": "https://www.cse.lk/api/snpData",
       "note": "Retrieved snapshot; source may not include a reliable trade date."
     },
@@ -827,100 +827,100 @@
   },
   "forex": {
     "asOf": "2026-11-16",
-    "rate": 333.02,
+    "rate": 332.6,
     "source": "Frankfurter daily FX reference",
     "sourceURL": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=LKR"
   },
   "shares": [],
   "headlines": [
     {
+      "title": "Sri Lanka services expands at higher rate in October 2026: PMI",
+      "url": "https://economynext.com/sri-lanka-services-expands-at-higher-rate-in-october-2026-pmi-290276/",
+      "date": "2026-11-16",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka manufacturing PMI expands in October, driven by anticipated seasonal demand",
+      "url": "https://economynext.com/sri-lanka-manufacturing-pmi-expands-in-october-driven-by-anticipated-seasonal-demand-290267/",
+      "date": "2026-11-16",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka rupee closes at 332.75/85 to US dollar spot, bond yields flat",
+      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-75-85-to-us-dollar-spot-bond-yields-flat-290258/",
+      "date": "2026-11-16",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka stocks close down 1.32-pct amid profit-taking",
+      "url": "https://economynext.com/sri-lanka-stocks-close-down-1-32-pct-amid-profit-taking-290251/",
+      "date": "2026-11-16",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Softlogic Holdings Sept quarter net loss narrows 25-pct to Rs2.1bn",
+      "url": "https://economynext.com/softlogic-holdings-sept-quarter-net-loss-narrows-25-pct-to-rs2-1bn-290237/",
+      "date": "2026-11-16",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "South Korea, Sri Lanka discuss ageing populations, investment",
+      "url": "https://economynext.com/south-korea-sri-lanka-discuss-ageing-populations-investment-290233/",
+      "date": "2026-11-16",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Abans Sept quarter net profit falls 28-pct to Rs791mn on finance costs",
+      "url": "https://economynext.com/abans-sept-quarter-net-profit-falls-28-pct-to-rs791mn-on-finance-costs-290224/",
+      "date": "2026-11-16",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka taxman to issue valuation rules for crypto and gems under expanded capital gains tax",
+      "url": "https://economynext.com/sri-lanka-taxman-to-issue-valuation-rules-for-crypto-and-gems-under-expanded-capital-gains-tax-290213/",
+      "date": "2026-11-16",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka shares slides 0.36-pct, Commercial Bank and JKH drag",
+      "url": "https://economynext.com/sri-lanka-shares-slides-0-36-pct-commercial-bank-and-jkh-drag-290199/",
+      "date": "2026-11-16",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka rupee at 332.60/70 to US dollar spot, bond yields flat",
+      "url": "https://economynext.com/sri-lanka-rupee-at-332-60-70-to-us-dollar-spot-bond-yields-flat-290137/",
+      "date": "2026-11-16",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka’s new active credit card up 1-pct in September",
+      "url": "https://economynext.com/sri-lankas-new-active-credit-card-up-1-pct-in-september-290185/",
+      "date": "2026-11-15",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka’s monthly tourism revenue up 3.5-pct in October 2026",
+      "url": "https://economynext.com/sri-lankas-monthly-tourism-revenue-up-3-5-pct-in-october-2026-290181/",
+      "date": "2026-11-15",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Foreign investors dump Sri Lanka rupee bonds for fourth straight week",
+      "url": "https://economynext.com/foreign-investors-dump-sri-lanka-rupee-bonds-for-fourth-straight-week-290179/",
+      "date": "2026-11-14",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka picked for first time in Four Seasons 2028 private jet tour",
+      "url": "https://economynext.com/sri-lanka-picked-for-first-time-in-four-seasons-2028-private-jet-tour-290168/",
+      "date": "2026-11-14",
+      "publisher": "EconomyNext"
+    },
+    {
       "title": "Sri Lanka budget ignores provincial polls while stripping council powers: MP",
       "url": "https://economynext.com/sri-lanka-budget-ignores-provincial-polls-while-stripping-council-powers-mp-290141/",
       "date": "2026-11-13",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka stocks close down 0.60-pct, dragged by HNB and LOLC",
-      "url": "https://economynext.com/sri-lanka-stocks-close-down-0-60-pct-dragged-by-hnb-and-lolc-290131/",
-      "date": "2026-11-13",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka MP slams budget speech for omitting Tamil national question",
-      "url": "https://economynext.com/sri-lanka-mp-slams-budget-speech-for-omitting-tamil-national-question-290119/",
-      "date": "2026-11-13",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka sells extra Rs6.5bn Treasury bills after auction",
-      "url": "https://economynext.com/sri-lanka-sells-extra-rs6-5bn-treasury-bills-after-auction-290117/",
-      "date": "2026-11-13",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Access Engineering Sept quarter group net profit surges 200-pct to Rs4.75bn",
-      "url": "https://economynext.com/access-engineering-sept-quarter-group-net-profit-surges-200-pct-to-rs4-75bn-290102/",
-      "date": "2026-11-13",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka private sector says timely implementation of Budget 2027 key",
-      "url": "https://economynext.com/sri-lanka-private-sector-says-timely-implementation-of-budget-2027-key-290101/",
-      "date": "2026-11-13",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka stocks trend lower day after budget reading",
-      "url": "https://economynext.com/sri-lanka-stocks-trend-lower-day-after-budget-reading-290091/",
-      "date": "2026-11-13",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "LAUGFS Gas Sept quarter net loss widens 88-pct to Rs1.54bn",
-      "url": "https://economynext.com/laugfs-gas-sept-quarter-net-loss-widens-88-pct-to-rs1-54bn-290085/",
-      "date": "2026-11-13",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka rupee at 332.50/60 to US dollar spot, bond yields edge up",
-      "url": "https://economynext.com/sri-lanka-rupee-at-332-50-60-to-us-dollar-spot-bond-yields-edge-up-290062/",
-      "date": "2026-11-13",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka targets FDI with new agency and 200-pct tax write-off",
-      "url": "https://economynext.com/sri-lanka-targets-fdi-with-new-agency-and-200-pct-tax-write-off-290056/",
-      "date": "2026-11-13",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka’s 2027 budget unveils middle class tax relief, eyes record capital spending",
-      "url": "https://economynext.com/sri-lankas-2027-budget-unveils-middle-class-tax-relief-eyes-record-capital-spending-290046/",
-      "date": "2026-11-12",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka’s new budget motivates students’ investment in risky assets",
-      "url": "https://economynext.com/sri-lankas-new-budget-motivates-students-investment-in-risky-assets-290043/",
-      "date": "2026-11-12",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka rupee closes at 332.50/60 to US dollar spot, bond yields down",
-      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-50-60-to-us-dollar-spot-bond-yields-down-290037/",
-      "date": "2026-11-12",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka cuts import taxes on 3 essential foods, raises levy on sugar",
-      "url": "https://economynext.com/sri-lanka-cuts-import-taxes-on-3-essential-foods-raises-levy-on-sugar-290026/",
-      "date": "2026-11-12",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka to forego Rs.28.4bn in next year on income tax, CESS, VAT revisions",
-      "url": "https://economynext.com/sri-lanka-to-forego-rs-28-4bn-in-next-year-on-income-tax-cess-vat-revisions-290008/",
-      "date": "2026-11-12",
       "publisher": "EconomyNext"
     }
   ],
@@ -1037,8 +1037,8 @@
       "asOf": "2026-11-16",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-16T10:05:03.856Z",
-      "lastSuccessAt": "2026-11-16T10:05:03.856Z",
+      "lastAttemptAt": "2026-11-16T22:27:35.626Z",
+      "lastSuccessAt": "2026-11-16T22:27:35.626Z",
       "failures": 0,
       "note": "CSE daily closes validated and appended to dated archive"
     },
@@ -1047,8 +1047,8 @@
       "asOf": "2025",
       "ageDays": null,
       "ageYears": 1,
-      "lastAttemptAt": "2026-11-16T10:05:03.856Z",
-      "lastSuccessAt": "2026-11-16T10:05:03.856Z",
+      "lastAttemptAt": "2026-11-16T22:27:35.626Z",
+      "lastSuccessAt": "2026-11-16T22:27:35.626Z",
       "failures": 0,
       "note": "6 of 6 annual indicators refreshed"
     },
@@ -1057,8 +1057,8 @@
       "asOf": "2026-11-16",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-16T10:05:03.856Z",
-      "lastSuccessAt": "2026-11-16T10:05:03.856Z",
+      "lastAttemptAt": "2026-11-16T22:27:35.626Z",
+      "lastSuccessAt": "2026-11-16T22:27:35.626Z",
       "failures": 0,
       "note": "Provider response accepted"
     },
@@ -1067,9 +1067,9 @@
       "asOf": null,
       "ageDays": null,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-16T10:05:03.856Z",
+      "lastAttemptAt": "2026-11-16T22:27:35.626Z",
       "lastSuccessAt": null,
-      "failures": 4,
+      "failures": 5,
       "note": "HTTP 400"
     },
     "sl20": {
@@ -1077,8 +1077,8 @@
       "asOf": "2026-11-16",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-16T10:05:03.856Z",
-      "lastSuccessAt": "2026-11-16T10:05:03.856Z",
+      "lastAttemptAt": "2026-11-16T22:27:35.626Z",
+      "lastSuccessAt": "2026-11-16T22:27:35.626Z",
       "failures": 0,
       "note": "Index snapshot retrieved; official trade date not verified"
     },
@@ -1087,20 +1087,20 @@
       "asOf": null,
       "ageDays": null,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-16T10:05:03.856Z",
+      "lastAttemptAt": "2026-11-16T22:27:35.626Z",
       "lastSuccessAt": null,
-      "failures": 4,
+      "failures": 5,
       "note": "Daily turnover not reported"
     },
     "headlines": {
-      "status": "cached",
-      "asOf": "2026-11-13",
-      "ageDays": 3,
+      "status": "current",
+      "asOf": "2026-11-16",
+      "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-16T10:05:03.856Z",
-      "lastSuccessAt": "2026-11-13T19:57:54.963Z",
-      "failures": 1,
-      "note": "Publisher did not return an RSS feed"
+      "lastAttemptAt": "2026-11-16T22:27:35.626Z",
+      "lastSuccessAt": "2026-11-16T22:27:35.626Z",
+      "failures": 0,
+      "note": "Provider response accepted"
     }
   },
   "learning": {
@@ -1228,13 +1228,12 @@
   },
   "warnings": [
     "shares: HTTP 400",
-    "turnover: Daily turnover not reported",
-    "headlines: Publisher did not return an RSS feed"
+    "turnover: Daily turnover not reported"
   ],
   "disclaimer": "Educational research only. Reliable data collection does not establish predictive skill or guarantee returns. No specific security is recommended.",
   "reliability": {
-    "currentSources": 3,
-    "staleSources": 1,
+    "currentSources": 4,
+    "staleSources": 0,
     "retrievedOnlySources": 1,
     "unavailableSources": 2,
     "totalSources": 7,
@@ -1245,7 +1244,7 @@
     "edgeModels": 1,
     "modelClaim": "Limited historical statistical edge — not investment advice",
     "dataLimit": "The public CSE chart endpoint supplies roughly one trailing year. Older dates require permitted, verified historical data; no synthetic backfill.",
-    "refreshedAt": "2026-11-16T10:05:03.856Z",
+    "refreshedAt": "2026-11-16T22:27:35.626Z",
     "disclaimer": "Source health is not model accuracy or probability of market growth."
   }
 }
