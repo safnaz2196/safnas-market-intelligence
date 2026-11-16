@@ -8,19 +8,15 @@
     "forest",
     "boost"
   ],
-  "generatedAt": "2026-11-13T19:57:54.963Z",
+  "generatedAt": "2026-11-16T10:05:03.856Z",
   "status": "updated",
   "market": {
     "aspi": {
       "available": true,
-      "asOf": "2026-11-13",
-      "close": 22049.82,
-      "observations": 242,
+      "asOf": "2026-11-16",
+      "close": 21743.33,
+      "observations": 243,
       "points": [
-        {
-          "date": "2026-08-13",
-          "close": 21539
-        },
         {
           "date": "2026-08-14",
           "close": 21644.01
@@ -276,174 +272,178 @@
         {
           "date": "2026-11-13",
           "close": 22049.82
+        },
+        {
+          "date": "2026-11-16",
+          "close": 21743.33
         }
       ],
       "model5": {
         "ok": true,
-        "observations": 242,
-        "labeled": 207,
+        "observations": 243,
+        "labeled": 208,
         "horizon": 5,
-        "asOf": "2026-11-13",
-        "latest": 22049.82,
+        "asOf": "2026-11-16",
+        "latest": 21743.33,
         "ageDays": 0,
-        "direction": "Indecisive / sideways",
-        "upScore": 0.49,
+        "direction": "Upward lean",
+        "upScore": 0.6554,
         "edgeDemonstrated": true,
         "quality": "Better historical fit",
-        "model": "Random forest · shallow trees",
-        "trainingSamples": 207,
+        "model": "Fixed 50/50 model blend",
+        "trainingSamples": 208,
         "validationSamples": 34,
         "validation": {
-          "accuracy": 64.7,
-          "baselineAccuracy": 58.8,
-          "balancedAccuracy": 57.1,
-          "brier": 0.2217,
-          "baselineBrier": 0.2424
+          "accuracy": 58.8,
+          "baselineAccuracy": 55.9,
+          "balancedAccuracy": 53.3,
+          "brier": 0.2292,
+          "baselineBrier": 0.2485
         },
         "candidates": [
           {
-            "model": "forest",
-            "accuracy": 78,
-            "brier": 0.1972
-          },
-          {
             "model": "blend",
-            "accuracy": 68,
-            "brier": 0.1998
+            "accuracy": 70,
+            "brier": 0.1967
           },
           {
             "model": "patterns",
             "accuracy": 68,
-            "brier": 0.2056
+            "brier": 0.1992
+          },
+          {
+            "model": "forest",
+            "accuracy": 76,
+            "brier": 0.2012
           },
           {
             "model": "boost",
-            "accuracy": 74,
-            "brier": 0.206
+            "accuracy": 76,
+            "brier": 0.2047
           },
           {
             "model": "logit",
-            "accuracy": 68,
-            "brier": 0.2095
+            "accuracy": 70,
+            "brier": 0.2096
           }
         ],
         "features": [
           {
             "name": "RSI (14)",
-            "weight": 0.44157709922006205,
-            "magnitude": 0.44157709922006205,
-            "current": 0.7594
+            "weight": 0.4428532988178991,
+            "magnitude": 0.4428532988178991,
+            "current": 0.5943
           },
           {
             "name": "5–20 average spread",
-            "weight": 0.42766544708529625,
-            "magnitude": 0.42766544708529625,
-            "current": 0.0646
+            "weight": 0.43428886910800735,
+            "magnitude": 0.43428886910800735,
+            "current": 0.0625
           },
           {
             "name": "20-session drawdown",
-            "weight": -0.3911920985414568,
-            "magnitude": 0.3911920985414568,
-            "current": -0.0049
+            "weight": -0.401560703350356,
+            "magnitude": 0.401560703350356,
+            "current": -0.0189
           },
           {
             "name": "20-session momentum",
-            "weight": -0.3570723566183783,
-            "magnitude": 0.3570723566183783,
-            "current": 0.0884
+            "weight": -0.34935000902576857,
+            "magnitude": 0.34935000902576857,
+            "current": 0.0792
           },
           {
             "name": "5-session momentum",
-            "weight": -0.15703369770485517,
-            "magnitude": 0.15703369770485517,
-            "current": 0.0374
+            "weight": -0.14124519725409465,
+            "magnitude": 0.14124519725409465,
+            "current": 0.0098
           }
         ],
-        "lastLabelDate": "2026-11-13",
+        "lastLabelDate": "2026-11-16",
         "description": "Three learner candidates are compared on two chronological periods; a later, untouched audit period reports historical accuracy. Each split has a label-horizon gap. Scores are NOT calibrated odds or investment advice."
       },
       "model20": {
         "ok": true,
-        "observations": 242,
-        "labeled": 192,
+        "observations": 243,
+        "labeled": 193,
         "horizon": 20,
-        "asOf": "2026-11-13",
-        "latest": 22049.82,
+        "asOf": "2026-11-16",
+        "latest": 21743.33,
         "ageDays": 0,
-        "direction": "Indecisive / sideways",
-        "upScore": 0.4537,
+        "direction": "Downward lean",
+        "upScore": 0.2208,
         "edgeDemonstrated": false,
         "quality": "Limited evidence",
-        "model": "Nearest-pattern learner",
-        "trainingSamples": 192,
+        "model": "Random forest · shallow trees",
+        "trainingSamples": 193,
         "validationSamples": 31,
         "validation": {
-          "accuracy": 71,
-          "baselineAccuracy": 74.2,
-          "balancedAccuracy": 80.4,
-          "brier": 0.2223,
-          "baselineBrier": 0.2298
+          "accuracy": 61.3,
+          "baselineAccuracy": 71,
+          "balancedAccuracy": 72.7,
+          "brier": 0.2275,
+          "baselineBrier": 0.2341
         },
         "candidates": [
           {
+            "model": "forest",
+            "accuracy": 80.4,
+            "brier": 0.1727
+          },
+          {
             "model": "patterns",
             "accuracy": 76.1,
-            "brier": 0.18
+            "brier": 0.1796
           },
           {
             "model": "blend",
             "accuracy": 73.9,
-            "brier": 0.184
-          },
-          {
-            "model": "forest",
-            "accuracy": 67.4,
-            "brier": 0.1872
+            "brier": 0.1851
           },
           {
             "model": "boost",
-            "accuracy": 58.7,
-            "brier": 0.1882
+            "accuracy": 60.9,
+            "brier": 0.1893
           },
           {
             "model": "logit",
-            "accuracy": 67.4,
-            "brier": 0.1987
+            "accuracy": 69.6,
+            "brier": 0.202
           }
         ],
         "features": [
           {
             "name": "20-session drawdown",
-            "weight": -0.9488039492478588,
-            "magnitude": 0.9488039492478588,
-            "current": -0.0049
+            "weight": -0.9523032346349929,
+            "magnitude": 0.9523032346349929,
+            "current": -0.0189
           },
           {
             "name": "20-session momentum",
-            "weight": -0.5395177636666463,
-            "magnitude": 0.5395177636666463,
-            "current": 0.0884
+            "weight": -0.5396056841651325,
+            "magnitude": 0.5396056841651325,
+            "current": 0.0792
           },
           {
             "name": "Short-term acceleration",
-            "weight": 0.517848634369243,
-            "magnitude": 0.517848634369243,
-            "current": 0.0153
+            "weight": 0.5196322849828561,
+            "magnitude": 0.5196322849828561,
+            "current": -0.01
           },
           {
             "name": "20-session volatility",
-            "weight": 0.1895412955128982,
-            "magnitude": 0.1895412955128982,
-            "current": 0.0113
+            "weight": 0.18650737968224793,
+            "magnitude": 0.18650737968224793,
+            "current": 0.0118
           },
           {
             "name": "5-session momentum",
-            "weight": 0.15836506228105485,
-            "magnitude": 0.15836506228105485,
-            "current": 0.0374
+            "weight": 0.1595146882380772,
+            "magnitude": 0.1595146882380772,
+            "current": 0.0098
           }
         ],
-        "lastLabelDate": "2026-11-13",
+        "lastLabelDate": "2026-11-16",
         "description": "Three learner candidates are compared on two chronological periods; a later, untouched audit period reports historical accuracy. Each split has a label-horizon gap. Scores are NOT calibrated odds or investment advice."
       },
       "quality5": {
@@ -459,23 +459,23 @@
       "notice": null
     },
     "sl20": {
-      "value": 6293.72,
-      "changePercent": -1.13,
-      "retrievedAt": "2026-11-13T19:57:58.978Z",
+      "value": 6199.84,
+      "changePercent": -1.49,
+      "retrievedAt": "2026-11-16T10:05:51.091Z",
       "sourceURL": "https://www.cse.lk/api/snpData",
       "note": "Retrieved snapshot; source may not include a reliable trade date."
     },
     "marketSummary": null,
     "regime": {
       "available": true,
-      "asOf": "2026-11-13",
-      "observations": 242,
-      "annualizedVolatilityPct": 17.92,
-      "volatilityPercentile": 77.3,
-      "drawdown60Pct": -0.49,
-      "momentum5Pct": 3.81,
-      "momentum20Pct": 9.24,
-      "momentum60Pct": 2.9,
+      "asOf": "2026-11-16",
+      "observations": 243,
+      "annualizedVolatilityPct": 18.77,
+      "volatilityPercentile": 77.5,
+      "drawdown60Pct": -1.87,
+      "momentum5Pct": 0.98,
+      "momentum20Pct": 8.24,
+      "momentum60Pct": 1.46,
       "regime": "Sideways / mixed",
       "risk": "Moderate",
       "method": "20-session historical volatility and 60-session drawdown; descriptive, not a price forecast."
@@ -826,8 +826,8 @@
     }
   },
   "forex": {
-    "asOf": "2026-11-13",
-    "rate": 333.38,
+    "asOf": "2026-11-16",
+    "rate": 333.02,
     "source": "Frankfurter daily FX reference",
     "sourceURL": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=LKR"
   },
@@ -997,7 +997,7 @@
       "aspi": {
         "status": "available",
         "label": "CSE dated ASPI closes",
-        "asOf": "2026-11-13"
+        "asOf": "2026-11-16"
       },
       "economy": {
         "status": "available",
@@ -1007,7 +1007,7 @@
       "forex": {
         "status": "available",
         "label": "USD/LKR exchange reference",
-        "asOf": "2026-11-13"
+        "asOf": "2026-11-16"
       },
       "shares": {
         "status": "unavailable",
@@ -1034,11 +1034,11 @@
   "sourceHealth": {
     "aspi": {
       "status": "current",
-      "asOf": "2026-11-13",
+      "asOf": "2026-11-16",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-13T19:57:54.963Z",
-      "lastSuccessAt": "2026-11-13T19:57:54.963Z",
+      "lastAttemptAt": "2026-11-16T10:05:03.856Z",
+      "lastSuccessAt": "2026-11-16T10:05:03.856Z",
       "failures": 0,
       "note": "CSE daily closes validated and appended to dated archive"
     },
@@ -1047,18 +1047,18 @@
       "asOf": "2025",
       "ageDays": null,
       "ageYears": 1,
-      "lastAttemptAt": "2026-11-13T19:57:54.963Z",
-      "lastSuccessAt": "2026-11-13T19:57:54.963Z",
+      "lastAttemptAt": "2026-11-16T10:05:03.856Z",
+      "lastSuccessAt": "2026-11-16T10:05:03.856Z",
       "failures": 0,
       "note": "6 of 6 annual indicators refreshed"
     },
     "forex": {
       "status": "current",
-      "asOf": "2026-11-13",
+      "asOf": "2026-11-16",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-13T19:57:54.963Z",
-      "lastSuccessAt": "2026-11-13T19:57:54.963Z",
+      "lastAttemptAt": "2026-11-16T10:05:03.856Z",
+      "lastSuccessAt": "2026-11-16T10:05:03.856Z",
       "failures": 0,
       "note": "Provider response accepted"
     },
@@ -1067,18 +1067,18 @@
       "asOf": null,
       "ageDays": null,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-13T19:57:54.963Z",
+      "lastAttemptAt": "2026-11-16T10:05:03.856Z",
       "lastSuccessAt": null,
-      "failures": 3,
+      "failures": 4,
       "note": "HTTP 400"
     },
     "sl20": {
       "status": "retrieved_only",
-      "asOf": "2026-11-13",
+      "asOf": "2026-11-16",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-13T19:57:54.963Z",
-      "lastSuccessAt": "2026-11-13T19:57:54.963Z",
+      "lastAttemptAt": "2026-11-16T10:05:03.856Z",
+      "lastSuccessAt": "2026-11-16T10:05:03.856Z",
       "failures": 0,
       "note": "Index snapshot retrieved; official trade date not verified"
     },
@@ -1087,26 +1087,26 @@
       "asOf": null,
       "ageDays": null,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-13T19:57:54.963Z",
+      "lastAttemptAt": "2026-11-16T10:05:03.856Z",
       "lastSuccessAt": null,
-      "failures": 3,
+      "failures": 4,
       "note": "Daily turnover not reported"
     },
     "headlines": {
-      "status": "current",
+      "status": "cached",
       "asOf": "2026-11-13",
-      "ageDays": 0,
+      "ageDays": 3,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-13T19:57:54.963Z",
+      "lastAttemptAt": "2026-11-16T10:05:03.856Z",
       "lastSuccessAt": "2026-11-13T19:57:54.963Z",
-      "failures": 0,
-      "note": "Provider response accepted"
+      "failures": 1,
+      "note": "Publisher did not return an RSS feed"
     }
   },
   "learning": {
     "summary": {
-      "total": 6,
-      "pending": 6,
+      "total": 8,
+      "pending": 8,
       "resolved": 0,
       "correct": 0,
       "wrong": 0,
@@ -1190,6 +1190,32 @@
         "backtestEdge": false,
         "status": "pending",
         "caution": "Not a calibrated rise probability or investment signal"
+      },
+      {
+        "id": "ASPI:5:2026-11-16",
+        "market": "ASPI",
+        "horizon": 5,
+        "observationDate": "2026-11-16",
+        "createdAt": "2026-11-16T10:05:03.856Z",
+        "baseClose": 21743.33,
+        "signal": "Up",
+        "diagnosticScore": 0.6554,
+        "backtestEdge": true,
+        "status": "pending",
+        "caution": "Not a calibrated rise probability or investment signal"
+      },
+      {
+        "id": "ASPI:20:2026-11-16",
+        "market": "ASPI",
+        "horizon": 20,
+        "observationDate": "2026-11-16",
+        "createdAt": "2026-11-16T10:05:03.856Z",
+        "baseClose": 21743.33,
+        "signal": "Down",
+        "diagnosticScore": 0.2208,
+        "backtestEdge": false,
+        "status": "pending",
+        "caution": "Not a calibrated rise probability or investment signal"
       }
     ]
   },
@@ -1202,23 +1228,24 @@
   },
   "warnings": [
     "shares: HTTP 400",
-    "turnover: Daily turnover not reported"
+    "turnover: Daily turnover not reported",
+    "headlines: Publisher did not return an RSS feed"
   ],
   "disclaimer": "Educational research only. Reliable data collection does not establish predictive skill or guarantee returns. No specific security is recommended.",
   "reliability": {
-    "currentSources": 4,
-    "staleSources": 0,
+    "currentSources": 3,
+    "staleSources": 1,
     "retrievedOnlySources": 1,
     "unavailableSources": 2,
     "totalSources": 7,
-    "marketAsOf": "2026-11-13",
-    "marketSessionCount": 242,
+    "marketAsOf": "2026-11-16",
+    "marketSessionCount": 243,
     "auditedModels": 2,
     "modelCount": 2,
     "edgeModels": 1,
     "modelClaim": "Limited historical statistical edge — not investment advice",
     "dataLimit": "The public CSE chart endpoint supplies roughly one trailing year. Older dates require permitted, verified historical data; no synthetic backfill.",
-    "refreshedAt": "2026-11-13T19:57:54.963Z",
+    "refreshedAt": "2026-11-16T10:05:03.856Z",
     "disclaimer": "Source health is not model accuracy or probability of market growth."
   }
 }
