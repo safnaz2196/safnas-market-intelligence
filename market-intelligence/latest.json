@@ -8,7 +8,7 @@
     "forest",
     "boost"
   ],
-  "generatedAt": "2026-11-18T10:34:52.728Z",
+  "generatedAt": "2026-11-18T20:51:21.162Z",
   "status": "updated",
   "market": {
     "aspi": {
@@ -461,7 +461,7 @@
     "sl20": {
       "value": 6096.97,
       "changePercent": -1.41,
-      "retrievedAt": "2026-11-18T10:34:55.627Z",
+      "retrievedAt": "2026-11-18T20:51:24.505Z",
       "sourceURL": "https://www.cse.lk/api/snpData",
       "note": "Retrieved snapshot; source may not include a reliable trade date."
     },
@@ -827,12 +827,30 @@
   },
   "forex": {
     "asOf": "2026-11-18",
-    "rate": 332.67,
+    "rate": 332.47,
     "source": "Frankfurter daily FX reference",
     "sourceURL": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=LKR"
   },
   "shares": [],
   "headlines": [
+    {
+      "title": "Sri Lanka Customs achieves over 59-pct of November 2026 target in 16 days",
+      "url": "https://economynext.com/sri-lanka-customs-achieves-over-59-pct-of-november-2026-target-in-16-days-290534/",
+      "date": "2026-11-18",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka rupee closes at 332.73/80 to US dollar spot, bond yields flat",
+      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-73-80-to-us-dollar-spot-bond-yields-flat-290530/",
+      "date": "2026-11-18",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka stocks close down 1.37-pct, dragged by Commercial Bank, HNB",
+      "url": "https://economynext.com/sri-lanka-stocks-close-down-1-37-pct-dragged-by-commercial-bank-hnb-290526/",
+      "date": "2026-11-18",
+      "publisher": "EconomyNext"
+    },
     {
       "title": "Sri Lanka Treasury bill yields steady, less bills sold",
       "url": "https://economynext.com/sri-lanka-treasury-bill-yields-steady-less-bills-sold-290521/",
@@ -902,24 +920,6 @@
     {
       "title": "UAE-based firms win US$12mn worth SriLankan jet fuel supply contracts",
       "url": "https://economynext.com/uae-based-firms-win-us12mn-worth-srilankan-jet-fuel-supply-contracts-290398/",
-      "date": "2026-11-17",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Seven new envoys present credentials to Sri Lanka President",
-      "url": "https://economynext.com/seven-new-envoys-present-credentials-to-sri-lanka-president-290406/",
-      "date": "2026-11-17",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka’s CSE penalizes Laugfs Gas for annual report delay",
-      "url": "https://economynext.com/sri-lankas-cse-penalizes-laugfs-gas-for-annual-report-delay-290380/",
-      "date": "2026-11-17",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka stocks slide 0.27-pct on profit-taking",
-      "url": "https://economynext.com/sri-lanka-stocks-slide-0-27-pct-on-profit-taking-290378/",
       "date": "2026-11-17",
       "publisher": "EconomyNext"
     }
@@ -1037,8 +1037,8 @@
       "asOf": "2026-11-18",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-18T10:34:52.728Z",
-      "lastSuccessAt": "2026-11-18T10:34:52.728Z",
+      "lastAttemptAt": "2026-11-18T20:51:21.162Z",
+      "lastSuccessAt": "2026-11-18T20:51:21.162Z",
       "failures": 0,
       "note": "CSE daily closes validated and appended to dated archive"
     },
@@ -1047,8 +1047,8 @@
       "asOf": "2025",
       "ageDays": null,
       "ageYears": 1,
-      "lastAttemptAt": "2026-11-18T10:34:52.728Z",
-      "lastSuccessAt": "2026-11-18T10:34:52.728Z",
+      "lastAttemptAt": "2026-11-18T20:51:21.162Z",
+      "lastSuccessAt": "2026-11-18T20:51:21.162Z",
       "failures": 0,
       "note": "6 of 6 annual indicators refreshed"
     },
@@ -1057,8 +1057,8 @@
       "asOf": "2026-11-18",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-18T10:34:52.728Z",
-      "lastSuccessAt": "2026-11-18T10:34:52.728Z",
+      "lastAttemptAt": "2026-11-18T20:51:21.162Z",
+      "lastSuccessAt": "2026-11-18T20:51:21.162Z",
       "failures": 0,
       "note": "Provider response accepted"
     },
@@ -1067,9 +1067,9 @@
       "asOf": null,
       "ageDays": null,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-18T10:34:52.728Z",
+      "lastAttemptAt": "2026-11-18T20:51:21.162Z",
       "lastSuccessAt": null,
-      "failures": 8,
+      "failures": 9,
       "note": "HTTP 400"
     },
     "sl20": {
@@ -1077,8 +1077,8 @@
       "asOf": "2026-11-18",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-18T10:34:52.728Z",
-      "lastSuccessAt": "2026-11-18T10:34:52.728Z",
+      "lastAttemptAt": "2026-11-18T20:51:21.162Z",
+      "lastSuccessAt": "2026-11-18T20:51:21.162Z",
       "failures": 0,
       "note": "Index snapshot retrieved; official trade date not verified"
     },
@@ -1087,9 +1087,9 @@
       "asOf": null,
       "ageDays": null,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-18T10:34:52.728Z",
+      "lastAttemptAt": "2026-11-18T20:51:21.162Z",
       "lastSuccessAt": null,
-      "failures": 8,
+      "failures": 9,
       "note": "Daily turnover not reported"
     },
     "headlines": {
@@ -1097,8 +1097,8 @@
       "asOf": "2026-11-18",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-18T10:34:52.728Z",
-      "lastSuccessAt": "2026-11-18T10:34:52.728Z",
+      "lastAttemptAt": "2026-11-18T20:51:21.162Z",
+      "lastSuccessAt": "2026-11-18T20:51:21.162Z",
       "failures": 0,
       "note": "Provider response accepted"
     }
@@ -1300,7 +1300,7 @@
     "edgeModels": 0,
     "modelClaim": "No verified forecasting edge",
     "dataLimit": "The public CSE chart endpoint supplies roughly one trailing year. Older dates require permitted, verified historical data; no synthetic backfill.",
-    "refreshedAt": "2026-11-18T10:34:52.728Z",
+    "refreshedAt": "2026-11-18T20:51:21.162Z",
     "disclaimer": "Source health is not model accuracy or probability of market growth."
   }
 }
