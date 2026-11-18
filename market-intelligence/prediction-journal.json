@@ -10,8 +10,12 @@
       "signal": "Indecisive",
       "diagnosticScore": 0.5691,
       "backtestEdge": false,
-      "status": "pending",
-      "caution": "Not a calibrated rise probability or investment signal"
+      "status": "resolved",
+      "caution": "Not a calibrated rise probability or investment signal",
+      "resolvedOn": "2026-11-18",
+      "realizedReturnPct": -2.884,
+      "actualDirection": "Down",
+      "directionCorrect": null
     },
     {
       "id": "ASPI:20:2026-11-11",
@@ -129,11 +133,37 @@
       "backtestEdge": false,
       "status": "pending",
       "caution": "Not a calibrated rise probability or investment signal"
+    },
+    {
+      "id": "ASPI:5:2026-11-18",
+      "market": "ASPI",
+      "horizon": 5,
+      "observationDate": "2026-11-18",
+      "createdAt": "2026-11-18T10:34:52.728Z",
+      "baseClose": 21402.76,
+      "signal": "Up",
+      "diagnosticScore": 0.5971,
+      "backtestEdge": false,
+      "status": "pending",
+      "caution": "Not a calibrated rise probability or investment signal"
+    },
+    {
+      "id": "ASPI:20:2026-11-18",
+      "market": "ASPI",
+      "horizon": 20,
+      "observationDate": "2026-11-18",
+      "createdAt": "2026-11-18T10:34:52.728Z",
+      "baseClose": 21402.76,
+      "signal": "Down",
+      "diagnosticScore": 0.2182,
+      "backtestEdge": false,
+      "status": "pending",
+      "caution": "Not a calibrated rise probability or investment signal"
     }
   ],
   "summary": {
-    "total": 10,
-    "pending": 10,
+    "total": 12,
+    "pending": 11,
     "resolved": 0,
     "correct": 0,
     "wrong": 0,
