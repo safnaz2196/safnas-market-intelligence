@@ -1,11 +1,11 @@
 {
   "aspi": {
     "status": "current",
-    "asOf": "2026-11-18",
+    "asOf": "2026-11-19",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-18T20:51:21.162Z",
-    "lastSuccessAt": "2026-11-18T20:51:21.162Z",
+    "lastAttemptAt": "2026-11-19T10:40:27.091Z",
+    "lastSuccessAt": "2026-11-19T10:40:27.091Z",
     "failures": 0,
     "note": "CSE daily closes validated and appended to dated archive"
   },
@@ -14,18 +14,18 @@
     "asOf": "2025",
     "ageDays": null,
     "ageYears": 1,
-    "lastAttemptAt": "2026-11-18T20:51:21.162Z",
-    "lastSuccessAt": "2026-11-18T20:51:21.162Z",
+    "lastAttemptAt": "2026-11-19T10:40:27.091Z",
+    "lastSuccessAt": "2026-11-19T10:40:27.091Z",
     "failures": 0,
     "note": "6 of 6 annual indicators refreshed"
   },
   "forex": {
     "status": "current",
-    "asOf": "2026-11-18",
+    "asOf": "2026-11-19",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-18T20:51:21.162Z",
-    "lastSuccessAt": "2026-11-18T20:51:21.162Z",
+    "lastAttemptAt": "2026-11-19T10:40:27.091Z",
+    "lastSuccessAt": "2026-11-19T10:40:27.091Z",
     "failures": 0,
     "note": "Provider response accepted"
   },
@@ -34,18 +34,18 @@
     "asOf": null,
     "ageDays": null,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-18T20:51:21.162Z",
+    "lastAttemptAt": "2026-11-19T10:40:27.091Z",
     "lastSuccessAt": null,
-    "failures": 9,
+    "failures": 10,
     "note": "HTTP 400"
   },
   "sl20": {
     "status": "retrieved_only",
-    "asOf": "2026-11-18",
+    "asOf": "2026-11-19",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-18T20:51:21.162Z",
-    "lastSuccessAt": "2026-11-18T20:51:21.162Z",
+    "lastAttemptAt": "2026-11-19T10:40:27.091Z",
+    "lastSuccessAt": "2026-11-19T10:40:27.091Z",
     "failures": 0,
     "note": "Index snapshot retrieved; official trade date not verified"
   },
@@ -54,18 +54,18 @@
     "asOf": null,
     "ageDays": null,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-18T20:51:21.162Z",
+    "lastAttemptAt": "2026-11-19T10:40:27.091Z",
     "lastSuccessAt": null,
-    "failures": 9,
+    "failures": 10,
     "note": "Daily turnover not reported"
   },
   "headlines": {
     "status": "current",
-    "asOf": "2026-11-18",
+    "asOf": "2026-11-19",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-18T20:51:21.162Z",
-    "lastSuccessAt": "2026-11-18T20:51:21.162Z",
+    "lastAttemptAt": "2026-11-19T10:40:27.091Z",
+    "lastSuccessAt": "2026-11-19T10:40:27.091Z",
     "failures": 0,
     "note": "Provider response accepted"
   }
