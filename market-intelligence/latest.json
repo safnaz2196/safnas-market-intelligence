@@ -8,7 +8,7 @@
     "forest",
     "boost"
   ],
-  "generatedAt": "2026-11-20T10:21:40.216Z",
+  "generatedAt": "2026-11-20T20:40:02.940Z",
   "status": "updated",
   "market": {
     "aspi": {
@@ -461,7 +461,7 @@
     "sl20": {
       "value": 6075.28,
       "changePercent": -1.09,
-      "retrievedAt": "2026-11-20T10:21:44.486Z",
+      "retrievedAt": "2026-11-20T20:40:07.097Z",
       "sourceURL": "https://www.cse.lk/api/snpData",
       "note": "Retrieved snapshot; source may not include a reliable trade date."
     },
@@ -827,12 +827,30 @@
   },
   "forex": {
     "asOf": "2026-11-20",
-    "rate": 332.4,
+    "rate": 332.68,
     "source": "Frankfurter daily FX reference",
     "sourceURL": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=LKR"
   },
   "shares": [],
   "headlines": [
+    {
+      "title": "Sri Lanka central bank has no credit target, backs borrowing within repayment capacity: Governor",
+      "url": "https://economynext.com/sri-lanka-central-bank-has-no-credit-target-backs-borrowing-within-repayment-capacity-governor-290821/",
+      "date": "2026-11-20",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka stocks close down 0.80-pct after rate hike",
+      "url": "https://economynext.com/sri-lanka-stocks-close-down-0-80-pct-after-rate-hike-290851/",
+      "date": "2026-11-20",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka rupee closes at 332.60/65 to US dollar spot, bond yields rise",
+      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-60-65-to-us-dollar-spot-bond-yields-rise-290850/",
+      "date": "2026-11-20",
+      "publisher": "EconomyNext"
+    },
     {
       "title": "Sri Lanka market rates rose after May hike: Central bank",
       "url": "https://economynext.com/sri-lanka-market-rates-rose-after-may-hike-central-bank-290798/",
@@ -903,24 +921,6 @@
       "title": "Sri Lanka Central Bank raises key policy rate, SRR citing high inflation, credit growth",
       "url": "https://economynext.com/sri-lanka-central-bank-raises-key-policy-rate-srr-citing-high-inflation-credit-growth-290692/",
       "date": "2026-11-20",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka’s IRD surpasses 2026 revenue target after Customs",
-      "url": "https://economynext.com/sri-lankas-ird-surpasses-2026-revenue-target-after-customs-290686/",
-      "date": "2026-11-19",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka rupee closes at 332.75/85 to US dollar spot, bond yields flat",
-      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-75-85-to-us-dollar-spot-bond-yields-flat-290680/",
-      "date": "2026-11-19",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka MP defends stalled Rs100mn pet cemetery promised in last budget",
-      "url": "https://economynext.com/sri-lanka-mp-defends-stalled-rs100mn-pet-cemetery-promised-in-last-budget-290670/",
-      "date": "2026-11-19",
       "publisher": "EconomyNext"
     }
   ],
@@ -1037,8 +1037,8 @@
       "asOf": "2026-11-20",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-20T10:21:40.216Z",
-      "lastSuccessAt": "2026-11-20T10:21:40.216Z",
+      "lastAttemptAt": "2026-11-20T20:40:02.940Z",
+      "lastSuccessAt": "2026-11-20T20:40:02.940Z",
       "failures": 0,
       "note": "CSE daily closes validated and appended to dated archive"
     },
@@ -1047,8 +1047,8 @@
       "asOf": "2025",
       "ageDays": null,
       "ageYears": 1,
-      "lastAttemptAt": "2026-11-20T10:21:40.216Z",
-      "lastSuccessAt": "2026-11-20T10:21:40.216Z",
+      "lastAttemptAt": "2026-11-20T20:40:02.940Z",
+      "lastSuccessAt": "2026-11-20T20:40:02.940Z",
       "failures": 0,
       "note": "6 of 6 annual indicators refreshed"
     },
@@ -1057,8 +1057,8 @@
       "asOf": "2026-11-20",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-20T10:21:40.216Z",
-      "lastSuccessAt": "2026-11-20T10:21:40.216Z",
+      "lastAttemptAt": "2026-11-20T20:40:02.940Z",
+      "lastSuccessAt": "2026-11-20T20:40:02.940Z",
       "failures": 0,
       "note": "Provider response accepted"
     },
@@ -1067,9 +1067,9 @@
       "asOf": null,
       "ageDays": null,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-20T10:21:40.216Z",
+      "lastAttemptAt": "2026-11-20T20:40:02.940Z",
       "lastSuccessAt": null,
-      "failures": 12,
+      "failures": 13,
       "note": "HTTP 400"
     },
     "sl20": {
@@ -1077,8 +1077,8 @@
       "asOf": "2026-11-20",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-20T10:21:40.216Z",
-      "lastSuccessAt": "2026-11-20T10:21:40.216Z",
+      "lastAttemptAt": "2026-11-20T20:40:02.940Z",
+      "lastSuccessAt": "2026-11-20T20:40:02.940Z",
       "failures": 0,
       "note": "Index snapshot retrieved; official trade date not verified"
     },
@@ -1087,9 +1087,9 @@
       "asOf": null,
       "ageDays": null,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-20T10:21:40.216Z",
+      "lastAttemptAt": "2026-11-20T20:40:02.940Z",
       "lastSuccessAt": null,
-      "failures": 12,
+      "failures": 13,
       "note": "Daily turnover not reported"
     },
     "headlines": {
@@ -1097,8 +1097,8 @@
       "asOf": "2026-11-20",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-20T10:21:40.216Z",
-      "lastSuccessAt": "2026-11-20T10:21:40.216Z",
+      "lastAttemptAt": "2026-11-20T20:40:02.940Z",
+      "lastSuccessAt": "2026-11-20T20:40:02.940Z",
       "failures": 0,
       "note": "Provider response accepted"
     }
@@ -1300,7 +1300,7 @@
     "edgeModels": 1,
     "modelClaim": "Limited historical statistical edge — not investment advice",
     "dataLimit": "The public CSE chart endpoint supplies roughly one trailing year. Older dates require permitted, verified historical data; no synthetic backfill.",
-    "refreshedAt": "2026-11-20T10:21:40.216Z",
+    "refreshedAt": "2026-11-20T20:40:02.940Z",
     "disclaimer": "Source health is not model accuracy or probability of market growth."
   }
 }
