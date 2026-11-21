@@ -9,6 +9,7 @@ const advanced=require('./gold-advanced-v56.cjs');
 const journal=require('./gold-forecast-journal-v56.cjs'); // legacy journal migration
 const ledger=require('./gold-prediction-ledger-v57.cjs');
 const ensemble=require('./gold-ensemble-v58.cjs');
+const professional=require('./gold-professional-v59.cjs');
 const OZ=31.1034768;
 const HISTORY_URL='https://xaus.com/api/v1/history';
 const BACKUP_HISTORY='https://standardbullion.com/api/v1/market/history?metal=XAU&range=1y';
@@ -344,8 +345,22 @@ async function main(){
    adaptedPositivePct:locked.adaptedPositivePct??null,
    learningApplied:!!locked.learningApplied,createdAt:locked.createdAt};
  }
- report.advanced.version='5.8';
+ let professionalReport=null;
+ try {
+  professionalReport=professional.build({history:rows,adaptive,ledger:ledgerReport,
+   fx:recentFx?fx:null,macro,cot,goldSpot:spot},now);
+ }catch(e){
+  failures.push('Professional v5.9 audit unavailable: '+String(e.message).slice(0,130));
+  professionalReport={schemaVersion:1,version:'5.9',status:'unavailable',generatedAt:now.toISOString(),
+   horizons:[],reason:'Verified research dependencies were unavailable; no invented model forecasts.'};
+ }
+ report.advanced.version='5.9';
  report.advanced.adaptive=adaptive;
+ report.advanced.professional={
+  version:'5.9',generatedAt:professionalReport.generatedAt,status:professionalReport.status,
+  summary:professionalReport.summary||null,
+  url:'https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-professional-v59.json'
+ };
  report.advanced.forecastJournal=ledgerReport.summary;
  report.advanced.predictionLearning=ledgerReport.learning;
  report.advanced.predictionHistory={version:'5.7',generatedAt:ledgerReport.generatedAt,
@@ -364,8 +379,10 @@ async function main(){
    reason:failures.find(x=>x.startsWith('Adaptive multi-model'))||'Historical evidence was not sufficient',
    horizons:[],disclaimers:['No data-driven forecast is available. Do not invent a price target.']
  },null,2)+'\n','utf8');
+ const proPath=path.join(folder,'gold-professional-v59.json');
+ fs.writeFileSync(proPath,JSON.stringify(professionalReport,null,2)+'\n','utf8');
  console.log(JSON.stringify({outlook:'gold-v5.4',status:report.status,history:out.historyCount,lastDate:out.asOf,
-  advancedVersion:'5.8',ensembleModels:adaptive?.horizons?.[0]?.models?.length||0,cotAvailable:cot.available,technicalRegime:technical.regime,
+  advancedVersion:'5.9',professionalStatus:professionalReport.status,ensembleModels:adaptive?.horizons?.[0]?.models?.length||0,cotAvailable:cot.available,technicalRegime:technical.regime,
   predictionRecords:ledgerReport.summary.recorded,predictionSettled:ledgerReport.summary.resolved,
   direction7:out.horizons.find(x=>x.days===7)?.direction,validation7:out.horizons.find(x=>x.days===7)?.validation,
   current:report.current.usdOz,macro:macro.filter(x=>x.available).length,warnings:failures.length}));
