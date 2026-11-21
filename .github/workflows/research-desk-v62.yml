@@ -1,0 +1,52 @@
+name: Safnas Finance — v6.2 Autonomous Research Desk
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'collector/research-desk-v62.cjs'
+      - 'collector/research-desk-v62.test.cjs'
+      - '.github/workflows/research-desk-v62.yml'
+  schedule:
+    - cron: '31 1,7,13,19 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: safnas-public-research-desk-v62
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test honest research memory and data provenance
+        run: node --test collector/research-desk-v62.test.cjs
+      - name: Compile research from already published public sources
+        run: node collector/research-desk-v62.cjs
+      - name: Publish with safe concurrency retries
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            if [ "$attempt" -gt 1 ]; then
+              git fetch origin main
+              git reset --hard origin/main
+              node collector/research-desk-v62.cjs
+            fi
+            git add market-intelligence/research-desk-v62.json
+            if git diff --staged --quiet; then
+              echo "Published research has not changed."
+              exit 0
+            fi
+            git commit -m "Refresh source-grounded Research Desk and public observation changes"
+            if git push origin HEAD:main; then
+              echo "Research Desk v6.2 published."
+              exit 0
+            fi
+          done
+          echo "Safe publish failed after retries" >&2
+          exit 1
