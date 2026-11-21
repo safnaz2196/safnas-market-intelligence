@@ -1,13 +1,5 @@
-name: Safnas Finance — v5 Autonomous CSE Research
+name: Safnas Finance — CSE Market and Economy Archive
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'collector/research-v5-publish.cjs'
-      - 'collector/company-evidence-v5.cjs'
-      - 'collector/company-evidence-v5.test.cjs'
-      - 'collector/research-v5-publish.test.cjs'
-      - '.github/workflows/sri-lanka-intelligence.yml'
   schedule:
     # Three best-effort checks per weekday in Sri Lanka local time.
     - cron: '37 2,7,12 * * 1-5'
@@ -33,17 +25,13 @@ jobs:
         run: node --test collector/*.test.cjs
       - name: Collect public market observations (existing v4 archive preserved)
         run: node collector/update.cjs
-      - name: Collect official CSE last trades and company filings (16 tracked tickers)
-        run: node collector/company-evidence-v5.cjs
-      - name: Publish source-grounded autonomous v5 research
-        run: node collector/research-v5-publish.cjs
       - name: Publish research audit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add market-intelligence/
           if ! git diff --staged --quiet; then
-            git commit -m "Refresh autonomous v5 CSE research and model audits"
+            git commit -m "Refresh source-verified CSE market archive"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
