@@ -6,7 +6,8 @@
 const fs=require('node:fs');
 const path=require('node:path');
 const advanced=require('./gold-advanced-v56.cjs');
-const journal=require('./gold-forecast-journal-v56.cjs');
+const journal=require('./gold-forecast-journal-v56.cjs'); // legacy journal migration
+const ledger=require('./gold-prediction-ledger-v57.cjs');
 const OZ=31.1034768;
 const HISTORY_URL='https://xaus.com/api/v1/history';
 const BACKUP_HISTORY='https://standardbullion.com/api/v1/market/history?metal=XAU&range=1y';
@@ -316,16 +317,46 @@ async function main(){
     ...(recentFx?[{name:'USD FX rates',url:FX_URL}]:[]),...macro.map(x=>({name:x.name,url:x.source}))],
   alertsNotice:'Directional outlook is not a trading instruction. Jewellery charges and retail margins excluded.',
   warnings:failures.slice(0,8)};
- const journalPath=path.join(__dirname,'..','market-intelligence','gold-forecast-journal-v56.json');
- let previousJournal={};
- try{if(fs.existsSync(journalPath))previousJournal=JSON.parse(fs.readFileSync(journalPath,'utf8'));}catch(e){failures.push('Earlier forecast journal unreadable; previous outcomes withheld');}
- const journalReport=journal.updateJournal(previousJournal,rows,[...out.horizons,...extended],now);
- report.advanced.forecastJournal=journalReport.summary;
- fs.writeFileSync(journalPath,JSON.stringify(journalReport,null,2)+'\n','utf8');
+ const reportDirectory=path.join(__dirname,'..','market-intelligence');
+ const ledgerPath=path.join(reportDirectory,'gold-prediction-history-v57.json');
+ const legacyPath=path.join(reportDirectory,'gold-forecast-journal-v56.json');
+ let previousLedger=null,legacyForecasts=null;
+ if(fs.existsSync(ledgerPath)){
+  try{previousLedger=JSON.parse(fs.readFileSync(ledgerPath,'utf8'));}
+  catch(e){throw new Error('Stored prediction ledger cannot be parsed; refusing to overwrite locked history.');}
+ }
+ if(!previousLedger&&fs.existsSync(legacyPath)){
+  try{legacyForecasts=JSON.parse(fs.readFileSync(legacyPath,'utf8'));}
+  catch(e){throw new Error('Previous prediction journal cannot be parsed; refusing to erase historical forecasts.');}
+ }
+ const ledgerReport=ledger.updateLedger({previous:previousLedger,legacy:legacyForecasts,history:rows,
+  horizons:[...out.horizons,...extended],now,modelVersion:'5.7-analogue-technical',
+  sourceUrl:historySource});
+ // Display the locked forecast decision, without reinterpreting the historical analogues
+ // as calibrated probabilities. Adaptation is applied only after a held-out skill check.
+ for(const h of [...report.horizons,...report.advanced.extraHorizons]){
+  const locked=ledgerReport.entries.find(e=>e.originDate===out.asOf&&e.days===h.days);
+  if(locked)h.lockedForecast={direction:locked.predictedDirection,
+   originallySuggestedDirection:locked.rawDirection||locked.predictedDirection,
+   adaptedPositivePct:locked.adaptedPositivePct??null,
+   learningApplied:!!locked.learningApplied,createdAt:locked.createdAt};
+ }
+ report.advanced.version='5.7';
+ report.advanced.forecastJournal=ledgerReport.summary;
+ report.advanced.predictionLearning=ledgerReport.learning;
+ report.advanced.predictionHistory={version:'5.7',generatedAt:ledgerReport.generatedAt,
+  url:'https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-prediction-history-v57.json',
+  recent:ledgerReport.entries.slice(-12).reverse()};
+ // To protect the full historical record, write the ledger before its summary.
+ // If the subsequent GitHub commit fails, the workflow retries by rereading main.
+ const ledgerTemp=ledgerPath+'.tmp';
+ fs.writeFileSync(ledgerTemp,JSON.stringify(ledgerReport,null,2)+'\n','utf8');
+ fs.renameSync(ledgerTemp,ledgerPath);
  const folder=path.join(__dirname,'..','market-intelligence'),dest=path.join(folder,'gold-outlook-v54.json');
  fs.writeFileSync(dest,JSON.stringify(report,null,2)+'\n','utf8');
  console.log(JSON.stringify({outlook:'gold-v5.4',status:report.status,history:out.historyCount,lastDate:out.asOf,
-  advancedVersion:'5.6',cotAvailable:cot.available,technicalRegime:technical.regime,
+  advancedVersion:'5.7',cotAvailable:cot.available,technicalRegime:technical.regime,
+  predictionRecords:ledgerReport.summary.recorded,predictionSettled:ledgerReport.summary.resolved,
   direction7:out.horizons.find(x=>x.days===7)?.direction,validation7:out.horizons.find(x=>x.days===7)?.validation,
   current:report.current.usdOz,macro:macro.filter(x=>x.available).length,warnings:failures.length}));
 }
