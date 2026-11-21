@@ -1,0 +1,53 @@
+name: Safnas Finance — Free Gold Outlook Research
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'collector/gold-outlook-v54.cjs'
+      - 'collector/gold-outlook-v54.test.cjs'
+      - '.github/workflows/gold-outlook-v54.yml'
+  schedule:
+    # Refresh evidence four times daily; GitHub scheduled jobs are best effort.
+    - cron: '15 1,7,13,19 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: safnas-gold-outlook-v54
+  cancel-in-progress: false
+jobs:
+  gold_research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify models and scientific cautions
+        run: node --test collector/gold-outlook-v54.test.cjs
+      - name: Read fresh evidence and create research
+        run: node collector/gold-outlook-v54.cjs
+      - name: Publish report (retry safely after concurrent market collector updates)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            if [ "$attempt" -gt 1 ]; then
+              git fetch origin main
+              git reset --hard origin/main
+              node collector/gold-outlook-v54.cjs
+            fi
+            git add market-intelligence/gold-outlook-v54.json
+            if git diff --cached --quiet; then
+              echo "No new gold research to publish."
+              exit 0
+            fi
+            git commit -m "Refresh evidence-based gold research and 3/7/14/30 day scenarios"
+            if git push origin HEAD:main; then
+              echo "Gold research published"
+              exit 0
+            fi
+          done
+          echo "Unable to publish new research without conflicts" >&2
+          exit 1
