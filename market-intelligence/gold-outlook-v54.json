@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "version": "5.4",
-  "generatedAt": "2026-11-21T08:19:09.919Z",
+  "generatedAt": "2026-11-21T08:20:12.623Z",
   "status": "observed",
   "dateSemantics": "Approximate calendar windows, never a guaranteed date",
   "current": {
     "usdOz": 3539,
-    "asOf": "2026-11-21T08:19:07Z",
+    "asOf": "2026-11-21T08:20:07Z",
     "source": "https://api.gold-api.com/price/XAU",
     "historical": false,
     "fx": {
@@ -930,7 +930,53 @@
         "source": "https://xaus.com/api/v1/history"
       }
     ],
-    "validationNote": "CFTC reports are weekly and lagged. All indicators and historical analogues are observations, not an independently proven prediction."
+    "validationNote": "CFTC reports are weekly and lagged. All indicators and historical analogues are observations, not an independently proven prediction.",
+    "forecastJournal": {
+      "recorded": 6,
+      "pending": 6,
+      "resolved": 0,
+      "modelOrigin": "Forward-only daily journal. No historic outcomes are treated as predictions.",
+      "overallDirectionHitRate": null,
+      "byHorizon": [
+        {
+          "days": 1,
+          "resolved": 0,
+          "pending": 1,
+          "hitRate": null
+        },
+        {
+          "days": 3,
+          "resolved": 0,
+          "pending": 1,
+          "hitRate": null
+        },
+        {
+          "days": 7,
+          "resolved": 0,
+          "pending": 1,
+          "hitRate": null
+        },
+        {
+          "days": 14,
+          "resolved": 0,
+          "pending": 1,
+          "hitRate": null
+        },
+        {
+          "days": 30,
+          "resolved": 0,
+          "pending": 1,
+          "hitRate": null
+        },
+        {
+          "days": 90,
+          "resolved": 0,
+          "pending": 1,
+          "hitRate": null
+        }
+      ],
+      "warning": "Observed after-the-fact performance may be too sparse to establish predictive skill. Historical analogue backtests are separate."
+    }
   },
   "deepResearch": {
     "kind": "evidence_based_research_not_live_prediction",
@@ -984,7 +1030,7 @@
         "pressure": "up",
         "weight": 0.55,
         "explanation": "Intraday spot versus the most recent dated close, which may reflect different quote conventions.",
-        "asOf": "2026-11-21T08:19:07Z",
+        "asOf": "2026-11-21T08:20:07Z",
         "source": "https://api.gold-api.com/price/XAU",
         "rawSign": 1
       }
@@ -1019,7 +1065,7 @@
         "title": "Latest spot vs last historical close",
         "evidence": "+0.671%",
         "explanation": "Intraday spot versus the most recent dated close, which may reflect different quote conventions.",
-        "asOf": "2026-11-21T08:19:07Z",
+        "asOf": "2026-11-21T08:20:07Z",
         "source": "https://api.gold-api.com/price/XAU"
       },
       {
@@ -1106,7 +1152,7 @@
       "A 3/7/14/30-day window is a rough calendar period, not a precise event date.",
       "SAR/LKR outcomes also depend on currency rates; spot and local jewellery prices can differ."
     ],
-    "evaluatedAt": "2026-11-21T08:19:09.919Z"
+    "evaluatedAt": "2026-11-21T08:20:12.623Z"
   },
   "overallCaution": "Forecasts are statistical scenarios based on past observations, not predictions of an exact price or date. If model calibration does not outperform a historical baseline, no predictive edge is claimed. FX changes can alter SAR and LKR outcomes.",
   "sources": [
