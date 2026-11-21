@@ -15,6 +15,40 @@ function ageHours(ts,now){
 function score(p,actual){
  return ['rise','fall','range'].reduce((sum,k)=>sum+(Number(p[k])/100-(k===actual?1:0))**2,0);
 }
+/** Distinct fifth model: EWMA daily-return drift + volatility.
+ * No kNN neighbors, no external ML package, no parameter fitting to a future label.
+ * This simple lognormal model is a RESEARCH candidate, not a true market probability.
+ */
+function normalCdf(z){
+ const abs=Math.abs(z),t=1/(1+.2316419*abs);
+ const density=.3989422804014327*Math.exp(-.5*abs*abs);
+ const tail=density*(.319381530*t-.356563782*t*t+1.781477937*t*t*t-
+  1.821255978*t*t*t*t+1.330274429*t*t*t*t*t);
+ return z>=0?1-tail:tail;
+}
+function ewmaForecast(prices,at,h){
+ if(at<180||h<=0)return null;
+ const daily=[];
+ for(let i=at-179;i<=at;i++)daily.push(Math.log(prices[i]/prices[i-1]));
+ if(!daily.every(Number.isFinite))return null;
+ const last=daily.slice(-60);
+ let weighted=0,total=0;
+ for(let i=0;i<last.length;i++){const w=Math.pow(.95,last.length-1-i);weighted+=last[i]*w;total+=w;}
+ const mu=weighted/total,sd=Math.sqrt(last.reduce((z,v)=>z+(v-mu)**2,0)/(last.length-1));
+ const sigma=Math.max(.0005,sd)*Math.sqrt(h),mean=mu*h;
+ const thr=ensemble.threshold(h)/100;
+ const up=100*(1-normalCdf((Math.log(1+thr)-mean)/sigma));
+ const down=100*normalCdf((Math.log(1-thr)-mean)/sigma);
+ const sideways=Math.max(0,100-up-down);
+ const p={rise:up,fall:down,range:sideways};
+ const best=Object.entries(p).sort((a,b)=>b[1]-a[1])[0][0];
+ const lnToPct=x=>100*(Math.exp(x)-1);
+ return {id:'ewma',label:'EWMA Time-Series',referenceCases:last.length,
+  probabilities:p,direction:best,
+  scenarios:{lowPct:lnToPct(mean-1.2815515655*sigma),
+   midPct:lnToPct(mean),highPct:lnToPct(mean+1.2815515655*sigma)},
+  explanation:'Volatility-scaled time-series approximation; mathematically distinct from nearest-neighbor methods. Not calibrated to future market odds.'};
+}
 function gapAwareHoldout(history,h,now=new Date()){
  const rows=ensemble.clean(history,now),prices=rows.map(x=>x.usdOz);
  const empty={days:h.days,sessions:h.sessions,method:'purged_nonoverlapping_walk_forward',
@@ -34,11 +68,12 @@ function gapAwareHoldout(history,h,now=new Date()){
  // Purge any test origin whose label interval could overlap the last training label.
  const early=origin.slice(0,trainLast+1);
  const later=origin.slice(trainLast+1).filter(i=>i>splitDateIndex+h.sessions);
- const tables=ensemble.MODELS.map(model=>{
+ const competitors=[...ensemble.MODELS,{id:'ewma',label:'EWMA Time-Series'}];
+ const tables=competitors.map(model=>{
    const calc=items=>{
     const records=[];
     for(const i of items){
-     const predicted=ensemble.distribution(prices,feat,i,h.sessions,model);
+     const predicted=model.id==='ewma'?ewmaForecast(prices,i,h.sessions):ensemble.distribution(prices,feat,i,h.sessions,model);
      const base=ensemble.baseline(prices,i,h.sessions);
      if(!predicted||!base)continue;
      const actualReturn=100*(prices[i+h.sessions]/prices[i]-1);
@@ -173,7 +208,7 @@ function build(input={},now=new Date()){
   status:historyGood?'research_available':'historical_only',
   sourceReport:'https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ensemble-v58.json',
   goldHistoryAsOf:historyLast,referenceUsdOz:adaptive.referenceUsdOz,
-  summary:{modelsCompared:4,periods:6,purgedHoldoutSupported:historyGood?anyProven:0,
+  summary:{modelsCompared:5,periods:6,purgedHoldoutSupported:historyGood?anyProven:0,
    forwardSettled:Number(ledger?.summary?.resolved)||0,forwardPending:Number(ledger?.summary?.pending)||0,
    headline:'Evidence-first gold intelligence — no unfounded price certainty'},
   quality,horizons,
@@ -186,4 +221,4 @@ function build(input={},now=new Date()){
     'Unsupervised FX stress assumptions are not USD/LKR forecasts.',
     'Purged historical backtests are separate from genuine forward PASS/FAIL records.']};
 }
-module.exports={gapAwareHoldout,currencyStress,reviewSettled,build,ageHours};
+module.exports={gapAwareHoldout,currencyStress,reviewSettled,build,ageHours,ewmaForecast,normalCdf};
