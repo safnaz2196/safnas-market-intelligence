@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "version": "5.7",
-  "generatedAt": "2026-11-21T09:46:22.808Z",
+  "generatedAt": "2026-11-21T09:48:47.613Z",
   "lastObservedCloseDate": "2026-11-20",
   "provider": "Dated gold closing prices, collected from a public historical feed",
   "sourceUrl": "https://xaus.com/api/v1/history",
@@ -314,6 +314,338 @@
       }
     ],
     "settledForLearning": 0,
+    "multiModelScorecards": [
+      {
+        "days": 1,
+        "completed": 0,
+        "selectedModel": null,
+        "candidateSelectedOnEarlierResults": null,
+        "learning": "collecting_or_unproven",
+        "verifiedForwardGain": false,
+        "models": [
+          {
+            "id": "analogue",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "trend",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "reversion",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "regime",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          }
+        ],
+        "warning": "Not enough later verified outcomes or no advantage over a simple uniform baseline."
+      },
+      {
+        "days": 3,
+        "completed": 0,
+        "selectedModel": null,
+        "candidateSelectedOnEarlierResults": null,
+        "learning": "collecting_or_unproven",
+        "verifiedForwardGain": false,
+        "models": [
+          {
+            "id": "analogue",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "trend",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "reversion",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "regime",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          }
+        ],
+        "warning": "Not enough later verified outcomes or no advantage over a simple uniform baseline."
+      },
+      {
+        "days": 7,
+        "completed": 0,
+        "selectedModel": null,
+        "candidateSelectedOnEarlierResults": null,
+        "learning": "collecting_or_unproven",
+        "verifiedForwardGain": false,
+        "models": [
+          {
+            "id": "analogue",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "trend",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "reversion",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "regime",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          }
+        ],
+        "warning": "Not enough later verified outcomes or no advantage over a simple uniform baseline."
+      },
+      {
+        "days": 14,
+        "completed": 0,
+        "selectedModel": null,
+        "candidateSelectedOnEarlierResults": null,
+        "learning": "collecting_or_unproven",
+        "verifiedForwardGain": false,
+        "models": [
+          {
+            "id": "analogue",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "trend",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "reversion",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "regime",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          }
+        ],
+        "warning": "Not enough later verified outcomes or no advantage over a simple uniform baseline."
+      },
+      {
+        "days": 30,
+        "completed": 0,
+        "selectedModel": null,
+        "candidateSelectedOnEarlierResults": null,
+        "learning": "collecting_or_unproven",
+        "verifiedForwardGain": false,
+        "models": [
+          {
+            "id": "analogue",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "trend",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "reversion",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "regime",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          }
+        ],
+        "warning": "Not enough later verified outcomes or no advantage over a simple uniform baseline."
+      },
+      {
+        "days": 90,
+        "completed": 0,
+        "selectedModel": null,
+        "candidateSelectedOnEarlierResults": null,
+        "learning": "collecting_or_unproven",
+        "verifiedForwardGain": false,
+        "models": [
+          {
+            "id": "analogue",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "trend",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "reversion",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          },
+          {
+            "id": "regime",
+            "recorded": 0,
+            "earlyChecks": 0,
+            "laterChecks": 0,
+            "earlierBrier": null,
+            "laterBrier": null,
+            "baselineBrier": 0.6667,
+            "improvement": null,
+            "historicallyValidated": false
+          }
+        ],
+        "warning": "Not enough later verified outcomes or no advantage over a simple uniform baseline."
+      }
+    ],
     "note": "Training requires at least 40 settled predictions per period. Uses earlier 70% to train and later 30% to test calibration. Only adjusts new forecasts if holdout Brier improves by at least 0.01.",
     "warning": "Learning can reduce some historical error, but no improvement or future predictive skill is guaranteed."
   },
