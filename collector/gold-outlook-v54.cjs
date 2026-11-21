@@ -10,6 +10,7 @@ const journal=require('./gold-forecast-journal-v56.cjs'); // legacy journal migr
 const ledger=require('./gold-prediction-ledger-v57.cjs');
 const ensemble=require('./gold-ensemble-v58.cjs');
 const professional=require('./gold-professional-v59.cjs');
+const ultra=require('./gold-ultra-v60.cjs');
 const OZ=31.1034768;
 const HISTORY_URL='https://xaus.com/api/v1/history';
 const BACKUP_HISTORY='https://standardbullion.com/api/v1/market/history?metal=XAU&range=1y';
@@ -287,6 +288,18 @@ async function main(){
  const recentSpot=spot&&Date.now()-Date.parse(spot.asOf)<36*3600000&&Date.now()>Date.parse(spot.asOf)-180000;
  const recentFx=fx&&Date.now()-Date.parse(fx.asOf)<3*86400000;
  const quote=recentSpot?spot:{usdOz:out.historyLastUsdOz,asOf:out.asOf+'T00:00:00Z',source:historySource,historical:true};
+ // A secondary spot provider is checked as a cross-reference when possible.
+ // Failure is never a substitute for missing data and does not stop publication.
+ let backupSpotForComparison=null;
+ if(spot && spot.source!==BACKUP_SPOT) {
+  try {
+   const second=await fetchJSON(BACKUP_SPOT);
+   const amount=Number(second.spot_usd_oz??second.xau?.price);
+   const asOf=second.data_state?.as_of||second.updated_at;
+   if(POS(amount)&&Number.isFinite(Date.parse(asOf)))
+    backupSpotForComparison={usdOz:amount,asOf,source:BACKUP_SPOT};
+  }catch(e){/* Optional secondary quote unavailable; cross-check will say not checked. */}
+ }
  const priceCoherence=quote.usdOz/out.historyLastUsdOz;
  const validPrices=priceCoherence>.85&&priceCoherence<1.15;
  const priceGrams={};
@@ -354,8 +367,20 @@ async function main(){
   professionalReport={schemaVersion:1,version:'5.9',status:'unavailable',generatedAt:now.toISOString(),
    horizons:[],reason:'Verified research dependencies were unavailable; no invented model forecasts.'};
  }
- report.advanced.version='5.9';
+ let ultraReport=null;
+ try{
+  ultraReport=ultra.build({outlook:report,adaptive,professionalReport,ledger:ledgerReport,
+    history:rows,backupSpot:backupSpotForComparison},now);
+ }catch(e){
+  failures.push('Ultra v6.0 unavailable: '+String(e.message).slice(0,120));
+  ultraReport={schemaVersion:1,version:'6.0',status:'unavailable',generatedAt:now.toISOString(),
+   reason:'Required verified research sources could not be matched.',horizons:[],
+   disclaimer:'No fabricated market direction or current price.'};
+ }
+ report.advanced.version='6.0';
  report.advanced.adaptive=adaptive;
+ report.advanced.ultra={version:'6.0',status:ultraReport.status,generatedAt:ultraReport.generatedAt,
+  url:'https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json'};
  report.advanced.professional={
   version:'5.9',generatedAt:professionalReport.generatedAt,status:professionalReport.status,
   summary:professionalReport.summary||null,
@@ -381,8 +406,10 @@ async function main(){
  },null,2)+'\n','utf8');
  const proPath=path.join(folder,'gold-professional-v59.json');
  fs.writeFileSync(proPath,JSON.stringify(professionalReport,null,2)+'\n','utf8');
+ const ultraPath=path.join(folder,'gold-ultra-v60.json');
+ fs.writeFileSync(ultraPath,JSON.stringify(ultraReport,null,2)+'\n','utf8');
  console.log(JSON.stringify({outlook:'gold-v5.4',status:report.status,history:out.historyCount,lastDate:out.asOf,
-  advancedVersion:'5.9',professionalStatus:professionalReport.status,ensembleModels:adaptive?.horizons?.[0]?.models?.length||0,cotAvailable:cot.available,technicalRegime:technical.regime,
+  advancedVersion:'6.0',ultraStatus:ultraReport.status,professionalStatus:professionalReport.status,ensembleModels:adaptive?.horizons?.[0]?.models?.length||0,cotAvailable:cot.available,technicalRegime:technical.regime,
   predictionRecords:ledgerReport.summary.recorded,predictionSettled:ledgerReport.summary.resolved,
   direction7:out.horizons.find(x=>x.days===7)?.direction,validation7:out.horizons.find(x=>x.days===7)?.validation,
   current:report.current.usdOz,macro:macro.filter(x=>x.available).length,warnings:failures.length}));
