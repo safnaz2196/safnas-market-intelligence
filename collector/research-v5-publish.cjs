@@ -203,7 +203,7 @@ function mergeCompanyEvidence(report, marketEvidence, now=new Date()) {
  report.quality.companyFilings=filings;
  report.quality.sourceLinks=report.evidence.filter(x=>secureUrl(x.url)).length;
  report.quality.companyEvidenceAt=marketEvidence.generatedAt;
- report.quality.sourceWarnings=[...new Set([...(report.quality.sourceWarnings||[]),
+ report.quality.sourceWarnings=[...new Set([...(report.quality.sourceWarnings||[]).filter(w=>!(quotes>0&&/^shares:\s*HTTP 400/i.test(String(w)))),
     ...(marketEvidence.issues||[]).filter(x=>!String(x).startsWith('companyInfoSummery'))])].slice(0,9);
  if(quotes)report.quality.knownGaps=report.quality.knownGaps.filter(x=>!x.includes('share snapshots'));
  report.briefing.findings.push({id:'company-coverage',tone:quotes?'info':'warning',
