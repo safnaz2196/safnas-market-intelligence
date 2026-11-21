@@ -149,6 +149,88 @@ function renderEvidence(m,macro){
  }
  return items;
 }
+/** Evidence audit is descriptive, not a calibrated probability or advice. */
+function deepResearch(modelOutput, macro, quote=null, now=new Date()) {
+ const x=modelOutput.indicators, history=modelOutput.observations||[], last=history.at(-1);
+ const values=history.map(p=>p.usdOz).filter(POS);
+ const avgN=n=>values.length>=n?nice(values.slice(-n).reduce((a,b)=>a+b,0)/n):null;
+ const mom5=Number(x.momentum5Pct),mom20=Number(x.momentum20Pct),vol=Number(x.volatility20AnnualizedPct);
+ const signals=[];
+ const push=(key,measurement,points,why,sourceDate,source,weight=1)=>{
+  signals.push({key,measurement,pressure:points>0?'up':points<0?'down':'neutral',weight,
+   explanation:why,asOf:sourceDate,source,rawSign:points});
+ };
+ const up5=mom5>.75?1:mom5<-.75?-1:0;
+ push('Five-session momentum',(mom5>=0?'+':'')+mom5.toFixed(2)+'%',up5,
+  'Recent gold momentum can persist or reverse; this is not a future return estimate.',modelOutput.asOf,HISTORY_URL,1);
+ const up20=mom20>1.5?1:mom20< -1.5?-1:0;
+ push('20-session trend',(mom20>=0?'+':'')+mom20.toFixed(2)+'%',up20,
+  'A longer recent trend is context, not a buy/sell instruction.',modelOutput.asOf,HISTORY_URL,.8);
+ const yieldRow=macro.find(v=>v.name==='U.S. 10-year inflation-adjusted yield');
+ const usdRow=macro.find(v=>v.name==='Broad U.S. dollar index');
+ if(yieldRow?.available&&Number.isFinite(yieldRow.change5)){
+  const n=yieldRow.change5;
+  push('U.S. real yields',(n>0?'+':'')+nice(n)+' percentage points in 5 observations',n>.03?-1:n<-.03?1:0,
+   'Higher real yields can increase the opportunity cost of holding non-yielding gold; not a mechanical price rule.',yieldRow.asOf,yieldRow.source,1);
+ }
+ if(usdRow?.available&&Number.isFinite(usdRow.change5)){
+  const n=usdRow.change5;
+  push('Broad U.S. dollar',(n>0?'+':'')+nice(n)+' index points in 5 observations',n>.40?-1:n<-.40?1:0,
+   'A firmer dollar often pressures USD gold; gold and dollar strength may also coexist.',usdRow.asOf,usdRow.source,.8);
+ }
+ const spotPct=quote&&!quote.historical&&POS(quote.usdOz)&&POS(last?.usdOz)?percent(quote.usdOz,last.usdOz):null;
+ if(Number.isFinite(spotPct)) {
+  push('Latest spot vs last historical close',(spotPct>=0?'+':'')+nice(spotPct)+'%',spotPct>.5?1:spotPct<-.5?-1:0,
+   'Intraday spot versus the most recent dated close, which may reflect different quote conventions.',quote.asOf,quote.source,.55);
+ }
+ const bull=signals.filter(v=>v.rawSign>0),bear=signals.filter(v=>v.rawSign<0);
+ const upScore=nice(bull.reduce((sum,v)=>sum+v.weight,0));
+ const downScore=nice(bear.reduce((sum,v)=>sum+v.weight,0));
+ const tilt=upScore-downScore>=1.4?'upward_pressure':downScore-upScore>=1.4?'downward_pressure':'mixed';
+ const modelEdgeDemonstrated=modelOutput.horizons.some(h=>h.validation?.edgeDemonstrated===true);
+ const researchConfidence=modelEdgeDemonstrated?'some_historical_validation':'unproven_predictive_edge';
+ const reasons=[
+  ...signals.filter(v=>v.rawSign!==0).sort((a,b)=>b.weight-a.weight).slice(0,4).map(s=>({
+   direction:s.pressure,title:s.key,evidence:s.measurement,explanation:s.explanation,
+   asOf:s.asOf,source:s.source})),
+  ...(vol>=28?[{direction:'risk',title:'High historical volatility',
+   evidence:nice(vol)+'% annualized (20 sessions)',
+   explanation:'Outcomes may swing widely in either direction. Do not interpret scenario percentiles as guaranteed limits.',
+   asOf:modelOutput.asOf,source:HISTORY_URL}]:[])
+ ];
+ const ma20=avgN(20),ma50=avgN(50);
+ const levels={
+  lastHistoryClose:nice(last?.usdOz),
+  movingAverage20:ma20,movingAverage50:ma50,
+  prior20High:nice(values.length>=20?Math.max(...values.slice(-20)):null),
+  prior20Low:nice(values.length>=20?Math.min(...values.slice(-20)):null),
+  spotVsLastHistoryClosePct:nice(spotPct)
+ };
+ const reliability=[
+  modelEdgeDemonstrated?'At least one forecast horizon beat its simple benchmark in the available walk-forward test.':'None of the tested horizons demonstrated a reliable advantage over its simple historical benchmark.',
+  'Directional pressure scores are heuristic explanations, NOT calibrated probabilities.',
+  'A 3/7/14/30-day window is a rough calendar period, not a precise event date.',
+  'SAR/LKR outcomes also depend on currency rates; spot and local jewellery prices can differ.'
+ ];
+ return {
+  kind:'evidence_based_research_not_live_prediction',
+  classification:tilt,bullishDrivers:bull.length,bearishDrivers:bear.length,
+  sourceSignals:signals,driverReasons:reasons,levels,
+  volatilityRisk:vol>=28?'high':vol>=18?'elevated':'ordinary',
+  modelAudit:{reliableForecastProven:modelEdgeDemonstrated,confidence:researchConfidence,
+   byHorizon:modelOutput.horizons.map(h=>({days:h.days,checks:h.validation?.count||0,
+    modelBrier:h.validation?.brier??null,baselineBrier:h.validation?.baseBrier??null,
+    observedHitRatePct:h.validation?.hitRate??null,edgeDemonstrated:!!h.validation?.edgeDemonstrated}))},
+  watchFor:[
+   {event:'Five-session momentum changes sign',detail:'May alter short-term pressure, but is not itself a price forecast.',source:HISTORY_URL},
+   {event:'Real yields shift',detail:'Rising yields often challenge gold, while falling yields can be supportive.',source:yieldRow?.source||YIELD_URL},
+   {event:'Broad dollar trend changes',detail:'Currency moves can counter or reinforce changes in USD gold prices.',source:usdRow?.source||DOLLAR_URL},
+   {event:'Volatility remains elevated',detail:'Historical scenario ranges can widen when realized volatility increases.',source:HISTORY_URL}
+  ],
+  reliabilityNotes:reliability,
+  evaluatedAt:now.toISOString()
+ };
+}
 async function main(){
  const failures=[];
  let raw=null,historySource=HISTORY_URL;
@@ -198,6 +280,7 @@ async function main(){
    points:out.observations.map(x=>({date:x.date,usdOz:nice(x.usdOz)}))},
   indicators:out.indicators,horizons:out.horizons,method:out.method,
   evidence:renderEvidence(out,macro),macro,
+  deepResearch:deepResearch(out,macro,quote,now),
   overallCaution:'Forecasts are statistical scenarios based on past observations, not predictions of an exact price or date. If model calibration does not outperform a historical baseline, no predictive edge is claimed. FX changes can alter SAR and LKR outcomes.',
   sources:[{name:'XAUS daily history',url:historySource},{name:'Gold spot',url:quote.source},
     ...(recentFx?[{name:'USD FX rates',url:FX_URL}]:[]),...macro.map(x=>({name:x.name,url:x.source}))],
@@ -210,4 +293,4 @@ async function main(){
   current:report.current.usdOz,macro:macro.filter(x=>x.available).length,warnings:failures.length}));
 }
 if(require.main===module)main().catch(e=>{console.error('Gold outlook research unavailable:',e.message);process.exitCode=1});
-module.exports={cleanHistory,model,analog,backtest,macroTrend,renderEvidence,isDate,percent};
+module.exports={cleanHistory,model,analog,backtest,macroTrend,renderEvidence,deepResearch,isDate,percent};
