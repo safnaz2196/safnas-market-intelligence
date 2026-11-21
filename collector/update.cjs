@@ -8,7 +8,7 @@ const SOURCES={
  aspi:'https://www.cse.lk/api/chartData',
  worldbank:'https://api.worldbank.org/v2/',
  fx:'https://api.frankfurter.dev/v2/rates?base=USD&quotes=LKR',
- stocks:'https://www.cse.lk/api/allStock',
+ stocks:'https://www.cse.lk/api/tradeSummary',
  sl20:'https://www.cse.lk/api/snpData',
  marketSummary:'https://www.cse.lk/api/marketSummery',
  news:'https://economynext.com/feed/'
@@ -22,7 +22,38 @@ async function json(url,options={}){
 async function retryJson(url,attempts=2){let error;for(let i=0;i<attempts;i++){try{return await json(url)}catch(e){error=e;if(i+1<attempts)await new Promise(r=>setTimeout(r,450*(i+1)))}}throw error;}
 async function fetchNews(){const ac=new AbortController(),timer=setTimeout(()=>ac.abort(),16000);try{const r=await fetch(SOURCES.news,{signal:ac.signal,headers:{'User-Agent':'SafnasFinanceResearch/3.4.6','Accept':'application/rss+xml,application/xml,text/xml'}});if(!r.ok)throw Error('Publisher HTTP '+r.status);return d.parseNewsRSS(await r.text())}finally{clearTimeout(timer)}}
 async function fetchCSE(){const form=new FormData();form.append('chartId','1');form.append('period','5');return d.parseCSE(await json(SOURCES.aspi,{method:'POST',body:form}));}
-async function fetchAllStock(){const form=new FormData();return d.parseStockSnapshot(await json(SOURCES.stocks,{method:'POST',body:form}));}
+function parseCSETradeSummary(raw,now=new Date()){
+ const data=Array.isArray(raw?.reqTradeSummery)?raw.reqTradeSummery:[];
+ const records=[];
+ const asLocalDate=milliseconds=>{
+  const n=Number(milliseconds);
+  if(!Number.isFinite(n)||n<1483228800000||n>now.getTime()+3600000)return null;
+  const part=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Colombo',
+   year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(n));
+  const x=name=>part.find(k=>k.type===name)?.value;
+  return x('year')+'-'+x('month')+'-'+x('day');
+ };
+ for(const v of data){
+  const ticker=String(v?.symbol||'').trim(),price=Number(v?.price),asOf=asLocalDate(v?.lastTradedTime);
+  if(!/^[A-Z0-9.-]{3,18}$/.test(ticker)||!Number.isFinite(price)||price<=0||!asOf)continue;
+  const day=Date.parse(asOf+'T00:00:00Z');
+  if(day>now.getTime()+86400000)continue;
+  const turnover=Number(v?.turnover);
+  records.push({ticker,name:String(v?.companyName||v?.name||ticker).slice(0,85),price,
+   turnover:Number.isFinite(turnover)&&turnover>0?turnover:null,
+   asOf,verifiedTradeDate:true,sourceURL:SOURCES.stocks,
+   retrievedAt:now.toISOString(),
+   note:'Last traded price from CSE; historical, not streaming'});
+ }
+ if(!records.length)throw Error('Official CSE tradeSummary returned no valid dated share quotations');
+ return records.sort((a,b)=>(b.turnover||0)-(a.turnover||0)).slice(0,50);
+}
+async function fetchAllStock(){
+ const form=new FormData();
+ const raw=await json(SOURCES.stocks,{method:'POST',body:form,
+  headers:{'Referer':'https://www.cse.lk/','Origin':'https://www.cse.lk/'}});
+ return parseCSETradeSummary(raw);
+}
 async function fetchSL20(){const raw=await json(SOURCES.sl20,{method:'POST',body:new FormData()});const v=Number(raw?.value??raw?.data?.value);if(!Number.isFinite(v)||v<=0)throw Error('S&P SL20 quote response unavailable');return {value:v,changePercent:Number.isFinite(Number(raw?.percentage))?Number(raw.percentage):null,retrievedAt:new Date().toISOString(),sourceURL:SOURCES.sl20,note:'Retrieved snapshot; source may not include a reliable trade date.'};}
 async function fetchSummary(){const raw=await json(SOURCES.marketSummary,{method:'POST',body:new FormData()});const obj=Array.isArray(raw)?raw[0]:raw;const turnover=Number(obj?.equityTurnover??obj?.marketTurnover??obj?.turnover);if(!Number.isFinite(turnover)||turnover<=0)throw Error('Daily turnover not reported');return {turnover,retrievedAt:new Date().toISOString(),sourceURL:SOURCES.marketSummary,note:'Retrieved market summary; check official CSE for publication date.'};}
 async function fetchWBBulk(){
@@ -79,7 +110,15 @@ async function collect(now=new Date(),injected={}){
  let shares=[];
  try{
   shares=await getStocks();if(!shares.length)throw Error('No valid listed share quotes');
-  record('shares',true,nowISO.slice(0,10),'',{dateIsRetrieved:true,notes:'Quotes retrieved; official trading date not verified'});
+  const dates=shares.filter(row=>row.verifiedTradeDate&&/^\d{4}-\d{2}-\d{2}$/.test(row.asOf))
+    .map(row=>row.asOf).sort();
+  const confirmedDate=dates.at(-1)||null;
+  record('shares',true,confirmedDate,'',{
+   ...(confirmedDate?{freshWindowDays:7}:{dateIsRetrieved:true}),
+   notes:confirmedDate?
+    'Official CSE dated last-traded prices: '+shares.length+' securities; latest trade '+confirmedDate+'. Not streaming.':
+    'Provider quotes retrieved without verifiable trade date; cannot claim current.'
+  });
  }catch(e){record('shares',false,null,e.message)}
  let sl20=null;
  try{
@@ -121,4 +160,4 @@ async function collect(now=new Date(),injected={}){
  return snapshot;
 }
 if(require.main===module){collect().catch(e=>{console.error('Collector crashed:',e.message);process.exitCode=1})}
-module.exports={collect,marketReport,fetchCSE,fetchWB,fetchWBBulk};
+module.exports={collect,marketReport,fetchCSE,fetchWB,fetchWBBulk,parseCSETradeSummary,fetchAllStock};
