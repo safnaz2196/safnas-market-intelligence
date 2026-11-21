@@ -40,8 +40,9 @@ function assemble({cse,latest,gold,ledger,previous},now=new Date()){
  };
  const prior=previous?.snapshot||{},changes=[];
  const push=(kind,label,detail,asOf,url)=>{
-  if(changes.some(v=>v.kind===kind&&v.asOf===asOf))return;
-  changes.push({id:idFor(kind+'|'+asOf+'|'+detail),kind,label,detail,asOf,url});
+  const eventId=idFor(kind+'|'+asOf+'|'+detail);
+  if(changes.some(v=>v.id===eventId))return;
+  changes.push({id:eventId,kind,label,detail,asOf,url});
  };
  if(market.asOf&&market.asOf!==prior.aspiDate&&num(market.close)!==null)
   push('market','New dated ASPI close','ASPI '+market.close+' on '+market.asOf,market.asOf,'https://www.cse.lk/');
@@ -53,8 +54,10 @@ function assemble({cse,latest,gold,ledger,previous},now=new Date()){
    iso,'https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-prediction-history-v57.json');
  const prevCompanies=prior.companies||{};
  for(const c of companies){
-  if(c.asOf&&c.asOf!==prevCompanies[c.ticker]?.asOf&&c.priceLKR!==null)
-   push('company','New dated CSE quote · '+c.ticker,
+  if(c.asOf&&c.priceLKR!==null&&
+    (c.asOf!==prevCompanies[c.ticker]?.asOf||
+     !previousEvents.some(v=>v.kind==='company'&&v.asOf===c.asOf&&v.label?.includes(c.ticker))))
+   push('company','Dated CSE quote recorded · '+c.ticker,
      c.name+' last traded at LKR '+c.priceLKR+' on '+c.asOf,c.asOf,'https://www.cse.lk/');
  }
  const previousEvents=Array.isArray(previous?.history)?previous.history:[];
