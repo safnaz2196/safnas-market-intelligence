@@ -4,7 +4,7 @@ const ultra=require('./gold-ultra-v60.cjs');
 const NOW=new Date('2026-11-21T12:00:00Z');
 const TIME=NOW.toISOString(),DAY=86400000;
 const history=Array.from({length:520},(_,i)=>({
- date:new Date(Date.UTC(2025,6,20)+DAY*i).toISOString().slice(0,10),
+ date:new Date(Date.UTC(2026,10,20)-(519-i)*DAY).toISOString().slice(0,10),
  usdOz:3150*Math.exp(.0002*i+.015*Math.sin(i/9))}));
 const goldDay=history.at(-1).date;
 const period=[1,3,7,14,30,90],session=[1,2,5,10,21,63];
