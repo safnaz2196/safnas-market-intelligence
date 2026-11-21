@@ -57,7 +57,7 @@ function normalizeDoc(d) {
   try{return {settings:policy.normalizeSettings(d.settings), subscription:d.subscription}}catch{return null;}
 }
 function makePayload(p) {
-  return JSON.stringify({title:p.title,body:p.body,tag:p.tag,source:p.source||null,observedAt:p.observedAt||null,url:p.url||'/',icon:'/icons/moneytrack-192.png',badge:'/icons/moneytrack-192.png'});
+  return JSON.stringify({title:p.title,body:p.body,tag:p.tag,source:p.source||null,observedAt:p.observedAt||null,url:p.url||'/#gold-prices',kind:p.kind||null,icon:'/icons/moneytrack-192.png',badge:'/icons/moneytrack-192.png'});
 }
 async function deliverOne(doc, spot, fx, now) {
   const d=doc.data(), norm=normalizeDoc(d);
@@ -65,22 +65,31 @@ async function deliverOne(doc, spot, fx, now) {
   const {settings,subscription}=norm;
   const settingHash=checksum(settings);
   const latest=policy.sampleMarket(spot,fx,settings);
-  if (!d.baseline || d.settingsFingerprint!==settingHash) {
+  const changedSettings=!d.baseline || d.settingsFingerprint!==settingHash;
+  const baseline=changedSettings?latest:d.baseline;
+  if(changedSettings) {
     await doc.ref.update({baseline:latest,settingsFingerprint:settingHash,lastObservedAt:spot.asOf});
-    return {kind:'baseline'};
   }
-  const movements=policy.moves(d.baseline,latest,settings);
-  if (!movements.length) return {kind:'unchanged'};
-  if (now-Number(d.lastAlertAt||0)<policy.MIN_COOLDOWN_MS) return {kind:'cooldown'};
-  const signature=checksum([spot.asOf,fx.asOf,settings,movements.map(x=>x.currency)]);
-  if (signature===d.lastNotificationSignature) return {kind:'duplicate'};
-  const payload=policy.makeNotification(movements,settings,spot.asOf,spot.source);
+  const movements=policy.moves(baseline,latest,settings);
+  const cooldown=now-Number(d.lastAlertAt||0)<policy.MIN_COOLDOWN_MS;
+  const canSendMovement=movements.length>0&&!cooldown;
+  const summaryDue=policy.summaryDue(d.lastSummaryDay,now);
+  if(!canSendMovement && !summaryDue) return {kind:changedSettings?'baseline':movements.length?'cooldown':'unchanged'};
+  const isMovement=canSendMovement;
+  const payload=isMovement
+    ? policy.makeNotification(movements,settings,spot.asOf,spot.source,latest,baseline)
+    : policy.makeSummaryNotification(settings,latest,baseline,spot.asOf,spot.source);
+  const signature=checksum([payload.kind,spot.asOf,fx.asOf,settings,payload.body]);
+  if(signature===d.lastNotificationSignature)return {kind:'duplicate'};
   try {
-    await webpush.sendNotification(subscription,makePayload(payload),{TTL:3600,urgency:'normal'});
-    await doc.ref.update({baseline:latest,lastAlertAt:now,lastNotificationSignature:signature,lastObservedAt:spot.asOf});
-    return {kind:'sent'};
+    await webpush.sendNotification(subscription,makePayload(payload),{TTL:7200,urgency:'normal'});
+    const patch={lastNotificationSignature:signature,lastObservedAt:spot.asOf};
+    if(isMovement){patch.baseline=latest;patch.lastAlertAt=now;}
+    if(summaryDue) {patch.lastSummaryDay=policy.localDayKey(now);patch.lastSummaryAt=now;}
+    await doc.ref.update(patch);
+    return {kind:isMovement?'movement_sent':'summary_sent'};
   } catch(e) {
-    if ([404,410].includes(Number(e.statusCode))) {await doc.ref.delete(); return {kind:'expired'};}
+    if([404,410].includes(Number(e.statusCode))) {await doc.ref.delete();return {kind:'expired'};}
     console.warn('Push provider rejected an alert for device',doc.id.slice(-8),'status',e.statusCode||'network error');
     return {kind:'failed'};
   }
@@ -95,14 +104,21 @@ async function main() {
   if(subscriptionDocs.size===MAX_DEVICES_PER_RUN) console.warn('Subscription limit reached: raise MAX_DEVICES_PER_RUN if needed.');
   console.log('Registered devices:',subscriptionDocs.size);
   if(TEST_MODE) {
+    const [spot,fx]=await Promise.all([spotQuote(),fxQuote()]);
+    if(!policy.isFresh(spot,fx))throw new Error('Cannot send gold-price test: current market/FX quotes are stale.');
     let sent=0;
     for(const doc of subscriptionDocs.docs) {
       const d=normalizeDoc(doc.data()); if(!d) continue;
-      try{
-        await webpush.sendNotification(d.subscription,makePayload({title:'Safnas Finance · Push test',body:'Free GitHub Actions background notifications are operational.',tag:'safnas-gold-test',url:'/'}),{TTL:3600});sent++;
-      }catch(e){console.warn('Test push failed for',doc.id.slice(-8),Number(e.statusCode)||'network');}
+      try {
+        const latest=policy.sampleMarket(spot,fx,d.settings);
+        const payload=policy.makeSummaryNotification(d.settings,latest,doc.data().baseline,spot.asOf,spot.source);
+        payload.title='Gold price test · '+d.settings.karat+'K · Safnas Finance';
+        payload.tag='safnas-gold-price-test';
+        await webpush.sendNotification(d.subscription,makePayload(payload),{TTL:3600});
+        sent++;
+      } catch(e) {console.warn('Test push failed for',doc.id.slice(-8),Number(e.statusCode)||'network');}
     }
-    console.log(`Test notification accepted by push providers: ${sent}`);return;
+    console.log(`Gold price TEST notifications accepted by push providers: ${sent}`);return;
   }
   const [spot,fx]=await Promise.all([spotQuote(),fxQuote()]);
   if(!policy.isFresh(spot,fx)) {
