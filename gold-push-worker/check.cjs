@@ -128,38 +128,6 @@ async function main() {
   console.log('Registered devices:',subscriptionDocs.size);
   if(TEST_MODE) {
     const [spot,fx]=await Promise.all([spotQuote(),fxQuote()]);
-    if(!policy.isFresh(spot,fx))throw new Error('Cannot send gold-price test: current market/FX quotes are stale.');
-    let sent=0;
-    for(const doc of subscriptionDocs.docs) {
-      const d=normalizeDoc(doc.data()); if(!d) continue;
-      const latest=policy.sampleMarket(spot,fx,d.settings);
-      for (const currency of d.settings.markets) {
-        try {
-          const payload=policy.makeMobileMarketNotification(currency,d.settings,latest,doc.data().baseline,'test',spot.asOf,spot.source);
-          await webpush.sendNotification(d.subscription,makePayload(payload),{TTL:3600});
-          sent++;
-        } catch(e) {console.warn('Test push failed for',doc.id.slice(-8),currency,Number(e.statusCode)||'network');}
-      }
-    }
-    console.log(`Mobile-friendly gold TEST notifications accepted by push providers: ${sent}`);return;
-  }
-  const [spot,fx]=await Promise.all([spotQuote(),fxQuote()]);
-    if(!policy.isFresh(spot,fx))throw new Error('Cannot send gold-price test: current market/FX quotes are stale.');
-    let sent=0;
-    for(const doc of subscriptionDocs.docs) {
-      const d=normalizeDoc(doc.data()); if(!d) continue;
-      try {
-        const latest=policy.sampleMarket(spot,fx,d.settings);
-        const payload=policy.makeSummaryNotification(d.settings,latest,doc.data().baseline,spot.asOf,spot.source);
-        payload.title='Gold price test · '+d.settings.karat+'K · Safnas Finance';
-        payload.tag='safnas-gold-price-test';
-        await webpush.sendNotification(d.subscription,makePayload(payload),{TTL:3600});
-        sent++;
-      } catch(e) {console.warn('Test push failed for',doc.id.slice(-8),Number(e.statusCode)||'network');}
-    }
-    console.log(`Gold price TEST notifications accepted by push providers: ${sent}`);return;
-  }
-  const [spot,fx]=await Promise.all([spotQuote(),fxQuote()]);
   if(!policy.isFresh(spot,fx)) {
     console.warn('Market/FX data is not fresh enough; no notifications sent.',{spotTime:spot.asOf,fxTime:fx.asOf});
     return;
