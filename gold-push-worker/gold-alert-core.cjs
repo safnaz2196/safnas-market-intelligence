@@ -77,6 +77,27 @@ function makeSummaryNotification(settings, latest, baseline, observedAt, source)
     source,observedAt
   };
 }
+/** Mobile-first presentation: one short, independently visible notification per country. */
+function makeMobileMarketNotification(currency, settings, latest, baseline, kind, observedAt, source) {
+  if (!COUNTRIES.includes(currency) || !settings.markets.includes(currency)) throw new Error('Unsupported gold notification market');
+  if (!['movement','summary','test'].includes(kind)) throw new Error('Unsupported gold notification type');
+  const flag = currency === 'SAR' ? '🇸🇦' : '🇱🇰';
+  const country = currency === 'SAR' ? 'Saudi' : 'Sri Lanka';
+  const change = pctChange(baseline?.[currency], latest?.[currency]);
+  // Price FIRST so an iPhone collapsed banner still displays the essential number.
+  let movement = '';
+  if (change !== null) {
+    movement = change >= 0.005 ? `  ▲ UP ${change.toFixed(2)}%`
+      : change <= -0.005 ? `  ▼ DOWN ${Math.abs(change).toFixed(2)}%` : '  → SAME';
+  }
+  return {
+    title: `${flag} ${country} ${settings.karat}K gold`,
+    body: `${currency} ${displayRate(latest[currency])}/gram${movement}`,
+    // Separate tags keep the two countries from replacing each other in iOS.
+    tag: `safnas-gold-${currency}-${kind}`,
+    url: '/#gold-prices', kind, source, observedAt
+  };
+}
 function localDayKey(now = Date.now()) {
   const parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Riyadh',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(now));
   const get=(type)=>parts.find(p=>p.type===type)?.value;
@@ -105,4 +126,4 @@ function allowedPushEndpoint(urlText) {
       || host === 'updates.push.services.mozilla.com' || host === 'push.services.mozilla.com';
   } catch {return false;}
 }
-module.exports={GRAMS_PER_TROY_OUNCE,MIN_COOLDOWN_MS,normalizeSettings,gramRate,sampleMarket,pctChange,moves,makeNotification,makeSummaryNotification,goldPriceLines,localDayKey,summaryDue,isFresh,allowedPushEndpoint};
+module.exports={GRAMS_PER_TROY_OUNCE,MIN_COOLDOWN_MS,normalizeSettings,gramRate,sampleMarket,pctChange,moves,makeNotification,makeSummaryNotification,makeMobileMarketNotification,goldPriceLines,localDayKey,summaryDue,isFresh,allowedPushEndpoint};
