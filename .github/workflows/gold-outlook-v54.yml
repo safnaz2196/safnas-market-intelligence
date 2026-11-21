@@ -11,7 +11,7 @@ on:
       - 'collector/gold-professional-v59.cjs'
       - 'collector/gold-ultra-v60.cjs'
       - 'collector/gold-ultra-v60.test.cjs'
-      - 'collector/gold-professional-v59.test.cjs collector/gold-ultra-v60.test.cjs'
+      - 'collector/gold-professional-v59.test.cjs'
       - 'collector/gold-ensemble-v58.test.cjs'
       - 'collector/gold-prediction-ledger-v57.test.cjs'
       - 'collector/gold-forecast-journal-v56.test.cjs'
@@ -37,7 +37,7 @@ jobs:
         with:
           node-version: '22'
       - name: Verify models and scientific cautions
-        run: node --test collector/gold-outlook-v54.test.cjs collector/gold-advanced-v56.test.cjs collector/gold-forecast-journal-v56.test.cjs collector/gold-prediction-ledger-v57.test.cjs collector/gold-ensemble-v58.test.cjs collector/gold-professional-v59.test.cjs
+        run: node --test collector/gold-outlook-v54.test.cjs collector/gold-advanced-v56.test.cjs collector/gold-forecast-journal-v56.test.cjs collector/gold-prediction-ledger-v57.test.cjs collector/gold-ensemble-v58.test.cjs collector/gold-professional-v59.test.cjs collector/gold-ultra-v60.test.cjs
       - name: Read fresh evidence and create research
         run: node collector/gold-outlook-v54.cjs
       - name: Publish report (retry safely after concurrent market collector updates)
