@@ -4,7 +4,8 @@ on:
     branches: [main]
     paths:
       - 'collector/research-v5-publish.cjs'
-      - 'collector/company-endpoint-probe.cjs'
+      - 'collector/company-evidence-v5.cjs'
+      - 'collector/company-evidence-v5.test.cjs'
       - 'collector/research-v5-publish.test.cjs'
       - '.github/workflows/sri-lanka-intelligence.yml'
   schedule:
@@ -21,7 +22,7 @@ concurrency:
 jobs:
   retrain:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -30,10 +31,10 @@ jobs:
           package-manager-cache: false
       - name: Validate collectors and learner
         run: node --test collector/*.test.cjs
-      - name: Probe CSE company data endpoints
-        run: node collector/company-endpoint-probe.cjs
       - name: Collect public market observations (existing v4 archive preserved)
         run: node collector/update.cjs
+      - name: Collect official CSE last trades and company filings (16 tracked tickers)
+        run: node collector/company-evidence-v5.cjs
       - name: Publish source-grounded autonomous v5 research
         run: node collector/research-v5-publish.cjs
       - name: Publish research audit
