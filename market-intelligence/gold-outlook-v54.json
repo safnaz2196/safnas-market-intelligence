@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "version": "5.4",
-  "generatedAt": "2026-11-21T09:36:32.483Z",
+  "generatedAt": "2026-11-21T09:36:44.955Z",
   "status": "observed",
   "dateSemantics": "Approximate calendar windows, never a guaranteed date",
   "current": {
     "usdOz": 3539,
-    "asOf": "2026-11-21T09:36:07Z",
+    "asOf": "2026-11-21T09:36:37Z",
     "source": "https://api.gold-api.com/price/XAU",
     "historical": false,
     "fx": {
@@ -1171,7 +1171,7 @@
     },
     "predictionHistory": {
       "version": "5.7",
-      "generatedAt": "2026-11-21T09:36:32.483Z",
+      "generatedAt": "2026-11-21T09:36:44.955Z",
       "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-prediction-history-v57.json",
       "recent": [
         {
@@ -1343,7 +1343,7 @@
         "pressure": "up",
         "weight": 0.55,
         "explanation": "Intraday spot versus the most recent dated close, which may reflect different quote conventions.",
-        "asOf": "2026-11-21T09:36:07Z",
+        "asOf": "2026-11-21T09:36:37Z",
         "source": "https://api.gold-api.com/price/XAU",
         "rawSign": 1
       }
@@ -1378,7 +1378,7 @@
         "title": "Latest spot vs last historical close",
         "evidence": "+0.671%",
         "explanation": "Intraday spot versus the most recent dated close, which may reflect different quote conventions.",
-        "asOf": "2026-11-21T09:36:07Z",
+        "asOf": "2026-11-21T09:36:37Z",
         "source": "https://api.gold-api.com/price/XAU"
       },
       {
@@ -1465,7 +1465,7 @@
       "A 3/7/14/30-day window is a rough calendar period, not a precise event date.",
       "SAR/LKR outcomes also depend on currency rates; spot and local jewellery prices can differ."
     ],
-    "evaluatedAt": "2026-11-21T09:36:32.483Z"
+    "evaluatedAt": "2026-11-21T09:36:44.955Z"
   },
   "overallCaution": "Forecasts are statistical scenarios based on past observations, not predictions of an exact price or date. If model calibration does not outperform a historical baseline, no predictive edge is claimed. FX changes can alter SAR and LKR outcomes.",
   "sources": [
