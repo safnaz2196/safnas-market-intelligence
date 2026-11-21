@@ -5,6 +5,7 @@
    All dated evidence and validation are shown; no false AI certainty. */
 const fs=require('node:fs');
 const path=require('node:path');
+const advanced=require('./gold-advanced-v56.cjs');
 const OZ=31.1034768;
 const HISTORY_URL='https://xaus.com/api/v1/history';
 const BACKUP_HISTORY='https://standardbullion.com/api/v1/market/history?metal=XAU&range=1y';
@@ -231,6 +232,20 @@ function deepResearch(modelOutput, macro, quote=null, now=new Date()) {
   evaluatedAt:now.toISOString()
  };
 }
+function extraHorizon(rows,hDays,sessions){
+ const a=analog(rows,rows.length-1,sessions),v=backtest(rows,sessions);
+ if(!a)return {days:hDays,sessions,direction:'unavailable',lean:'Insufficient verified historical examples',
+  probUp:null,similarCases:0,scenarios:null,validation:v,confidence:'not_proven',
+  warning:'Approximate calendar window, not an exact event date'};
+ const p=a.pUp;
+ return {days:hDays,sessions,direction:p>=.57?'rise':p<=.43?'fall':'range',
+  lean:p>=.57?'Rising historical bias':p<=.43?'Falling historical bias':'Mixed historical cases',
+  probUp:nice(p*100),similarCases:a.n,
+  scenarios:{lowPct:nice((Math.exp(a.p10)-1)*100),midPct:nice((Math.exp(a.p50)-1)*100),
+    highPct:nice((Math.exp(a.p90)-1)*100)},
+  validation:v,confidence:v.edgeDemonstrated?'historically_evaluated':'not_proven',
+  warning:'Historical sample frequency is not a calibrated future probability or exact price/date.'};
+}
 async function main(){
  const failures=[];
  let raw=null,historySource=HISTORY_URL;
@@ -272,6 +287,19 @@ async function main(){
  if(validPrices&&recentFx)for(const c of ['SAR','LKR'])
   priceGrams[c]={pure24: nice(quote.usdOz/OZ*fx[c]),jewellery22:nice(quote.usdOz/OZ*fx[c]*22/24),currency:c};
  else failures.push('No current local-currency scenario: quote or FX verification incomplete');
+ // Add independent technical + regulatory positioning context.
+ const technical=advanced.technical(rows,now);
+ let cot={available:false,reason:'Not yet checked',source:advanced.CFTC_REFERENCE};
+ try{
+  const cotData=await fetchJSON(advanced.CFTC_URL);
+  cot=advanced.parseCot(cotData,now);
+  if(!cot.available)failures.push('CFTC positioning unavailable: '+cot.reason);
+ }catch(e){cot={available:false,reason:'CFTC endpoint could not be verified',source:advanced.CFTC_REFERENCE};
+   failures.push('CFTC weekly positioning: '+String(e.message).slice(0,90));}
+ const extended=[extraHorizon(rows,1,1),extraHorizon(rows,90,63)];
+ const advancedResearch={version:'5.6',technical,managedMoney:cot,
+  extraHorizons:extended,catalysts:advanced.catalysts(technical,cot,macro),
+  validationNote:'CFTC reports are weekly and lagged. All indicators and historical analogues are observations, not an independently proven prediction.'};
  const report={schemaVersion:1,version:'5.4',generatedAt:now.toISOString(),
   status:validPrices&&out.ageDays<=4?'observed':'limited',dateSemantics:'Approximate calendar windows, never a guaranteed date',
   current:{usdOz:quote.usdOz,asOf:quote.asOf,source:quote.source,historical:!!quote.historical,
@@ -280,15 +308,17 @@ async function main(){
    points:out.observations.map(x=>({date:x.date,usdOz:nice(x.usdOz)}))},
   indicators:out.indicators,horizons:out.horizons,method:out.method,
   evidence:renderEvidence(out,macro),macro,
+  advanced:advancedResearch,
   deepResearch:deepResearch(out,macro,quote,now),
   overallCaution:'Forecasts are statistical scenarios based on past observations, not predictions of an exact price or date. If model calibration does not outperform a historical baseline, no predictive edge is claimed. FX changes can alter SAR and LKR outcomes.',
-  sources:[{name:'XAUS daily history',url:historySource},{name:'Gold spot',url:quote.source},
+  sources:[{name:'CFTC weekly futures positioning',url:advanced.CFTC_REFERENCE},{name:'XAUS daily history',url:historySource},{name:'Gold spot',url:quote.source},
     ...(recentFx?[{name:'USD FX rates',url:FX_URL}]:[]),...macro.map(x=>({name:x.name,url:x.source}))],
   alertsNotice:'Directional outlook is not a trading instruction. Jewellery charges and retail margins excluded.',
   warnings:failures.slice(0,8)};
  const folder=path.join(__dirname,'..','market-intelligence'),dest=path.join(folder,'gold-outlook-v54.json');
  fs.writeFileSync(dest,JSON.stringify(report,null,2)+'\n','utf8');
  console.log(JSON.stringify({outlook:'gold-v5.4',status:report.status,history:out.historyCount,lastDate:out.asOf,
+  advancedVersion:'5.6',cotAvailable:cot.available,technicalRegime:technical.regime,
   direction7:out.horizons.find(x=>x.days===7)?.direction,validation7:out.horizons.find(x=>x.days===7)?.validation,
   current:report.current.usdOz,macro:macro.filter(x=>x.available).length,warnings:failures.length}));
 }
