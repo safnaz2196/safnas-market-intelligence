@@ -87,7 +87,7 @@ test('quoted spot agreement compares only two fresh, time-aligned references',()
 test('historical scenarios never become calibrated probabilities',()=>{
  const sample=reports();
  const r=ultra.build(sample,NOW);
- assert.ok(r.horizons.every(h=>h.models.every(m=>m.note.includes('not a calibrated')||m.note.includes('Not a calibrated'))));
+ assert.ok(r.horizons.every(h=>h.models.every(m=>/not\s+(a\s+)?calibrated/i.test(m.note))));
  assert.ok(r.horizons.every(h=>h.modelAgreement>=0&&h.modelAgreement<=100));
  assert.match(r.disclaimer,/No precise future gold price/);
 });
