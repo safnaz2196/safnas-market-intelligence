@@ -152,10 +152,74 @@ function buildResearch(snapshot, now=new Date()) {
    notice:'Evidence-based research is automated and free. Generative English/Tamil synthesis requires a separately configured provider and may cost money.'},
   disclaimer:'Educational market research only. No orders, promises of return, individualized buy/sell advice or invented financial figures.'};
 }
+function mergeCompanyEvidence(report, marketEvidence, now=new Date()) {
+ if(!marketEvidence||marketEvidence.schemaVersion!==1||
+    !Array.isArray(report?.companies)||!marketEvidence.companies)return report;
+ const generated=Date.parse(marketEvidence.generatedAt),ageHours=(now.getTime()-generated)/3600000;
+ if(!Number.isFinite(ageHours)||ageHours<0||ageHours>96){
+  report.quality.sourceWarnings.push('Company evidence is older than four days; outdated quotations withheld.');
+  return report;
+ }
+ const ids=new Set(report.evidence.map(x=>x.id));
+ let quotes=0,facts=0,filings=0;
+ for(const company of report.companies) {
+  const source=marketEvidence.companies[company.ticker];if(!source)continue;
+  const q=source.quote;
+  if(q&&q.verifiedTradeDate===true&&isDate(q.asOf)&&Number.isFinite(q.value)&&q.value>0) {
+   company.quote={...q};quotes++;
+   const id='trade-'+company.ticker;
+   if(!ids.has(id)) {
+    report.evidence.push({id,label:company.name+' · CSE last recorded trade',url:'https://www.cse.lk/',
+     asOf:q.asOf,kind:'dated_company_price'});
+    ids.add(id);
+   }
+  }else if(source.indicativePrice?.value>0){company.indicativePrice={...source.indicativePrice};}
+  const st=source.facts;
+  if(st&&typeof st==='object') {
+   company.marketStats={high52Week:st.high52Week,low52Week:st.low52Week,isin:st.isin,
+    sharesIssued:st.sharesIssued,marketCapLKR:st.marketCapLKR,betaASPI:st.betaASPI,
+    retrievedAt:st.retrievedAt,sourceUrl:st.sourceUrl};
+   facts++;
+  }
+  company.filings=[];
+  for(const [index,item] of (Array.isArray(source.filings)?source.filings:[]).entries()) {
+   const url=secureUrl(item.url),published=isDate(item.published)?item.published:null;
+   if(!url||new URL(url).hostname!=='cdn.cse.lk'||!/^cmt\/upload_report_file\/.+\.pdf$/i.test(new URL(url).pathname.slice(1)))continue;
+   const id='filing-'+company.ticker+'-'+index;
+   company.filings.push({title:String(item.title).slice(0,160),url,published,sourceId:id,kind:item.kind});
+   if(!ids.has(id)) {
+    report.evidence.push({id,label:company.name+' · '+String(item.title).slice(0,100),url,
+     asOf:published,kind:'cse_company_filing'});
+    ids.add(id);
+   }
+  }
+  if(company.filings.length)filings++;
+  if(company.quote||company.filings.length||company.marketStats)company.researchStatus='verified_public_market_metadata';
+ }
+ report.engineVersion='5.3.0';
+ report.quality.indicativeCompanyQuotes=quotes;
+ report.quality.verifiedCompanyQuotes=quotes;
+ report.quality.companyFacts=facts;
+ report.quality.companyFilings=filings;
+ report.quality.sourceLinks=report.evidence.filter(x=>secureUrl(x.url)).length;
+ report.quality.companyEvidenceAt=marketEvidence.generatedAt;
+ report.quality.sourceWarnings=[...new Set([...(report.quality.sourceWarnings||[]),
+    ...(marketEvidence.issues||[]).filter(x=>!String(x).startsWith('companyInfoSummery'))])].slice(0,9);
+ if(quotes)report.quality.knownGaps=report.quality.knownGaps.filter(x=>!x.includes('share snapshots'));
+ report.briefing.findings.push({id:'company-coverage',tone:quotes?'info':'warning',
+  title:quotes+' of '+report.companies.length+' tracked companies have dated exchange quotations',
+  detail:'CSE last-traded prices, 52-week ranges and filings are observed where the exchange provides them; they are not streaming prices or trading advice.',
+  evidenceIds:report.evidence.filter(x=>x.kind==='dated_company_price').slice(0,3).map(x=>x.id)});
+ return report;
+}
 function publish() {
  const directory=path.join(__dirname,'..','market-intelligence');
  const latest=JSON.parse(fs.readFileSync(path.join(directory,'latest.json'),'utf8'));
  const report=buildResearch(latest,new Date());
+ try {
+  const companyFile=path.join(directory,'company-evidence-v5.json');
+  if(fs.existsSync(companyFile))mergeCompanyEvidence(report,JSON.parse(fs.readFileSync(companyFile,'utf8')));
+ } catch(e) {report.quality.sourceWarnings.push('Company evidence could not be verified: '+String(e.message).slice(0,90));}
  const destination=path.join(directory,'research-v5.json');
  const temp=destination+'.tmp';
  fs.writeFileSync(temp,JSON.stringify(report,null,2)+'\n');
@@ -166,4 +230,4 @@ function publish() {
  return report;
 }
 if(require.main===module){try{publish();}catch(err){console.error('Research v5 publication failed:',err.message);process.exitCode=1;}}
-module.exports={buildResearch,publish,isDate,daysOld,secureUrl};
+module.exports={buildResearch,mergeCompanyEvidence,publish,isDate,daysOld,secureUrl};
