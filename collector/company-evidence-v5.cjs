@@ -49,9 +49,10 @@ function pdfUrl(text) {
  return 'https://cdn.cse.lk/'+clean.split('?')[0];
 }
 function filingDate(row){
- const str=String(row.uploadedDate||row.authorizedDate||'');
- const time=Date.parse(str);
- return Number.isFinite(time)&&time<Date.now()+86400000?new Date(time).toISOString().slice(0,10):null;
+ const raw=row.uploadedDate||row.authorizedDate;
+ const asNumber=Number(raw);
+ const time=Number.isFinite(asNumber)&&asNumber>1262304000000?asNumber:Date.parse(String(raw||''));
+ return Number.isFinite(time)&&time>1262304000000&&time<Date.now()+86400000?new Date(time).toISOString().slice(0,10):null;
 }
 function filingsFromRows(rows,ticker){
  const code=ticker.split('.')[0],result=[],seen=new Set();
@@ -65,6 +66,32 @@ function filingsFromRows(rows,ticker){
    source:'CSE official financial announcement',companyName:safe(row?.name)});
  }
  return result.sort((a,b)=>String(b.published||'').localeCompare(String(a.published||''))).slice(0,5);
+}
+function filingsFromArchive(payload){
+ const result=[],seen=new Set();
+ const groups=[['infoQuarterlyData','interim_report',4],['infoAnnualData','annual_report',2]];
+ for(const [field,kind,limit] of groups){
+  const rows=Array.isArray(payload?.[field])?payload[field]:[];
+  const sorted=rows.map(row=>({title:safe(row?.fileText),url:pdfUrl(row?.path),published:filingDate(row),kind,
+    source:'CSE official per-company financial report archive'}))
+   .filter(x=>x.title&&x.url&&!seen.has(x.url))
+   .sort((a,b)=>String(b.published||'').localeCompare(String(a.published||'')));
+  for(const item of sorted.slice(0,limit)){if(!seen.has(item.url)){seen.add(item.url);result.push(item);}}
+ }
+ return result;
+}
+async function requestFinancials(ticker,timeoutMs=12000){
+ const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),timeoutMs);
+ try{
+  const response=await fetch(ROOT+'financials',{method:'POST',body:new URLSearchParams({symbol:ticker}),signal:abort.signal,
+   headers:{'User-Agent':'Mozilla/5.0 (SafnasFinanceResearch/5.3)','Accept':'application/json',
+    'Content-Type':'application/x-www-form-urlencoded','Origin':'https://www.cse.lk',
+    'Referer':'https://www.cse.lk/company-profile?symbol='+encodeURIComponent(ticker)}});
+  if(!response.ok)throw Error('HTTP '+response.status);
+  const data=await response.json();
+  if(!data||typeof data!=='object')throw Error('Invalid financial archive response');
+  return data;
+ }finally{clearTimeout(timer)}
 }
 async function request(endpoint,query='',timeoutMs=11000){
  const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),timeoutMs);
@@ -109,6 +136,16 @@ async function run(now=new Date(),transport=request){
     sourceUrl:ROOT+'companyInfoSummery',retrievedAt:now.toISOString()};
   }
  }
+ // Unlike the homepage's latest 27 announcements, /financials is per-ticker
+ // and includes real annual / quarterly PDF archives for every listed company.
+ for(const ticker of CODES){
+  try{
+   const archive=await requestFinancials(ticker);
+   const docs=filingsFromArchive(archive);
+   if(docs.length)companies[ticker].filings=docs;
+  }catch(e){issues.push('financials '+ticker+': '+String(e.message).slice(0,65));}
+ }
+ sources.financials=Object.values(companies).some(x=>x.filings.length)?'ok':'limited';
  const quoteCount=Object.values(companies).filter(x=>x.quote).length;
  const factsCount=Object.values(companies).filter(x=>x.facts).length;
  const filingCompanies=Object.values(companies).filter(x=>x.filings.length).length;
@@ -121,4 +158,4 @@ async function run(now=new Date(),transport=request){
  return report;
 }
 if(require.main===module)run().catch(e=>{console.error('Company evidence collector failed:',e.message);process.exitCode=1});
-module.exports={CODES,quoteFromTrade,factsFromSummary,filingsFromRows,pdfUrl,lankaDate,run};
+module.exports={CODES,quoteFromTrade,factsFromSummary,filingsFromRows,filingsFromArchive,pdfUrl,lankaDate,run};
