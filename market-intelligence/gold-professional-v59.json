@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "version": "5.9",
-  "generatedAt": "2026-11-21T10:13:36.892Z",
+  "generatedAt": "2026-11-21T10:17:04.155Z",
   "status": "research_available",
   "sourceReport": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ensemble-v58.json",
   "goldHistoryAsOf": "2026-11-20",
   "referenceUsdOz": 3515.4,
   "summary": {
-    "modelsCompared": 4,
+    "modelsCompared": 5,
     "periods": 6,
     "purgedHoldoutSupported": 0,
     "forwardSettled": 0,
@@ -19,7 +19,7 @@
     "historyAsOf": "2026-11-20",
     "historyDaysOld": 1,
     "spot": "recent",
-    "spotAsOf": "2026-11-21T10:13:07Z",
+    "spotAsOf": "2026-11-21T10:16:37Z",
     "fx": "recent",
     "fxAsOf": "2026-11-20T00:02:32.000Z",
     "managedMoney": "dated_weekly",
@@ -98,6 +98,17 @@
             "improvement": -0.0154,
             "laterHitRatePct": 29.3,
             "rangeCoveragePct": 66.2
+          },
+          {
+            "id": "ewma",
+            "trainChecks": 293,
+            "laterChecks": 157,
+            "earlyBrier": 0.6666,
+            "laterBrier": 0.6881,
+            "baselineBrier": 0.6732,
+            "improvement": -0.0149,
+            "laterHitRatePct": 33.8,
+            "rangeCoveragePct": 84.1
           }
         ],
         "explanation": "No model met the minimum independent holdout checks, score improvement and scenario coverage requirements.",
@@ -255,6 +266,17 @@
             "improvement": -0.0068,
             "laterHitRatePct": 35.4,
             "rangeCoveragePct": 70.9
+          },
+          {
+            "id": "ewma",
+            "trainChecks": 146,
+            "laterChecks": 79,
+            "earlyBrier": 0.6839,
+            "laterBrier": 0.6693,
+            "baselineBrier": 0.6768,
+            "improvement": 0.0075,
+            "laterHitRatePct": 41.8,
+            "rangeCoveragePct": 83.5
           }
         ],
         "explanation": "No model met the minimum independent holdout checks, score improvement and scenario coverage requirements.",
@@ -412,6 +434,17 @@
             "improvement": -0.1353,
             "laterHitRatePct": 32.3,
             "rangeCoveragePct": 51.6
+          },
+          {
+            "id": "ewma",
+            "trainChecks": 59,
+            "laterChecks": 31,
+            "earlyBrier": 0.67,
+            "laterBrier": 0.6609,
+            "baselineBrier": 0.6169,
+            "improvement": -0.0441,
+            "laterHitRatePct": 45.2,
+            "rangeCoveragePct": 83.9
           }
         ],
         "explanation": "No model met the minimum independent holdout checks, score improvement and scenario coverage requirements.",
@@ -569,6 +602,17 @@
             "improvement": -0.082,
             "laterHitRatePct": 25,
             "rangeCoveragePct": 50
+          },
+          {
+            "id": "ewma",
+            "trainChecks": 29,
+            "laterChecks": 16,
+            "earlyBrier": 0.7079,
+            "laterBrier": 0.6736,
+            "baselineBrier": 0.6793,
+            "improvement": 0.0058,
+            "laterHitRatePct": 43.8,
+            "rangeCoveragePct": 81.3
           }
         ],
         "explanation": "No model met the minimum independent holdout checks, score improvement and scenario coverage requirements.",
@@ -726,6 +770,17 @@
             "improvement": -0.1577,
             "laterHitRatePct": 0,
             "rangeCoveragePct": 14.3
+          },
+          {
+            "id": "ewma",
+            "trainChecks": 14,
+            "laterChecks": 7,
+            "earlyBrier": 0.689,
+            "laterBrier": 0.767,
+            "baselineBrier": 0.8146,
+            "improvement": 0.0476,
+            "laterHitRatePct": 42.9,
+            "rangeCoveragePct": 71.4
           }
         ],
         "explanation": "No model met the minimum independent holdout checks, score improvement and scenario coverage requirements.",
