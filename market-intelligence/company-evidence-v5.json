@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-21T07:30:05.667Z",
+  "generatedAt": "2026-11-21T07:31:18.435Z",
   "status": "observed",
   "source": "Colombo Stock Exchange public market and document endpoints",
   "sources": {
@@ -23,7 +23,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "retrievedAt": "2026-11-21T07:31:18.435Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 49,
@@ -45,10 +45,10 @@
         "betaASPI": 1.4018782,
         "reportedLastTradedPrice": 48,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-21T07:30:07.692Z"
+        "retrievedAt": "2026-11-21T07:31:20.250Z"
       },
       "filings": [],
-      "dataAsOf": "2026-11-21T07:30:05.667Z"
+      "dataAsOf": "2026-11-21T07:31:18.435Z"
     },
     "COMB.N0000": {
       "ticker": "COMB.N0000",
@@ -57,7 +57,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "retrievedAt": "2026-11-21T07:31:18.435Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 215.25,
@@ -79,10 +79,10 @@
         "betaASPI": 0.79103035,
         "reportedLastTradedPrice": 214,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-21T07:30:08.012Z"
+        "retrievedAt": "2026-11-21T07:31:20.446Z"
       },
       "filings": [],
-      "dataAsOf": "2026-11-21T07:30:05.667Z"
+      "dataAsOf": "2026-11-21T07:31:18.435Z"
     },
     "JKH.N0000": {
       "ticker": "JKH.N0000",
@@ -91,7 +91,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "retrievedAt": "2026-11-21T07:31:18.435Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 18.9,
@@ -113,10 +113,10 @@
         "betaASPI": 1.0031595,
         "reportedLastTradedPrice": 18.7,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-21T07:30:08.298Z"
+        "retrievedAt": "2026-11-21T07:31:20.642Z"
       },
       "filings": [],
-      "dataAsOf": "2026-11-21T07:30:05.667Z"
+      "dataAsOf": "2026-11-21T07:31:18.435Z"
     },
     "HNB.N0000": {
       "ticker": "HNB.N0000",
@@ -125,7 +125,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "retrievedAt": "2026-11-21T07:31:18.435Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 397,
@@ -147,10 +147,10 @@
         "betaASPI": 0.5533614,
         "reportedLastTradedPrice": 393.75,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-21T07:30:08.515Z"
+        "retrievedAt": "2026-11-21T07:31:20.838Z"
       },
       "filings": [],
-      "dataAsOf": "2026-11-21T07:30:05.667Z"
+      "dataAsOf": "2026-11-21T07:31:18.435Z"
     },
     "SAMP.N0000": {
       "ticker": "SAMP.N0000",
@@ -159,7 +159,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "retrievedAt": "2026-11-21T07:31:18.435Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 150,
@@ -181,10 +181,10 @@
         "betaASPI": 0.6757065,
         "reportedLastTradedPrice": 148.25,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-21T07:30:08.733Z"
+        "retrievedAt": "2026-11-21T07:31:21.033Z"
       },
       "filings": [],
-      "dataAsOf": "2026-11-21T07:30:05.667Z"
+      "dataAsOf": "2026-11-21T07:31:18.435Z"
     },
     "HAYL.N0000": {
       "ticker": "HAYL.N0000",
@@ -193,7 +193,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "retrievedAt": "2026-11-21T07:31:18.435Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 232.25,
@@ -215,10 +215,10 @@
         "betaASPI": 0.84930664,
         "reportedLastTradedPrice": 230.25,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-21T07:30:09.041Z"
+        "retrievedAt": "2026-11-21T07:31:21.229Z"
       },
       "filings": [],
-      "dataAsOf": "2026-11-21T07:30:05.667Z"
+      "dataAsOf": "2026-11-21T07:31:18.435Z"
     },
     "LOLC.N0000": {
       "ticker": "LOLC.N0000",
@@ -227,7 +227,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "retrievedAt": "2026-11-21T07:31:18.435Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 405.75,
@@ -249,10 +249,10 @@
         "betaASPI": 0.8594875,
         "reportedLastTradedPrice": 406,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-21T07:30:09.337Z"
+        "retrievedAt": "2026-11-21T07:31:21.428Z"
       },
       "filings": [],
-      "dataAsOf": "2026-11-21T07:30:05.667Z"
+      "dataAsOf": "2026-11-21T07:31:18.435Z"
     },
     "CTC.N0000": {
       "ticker": "CTC.N0000",
@@ -261,7 +261,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "retrievedAt": "2026-11-21T07:31:18.435Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 1843.75,
@@ -283,10 +283,10 @@
         "betaASPI": 0.20484465,
         "reportedLastTradedPrice": 1844.5,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-21T07:30:09.554Z"
+        "retrievedAt": "2026-11-21T07:31:21.623Z"
       },
       "filings": [],
-      "dataAsOf": "2026-11-21T07:30:05.667Z"
+      "dataAsOf": "2026-11-21T07:31:18.435Z"
     },
     "DIST.N0000": {
       "ticker": "DIST.N0000",
@@ -295,7 +295,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "retrievedAt": "2026-11-21T07:31:18.435Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 58.6,
@@ -317,10 +317,10 @@
         "betaASPI": 0.7319642,
         "reportedLastTradedPrice": 58.3,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-21T07:30:09.772Z"
+        "retrievedAt": "2026-11-21T07:31:21.823Z"
       },
       "filings": [],
-      "dataAsOf": "2026-11-21T07:30:05.667Z"
+      "dataAsOf": "2026-11-21T07:31:18.435Z"
     },
     "MELS.N0000": {
       "ticker": "MELS.N0000",
@@ -329,7 +329,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "retrievedAt": "2026-11-21T07:31:18.435Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 193,
@@ -351,10 +351,10 @@
         "betaASPI": 0.7826927,
         "reportedLastTradedPrice": 192,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-21T07:30:09.990Z"
+        "retrievedAt": "2026-11-21T07:31:22.017Z"
       },
       "filings": [],
-      "dataAsOf": "2026-11-21T07:30:05.667Z"
+      "dataAsOf": "2026-11-21T07:31:18.435Z"
     },
     "CARG.N0000": {
       "ticker": "CARG.N0000",
@@ -363,7 +363,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "retrievedAt": "2026-11-21T07:31:18.435Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 680.25,
@@ -385,10 +385,10 @@
         "betaASPI": 0.43022645,
         "reportedLastTradedPrice": 680.25,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-21T07:30:10.309Z"
+        "retrievedAt": "2026-11-21T07:31:22.211Z"
       },
       "filings": [],
-      "dataAsOf": "2026-11-21T07:30:05.667Z"
+      "dataAsOf": "2026-11-21T07:31:18.435Z"
     },
     "SLTL.N0000": {
       "ticker": "SLTL.N0000",
@@ -397,7 +397,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "retrievedAt": "2026-11-21T07:31:18.435Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 93.5,
@@ -419,10 +419,10 @@
         "betaASPI": 1.1619273,
         "reportedLastTradedPrice": 90.6,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-21T07:30:10.602Z"
+        "retrievedAt": "2026-11-21T07:31:22.404Z"
       },
       "filings": [],
-      "dataAsOf": "2026-11-21T07:30:05.667Z"
+      "dataAsOf": "2026-11-21T07:31:18.435Z"
     },
     "HHL.N0000": {
       "ticker": "HHL.N0000",
@@ -431,7 +431,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "retrievedAt": "2026-11-21T07:31:18.435Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 32.3,
@@ -453,10 +453,10 @@
         "betaASPI": 1.1194488,
         "reportedLastTradedPrice": 32,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-21T07:30:10.819Z"
+        "retrievedAt": "2026-11-21T07:31:22.598Z"
       },
       "filings": [],
-      "dataAsOf": "2026-11-21T07:30:05.667Z"
+      "dataAsOf": "2026-11-21T07:31:18.435Z"
     },
     "NDB.N0000": {
       "ticker": "NDB.N0000",
@@ -465,7 +465,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "retrievedAt": "2026-11-21T07:31:18.435Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 112.75,
@@ -487,10 +487,10 @@
         "betaASPI": 0.8006846,
         "reportedLastTradedPrice": 111.25,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-21T07:30:11.105Z"
+        "retrievedAt": "2026-11-21T07:31:22.797Z"
       },
       "filings": [],
-      "dataAsOf": "2026-11-21T07:30:05.667Z"
+      "dataAsOf": "2026-11-21T07:31:18.435Z"
     },
     "TKYO.N0000": {
       "ticker": "TKYO.N0000",
@@ -499,7 +499,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "retrievedAt": "2026-11-21T07:31:18.435Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 83,
@@ -521,10 +521,10 @@
         "betaASPI": 0.94540983,
         "reportedLastTradedPrice": 83,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-21T07:30:11.332Z"
+        "retrievedAt": "2026-11-21T07:31:22.990Z"
       },
       "filings": [],
-      "dataAsOf": "2026-11-21T07:30:05.667Z"
+      "dataAsOf": "2026-11-21T07:31:18.435Z"
     },
     "LFIN.N0000": {
       "ticker": "LFIN.N0000",
@@ -533,7 +533,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "retrievedAt": "2026-11-21T07:31:18.435Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 154,
@@ -555,10 +555,10 @@
         "betaASPI": 0.8785326,
         "reportedLastTradedPrice": 154,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-21T07:30:11.552Z"
+        "retrievedAt": "2026-11-21T07:31:23.183Z"
       },
       "filings": [],
-      "dataAsOf": "2026-11-21T07:30:05.667Z"
+      "dataAsOf": "2026-11-21T07:31:18.435Z"
     }
   }
 }
