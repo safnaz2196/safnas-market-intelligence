@@ -1,0 +1,955 @@
+{
+  "schemaVersion": 1,
+  "version": "5.9",
+  "generatedAt": "2026-11-21T10:13:36.892Z",
+  "status": "research_available",
+  "sourceReport": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ensemble-v58.json",
+  "goldHistoryAsOf": "2026-11-20",
+  "referenceUsdOz": 3515.4,
+  "summary": {
+    "modelsCompared": 4,
+    "periods": 6,
+    "purgedHoldoutSupported": 0,
+    "forwardSettled": 0,
+    "forwardPending": 6,
+    "headline": "Evidence-first gold intelligence — no unfounded price certainty"
+  },
+  "quality": {
+    "history": "observed",
+    "historyAsOf": "2026-11-20",
+    "historyDaysOld": 1,
+    "spot": "recent",
+    "spotAsOf": "2026-11-21T10:13:07Z",
+    "fx": "recent",
+    "fxAsOf": "2026-11-20T00:02:32.000Z",
+    "managedMoney": "dated_weekly",
+    "macroAvailable": 2,
+    "news": "unavailable",
+    "explanation": "Live source status is checked independently. Gold price history, currencies, economic reports and weekly futures positions are not equally fresh."
+  },
+  "horizons": [
+    {
+      "days": 1,
+      "sessions": 1,
+      "originalDirection": "rise",
+      "scenario": {
+        "lowUsdOz": 3413.42,
+        "midUsdOz": 3518.42,
+        "highUsdOz": 3587.22
+      },
+      "historicalConfidence": "NOT_PROVEN",
+      "validation": {
+        "days": 1,
+        "sessions": 1,
+        "method": "purged_nonoverlapping_walk_forward",
+        "status": "evaluated",
+        "referenceSamples": 451,
+        "earlyChecks": 293,
+        "laterChecks": 157,
+        "gapSessions": 1,
+        "selectedModel": "analogue",
+        "validated": false,
+        "modelBrier": 0.6947,
+        "baselineBrier": 0.6732,
+        "improvement": -0.0215,
+        "hitRatePct": 29.9,
+        "rangeCoveragePct": 68.2,
+        "modelAudits": [
+          {
+            "id": "analogue",
+            "trainChecks": 293,
+            "laterChecks": 157,
+            "earlyBrier": 0.6592,
+            "laterBrier": 0.6947,
+            "baselineBrier": 0.6732,
+            "improvement": -0.0215,
+            "laterHitRatePct": 29.9,
+            "rangeCoveragePct": 68.2
+          },
+          {
+            "id": "trend",
+            "trainChecks": 293,
+            "laterChecks": 157,
+            "earlyBrier": 0.6739,
+            "laterBrier": 0.6939,
+            "baselineBrier": 0.6732,
+            "improvement": -0.0206,
+            "laterHitRatePct": 31.8,
+            "rangeCoveragePct": 61.8
+          },
+          {
+            "id": "reversion",
+            "trainChecks": 293,
+            "laterChecks": 157,
+            "earlyBrier": 0.6721,
+            "laterBrier": 0.7006,
+            "baselineBrier": 0.6732,
+            "improvement": -0.0273,
+            "laterHitRatePct": 29.9,
+            "rangeCoveragePct": 61.8
+          },
+          {
+            "id": "regime",
+            "trainChecks": 293,
+            "laterChecks": 157,
+            "earlyBrier": 0.6627,
+            "laterBrier": 0.6886,
+            "baselineBrier": 0.6732,
+            "improvement": -0.0154,
+            "laterHitRatePct": 29.3,
+            "rangeCoveragePct": 66.2
+          }
+        ],
+        "explanation": "No model met the minimum independent holdout checks, score improvement and scenario coverage requirements.",
+        "selectionNote": "Candidate chosen on earlier outcomes only; later outcomes are separated by the full forecast horizon to reduce label overlap. Minimum 35 early and 20 later checks, Brier improvement ≥ 0.025 and scenario coverage ≥ 50%."
+      },
+      "currencyScenarios": {
+        "available": true,
+        "fxObservedAt": "2026-11-20T00:02:32.000Z",
+        "goldHistoryAsOf": "2026-11-20",
+        "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
+        "contexts": [
+          {
+            "currency": "SAR",
+            "region": "Saudi Arabia",
+            "karat": 22,
+            "unit": "SAR/gram",
+            "fxReference": 3.75,
+            "fxStressPct": 0.5,
+            "constantFx": {
+              "low": 377.25,
+              "middle": 388.85,
+              "high": 396.45
+            },
+            "hypotheticalStress": {
+              "low": 375.36,
+              "high": 398.43
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "SAR",
+            "region": "Saudi Arabia",
+            "karat": 24,
+            "unit": "SAR/gram",
+            "fxReference": 3.75,
+            "fxStressPct": 0.5,
+            "constantFx": {
+              "low": 411.54,
+              "middle": 424.2,
+              "high": 432.49
+            },
+            "hypotheticalStress": {
+              "low": 409.48,
+              "high": 434.65
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "LKR",
+            "region": "Sri Lanka",
+            "karat": 22,
+            "unit": "LKR/gram",
+            "fxReference": 332.63603,
+            "fxStressPct": 3,
+            "constantFx": {
+              "low": 33462.74,
+              "middle": 34492.09,
+              "high": 35166.55
+            },
+            "hypotheticalStress": {
+              "low": 32458.86,
+              "high": 36221.55
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "LKR",
+            "region": "Sri Lanka",
+            "karat": 24,
+            "unit": "LKR/gram",
+            "fxReference": 332.63603,
+            "fxStressPct": 3,
+            "constantFx": {
+              "low": 36504.81,
+              "middle": 37627.73,
+              "high": 38363.51
+            },
+            "hypotheticalStress": {
+              "low": 35409.67,
+              "high": 39514.42
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          }
+        ]
+      },
+      "note": "No assured timing, no assured direction, no demonstrated live trading edge."
+    },
+    {
+      "days": 3,
+      "sessions": 2,
+      "originalDirection": "fall",
+      "scenario": {
+        "lowUsdOz": 3382.87,
+        "midUsdOz": 3507.42,
+        "highUsdOz": 3629.83
+      },
+      "historicalConfidence": "NOT_PROVEN",
+      "validation": {
+        "days": 3,
+        "sessions": 2,
+        "method": "purged_nonoverlapping_walk_forward",
+        "status": "evaluated",
+        "referenceSamples": 226,
+        "earlyChecks": 146,
+        "laterChecks": 79,
+        "gapSessions": 2,
+        "selectedModel": "regime",
+        "validated": false,
+        "modelBrier": 0.6836,
+        "baselineBrier": 0.6768,
+        "improvement": -0.0068,
+        "hitRatePct": 35.4,
+        "rangeCoveragePct": 70.9,
+        "modelAudits": [
+          {
+            "id": "analogue",
+            "trainChecks": 146,
+            "laterChecks": 79,
+            "earlyBrier": 0.6691,
+            "laterBrier": 0.7086,
+            "baselineBrier": 0.6768,
+            "improvement": -0.0318,
+            "laterHitRatePct": 31.6,
+            "rangeCoveragePct": 67.1
+          },
+          {
+            "id": "trend",
+            "trainChecks": 146,
+            "laterChecks": 79,
+            "earlyBrier": 0.6666,
+            "laterBrier": 0.7065,
+            "baselineBrier": 0.6768,
+            "improvement": -0.0297,
+            "laterHitRatePct": 36.7,
+            "rangeCoveragePct": 59.5
+          },
+          {
+            "id": "reversion",
+            "trainChecks": 146,
+            "laterChecks": 79,
+            "earlyBrier": 0.6763,
+            "laterBrier": 0.7091,
+            "baselineBrier": 0.6768,
+            "improvement": -0.0323,
+            "laterHitRatePct": 32.9,
+            "rangeCoveragePct": 62
+          },
+          {
+            "id": "regime",
+            "trainChecks": 146,
+            "laterChecks": 79,
+            "earlyBrier": 0.6647,
+            "laterBrier": 0.6836,
+            "baselineBrier": 0.6768,
+            "improvement": -0.0068,
+            "laterHitRatePct": 35.4,
+            "rangeCoveragePct": 70.9
+          }
+        ],
+        "explanation": "No model met the minimum independent holdout checks, score improvement and scenario coverage requirements.",
+        "selectionNote": "Candidate chosen on earlier outcomes only; later outcomes are separated by the full forecast horizon to reduce label overlap. Minimum 35 early and 20 later checks, Brier improvement ≥ 0.025 and scenario coverage ≥ 50%."
+      },
+      "currencyScenarios": {
+        "available": true,
+        "fxObservedAt": "2026-11-20T00:02:32.000Z",
+        "goldHistoryAsOf": "2026-11-20",
+        "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
+        "contexts": [
+          {
+            "currency": "SAR",
+            "region": "Saudi Arabia",
+            "karat": 22,
+            "unit": "SAR/gram",
+            "fxReference": 3.75,
+            "fxStressPct": 0.5,
+            "constantFx": {
+              "low": 373.87,
+              "middle": 387.63,
+              "high": 401.16
+            },
+            "hypotheticalStress": {
+              "low": 372,
+              "high": 403.17
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "SAR",
+            "region": "Saudi Arabia",
+            "karat": 24,
+            "unit": "SAR/gram",
+            "fxReference": 3.75,
+            "fxStressPct": 0.5,
+            "constantFx": {
+              "low": 407.86,
+              "middle": 422.87,
+              "high": 437.63
+            },
+            "hypotheticalStress": {
+              "low": 405.82,
+              "high": 439.82
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "LKR",
+            "region": "Sri Lanka",
+            "karat": 22,
+            "unit": "LKR/gram",
+            "fxReference": 332.63603,
+            "fxStressPct": 3,
+            "constantFx": {
+              "low": 33163.25,
+              "middle": 34384.25,
+              "high": 35584.27
+            },
+            "hypotheticalStress": {
+              "low": 32168.35,
+              "high": 36651.8
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "LKR",
+            "region": "Sri Lanka",
+            "karat": 24,
+            "unit": "LKR/gram",
+            "fxReference": 332.63603,
+            "fxStressPct": 3,
+            "constantFx": {
+              "low": 36178.09,
+              "middle": 37510.09,
+              "high": 38819.2
+            },
+            "hypotheticalStress": {
+              "low": 35092.75,
+              "high": 39983.78
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          }
+        ]
+      },
+      "note": "No assured timing, no assured direction, no demonstrated live trading edge."
+    },
+    {
+      "days": 7,
+      "sessions": 5,
+      "originalDirection": "rise",
+      "scenario": {
+        "lowUsdOz": 3368.07,
+        "midUsdOz": 3521.41,
+        "highUsdOz": 3639.95
+      },
+      "historicalConfidence": "NOT_PROVEN",
+      "validation": {
+        "days": 7,
+        "sessions": 5,
+        "method": "purged_nonoverlapping_walk_forward",
+        "status": "evaluated",
+        "referenceSamples": 91,
+        "earlyChecks": 59,
+        "laterChecks": 31,
+        "gapSessions": 5,
+        "selectedModel": "regime",
+        "validated": false,
+        "modelBrier": 0.7521,
+        "baselineBrier": 0.6169,
+        "improvement": -0.1353,
+        "hitRatePct": 32.3,
+        "rangeCoveragePct": 51.6,
+        "modelAudits": [
+          {
+            "id": "analogue",
+            "trainChecks": 59,
+            "laterChecks": 31,
+            "earlyBrier": 0.6735,
+            "laterBrier": 0.7045,
+            "baselineBrier": 0.6169,
+            "improvement": -0.0877,
+            "laterHitRatePct": 41.9,
+            "rangeCoveragePct": 54.8
+          },
+          {
+            "id": "trend",
+            "trainChecks": 59,
+            "laterChecks": 31,
+            "earlyBrier": 0.6652,
+            "laterBrier": 0.7254,
+            "baselineBrier": 0.6169,
+            "improvement": -0.1086,
+            "laterHitRatePct": 29,
+            "rangeCoveragePct": 48.4
+          },
+          {
+            "id": "reversion",
+            "trainChecks": 59,
+            "laterChecks": 31,
+            "earlyBrier": 0.6694,
+            "laterBrier": 0.7233,
+            "baselineBrier": 0.6169,
+            "improvement": -0.1064,
+            "laterHitRatePct": 35.5,
+            "rangeCoveragePct": 48.4
+          },
+          {
+            "id": "regime",
+            "trainChecks": 59,
+            "laterChecks": 31,
+            "earlyBrier": 0.6546,
+            "laterBrier": 0.7521,
+            "baselineBrier": 0.6169,
+            "improvement": -0.1353,
+            "laterHitRatePct": 32.3,
+            "rangeCoveragePct": 51.6
+          }
+        ],
+        "explanation": "No model met the minimum independent holdout checks, score improvement and scenario coverage requirements.",
+        "selectionNote": "Candidate chosen on earlier outcomes only; later outcomes are separated by the full forecast horizon to reduce label overlap. Minimum 35 early and 20 later checks, Brier improvement ≥ 0.025 and scenario coverage ≥ 50%."
+      },
+      "currencyScenarios": {
+        "available": true,
+        "fxObservedAt": "2026-11-20T00:02:32.000Z",
+        "goldHistoryAsOf": "2026-11-20",
+        "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
+        "contexts": [
+          {
+            "currency": "SAR",
+            "region": "Saudi Arabia",
+            "karat": 22,
+            "unit": "SAR/gram",
+            "fxReference": 3.75,
+            "fxStressPct": 0.5,
+            "constantFx": {
+              "low": 372.23,
+              "middle": 389.18,
+              "high": 402.28
+            },
+            "hypotheticalStress": {
+              "low": 370.37,
+              "high": 404.29
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "SAR",
+            "region": "Saudi Arabia",
+            "karat": 24,
+            "unit": "SAR/gram",
+            "fxReference": 3.75,
+            "fxStressPct": 0.5,
+            "constantFx": {
+              "low": 406.07,
+              "middle": 424.56,
+              "high": 438.85
+            },
+            "hypotheticalStress": {
+              "low": 404.04,
+              "high": 441.04
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "LKR",
+            "region": "Sri Lanka",
+            "karat": 22,
+            "unit": "LKR/gram",
+            "fxReference": 332.63603,
+            "fxStressPct": 3,
+            "constantFx": {
+              "low": 33018.16,
+              "middle": 34521.4,
+              "high": 35683.48
+            },
+            "hypotheticalStress": {
+              "low": 32027.62,
+              "high": 36753.98
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "LKR",
+            "region": "Sri Lanka",
+            "karat": 24,
+            "unit": "LKR/gram",
+            "fxReference": 332.63603,
+            "fxStressPct": 3,
+            "constantFx": {
+              "low": 36019.81,
+              "middle": 37659.71,
+              "high": 38927.43
+            },
+            "hypotheticalStress": {
+              "low": 34939.22,
+              "high": 40095.25
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          }
+        ]
+      },
+      "note": "No assured timing, no assured direction, no demonstrated live trading edge."
+    },
+    {
+      "days": 14,
+      "sessions": 10,
+      "originalDirection": "rise",
+      "scenario": {
+        "lowUsdOz": 3411.2,
+        "midUsdOz": 3535.09,
+        "highUsdOz": 3737.71
+      },
+      "historicalConfidence": "NOT_PROVEN",
+      "validation": {
+        "days": 14,
+        "sessions": 10,
+        "method": "purged_nonoverlapping_walk_forward",
+        "status": "insufficient",
+        "referenceSamples": 46,
+        "earlyChecks": 0,
+        "laterChecks": 0,
+        "gapSessions": 10,
+        "selectedModel": null,
+        "validated": false,
+        "modelBrier": null,
+        "baselineBrier": null,
+        "improvement": null,
+        "hitRatePct": null,
+        "rangeCoveragePct": null,
+        "modelAudits": [
+          {
+            "id": "analogue",
+            "trainChecks": 29,
+            "laterChecks": 16,
+            "earlyBrier": 0.6429,
+            "laterBrier": 0.7476,
+            "baselineBrier": 0.6793,
+            "improvement": -0.0683,
+            "laterHitRatePct": 31.3,
+            "rangeCoveragePct": 56.3
+          },
+          {
+            "id": "trend",
+            "trainChecks": 29,
+            "laterChecks": 16,
+            "earlyBrier": 0.6646,
+            "laterBrier": 0.7525,
+            "baselineBrier": 0.6793,
+            "improvement": -0.0732,
+            "laterHitRatePct": 25,
+            "rangeCoveragePct": 50
+          },
+          {
+            "id": "reversion",
+            "trainChecks": 29,
+            "laterChecks": 16,
+            "earlyBrier": 0.6592,
+            "laterBrier": 0.7321,
+            "baselineBrier": 0.6793,
+            "improvement": -0.0527,
+            "laterHitRatePct": 37.5,
+            "rangeCoveragePct": 50
+          },
+          {
+            "id": "regime",
+            "trainChecks": 29,
+            "laterChecks": 16,
+            "earlyBrier": 0.6661,
+            "laterBrier": 0.7614,
+            "baselineBrier": 0.6793,
+            "improvement": -0.082,
+            "laterHitRatePct": 25,
+            "rangeCoveragePct": 50
+          }
+        ],
+        "explanation": "No model met the minimum independent holdout checks, score improvement and scenario coverage requirements.",
+        "selectionNote": "Candidate chosen on earlier outcomes only; later outcomes are separated by the full forecast horizon to reduce label overlap. Minimum 35 early and 20 later checks, Brier improvement ≥ 0.025 and scenario coverage ≥ 50%."
+      },
+      "currencyScenarios": {
+        "available": true,
+        "fxObservedAt": "2026-11-20T00:02:32.000Z",
+        "goldHistoryAsOf": "2026-11-20",
+        "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
+        "contexts": [
+          {
+            "currency": "SAR",
+            "region": "Saudi Arabia",
+            "karat": 22,
+            "unit": "SAR/gram",
+            "fxReference": 3.75,
+            "fxStressPct": 0.5,
+            "constantFx": {
+              "low": 377,
+              "middle": 390.69,
+              "high": 413.08
+            },
+            "hypotheticalStress": {
+              "low": 375.12,
+              "high": 415.15
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "SAR",
+            "region": "Saudi Arabia",
+            "karat": 24,
+            "unit": "SAR/gram",
+            "fxReference": 3.75,
+            "fxStressPct": 0.5,
+            "constantFx": {
+              "low": 411.27,
+              "middle": 426.21,
+              "high": 450.64
+            },
+            "hypotheticalStress": {
+              "low": 409.21,
+              "high": 452.89
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "LKR",
+            "region": "Sri Lanka",
+            "karat": 22,
+            "unit": "LKR/gram",
+            "fxReference": 332.63603,
+            "fxStressPct": 3,
+            "constantFx": {
+              "low": 33440.98,
+              "middle": 34655.51,
+              "high": 36641.85
+            },
+            "hypotheticalStress": {
+              "low": 32437.75,
+              "high": 37741.11
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "LKR",
+            "region": "Sri Lanka",
+            "karat": 24,
+            "unit": "LKR/gram",
+            "fxReference": 332.63603,
+            "fxStressPct": 3,
+            "constantFx": {
+              "low": 36481.07,
+              "middle": 37806.01,
+              "high": 39972.93
+            },
+            "hypotheticalStress": {
+              "low": 35386.64,
+              "high": 41172.12
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          }
+        ]
+      },
+      "note": "No assured timing, no assured direction, no demonstrated live trading edge."
+    },
+    {
+      "days": 30,
+      "sessions": 21,
+      "originalDirection": "rise",
+      "scenario": {
+        "lowUsdOz": 3303.6,
+        "midUsdOz": 3540.29,
+        "highUsdOz": 3808.27
+      },
+      "historicalConfidence": "NOT_PROVEN",
+      "validation": {
+        "days": 30,
+        "sessions": 21,
+        "method": "purged_nonoverlapping_walk_forward",
+        "status": "insufficient",
+        "referenceSamples": 22,
+        "earlyChecks": 0,
+        "laterChecks": 0,
+        "gapSessions": 21,
+        "selectedModel": null,
+        "validated": false,
+        "modelBrier": null,
+        "baselineBrier": null,
+        "improvement": null,
+        "hitRatePct": null,
+        "rangeCoveragePct": null,
+        "modelAudits": [
+          {
+            "id": "analogue",
+            "trainChecks": 14,
+            "laterChecks": 7,
+            "earlyBrier": 0.4632,
+            "laterBrier": 0.8492,
+            "baselineBrier": 0.8146,
+            "improvement": -0.0346,
+            "laterHitRatePct": 14.3,
+            "rangeCoveragePct": 57.1
+          },
+          {
+            "id": "trend",
+            "trainChecks": 14,
+            "laterChecks": 7,
+            "earlyBrier": 0.5103,
+            "laterBrier": 0.8711,
+            "baselineBrier": 0.8146,
+            "improvement": -0.0565,
+            "laterHitRatePct": 28.6,
+            "rangeCoveragePct": 42.9
+          },
+          {
+            "id": "reversion",
+            "trainChecks": 14,
+            "laterChecks": 7,
+            "earlyBrier": 0.5365,
+            "laterBrier": 0.8988,
+            "baselineBrier": 0.8146,
+            "improvement": -0.0843,
+            "laterHitRatePct": 28.6,
+            "rangeCoveragePct": 42.9
+          },
+          {
+            "id": "regime",
+            "trainChecks": 14,
+            "laterChecks": 7,
+            "earlyBrier": 0.536,
+            "laterBrier": 0.9723,
+            "baselineBrier": 0.8146,
+            "improvement": -0.1577,
+            "laterHitRatePct": 0,
+            "rangeCoveragePct": 14.3
+          }
+        ],
+        "explanation": "No model met the minimum independent holdout checks, score improvement and scenario coverage requirements.",
+        "selectionNote": "Candidate chosen on earlier outcomes only; later outcomes are separated by the full forecast horizon to reduce label overlap. Minimum 35 early and 20 later checks, Brier improvement ≥ 0.025 and scenario coverage ≥ 50%."
+      },
+      "currencyScenarios": {
+        "available": true,
+        "fxObservedAt": "2026-11-20T00:02:32.000Z",
+        "goldHistoryAsOf": "2026-11-20",
+        "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
+        "contexts": [
+          {
+            "currency": "SAR",
+            "region": "Saudi Arabia",
+            "karat": 22,
+            "unit": "SAR/gram",
+            "fxReference": 3.75,
+            "fxStressPct": 0.5,
+            "constantFx": {
+              "low": 365.11,
+              "middle": 391.27,
+              "high": 420.88
+            },
+            "hypotheticalStress": {
+              "low": 363.28,
+              "high": 422.98
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "SAR",
+            "region": "Saudi Arabia",
+            "karat": 24,
+            "unit": "SAR/gram",
+            "fxReference": 3.75,
+            "fxStressPct": 0.5,
+            "constantFx": {
+              "low": 398.3,
+              "middle": 426.84,
+              "high": 459.15
+            },
+            "hypotheticalStress": {
+              "low": 396.31,
+              "high": 461.45
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "LKR",
+            "region": "Sri Lanka",
+            "karat": 22,
+            "unit": "LKR/gram",
+            "fxReference": 332.63603,
+            "fxStressPct": 3,
+            "constantFx": {
+              "low": 32386.14,
+              "middle": 34706.48,
+              "high": 37333.57
+            },
+            "hypotheticalStress": {
+              "low": 31414.56,
+              "high": 38453.58
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "LKR",
+            "region": "Sri Lanka",
+            "karat": 24,
+            "unit": "LKR/gram",
+            "fxReference": 332.63603,
+            "fxStressPct": 3,
+            "constantFx": {
+              "low": 35330.34,
+              "middle": 37861.62,
+              "high": 40727.53
+            },
+            "hypotheticalStress": {
+              "low": 34270.43,
+              "high": 41949.36
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          }
+        ]
+      },
+      "note": "No assured timing, no assured direction, no demonstrated live trading edge."
+    },
+    {
+      "days": 90,
+      "sessions": 63,
+      "originalDirection": "rise",
+      "scenario": {
+        "lowUsdOz": 3160.38,
+        "midUsdOz": 3708.11,
+        "highUsdOz": 4049.25
+      },
+      "historicalConfidence": "NOT_PROVEN",
+      "validation": {
+        "days": 90,
+        "sessions": 63,
+        "method": "purged_nonoverlapping_walk_forward",
+        "status": "insufficient",
+        "referenceSamples": 8,
+        "earlyChecks": 0,
+        "laterChecks": 0,
+        "gapSessions": 63,
+        "selectedModel": null,
+        "validated": false,
+        "modelBrier": null,
+        "baselineBrier": null,
+        "improvement": null,
+        "hitRatePct": null,
+        "rangeCoveragePct": null,
+        "modelAudits": [],
+        "explanation": "Not enough independent, dated observations to evaluate this horizon."
+      },
+      "currencyScenarios": {
+        "available": true,
+        "fxObservedAt": "2026-11-20T00:02:32.000Z",
+        "goldHistoryAsOf": "2026-11-20",
+        "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
+        "contexts": [
+          {
+            "currency": "SAR",
+            "region": "Saudi Arabia",
+            "karat": 22,
+            "unit": "SAR/gram",
+            "fxReference": 3.75,
+            "fxStressPct": 0.5,
+            "constantFx": {
+              "low": 349.28,
+              "middle": 409.81,
+              "high": 447.52
+            },
+            "hypotheticalStress": {
+              "low": 347.53,
+              "high": 449.76
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "SAR",
+            "region": "Saudi Arabia",
+            "karat": 24,
+            "unit": "SAR/gram",
+            "fxReference": 3.75,
+            "fxStressPct": 0.5,
+            "constantFx": {
+              "low": 381.03,
+              "middle": 447.07,
+              "high": 488.2
+            },
+            "hypotheticalStress": {
+              "low": 379.12,
+              "high": 490.64
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "LKR",
+            "region": "Sri Lanka",
+            "karat": 22,
+            "unit": "LKR/gram",
+            "fxReference": 332.63603,
+            "fxStressPct": 3,
+            "constantFx": {
+              "low": 30982.12,
+              "middle": 36351.67,
+              "high": 39695.97
+            },
+            "hypotheticalStress": {
+              "low": 30052.66,
+              "high": 40886.85
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          },
+          {
+            "currency": "LKR",
+            "region": "Sri Lanka",
+            "karat": 24,
+            "unit": "LKR/gram",
+            "fxReference": 332.63603,
+            "fxStressPct": 3,
+            "constantFx": {
+              "low": 33798.67,
+              "middle": 39656.37,
+              "high": 43304.69
+            },
+            "hypotheticalStress": {
+              "low": 32784.71,
+              "high": 44603.83
+            },
+            "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
+          }
+        ]
+      },
+      "note": "No assured timing, no assured direction, no demonstrated live trading edge."
+    }
+  ],
+  "failureLab": {
+    "settledReviewed": 0,
+    "failedReviewed": 0,
+    "studies": [],
+    "description": "No gold forecasts have settled yet. Failure investigations start automatically after verified future dated closes arrive.",
+    "attributionRule": "Do not claim a specific news headline, real-yield change or currency movement caused a failed prediction without dated independent evidence."
+  },
+  "researchLinks": [
+    {
+      "title": "Gold close history",
+      "url": "https://xaus.com/api/v1/history"
+    },
+    {
+      "title": "Historical model evaluation",
+      "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ensemble-v58.json"
+    },
+    {
+      "title": "Forward locked prediction record",
+      "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-prediction-history-v57.json"
+    }
+  ],
+  "guarantees": "None. This research does not predict an exact gold price or turning date. The gold and exchange-rate scenarios are illustrations; no investment recommendation.",
+  "researchGaps": [
+    "No verified real-time news impact attribution. Economic news must not be fabricated.",
+    "Unsupervised FX stress assumptions are not USD/LKR forecasts.",
+    "Purged historical backtests are separate from genuine forward PASS/FAIL records."
+  ]
+}
