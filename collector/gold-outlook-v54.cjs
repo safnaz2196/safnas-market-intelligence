@@ -6,6 +6,7 @@
 const fs=require('node:fs');
 const path=require('node:path');
 const advanced=require('./gold-advanced-v56.cjs');
+const journal=require('./gold-forecast-journal-v56.cjs');
 const OZ=31.1034768;
 const HISTORY_URL='https://xaus.com/api/v1/history';
 const BACKUP_HISTORY='https://standardbullion.com/api/v1/market/history?metal=XAU&range=1y';
@@ -315,6 +316,12 @@ async function main(){
     ...(recentFx?[{name:'USD FX rates',url:FX_URL}]:[]),...macro.map(x=>({name:x.name,url:x.source}))],
   alertsNotice:'Directional outlook is not a trading instruction. Jewellery charges and retail margins excluded.',
   warnings:failures.slice(0,8)};
+ const journalPath=path.join(__dirname,'..','market-intelligence','gold-forecast-journal-v56.json');
+ let previousJournal={};
+ try{if(fs.existsSync(journalPath))previousJournal=JSON.parse(fs.readFileSync(journalPath,'utf8'));}catch(e){failures.push('Earlier forecast journal unreadable; previous outcomes withheld');}
+ const journalReport=journal.updateJournal(previousJournal,rows,[...out.horizons,...extended],now);
+ report.advanced.forecastJournal=journalReport.summary;
+ fs.writeFileSync(journalPath,JSON.stringify(journalReport,null,2)+'\n','utf8');
  const folder=path.join(__dirname,'..','market-intelligence'),dest=path.join(folder,'gold-outlook-v54.json');
  fs.writeFileSync(dest,JSON.stringify(report,null,2)+'\n','utf8');
  console.log(JSON.stringify({outlook:'gold-v5.4',status:report.status,history:out.historyCount,lastDate:out.asOf,
