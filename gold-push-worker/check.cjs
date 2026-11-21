@@ -60,39 +60,62 @@ function makePayload(p) {
   return JSON.stringify({title:p.title,body:p.body,tag:p.tag,source:p.source||null,observedAt:p.observedAt||null,url:p.url||'/#gold-prices',kind:p.kind||null,icon:'/icons/moneytrack-192.png',badge:'/icons/moneytrack-192.png'});
 }
 async function deliverOne(doc, spot, fx, now) {
-  const d=doc.data(), norm=normalizeDoc(d);
-  if(!norm) return {kind:'invalid'};
-  const {settings,subscription}=norm;
-  const settingHash=checksum(settings);
-  const latest=policy.sampleMarket(spot,fx,settings);
-  const changedSettings=!d.baseline || d.settingsFingerprint!==settingHash;
-  const baseline=changedSettings?latest:d.baseline;
-  if(changedSettings) {
+  const d = doc.data(), norm = normalizeDoc(d);
+  if (!norm) return {kind:'invalid'};
+  const {settings, subscription} = norm;
+  const settingHash = checksum(settings);
+  const latest = policy.sampleMarket(spot, fx, settings);
+  const changedSettings = !d.baseline || d.settingsFingerprint !== settingHash;
+  const baseline = changedSettings ? latest : {...d.baseline};
+  if (changedSettings) {
     await doc.ref.update({baseline:latest,settingsFingerprint:settingHash,lastObservedAt:spot.asOf});
   }
-  const movements=policy.moves(baseline,latest,settings);
-  const cooldown=now-Number(d.lastAlertAt||0)<policy.MIN_COOLDOWN_MS;
-  const canSendMovement=movements.length>0&&!cooldown;
-  const summaryDue=policy.summaryDue(d.lastSummaryDay,now);
-  if(!canSendMovement && !summaryDue) return {kind:changedSettings?'baseline':movements.length?'cooldown':'unchanged'};
-  const isMovement=canSendMovement;
-  const payload=isMovement
-    ? policy.makeNotification(movements,settings,spot.asOf,spot.source,latest,baseline)
-    : policy.makeSummaryNotification(settings,latest,baseline,spot.asOf,spot.source);
-  const signature=checksum([payload.kind,spot.asOf,fx.asOf,settings,payload.body]);
-  if(signature===d.lastNotificationSignature)return {kind:'duplicate'};
-  try {
-    await webpush.sendNotification(subscription,makePayload(payload),{TTL:7200,urgency:'normal'});
-    const patch={lastNotificationSignature:signature,lastObservedAt:spot.asOf};
-    if(isMovement){patch.baseline=latest;patch.lastAlertAt=now;}
-    if(summaryDue) {patch.lastSummaryDay=policy.localDayKey(now);patch.lastSummaryAt=now;}
-    await doc.ref.update(patch);
-    return {kind:isMovement?'movement_sent':'summary_sent'};
-  } catch(e) {
-    if([404,410].includes(Number(e.statusCode))) {await doc.ref.delete();return {kind:'expired'};}
-    console.warn('Push provider rejected an alert for device',doc.id.slice(-8),'status',e.statusCode||'network error');
-    return {kind:'failed'};
+  const movements = policy.moves(baseline, latest, settings);
+  const cooldown = now - Number(d.lastAlertAt||0) < policy.MIN_COOLDOWN_MS;
+  const movementMarkets = cooldown ? [] : movements.map(m=>m.currency);
+  const day = policy.localDayKey(now);
+  const summaryDue = policy.summaryDue(d.lastSummaryDay, now);
+  const dailyDays = {...(d.mobileDailyDays || {})};
+  // Preserve completed per-country deliveries, so a temporary failure does not
+  // repeatedly notify the successful country on every scheduled check.
+  const summaryMarkets = summaryDue ? settings.markets.filter(c=>dailyDays[c]!==day) : [];
+  const targets = [...new Set([...movementMarkets, ...summaryMarkets])];
+  if (!targets.length) return {kind:changedSettings?'baseline':movements.length?'cooldown':'unchanged'};
+  let sent=0, failed=0, expired=false, sentMovement=false;
+  const workingBaseline = {...baseline};
+  for (const currency of targets) {
+    const isMovement=movementMarkets.includes(currency);
+    const isSummary=summaryMarkets.includes(currency);
+    const kind = isMovement ? 'movement' : 'summary';
+    const payload=policy.makeMobileMarketNotification(currency,settings,latest,baseline,kind,spot.asOf,spot.source);
+    try {
+      await webpush.sendNotification(subscription,makePayload(payload),{TTL:7200,urgency:'normal'});
+      sent++;
+      const changes={lastObservedAt:spot.asOf};
+      if (isMovement) {
+        workingBaseline[currency]=latest[currency];
+        changes.baseline={...workingBaseline};
+        changes.lastAlertAt=now;
+        sentMovement=true;
+      }
+      if (isSummary) {
+        dailyDays[currency]=day;
+        changes.mobileDailyDays={...dailyDays};
+        changes.lastSummaryAt=now;
+      }
+      await doc.ref.update(changes);
+    } catch(e) {
+      if([404,410].includes(Number(e.statusCode))) {
+        await doc.ref.delete(); expired=true; break;
+      }
+      failed++;
+      console.warn('Gold push delivery failed for device',doc.id.slice(-8),'market',currency,'status',e.statusCode||'network error');
+    }
   }
+  if (summaryDue && settings.markets.every(c=>dailyDays[c]===day)) {
+    await doc.ref.update({lastSummaryDay:day});
+  }
+  return {kind:expired?'expired':failed?'partial_failure':sentMovement?'movement_sent':sent?'summary_sent':'unchanged', sent,failed};
 }
 async function main() {
   const sec=readSecrets();
@@ -105,6 +128,22 @@ async function main() {
   console.log('Registered devices:',subscriptionDocs.size);
   if(TEST_MODE) {
     const [spot,fx]=await Promise.all([spotQuote(),fxQuote()]);
+    if(!policy.isFresh(spot,fx))throw new Error('Cannot send gold-price test: current market/FX quotes are stale.');
+    let sent=0;
+    for(const doc of subscriptionDocs.docs) {
+      const d=normalizeDoc(doc.data()); if(!d) continue;
+      const latest=policy.sampleMarket(spot,fx,d.settings);
+      for (const currency of d.settings.markets) {
+        try {
+          const payload=policy.makeMobileMarketNotification(currency,d.settings,latest,doc.data().baseline,'test',spot.asOf,spot.source);
+          await webpush.sendNotification(d.subscription,makePayload(payload),{TTL:3600});
+          sent++;
+        } catch(e) {console.warn('Test push failed for',doc.id.slice(-8),currency,Number(e.statusCode)||'network');}
+      }
+    }
+    console.log(`Mobile-friendly gold TEST notifications accepted by push providers: ${sent}`);return;
+  }
+  const [spot,fx]=await Promise.all([spotQuote(),fxQuote()]);
     if(!policy.isFresh(spot,fx))throw new Error('Cannot send gold-price test: current market/FX quotes are stale.');
     let sent=0;
     for(const doc of subscriptionDocs.docs) {
@@ -125,12 +164,12 @@ async function main() {
     console.warn('Market/FX data is not fresh enough; no notifications sent.',{spotTime:spot.asOf,fxTime:fx.asOf});
     return;
   }
-  const tally={};
+  const tally={};let pushCount=0;
   for (const doc of subscriptionDocs.docs) {
-    try {const r=await deliverOne(doc,spot,fx,Date.now());tally[r.kind]=(tally[r.kind]||0)+1;}
+    try {const r=await deliverOne(doc,spot,fx,Date.now());tally[r.kind]=(tally[r.kind]||0)+1;pushCount+=(r.sent||0);}
     catch(e){console.warn('Device check failed',doc.id.slice(-8),e.message);tally.error=(tally.error||0)+1;}
   }
-  console.log(JSON.stringify({market:spot.source,observedAt:spot.asOf,checks:tally}));
+  console.log(JSON.stringify({market:spot.source,observedAt:spot.asOf,checks:tally,pushCount}));
 }
 if (require.main===module) main().catch(err=>{console.error('Gold push worker failed:',err.message);process.exitCode=1;});
 module.exports={readSecrets,normalizeDoc,checksum,makePayload,spotQuote,fxQuote};
