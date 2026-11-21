@@ -8,7 +8,7 @@
     "forest",
     "boost"
   ],
-  "generatedAt": "2026-11-21T10:28:56.329Z",
+  "generatedAt": "2026-11-21T10:30:02.868Z",
   "status": "updated",
   "market": {
     "aspi": {
@@ -461,7 +461,7 @@
     "sl20": {
       "value": 6075.28,
       "changePercent": -1.09,
-      "retrievedAt": "2026-11-21T10:28:59.254Z",
+      "retrievedAt": "2026-11-21T10:30:07.723Z",
       "sourceURL": "https://www.cse.lk/api/snpData",
       "note": "Retrieved snapshot; source may not include a reliable trade date."
     },
@@ -831,7 +831,216 @@
     "source": "Frankfurter daily FX reference",
     "sourceURL": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=LKR"
   },
-  "shares": [],
+  "shares": [
+    {
+      "ticker": "DIAL.N0000",
+      "name": "Dialog Axiata PLC",
+      "price": 48,
+      "turnover": 72581575.3,
+      "asOf": "2026-11-20",
+      "verifiedTradeDate": true,
+      "retrievedAt": "2026-11-21T07:35:01.955Z",
+      "sourceURL": "https://www.cse.lk/api/tradeSummary",
+      "verifiedVia": "CSE official dated last-trade archive",
+      "archivedObservation": true,
+      "note": "Previously verified CSE last-traded quote, not a new live observation"
+    },
+    {
+      "ticker": "LOLC.N0000",
+      "name": "LOLC Holdings PLC",
+      "price": 406,
+      "turnover": 53194670.75,
+      "asOf": "2026-11-20",
+      "verifiedTradeDate": true,
+      "retrievedAt": "2026-11-21T07:35:01.955Z",
+      "sourceURL": "https://www.cse.lk/api/tradeSummary",
+      "verifiedVia": "CSE official dated last-trade archive",
+      "archivedObservation": true,
+      "note": "Previously verified CSE last-traded quote, not a new live observation"
+    },
+    {
+      "ticker": "SAMP.N0000",
+      "name": "Sampath Bank PLC",
+      "price": 148.25,
+      "turnover": 42797953.25,
+      "asOf": "2026-11-20",
+      "verifiedTradeDate": true,
+      "retrievedAt": "2026-11-21T07:35:01.955Z",
+      "sourceURL": "https://www.cse.lk/api/tradeSummary",
+      "verifiedVia": "CSE official dated last-trade archive",
+      "archivedObservation": true,
+      "note": "Previously verified CSE last-traded quote, not a new live observation"
+    },
+    {
+      "ticker": "MELS.N0000",
+      "name": "Melstacorp PLC",
+      "price": 192,
+      "turnover": 21935847.75,
+      "asOf": "2026-11-20",
+      "verifiedTradeDate": true,
+      "retrievedAt": "2026-11-21T07:35:01.955Z",
+      "sourceURL": "https://www.cse.lk/api/tradeSummary",
+      "verifiedVia": "CSE official dated last-trade archive",
+      "archivedObservation": true,
+      "note": "Previously verified CSE last-traded quote, not a new live observation"
+    },
+    {
+      "ticker": "COMB.N0000",
+      "name": "Commercial Bank of Ceylon PLC",
+      "price": 214,
+      "turnover": 15021422.5,
+      "asOf": "2026-11-20",
+      "verifiedTradeDate": true,
+      "retrievedAt": "2026-11-21T07:35:01.955Z",
+      "sourceURL": "https://www.cse.lk/api/tradeSummary",
+      "verifiedVia": "CSE official dated last-trade archive",
+      "archivedObservation": true,
+      "note": "Previously verified CSE last-traded quote, not a new live observation"
+    },
+    {
+      "ticker": "JKH.N0000",
+      "name": "John Keells Holdings PLC",
+      "price": 18.7,
+      "turnover": 11461786.7,
+      "asOf": "2026-11-20",
+      "verifiedTradeDate": true,
+      "retrievedAt": "2026-11-21T07:35:01.955Z",
+      "sourceURL": "https://www.cse.lk/api/tradeSummary",
+      "verifiedVia": "CSE official dated last-trade archive",
+      "archivedObservation": true,
+      "note": "Previously verified CSE last-traded quote, not a new live observation"
+    },
+    {
+      "ticker": "TKYO.N0000",
+      "name": "Tokyo Cement Company (Lanka) PLC",
+      "price": 83,
+      "turnover": 7236404.7,
+      "asOf": "2026-11-20",
+      "verifiedTradeDate": true,
+      "retrievedAt": "2026-11-21T07:35:01.955Z",
+      "sourceURL": "https://www.cse.lk/api/tradeSummary",
+      "verifiedVia": "CSE official dated last-trade archive",
+      "archivedObservation": true,
+      "note": "Previously verified CSE last-traded quote, not a new live observation"
+    },
+    {
+      "ticker": "HHL.N0000",
+      "name": "Hemas Holdings PLC",
+      "price": 32,
+      "turnover": 4782008.8,
+      "asOf": "2026-11-20",
+      "verifiedTradeDate": true,
+      "retrievedAt": "2026-11-21T07:35:01.955Z",
+      "sourceURL": "https://www.cse.lk/api/tradeSummary",
+      "verifiedVia": "CSE official dated last-trade archive",
+      "archivedObservation": true,
+      "note": "Previously verified CSE last-traded quote, not a new live observation"
+    },
+    {
+      "ticker": "NDB.N0000",
+      "name": "National Development Bank PLC",
+      "price": 111.25,
+      "turnover": 4519212.75,
+      "asOf": "2026-11-20",
+      "verifiedTradeDate": true,
+      "retrievedAt": "2026-11-21T07:35:01.955Z",
+      "sourceURL": "https://www.cse.lk/api/tradeSummary",
+      "verifiedVia": "CSE official dated last-trade archive",
+      "archivedObservation": true,
+      "note": "Previously verified CSE last-traded quote, not a new live observation"
+    },
+    {
+      "ticker": "HNB.N0000",
+      "name": "Hatton National Bank PLC",
+      "price": 393.75,
+      "turnover": 4509726.5,
+      "asOf": "2026-11-20",
+      "verifiedTradeDate": true,
+      "retrievedAt": "2026-11-21T07:35:01.955Z",
+      "sourceURL": "https://www.cse.lk/api/tradeSummary",
+      "verifiedVia": "CSE official dated last-trade archive",
+      "archivedObservation": true,
+      "note": "Previously verified CSE last-traded quote, not a new live observation"
+    },
+    {
+      "ticker": "HAYL.N0000",
+      "name": "Hayleys PLC",
+      "price": 230.25,
+      "turnover": 4282244.25,
+      "asOf": "2026-11-20",
+      "verifiedTradeDate": true,
+      "retrievedAt": "2026-11-21T07:35:01.955Z",
+      "sourceURL": "https://www.cse.lk/api/tradeSummary",
+      "verifiedVia": "CSE official dated last-trade archive",
+      "archivedObservation": true,
+      "note": "Previously verified CSE last-traded quote, not a new live observation"
+    },
+    {
+      "ticker": "CTC.N0000",
+      "name": "Ceylon Tobacco Company PLC",
+      "price": 1844.5,
+      "turnover": 3450950.75,
+      "asOf": "2026-11-20",
+      "verifiedTradeDate": true,
+      "retrievedAt": "2026-11-21T07:35:01.955Z",
+      "sourceURL": "https://www.cse.lk/api/tradeSummary",
+      "verifiedVia": "CSE official dated last-trade archive",
+      "archivedObservation": true,
+      "note": "Previously verified CSE last-traded quote, not a new live observation"
+    },
+    {
+      "ticker": "SLTL.N0000",
+      "name": "Sri Lanka Telecom PLC",
+      "price": 90.6,
+      "turnover": 3259017.1,
+      "asOf": "2026-11-20",
+      "verifiedTradeDate": true,
+      "retrievedAt": "2026-11-21T07:35:01.955Z",
+      "sourceURL": "https://www.cse.lk/api/tradeSummary",
+      "verifiedVia": "CSE official dated last-trade archive",
+      "archivedObservation": true,
+      "note": "Previously verified CSE last-traded quote, not a new live observation"
+    },
+    {
+      "ticker": "LFIN.N0000",
+      "name": "LB Finance PLC",
+      "price": 154,
+      "turnover": 1892698.25,
+      "asOf": "2026-11-20",
+      "verifiedTradeDate": true,
+      "retrievedAt": "2026-11-21T07:35:01.955Z",
+      "sourceURL": "https://www.cse.lk/api/tradeSummary",
+      "verifiedVia": "CSE official dated last-trade archive",
+      "archivedObservation": true,
+      "note": "Previously verified CSE last-traded quote, not a new live observation"
+    },
+    {
+      "ticker": "DIST.N0000",
+      "name": "Distilleries Company of Sri Lanka PLC",
+      "price": 58.3,
+      "turnover": 1146733.9,
+      "asOf": "2026-11-20",
+      "verifiedTradeDate": true,
+      "retrievedAt": "2026-11-21T07:35:01.955Z",
+      "sourceURL": "https://www.cse.lk/api/tradeSummary",
+      "verifiedVia": "CSE official dated last-trade archive",
+      "archivedObservation": true,
+      "note": "Previously verified CSE last-traded quote, not a new live observation"
+    },
+    {
+      "ticker": "CARG.N0000",
+      "name": "Cargills (Ceylon) PLC",
+      "price": 680.25,
+      "turnover": 36739,
+      "asOf": "2026-11-20",
+      "verifiedTradeDate": true,
+      "retrievedAt": "2026-11-21T07:35:01.955Z",
+      "sourceURL": "https://www.cse.lk/api/tradeSummary",
+      "verifiedVia": "CSE official dated last-trade archive",
+      "archivedObservation": true,
+      "note": "Previously verified CSE last-traded quote, not a new live observation"
+    }
+  ],
   "headlines": [
     {
       "title": "Digital microlending in ‘regulatory black hole’, Sri Lanka think tank finds",
@@ -981,10 +1190,10 @@
       "notice": "Annual macro data may lag and be revised. Not a monthly forecast."
     },
     "companies": {
-      "count": 0,
+      "count": 16,
       "fundamentalsAvailable": false,
       "companyPredictionsAvailable": false,
-      "notice": "Company snapshots unavailable; no stock ratings created.",
+      "notice": "Quotes and turnover do not justify company buy ratings. Audited fundamentals and corporate actions not available.",
       "requiredForFundamentals": [
         "Audited earnings and cash flow",
         "Debt and interest coverage",
@@ -1010,7 +1219,7 @@
         "asOf": "2026-11-20"
       },
       "shares": {
-        "status": "unavailable",
+        "status": "available",
         "label": "CSE share snapshots (not audited fundamentals)",
         "asOf": null
       },
@@ -1037,8 +1246,8 @@
       "asOf": "2026-11-20",
       "ageDays": 1,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:28:56.329Z",
-      "lastSuccessAt": "2026-11-21T10:28:56.329Z",
+      "lastAttemptAt": "2026-11-21T10:30:02.868Z",
+      "lastSuccessAt": "2026-11-21T10:30:02.868Z",
       "failures": 0,
       "note": "CSE daily closes validated and appended to dated archive"
     },
@@ -1047,8 +1256,8 @@
       "asOf": "2025",
       "ageDays": null,
       "ageYears": 1,
-      "lastAttemptAt": "2026-11-21T10:28:56.329Z",
-      "lastSuccessAt": "2026-11-21T10:28:56.329Z",
+      "lastAttemptAt": "2026-11-21T10:30:02.868Z",
+      "lastSuccessAt": "2026-11-21T10:30:02.868Z",
       "failures": 0,
       "note": "6 of 6 annual indicators refreshed"
     },
@@ -1057,28 +1266,28 @@
       "asOf": "2026-11-20",
       "ageDays": 1,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:28:56.329Z",
-      "lastSuccessAt": "2026-11-21T10:28:56.329Z",
+      "lastAttemptAt": "2026-11-21T10:30:02.868Z",
+      "lastSuccessAt": "2026-11-21T10:30:02.868Z",
       "failures": 0,
       "note": "Provider response accepted"
     },
     "shares": {
-      "status": "unavailable",
-      "asOf": null,
-      "ageDays": null,
+      "status": "current",
+      "asOf": "2026-11-20",
+      "ageDays": 1,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:28:56.329Z",
-      "lastSuccessAt": null,
-      "failures": 18,
-      "note": "HTTP 403"
+      "lastAttemptAt": "2026-11-21T10:30:02.868Z",
+      "lastSuccessAt": "2026-11-21T10:30:02.868Z",
+      "failures": 0,
+      "note": "Cached · 16 verified CSE last-traded shares, as of 2026-11-20. Not streaming. Direct request unavailable (HTTP 403)."
     },
     "sl20": {
       "status": "retrieved_only",
       "asOf": "2026-11-21",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:28:56.329Z",
-      "lastSuccessAt": "2026-11-21T10:28:56.329Z",
+      "lastAttemptAt": "2026-11-21T10:30:02.868Z",
+      "lastSuccessAt": "2026-11-21T10:30:02.868Z",
       "failures": 0,
       "note": "Index snapshot retrieved; official trade date not verified"
     },
@@ -1087,9 +1296,9 @@
       "asOf": null,
       "ageDays": null,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:28:56.329Z",
+      "lastAttemptAt": "2026-11-21T10:30:02.868Z",
       "lastSuccessAt": null,
-      "failures": 18,
+      "failures": 19,
       "note": "Daily turnover not reported"
     },
     "headlines": {
@@ -1097,8 +1306,8 @@
       "asOf": "2026-11-21",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:28:56.329Z",
-      "lastSuccessAt": "2026-11-21T10:28:56.329Z",
+      "lastAttemptAt": "2026-11-21T10:30:02.868Z",
+      "lastSuccessAt": "2026-11-21T10:30:02.868Z",
       "failures": 0,
       "note": "Provider response accepted"
     }
@@ -1283,15 +1492,14 @@
     "sec": "https://www.sec.gov.lk/"
   },
   "warnings": [
-    "shares: HTTP 403",
     "turnover: Daily turnover not reported"
   ],
   "disclaimer": "Educational research only. Reliable data collection does not establish predictive skill or guarantee returns. No specific security is recommended.",
   "reliability": {
-    "currentSources": 4,
+    "currentSources": 5,
     "staleSources": 0,
     "retrievedOnlySources": 1,
-    "unavailableSources": 2,
+    "unavailableSources": 1,
     "totalSources": 7,
     "marketAsOf": "2026-11-20",
     "marketSessionCount": 247,
@@ -1300,7 +1508,7 @@
     "edgeModels": 1,
     "modelClaim": "Limited historical statistical edge — not investment advice",
     "dataLimit": "The public CSE chart endpoint supplies roughly one trailing year. Older dates require permitted, verified historical data; no synthetic backfill.",
-    "refreshedAt": "2026-11-21T10:28:56.329Z",
+    "refreshedAt": "2026-11-21T10:30:02.868Z",
     "disclaimer": "Source health is not model accuracy or probability of market growth."
   }
 }
