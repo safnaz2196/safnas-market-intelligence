@@ -4,6 +4,7 @@
 'use strict';
 const d=require('./data-core.cjs');
 const ml=require('./ml-core.cjs');const journal=require('./journal.cjs');const intelligence=require('./intelligence-core.cjs');const reliable=require('./reliability-core.cjs');
+const sharesRecovery=require('./cse-share-source.cjs');
 const SOURCES={
  aspi:'https://www.cse.lk/api/chartData',
  worldbank:'https://api.worldbank.org/v2/',
@@ -108,18 +109,34 @@ async function collect(now=new Date(),injected={}){
   record('forex',true,item.date);
  }catch(e){record('forex',false,forex?.asOf||null,e.message)}
  let shares=[];
+ let quoteSource='official CSE tradeSummary';
+ let providerMessage='';
  try{
-  shares=await getStocks();if(!shares.length)throw Error('No valid listed share quotes');
+  shares=await getStocks();
+  if(!shares.length)throw Error('No valid dated CSE share observations');
+ }catch(e){
+  providerMessage=String(e.message||'Provider unavailable').slice(0,80);
+  // Source-resilient FALLBACK: independent collector already archived verified
+  // last-traded CSE values. Keep their original trade dates and retrievedAt.
+  // Never substitute a quote lacking a verified CSE trade date.
+  const evidence=read('company-evidence-v5.json',{});
+  const researched=read('research-v5.json',{});
+  shares=sharesRecovery.recoverDatedShareQuotes(evidence,researched,now);
+  quoteSource='previously verified CSE dated quote archive';
+ }
+ if(shares.length){
   const dates=shares.filter(row=>row.verifiedTradeDate&&/^\d{4}-\d{2}-\d{2}$/.test(row.asOf))
-    .map(row=>row.asOf).sort();
-  const confirmedDate=dates.at(-1)||null;
-  record('shares',true,confirmedDate,'',{
-   ...(confirmedDate?{freshWindowDays:7}:{dateIsRetrieved:true}),
-   notes:confirmedDate?
-    'Official CSE dated last-traded prices: '+shares.length+' securities; latest trade '+confirmedDate+'. Not streaming.':
-    'Provider quotes retrieved without verifiable trade date; cannot claim current.'
+   .map(row=>row.asOf).sort();
+  const tradeDate=dates.at(-1)||null;
+  const fromArchive=quoteSource.includes('archive');
+  record('shares',true,tradeDate,'',{
+   ...(tradeDate?{freshWindowDays:7}:{dateIsRetrieved:true}),
+   notes:(fromArchive?'Cached · ':'')+shares.length+' verified CSE last-traded shares, as of '+(tradeDate||'unverified')+
+    '. Not streaming.'+(fromArchive&&providerMessage?' Direct request unavailable ('+providerMessage+').':'')
   });
- }catch(e){record('shares',false,null,e.message)}
+ }else{
+  record('shares',false,null,providerMessage||'No dated quote available from CSE or verified archive');
+ }
  let sl20=null;
  try{
   sl20=await (injected.fetchSL20||fetchSL20)();
