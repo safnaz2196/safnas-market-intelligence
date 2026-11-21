@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
-  "engineVersion": "5.0.2",
-  "generatedAt": "2026-11-21T07:27:30.993Z",
+  "engineVersion": "5.3.0",
+  "generatedAt": "2026-11-21T07:30:11.609Z",
   "sourceSnapshotAt": "2026-11-21T07:27:27.608Z",
   "status": "research_available",
   "briefing": {
@@ -35,6 +35,17 @@
           "news-3",
           "news-4",
           "news-5"
+        ]
+      },
+      {
+        "id": "company-coverage",
+        "tone": "info",
+        "title": "16 of 16 tracked companies have dated exchange quotations",
+        "detail": "CSE last-traded prices, 52-week ranges and filings are observed where the exchange provides them; they are not streaming prices or trading advice.",
+        "evidenceIds": [
+          "trade-DIAL.N0000",
+          "trade-COMB.N0000",
+          "trade-JKH.N0000"
         ]
       }
     ]
@@ -135,139 +146,464 @@
       "ticker": "DIAL.N0000",
       "name": "Dialog Axiata PLC",
       "sector": "Telecommunications",
-      "quote": null,
+      "quote": {
+        "value": 48,
+        "currency": "LKR",
+        "asOf": "2026-11-20",
+        "verifiedTradeDate": true,
+        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "sourceUrl": "https://www.cse.lk/api/tradeSummary",
+        "source": "CSE trade summary",
+        "previousClose": 49,
+        "changePct": -2.041,
+        "volume": 1507605,
+        "trades": 667,
+        "turnoverLKR": 72581575.3,
+        "marketCapLKR": 441616079712,
+        "high": 49,
+        "low": 47.7,
+        "marketStatus": "last traded (may be prior session)"
+      },
       "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
       },
-      "researchStatus": "company_directory_only"
+      "researchStatus": "verified_public_market_metadata",
+      "marketStats": {
+        "high52Week": 50.5,
+        "low52Week": 26.9,
+        "isin": "LK0348N00009",
+        "sharesIssued": 9200334994,
+        "marketCapLKR": 441616079712,
+        "betaASPI": 1.4018782,
+        "retrievedAt": "2026-11-21T07:30:07.692Z",
+        "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
+      },
+      "filings": []
     },
     {
       "ticker": "COMB.N0000",
       "name": "Commercial Bank of Ceylon PLC",
       "sector": "Banks",
-      "quote": null,
+      "quote": {
+        "value": 214,
+        "currency": "LKR",
+        "asOf": "2026-11-20",
+        "verifiedTradeDate": true,
+        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "sourceUrl": "https://www.cse.lk/api/tradeSummary",
+        "source": "CSE trade summary",
+        "previousClose": 215.25,
+        "changePct": -0.581,
+        "volume": 70139,
+        "trades": 201,
+        "turnoverLKR": 15021422.5,
+        "marketCapLKR": 333336721006,
+        "high": 216,
+        "low": 213,
+        "marketStatus": "last traded (may be prior session)"
+      },
       "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
       },
-      "researchStatus": "company_directory_only"
+      "researchStatus": "verified_public_market_metadata",
+      "marketStats": {
+        "high52Week": 235.25,
+        "low52Week": 170,
+        "isin": "LK0053N00005",
+        "sharesIssued": 1557648229,
+        "marketCapLKR": 333336721006,
+        "betaASPI": 0.79103035,
+        "retrievedAt": "2026-11-21T07:30:08.012Z",
+        "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
+      },
+      "filings": []
     },
     {
       "ticker": "JKH.N0000",
       "name": "John Keells Holdings PLC",
       "sector": "Diversified",
-      "quote": null,
+      "quote": {
+        "value": 18.7,
+        "currency": "LKR",
+        "asOf": "2026-11-20",
+        "verifiedTradeDate": true,
+        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "sourceUrl": "https://www.cse.lk/api/tradeSummary",
+        "source": "CSE trade summary",
+        "previousClose": 18.9,
+        "changePct": -1.058,
+        "volume": 614733,
+        "trades": 387,
+        "turnoverLKR": 11461786.7,
+        "marketCapLKR": 331764281073.5,
+        "high": 18.8,
+        "low": 18.6,
+        "marketStatus": "last traded (may be prior session)"
+      },
       "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
       },
-      "researchStatus": "company_directory_only"
+      "researchStatus": "verified_public_market_metadata",
+      "marketStats": {
+        "high52Week": 23.4,
+        "low52Week": 17.5,
+        "isin": "LK0092N00003",
+        "sharesIssued": 17741405405,
+        "marketCapLKR": 331764281073.5,
+        "betaASPI": 1.0031595,
+        "retrievedAt": "2026-11-21T07:30:08.298Z",
+        "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
+      },
+      "filings": []
     },
     {
       "ticker": "HNB.N0000",
       "name": "Hatton National Bank PLC",
       "sector": "Banks",
-      "quote": null,
+      "quote": {
+        "value": 393.75,
+        "currency": "LKR",
+        "asOf": "2026-11-20",
+        "verifiedTradeDate": true,
+        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "sourceUrl": "https://www.cse.lk/api/tradeSummary",
+        "source": "CSE trade summary",
+        "previousClose": 397,
+        "changePct": -0.819,
+        "volume": 11448,
+        "trades": 111,
+        "turnoverLKR": 4509726.5,
+        "marketCapLKR": 181210908375,
+        "high": 397,
+        "low": 393,
+        "marketStatus": "last traded (may be prior session)"
+      },
       "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
       },
-      "researchStatus": "company_directory_only"
+      "researchStatus": "verified_public_market_metadata",
+      "marketStats": {
+        "high52Week": 460,
+        "low52Week": 366.75,
+        "isin": "LK0078N00002",
+        "sharesIssued": 460218180,
+        "marketCapLKR": 181210908375,
+        "betaASPI": 0.5533614,
+        "retrievedAt": "2026-11-21T07:30:08.515Z",
+        "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
+      },
+      "filings": []
     },
     {
       "ticker": "SAMP.N0000",
       "name": "Sampath Bank PLC",
       "sector": "Banks",
-      "quote": null,
+      "quote": {
+        "value": 148.25,
+        "currency": "LKR",
+        "asOf": "2026-11-20",
+        "verifiedTradeDate": true,
+        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "sourceUrl": "https://www.cse.lk/api/tradeSummary",
+        "source": "CSE trade summary",
+        "previousClose": 150,
+        "changePct": -1.167,
+        "volume": 288080,
+        "trades": 572,
+        "turnoverLKR": 42797953.25,
+        "marketCapLKR": 173852887670,
+        "high": 149,
+        "low": 148,
+        "marketStatus": "last traded (may be prior session)"
+      },
       "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
       },
-      "researchStatus": "company_directory_only"
+      "researchStatus": "verified_public_market_metadata",
+      "marketStats": {
+        "high52Week": 167,
+        "low52Week": 135,
+        "isin": "LK0090N00007",
+        "sharesIssued": 1172700760,
+        "marketCapLKR": 173852887670,
+        "betaASPI": 0.6757065,
+        "retrievedAt": "2026-11-21T07:30:08.733Z",
+        "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
+      },
+      "filings": []
     },
     {
       "ticker": "HAYL.N0000",
       "name": "Hayleys PLC",
       "sector": "Industrials",
-      "quote": null,
+      "quote": {
+        "value": 230.25,
+        "currency": "LKR",
+        "asOf": "2026-11-20",
+        "verifiedTradeDate": true,
+        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "sourceUrl": "https://www.cse.lk/api/tradeSummary",
+        "source": "CSE trade summary",
+        "previousClose": 232.25,
+        "changePct": -0.861,
+        "volume": 18606,
+        "trades": 116,
+        "turnoverLKR": 4282244.25,
+        "marketCapLKR": 183048750000,
+        "high": 232.25,
+        "low": 229.75,
+        "marketStatus": "last traded (may be prior session)"
+      },
       "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
       },
-      "researchStatus": "company_directory_only"
+      "researchStatus": "verified_public_market_metadata",
+      "marketStats": {
+        "high52Week": 260,
+        "low52Week": 178,
+        "isin": "LK0080N00008",
+        "sharesIssued": 795000000,
+        "marketCapLKR": 183048750000,
+        "betaASPI": 0.84930664,
+        "retrievedAt": "2026-11-21T07:30:09.041Z",
+        "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
+      },
+      "filings": []
     },
     {
       "ticker": "LOLC.N0000",
       "name": "LOLC Holdings PLC",
       "sector": "Diversified",
-      "quote": null,
+      "quote": {
+        "value": 406,
+        "currency": "LKR",
+        "asOf": "2026-11-20",
+        "verifiedTradeDate": true,
+        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "sourceUrl": "https://www.cse.lk/api/tradeSummary",
+        "source": "CSE trade summary",
+        "previousClose": 405.75,
+        "changePct": 0.062,
+        "volume": 132854,
+        "trades": 64,
+        "turnoverLKR": 53194670.75,
+        "marketCapLKR": 192931200000,
+        "high": 409,
+        "low": 398,
+        "marketStatus": "last traded (may be prior session)"
+      },
       "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
       },
-      "researchStatus": "company_directory_only"
+      "researchStatus": "verified_public_market_metadata",
+      "marketStats": {
+        "high52Week": 640,
+        "low52Week": 370,
+        "isin": "LK0113N00007",
+        "sharesIssued": 475200000,
+        "marketCapLKR": 192931200000,
+        "betaASPI": 0.8594875,
+        "retrievedAt": "2026-11-21T07:30:09.337Z",
+        "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
+      },
+      "filings": []
     },
     {
       "ticker": "CTC.N0000",
       "name": "Ceylon Tobacco Company PLC",
       "sector": "Consumer",
-      "quote": null,
+      "quote": {
+        "value": 1844.5,
+        "currency": "LKR",
+        "asOf": "2026-11-20",
+        "verifiedTradeDate": true,
+        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "sourceUrl": "https://www.cse.lk/api/tradeSummary",
+        "source": "CSE trade summary",
+        "previousClose": 1843.75,
+        "changePct": 0.041,
+        "volume": 1872,
+        "trades": 56,
+        "turnoverLKR": 3450950.75,
+        "marketCapLKR": 345518658719.5,
+        "high": 1845,
+        "low": 1835,
+        "marketStatus": "last traded (may be prior session)"
+      },
       "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
       },
-      "researchStatus": "company_directory_only"
+      "researchStatus": "verified_public_market_metadata",
+      "marketStats": {
+        "high52Week": 1849,
+        "low52Week": 1654.75,
+        "isin": "LK0042N00008",
+        "sharesIssued": 187323751,
+        "marketCapLKR": 345518658719.5,
+        "betaASPI": 0.20484465,
+        "retrievedAt": "2026-11-21T07:30:09.554Z",
+        "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
+      },
+      "filings": []
     },
     {
       "ticker": "DIST.N0000",
       "name": "Distilleries Company of Sri Lanka PLC",
       "sector": "Consumer",
-      "quote": null,
+      "quote": {
+        "value": 58.3,
+        "currency": "LKR",
+        "asOf": "2026-11-20",
+        "verifiedTradeDate": true,
+        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "sourceUrl": "https://www.cse.lk/api/tradeSummary",
+        "source": "CSE trade summary",
+        "previousClose": 58.6,
+        "changePct": -0.512,
+        "volume": 19709,
+        "trades": 52,
+        "turnoverLKR": 1146733.9,
+        "marketCapLKR": 268180000000,
+        "high": 58.6,
+        "low": 58,
+        "marketStatus": "last traded (may be prior session)"
+      },
       "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
       },
-      "researchStatus": "company_directory_only"
+      "researchStatus": "verified_public_market_metadata",
+      "marketStats": {
+        "high52Week": 64.1,
+        "low52Week": 49.2,
+        "isin": "LK0191N00003",
+        "sharesIssued": 4600000000,
+        "marketCapLKR": 268180000000,
+        "betaASPI": 0.7319642,
+        "retrievedAt": "2026-11-21T07:30:09.772Z",
+        "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
+      },
+      "filings": []
     },
     {
       "ticker": "MELS.N0000",
       "name": "Melstacorp PLC",
       "sector": "Diversified",
-      "quote": null,
+      "quote": {
+        "value": 192,
+        "currency": "LKR",
+        "asOf": "2026-11-20",
+        "verifiedTradeDate": true,
+        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "sourceUrl": "https://www.cse.lk/api/tradeSummary",
+        "source": "CSE trade summary",
+        "previousClose": 193,
+        "changePct": -0.518,
+        "volume": 114249,
+        "trades": 61,
+        "turnoverLKR": 21935847.75,
+        "marketCapLKR": 223756237824,
+        "high": 193,
+        "low": 190,
+        "marketStatus": "last traded (may be prior session)"
+      },
       "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
       },
-      "researchStatus": "company_directory_only"
+      "researchStatus": "verified_public_market_metadata",
+      "marketStats": {
+        "high52Week": 194.75,
+        "low52Week": 158.5,
+        "isin": "LK0450N00003",
+        "sharesIssued": 1165397072,
+        "marketCapLKR": 223756237824,
+        "betaASPI": 0.7826927,
+        "retrievedAt": "2026-11-21T07:30:09.990Z",
+        "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
+      },
+      "filings": []
     },
     {
       "ticker": "CARG.N0000",
       "name": "Cargills (Ceylon) PLC",
       "sector": "Consumer",
-      "quote": null,
+      "quote": {
+        "value": 680.25,
+        "currency": "LKR",
+        "asOf": "2026-11-20",
+        "verifiedTradeDate": true,
+        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "sourceUrl": "https://www.cse.lk/api/tradeSummary",
+        "source": "CSE trade summary",
+        "previousClose": 680.25,
+        "changePct": 0,
+        "volume": 54,
+        "trades": 8,
+        "turnoverLKR": 36739,
+        "marketCapLKR": 175285276512.75,
+        "high": 681.5,
+        "low": 675.25,
+        "marketStatus": "last traded (may be prior session)"
+      },
       "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
       },
-      "researchStatus": "company_directory_only"
+      "researchStatus": "verified_public_market_metadata",
+      "marketStats": {
+        "high52Week": 820,
+        "low52Week": 600,
+        "isin": "LK0020N00004",
+        "sharesIssued": 257677731,
+        "marketCapLKR": 175285276512.75,
+        "betaASPI": 0.43022645,
+        "retrievedAt": "2026-11-21T07:30:10.309Z",
+        "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
+      },
+      "filings": []
     },
     {
       "ticker": "SLTL.N0000",
       "name": "Sri Lanka Telecom PLC",
       "sector": "Telecommunications",
-      "quote": null,
+      "quote": {
+        "value": 90.6,
+        "currency": "LKR",
+        "asOf": "2026-11-20",
+        "verifiedTradeDate": true,
+        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "sourceUrl": "https://www.cse.lk/api/tradeSummary",
+        "source": "CSE trade summary",
+        "previousClose": 93.5,
+        "changePct": -3.102,
+        "volume": 35754,
+        "trades": 52,
+        "turnoverLKR": 3259017.1,
+        "marketCapLKR": 163520316000,
+        "high": 93.1,
+        "low": 90,
+        "marketStatus": "last traded (may be prior session)"
+      },
       "recentHeadlines": [
         "news-1",
         "news-2"
@@ -276,55 +612,178 @@
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
       },
-      "researchStatus": "has_dated_headlines"
+      "researchStatus": "verified_public_market_metadata",
+      "marketStats": {
+        "high52Week": 107.25,
+        "low52Week": 75.6,
+        "isin": "LK0312N00005",
+        "sharesIssued": 1804860000,
+        "marketCapLKR": 163520316000,
+        "betaASPI": 1.1619273,
+        "retrievedAt": "2026-11-21T07:30:10.602Z",
+        "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
+      },
+      "filings": []
     },
     {
       "ticker": "HHL.N0000",
       "name": "Hemas Holdings PLC",
       "sector": "Diversified",
-      "quote": null,
+      "quote": {
+        "value": 32,
+        "currency": "LKR",
+        "asOf": "2026-11-20",
+        "verifiedTradeDate": true,
+        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "sourceUrl": "https://www.cse.lk/api/tradeSummary",
+        "source": "CSE trade summary",
+        "previousClose": 32.3,
+        "changePct": -0.929,
+        "volume": 149276,
+        "trades": 107,
+        "turnoverLKR": 4782008.8,
+        "marketCapLKR": 95871520480,
+        "high": 32.4,
+        "low": 31.9,
+        "marketStatus": "last traded (may be prior session)"
+      },
       "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
       },
-      "researchStatus": "company_directory_only"
+      "researchStatus": "verified_public_market_metadata",
+      "marketStats": {
+        "high52Week": 36.7,
+        "low52Week": 27.6,
+        "isin": "LK0337N00002",
+        "sharesIssued": 2995985015,
+        "marketCapLKR": 95871520480,
+        "betaASPI": 1.1194488,
+        "retrievedAt": "2026-11-21T07:30:10.819Z",
+        "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
+      },
+      "filings": []
     },
     {
       "ticker": "NDB.N0000",
       "name": "National Development Bank PLC",
       "sector": "Banks",
-      "quote": null,
+      "quote": {
+        "value": 111.25,
+        "currency": "LKR",
+        "asOf": "2026-11-20",
+        "verifiedTradeDate": true,
+        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "sourceUrl": "https://www.cse.lk/api/tradeSummary",
+        "source": "CSE trade summary",
+        "previousClose": 112.75,
+        "changePct": -1.33,
+        "volume": 40428,
+        "trades": 96,
+        "turnoverLKR": 4519212.75,
+        "marketCapLKR": 48082009032.5,
+        "high": 113,
+        "low": 110.25,
+        "marketStatus": "last traded (may be prior session)"
+      },
       "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
       },
-      "researchStatus": "company_directory_only"
+      "researchStatus": "verified_public_market_metadata",
+      "marketStats": {
+        "high52Week": 159,
+        "low52Week": 100.5,
+        "isin": "LK0207N00007",
+        "sharesIssued": 432197834,
+        "marketCapLKR": 48082009032.5,
+        "betaASPI": 0.8006846,
+        "retrievedAt": "2026-11-21T07:30:11.105Z",
+        "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
+      },
+      "filings": []
     },
     {
       "ticker": "TKYO.N0000",
       "name": "Tokyo Cement Company (Lanka) PLC",
       "sector": "Industrials",
-      "quote": null,
+      "quote": {
+        "value": 83,
+        "currency": "LKR",
+        "asOf": "2026-11-20",
+        "verifiedTradeDate": true,
+        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "sourceUrl": "https://www.cse.lk/api/tradeSummary",
+        "source": "CSE trade summary",
+        "previousClose": 83,
+        "changePct": 0,
+        "volume": 87092,
+        "trades": 78,
+        "turnoverLKR": 7236404.7,
+        "marketCapLKR": 24404490000,
+        "high": 84,
+        "low": 82.9,
+        "marketStatus": "last traded (may be prior session)"
+      },
       "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
       },
-      "researchStatus": "company_directory_only"
+      "researchStatus": "verified_public_market_metadata",
+      "marketStats": {
+        "high52Week": 117.5,
+        "low52Week": 72.8,
+        "isin": "LK0165N00007",
+        "sharesIssued": 294030000,
+        "marketCapLKR": 24404490000,
+        "betaASPI": 0.94540983,
+        "retrievedAt": "2026-11-21T07:30:11.332Z",
+        "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
+      },
+      "filings": []
     },
     {
       "ticker": "LFIN.N0000",
       "name": "LB Finance PLC",
       "sector": "Banks",
-      "quote": null,
+      "quote": {
+        "value": 154,
+        "currency": "LKR",
+        "asOf": "2026-11-20",
+        "verifiedTradeDate": true,
+        "retrievedAt": "2026-11-21T07:30:05.667Z",
+        "sourceUrl": "https://www.cse.lk/api/tradeSummary",
+        "source": "CSE trade summary",
+        "previousClose": 154,
+        "changePct": 0,
+        "volume": 12407,
+        "trades": 70,
+        "turnoverLKR": 1892698.25,
+        "marketCapLKR": 85324798944,
+        "high": 154.75,
+        "low": 151,
+        "marketStatus": "last traded (may be prior session)"
+      },
       "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
       },
-      "researchStatus": "company_directory_only"
+      "researchStatus": "verified_public_market_metadata",
+      "marketStats": {
+        "high52Week": 179,
+        "low52Week": 130,
+        "isin": "LK0301N00008",
+        "sharesIssued": 554057136,
+        "marketCapLKR": 85324798944,
+        "betaASPI": 0.8785326,
+        "retrievedAt": "2026-11-21T07:30:11.552Z",
+        "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
+      },
+      "filings": []
     }
   ],
   "macro": [
@@ -469,23 +928,138 @@
       "url": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=LK",
       "asOf": null,
       "kind": "annual_statistic"
+    },
+    {
+      "id": "trade-DIAL.N0000",
+      "label": "Dialog Axiata PLC · CSE last recorded trade",
+      "url": "https://www.cse.lk/",
+      "asOf": "2026-11-20",
+      "kind": "dated_company_price"
+    },
+    {
+      "id": "trade-COMB.N0000",
+      "label": "Commercial Bank of Ceylon PLC · CSE last recorded trade",
+      "url": "https://www.cse.lk/",
+      "asOf": "2026-11-20",
+      "kind": "dated_company_price"
+    },
+    {
+      "id": "trade-JKH.N0000",
+      "label": "John Keells Holdings PLC · CSE last recorded trade",
+      "url": "https://www.cse.lk/",
+      "asOf": "2026-11-20",
+      "kind": "dated_company_price"
+    },
+    {
+      "id": "trade-HNB.N0000",
+      "label": "Hatton National Bank PLC · CSE last recorded trade",
+      "url": "https://www.cse.lk/",
+      "asOf": "2026-11-20",
+      "kind": "dated_company_price"
+    },
+    {
+      "id": "trade-SAMP.N0000",
+      "label": "Sampath Bank PLC · CSE last recorded trade",
+      "url": "https://www.cse.lk/",
+      "asOf": "2026-11-20",
+      "kind": "dated_company_price"
+    },
+    {
+      "id": "trade-HAYL.N0000",
+      "label": "Hayleys PLC · CSE last recorded trade",
+      "url": "https://www.cse.lk/",
+      "asOf": "2026-11-20",
+      "kind": "dated_company_price"
+    },
+    {
+      "id": "trade-LOLC.N0000",
+      "label": "LOLC Holdings PLC · CSE last recorded trade",
+      "url": "https://www.cse.lk/",
+      "asOf": "2026-11-20",
+      "kind": "dated_company_price"
+    },
+    {
+      "id": "trade-CTC.N0000",
+      "label": "Ceylon Tobacco Company PLC · CSE last recorded trade",
+      "url": "https://www.cse.lk/",
+      "asOf": "2026-11-20",
+      "kind": "dated_company_price"
+    },
+    {
+      "id": "trade-DIST.N0000",
+      "label": "Distilleries Company of Sri Lanka PLC · CSE last recorded trade",
+      "url": "https://www.cse.lk/",
+      "asOf": "2026-11-20",
+      "kind": "dated_company_price"
+    },
+    {
+      "id": "trade-MELS.N0000",
+      "label": "Melstacorp PLC · CSE last recorded trade",
+      "url": "https://www.cse.lk/",
+      "asOf": "2026-11-20",
+      "kind": "dated_company_price"
+    },
+    {
+      "id": "trade-CARG.N0000",
+      "label": "Cargills (Ceylon) PLC · CSE last recorded trade",
+      "url": "https://www.cse.lk/",
+      "asOf": "2026-11-20",
+      "kind": "dated_company_price"
+    },
+    {
+      "id": "trade-SLTL.N0000",
+      "label": "Sri Lanka Telecom PLC · CSE last recorded trade",
+      "url": "https://www.cse.lk/",
+      "asOf": "2026-11-20",
+      "kind": "dated_company_price"
+    },
+    {
+      "id": "trade-HHL.N0000",
+      "label": "Hemas Holdings PLC · CSE last recorded trade",
+      "url": "https://www.cse.lk/",
+      "asOf": "2026-11-20",
+      "kind": "dated_company_price"
+    },
+    {
+      "id": "trade-NDB.N0000",
+      "label": "National Development Bank PLC · CSE last recorded trade",
+      "url": "https://www.cse.lk/",
+      "asOf": "2026-11-20",
+      "kind": "dated_company_price"
+    },
+    {
+      "id": "trade-TKYO.N0000",
+      "label": "Tokyo Cement Company (Lanka) PLC · CSE last recorded trade",
+      "url": "https://www.cse.lk/",
+      "asOf": "2026-11-20",
+      "kind": "dated_company_price"
+    },
+    {
+      "id": "trade-LFIN.N0000",
+      "label": "LB Finance PLC · CSE last recorded trade",
+      "url": "https://www.cse.lk/",
+      "asOf": "2026-11-20",
+      "kind": "dated_company_price"
     }
   ],
   "quality": {
     "market": "current",
     "collector": "recent",
     "indexedCompanies": 16,
-    "indicativeCompanyQuotes": 0,
-    "sourceLinks": 14,
+    "indicativeCompanyQuotes": 16,
+    "sourceLinks": 30,
     "knownGaps": [
-      "CSE company share snapshots may not be available or dated",
       "Current company financial statements have not been verified",
       "No live brokerage integration"
     ],
     "sourceWarnings": [
       "shares: HTTP 400",
       "turnover: Daily turnover not reported"
-    ]
+    ],
+    "verifiedCompanyQuotes": 16,
+    "companyFacts": 16,
+    "companyFilings": 0,
+    "companyEvidenceAt": "2026-11-21T07:30:05.667Z"
   },
   "ai": {
     "status": "not_configured",
