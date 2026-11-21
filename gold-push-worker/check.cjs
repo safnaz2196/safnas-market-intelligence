@@ -18,7 +18,12 @@ const FX = 'https://open.er-api.com/v6/latest/USD';
 function readSecrets(env = process.env) {
   const required = ['FIREBASE_SERVICE_ACCOUNT_JSON', 'GOLD_PUSH_VAPID_PUBLIC_KEY', 'GOLD_PUSH_VAPID_PRIVATE_KEY'];
   for (const k of required) if (!env[k]) throw new Error(`Required GitHub Actions secret is missing: ${k}`);
-  const cred = JSON.parse(env.FIREBASE_SERVICE_ACCOUNT_JSON);
+  // Windows PowerShell 5.1 may save UTF-8 service-account JSON with a BOM (U+FEFF).
+  // GitHub Actions passes those bytes through the secret unchanged. Strip the BOM
+  // and surrounding whitespace before parsing; never print the credential value.
+  let cred;
+  try { cred = JSON.parse(String(env.FIREBASE_SERVICE_ACCOUNT_JSON).replace(/^\uFEFF/, '').trim()); }
+  catch { throw new Error('Firebase service-account secret contains invalid JSON. Recreate the secret with UTF-8 without BOM.'); }
   if (!cred || cred.project_id !== 'safnas-finance' || typeof cred.private_key !== 'string') throw new Error('Invalid Firebase service account for safnas-finance');
   return {cred, vapidPublic:env.GOLD_PUSH_VAPID_PUBLIC_KEY.trim(), vapidPrivate:env.GOLD_PUSH_VAPID_PRIVATE_KEY.trim()};
 }
