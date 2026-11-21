@@ -14,6 +14,13 @@ async function probe(api,query=''){
   if(array?.length){const v=array[0];sample={fields:Object.keys(v||{}).slice(0,18),symbol:v?.symbol||v?.company||null,hasPDF:!!v?.path};}
   if(api==='companyInfoSummery'&&obj.reqSymbolInfo){sample={fields:Object.keys(obj.reqSymbolInfo).slice(0,24),symbol:obj.reqSymbolInfo.symbol,hasPrice:obj.reqSymbolInfo.lastTradedPrice!=null};}
   console.log(JSON.stringify({endpoint:api,status:result.status,keys:keys.slice(0,6),length:array?.length||0,sample,nonJson:!parsed,html:body.slice(0,20).includes('<')}));
+  if(api==='tradeSummary') {
+   const rows=obj.reqTradeSummery||[];
+   const chosen=['DIAL.N0000','COMB.N0000','HNB.N0000','SAMP.N0000','JKH.N0000','HAYL.N0000','LOLC.N0000','CTC.N0000','DIST.N0000','MELS.N0000','CARG.N0000','SLTL.N0000','HHL.N0000','NDB.N0000','TKYO.N0000','LFIN.N0000'];
+   console.log(JSON.stringify({coverage:chosen.map(s=>({s,found:rows.some(x=>x.symbol===s)})),sampleQuote:rows.find(x=>x.symbol==='COMB.N0000')}));
+  }
+  if(api==='companyInfoSummery') console.log(JSON.stringify({companyInfoQuote:obj.reqSymbolInfo}));
+  if(api==='getFinancialAnnouncement')console.log(JSON.stringify({filings:array?.slice(0,4)}));
  }catch(e){console.log(JSON.stringify({endpoint:api,error:e.message}));}finally{clearTimeout(timeout)}
 }
 (async()=>{
