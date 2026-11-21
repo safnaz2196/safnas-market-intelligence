@@ -37,19 +37,57 @@ function moves(baseline, rates, settings) {
     return [{currency, change, price: rates[currency]}];
   });
 }
-function makeNotification(movements, settings, observedAt, source) {
-  if (!movements.length) throw new Error('No alert-worthy price moves');
-  const focus = movements.reduce((best, item) => Math.abs(item.change) > Math.abs(best.change) ? item : best, movements[0]);
-  const label = focus.change >= 0 ? 'rose' : 'fell';
-  const lines = movements.map(m => `${m.currency} ${settings.karat}K: ${new Intl.NumberFormat('en-US', {minimumFractionDigits:2,maximumFractionDigits:2}).format(m.price)}/g (${m.change >= 0?'+':''}${m.change.toFixed(2)}%)`);
+function displayRate(amount) {
+  if (!finitePositive(amount)) throw new Error('Invalid current gold price');
+  return new Intl.NumberFormat('en-US', {minimumFractionDigits:2, maximumFractionDigits:2}).format(amount);
+}
+function goldPriceLines(settings, latest, baseline = {}) {
+  return settings.markets.map(currency => {
+    const current=latest?.[currency];
+    const previous=baseline?.[currency];
+    const change=pctChange(previous,current);
+    const movement=change === null ? '' : change > 0.005 ? ` ▲${change.toFixed(2)}%` : change < -0.005 ? ` ▼${Math.abs(change).toFixed(2)}%` : ' →0.00%';
+    const flag=currency==='SAR'?'🇸🇦':'🇱🇰';
+    return `${flag} ${currency} ${settings.karat}K ${displayRate(current)}/g${movement}`;
+  });
+}
+function makeNotification(movements, settings, observedAt, source, latest = null, baseline = null) {
+  if(!movements.length) throw new Error('No alert-worthy price moves');
+  const focus=movements.reduce((best, item) => Math.abs(item.change) > Math.abs(best.change) ? item : best, movements[0]);
+  const label=focus.change>=0?'rose':'fell';
+  const priceMap=latest || Object.fromEntries(movements.map(m=>[m.currency,m.price]));
+  const markets=settings.markets.filter(currency=>finitePositive(priceMap[currency]));
+  const lines=goldPriceLines({...settings,markets},priceMap,baseline||{});
   return {
-    title: `Gold ${label} ${Math.abs(focus.change).toFixed(2)}% · Safnas Finance`,
-    body: lines.join(' · '),
-    tag: 'safnas-gold-market-alert',
-    url: '/',
-    source,
-    observedAt,
+    title:`Gold ${label} ${Math.abs(focus.change).toFixed(2)}% · Safnas Finance`,
+    body:lines.join(' · '),
+    tag:'safnas-gold-movement-alert',
+    url:'/#gold-prices',
+    kind:'movement',
+    source,observedAt
   };
+}
+function makeSummaryNotification(settings, latest, baseline, observedAt, source) {
+  return {
+    title:`Gold price update · ${settings.karat}K · Safnas Finance`,
+    body:goldPriceLines(settings,latest,baseline||{}).join(' · '),
+    tag:'safnas-gold-price-summary',
+    url:'/#gold-prices',
+    kind:'summary',
+    source,observedAt
+  };
+}
+function localDayKey(now = Date.now()) {
+  const parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Riyadh',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(now));
+  const get=(type)=>parts.find(p=>p.type===type)?.value;
+  return `${get('year')}-${get('month')}-${get('day')}`;
+}
+function localHour(now = Date.now()) {
+  return Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Riyadh',hour:'2-digit',hourCycle:'h23'}).format(new Date(now)));
+}
+function summaryDue(lastSummaryDay, now = Date.now()) {
+  // One price summary per Riyadh calendar day after 08:00; scheduled jobs may run late.
+  return localHour(now)>=8 && lastSummaryDay!==localDayKey(now);
 }
 function isFresh(spot, fx, now = Date.now()) {
   const spotTime = Date.parse(spot?.asOf);
@@ -67,4 +105,4 @@ function allowedPushEndpoint(urlText) {
       || host === 'updates.push.services.mozilla.com' || host === 'push.services.mozilla.com';
   } catch {return false;}
 }
-module.exports={GRAMS_PER_TROY_OUNCE,MIN_COOLDOWN_MS,normalizeSettings,gramRate,sampleMarket,pctChange,moves,makeNotification,isFresh,allowedPushEndpoint};
+module.exports={GRAMS_PER_TROY_OUNCE,MIN_COOLDOWN_MS,normalizeSettings,gramRate,sampleMarket,pctChange,moves,makeNotification,makeSummaryNotification,goldPriceLines,localDayKey,summaryDue,isFresh,allowedPushEndpoint};
