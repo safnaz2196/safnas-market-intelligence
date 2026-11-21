@@ -85,3 +85,32 @@ test('no future close / missing original observation cannot resolve historical p
  const out=updateLedger({previous:v0,history:withoutOrigin,horizons:[],now:new Date(series[197].date+'T09:00:00Z')});
  assert.equal(out.entries[0].status,'pending');
 });
+
+test('new gold forecasts freeze numeric low / middle / high ranges in original record',()=>{
+ const data=run(series.slice(0,195),[horizon(7,5,'rise')]);
+ const e=data.entries.find(x=>x.days===7);
+ assert.equal(e.status,'pending');
+ assert.equal(e.remainingCloses,5);
+ assert.equal(e.observedCloses,0);
+ assert.equal(e.evaluationRule,'Closing price above starting price');
+ assert.ok(e.frozenPriceRange.lowUsdOz<e.frozenPriceRange.midUsdOz);
+ assert.ok(e.frozenPriceRange.midUsdOz<e.frozenPriceRange.highUsdOz);
+ assert.equal(e.frozenPriceRange.midUsdOz,Number((e.referenceUsdOz*1.005).toFixed(3)));
+ const future=run(series.slice(0,199),[horizon(7,5,'rise')],data);
+ const original=future.entries.find(x=>x.originDate===e.originDate);
+ assert.equal(original.status,'pending');
+ assert.equal(original.observedCloses,4);
+ assert.equal(original.remainingCloses,1);
+ assert.deepEqual(original.frozenPriceRange,e.frozenPriceRange);
+});
+test('legacy sideways prediction preserves missing historic bounds without inventing targets',()=>{
+ const origin=series[199];
+ const legacy={generatedAt:origin.date+'T09:15:00Z',entries:[{originDate:origin.date,days:1,sessions:1,referenceUsdOz:origin.usdOz,
+ lean:'range',historicalSampleRisePct:51,modelEdgeDemonstrated:false,status:'pending'}]};
+ const data=run(series.slice(0,200),[horizon(1,1,'rise')],null,legacy);
+ assert.equal(data.entries.length,1);
+ assert.equal(data.entries[0].predictedDirection,'range');
+ assert.equal(data.entries[0].frozenPriceRange,undefined);
+ assert.equal(data.entries[0].status,'pending');
+ assert.equal(data.entries[0].remainingCloses,1);
+});
