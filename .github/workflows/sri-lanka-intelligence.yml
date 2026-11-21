@@ -4,6 +4,8 @@ on:
     branches: [main]
     paths:
       - 'collector/update.cjs'
+      - 'collector/research-v5-publish.cjs'
+      - 'collector/research-v5-publish.test.cjs'
       - 'collector/turnover-source.test.cjs'
       - 'collector/share-quotes.test.cjs'
       - '.github/workflows/sri-lanka-intelligence.yml'
@@ -32,6 +34,8 @@ jobs:
         run: node --test collector/*.test.cjs
       - name: Collect public market observations (existing v4 archive preserved)
         run: node collector/update.cjs
+      - name: Synchronize AutoPilot v5 research with the newest CSE source health
+        run: node collector/research-v5-publish.cjs
       - name: Publish research audit
         run: |
           git config user.name "github-actions[bot]"
