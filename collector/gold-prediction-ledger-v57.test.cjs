@@ -115,3 +115,28 @@ test('legacy sideways prediction preserves missing historic bounds without inven
  assert.equal(data.entries[0].status,'pending');
  assert.equal(data.entries[0].remainingCloses,1);
 });
+
+test('v5.8 freezes four candidate models and scores each only after a future close',()=>{
+ const original=series.slice(0,195);
+ const models=['analogue','trend','reversion','regime'].map((id,i)=>({
+  id,direction:i===0?'rise':i===1?'fall':'range',referenceCases:60,
+  probabilities:{rise:40,fall:35,range:25},scenarios:{lowPct:-2,midPct:0,highPct:3}
+ }));
+ const adapt={thresholdPct:1.1,bias:'rise',models,validation:{selectedByEarlyPeriod:'trend',selectedModelValidated:false}};
+ const hs=[{...horizon(7,5,'rise'),multiModel:adapt}];
+ const first=run(original,hs);
+ const originalPrediction=first.entries[0];
+ assert.ok(originalPrediction.multiModelSnapshot);
+ assert.equal(originalPrediction.multiModelSnapshot.models.length,4);
+ assert.equal(originalPrediction.multiModelSnapshot.historicalHoldoutValidated,false);
+ assert.equal(originalPrediction.multiModelResults,undefined);
+ const after=run(series.slice(0,203),hs,first);
+ const completed=after.entries.find(e=>e.originDate===original.at(-1).date);
+ assert.equal(completed.status,'resolved');
+ assert.equal(completed.multiModelResults.length,4);
+ assert.ok(completed.multiModelResults.every(x=>Number.isFinite(x.multiclassBrier)));
+ assert.ok(after.learning.multiModelScorecards.find(x=>x.days===7).completed>=1);
+ const oldSnapshot=originalPrediction.multiModelSnapshot;
+ assert.deepEqual(completed.multiModelSnapshot,oldSnapshot);
+ assert.equal(completed.snapshotHash,originalPrediction.snapshotHash);
+});
