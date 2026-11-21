@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "version": "6.2",
+  "generatedAt": "2026-11-21T12:56:40.051Z",
+  "status": "observed_public_research",
+  "snapshot": {
+    "aspiDate": "2026-11-20",
+    "goldQuoteDate": "2026-11-21T11:24:07Z",
+    "predictionResolved": 0,
+    "companies": {
+      "DIAL.N0000": {
+        "asOf": "2026-11-20",
+        "priceLKR": 48
+      },
+      "COMB.N0000": {
+        "asOf": "2026-11-20",
+        "priceLKR": 214
+      },
+      "JKH.N0000": {
+        "asOf": "2026-11-20",
+        "priceLKR": 18.7
+      },
+      "HNB.N0000": {
+        "asOf": "2026-11-20",
+        "priceLKR": 393.75
+      },
+      "SAMP.N0000": {
+        "asOf": "2026-11-20",
+        "priceLKR": 148.25
+      },
+      "HAYL.N0000": {
+        "asOf": "2026-11-20",
+        "priceLKR": 230.25
+      },
+      "LOLC.N0000": {
+        "asOf": "2026-11-20",
+        "priceLKR": 406
+      },
+      "CTC.N0000": {
+        "asOf": "2026-11-20",
+        "priceLKR": 1844.5
+      },
+      "DIST.N0000": {
+        "asOf": "2026-11-20",
+        "priceLKR": 58.3
+      },
+      "MELS.N0000": {
+        "asOf": "2026-11-20",
+        "priceLKR": 192
+      },
+      "CARG.N0000": {
+        "asOf": "2026-11-20",
+        "priceLKR": 680.25
+      },
+      "SLTL.N0000": {
+        "asOf": "2026-11-20",
+        "priceLKR": 90.6
+      },
+      "HHL.N0000": {
+        "asOf": "2026-11-20",
+        "priceLKR": 32
+      },
+      "NDB.N0000": {
+        "asOf": "2026-11-20",
+        "priceLKR": 111.25
+      },
+      "TKYO.N0000": {
+        "asOf": "2026-11-20",
+        "priceLKR": 83
+      },
+      "LFIN.N0000": {
+        "asOf": "2026-11-20",
+        "priceLKR": 154
+      }
+    }
+  },
+  "coverage": {
+    "cseQuotes": "16 / 16",
+    "cseDataDate": "2026-11-20",
+    "goldDataDate": "2026-11-21T11:24:07Z",
+    "collectorAt": "2026-11-21T11:08:39.672Z",
+    "researchAt": "2026-11-21T11:08:43.295Z",
+    "predictionResults": 0,
+    "warning": "Source dates are observations, not live exchange-streaming commitments."
+  },
+  "market": {
+    "asOf": "2026-11-20",
+    "close": 21369.72,
+    "changePct": -0.8,
+    "turnoverLKR": 2330340350,
+    "turnoverAsOf": "2026-11-20"
+  },
+  "gold": {
+    "referenceUsdOz": 3539,
+    "quoteAsOf": "2026-11-21T11:24:07Z",
+    "goldModelWindows": 6,
+    "historicalWindowsValidated": 0,
+    "forwardPending": 6,
+    "forwardResolved": 0,
+    "sources": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
+  },
+  "companies": 16,
+  "verifiedCompanies": 16,
+  "companyFilings": 16,
+  "publishers": 7,
+  "changes": [
+    {
+      "id": "e186f360288be672",
+      "kind": "market",
+      "label": "New dated ASPI close",
+      "detail": "ASPI 21369.72 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "b16fd9318052e651",
+      "kind": "gold",
+      "label": "New gold spot observation",
+      "detail": "USD 3539/oz as of 2026-11-21T11:24:07Z",
+      "asOf": "2026-11-21T11:24:07Z",
+      "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
+    },
+    {
+      "id": "74ed28975692658c",
+      "kind": "company",
+      "label": "New dated CSE quote · DIAL.N0000",
+      "detail": "Dialog Axiata PLC last traded at LKR 48 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    }
+  ],
+  "history": [
+    {
+      "id": "e186f360288be672",
+      "kind": "market",
+      "label": "New dated ASPI close",
+      "detail": "ASPI 21369.72 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "b16fd9318052e651",
+      "kind": "gold",
+      "label": "New gold spot observation",
+      "detail": "USD 3539/oz as of 2026-11-21T11:24:07Z",
+      "asOf": "2026-11-21T11:24:07Z",
+      "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
+    },
+    {
+      "id": "74ed28975692658c",
+      "kind": "company",
+      "label": "New dated CSE quote · DIAL.N0000",
+      "detail": "Dialog Axiata PLC last traded at LKR 48 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    }
+  ],
+  "disclaimer": "Public market research facts only. No LLM inference, private brokerage data, verified trading signals or investment recommendations.",
+  "sourceLinks": [
+    "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/research-v5.json",
+    "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
+  ]
+}
