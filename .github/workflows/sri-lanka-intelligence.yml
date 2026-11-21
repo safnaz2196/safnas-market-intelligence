@@ -36,13 +36,28 @@ jobs:
         run: node collector/update.cjs
       - name: Synchronize AutoPilot v5 research with the newest CSE source health
         run: node collector/research-v5-publish.cjs
-      - name: Publish research audit
+      - name: Publish research audit with safe retry during concurrent research updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add market-intelligence/
-          if ! git diff --staged --quiet; then
-            git commit -m "Refresh source-verified CSE market archive"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+          for attempt in 1 2 3 4; do
+            if [ "$attempt" -gt 1 ]; then
+              git fetch origin main
+              git reset --hard origin/main
+              node collector/update.cjs
+              node collector/research-v5-publish.cjs
+            fi
+            git add market-intelligence/
+            if git diff --staged --quiet; then
+              echo "Collector data and research are already up to date."
+              exit 0
+            fi
+            git commit -m "Refresh CSE market archive and consistent AutoPilot research"
+            if git push origin HEAD:main; then
+              echo "Market + AutoPilot data published from the same collector snapshot."
+              exit 0
+            fi
+            echo "Main changed while publishing; refresh and retry $attempt"
+          done
+          echo "Unable to publish without overwriting concurrent changes" >&2
+          exit 1
