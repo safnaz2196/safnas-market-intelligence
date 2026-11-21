@@ -51,3 +51,26 @@ test('invalid and future-dated points excluded and no false returns',()=>{
 test('requires a compatible source snapshot',()=>{
  assert.throws(()=>buildResearch({schemaVersion:5,generatedAt:'2026-11-21T00:00:00Z'},NOW));
 });
+
+test('verified current daily turnover removes old warning after source refresh',()=>{
+ const s=sample();
+ s.market.marketSummary={turnover:2330340350,asOf:'2026-11-20',currency:'LKR',
+  verifiedTradeDate:true,sourceURL:'https://www.cse.lk/api/dailyMarketSummery',
+  sharesTraded:121790416,trades:14416};
+ s.sourceHealth={turnover:{status:'current',asOf:'2026-11-20'}};
+ s.warnings=[];
+ const r=buildResearch(s,NOW);
+ assert.equal(r.market.turnover.status,'dated_observation');
+ assert.equal(r.market.turnover.valueLKR,2330340350);
+ assert.ok(r.evidence.some(x=>x.id==='cse-turnover'&&x.asOf==='2026-11-20'));
+ assert.ok(r.briefing.findings.some(x=>x.id==='cse-turnover'));
+ assert.equal(r.quality.sourceWarnings.some(x=>String(x).includes('turnover:')),false);
+});
+test('old, undated, or unverified market turnover is not called current',()=>{
+ const s=sample();s.market.marketSummary={turnover:2330340350,currency:'LKR',
+  asOf:'2026-11-20',verifiedTradeDate:false,sourceURL:'https://www.cse.lk/api/dailyMarketSummery'};
+ assert.equal(buildResearch(s,NOW).market.turnover.status,'unavailable');
+ s.market.marketSummary.verifiedTradeDate=true;
+ s.market.marketSummary.asOf='2026-10-15';
+ assert.equal(buildResearch(s,NOW).market.turnover.status,'unavailable');
+});
