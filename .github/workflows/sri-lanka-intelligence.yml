@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'collector/update.cjs'
+      - 'collector/turnover-probe.cjs'
       - 'collector/share-quotes.test.cjs'
       - '.github/workflows/sri-lanka-intelligence.yml'
   schedule:
@@ -29,6 +30,8 @@ jobs:
           package-manager-cache: false
       - name: Validate collectors and learner
         run: node --test collector/*.test.cjs
+      - name: Diagnose official turnover response
+        run: node collector/turnover-probe.cjs
       - name: Collect public market observations (existing v4 archive preserved)
         run: node collector/update.cjs
       - name: Publish research audit
