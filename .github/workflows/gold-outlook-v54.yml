@@ -1,4 +1,4 @@
-name: Safnas Finance — Free Gold Outlook Research
+name: Safnas Finance — Gold Deep Research · Free Auto Refresh
 on:
   push:
     branches: [main]
@@ -7,8 +7,8 @@ on:
       - 'collector/gold-outlook-v54.test.cjs'
       - '.github/workflows/gold-outlook-v54.yml'
   schedule:
-    # Refresh evidence four times daily; GitHub scheduled jobs are best effort.
-    - cron: '15 1,7,13,19 * * *'
+    # Best effort twice per hour; public repository GitHub scheduling can be delayed or skipped.
+    - cron: '13,43 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
