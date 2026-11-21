@@ -8,7 +8,7 @@
     "forest",
     "boost"
   ],
-  "generatedAt": "2026-11-20T20:40:02.940Z",
+  "generatedAt": "2026-11-21T07:14:33.777Z",
   "status": "updated",
   "market": {
     "aspi": {
@@ -285,7 +285,7 @@
         "horizon": 5,
         "asOf": "2026-11-20",
         "latest": 21369.72,
-        "ageDays": 0,
+        "ageDays": 1,
         "direction": "Indecisive / sideways",
         "upScore": 0.5534,
         "edgeDemonstrated": false,
@@ -369,7 +369,7 @@
         "horizon": 20,
         "asOf": "2026-11-20",
         "latest": 21369.72,
-        "ageDays": 0,
+        "ageDays": 1,
         "direction": "Downward lean",
         "upScore": 0.2582,
         "edgeDemonstrated": true,
@@ -461,7 +461,7 @@
     "sl20": {
       "value": 6075.28,
       "changePercent": -1.09,
-      "retrievedAt": "2026-11-20T20:40:07.097Z",
+      "retrievedAt": "2026-11-21T07:14:37.431Z",
       "sourceURL": "https://www.cse.lk/api/snpData",
       "note": "Retrieved snapshot; source may not include a reliable trade date."
     },
@@ -834,6 +834,18 @@
   "shares": [],
   "headlines": [
     {
+      "title": "Sri Lanka Supreme Court clears Prevention of Organized Crime Bill with changes",
+      "url": "https://economynext.com/sri-lanka-supreme-court-clears-prevention-of-organized-crime-bill-with-changes-290866/",
+      "date": "2026-11-21",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Deloitte Sri Lanka examines Budget 2027",
+      "url": "https://economynext.com/deloitte-sri-lanka-examines-budget-2027-290831/",
+      "date": "2026-11-21",
+      "publisher": "EconomyNext"
+    },
+    {
       "title": "Sri Lanka central bank has no credit target, backs borrowing within repayment capacity: Governor",
       "url": "https://economynext.com/sri-lanka-central-bank-has-no-credit-target-backs-borrowing-within-repayment-capacity-governor-290821/",
       "date": "2026-11-20",
@@ -908,18 +920,6 @@
     {
       "title": "Open-source firm WSO2 rebrands as Choreo Labs to focus on AI agent control",
       "url": "https://economynext.com/open-source-firm-wso2-rebrands-as-choreo-labs-to-focus-on-ai-agent-control-290705/",
-      "date": "2026-11-20",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka rupee at 332.75/85 to US dollar spot, bond yields spike",
-      "url": "https://economynext.com/sri-lanka-rupee-at-332-75-85-to-us-dollar-spot-bond-yields-spike-290694/",
-      "date": "2026-11-20",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka Central Bank raises key policy rate, SRR citing high inflation, credit growth",
-      "url": "https://economynext.com/sri-lanka-central-bank-raises-key-policy-rate-srr-citing-high-inflation-credit-growth-290692/",
       "date": "2026-11-20",
       "publisher": "EconomyNext"
     }
@@ -1035,10 +1035,10 @@
     "aspi": {
       "status": "current",
       "asOf": "2026-11-20",
-      "ageDays": 0,
+      "ageDays": 1,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-20T20:40:02.940Z",
-      "lastSuccessAt": "2026-11-20T20:40:02.940Z",
+      "lastAttemptAt": "2026-11-21T07:14:33.777Z",
+      "lastSuccessAt": "2026-11-21T07:14:33.777Z",
       "failures": 0,
       "note": "CSE daily closes validated and appended to dated archive"
     },
@@ -1047,18 +1047,18 @@
       "asOf": "2025",
       "ageDays": null,
       "ageYears": 1,
-      "lastAttemptAt": "2026-11-20T20:40:02.940Z",
-      "lastSuccessAt": "2026-11-20T20:40:02.940Z",
+      "lastAttemptAt": "2026-11-21T07:14:33.777Z",
+      "lastSuccessAt": "2026-11-21T07:14:33.777Z",
       "failures": 0,
       "note": "6 of 6 annual indicators refreshed"
     },
     "forex": {
       "status": "current",
       "asOf": "2026-11-20",
-      "ageDays": 0,
+      "ageDays": 1,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-20T20:40:02.940Z",
-      "lastSuccessAt": "2026-11-20T20:40:02.940Z",
+      "lastAttemptAt": "2026-11-21T07:14:33.777Z",
+      "lastSuccessAt": "2026-11-21T07:14:33.777Z",
       "failures": 0,
       "note": "Provider response accepted"
     },
@@ -1067,18 +1067,18 @@
       "asOf": null,
       "ageDays": null,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-20T20:40:02.940Z",
+      "lastAttemptAt": "2026-11-21T07:14:33.777Z",
       "lastSuccessAt": null,
-      "failures": 13,
+      "failures": 14,
       "note": "HTTP 400"
     },
     "sl20": {
       "status": "retrieved_only",
-      "asOf": "2026-11-20",
+      "asOf": "2026-11-21",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-20T20:40:02.940Z",
-      "lastSuccessAt": "2026-11-20T20:40:02.940Z",
+      "lastAttemptAt": "2026-11-21T07:14:33.777Z",
+      "lastSuccessAt": "2026-11-21T07:14:33.777Z",
       "failures": 0,
       "note": "Index snapshot retrieved; official trade date not verified"
     },
@@ -1087,18 +1087,18 @@
       "asOf": null,
       "ageDays": null,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-20T20:40:02.940Z",
+      "lastAttemptAt": "2026-11-21T07:14:33.777Z",
       "lastSuccessAt": null,
-      "failures": 13,
+      "failures": 14,
       "note": "Daily turnover not reported"
     },
     "headlines": {
       "status": "current",
-      "asOf": "2026-11-20",
+      "asOf": "2026-11-21",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-20T20:40:02.940Z",
-      "lastSuccessAt": "2026-11-20T20:40:02.940Z",
+      "lastAttemptAt": "2026-11-21T07:14:33.777Z",
+      "lastSuccessAt": "2026-11-21T07:14:33.777Z",
       "failures": 0,
       "note": "Provider response accepted"
     }
@@ -1300,7 +1300,7 @@
     "edgeModels": 1,
     "modelClaim": "Limited historical statistical edge — not investment advice",
     "dataLimit": "The public CSE chart endpoint supplies roughly one trailing year. Older dates require permitted, verified historical data; no synthetic backfill.",
-    "refreshedAt": "2026-11-20T20:40:02.940Z",
+    "refreshedAt": "2026-11-21T07:14:33.777Z",
     "disclaimer": "Source health is not model accuracy or probability of market growth."
   }
 }

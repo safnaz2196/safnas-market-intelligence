@@ -1,0 +1,496 @@
+{
+  "schemaVersion": 5,
+  "engineVersion": "5.0.2",
+  "generatedAt": "2026-11-21T07:14:38.828Z",
+  "sourceSnapshotAt": "2026-11-21T07:14:33.777Z",
+  "status": "research_available",
+  "briefing": {
+    "title": "Sri Lanka · Autonomous Market Brief",
+    "summary": "Automatically compiled from dated historical observations and published news. Assess linked evidence for each finding.",
+    "findings": [
+      {
+        "id": "aspi",
+        "tone": "neutral",
+        "title": "ASPI decreased in the last recorded session",
+        "detail": "Verified close 21369.72 on 2026-11-20 (-0.8% versus previous close).",
+        "evidenceIds": [
+          "aspi"
+        ]
+      },
+      {
+        "id": "avg20",
+        "tone": "info",
+        "title": "Historical 20-session checkpoint",
+        "detail": "The latest ASPI close is above its 20-session average of 21027.22. This does not predict future returns.",
+        "evidenceIds": [
+          "aspi"
+        ]
+      },
+      {
+        "id": "news-topics",
+        "tone": "info",
+        "title": "4 headlines matched economic research topics",
+        "detail": "Topic matching identifies subjects to investigate; it cannot confirm causation or returns.",
+        "evidenceIds": [
+          "news-3",
+          "news-4",
+          "news-5"
+        ]
+      }
+    ]
+  },
+  "market": {
+    "status": "current",
+    "asOf": "2026-11-20",
+    "ageDays": 1,
+    "close": 21369.72,
+    "lastObservedClose": 21369.72,
+    "changePct": -0.8,
+    "average20": 21027.22,
+    "annualizedHistoricalVolatilityPct": 19.63,
+    "observations": 65,
+    "modelAudit": {
+      "edgeDemonstrated": true,
+      "audit5": true,
+      "audit20": true,
+      "journalResolved": 0,
+      "notice": "Backtesting does not establish reliable future prediction."
+    }
+  },
+  "news": [
+    {
+      "id": "news-1",
+      "title": "Sri Lanka Supreme Court clears Prevention of Organized Crime Bill with changes",
+      "url": "https://economynext.com/sri-lanka-supreme-court-clears-prevention-of-organized-crime-bill-with-changes-290866/",
+      "date": "2026-11-21",
+      "publisher": "EconomyNext",
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+    },
+    {
+      "id": "news-2",
+      "title": "Deloitte Sri Lanka examines Budget 2027",
+      "url": "https://economynext.com/deloitte-sri-lanka-examines-budget-2027-290831/",
+      "date": "2026-11-21",
+      "publisher": "EconomyNext",
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+    },
+    {
+      "id": "news-3",
+      "title": "Sri Lanka central bank has no credit target, backs borrowing within repayment capacity: Governor",
+      "url": "https://economynext.com/sri-lanka-central-bank-has-no-credit-target-backs-borrowing-within-repayment-capacity-governor-290821/",
+      "date": "2026-11-20",
+      "publisher": "EconomyNext",
+      "topics": [
+        "Interest rates"
+      ],
+      "impactNote": "Interest rates can affect bank margins, borrowing costs and demand; company effects are unverified."
+    },
+    {
+      "id": "news-4",
+      "title": "Sri Lanka stocks close down 0.80-pct after rate hike",
+      "url": "https://economynext.com/sri-lanka-stocks-close-down-0-80-pct-after-rate-hike-290851/",
+      "date": "2026-11-20",
+      "publisher": "EconomyNext",
+      "topics": [
+        "Interest rates"
+      ],
+      "impactNote": "Interest rates can affect bank margins, borrowing costs and demand; company effects are unverified."
+    },
+    {
+      "id": "news-5",
+      "title": "Sri Lanka rupee closes at 332.60/65 to US dollar spot, bond yields rise",
+      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-60-65-to-us-dollar-spot-bond-yields-rise-290850/",
+      "date": "2026-11-20",
+      "publisher": "EconomyNext",
+      "topics": [
+        "Currency"
+      ],
+      "impactNote": "Currency changes can affect importers, exporters and foreign-currency debts."
+    },
+    {
+      "id": "news-6",
+      "title": "Sri Lanka market rates rose after May hike: Central bank",
+      "url": "https://economynext.com/sri-lanka-market-rates-rose-after-may-hike-central-bank-290798/",
+      "date": "2026-11-20",
+      "publisher": "EconomyNext",
+      "topics": [
+        "Interest rates"
+      ],
+      "impactNote": "Interest rates can affect bank margins, borrowing costs and demand; company effects are unverified."
+    },
+    {
+      "id": "news-7",
+      "title": "LankaPay reports security incident at LankaSign registration portal",
+      "url": "https://economynext.com/lankapay-reports-security-incident-at-lankasign-registration-portal-290783/",
+      "date": "2026-11-20",
+      "publisher": "EconomyNext",
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+    }
+  ],
+  "companies": [
+    {
+      "ticker": "DIAL.N0000",
+      "name": "Dialog Axiata PLC",
+      "sector": "Telecommunications",
+      "quote": null,
+      "recentHeadlines": [],
+      "fundamentals": {
+        "status": "not_available",
+        "reason": "Original company financial statements have not been verified by the collector."
+      },
+      "researchStatus": "company_directory_only"
+    },
+    {
+      "ticker": "COMB.N0000",
+      "name": "Commercial Bank of Ceylon PLC",
+      "sector": "Banks",
+      "quote": null,
+      "recentHeadlines": [],
+      "fundamentals": {
+        "status": "not_available",
+        "reason": "Original company financial statements have not been verified by the collector."
+      },
+      "researchStatus": "company_directory_only"
+    },
+    {
+      "ticker": "JKH.N0000",
+      "name": "John Keells Holdings PLC",
+      "sector": "Diversified",
+      "quote": null,
+      "recentHeadlines": [],
+      "fundamentals": {
+        "status": "not_available",
+        "reason": "Original company financial statements have not been verified by the collector."
+      },
+      "researchStatus": "company_directory_only"
+    },
+    {
+      "ticker": "HNB.N0000",
+      "name": "Hatton National Bank PLC",
+      "sector": "Banks",
+      "quote": null,
+      "recentHeadlines": [],
+      "fundamentals": {
+        "status": "not_available",
+        "reason": "Original company financial statements have not been verified by the collector."
+      },
+      "researchStatus": "company_directory_only"
+    },
+    {
+      "ticker": "SAMP.N0000",
+      "name": "Sampath Bank PLC",
+      "sector": "Banks",
+      "quote": null,
+      "recentHeadlines": [],
+      "fundamentals": {
+        "status": "not_available",
+        "reason": "Original company financial statements have not been verified by the collector."
+      },
+      "researchStatus": "company_directory_only"
+    },
+    {
+      "ticker": "HAYL.N0000",
+      "name": "Hayleys PLC",
+      "sector": "Industrials",
+      "quote": null,
+      "recentHeadlines": [],
+      "fundamentals": {
+        "status": "not_available",
+        "reason": "Original company financial statements have not been verified by the collector."
+      },
+      "researchStatus": "company_directory_only"
+    },
+    {
+      "ticker": "LOLC.N0000",
+      "name": "LOLC Holdings PLC",
+      "sector": "Diversified",
+      "quote": null,
+      "recentHeadlines": [],
+      "fundamentals": {
+        "status": "not_available",
+        "reason": "Original company financial statements have not been verified by the collector."
+      },
+      "researchStatus": "company_directory_only"
+    },
+    {
+      "ticker": "CTC.N0000",
+      "name": "Ceylon Tobacco Company PLC",
+      "sector": "Consumer",
+      "quote": null,
+      "recentHeadlines": [],
+      "fundamentals": {
+        "status": "not_available",
+        "reason": "Original company financial statements have not been verified by the collector."
+      },
+      "researchStatus": "company_directory_only"
+    },
+    {
+      "ticker": "DIST.N0000",
+      "name": "Distilleries Company of Sri Lanka PLC",
+      "sector": "Consumer",
+      "quote": null,
+      "recentHeadlines": [],
+      "fundamentals": {
+        "status": "not_available",
+        "reason": "Original company financial statements have not been verified by the collector."
+      },
+      "researchStatus": "company_directory_only"
+    },
+    {
+      "ticker": "MELS.N0000",
+      "name": "Melstacorp PLC",
+      "sector": "Diversified",
+      "quote": null,
+      "recentHeadlines": [],
+      "fundamentals": {
+        "status": "not_available",
+        "reason": "Original company financial statements have not been verified by the collector."
+      },
+      "researchStatus": "company_directory_only"
+    },
+    {
+      "ticker": "CARG.N0000",
+      "name": "Cargills (Ceylon) PLC",
+      "sector": "Consumer",
+      "quote": null,
+      "recentHeadlines": [],
+      "fundamentals": {
+        "status": "not_available",
+        "reason": "Original company financial statements have not been verified by the collector."
+      },
+      "researchStatus": "company_directory_only"
+    },
+    {
+      "ticker": "SLTL.N0000",
+      "name": "Sri Lanka Telecom PLC",
+      "sector": "Telecommunications",
+      "quote": null,
+      "recentHeadlines": [
+        "news-1",
+        "news-2"
+      ],
+      "fundamentals": {
+        "status": "not_available",
+        "reason": "Original company financial statements have not been verified by the collector."
+      },
+      "researchStatus": "has_dated_headlines"
+    },
+    {
+      "ticker": "HHL.N0000",
+      "name": "Hemas Holdings PLC",
+      "sector": "Diversified",
+      "quote": null,
+      "recentHeadlines": [],
+      "fundamentals": {
+        "status": "not_available",
+        "reason": "Original company financial statements have not been verified by the collector."
+      },
+      "researchStatus": "company_directory_only"
+    },
+    {
+      "ticker": "NDB.N0000",
+      "name": "National Development Bank PLC",
+      "sector": "Banks",
+      "quote": null,
+      "recentHeadlines": [],
+      "fundamentals": {
+        "status": "not_available",
+        "reason": "Original company financial statements have not been verified by the collector."
+      },
+      "researchStatus": "company_directory_only"
+    },
+    {
+      "ticker": "TKYO.N0000",
+      "name": "Tokyo Cement Company (Lanka) PLC",
+      "sector": "Industrials",
+      "quote": null,
+      "recentHeadlines": [],
+      "fundamentals": {
+        "status": "not_available",
+        "reason": "Original company financial statements have not been verified by the collector."
+      },
+      "researchStatus": "company_directory_only"
+    },
+    {
+      "ticker": "LFIN.N0000",
+      "name": "LB Finance PLC",
+      "sector": "Banks",
+      "quote": null,
+      "recentHeadlines": [],
+      "fundamentals": {
+        "status": "not_available",
+        "reason": "Original company financial statements have not been verified by the collector."
+      },
+      "researchStatus": "company_directory_only"
+    }
+  ],
+  "macro": [
+    {
+      "key": "gdpGrowth",
+      "year": "2025",
+      "value": 4.953,
+      "period": "annual",
+      "sourceId": "macro-gdpgrowth"
+    },
+    {
+      "key": "annualInflation",
+      "year": "2025",
+      "value": -4.764,
+      "period": "annual",
+      "sourceId": "macro-annualinflation"
+    },
+    {
+      "key": "remittancesGDP",
+      "year": "2025",
+      "value": 7.632,
+      "period": "annual",
+      "sourceId": "macro-remittancesgdp"
+    },
+    {
+      "key": "unemployment",
+      "year": "2025",
+      "value": 4.005,
+      "period": "annual",
+      "sourceId": "macro-unemployment"
+    },
+    {
+      "key": "currentAccountGDP",
+      "year": "2025",
+      "value": 1.58,
+      "period": "annual",
+      "sourceId": "macro-currentaccountgdp"
+    },
+    {
+      "key": "exportsGDP",
+      "year": "2025",
+      "value": 18.967,
+      "period": "annual",
+      "sourceId": "macro-exportsgdp"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "aspi",
+      "label": "ASPI dated observations · CSE",
+      "url": "https://www.cse.lk/api/chartData",
+      "asOf": "2026-11-20",
+      "kind": "dated_market_observation"
+    },
+    {
+      "id": "news-1",
+      "label": "Publisher headline · Sri Lanka Supreme Court clears Prevention of Organized Crime Bill with changes",
+      "url": "https://economynext.com/sri-lanka-supreme-court-clears-prevention-of-organized-crime-bill-with-changes-290866/",
+      "asOf": "2026-11-21",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-2",
+      "label": "Publisher headline · Deloitte Sri Lanka examines Budget 2027",
+      "url": "https://economynext.com/deloitte-sri-lanka-examines-budget-2027-290831/",
+      "asOf": "2026-11-21",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-3",
+      "label": "Publisher headline · Sri Lanka central bank has no credit target, backs borrowing within repayment capacity: Go",
+      "url": "https://economynext.com/sri-lanka-central-bank-has-no-credit-target-backs-borrowing-within-repayment-capacity-governor-290821/",
+      "asOf": "2026-11-20",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-4",
+      "label": "Publisher headline · Sri Lanka stocks close down 0.80-pct after rate hike",
+      "url": "https://economynext.com/sri-lanka-stocks-close-down-0-80-pct-after-rate-hike-290851/",
+      "asOf": "2026-11-20",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-5",
+      "label": "Publisher headline · Sri Lanka rupee closes at 332.60/65 to US dollar spot, bond yields rise",
+      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-60-65-to-us-dollar-spot-bond-yields-rise-290850/",
+      "asOf": "2026-11-20",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-6",
+      "label": "Publisher headline · Sri Lanka market rates rose after May hike: Central bank",
+      "url": "https://economynext.com/sri-lanka-market-rates-rose-after-may-hike-central-bank-290798/",
+      "asOf": "2026-11-20",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-7",
+      "label": "Publisher headline · LankaPay reports security incident at LankaSign registration portal",
+      "url": "https://economynext.com/lankapay-reports-security-incident-at-lankasign-registration-portal-290783/",
+      "asOf": "2026-11-20",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "macro-gdpgrowth",
+      "label": "World Bank indicator · gdpGrowth",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=LK",
+      "asOf": null,
+      "kind": "annual_statistic"
+    },
+    {
+      "id": "macro-annualinflation",
+      "label": "World Bank indicator · annualInflation",
+      "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=LK",
+      "asOf": null,
+      "kind": "annual_statistic"
+    },
+    {
+      "id": "macro-remittancesgdp",
+      "label": "World Bank indicator · remittancesGDP",
+      "url": "https://data.worldbank.org/indicator/BX.TRF.PWKR.DT.GD.ZS?locations=LK",
+      "asOf": null,
+      "kind": "annual_statistic"
+    },
+    {
+      "id": "macro-unemployment",
+      "label": "World Bank indicator · unemployment",
+      "url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=LK",
+      "asOf": null,
+      "kind": "annual_statistic"
+    },
+    {
+      "id": "macro-currentaccountgdp",
+      "label": "World Bank indicator · currentAccountGDP",
+      "url": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=LK",
+      "asOf": null,
+      "kind": "annual_statistic"
+    },
+    {
+      "id": "macro-exportsgdp",
+      "label": "World Bank indicator · exportsGDP",
+      "url": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=LK",
+      "asOf": null,
+      "kind": "annual_statistic"
+    }
+  ],
+  "quality": {
+    "market": "current",
+    "collector": "recent",
+    "indexedCompanies": 16,
+    "indicativeCompanyQuotes": 0,
+    "sourceLinks": 14,
+    "knownGaps": [
+      "CSE company share snapshots may not be available or dated",
+      "Current company financial statements have not been verified",
+      "No live brokerage integration"
+    ],
+    "sourceWarnings": [
+      "shares: HTTP 400",
+      "turnover: Daily turnover not reported"
+    ]
+  },
+  "ai": {
+    "status": "not_configured",
+    "explanations": [],
+    "notice": "Evidence-based research is automated and free. Generative English/Tamil synthesis requires a separately configured provider and may cost money."
+  },
+  "disclaimer": "Educational market research only. No orders, promises of return, individualized buy/sell advice or invented financial figures."
+}
