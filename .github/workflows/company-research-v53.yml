@@ -4,7 +4,6 @@ on:
     branches: [main]
     paths:
       - 'collector/company-evidence-v5.cjs'
-      - 'collector/financials-probe.cjs'
       - 'collector/company-evidence-v5.test.cjs'
       - 'collector/research-v5-publish.cjs'
       - '.github/workflows/company-research-v53.yml'
@@ -29,8 +28,6 @@ jobs:
           node-version: '22'
       - name: Validate company evidence and report contracts
         run: node --test collector/company-evidence-v5.test.cjs collector/research-v5-publish.test.cjs
-      - name: Probe archive contract for company reports
-        run: node collector/financials-probe.cjs
       - name: Refresh 16 CSE companies and official PDF filings
         run: node collector/company-evidence-v5.cjs
       - name: Publish autonomous research without waiting for macro collector
