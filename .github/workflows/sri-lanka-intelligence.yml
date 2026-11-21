@@ -1,9 +1,16 @@
-name: Sri Lanka market intelligence — v4.0 ULTRA learning
+name: Safnas Finance — v5 Autonomous CSE Research
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'collector/research-v5-publish.cjs'
+      - 'collector/research-v5-publish.test.cjs'
+      - '.github/workflows/sri-lanka-intelligence.yml'
   schedule:
-    # Weekdays 08:00 and 18:00 Sri Lanka time (UTC +05:30)
-    - cron: '30 2 * * 1-5'
-    - cron: '30 12 * * 1-5'
+    # Three best-effort checks per weekday in Sri Lanka local time.
+    - cron: '37 2,7,12 * * 1-5'
+    # Weekend data quality and research freshness check.
+    - cron: '37 4 * * 0,6'
   workflow_dispatch:
 permissions:
   contents: write
@@ -22,15 +29,17 @@ jobs:
           package-manager-cache: false
       - name: Validate collectors and learner
         run: node --test collector/*.test.cjs
-      - name: Collect public data and retrain if eligible
+      - name: Collect public market observations (existing v4 archive preserved)
         run: node collector/update.cjs
+      - name: Publish source-grounded autonomous v5 research
+        run: node collector/research-v5-publish.cjs
       - name: Publish research audit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add market-intelligence/
           if ! git diff --staged --quiet; then
-            git commit -m "Refresh Sri Lanka market and prediction audits"
+            git commit -m "Refresh autonomous v5 CSE research and model audits"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
