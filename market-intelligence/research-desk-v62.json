@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "version": "6.2",
-  "generatedAt": "2026-11-21T12:56:40.051Z",
+  "generatedAt": "2026-11-21T12:58:30.023Z",
   "status": "observed_public_research",
   "snapshot": {
     "aspiDate": "2026-11-20",
@@ -105,31 +105,223 @@
   "publishers": 7,
   "changes": [
     {
-      "id": "e186f360288be672",
-      "kind": "market",
-      "label": "New dated ASPI close",
-      "detail": "ASPI 21369.72 on 2026-11-20",
+      "id": "918a5b49d5febc46",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · COMB.N0000",
+      "detail": "Commercial Bank of Ceylon PLC last traded at LKR 214 on 2026-11-20",
       "asOf": "2026-11-20",
       "url": "https://www.cse.lk/"
     },
     {
-      "id": "b16fd9318052e651",
-      "kind": "gold",
-      "label": "New gold spot observation",
-      "detail": "USD 3539/oz as of 2026-11-21T11:24:07Z",
-      "asOf": "2026-11-21T11:24:07Z",
-      "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
+      "id": "d55ab75fc42b812e",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · JKH.N0000",
+      "detail": "John Keells Holdings PLC last traded at LKR 18.7 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
     },
     {
-      "id": "74ed28975692658c",
+      "id": "50b57908a6263e86",
       "kind": "company",
-      "label": "New dated CSE quote · DIAL.N0000",
-      "detail": "Dialog Axiata PLC last traded at LKR 48 on 2026-11-20",
+      "label": "Dated CSE quote recorded · HNB.N0000",
+      "detail": "Hatton National Bank PLC last traded at LKR 393.75 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "f2632580bb2681ad",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · SAMP.N0000",
+      "detail": "Sampath Bank PLC last traded at LKR 148.25 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "23a03dfc57cbbaa0",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · HAYL.N0000",
+      "detail": "Hayleys PLC last traded at LKR 230.25 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "e6426189a3c2ce1c",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · LOLC.N0000",
+      "detail": "LOLC Holdings PLC last traded at LKR 406 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "f620c8bbcae3bfa9",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · CTC.N0000",
+      "detail": "Ceylon Tobacco Company PLC last traded at LKR 1844.5 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "8c73bc7e43067b84",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · DIST.N0000",
+      "detail": "Distilleries Company of Sri Lanka PLC last traded at LKR 58.3 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "878d7545f91a4fd3",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · MELS.N0000",
+      "detail": "Melstacorp PLC last traded at LKR 192 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "311d5a3d0dc50731",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · CARG.N0000",
+      "detail": "Cargills (Ceylon) PLC last traded at LKR 680.25 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "6a8a0cd4c64a8c86",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · SLTL.N0000",
+      "detail": "Sri Lanka Telecom PLC last traded at LKR 90.6 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "1a8718e05f9eb566",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · HHL.N0000",
+      "detail": "Hemas Holdings PLC last traded at LKR 32 on 2026-11-20",
       "asOf": "2026-11-20",
       "url": "https://www.cse.lk/"
     }
   ],
   "history": [
+    {
+      "id": "918a5b49d5febc46",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · COMB.N0000",
+      "detail": "Commercial Bank of Ceylon PLC last traded at LKR 214 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "d55ab75fc42b812e",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · JKH.N0000",
+      "detail": "John Keells Holdings PLC last traded at LKR 18.7 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "50b57908a6263e86",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · HNB.N0000",
+      "detail": "Hatton National Bank PLC last traded at LKR 393.75 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "f2632580bb2681ad",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · SAMP.N0000",
+      "detail": "Sampath Bank PLC last traded at LKR 148.25 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "23a03dfc57cbbaa0",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · HAYL.N0000",
+      "detail": "Hayleys PLC last traded at LKR 230.25 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "e6426189a3c2ce1c",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · LOLC.N0000",
+      "detail": "LOLC Holdings PLC last traded at LKR 406 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "f620c8bbcae3bfa9",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · CTC.N0000",
+      "detail": "Ceylon Tobacco Company PLC last traded at LKR 1844.5 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "8c73bc7e43067b84",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · DIST.N0000",
+      "detail": "Distilleries Company of Sri Lanka PLC last traded at LKR 58.3 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "878d7545f91a4fd3",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · MELS.N0000",
+      "detail": "Melstacorp PLC last traded at LKR 192 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "311d5a3d0dc50731",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · CARG.N0000",
+      "detail": "Cargills (Ceylon) PLC last traded at LKR 680.25 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "6a8a0cd4c64a8c86",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · SLTL.N0000",
+      "detail": "Sri Lanka Telecom PLC last traded at LKR 90.6 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "1a8718e05f9eb566",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · HHL.N0000",
+      "detail": "Hemas Holdings PLC last traded at LKR 32 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "f883c9771ba55028",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · NDB.N0000",
+      "detail": "National Development Bank PLC last traded at LKR 111.25 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "53c3f89226c93f41",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · TKYO.N0000",
+      "detail": "Tokyo Cement Company (Lanka) PLC last traded at LKR 83 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "7b3014077f3bd5af",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · LFIN.N0000",
+      "detail": "LB Finance PLC last traded at LKR 154 on 2026-11-20",
+      "asOf": "2026-11-20",
+      "url": "https://www.cse.lk/"
+    },
     {
       "id": "e186f360288be672",
       "kind": "market",
