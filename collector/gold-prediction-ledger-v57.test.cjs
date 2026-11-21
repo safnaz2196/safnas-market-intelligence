@@ -13,6 +13,7 @@ test('locks all six future horizons on first new dated close, none evaluated in 
  const h=[horizon(1,1),horizon(3,2),horizon(7,5),horizon(14,10),horizon(30,21),horizon(90,63)];
  const v=run(series.slice(0,190),h);
  assert.equal(v.schemaVersion,2);assert.equal(v.entries.length,6);
+ assert.equal(v.lastObservedCloseDate,series[189].date);
  assert.equal(v.summary.pending,6);assert.equal(v.summary.resolved,0);
  assert.equal(v.summary.overallDirectionHitRate,null);
  assert.ok(v.entries.every(e=>e.snapshotHash&&e.status==='pending'&&e.scenario.midPct===.5));
