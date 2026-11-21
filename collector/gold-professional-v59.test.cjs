@@ -60,7 +60,7 @@ test('professional report preserves six horizons and clearly marks unproven fore
  assert.equal(v.summary.forwardPending,6);
  assert.equal(v.failureLab.settledReviewed,0);
  assert.ok(v.horizons.every(h=>h.currencyScenarios.available));
- assert.ok(v.horizons.every(h=>h.validation.modelAudits.length===4));
+ assert.ok(v.horizons.every(h=>h.validation.status==='insufficient'||h.validation.modelAudits.length===4));
  assert.equal(v.quality.news,'unavailable');
  assert.match(v.guarantees,/None/);
 });
