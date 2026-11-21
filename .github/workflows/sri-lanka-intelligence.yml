@@ -1,5 +1,11 @@
 name: Safnas Finance — CSE Market and Economy Archive
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'collector/update.cjs'
+      - 'collector/share-quotes.test.cjs'
+      - '.github/workflows/sri-lanka-intelligence.yml'
   schedule:
     # Three best-effort checks per weekday in Sri Lanka local time.
     - cron: '37 2,7,12 * * 1-5'
