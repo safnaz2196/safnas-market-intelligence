@@ -181,6 +181,7 @@ function updateLedger({previous=null,legacy=null,history=[],horizons=[],now=new 
  const settled=entries.filter(e=>e.status==='resolved');
  // Fit only on actual completed historical outcomes; no pending predictions are training data.
  const models=DAYS.map(days=>trainingForHorizon(settled,days));
+ const multiModelScorecards=scoreCandidateModels(settled);
  const current=rows.at(-1),currentAge=current?(Date.parse(now.toISOString().slice(0,10)+'T00:00:00Z')-
   Date.parse(current.date+'T00:00:00Z'))/86400000:Infinity;
  if(rows.length>=160&&currentAge>=0&&currentAge<=4){
@@ -189,14 +190,24 @@ function updateLedger({previous=null,legacy=null,history=[],horizons=[],now=new 
     !['rise','fall','range'].includes(h.direction)||seen.has(current.date+'|'+h.days))continue;
    const learning=models.find(m=>m.days===h.days),raw=numberOrNull(h.probUp);
    const corrected=learning?.applied&&raw!==null?rounded(adapt(raw/100,learning)*100,2):null;
-   const prediction=corrected!==null?corrected>=57?'rise':corrected<=43?'fall':'range':h.direction;
+   const verified=multiModelScorecards.find(m=>m.days===h.days);
+   const chosenModel=verified?.verifiedForwardGain&&verified?.selectedModel?
+     h.multiModel?.models?.find(m=>m.id===verified.selectedModel):null;
+   // A MULTI-MODEL selection can only control future locked forecasts when its
+   // own REAL-WORLD holdout has demonstrated improvement. No forward results = no switch.
+   const prediction=chosenModel?.direction||
+     (corrected!==null?(corrected>=57?'rise':corrected<=43?'fall':'range'):h.direction);
+   const decisionSource=chosenModel?'forward_validated_multi_model':
+     corrected!==null?'historically_calibrated_analogue':'original_analogue_unproven';
    const scenario=h.scenarios&&
     [h.scenarios.lowPct,h.scenarios.midPct,h.scenarios.highPct].every(Number.isFinite)?
       {lowPct:h.scenarios.lowPct,midPct:h.scenarios.midPct,highPct:h.scenarios.highPct}:null;
    const entry={id:current.date+'|'+h.days,originDate:current.date,createdAt:now.toISOString(),
     days:h.days,sessions:h.sessions,referenceUsdOz:current.usdOz,predictedDirection:prediction,
     rawDirection:h.direction,rawPositivePct:raw,adaptedPositivePct:corrected,
-    learningApplied:corrected!==null,modelVersion,modelEdgeDemonstrated:!!h.validation?.edgeDemonstrated,
+    learningApplied:!!chosenModel||corrected!==null,
+    learnedModelId:chosenModel?.id||null,decisionSource,
+    modelVersion,modelEdgeDemonstrated:!!h.validation?.edgeDemonstrated,
     scenario,
     frozenPriceRange:scenario?{
       lowUsdOz:rounded(current.usdOz*(1+scenario.lowPct/100),2),
@@ -241,9 +252,9 @@ function updateLedger({previous=null,legacy=null,history=[],horizons=[],now=new 
   lastObservedCloseDate:rows.at(-1)?.date||null,
   provider:'Dated gold closing prices, collected from a public historical feed',
   sourceUrl,entries,summary,
-  learning:{status:models.some(m=>m.applied)?'validation_enabled':'learning_or_unproven',
+  learning:{status:models.some(m=>m.applied)||multiModelScorecards.some(s=>s.verifiedForwardGain)?'validation_enabled':'learning_or_unproven',
    models,settledForLearning:settled.length,
-   multiModelScorecards:scoreCandidateModels(settled),
+   multiModelScorecards,
    note:'Training requires at least 40 settled predictions per period. Uses earlier 70% to train and later 30% to test calibration. Only adjusts new forecasts if holdout Brier improves by at least 0.01.',
    warning:'Learning can reduce some historical error, but no improvement or future predictive skill is guaranteed.'},
   newlyRecorded,newlySettled};
