@@ -5,6 +5,8 @@ on:
     paths:
       - 'collector/gold-outlook-v54.cjs'
       - 'collector/gold-advanced-v56.cjs'
+      - 'collector/gold-forecast-journal-v56.cjs'
+      - 'collector/gold-forecast-journal-v56.test.cjs'
       - 'collector/gold-advanced-v56.test.cjs'
       - 'collector/gold-outlook-v54.test.cjs'
       - '.github/workflows/gold-outlook-v54.yml'
@@ -27,7 +29,7 @@ jobs:
         with:
           node-version: '22'
       - name: Verify models and scientific cautions
-        run: node --test collector/gold-outlook-v54.test.cjs collector/gold-advanced-v56.test.cjs
+        run: node --test collector/gold-outlook-v54.test.cjs collector/gold-advanced-v56.test.cjs collector/gold-forecast-journal-v56.test.cjs
       - name: Read fresh evidence and create research
         run: node collector/gold-outlook-v54.cjs
       - name: Publish report (retry safely after concurrent market collector updates)
@@ -40,7 +42,7 @@ jobs:
               git reset --hard origin/main
               node collector/gold-outlook-v54.cjs
             fi
-            git add market-intelligence/gold-outlook-v54.json
+            git add market-intelligence/gold-outlook-v54.json market-intelligence/gold-forecast-journal-v56.json
             if git diff --cached --quiet; then
               echo "No new gold research to publish."
               exit 0
