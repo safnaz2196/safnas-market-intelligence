@@ -8,7 +8,7 @@
     "forest",
     "boost"
   ],
-  "generatedAt": "2026-11-21T10:30:02.868Z",
+  "generatedAt": "2026-11-21T10:40:27.424Z",
   "status": "updated",
   "market": {
     "aspi": {
@@ -461,7 +461,7 @@
     "sl20": {
       "value": 6075.28,
       "changePercent": -1.09,
-      "retrievedAt": "2026-11-21T10:30:07.723Z",
+      "retrievedAt": "2026-11-21T10:40:29.812Z",
       "sourceURL": "https://www.cse.lk/api/snpData",
       "note": "Retrieved snapshot; source may not include a reliable trade date."
     },
@@ -1246,8 +1246,8 @@
       "asOf": "2026-11-20",
       "ageDays": 1,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:30:02.868Z",
-      "lastSuccessAt": "2026-11-21T10:30:02.868Z",
+      "lastAttemptAt": "2026-11-21T10:40:27.424Z",
+      "lastSuccessAt": "2026-11-21T10:40:27.424Z",
       "failures": 0,
       "note": "CSE daily closes validated and appended to dated archive"
     },
@@ -1256,8 +1256,8 @@
       "asOf": "2025",
       "ageDays": null,
       "ageYears": 1,
-      "lastAttemptAt": "2026-11-21T10:30:02.868Z",
-      "lastSuccessAt": "2026-11-21T10:30:02.868Z",
+      "lastAttemptAt": "2026-11-21T10:40:27.424Z",
+      "lastSuccessAt": "2026-11-21T10:40:27.424Z",
       "failures": 0,
       "note": "6 of 6 annual indicators refreshed"
     },
@@ -1266,8 +1266,8 @@
       "asOf": "2026-11-20",
       "ageDays": 1,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:30:02.868Z",
-      "lastSuccessAt": "2026-11-21T10:30:02.868Z",
+      "lastAttemptAt": "2026-11-21T10:40:27.424Z",
+      "lastSuccessAt": "2026-11-21T10:40:27.424Z",
       "failures": 0,
       "note": "Provider response accepted"
     },
@@ -1276,8 +1276,8 @@
       "asOf": "2026-11-20",
       "ageDays": 1,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:30:02.868Z",
-      "lastSuccessAt": "2026-11-21T10:30:02.868Z",
+      "lastAttemptAt": "2026-11-21T10:40:27.424Z",
+      "lastSuccessAt": "2026-11-21T10:40:27.424Z",
       "failures": 0,
       "note": "Cached · 16 verified CSE last-traded shares, as of 2026-11-20. Not streaming. Direct request unavailable (HTTP 403)."
     },
@@ -1286,8 +1286,8 @@
       "asOf": "2026-11-21",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:30:02.868Z",
-      "lastSuccessAt": "2026-11-21T10:30:02.868Z",
+      "lastAttemptAt": "2026-11-21T10:40:27.424Z",
+      "lastSuccessAt": "2026-11-21T10:40:27.424Z",
       "failures": 0,
       "note": "Index snapshot retrieved; official trade date not verified"
     },
@@ -1296,9 +1296,9 @@
       "asOf": null,
       "ageDays": null,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:30:02.868Z",
+      "lastAttemptAt": "2026-11-21T10:40:27.424Z",
       "lastSuccessAt": null,
-      "failures": 19,
+      "failures": 20,
       "note": "Daily turnover not reported"
     },
     "headlines": {
@@ -1306,8 +1306,8 @@
       "asOf": "2026-11-21",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:30:02.868Z",
-      "lastSuccessAt": "2026-11-21T10:30:02.868Z",
+      "lastAttemptAt": "2026-11-21T10:40:27.424Z",
+      "lastSuccessAt": "2026-11-21T10:40:27.424Z",
       "failures": 0,
       "note": "Provider response accepted"
     }
@@ -1508,7 +1508,7 @@
     "edgeModels": 1,
     "modelClaim": "Limited historical statistical edge — not investment advice",
     "dataLimit": "The public CSE chart endpoint supplies roughly one trailing year. Older dates require permitted, verified historical data; no synthetic backfill.",
-    "refreshedAt": "2026-11-21T10:30:02.868Z",
+    "refreshedAt": "2026-11-21T10:40:27.424Z",
     "disclaimer": "Source health is not model accuracy or probability of market growth."
   }
 }
