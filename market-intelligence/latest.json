@@ -8,7 +8,7 @@
     "forest",
     "boost"
   ],
-  "generatedAt": "2026-11-21T10:41:04.672Z",
+  "generatedAt": "2026-11-21T10:42:17.503Z",
   "status": "updated",
   "market": {
     "aspi": {
@@ -461,11 +461,22 @@
     "sl20": {
       "value": 6075.28,
       "changePercent": -1.09,
-      "retrievedAt": "2026-11-21T10:41:07.460Z",
+      "retrievedAt": "2026-11-21T10:42:19.906Z",
       "sourceURL": "https://www.cse.lk/api/snpData",
       "note": "Retrieved snapshot; source may not include a reliable trade date."
     },
-    "marketSummary": null,
+    "marketSummary": {
+      "turnover": 2330340350,
+      "asOf": "2026-11-20",
+      "currency": "LKR",
+      "sharesTraded": 121790416,
+      "trades": 14416,
+      "marketScope": "CSE market",
+      "retrievedAt": "2026-11-21T10:42:20.082Z",
+      "sourceURL": "https://www.cse.lk/api/dailyMarketSummery",
+      "verifiedTradeDate": true,
+      "note": "Official CSE LKR daily equity turnover, trade date verified. Not streaming."
+    },
     "regime": {
       "available": true,
       "asOf": "2026-11-20",
@@ -1229,7 +1240,7 @@
         "asOf": null
       },
       "turnover": {
-        "status": "unavailable",
+        "status": "available",
         "label": "CSE market turnover",
         "asOf": null
       },
@@ -1246,8 +1257,8 @@
       "asOf": "2026-11-20",
       "ageDays": 1,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:41:04.672Z",
-      "lastSuccessAt": "2026-11-21T10:41:04.672Z",
+      "lastAttemptAt": "2026-11-21T10:42:17.503Z",
+      "lastSuccessAt": "2026-11-21T10:42:17.503Z",
       "failures": 0,
       "note": "CSE daily closes validated and appended to dated archive"
     },
@@ -1256,8 +1267,8 @@
       "asOf": "2025",
       "ageDays": null,
       "ageYears": 1,
-      "lastAttemptAt": "2026-11-21T10:41:04.672Z",
-      "lastSuccessAt": "2026-11-21T10:41:04.672Z",
+      "lastAttemptAt": "2026-11-21T10:42:17.503Z",
+      "lastSuccessAt": "2026-11-21T10:42:17.503Z",
       "failures": 0,
       "note": "6 of 6 annual indicators refreshed"
     },
@@ -1266,8 +1277,8 @@
       "asOf": "2026-11-20",
       "ageDays": 1,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:41:04.672Z",
-      "lastSuccessAt": "2026-11-21T10:41:04.672Z",
+      "lastAttemptAt": "2026-11-21T10:42:17.503Z",
+      "lastSuccessAt": "2026-11-21T10:42:17.503Z",
       "failures": 0,
       "note": "Provider response accepted"
     },
@@ -1276,8 +1287,8 @@
       "asOf": "2026-11-20",
       "ageDays": 1,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:41:04.672Z",
-      "lastSuccessAt": "2026-11-21T10:41:04.672Z",
+      "lastAttemptAt": "2026-11-21T10:42:17.503Z",
+      "lastSuccessAt": "2026-11-21T10:42:17.503Z",
       "failures": 0,
       "note": "Cached · 16 verified CSE last-traded shares, as of 2026-11-20. Not streaming. Direct request unavailable (HTTP 403)."
     },
@@ -1286,28 +1297,28 @@
       "asOf": "2026-11-21",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:41:04.672Z",
-      "lastSuccessAt": "2026-11-21T10:41:04.672Z",
+      "lastAttemptAt": "2026-11-21T10:42:17.503Z",
+      "lastSuccessAt": "2026-11-21T10:42:17.503Z",
       "failures": 0,
       "note": "Index snapshot retrieved; official trade date not verified"
     },
     "turnover": {
-      "status": "unavailable",
-      "asOf": null,
-      "ageDays": null,
+      "status": "current",
+      "asOf": "2026-11-20",
+      "ageDays": 1,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:41:04.672Z",
-      "lastSuccessAt": null,
-      "failures": 21,
-      "note": "Daily turnover not reported"
+      "lastAttemptAt": "2026-11-21T10:42:17.503Z",
+      "lastSuccessAt": "2026-11-21T10:42:17.503Z",
+      "failures": 0,
+      "note": "Verified CSE daily market turnover (LKR), trade date 2026-11-20. Not streaming."
     },
     "headlines": {
       "status": "current",
       "asOf": "2026-11-21",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T10:41:04.672Z",
-      "lastSuccessAt": "2026-11-21T10:41:04.672Z",
+      "lastAttemptAt": "2026-11-21T10:42:17.503Z",
+      "lastSuccessAt": "2026-11-21T10:42:17.503Z",
       "failures": 0,
       "note": "Provider response accepted"
     }
@@ -1491,15 +1502,13 @@
     "fx": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=LKR",
     "sec": "https://www.sec.gov.lk/"
   },
-  "warnings": [
-    "turnover: Daily turnover not reported"
-  ],
+  "warnings": [],
   "disclaimer": "Educational research only. Reliable data collection does not establish predictive skill or guarantee returns. No specific security is recommended.",
   "reliability": {
-    "currentSources": 5,
+    "currentSources": 6,
     "staleSources": 0,
     "retrievedOnlySources": 1,
-    "unavailableSources": 1,
+    "unavailableSources": 0,
     "totalSources": 7,
     "marketAsOf": "2026-11-20",
     "marketSessionCount": 247,
@@ -1508,7 +1517,7 @@
     "edgeModels": 1,
     "modelClaim": "Limited historical statistical edge — not investment advice",
     "dataLimit": "The public CSE chart endpoint supplies roughly one trailing year. Older dates require permitted, verified historical data; no synthetic backfill.",
-    "refreshedAt": "2026-11-21T10:41:04.672Z",
+    "refreshedAt": "2026-11-21T10:42:17.503Z",
     "disclaimer": "Source health is not model accuracy or probability of market growth."
   }
 }
