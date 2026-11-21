@@ -1,0 +1,44 @@
+name: Safnas Finance — Verified CSE Companies (Free AutoPilot)
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'collector/company-evidence-v5.cjs'
+      - 'collector/company-evidence-v5.test.cjs'
+      - 'collector/research-v5-publish.cjs'
+      - '.github/workflows/company-research-v53.yml'
+  schedule:
+    # Best-effort during trading weekdays, in UTC. CSE data are last-traded, not streaming.
+    - cron: '25 3,5,7,10 * * 1-5'
+    - cron: '25 4 * * 0,6'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: safnas-independent-cse-company-research
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate company evidence and report contracts
+        run: node --test collector/company-evidence-v5.test.cjs collector/research-v5-publish.test.cjs
+      - name: Refresh 16 CSE companies and official PDF filings
+        run: node collector/company-evidence-v5.cjs
+      - name: Publish autonomous research without waiting for macro collector
+        run: node collector/research-v5-publish.cjs
+      - name: Commit verified reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add market-intelligence/company-evidence-v5.json market-intelligence/research-v5.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish verified CSE company coverage"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
