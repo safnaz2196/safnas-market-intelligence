@@ -185,6 +185,7 @@ function updateLedger({previous=null,legacy=null,history=[],horizons=[],now=new 
  entries.sort((a,b)=>a.originDate.localeCompare(b.originDate)||a.days-b.days);
  const summary=summarize(entries,models);
  return {schemaVersion:2,version:'5.7',generatedAt:now.toISOString(),
+  lastObservedCloseDate:rows.at(-1)?.date||null,
   provider:'Dated gold closing prices, collected from a public historical feed',
   sourceUrl,entries,summary,
   learning:{status:models.some(m=>m.applied)?'validation_enabled':'learning_or_unproven',
