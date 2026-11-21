@@ -89,6 +89,32 @@ function buildResearch(snapshot, now=new Date()) {
   if(current&&avg20!==null)findings.push({id:'avg20',tone:'info',title:'Historical 20-session checkpoint',
    detail:'The latest ASPI close is '+(last.close>=avg20?'above':'below')+' its 20-session average of '+avg20+'. This does not predict future returns.',evidenceIds:['aspi']});
  }else findings.push({id:'aspi-missing',tone:'warning',title:'No validated ASPI closes',detail:'Market direction cannot be evaluated.',evidenceIds:[]});
+ // Cross-feed consistency: market turnover must be supported by the latest
+ // dated CSE observation, never inferred from an older warning or retrieval time.
+ const turnoverRaw=snapshot.market?.marketSummary;
+ const turnoverDate=turnoverRaw?.asOf;
+ const turnoverAmount=Number(turnoverRaw?.turnover);
+ const turnoverAge=daysOld(turnoverDate,now);
+ const turnoverVerified=turnoverRaw?.verifiedTradeDate===true&&
+  turnoverRaw?.currency==='LKR'&&Number.isFinite(turnoverAmount)&&
+  turnoverAmount>0&&turnoverAge!==null&&turnoverAge>=0&&turnoverAge<=7&&collectorRecent;
+ const marketTurnover=turnoverVerified?{
+  valueLKR:turnoverAmount,asOf:turnoverDate,status:'dated_observation',
+  sourceURL:secureUrl(turnoverRaw?.sourceURL||'https://www.cse.lk/'),
+  sharesTraded:Number.isFinite(turnoverRaw?.sharesTraded)?turnoverRaw.sharesTraded:null,
+  tradeCount:Number.isFinite(turnoverRaw?.trades)?turnoverRaw.trades:null,
+  notice:'CSE daily market equity turnover, recorded at the stated trade date. Not live streaming.'
+ }:{status:'unavailable',asOf:isDate(turnoverDate)?turnoverDate:null,
+  notice:'No currently verified dated CSE turnover figure in the research source.'};
+ market.turnover=marketTurnover;
+ if(turnoverVerified) {
+  evidence.push({id:'cse-turnover',label:'Official daily CSE market turnover · LKR',
+   url:marketTurnover.sourceURL,asOf:turnoverDate,kind:'dated_market_turnover'});
+  findings.push({id:'cse-turnover',tone:'info',title:'Verified CSE daily market turnover',
+   detail:'LKR '+new Intl.NumberFormat('en-US',{maximumFractionDigits:0}).format(turnoverAmount)+
+    ' traded in the recorded session on '+turnoverDate+'. This measures market activity, not market direction.',
+   evidenceIds:['cse-turnover']});
+ }
  if(!collectorRecent)findings.unshift({id:'feed-old',tone:'warning',title:'Research source has not refreshed recently',
   detail:'The previous collector snapshot is older than 48 hours; results below are historical.',evidenceIds:[]});
  const news=[];
