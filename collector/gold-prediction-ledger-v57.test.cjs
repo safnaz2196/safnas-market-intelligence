@@ -140,3 +140,39 @@ test('v5.8 freezes four candidate models and scores each only after a future clo
  assert.deepEqual(completed.multiModelSnapshot,oldSnapshot);
  assert.equal(completed.snapshotHash,originalPrediction.snapshotHash);
 });
+
+test('adaptive 5.8 model takes control only after 60 forward results and later holdout beating baseline',()=>{
+ const ids=['analogue','trend','reversion','regime'];
+ const earlier=Array.from({length:60},(_,i)=>({
+  originDate:series[i].date,actualDate:series[i+5].date,
+  days:7,sessions:5,referenceUsdOz:series[i].usdOz,predictedDirection:'rise',
+  status:'resolved',actualDirection:'fall',
+  multiModelResults:ids.map(id=>({id,actualClass:'fall',passed:id==='analogue',
+    multiclassBrier:id==='analogue'?.08:.9}))
+ }));
+ const forecast=horizon(7,5,'rise');
+ forecast.multiModel={models:ids.map(id=>({id,direction:id==='analogue'?'fall':'rise',
+  probabilities:{rise:15,fall:70,range:15},scenarios:{lowPct:-2,midPct:-1,highPct:2}})),
+  thresholdPct:1.2,validation:{selectedByEarlyPeriod:'analogue',selectedModelValidated:false}};
+ const result=updateLedger({previous:{entries:earlier},history:series.slice(0,250),
+  horizons:[forecast],now:new Date(series[249].date+'T10:00:00Z'),modelVersion:'v5.8'});
+ const audit=result.learning.multiModelScorecards.find(x=>x.days===7);
+ assert.equal(audit.completed,60);assert.equal(audit.verifiedForwardGain,true);
+ assert.equal(audit.selectedModel,'analogue');
+ const fresh=result.entries.find(e=>e.originDate===series[249].date&&e.days===7);
+ assert.equal(fresh.predictedDirection,'fall');
+ assert.equal(fresh.learnedModelId,'analogue');
+ assert.equal(fresh.decisionSource,'forward_validated_multi_model');
+ assert.equal(fresh.status,'pending');
+});
+test('with fewer forward outcomes, preserve the original model direction',()=>{
+ const forecast=horizon(7,5,'rise');
+ forecast.multiModel={models:[{id:'analogue',direction:'fall',
+  probabilities:{rise:20,fall:60,range:20},scenarios:{lowPct:-1,midPct:-.5,highPct:1}}],
+  thresholdPct:1,validation:{selectedByEarlyPeriod:'analogue',selectedModelValidated:false}};
+ const result=run(series.slice(0,240),[forecast]);
+ const fresh=result.entries.find(e=>e.originDate===series[239].date&&e.days===7);
+ assert.equal(fresh.predictedDirection,'rise');
+ assert.equal(fresh.decisionSource,'original_analogue_unproven');
+ assert.equal(fresh.learningApplied,false);
+});
