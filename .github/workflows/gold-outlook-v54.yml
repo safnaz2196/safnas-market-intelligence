@@ -1,4 +1,4 @@
-name: Safnas Finance — v5.9 Professional Gold Intelligence
+name: Safnas Finance — v6.0 Ultra Autonomous Gold Intelligence
 on:
   push:
     branches: [main]
@@ -9,7 +9,9 @@ on:
       - 'collector/gold-prediction-ledger-v57.cjs'
       - 'collector/gold-ensemble-v58.cjs'
       - 'collector/gold-professional-v59.cjs'
-      - 'collector/gold-professional-v59.test.cjs'
+      - 'collector/gold-ultra-v60.cjs'
+      - 'collector/gold-ultra-v60.test.cjs'
+      - 'collector/gold-professional-v59.test.cjs collector/gold-ultra-v60.test.cjs'
       - 'collector/gold-ensemble-v58.test.cjs'
       - 'collector/gold-prediction-ledger-v57.test.cjs'
       - 'collector/gold-forecast-journal-v56.test.cjs'
@@ -48,7 +50,7 @@ jobs:
               git reset --hard origin/main
               node collector/gold-outlook-v54.cjs
             fi
-            git add market-intelligence/gold-outlook-v54.json market-intelligence/gold-prediction-history-v57.json market-intelligence/gold-ensemble-v58.json market-intelligence/gold-professional-v59.json
+            git add market-intelligence/gold-outlook-v54.json market-intelligence/gold-prediction-history-v57.json market-intelligence/gold-ensemble-v58.json market-intelligence/gold-professional-v59.json market-intelligence/gold-ultra-v60.json
             if git diff --cached --quiet; then
               echo "No new gold research to publish."
               exit 0
