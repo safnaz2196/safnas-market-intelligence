@@ -1,8 +1,8 @@
 {
   "schemaVersion": 5,
   "engineVersion": "5.3.0",
-  "generatedAt": "2026-11-21T11:08:07.101Z",
-  "sourceSnapshotAt": "2026-11-21T10:44:31.835Z",
+  "generatedAt": "2026-11-21T11:08:43.295Z",
+  "sourceSnapshotAt": "2026-11-21T11:08:39.672Z",
   "status": "research_available",
   "briefing": {
     "title": "Sri Lanka · Autonomous Market Brief",
@@ -2444,7 +2444,9 @@
       "Current company financial statements have not been verified",
       "No live brokerage integration"
     ],
-    "sourceWarnings": [],
+    "sourceWarnings": [
+      "headlines: Publisher did not return an RSS feed"
+    ],
     "verifiedCompanyQuotes": 16,
     "companyFacts": 16,
     "companyFilings": 16,
