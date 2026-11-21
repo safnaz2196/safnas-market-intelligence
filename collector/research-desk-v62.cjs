@@ -39,6 +39,7 @@ function assemble({cse,latest,gold,ledger,previous},now=new Date()){
   warning:'Source dates are observations, not live exchange-streaming commitments.'
  };
  const prior=previous?.snapshot||{},changes=[];
+ const previousEvents=Array.isArray(previous?.history)?previous.history:[];
  const push=(kind,label,detail,asOf,url)=>{
   const eventId=idFor(kind+'|'+asOf+'|'+detail);
   if(changes.some(v=>v.id===eventId))return;
@@ -60,7 +61,6 @@ function assemble({cse,latest,gold,ledger,previous},now=new Date()){
    push('company','Dated CSE quote recorded · '+c.ticker,
      c.name+' last traded at LKR '+c.priceLKR+' on '+c.asOf,c.asOf,'https://www.cse.lk/');
  }
- const previousEvents=Array.isArray(previous?.history)?previous.history:[];
  const seen=new Set();const history=[...changes,...previousEvents].filter(x=>{
   if(!x?.id||seen.has(x.id))return false;seen.add(x.id);return true;
  }).slice(0,45);
