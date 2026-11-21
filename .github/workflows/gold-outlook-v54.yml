@@ -1,9 +1,11 @@
-name: Safnas Finance — Gold Deep Research · Free Auto Refresh
+name: Safnas Finance — v5.6 Gold Deep Intelligence · Auto Refresh
 on:
   push:
     branches: [main]
     paths:
       - 'collector/gold-outlook-v54.cjs'
+      - 'collector/gold-advanced-v56.cjs'
+      - 'collector/gold-advanced-v56.test.cjs'
       - 'collector/gold-outlook-v54.test.cjs'
       - '.github/workflows/gold-outlook-v54.yml'
   schedule:
@@ -25,7 +27,7 @@ jobs:
         with:
           node-version: '22'
       - name: Verify models and scientific cautions
-        run: node --test collector/gold-outlook-v54.test.cjs
+        run: node --test collector/gold-outlook-v54.test.cjs collector/gold-advanced-v56.test.cjs
       - name: Read fresh evidence and create research
         run: node collector/gold-outlook-v54.cjs
       - name: Publish report (retry safely after concurrent market collector updates)
