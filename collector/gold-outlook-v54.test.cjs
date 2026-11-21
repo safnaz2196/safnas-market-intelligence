@@ -32,3 +32,26 @@ test('source measurements are explicit and conditional',()=>{
  assert.ok(e.every(x=>x.source.startsWith('https://')));
  assert.match(e[3].interpretation,/not a certain effect/);
 });
+
+test('multi-factor research shows actual source dates and no unsupported probability',()=>{
+ const rows=testRows(440),now=new Date(rows.at(-1).date+'T10:00:00Z');
+ const modeled=m.model(rows,now),macro=[
+  {name:'U.S. 10-year inflation-adjusted yield',available:true,change5:.25,asOf:modeled.asOf,source:'https://fred.stlouisfed.org/graph/'},
+  {name:'Broad U.S. dollar index',available:true,change5:-.65,asOf:modeled.asOf,source:'https://fred.stlouisfed.org/graph/'}
+ ];
+ const d=m.deepResearch(modeled,macro,{usdOz:modeled.historyLastUsdOz*1.01,asOf:now.toISOString(),source:'https://api.gold-api.com/price/XAU'},now);
+ assert.equal(d.sourceSignals.length,5);
+ assert.ok(d.driverReasons.length>=2);
+ assert.ok(d.levels.movingAverage20>0&&d.levels.movingAverage50>0);
+ assert.ok(d.levels.prior20High>=d.levels.prior20Low);
+ assert.ok(d.modelAudit.byHorizon.every(h=>typeof h.edgeDemonstrated==='boolean'));
+ assert.ok(d.reliabilityNotes.some(t=>t.includes('NOT calibrated probabilities')));
+ assert.equal(d.classification.match(/pressure|mixed/)!==null,true);
+});
+test('missing macro feeds leave explicit gaps rather than fabricated readings',()=>{
+ const rows=testRows(440),now=new Date(rows.at(-1).date+'T10:00:00Z');
+ const d=m.deepResearch(m.model(rows,now),[],null,now);
+ assert.equal(d.sourceSignals.length,2);
+ assert.equal(d.levels.spotVsLastHistoryClosePct,null);
+ assert.equal(d.watchFor.length,4);
+});
