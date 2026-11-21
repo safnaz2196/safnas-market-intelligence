@@ -128,14 +128,36 @@ async function main() {
   console.log('Registered devices:',subscriptionDocs.size);
   if(TEST_MODE) {
     const [spot,fx]=await Promise.all([spotQuote(),fxQuote()]);
+    if(!policy.isFresh(spot,fx))throw new Error('Cannot send gold-price test: current market/FX quotes are stale.');
+    let sent=0;
+    for(const doc of subscriptionDocs.docs) {
+      const d=normalizeDoc(doc.data()); if(!d) continue;
+      const latest=policy.sampleMarket(spot,fx,d.settings);
+      for (const currency of d.settings.markets) {
+        try {
+          const payload=policy.makeMobileMarketNotification(currency,d.settings,latest,doc.data().baseline,'test',spot.asOf,spot.source);
+          await webpush.sendNotification(d.subscription,makePayload(payload),{TTL:3600});
+          sent++;
+        } catch(e) {console.warn('Test push failed for',doc.id.slice(-8),currency,Number(e.statusCode)||'network');}
+      }
+    }
+    console.log(`Mobile-friendly gold TEST notifications accepted by push providers: ${sent}`);return;
+  }
+  const [spot,fx]=await Promise.all([spotQuote(),fxQuote()]);
   if(!policy.isFresh(spot,fx)) {
     console.warn('Market/FX data is not fresh enough; no notifications sent.',{spotTime:spot.asOf,fxTime:fx.asOf});
     return;
   }
   const tally={};let pushCount=0;
   for (const doc of subscriptionDocs.docs) {
-    try {const r=await deliverOne(doc,spot,fx,Date.now());tally[r.kind]=(tally[r.kind]||0)+1;pushCount+=(r.sent||0);}
-    catch(e){console.warn('Device check failed',doc.id.slice(-8),e.message);tally.error=(tally.error||0)+1;}
+    try {
+      const result=await deliverOne(doc,spot,fx,Date.now());
+      tally[result.kind]=(tally[result.kind]||0)+1;
+      pushCount+=(result.sent||0);
+    } catch(e) {
+      console.warn('Device check failed',doc.id.slice(-8),e.message);
+      tally.error=(tally.error||0)+1;
+    }
   }
   console.log(JSON.stringify({market:spot.source,observedAt:spot.asOf,checks:tally,pushCount}));
 }
