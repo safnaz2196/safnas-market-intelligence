@@ -47,3 +47,16 @@ test('missing evidence cannot masquerade as real-time streaming or suggest a tra
  assert.match(r.disclaimer,/No LLM inference/);
  assert.equal(r.changes.some(x=>x.kind==='company'),false);
 });
+
+test('same date across two verified companies has separate research history entries',()=>{
+ const input=stub();
+ input.cse.companies[1].quote.verifiedTradeDate=true;
+ const first=assemble(input,now);
+ assert.equal(first.changes.filter(x=>x.kind==='company').length,2);
+ const previous={...first,history:first.history.filter(x=>!String(x.label).includes('COMB.N0000'))};
+ input.previous=previous;
+ const second=assemble(input,now);
+ assert.equal(second.changes.filter(x=>x.kind==='company').length,1);
+ assert.ok(second.history.some(x=>x.label.includes('DIAL.N0000')));
+ assert.ok(second.history.some(x=>x.label.includes('COMB.N0000')));
+});
