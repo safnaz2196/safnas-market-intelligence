@@ -11,7 +11,7 @@ test('purged holdout leaves a full horizon gap and avoids claiming long-horizon 
  const audit=v59.gapAwareHoldout(SERIES,{days:7,sessions:5},NOW);
  assert.equal(audit.method,'purged_nonoverlapping_walk_forward');
  assert.equal(audit.gapSessions,5);
- assert.equal(audit.modelAudits.length,4);
+ assert.equal(audit.modelAudits.length,5);
  assert.ok(audit.earlyChecks>=35);
  if(audit.validated)assert.ok(audit.laterChecks>=20&&audit.improvement>=.025&&audit.rangeCoveragePct>=50);
  const long=v59.gapAwareHoldout(SERIES,{days:90,sessions:63},NOW);
@@ -60,11 +60,26 @@ test('professional report preserves six horizons and clearly marks unproven fore
  assert.equal(v.summary.forwardPending,6);
  assert.equal(v.failureLab.settledReviewed,0);
  assert.ok(v.horizons.every(h=>h.currencyScenarios.available));
- assert.ok(v.horizons.every(h=>h.validation.status==='insufficient'||h.validation.modelAudits.length===4));
+ assert.ok(v.horizons.every(h=>h.validation.status==='insufficient'||h.validation.modelAudits.length===5));
  assert.equal(v.quality.news,'unavailable');
  assert.match(v.guarantees,/None/);
 });
 test('refuse mismatched history so new report cannot mislabel old prices as current',()=>{
  const adapt=report();
  assert.throws(()=>v59.build({history:SERIES.slice(0,-7),adaptive:adapt},NOW),/do not match/);
+});
+
+test('EWMA time-series model is independent of kNN and does not see future prices',()=>{
+ const prices=SERIES.map(v=>v.usdOz);
+ const at=710,h=10;
+ const first=v59.ewmaForecast(prices,at,h);
+ const changed=prices.slice();
+ for(let i=at+1;i<changed.length;i++)changed[i]*=1.7;
+ const second=v59.ewmaForecast(changed,at,h);
+ assert.equal(first.id,'ewma');
+ assert.ok(first.scenarios.lowPct<first.scenarios.midPct);
+ assert.ok(first.scenarios.midPct<first.scenarios.highPct);
+ assert.deepEqual(first.probabilities,second.probabilities);
+ assert.deepEqual(first.scenarios,second.scenarios);
+ assert.ok(Math.abs(Object.values(first.probabilities).reduce((a,b)=>a+b,0)-100)<.001);
 });
