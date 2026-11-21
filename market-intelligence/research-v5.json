@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "engineVersion": "5.3.0",
-  "generatedAt": "2026-11-21T07:31:23.227Z",
+  "generatedAt": "2026-11-21T07:32:07.673Z",
   "sourceSnapshotAt": "2026-11-21T07:27:27.608Z",
   "status": "research_available",
   "briefing": {
@@ -151,7 +151,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:31:18.435Z",
+        "retrievedAt": "2026-11-21T07:31:59.562Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 49,
@@ -177,10 +177,53 @@
         "sharesIssued": 9200334994,
         "marketCapLKR": 441616079712,
         "betaASPI": 1.4018782,
-        "retrievedAt": "2026-11-21T07:31:20.250Z",
+        "retrievedAt": "2026-11-21T07:32:01.146Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
-      "filings": []
+      "filings": [
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th September 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/389_1794357715420.pdf",
+          "published": "2026-11-11",
+          "sourceId": "filing-DIAL.N0000-0",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th June 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/389_1786711190916.pdf",
+          "published": "2026-08-14",
+          "sourceId": "filing-DIAL.N0000-1",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/389_1778806312518.pdf",
+          "published": "2026-05-15",
+          "sourceId": "filing-DIAL.N0000-2",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/389_1770376219559.pdf",
+          "published": "2026-02-06",
+          "sourceId": "filing-DIAL.N0000-3",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Annual Report as at 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/389_1779181920569.pdf",
+          "published": "2026-05-19",
+          "sourceId": "filing-DIAL.N0000-4",
+          "kind": "annual_report"
+        },
+        {
+          "title": "Annual Report - 2024",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/389_1747616410421.pdf",
+          "published": "2025-05-19",
+          "sourceId": "filing-DIAL.N0000-5",
+          "kind": "annual_report"
+        }
+      ]
     },
     {
       "ticker": "COMB.N0000",
@@ -191,7 +234,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:31:18.435Z",
+        "retrievedAt": "2026-11-21T07:31:59.562Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 215.25,
@@ -217,10 +260,53 @@
         "sharesIssued": 1557648229,
         "marketCapLKR": 333336721006,
         "betaASPI": 0.79103035,
-        "retrievedAt": "2026-11-21T07:31:20.446Z",
+        "retrievedAt": "2026-11-21T07:32:01.339Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
-      "filings": []
+      "filings": [
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th September 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/369_1794482282493.pdf",
+          "published": "2026-11-12",
+          "sourceId": "filing-COMB.N0000-0",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th June 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/369_1786618965674.pdf",
+          "published": "2026-08-13",
+          "sourceId": "filing-COMB.N0000-1",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/369_1778755847521.pdf",
+          "published": "2026-05-14",
+          "sourceId": "filing-COMB.N0000-2",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/369_1772101323577..pdf",
+          "published": "2026-02-26",
+          "sourceId": "filing-COMB.N0000-3",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Annual Report as at 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/369_1773048532050.pdf",
+          "published": "2026-03-09",
+          "sourceId": "filing-COMB.N0000-4",
+          "kind": "annual_report"
+        },
+        {
+          "title": "Commercial Bank of Ceylon PLC - Annual Report 2024",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/369_1741169817422.pdf",
+          "published": "2025-03-05",
+          "sourceId": "filing-COMB.N0000-5",
+          "kind": "annual_report"
+        }
+      ]
     },
     {
       "ticker": "JKH.N0000",
@@ -231,7 +317,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:31:18.435Z",
+        "retrievedAt": "2026-11-21T07:31:59.562Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 18.9,
@@ -257,10 +343,53 @@
         "sharesIssued": 17741405405,
         "marketCapLKR": 331764281073.5,
         "betaASPI": 1.0031595,
-        "retrievedAt": "2026-11-21T07:31:20.642Z",
+        "retrievedAt": "2026-11-21T07:32:01.531Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
-      "filings": []
+      "filings": [
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th September 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/508_1793696900421.pdf",
+          "published": "2026-11-03",
+          "sourceId": "filing-JKH.N0000-0",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th June 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/508_1785229278745.pdf",
+          "published": "2026-07-28",
+          "sourceId": "filing-JKH.N0000-1",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/508_1779789322176.pdf",
+          "published": "2026-05-26",
+          "sourceId": "filing-JKH.N0000-2",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/508_1769593842069.pdf",
+          "published": "2026-01-28",
+          "sourceId": "filing-JKH.N0000-3",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Annual Report as at 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/508_1779789508055.pdf",
+          "published": "2026-05-26",
+          "sourceId": "filing-JKH.N0000-4",
+          "kind": "annual_report"
+        },
+        {
+          "title": "Annual Report 2024/25",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/508_1748344127576.pdf",
+          "published": "2025-05-27",
+          "sourceId": "filing-JKH.N0000-5",
+          "kind": "annual_report"
+        }
+      ]
     },
     {
       "ticker": "HNB.N0000",
@@ -271,7 +400,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:31:18.435Z",
+        "retrievedAt": "2026-11-21T07:31:59.562Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 397,
@@ -297,10 +426,53 @@
         "sharesIssued": 460218180,
         "marketCapLKR": 181210908375,
         "betaASPI": 0.5533614,
-        "retrievedAt": "2026-11-21T07:31:20.838Z",
+        "retrievedAt": "2026-11-21T07:32:01.797Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
-      "filings": []
+      "filings": [
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th September 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/373_1794482029963.pdf",
+          "published": "2026-11-12",
+          "sourceId": "filing-HNB.N0000-0",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th June 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/373_1786545582269.pdf",
+          "published": "2026-08-12",
+          "sourceId": "filing-HNB.N0000-1",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/373_1778641080164.03.2026.pdf",
+          "published": "2026-05-13",
+          "sourceId": "filing-HNB.N0000-2",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/373_1772043617003.pdf",
+          "published": "2026-02-25",
+          "sourceId": "filing-HNB.N0000-3",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Annual Report as at 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/373_1773025115363.pdf",
+          "published": "2026-03-09",
+          "sourceId": "filing-HNB.N0000-4",
+          "kind": "annual_report"
+        },
+        {
+          "title": "Annual Report 2024",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/373_1740970516193.pdf",
+          "published": "2025-03-03",
+          "sourceId": "filing-HNB.N0000-5",
+          "kind": "annual_report"
+        }
+      ]
     },
     {
       "ticker": "SAMP.N0000",
@@ -311,7 +483,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:31:18.435Z",
+        "retrievedAt": "2026-11-21T07:31:59.562Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 150,
@@ -337,10 +509,53 @@
         "sharesIssued": 1172700760,
         "marketCapLKR": 173852887670,
         "betaASPI": 0.6757065,
-        "retrievedAt": "2026-11-21T07:31:21.033Z",
+        "retrievedAt": "2026-11-21T07:32:02.076Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
-      "filings": []
+      "filings": [
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th September 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/431_1794454440094.09.2026.pdf",
+          "published": "2026-11-12",
+          "sourceId": "filing-SAMP.N0000-0",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th June 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/431_1786590688111.06.2026.pdf",
+          "published": "2026-08-13",
+          "sourceId": "filing-SAMP.N0000-1",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/431_1778641511402.03.2026.pdf",
+          "published": "2026-05-13",
+          "sourceId": "filing-SAMP.N0000-2",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/431_1771556319859.12.2025.pdf",
+          "published": "2026-02-20",
+          "sourceId": "filing-SAMP.N0000-3",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Annual Report as at 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/431_1772616197661.pdf",
+          "published": "2026-03-04",
+          "sourceId": "filing-SAMP.N0000-4",
+          "kind": "annual_report"
+        },
+        {
+          "title": "Sampath Bank PLC - Annual Report 2024",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/431_1741079000854.pdf",
+          "published": "2025-03-04",
+          "sourceId": "filing-SAMP.N0000-5",
+          "kind": "annual_report"
+        }
+      ]
     },
     {
       "ticker": "HAYL.N0000",
@@ -351,7 +566,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:31:18.435Z",
+        "retrievedAt": "2026-11-21T07:31:59.562Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 232.25,
@@ -377,10 +592,53 @@
         "sharesIssued": 795000000,
         "marketCapLKR": 183048750000,
         "betaASPI": 0.84930664,
-        "retrievedAt": "2026-11-21T07:31:21.229Z",
+        "retrievedAt": "2026-11-21T07:32:02.266Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
-      "filings": []
+      "filings": [
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/505_1780049993256.pdf",
+          "published": "2026-05-29",
+          "sourceId": "filing-HAYL.N0000-0",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/505_1770981101413.pdf",
+          "published": "2026-02-13",
+          "sourceId": "filing-HAYL.N0000-1",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th September 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/505_1763033631888.pdf",
+          "published": "2025-11-13",
+          "sourceId": "filing-HAYL.N0000-2",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Quarterly Financial Report as of 30-06-2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/505_1755084544777.pdf",
+          "published": "2025-08-13",
+          "sourceId": "filing-HAYL.N0000-3",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Annual Report as at 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/505_1781001333201.pdf",
+          "published": "2026-06-09",
+          "sourceId": "filing-HAYL.N0000-4",
+          "kind": "annual_report"
+        },
+        {
+          "title": "Annual Report 2024/25",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/505_1749126315503.pdf",
+          "published": "2025-06-05",
+          "sourceId": "filing-HAYL.N0000-5",
+          "kind": "annual_report"
+        }
+      ]
     },
     {
       "ticker": "LOLC.N0000",
@@ -391,7 +649,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:31:18.435Z",
+        "retrievedAt": "2026-11-21T07:31:59.562Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 405.75,
@@ -417,10 +675,53 @@
         "sharesIssued": 475200000,
         "marketCapLKR": 192931200000,
         "betaASPI": 0.8594875,
-        "retrievedAt": "2026-11-21T07:31:21.428Z",
+        "retrievedAt": "2026-11-21T07:32:02.460Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
-      "filings": []
+      "filings": [
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th September 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/378_1794560701447.pdf",
+          "published": "2026-11-13",
+          "sourceId": "filing-LOLC.N0000-0",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th June 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/378_1786706486801.pdf",
+          "published": "2026-08-14",
+          "sourceId": "filing-LOLC.N0000-1",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/378_1780052093611.pdf",
+          "published": "2026-05-29",
+          "sourceId": "filing-LOLC.N0000-2",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/378_1770978545915.pdf",
+          "published": "2026-02-13",
+          "sourceId": "filing-LOLC.N0000-3",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Annual Report as at 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/378_1787926564135.pdf",
+          "published": "2026-08-28",
+          "sourceId": "filing-LOLC.N0000-4",
+          "kind": "annual_report"
+        },
+        {
+          "title": "ANNUAL REPORT FOR 2024/2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/378_1756693895745.pdf",
+          "published": "2025-09-01",
+          "sourceId": "filing-LOLC.N0000-5",
+          "kind": "annual_report"
+        }
+      ]
     },
     {
       "ticker": "CTC.N0000",
@@ -431,7 +732,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:31:18.435Z",
+        "retrievedAt": "2026-11-21T07:31:59.562Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 1843.75,
@@ -457,10 +758,53 @@
         "sharesIssued": 187323751,
         "marketCapLKR": 345518658719.5,
         "betaASPI": 0.20484465,
-        "retrievedAt": "2026-11-21T07:31:21.623Z",
+        "retrievedAt": "2026-11-21T07:32:02.660Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
-      "filings": []
+      "filings": [
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th September 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/460_1794480547018.pdf",
+          "published": "2026-11-12",
+          "sourceId": "filing-CTC.N0000-0",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th June 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/460_1786619524644.pdf",
+          "published": "2026-08-13",
+          "sourceId": "filing-CTC.N0000-1",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/460_1778579951697.pdf",
+          "published": "2026-05-12",
+          "sourceId": "filing-CTC.N0000-2",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/460_1771414435824.pdf",
+          "published": "2026-02-18",
+          "sourceId": "filing-CTC.N0000-3",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Annual Report as at 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/460_1776699315164.pdf",
+          "published": "2026-04-20",
+          "sourceId": "filing-CTC.N0000-4",
+          "kind": "annual_report"
+        },
+        {
+          "title": "Annual Report 2024",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/460_1745319496525.pdf",
+          "published": "2025-04-22",
+          "sourceId": "filing-CTC.N0000-5",
+          "kind": "annual_report"
+        }
+      ]
     },
     {
       "ticker": "DIST.N0000",
@@ -471,7 +815,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:31:18.435Z",
+        "retrievedAt": "2026-11-21T07:31:59.562Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 58.6,
@@ -497,10 +841,53 @@
         "sharesIssued": 4600000000,
         "marketCapLKR": 268180000000,
         "betaASPI": 0.7319642,
-        "retrievedAt": "2026-11-21T07:31:21.823Z",
+        "retrievedAt": "2026-11-21T07:32:02.929Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
-      "filings": []
+      "filings": [
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th September 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/463_1794563209116.pdf",
+          "published": "2026-11-13",
+          "sourceId": "filing-DIST.N0000-0",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th June 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/463_1786620025048.pdf",
+          "published": "2026-08-13",
+          "sourceId": "filing-DIST.N0000-1",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/463_1780048096643.pdf",
+          "published": "2026-05-29",
+          "sourceId": "filing-DIST.N0000-2",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/463_1770977117978.pdf",
+          "published": "2026-02-13",
+          "sourceId": "filing-DIST.N0000-3",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Annual Report as at 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/463_1787194928516.pdf",
+          "published": "2026-08-20",
+          "sourceId": "filing-DIST.N0000-4",
+          "kind": "annual_report"
+        },
+        {
+          "title": "Annual Report 2024/2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/463_1756462545322.pdf",
+          "published": "2025-08-29",
+          "sourceId": "filing-DIST.N0000-5",
+          "kind": "annual_report"
+        }
+      ]
     },
     {
       "ticker": "MELS.N0000",
@@ -511,7 +898,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:31:18.435Z",
+        "retrievedAt": "2026-11-21T07:31:59.562Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 193,
@@ -537,10 +924,53 @@
         "sharesIssued": 1165397072,
         "marketCapLKR": 223756237824,
         "betaASPI": 0.7826927,
-        "retrievedAt": "2026-11-21T07:31:22.017Z",
+        "retrievedAt": "2026-11-21T07:32:03.122Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
-      "filings": []
+      "filings": [
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th September 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/1507_1794566141429.pdf",
+          "published": "2026-11-13",
+          "sourceId": "filing-MELS.N0000-0",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th June 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/1507_1786698642831.pdf",
+          "published": "2026-08-14",
+          "sourceId": "filing-MELS.N0000-1",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/1507_1780048352131.pdf",
+          "published": "2026-05-29",
+          "sourceId": "filing-MELS.N0000-2",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/1507_1770975740657.pdf",
+          "published": "2026-02-13",
+          "sourceId": "filing-MELS.N0000-3",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Annual Report as at 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/1507_1787309237922.pdf",
+          "published": "2026-08-21",
+          "sourceId": "filing-MELS.N0000-4",
+          "kind": "annual_report"
+        },
+        {
+          "title": "Annual Report 2024/2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/1507_1756263640406.pdf",
+          "published": "2025-08-27",
+          "sourceId": "filing-MELS.N0000-5",
+          "kind": "annual_report"
+        }
+      ]
     },
     {
       "ticker": "CARG.N0000",
@@ -551,7 +981,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:31:18.435Z",
+        "retrievedAt": "2026-11-21T07:31:59.562Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 680.25,
@@ -577,10 +1007,53 @@
         "sharesIssued": 257677731,
         "marketCapLKR": 175285276512.75,
         "betaASPI": 0.43022645,
-        "retrievedAt": "2026-11-21T07:31:22.211Z",
+        "retrievedAt": "2026-11-21T07:32:03.311Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
-      "filings": []
+      "filings": [
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th September 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/457_1793873347651.pdf",
+          "published": "2026-11-05",
+          "sourceId": "filing-CARG.N0000-0",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th June 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/457_1786612412536.pdf",
+          "published": "2026-08-13",
+          "sourceId": "filing-CARG.N0000-1",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/457_1779875434141.pdf",
+          "published": "2026-05-27",
+          "sourceId": "filing-CARG.N0000-2",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/457_1770632327418.pdf",
+          "published": "2026-02-09",
+          "sourceId": "filing-CARG.N0000-3",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Annual Report as at 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/457_1785408320411.pdf",
+          "published": "2026-07-30",
+          "sourceId": "filing-CARG.N0000-4",
+          "kind": "annual_report"
+        },
+        {
+          "title": "Annual Report 2024-2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/457_1751017054218.pdf",
+          "published": "2025-06-27",
+          "sourceId": "filing-CARG.N0000-5",
+          "kind": "annual_report"
+        }
+      ]
     },
     {
       "ticker": "SLTL.N0000",
@@ -591,7 +1064,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:31:18.435Z",
+        "retrievedAt": "2026-11-21T07:31:59.562Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 93.5,
@@ -620,10 +1093,53 @@
         "sharesIssued": 1804860000,
         "marketCapLKR": 163520316000,
         "betaASPI": 1.1619273,
-        "retrievedAt": "2026-11-21T07:31:22.404Z",
+        "retrievedAt": "2026-11-21T07:32:03.503Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
-      "filings": []
+      "filings": [
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th September 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/390_1794481476963.pdf",
+          "published": "2026-11-12",
+          "sourceId": "filing-SLTL.N0000-0",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th June 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/390_1786935906532.pdf",
+          "published": "2026-08-17",
+          "sourceId": "filing-SLTL.N0000-1",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/390_1778757795262.pdf",
+          "published": "2026-05-14",
+          "sourceId": "filing-SLTL.N0000-2",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/390_1772183464759.pdf",
+          "published": "2026-02-27",
+          "sourceId": "filing-SLTL.N0000-3",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Annual Report as at 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/390_1779874742657.pdf",
+          "published": "2026-05-27",
+          "sourceId": "filing-SLTL.N0000-4",
+          "kind": "annual_report"
+        },
+        {
+          "title": "Annual Report 2024",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/390_1748604171098.pdf",
+          "published": "2025-05-30",
+          "sourceId": "filing-SLTL.N0000-5",
+          "kind": "annual_report"
+        }
+      ]
     },
     {
       "ticker": "HHL.N0000",
@@ -634,7 +1150,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:31:18.435Z",
+        "retrievedAt": "2026-11-21T07:31:59.562Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 32.3,
@@ -660,10 +1176,53 @@
         "sharesIssued": 2995985015,
         "marketCapLKR": 95871520480,
         "betaASPI": 1.1194488,
-        "retrievedAt": "2026-11-21T07:31:22.598Z",
+        "retrievedAt": "2026-11-21T07:32:03.692Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
-      "filings": []
+      "filings": [
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th September 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/506_1793874792563.pdf",
+          "published": "2026-11-05",
+          "sourceId": "filing-HHL.N0000-0",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th June 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/506_1786012625482.pdf",
+          "published": "2026-08-06",
+          "sourceId": "filing-HHL.N0000-1",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/506_1779446148301.pdf",
+          "published": "2026-05-22",
+          "sourceId": "filing-HHL.N0000-2",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/506_1770111963186.pdf",
+          "published": "2026-02-03",
+          "sourceId": "filing-HHL.N0000-3",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Annual Report as at 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/506_1779447790517.pdf",
+          "published": "2026-05-22",
+          "sourceId": "filing-HHL.N0000-4",
+          "kind": "annual_report"
+        },
+        {
+          "title": "Annual Report FY2024/25",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/506_1747909708310.pdf",
+          "published": "2025-05-22",
+          "sourceId": "filing-HHL.N0000-5",
+          "kind": "annual_report"
+        }
+      ]
     },
     {
       "ticker": "NDB.N0000",
@@ -674,7 +1233,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:31:18.435Z",
+        "retrievedAt": "2026-11-21T07:31:59.562Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 112.75,
@@ -700,10 +1259,53 @@
         "sharesIssued": 432197834,
         "marketCapLKR": 48082009032.5,
         "betaASPI": 0.8006846,
-        "retrievedAt": "2026-11-21T07:31:22.797Z",
+        "retrievedAt": "2026-11-21T07:32:03.973Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
-      "filings": []
+      "filings": [
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th September 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/386_1792582556061.09.2026.pdf",
+          "published": "2026-10-21",
+          "sourceId": "filing-NDB.N0000-0",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th June 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/386_1784717094209.pdf",
+          "published": "2026-07-22",
+          "sourceId": "filing-NDB.N0000-1",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/386_1777545810618.pdf",
+          "published": "2026-04-30",
+          "sourceId": "filing-NDB.N0000-2",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/386_1772014495130.pdf",
+          "published": "2026-02-25",
+          "sourceId": "filing-NDB.N0000-3",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Annual Report as at 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/386_1772615356033.pdf",
+          "published": "2026-03-04",
+          "sourceId": "filing-NDB.N0000-4",
+          "kind": "annual_report"
+        },
+        {
+          "title": "Annual Report 2024",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/386_1741165351123.pdf",
+          "published": "2025-03-05",
+          "sourceId": "filing-NDB.N0000-5",
+          "kind": "annual_report"
+        }
+      ]
     },
     {
       "ticker": "TKYO.N0000",
@@ -714,7 +1316,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:31:18.435Z",
+        "retrievedAt": "2026-11-21T07:31:59.562Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 83,
@@ -740,10 +1342,53 @@
         "sharesIssued": 294030000,
         "marketCapLKR": 24404490000,
         "betaASPI": 0.94540983,
-        "retrievedAt": "2026-11-21T07:31:22.990Z",
+        "retrievedAt": "2026-11-21T07:32:04.264Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
-      "filings": []
+      "filings": [
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th September 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/688_1793870119340.pdf",
+          "published": "2026-11-05",
+          "sourceId": "filing-TKYO.N0000-0",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th June 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/688_1785921923108.pdf",
+          "published": "2026-08-05",
+          "sourceId": "filing-TKYO.N0000-1",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/688_1779441326348.pdf",
+          "published": "2026-05-22",
+          "sourceId": "filing-TKYO.N0000-2",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/688_1770369389904.pdf",
+          "published": "2026-02-06",
+          "sourceId": "filing-TKYO.N0000-3",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Annual Report as at 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/688_1783505383015.pdf",
+          "published": "2026-07-08",
+          "sourceId": "filing-TKYO.N0000-4",
+          "kind": "annual_report"
+        },
+        {
+          "title": "Annual Financial Report as of 31-03-2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/688_1752226651721.pdf",
+          "published": "2025-07-11",
+          "sourceId": "filing-TKYO.N0000-5",
+          "kind": "annual_report"
+        }
+      ]
     },
     {
       "ticker": "LFIN.N0000",
@@ -754,7 +1399,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:31:18.435Z",
+        "retrievedAt": "2026-11-21T07:31:59.562Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 154,
@@ -780,10 +1425,53 @@
         "sharesIssued": 554057136,
         "marketCapLKR": 85324798944,
         "betaASPI": 0.8785326,
-        "retrievedAt": "2026-11-21T07:31:23.183Z",
+        "retrievedAt": "2026-11-21T07:32:04.451Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
-      "filings": []
+      "filings": [
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th September 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/379_1792750936023.09.2026.pdf",
+          "published": "2026-10-23",
+          "sourceId": "filing-LFIN.N0000-0",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 30th June 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/379_1784195933058.06.2026.pdf",
+          "published": "2026-07-16",
+          "sourceId": "filing-LFIN.N0000-1",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/379_1779354268241.03.2026.pdf",
+          "published": "2026-05-21",
+          "sourceId": "filing-LFIN.N0000-2",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Interim Financial Statements for the Quarter ended 31st December 2025",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/379_1769050371420.12.2025.pdf",
+          "published": "2026-01-22",
+          "sourceId": "filing-LFIN.N0000-3",
+          "kind": "interim_report"
+        },
+        {
+          "title": "Annual Report as at 31st March 2026",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/379_1780671814272.03.2026.pdf",
+          "published": "2026-06-05",
+          "sourceId": "filing-LFIN.N0000-4",
+          "kind": "annual_report"
+        },
+        {
+          "title": "Annual Report 2024/25",
+          "url": "https://cdn.cse.lk/cmt/upload_report_file/379_1749137525707.pdf",
+          "published": "2025-06-05",
+          "sourceId": "filing-LFIN.N0000-5",
+          "kind": "annual_report"
+        }
+      ]
     }
   ],
   "macro": [
@@ -937,11 +1625,95 @@
       "kind": "dated_company_price"
     },
     {
+      "id": "filing-DIAL.N0000-0",
+      "label": "Dialog Axiata PLC · Interim Financial Statements for the Quarter ended 30th September 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/389_1794357715420.pdf",
+      "asOf": "2026-11-11",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-DIAL.N0000-1",
+      "label": "Dialog Axiata PLC · Interim Financial Statements for the Quarter ended 30th June 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/389_1786711190916.pdf",
+      "asOf": "2026-08-14",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-DIAL.N0000-2",
+      "label": "Dialog Axiata PLC · Interim Financial Statements for the Quarter ended 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/389_1778806312518.pdf",
+      "asOf": "2026-05-15",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-DIAL.N0000-3",
+      "label": "Dialog Axiata PLC · Interim Financial Statements for the Quarter ended 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/389_1770376219559.pdf",
+      "asOf": "2026-02-06",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-DIAL.N0000-4",
+      "label": "Dialog Axiata PLC · Annual Report as at 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/389_1779181920569.pdf",
+      "asOf": "2026-05-19",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-DIAL.N0000-5",
+      "label": "Dialog Axiata PLC · Annual Report - 2024",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/389_1747616410421.pdf",
+      "asOf": "2025-05-19",
+      "kind": "cse_company_filing"
+    },
+    {
       "id": "trade-COMB.N0000",
       "label": "Commercial Bank of Ceylon PLC · CSE last recorded trade",
       "url": "https://www.cse.lk/",
       "asOf": "2026-11-20",
       "kind": "dated_company_price"
+    },
+    {
+      "id": "filing-COMB.N0000-0",
+      "label": "Commercial Bank of Ceylon PLC · Interim Financial Statements for the Quarter ended 30th September 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/369_1794482282493.pdf",
+      "asOf": "2026-11-12",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-COMB.N0000-1",
+      "label": "Commercial Bank of Ceylon PLC · Interim Financial Statements for the Quarter ended 30th June 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/369_1786618965674.pdf",
+      "asOf": "2026-08-13",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-COMB.N0000-2",
+      "label": "Commercial Bank of Ceylon PLC · Interim Financial Statements for the Quarter ended 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/369_1778755847521.pdf",
+      "asOf": "2026-05-14",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-COMB.N0000-3",
+      "label": "Commercial Bank of Ceylon PLC · Interim Financial Statements for the Quarter ended 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/369_1772101323577..pdf",
+      "asOf": "2026-02-26",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-COMB.N0000-4",
+      "label": "Commercial Bank of Ceylon PLC · Annual Report as at 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/369_1773048532050.pdf",
+      "asOf": "2026-03-09",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-COMB.N0000-5",
+      "label": "Commercial Bank of Ceylon PLC · Commercial Bank of Ceylon PLC - Annual Report 2024",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/369_1741169817422.pdf",
+      "asOf": "2025-03-05",
+      "kind": "cse_company_filing"
     },
     {
       "id": "trade-JKH.N0000",
@@ -951,11 +1723,95 @@
       "kind": "dated_company_price"
     },
     {
+      "id": "filing-JKH.N0000-0",
+      "label": "John Keells Holdings PLC · Interim Financial Statements for the Quarter ended 30th September 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/508_1793696900421.pdf",
+      "asOf": "2026-11-03",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-JKH.N0000-1",
+      "label": "John Keells Holdings PLC · Interim Financial Statements for the Quarter ended 30th June 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/508_1785229278745.pdf",
+      "asOf": "2026-07-28",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-JKH.N0000-2",
+      "label": "John Keells Holdings PLC · Interim Financial Statements for the Quarter ended 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/508_1779789322176.pdf",
+      "asOf": "2026-05-26",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-JKH.N0000-3",
+      "label": "John Keells Holdings PLC · Interim Financial Statements for the Quarter ended 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/508_1769593842069.pdf",
+      "asOf": "2026-01-28",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-JKH.N0000-4",
+      "label": "John Keells Holdings PLC · Annual Report as at 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/508_1779789508055.pdf",
+      "asOf": "2026-05-26",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-JKH.N0000-5",
+      "label": "John Keells Holdings PLC · Annual Report 2024/25",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/508_1748344127576.pdf",
+      "asOf": "2025-05-27",
+      "kind": "cse_company_filing"
+    },
+    {
       "id": "trade-HNB.N0000",
       "label": "Hatton National Bank PLC · CSE last recorded trade",
       "url": "https://www.cse.lk/",
       "asOf": "2026-11-20",
       "kind": "dated_company_price"
+    },
+    {
+      "id": "filing-HNB.N0000-0",
+      "label": "Hatton National Bank PLC · Interim Financial Statements for the Quarter ended 30th September 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/373_1794482029963.pdf",
+      "asOf": "2026-11-12",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-HNB.N0000-1",
+      "label": "Hatton National Bank PLC · Interim Financial Statements for the Quarter ended 30th June 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/373_1786545582269.pdf",
+      "asOf": "2026-08-12",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-HNB.N0000-2",
+      "label": "Hatton National Bank PLC · Interim Financial Statements for the Quarter ended 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/373_1778641080164.03.2026.pdf",
+      "asOf": "2026-05-13",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-HNB.N0000-3",
+      "label": "Hatton National Bank PLC · Interim Financial Statements for the Quarter ended 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/373_1772043617003.pdf",
+      "asOf": "2026-02-25",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-HNB.N0000-4",
+      "label": "Hatton National Bank PLC · Annual Report as at 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/373_1773025115363.pdf",
+      "asOf": "2026-03-09",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-HNB.N0000-5",
+      "label": "Hatton National Bank PLC · Annual Report 2024",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/373_1740970516193.pdf",
+      "asOf": "2025-03-03",
+      "kind": "cse_company_filing"
     },
     {
       "id": "trade-SAMP.N0000",
@@ -965,11 +1821,95 @@
       "kind": "dated_company_price"
     },
     {
+      "id": "filing-SAMP.N0000-0",
+      "label": "Sampath Bank PLC · Interim Financial Statements for the Quarter ended 30th September 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/431_1794454440094.09.2026.pdf",
+      "asOf": "2026-11-12",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-SAMP.N0000-1",
+      "label": "Sampath Bank PLC · Interim Financial Statements for the Quarter ended 30th June 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/431_1786590688111.06.2026.pdf",
+      "asOf": "2026-08-13",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-SAMP.N0000-2",
+      "label": "Sampath Bank PLC · Interim Financial Statements for the Quarter ended 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/431_1778641511402.03.2026.pdf",
+      "asOf": "2026-05-13",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-SAMP.N0000-3",
+      "label": "Sampath Bank PLC · Interim Financial Statements for the Quarter ended 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/431_1771556319859.12.2025.pdf",
+      "asOf": "2026-02-20",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-SAMP.N0000-4",
+      "label": "Sampath Bank PLC · Annual Report as at 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/431_1772616197661.pdf",
+      "asOf": "2026-03-04",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-SAMP.N0000-5",
+      "label": "Sampath Bank PLC · Sampath Bank PLC - Annual Report 2024",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/431_1741079000854.pdf",
+      "asOf": "2025-03-04",
+      "kind": "cse_company_filing"
+    },
+    {
       "id": "trade-HAYL.N0000",
       "label": "Hayleys PLC · CSE last recorded trade",
       "url": "https://www.cse.lk/",
       "asOf": "2026-11-20",
       "kind": "dated_company_price"
+    },
+    {
+      "id": "filing-HAYL.N0000-0",
+      "label": "Hayleys PLC · Interim Financial Statements for the Quarter ended 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/505_1780049993256.pdf",
+      "asOf": "2026-05-29",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-HAYL.N0000-1",
+      "label": "Hayleys PLC · Interim Financial Statements for the Quarter ended 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/505_1770981101413.pdf",
+      "asOf": "2026-02-13",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-HAYL.N0000-2",
+      "label": "Hayleys PLC · Interim Financial Statements for the Quarter ended 30th September 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/505_1763033631888.pdf",
+      "asOf": "2025-11-13",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-HAYL.N0000-3",
+      "label": "Hayleys PLC · Quarterly Financial Report as of 30-06-2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/505_1755084544777.pdf",
+      "asOf": "2025-08-13",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-HAYL.N0000-4",
+      "label": "Hayleys PLC · Annual Report as at 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/505_1781001333201.pdf",
+      "asOf": "2026-06-09",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-HAYL.N0000-5",
+      "label": "Hayleys PLC · Annual Report 2024/25",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/505_1749126315503.pdf",
+      "asOf": "2025-06-05",
+      "kind": "cse_company_filing"
     },
     {
       "id": "trade-LOLC.N0000",
@@ -979,11 +1919,95 @@
       "kind": "dated_company_price"
     },
     {
+      "id": "filing-LOLC.N0000-0",
+      "label": "LOLC Holdings PLC · Interim Financial Statements for the Quarter ended 30th September 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/378_1794560701447.pdf",
+      "asOf": "2026-11-13",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-LOLC.N0000-1",
+      "label": "LOLC Holdings PLC · Interim Financial Statements for the Quarter ended 30th June 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/378_1786706486801.pdf",
+      "asOf": "2026-08-14",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-LOLC.N0000-2",
+      "label": "LOLC Holdings PLC · Interim Financial Statements for the Quarter ended 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/378_1780052093611.pdf",
+      "asOf": "2026-05-29",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-LOLC.N0000-3",
+      "label": "LOLC Holdings PLC · Interim Financial Statements for the Quarter ended 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/378_1770978545915.pdf",
+      "asOf": "2026-02-13",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-LOLC.N0000-4",
+      "label": "LOLC Holdings PLC · Annual Report as at 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/378_1787926564135.pdf",
+      "asOf": "2026-08-28",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-LOLC.N0000-5",
+      "label": "LOLC Holdings PLC · ANNUAL REPORT FOR 2024/2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/378_1756693895745.pdf",
+      "asOf": "2025-09-01",
+      "kind": "cse_company_filing"
+    },
+    {
       "id": "trade-CTC.N0000",
       "label": "Ceylon Tobacco Company PLC · CSE last recorded trade",
       "url": "https://www.cse.lk/",
       "asOf": "2026-11-20",
       "kind": "dated_company_price"
+    },
+    {
+      "id": "filing-CTC.N0000-0",
+      "label": "Ceylon Tobacco Company PLC · Interim Financial Statements for the Quarter ended 30th September 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/460_1794480547018.pdf",
+      "asOf": "2026-11-12",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-CTC.N0000-1",
+      "label": "Ceylon Tobacco Company PLC · Interim Financial Statements for the Quarter ended 30th June 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/460_1786619524644.pdf",
+      "asOf": "2026-08-13",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-CTC.N0000-2",
+      "label": "Ceylon Tobacco Company PLC · Interim Financial Statements for the Quarter ended 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/460_1778579951697.pdf",
+      "asOf": "2026-05-12",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-CTC.N0000-3",
+      "label": "Ceylon Tobacco Company PLC · Interim Financial Statements for the Quarter ended 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/460_1771414435824.pdf",
+      "asOf": "2026-02-18",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-CTC.N0000-4",
+      "label": "Ceylon Tobacco Company PLC · Annual Report as at 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/460_1776699315164.pdf",
+      "asOf": "2026-04-20",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-CTC.N0000-5",
+      "label": "Ceylon Tobacco Company PLC · Annual Report 2024",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/460_1745319496525.pdf",
+      "asOf": "2025-04-22",
+      "kind": "cse_company_filing"
     },
     {
       "id": "trade-DIST.N0000",
@@ -993,11 +2017,95 @@
       "kind": "dated_company_price"
     },
     {
+      "id": "filing-DIST.N0000-0",
+      "label": "Distilleries Company of Sri Lanka PLC · Interim Financial Statements for the Quarter ended 30th September 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/463_1794563209116.pdf",
+      "asOf": "2026-11-13",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-DIST.N0000-1",
+      "label": "Distilleries Company of Sri Lanka PLC · Interim Financial Statements for the Quarter ended 30th June 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/463_1786620025048.pdf",
+      "asOf": "2026-08-13",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-DIST.N0000-2",
+      "label": "Distilleries Company of Sri Lanka PLC · Interim Financial Statements for the Quarter ended 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/463_1780048096643.pdf",
+      "asOf": "2026-05-29",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-DIST.N0000-3",
+      "label": "Distilleries Company of Sri Lanka PLC · Interim Financial Statements for the Quarter ended 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/463_1770977117978.pdf",
+      "asOf": "2026-02-13",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-DIST.N0000-4",
+      "label": "Distilleries Company of Sri Lanka PLC · Annual Report as at 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/463_1787194928516.pdf",
+      "asOf": "2026-08-20",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-DIST.N0000-5",
+      "label": "Distilleries Company of Sri Lanka PLC · Annual Report 2024/2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/463_1756462545322.pdf",
+      "asOf": "2025-08-29",
+      "kind": "cse_company_filing"
+    },
+    {
       "id": "trade-MELS.N0000",
       "label": "Melstacorp PLC · CSE last recorded trade",
       "url": "https://www.cse.lk/",
       "asOf": "2026-11-20",
       "kind": "dated_company_price"
+    },
+    {
+      "id": "filing-MELS.N0000-0",
+      "label": "Melstacorp PLC · Interim Financial Statements for the Quarter ended 30th September 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/1507_1794566141429.pdf",
+      "asOf": "2026-11-13",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-MELS.N0000-1",
+      "label": "Melstacorp PLC · Interim Financial Statements for the Quarter ended 30th June 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/1507_1786698642831.pdf",
+      "asOf": "2026-08-14",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-MELS.N0000-2",
+      "label": "Melstacorp PLC · Interim Financial Statements for the Quarter ended 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/1507_1780048352131.pdf",
+      "asOf": "2026-05-29",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-MELS.N0000-3",
+      "label": "Melstacorp PLC · Interim Financial Statements for the Quarter ended 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/1507_1770975740657.pdf",
+      "asOf": "2026-02-13",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-MELS.N0000-4",
+      "label": "Melstacorp PLC · Annual Report as at 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/1507_1787309237922.pdf",
+      "asOf": "2026-08-21",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-MELS.N0000-5",
+      "label": "Melstacorp PLC · Annual Report 2024/2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/1507_1756263640406.pdf",
+      "asOf": "2025-08-27",
+      "kind": "cse_company_filing"
     },
     {
       "id": "trade-CARG.N0000",
@@ -1007,11 +2115,95 @@
       "kind": "dated_company_price"
     },
     {
+      "id": "filing-CARG.N0000-0",
+      "label": "Cargills (Ceylon) PLC · Interim Financial Statements for the Quarter ended 30th September 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/457_1793873347651.pdf",
+      "asOf": "2026-11-05",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-CARG.N0000-1",
+      "label": "Cargills (Ceylon) PLC · Interim Financial Statements for the Quarter ended 30th June 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/457_1786612412536.pdf",
+      "asOf": "2026-08-13",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-CARG.N0000-2",
+      "label": "Cargills (Ceylon) PLC · Interim Financial Statements for the Quarter ended 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/457_1779875434141.pdf",
+      "asOf": "2026-05-27",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-CARG.N0000-3",
+      "label": "Cargills (Ceylon) PLC · Interim Financial Statements for the Quarter ended 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/457_1770632327418.pdf",
+      "asOf": "2026-02-09",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-CARG.N0000-4",
+      "label": "Cargills (Ceylon) PLC · Annual Report as at 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/457_1785408320411.pdf",
+      "asOf": "2026-07-30",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-CARG.N0000-5",
+      "label": "Cargills (Ceylon) PLC · Annual Report 2024-2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/457_1751017054218.pdf",
+      "asOf": "2025-06-27",
+      "kind": "cse_company_filing"
+    },
+    {
       "id": "trade-SLTL.N0000",
       "label": "Sri Lanka Telecom PLC · CSE last recorded trade",
       "url": "https://www.cse.lk/",
       "asOf": "2026-11-20",
       "kind": "dated_company_price"
+    },
+    {
+      "id": "filing-SLTL.N0000-0",
+      "label": "Sri Lanka Telecom PLC · Interim Financial Statements for the Quarter ended 30th September 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/390_1794481476963.pdf",
+      "asOf": "2026-11-12",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-SLTL.N0000-1",
+      "label": "Sri Lanka Telecom PLC · Interim Financial Statements for the Quarter ended 30th June 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/390_1786935906532.pdf",
+      "asOf": "2026-08-17",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-SLTL.N0000-2",
+      "label": "Sri Lanka Telecom PLC · Interim Financial Statements for the Quarter ended 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/390_1778757795262.pdf",
+      "asOf": "2026-05-14",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-SLTL.N0000-3",
+      "label": "Sri Lanka Telecom PLC · Interim Financial Statements for the Quarter ended 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/390_1772183464759.pdf",
+      "asOf": "2026-02-27",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-SLTL.N0000-4",
+      "label": "Sri Lanka Telecom PLC · Annual Report as at 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/390_1779874742657.pdf",
+      "asOf": "2026-05-27",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-SLTL.N0000-5",
+      "label": "Sri Lanka Telecom PLC · Annual Report 2024",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/390_1748604171098.pdf",
+      "asOf": "2025-05-30",
+      "kind": "cse_company_filing"
     },
     {
       "id": "trade-HHL.N0000",
@@ -1021,11 +2213,95 @@
       "kind": "dated_company_price"
     },
     {
+      "id": "filing-HHL.N0000-0",
+      "label": "Hemas Holdings PLC · Interim Financial Statements for the Quarter ended 30th September 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/506_1793874792563.pdf",
+      "asOf": "2026-11-05",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-HHL.N0000-1",
+      "label": "Hemas Holdings PLC · Interim Financial Statements for the Quarter ended 30th June 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/506_1786012625482.pdf",
+      "asOf": "2026-08-06",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-HHL.N0000-2",
+      "label": "Hemas Holdings PLC · Interim Financial Statements for the Quarter ended 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/506_1779446148301.pdf",
+      "asOf": "2026-05-22",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-HHL.N0000-3",
+      "label": "Hemas Holdings PLC · Interim Financial Statements for the Quarter ended 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/506_1770111963186.pdf",
+      "asOf": "2026-02-03",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-HHL.N0000-4",
+      "label": "Hemas Holdings PLC · Annual Report as at 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/506_1779447790517.pdf",
+      "asOf": "2026-05-22",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-HHL.N0000-5",
+      "label": "Hemas Holdings PLC · Annual Report FY2024/25",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/506_1747909708310.pdf",
+      "asOf": "2025-05-22",
+      "kind": "cse_company_filing"
+    },
+    {
       "id": "trade-NDB.N0000",
       "label": "National Development Bank PLC · CSE last recorded trade",
       "url": "https://www.cse.lk/",
       "asOf": "2026-11-20",
       "kind": "dated_company_price"
+    },
+    {
+      "id": "filing-NDB.N0000-0",
+      "label": "National Development Bank PLC · Interim Financial Statements for the Quarter ended 30th September 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/386_1792582556061.09.2026.pdf",
+      "asOf": "2026-10-21",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-NDB.N0000-1",
+      "label": "National Development Bank PLC · Interim Financial Statements for the Quarter ended 30th June 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/386_1784717094209.pdf",
+      "asOf": "2026-07-22",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-NDB.N0000-2",
+      "label": "National Development Bank PLC · Interim Financial Statements for the Quarter ended 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/386_1777545810618.pdf",
+      "asOf": "2026-04-30",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-NDB.N0000-3",
+      "label": "National Development Bank PLC · Interim Financial Statements for the Quarter ended 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/386_1772014495130.pdf",
+      "asOf": "2026-02-25",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-NDB.N0000-4",
+      "label": "National Development Bank PLC · Annual Report as at 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/386_1772615356033.pdf",
+      "asOf": "2026-03-04",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-NDB.N0000-5",
+      "label": "National Development Bank PLC · Annual Report 2024",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/386_1741165351123.pdf",
+      "asOf": "2025-03-05",
+      "kind": "cse_company_filing"
     },
     {
       "id": "trade-TKYO.N0000",
@@ -1035,11 +2311,95 @@
       "kind": "dated_company_price"
     },
     {
+      "id": "filing-TKYO.N0000-0",
+      "label": "Tokyo Cement Company (Lanka) PLC · Interim Financial Statements for the Quarter ended 30th September 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/688_1793870119340.pdf",
+      "asOf": "2026-11-05",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-TKYO.N0000-1",
+      "label": "Tokyo Cement Company (Lanka) PLC · Interim Financial Statements for the Quarter ended 30th June 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/688_1785921923108.pdf",
+      "asOf": "2026-08-05",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-TKYO.N0000-2",
+      "label": "Tokyo Cement Company (Lanka) PLC · Interim Financial Statements for the Quarter ended 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/688_1779441326348.pdf",
+      "asOf": "2026-05-22",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-TKYO.N0000-3",
+      "label": "Tokyo Cement Company (Lanka) PLC · Interim Financial Statements for the Quarter ended 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/688_1770369389904.pdf",
+      "asOf": "2026-02-06",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-TKYO.N0000-4",
+      "label": "Tokyo Cement Company (Lanka) PLC · Annual Report as at 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/688_1783505383015.pdf",
+      "asOf": "2026-07-08",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-TKYO.N0000-5",
+      "label": "Tokyo Cement Company (Lanka) PLC · Annual Financial Report as of 31-03-2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/688_1752226651721.pdf",
+      "asOf": "2025-07-11",
+      "kind": "cse_company_filing"
+    },
+    {
       "id": "trade-LFIN.N0000",
       "label": "LB Finance PLC · CSE last recorded trade",
       "url": "https://www.cse.lk/",
       "asOf": "2026-11-20",
       "kind": "dated_company_price"
+    },
+    {
+      "id": "filing-LFIN.N0000-0",
+      "label": "LB Finance PLC · Interim Financial Statements for the Quarter ended 30th September 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/379_1792750936023.09.2026.pdf",
+      "asOf": "2026-10-23",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-LFIN.N0000-1",
+      "label": "LB Finance PLC · Interim Financial Statements for the Quarter ended 30th June 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/379_1784195933058.06.2026.pdf",
+      "asOf": "2026-07-16",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-LFIN.N0000-2",
+      "label": "LB Finance PLC · Interim Financial Statements for the Quarter ended 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/379_1779354268241.03.2026.pdf",
+      "asOf": "2026-05-21",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-LFIN.N0000-3",
+      "label": "LB Finance PLC · Interim Financial Statements for the Quarter ended 31st December 2025",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/379_1769050371420.12.2025.pdf",
+      "asOf": "2026-01-22",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-LFIN.N0000-4",
+      "label": "LB Finance PLC · Annual Report as at 31st March 2026",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/379_1780671814272.03.2026.pdf",
+      "asOf": "2026-06-05",
+      "kind": "cse_company_filing"
+    },
+    {
+      "id": "filing-LFIN.N0000-5",
+      "label": "LB Finance PLC · Annual Report 2024/25",
+      "url": "https://cdn.cse.lk/cmt/upload_report_file/379_1749137525707.pdf",
+      "asOf": "2025-06-05",
+      "kind": "cse_company_filing"
     }
   ],
   "quality": {
@@ -1047,7 +2407,7 @@
     "collector": "recent",
     "indexedCompanies": 16,
     "indicativeCompanyQuotes": 16,
-    "sourceLinks": 30,
+    "sourceLinks": 126,
     "knownGaps": [
       "Current company financial statements have not been verified",
       "No live brokerage integration"
@@ -1058,8 +2418,8 @@
     ],
     "verifiedCompanyQuotes": 16,
     "companyFacts": 16,
-    "companyFilings": 0,
-    "companyEvidenceAt": "2026-11-21T07:31:18.435Z"
+    "companyFilings": 16,
+    "companyEvidenceAt": "2026-11-21T07:31:59.562Z"
   },
   "ai": {
     "status": "not_configured",
