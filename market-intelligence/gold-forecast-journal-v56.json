@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-21T08:20:24.980Z",
+  "entries": [
+    {
+      "originDate": "2026-11-20",
+      "days": 3,
+      "sessions": 2,
+      "referenceUsdOz": 3515.4,
+      "lean": "range",
+      "historicalSampleRisePct": 51.389,
+      "modelEdgeDemonstrated": false,
+      "status": "pending"
+    },
+    {
+      "originDate": "2026-11-20",
+      "days": 7,
+      "sessions": 5,
+      "referenceUsdOz": 3515.4,
+      "lean": "rise",
+      "historicalSampleRisePct": 66.667,
+      "modelEdgeDemonstrated": false,
+      "status": "pending"
+    },
+    {
+      "originDate": "2026-11-20",
+      "days": 14,
+      "sessions": 10,
+      "referenceUsdOz": 3515.4,
+      "lean": "rise",
+      "historicalSampleRisePct": 59.722,
+      "modelEdgeDemonstrated": false,
+      "status": "pending"
+    },
+    {
+      "originDate": "2026-11-20",
+      "days": 30,
+      "sessions": 21,
+      "referenceUsdOz": 3515.4,
+      "lean": "range",
+      "historicalSampleRisePct": 55.556,
+      "modelEdgeDemonstrated": false,
+      "status": "pending"
+    },
+    {
+      "originDate": "2026-11-20",
+      "days": 1,
+      "sessions": 1,
+      "referenceUsdOz": 3515.4,
+      "lean": "range",
+      "historicalSampleRisePct": 52.778,
+      "modelEdgeDemonstrated": false,
+      "status": "pending"
+    },
+    {
+      "originDate": "2026-11-20",
+      "days": 90,
+      "sessions": 63,
+      "referenceUsdOz": 3515.4,
+      "lean": "rise",
+      "historicalSampleRisePct": 77.778,
+      "modelEdgeDemonstrated": false,
+      "status": "pending"
+    }
+  ],
+  "summary": {
+    "recorded": 6,
+    "pending": 6,
+    "resolved": 0,
+    "modelOrigin": "Forward-only daily journal. No historic outcomes are treated as predictions.",
+    "overallDirectionHitRate": null,
+    "byHorizon": [
+      {
+        "days": 1,
+        "resolved": 0,
+        "pending": 1,
+        "hitRate": null
+      },
+      {
+        "days": 3,
+        "resolved": 0,
+        "pending": 1,
+        "hitRate": null
+      },
+      {
+        "days": 7,
+        "resolved": 0,
+        "pending": 1,
+        "hitRate": null
+      },
+      {
+        "days": 14,
+        "resolved": 0,
+        "pending": 1,
+        "hitRate": null
+      },
+      {
+        "days": 30,
+        "resolved": 0,
+        "pending": 1,
+        "hitRate": null
+      },
+      {
+        "days": 90,
+        "resolved": 0,
+        "pending": 1,
+        "hitRate": null
+      }
+    ],
+    "warning": "Observed after-the-fact performance may be too sparse to establish predictive skill. Historical analogue backtests are separate."
+  },
+  "newCount": 6,
+  "resolvedCount": 0
+}
