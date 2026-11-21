@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "version": "5.4",
-  "generatedAt": "2026-11-21T08:01:36.620Z",
+  "generatedAt": "2026-11-21T08:18:55.712Z",
   "status": "observed",
   "dateSemantics": "Approximate calendar windows, never a guaranteed date",
   "current": {
     "usdOz": 3539,
-    "asOf": "2026-11-21T08:01:07Z",
+    "asOf": "2026-11-21T08:18:37Z",
     "source": "https://api.gold-api.com/price/XAU",
     "historical": false,
     "fx": {
@@ -792,6 +792,146 @@
       "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTWEXBGS&cosd=2026-05-01"
     }
   ],
+  "advanced": {
+    "version": "5.6",
+    "technical": {
+      "available": true,
+      "source": "https://xaus.com/api/v1/history",
+      "asOf": "2026-11-20",
+      "observations": 900,
+      "last": 3515.4,
+      "rsi14": 21.57,
+      "macd": {
+        "macd": -120.96,
+        "signal": -82.49,
+        "histogram": -38.48
+      },
+      "ma20": 3942.15,
+      "ma50": 4110.86,
+      "ma200": 4444.68,
+      "bands": {
+        "upper": 4254.3,
+        "middle": 3942.15,
+        "lower": 3630.01
+      },
+      "volatilityAnnualizedPct": 30.73,
+      "drawdown90Pct": -25.17,
+      "recent20High": 4114.5,
+      "recent20Low": 3515.4,
+      "regime": "downtrend",
+      "trend": "downtrend",
+      "signals": [
+        {
+          "name": "RSI (14)",
+          "value": 21.57,
+          "unit": "0–100",
+          "reading": "Oversold reading",
+          "note": "RSI extremes can persist. They are not reliable reversal dates."
+        },
+        {
+          "name": "MACD (12,26,9)",
+          "value": -38.48,
+          "unit": "USD/oz spread",
+          "reading": "Negative MACD gap",
+          "note": "MACD is based on the same closing-price history as momentum."
+        },
+        {
+          "name": "20-day band position",
+          "value": -18.36,
+          "unit": "% across bands",
+          "reading": "Below lower band",
+          "note": "Bands describe past dispersion, not guaranteed support or resistance."
+        },
+        {
+          "name": "90-day drawdown",
+          "value": -25.17,
+          "unit": "%",
+          "reading": "From 90-session peak",
+          "note": "Drawdown measures past decline, not the worst loss ahead."
+        }
+      ],
+      "warning": "These indicators reuse overlapping gold prices and are correlated; do not count them as independent predictive evidence."
+    },
+    "managedMoney": {
+      "available": true,
+      "asOf": "2026-11-17",
+      "observations": 78,
+      "managedMoneyNetContracts": 102942,
+      "managedMoneyLong": 121994,
+      "managedMoneyShort": 19052,
+      "previousNetContracts": 112341,
+      "weeklyChangeContracts": -9399,
+      "netPctOpenInterest": 25.24,
+      "positionPercentile52": 34.62,
+      "source": "https://publicreporting.cftc.gov/Commitments-of-Traders/Disaggregated-Futures-Only/72hh-3qpy",
+      "interpretation": "CFTC futures-only managed-money positioning; positions are weekly delayed (Tuesday observations, later published). Positioning alone has no reliable directional implication."
+    },
+    "extraHorizons": [
+      {
+        "days": 1,
+        "sessions": 1,
+        "direction": "range",
+        "lean": "Mixed historical cases",
+        "probUp": 52.778,
+        "similarCases": 72,
+        "scenarios": {
+          "lowPct": -2.196,
+          "midPct": 0.163,
+          "highPct": 2.661
+        },
+        "validation": {
+          "count": 65,
+          "hitRate": 53.846,
+          "baseRate": 50.769,
+          "brier": 0.254,
+          "baseBrier": 0.25,
+          "edgeDemonstrated": false
+        },
+        "confidence": "not_proven",
+        "warning": "Historical sample frequency is not a calibrated future probability or exact price/date."
+      },
+      {
+        "days": 90,
+        "sessions": 63,
+        "direction": "rise",
+        "lean": "Rising historical bias",
+        "probUp": 77.778,
+        "similarCases": 72,
+        "scenarios": {
+          "lowPct": -9.981,
+          "midPct": 5.482,
+          "highPct": 15.96
+        },
+        "validation": {
+          "count": 34,
+          "hitRate": 55.882,
+          "baseRate": 55.882,
+          "brier": 0.399,
+          "baseBrier": 0.247,
+          "edgeDemonstrated": false
+        },
+        "confidence": "not_proven",
+        "warning": "Historical sample frequency is not a calibrated future probability or exact price/date."
+      }
+    ],
+    "catalysts": [
+      {
+        "level": "watch",
+        "title": "RSI below 30",
+        "message": "Historically oversold oscillator reading; a rebound is possible but not established.",
+        "asOf": "2026-11-20",
+        "source": "https://xaus.com/api/v1/history"
+      },
+      {
+        "level": "watch",
+        "title": "Downtrend confirmed by price-based measures",
+        "message": "MACD and moving averages are correlated measures of the same historical series.",
+        "asOf": "2026-11-20",
+        "source": "https://xaus.com/api/v1/history"
+      }
+    ],
+    "validationNote": "CFTC reports are weekly and lagged. All indicators and historical analogues are observations, not an independently proven prediction."
+  },
   "deepResearch": {
     "kind": "evidence_based_research_not_live_prediction",
     "classification": "downward_pressure",
@@ -844,7 +984,7 @@
         "pressure": "up",
         "weight": 0.55,
         "explanation": "Intraday spot versus the most recent dated close, which may reflect different quote conventions.",
-        "asOf": "2026-11-21T08:01:07Z",
+        "asOf": "2026-11-21T08:18:37Z",
         "source": "https://api.gold-api.com/price/XAU",
         "rawSign": 1
       }
@@ -879,7 +1019,7 @@
         "title": "Latest spot vs last historical close",
         "evidence": "+0.671%",
         "explanation": "Intraday spot versus the most recent dated close, which may reflect different quote conventions.",
-        "asOf": "2026-11-21T08:01:07Z",
+        "asOf": "2026-11-21T08:18:37Z",
         "source": "https://api.gold-api.com/price/XAU"
       },
       {
@@ -966,10 +1106,14 @@
       "A 3/7/14/30-day window is a rough calendar period, not a precise event date.",
       "SAR/LKR outcomes also depend on currency rates; spot and local jewellery prices can differ."
     ],
-    "evaluatedAt": "2026-11-21T08:01:36.620Z"
+    "evaluatedAt": "2026-11-21T08:18:55.712Z"
   },
   "overallCaution": "Forecasts are statistical scenarios based on past observations, not predictions of an exact price or date. If model calibration does not outperform a historical baseline, no predictive edge is claimed. FX changes can alter SAR and LKR outcomes.",
   "sources": [
+    {
+      "name": "CFTC weekly futures positioning",
+      "url": "https://publicreporting.cftc.gov/Commitments-of-Traders/Disaggregated-Futures-Only/72hh-3qpy"
+    },
     {
       "name": "XAUS daily history",
       "url": "https://xaus.com/api/v1/history"
