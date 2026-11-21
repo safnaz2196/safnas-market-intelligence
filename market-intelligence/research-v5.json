@@ -1,8 +1,8 @@
 {
   "schemaVersion": 5,
   "engineVersion": "5.3.0",
-  "generatedAt": "2026-11-21T07:35:13.282Z",
-  "sourceSnapshotAt": "2026-11-21T07:27:27.608Z",
+  "generatedAt": "2026-11-21T11:08:07.101Z",
+  "sourceSnapshotAt": "2026-11-21T10:44:31.835Z",
   "status": "research_available",
   "briefing": {
     "title": "Sri Lanka · Autonomous Market Brief",
@@ -27,14 +27,23 @@
         ]
       },
       {
+        "id": "cse-turnover",
+        "tone": "info",
+        "title": "Verified CSE daily market turnover",
+        "detail": "LKR 2,330,340,350 traded in the recorded session on 2026-11-20. This measures market activity, not market direction.",
+        "evidenceIds": [
+          "cse-turnover"
+        ]
+      },
+      {
         "id": "news-topics",
         "tone": "info",
         "title": "4 headlines matched economic research topics",
         "detail": "Topic matching identifies subjects to investigate; it cannot confirm causation or returns.",
         "evidenceIds": [
-          "news-3",
-          "news-4",
-          "news-5"
+          "news-2",
+          "news-5",
+          "news-6"
         ]
       },
       {
@@ -66,11 +75,40 @@
       "audit20": true,
       "journalResolved": 0,
       "notice": "Backtesting does not establish reliable future prediction."
+    },
+    "turnover": {
+      "valueLKR": 2330340350,
+      "asOf": "2026-11-20",
+      "status": "dated_observation",
+      "sourceURL": "https://www.cse.lk/api/dailyMarketSummery",
+      "sharesTraded": 121790416,
+      "tradeCount": 14416,
+      "notice": "CSE daily market equity turnover, recorded at the stated trade date. Not live streaming."
     }
   },
   "news": [
     {
       "id": "news-1",
+      "title": "Digital microlending in ‘regulatory black hole’, Sri Lanka think tank finds",
+      "url": "https://economynext.com/digital-microlending-in-regulatory-black-hole-sri-lanka-think-tank-finds-290827/",
+      "date": "2026-11-21",
+      "publisher": "EconomyNext",
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+    },
+    {
+      "id": "news-2",
+      "title": "Sri Lanka central bank to get marketable bonds next year to mop up liquidity",
+      "url": "https://economynext.com/sri-lanka-central-bank-to-get-marketable-bonds-next-year-to-mop-up-liquidity-290861/",
+      "date": "2026-11-21",
+      "publisher": "EconomyNext",
+      "topics": [
+        "Interest rates"
+      ],
+      "impactNote": "Interest rates can affect bank margins, borrowing costs and demand; company effects are unverified."
+    },
+    {
+      "id": "news-3",
       "title": "Sri Lanka Supreme Court clears Prevention of Organized Crime Bill with changes",
       "url": "https://economynext.com/sri-lanka-supreme-court-clears-prevention-of-organized-crime-bill-with-changes-290866/",
       "date": "2026-11-21",
@@ -79,7 +117,7 @@
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
-      "id": "news-2",
+      "id": "news-4",
       "title": "Deloitte Sri Lanka examines Budget 2027",
       "url": "https://economynext.com/deloitte-sri-lanka-examines-budget-2027-290831/",
       "date": "2026-11-21",
@@ -88,7 +126,7 @@
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
-      "id": "news-3",
+      "id": "news-5",
       "title": "Sri Lanka central bank has no credit target, backs borrowing within repayment capacity: Governor",
       "url": "https://economynext.com/sri-lanka-central-bank-has-no-credit-target-backs-borrowing-within-repayment-capacity-governor-290821/",
       "date": "2026-11-20",
@@ -99,7 +137,7 @@
       "impactNote": "Interest rates can affect bank margins, borrowing costs and demand; company effects are unverified."
     },
     {
-      "id": "news-4",
+      "id": "news-6",
       "title": "Sri Lanka stocks close down 0.80-pct after rate hike",
       "url": "https://economynext.com/sri-lanka-stocks-close-down-0-80-pct-after-rate-hike-290851/",
       "date": "2026-11-20",
@@ -110,7 +148,7 @@
       "impactNote": "Interest rates can affect bank margins, borrowing costs and demand; company effects are unverified."
     },
     {
-      "id": "news-5",
+      "id": "news-7",
       "title": "Sri Lanka rupee closes at 332.60/65 to US dollar spot, bond yields rise",
       "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-60-65-to-us-dollar-spot-bond-yields-rise-290850/",
       "date": "2026-11-20",
@@ -119,26 +157,6 @@
         "Currency"
       ],
       "impactNote": "Currency changes can affect importers, exporters and foreign-currency debts."
-    },
-    {
-      "id": "news-6",
-      "title": "Sri Lanka market rates rose after May hike: Central bank",
-      "url": "https://economynext.com/sri-lanka-market-rates-rose-after-may-hike-central-bank-290798/",
-      "date": "2026-11-20",
-      "publisher": "EconomyNext",
-      "topics": [
-        "Interest rates"
-      ],
-      "impactNote": "Interest rates can affect bank margins, borrowing costs and demand; company effects are unverified."
-    },
-    {
-      "id": "news-7",
-      "title": "LankaPay reports security incident at LankaSign registration portal",
-      "url": "https://economynext.com/lankapay-reports-security-incident-at-lankasign-registration-portal-290783/",
-      "date": "2026-11-20",
-      "publisher": "EconomyNext",
-      "topics": [],
-      "impactNote": "Relevant headline recorded. Financial impact is not verified."
     }
   ],
   "companies": [
@@ -151,7 +169,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:35:01.955Z",
+        "retrievedAt": "2026-11-21T11:07:59.349Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 49,
@@ -177,7 +195,7 @@
         "sharesIssued": 9200334994,
         "marketCapLKR": 441616079712,
         "betaASPI": 1.4018782,
-        "retrievedAt": "2026-11-21T07:35:04.755Z",
+        "retrievedAt": "2026-11-21T11:08:01.191Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -234,7 +252,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:35:01.955Z",
+        "retrievedAt": "2026-11-21T11:07:59.349Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 215.25,
@@ -260,7 +278,7 @@
         "sharesIssued": 1557648229,
         "marketCapLKR": 333336721006,
         "betaASPI": 0.79103035,
-        "retrievedAt": "2026-11-21T07:35:05.065Z",
+        "retrievedAt": "2026-11-21T11:08:01.364Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -317,7 +335,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:35:01.955Z",
+        "retrievedAt": "2026-11-21T11:07:59.349Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 18.9,
@@ -343,7 +361,7 @@
         "sharesIssued": 17741405405,
         "marketCapLKR": 331764281073.5,
         "betaASPI": 1.0031595,
-        "retrievedAt": "2026-11-21T07:35:05.301Z",
+        "retrievedAt": "2026-11-21T11:08:01.538Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -400,7 +418,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:35:01.955Z",
+        "retrievedAt": "2026-11-21T11:07:59.349Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 397,
@@ -426,7 +444,7 @@
         "sharesIssued": 460218180,
         "marketCapLKR": 181210908375,
         "betaASPI": 0.5533614,
-        "retrievedAt": "2026-11-21T07:35:05.631Z",
+        "retrievedAt": "2026-11-21T11:08:01.711Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -483,7 +501,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:35:01.955Z",
+        "retrievedAt": "2026-11-21T11:07:59.349Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 150,
@@ -509,7 +527,7 @@
         "sharesIssued": 1172700760,
         "marketCapLKR": 173852887670,
         "betaASPI": 0.6757065,
-        "retrievedAt": "2026-11-21T07:35:05.951Z",
+        "retrievedAt": "2026-11-21T11:08:01.894Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -566,7 +584,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:35:01.955Z",
+        "retrievedAt": "2026-11-21T11:07:59.349Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 232.25,
@@ -592,7 +610,7 @@
         "sharesIssued": 795000000,
         "marketCapLKR": 183048750000,
         "betaASPI": 0.84930664,
-        "retrievedAt": "2026-11-21T07:35:06.265Z",
+        "retrievedAt": "2026-11-21T11:08:02.073Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -649,7 +667,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:35:01.955Z",
+        "retrievedAt": "2026-11-21T11:07:59.349Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 405.75,
@@ -675,7 +693,7 @@
         "sharesIssued": 475200000,
         "marketCapLKR": 192931200000,
         "betaASPI": 0.8594875,
-        "retrievedAt": "2026-11-21T07:35:06.570Z",
+        "retrievedAt": "2026-11-21T11:08:02.380Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -732,7 +750,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:35:01.955Z",
+        "retrievedAt": "2026-11-21T11:07:59.349Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 1843.75,
@@ -758,7 +776,7 @@
         "sharesIssued": 187323751,
         "marketCapLKR": 345518658719.5,
         "betaASPI": 0.20484465,
-        "retrievedAt": "2026-11-21T07:35:06.897Z",
+        "retrievedAt": "2026-11-21T11:08:02.554Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -815,7 +833,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:35:01.955Z",
+        "retrievedAt": "2026-11-21T11:07:59.349Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 58.6,
@@ -841,7 +859,7 @@
         "sharesIssued": 4600000000,
         "marketCapLKR": 268180000000,
         "betaASPI": 0.7319642,
-        "retrievedAt": "2026-11-21T07:35:07.247Z",
+        "retrievedAt": "2026-11-21T11:08:02.724Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -898,7 +916,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:35:01.955Z",
+        "retrievedAt": "2026-11-21T11:07:59.349Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 193,
@@ -924,7 +942,7 @@
         "sharesIssued": 1165397072,
         "marketCapLKR": 223756237824,
         "betaASPI": 0.7826927,
-        "retrievedAt": "2026-11-21T07:35:07.547Z",
+        "retrievedAt": "2026-11-21T11:08:02.898Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -981,7 +999,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:35:01.955Z",
+        "retrievedAt": "2026-11-21T11:07:59.349Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 680.25,
@@ -1007,7 +1025,7 @@
         "sharesIssued": 257677731,
         "marketCapLKR": 175285276512.75,
         "betaASPI": 0.43022645,
-        "retrievedAt": "2026-11-21T07:35:07.849Z",
+        "retrievedAt": "2026-11-21T11:08:03.082Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -1064,7 +1082,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:35:01.955Z",
+        "retrievedAt": "2026-11-21T11:07:59.349Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 93.5,
@@ -1093,7 +1111,7 @@
         "sharesIssued": 1804860000,
         "marketCapLKR": 163520316000,
         "betaASPI": 1.1619273,
-        "retrievedAt": "2026-11-21T07:35:08.147Z",
+        "retrievedAt": "2026-11-21T11:08:03.269Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -1150,7 +1168,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:35:01.955Z",
+        "retrievedAt": "2026-11-21T11:07:59.349Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 32.3,
@@ -1176,7 +1194,7 @@
         "sharesIssued": 2995985015,
         "marketCapLKR": 95871520480,
         "betaASPI": 1.1194488,
-        "retrievedAt": "2026-11-21T07:35:08.381Z",
+        "retrievedAt": "2026-11-21T11:08:03.440Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -1233,7 +1251,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:35:01.955Z",
+        "retrievedAt": "2026-11-21T11:07:59.349Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 112.75,
@@ -1259,7 +1277,7 @@
         "sharesIssued": 432197834,
         "marketCapLKR": 48082009032.5,
         "betaASPI": 0.8006846,
-        "retrievedAt": "2026-11-21T07:35:08.683Z",
+        "retrievedAt": "2026-11-21T11:08:03.728Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -1316,7 +1334,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:35:01.955Z",
+        "retrievedAt": "2026-11-21T11:07:59.349Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 83,
@@ -1342,7 +1360,7 @@
         "sharesIssued": 294030000,
         "marketCapLKR": 24404490000,
         "betaASPI": 0.94540983,
-        "retrievedAt": "2026-11-21T07:35:08.984Z",
+        "retrievedAt": "2026-11-21T11:08:03.999Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -1399,7 +1417,7 @@
         "currency": "LKR",
         "asOf": "2026-11-20",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-21T07:35:01.955Z",
+        "retrievedAt": "2026-11-21T11:07:59.349Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 154,
@@ -1425,7 +1443,7 @@
         "sharesIssued": 554057136,
         "marketCapLKR": 85324798944,
         "betaASPI": 0.8785326,
-        "retrievedAt": "2026-11-21T07:35:09.282Z",
+        "retrievedAt": "2026-11-21T11:08:04.172Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -1527,53 +1545,67 @@
       "kind": "dated_market_observation"
     },
     {
+      "id": "cse-turnover",
+      "label": "Official daily CSE market turnover · LKR",
+      "url": "https://www.cse.lk/api/dailyMarketSummery",
+      "asOf": "2026-11-20",
+      "kind": "dated_market_turnover"
+    },
+    {
       "id": "news-1",
+      "label": "Publisher headline · Digital microlending in ‘regulatory black hole’, Sri Lanka think tank finds",
+      "url": "https://economynext.com/digital-microlending-in-regulatory-black-hole-sri-lanka-think-tank-finds-290827/",
+      "asOf": "2026-11-21",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-2",
+      "label": "Publisher headline · Sri Lanka central bank to get marketable bonds next year to mop up liquidity",
+      "url": "https://economynext.com/sri-lanka-central-bank-to-get-marketable-bonds-next-year-to-mop-up-liquidity-290861/",
+      "asOf": "2026-11-21",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-3",
       "label": "Publisher headline · Sri Lanka Supreme Court clears Prevention of Organized Crime Bill with changes",
       "url": "https://economynext.com/sri-lanka-supreme-court-clears-prevention-of-organized-crime-bill-with-changes-290866/",
       "asOf": "2026-11-21",
       "kind": "dated_headline"
     },
     {
-      "id": "news-2",
+      "id": "news-4",
       "label": "Publisher headline · Deloitte Sri Lanka examines Budget 2027",
       "url": "https://economynext.com/deloitte-sri-lanka-examines-budget-2027-290831/",
       "asOf": "2026-11-21",
       "kind": "dated_headline"
     },
     {
-      "id": "news-3",
+      "id": "news-5",
       "label": "Publisher headline · Sri Lanka central bank has no credit target, backs borrowing within repayment capacity: Go",
       "url": "https://economynext.com/sri-lanka-central-bank-has-no-credit-target-backs-borrowing-within-repayment-capacity-governor-290821/",
       "asOf": "2026-11-20",
       "kind": "dated_headline"
     },
     {
-      "id": "news-4",
+      "id": "news-6",
       "label": "Publisher headline · Sri Lanka stocks close down 0.80-pct after rate hike",
       "url": "https://economynext.com/sri-lanka-stocks-close-down-0-80-pct-after-rate-hike-290851/",
       "asOf": "2026-11-20",
       "kind": "dated_headline"
     },
     {
-      "id": "news-5",
+      "id": "news-7",
       "label": "Publisher headline · Sri Lanka rupee closes at 332.60/65 to US dollar spot, bond yields rise",
       "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-60-65-to-us-dollar-spot-bond-yields-rise-290850/",
       "asOf": "2026-11-20",
       "kind": "dated_headline"
     },
     {
-      "id": "news-6",
-      "label": "Publisher headline · Sri Lanka market rates rose after May hike: Central bank",
-      "url": "https://economynext.com/sri-lanka-market-rates-rose-after-may-hike-central-bank-290798/",
-      "asOf": "2026-11-20",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-7",
-      "label": "Publisher headline · LankaPay reports security incident at LankaSign registration portal",
-      "url": "https://economynext.com/lankapay-reports-security-incident-at-lankasign-registration-portal-290783/",
-      "asOf": "2026-11-20",
-      "kind": "dated_headline"
+      "id": "cse-shares",
+      "label": "Undated CSE share quote snapshots",
+      "url": "https://www.cse.lk/",
+      "asOf": null,
+      "kind": "undated_quote_snapshot"
     },
     {
       "id": "macro-gdpgrowth",
@@ -2407,18 +2439,16 @@
     "collector": "recent",
     "indexedCompanies": 16,
     "indicativeCompanyQuotes": 16,
-    "sourceLinks": 126,
+    "sourceLinks": 128,
     "knownGaps": [
       "Current company financial statements have not been verified",
       "No live brokerage integration"
     ],
-    "sourceWarnings": [
-      "turnover: Daily turnover not reported"
-    ],
+    "sourceWarnings": [],
     "verifiedCompanyQuotes": 16,
     "companyFacts": 16,
     "companyFilings": 16,
-    "companyEvidenceAt": "2026-11-21T07:35:01.955Z"
+    "companyEvidenceAt": "2026-11-21T11:07:59.349Z"
   },
   "ai": {
     "status": "not_configured",
