@@ -1,5 +1,10 @@
 name: Safnas Finance Gold Alerts — Free iOS Push
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'gold-push-worker/check.cjs'
+      - '.github/workflows/gold-push-alerts.yml'
   schedule:
     # Best-effort every 15 min; GitHub may delay/skip some scheduled runs.
     - cron: '7,22,37,52 * * * *'
