@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "version": "5.4",
-  "generatedAt": "2026-11-21T08:01:26.570Z",
+  "generatedAt": "2026-11-21T08:01:36.620Z",
   "status": "observed",
   "dateSemantics": "Approximate calendar windows, never a guaranteed date",
   "current": {
@@ -966,7 +966,7 @@
       "A 3/7/14/30-day window is a rough calendar period, not a precise event date.",
       "SAR/LKR outcomes also depend on currency rates; spot and local jewellery prices can differ."
     ],
-    "evaluatedAt": "2026-11-21T08:01:26.570Z"
+    "evaluatedAt": "2026-11-21T08:01:36.620Z"
   },
   "overallCaution": "Forecasts are statistical scenarios based on past observations, not predictions of an exact price or date. If model calibration does not outperform a historical baseline, no predictive edge is claimed. FX changes can alter SAR and LKR outcomes.",
   "sources": [
