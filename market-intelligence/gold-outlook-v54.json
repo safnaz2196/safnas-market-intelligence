@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "version": "5.4",
-  "generatedAt": "2026-11-21T07:47:59.246Z",
+  "generatedAt": "2026-11-21T08:01:05.113Z",
   "status": "observed",
   "dateSemantics": "Approximate calendar windows, never a guaranteed date",
   "current": {
     "usdOz": 3539,
-    "asOf": "2026-11-21T07:47:37Z",
+    "asOf": "2026-11-21T08:00:37Z",
     "source": "https://api.gold-api.com/price/XAU",
     "historical": false,
     "fx": {
@@ -792,6 +792,182 @@
       "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTWEXBGS&cosd=2026-05-01"
     }
   ],
+  "deepResearch": {
+    "kind": "evidence_based_research_not_live_prediction",
+    "classification": "downward_pressure",
+    "bullishDrivers": 1,
+    "bearishDrivers": 3,
+    "sourceSignals": [
+      {
+        "key": "Five-session momentum",
+        "measurement": "-9.54%",
+        "pressure": "down",
+        "weight": 1,
+        "explanation": "Recent gold momentum can persist or reverse; this is not a future return estimate.",
+        "asOf": "2026-11-20",
+        "source": "https://xaus.com/api/v1/history",
+        "rawSign": -1
+      },
+      {
+        "key": "20-session trend",
+        "measurement": "-12.29%",
+        "pressure": "down",
+        "weight": 0.8,
+        "explanation": "A longer recent trend is context, not a buy/sell instruction.",
+        "asOf": "2026-11-20",
+        "source": "https://xaus.com/api/v1/history",
+        "rawSign": -1
+      },
+      {
+        "key": "U.S. real yields",
+        "measurement": "+0.02 percentage points in 5 observations",
+        "pressure": "neutral",
+        "weight": 1,
+        "explanation": "Higher real yields can increase the opportunity cost of holding non-yielding gold; not a mechanical price rule.",
+        "asOf": "2026-11-19",
+        "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DFII10&cosd=2026-05-01",
+        "rawSign": 0
+      },
+      {
+        "key": "Broad U.S. dollar",
+        "measurement": "+0.77 index points in 5 observations",
+        "pressure": "down",
+        "weight": 0.8,
+        "explanation": "A firmer dollar often pressures USD gold; gold and dollar strength may also coexist.",
+        "asOf": "2026-11-13",
+        "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTWEXBGS&cosd=2026-05-01",
+        "rawSign": -1
+      },
+      {
+        "key": "Latest spot vs last historical close",
+        "measurement": "+0.671%",
+        "pressure": "up",
+        "weight": 0.55,
+        "explanation": "Intraday spot versus the most recent dated close, which may reflect different quote conventions.",
+        "asOf": "2026-11-21T08:00:37Z",
+        "source": "https://api.gold-api.com/price/XAU",
+        "rawSign": 1
+      }
+    ],
+    "driverReasons": [
+      {
+        "direction": "down",
+        "title": "Five-session momentum",
+        "evidence": "-9.54%",
+        "explanation": "Recent gold momentum can persist or reverse; this is not a future return estimate.",
+        "asOf": "2026-11-20",
+        "source": "https://xaus.com/api/v1/history"
+      },
+      {
+        "direction": "down",
+        "title": "20-session trend",
+        "evidence": "-12.29%",
+        "explanation": "A longer recent trend is context, not a buy/sell instruction.",
+        "asOf": "2026-11-20",
+        "source": "https://xaus.com/api/v1/history"
+      },
+      {
+        "direction": "down",
+        "title": "Broad U.S. dollar",
+        "evidence": "+0.77 index points in 5 observations",
+        "explanation": "A firmer dollar often pressures USD gold; gold and dollar strength may also coexist.",
+        "asOf": "2026-11-13",
+        "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTWEXBGS&cosd=2026-05-01"
+      },
+      {
+        "direction": "up",
+        "title": "Latest spot vs last historical close",
+        "evidence": "+0.671%",
+        "explanation": "Intraday spot versus the most recent dated close, which may reflect different quote conventions.",
+        "asOf": "2026-11-21T08:00:37Z",
+        "source": "https://api.gold-api.com/price/XAU"
+      },
+      {
+        "direction": "risk",
+        "title": "High historical volatility",
+        "evidence": "30.735% annualized (20 sessions)",
+        "explanation": "Outcomes may swing widely in either direction. Do not interpret scenario percentiles as guaranteed limits.",
+        "asOf": "2026-11-20",
+        "source": "https://xaus.com/api/v1/history"
+      }
+    ],
+    "levels": {
+      "lastHistoryClose": 3515.4,
+      "movingAverage20": 3942.155,
+      "movingAverage50": 4110.862,
+      "prior20High": 4114.5,
+      "prior20Low": 3515.4,
+      "spotVsLastHistoryClosePct": 0.671
+    },
+    "volatilityRisk": "high",
+    "modelAudit": {
+      "reliableForecastProven": false,
+      "confidence": "unproven_predictive_edge",
+      "byHorizon": [
+        {
+          "days": 3,
+          "checks": 64,
+          "modelBrier": 0.264,
+          "baselineBrier": 0.246,
+          "observedHitRatePct": 43.75,
+          "edgeDemonstrated": false
+        },
+        {
+          "days": 7,
+          "checks": 63,
+          "modelBrier": 0.282,
+          "baselineBrier": 0.249,
+          "observedHitRatePct": 49.206,
+          "edgeDemonstrated": false
+        },
+        {
+          "days": 14,
+          "checks": 60,
+          "modelBrier": 0.321,
+          "baselineBrier": 0.21,
+          "observedHitRatePct": 31.667,
+          "edgeDemonstrated": false
+        },
+        {
+          "days": 30,
+          "checks": 55,
+          "modelBrier": 0.419,
+          "baselineBrier": 0.198,
+          "observedHitRatePct": 25.455,
+          "edgeDemonstrated": false
+        }
+      ]
+    },
+    "watchFor": [
+      {
+        "event": "Five-session momentum changes sign",
+        "detail": "May alter short-term pressure, but is not itself a price forecast.",
+        "source": "https://xaus.com/api/v1/history"
+      },
+      {
+        "event": "Real yields shift",
+        "detail": "Rising yields often challenge gold, while falling yields can be supportive.",
+        "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DFII10&cosd=2026-05-01"
+      },
+      {
+        "event": "Broad dollar trend changes",
+        "detail": "Currency moves can counter or reinforce changes in USD gold prices.",
+        "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTWEXBGS&cosd=2026-05-01"
+      },
+      {
+        "event": "Volatility remains elevated",
+        "detail": "Historical scenario ranges can widen when realized volatility increases.",
+        "source": "https://xaus.com/api/v1/history"
+      }
+    ],
+    "reliabilityNotes": [
+      "None of the tested horizons demonstrated a reliable advantage over its simple historical benchmark.",
+      "Directional pressure scores are heuristic explanations, NOT calibrated probabilities.",
+      "A 3/7/14/30-day window is a rough calendar period, not a precise event date.",
+      "SAR/LKR outcomes also depend on currency rates; spot and local jewellery prices can differ."
+    ],
+    "evaluatedAt": "2026-11-21T08:01:05.113Z"
+  },
   "overallCaution": "Forecasts are statistical scenarios based on past observations, not predictions of an exact price or date. If model calibration does not outperform a historical baseline, no predictive edge is claimed. FX changes can alter SAR and LKR outcomes.",
   "sources": [
     {
