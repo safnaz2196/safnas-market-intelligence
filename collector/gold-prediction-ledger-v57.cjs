@@ -111,7 +111,11 @@ function updateLedger({previous=null,legacy=null,history=[],horizons=[],now=new 
  for(const e of entries){
   if(e.status==='resolved')continue;
   const index=byDate.get(e.originDate);
-  if(index===undefined||rows[index].usdOz!==e.referenceUsdOz||index+e.sessions>=rows.length)continue;
+  if(index===undefined||rows[index].usdOz!==e.referenceUsdOz){e.remainingCloses=null;continue;}
+  const observedAfter=rows.length-1-index;
+  e.observedCloses=Math.max(0,observedAfter);
+  e.remainingCloses=Math.max(0,e.sessions-observedAfter);
+  if(index+e.sessions>=rows.length)continue;
   const actual=rows[index+e.sessions];
   // Protection against creating "predictions" after a target closing date.
   if(Number.isFinite(Date.parse(e.createdAt))&&
@@ -152,10 +156,30 @@ function updateLedger({previous=null,legacy=null,history=[],horizons=[],now=new 
     days:h.days,sessions:h.sessions,referenceUsdOz:current.usdOz,predictedDirection:prediction,
     rawDirection:h.direction,rawPositivePct:raw,adaptedPositivePct:corrected,
     learningApplied:corrected!==null,modelVersion,modelEdgeDemonstrated:!!h.validation?.edgeDemonstrated,
-    scenario,status:'pending',sourceUrl,
+    scenario,
+    frozenPriceRange:scenario?{
+      lowUsdOz:rounded(current.usdOz*(1+scenario.lowPct/100),2),
+      midUsdOz:rounded(current.usdOz*(1+scenario.midPct/100),2),
+      highUsdOz:rounded(current.usdOz*(1+scenario.highPct/100),2)
+    }:null,
+    evaluationRule:prediction==='rise'?'Closing price above starting price':prediction==='fall'?'Closing price below starting price':'Closing price within ±0.5% of starting price',
+    rangePassLowUsdOz:prediction==='range'?rounded(current.usdOz*.995,2):null,
+    rangePassHighUsdOz:prediction==='range'?rounded(current.usdOz*1.005,2):null,
+    observedCloses:0,remainingCloses:h.sessions,
+    status:'pending',sourceUrl,
     evidence:{historyAsOf:current.date,historyCount:rows.length},
-    note:'Frozen before the next required dated closing observations.'};
+    note:'Forecast was frozen before the next required dated closing observations. Historical scenario bounds are descriptive, not guaranteed limits.'};
    entry.snapshotHash=digest(entry);entries.push(entry);seen.add(hKey(entry));newlyRecorded++;
+  }
+ }
+ // Legacy v5.6 observations did not preserve numeric scenario bounds. Never infer old ranges
+ // from later reports. Show the publicly declared neutral-test band only as a rule.
+ for(const e of entries) {
+  if(e.status==='resolved'){e.remainingCloses=0;continue;}
+  const idx=byDate.get(e.originDate);
+  if(idx!==undefined&&rows[idx].usdOz===e.referenceUsdOz) {
+   e.observedCloses=Math.max(0,rows.length-1-idx);
+   e.remainingCloses=Math.max(0,e.sessions-e.observedCloses);
   }
  }
  entries.sort((a,b)=>a.originDate.localeCompare(b.originDate)||a.days-b.days);
