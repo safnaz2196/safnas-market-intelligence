@@ -12,6 +12,7 @@ const SOURCES={
  stocks:'https://www.cse.lk/api/tradeSummary',
  sl20:'https://www.cse.lk/api/snpData',
  marketSummary:'https://www.cse.lk/api/marketSummery',
+ dailyMarketSummary:'https://www.cse.lk/api/dailyMarketSummery',
  news:'https://economynext.com/feed/'
 };
 async function json(url,options={}){
@@ -56,7 +57,48 @@ async function fetchAllStock(){
  return parseCSETradeSummary(raw);
 }
 async function fetchSL20(){const raw=await json(SOURCES.sl20,{method:'POST',body:new FormData()});const v=Number(raw?.value??raw?.data?.value);if(!Number.isFinite(v)||v<=0)throw Error('S&P SL20 quote response unavailable');return {value:v,changePercent:Number.isFinite(Number(raw?.percentage))?Number(raw.percentage):null,retrievedAt:new Date().toISOString(),sourceURL:SOURCES.sl20,note:'Retrieved snapshot; source may not include a reliable trade date.'};}
-async function fetchSummary(){const raw=await json(SOURCES.marketSummary,{method:'POST',body:new FormData()});const obj=Array.isArray(raw)?raw[0]:raw;const turnover=Number(obj?.equityTurnover??obj?.marketTurnover??obj?.turnover);if(!Number.isFinite(turnover)||turnover<=0)throw Error('Daily turnover not reported');return {turnover,retrievedAt:new Date().toISOString(),sourceURL:SOURCES.marketSummary,note:'Retrieved market summary; check official CSE for publication date.'};}
+// CSE uses a misspelled API name. The live endpoint calls LKR turnover
+// "tradeVolume" (NOT shareVolume). The dated EOD endpoint calls it
+// "equityTurnover" / "marketTurnover" and returns nested arrays.
+function parseOfficialTurnover(raw,endpoint,now=new Date()){
+ const items=Array.isArray(raw)?raw.flat(3):[raw];
+ const rows=[];
+ for(const obj of items){
+  if(!obj||typeof obj!=='object'||Array.isArray(obj))continue;
+  const number=Number(obj.equityTurnover??obj.marketTurnover??
+    (endpoint===SOURCES.marketSummary?obj.tradeVolume:null));
+  if(!Number.isFinite(number)||number<=0||number>1e14)continue;
+  const timestamp=Number(obj.tradeDate);
+  if(!Number.isFinite(timestamp)||timestamp<1483228800000||timestamp>now.getTime()+3600000)continue;
+  const localParts=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Colombo',
+    year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(timestamp));
+  const part=k=>localParts.find(p=>p.type===k)?.value;
+  const asOf=part('year')+'-'+part('month')+'-'+part('day');
+  if(asOf>now.toISOString().slice(0,10))continue;
+  const shares=Number(obj.volumeOfTurnOverNumber??obj.shareVolume);
+  const trades=Number(obj.marketTrades??obj.trades);
+  rows.push({turnover:number,asOf,currency:'LKR',
+    sharesTraded:Number.isFinite(shares)&&shares>=0?shares:null,
+    trades:Number.isFinite(trades)&&trades>=0?trades:null,
+    marketScope:'CSE market',retrievedAt:now.toISOString(),sourceURL:endpoint,
+    verifiedTradeDate:true,
+    note:'Official CSE LKR daily equity turnover, trade date verified. Not streaming.'});
+ }
+ rows.sort((a,b)=>b.asOf.localeCompare(a.asOf));
+ if(!rows.length)throw Error('No official CSE market turnover with verified date in this response');
+ return rows[0];
+}
+async function fetchSummary(){
+ let lastError=null;
+ for(const endpoint of [SOURCES.dailyMarketSummary,SOURCES.marketSummary]){
+  try{
+   const raw=await json(endpoint,{method:'POST',body:new FormData(),
+    headers:{'Referer':'https://www.cse.lk/'}});
+   return parseOfficialTurnover(raw,endpoint);
+  }catch(e){lastError=e;}
+ }
+ throw Error('Official CSE daily turnover unavailable: '+String(lastError?.message||'No valid dated response'));
+}
 async function fetchWBBulk(){
  const codes=Object.values(reliable.WORLD_BANK_CODES).join(';');
  const url='https://api.worldbank.org/v2/country/LKA/indicator/'+codes+'?source=2&format=json&per_page=900';
@@ -145,7 +187,12 @@ async function collect(now=new Date(),injected={}){
  let marketSummary=null;
  try{
   marketSummary=await (injected.fetchSummary||fetchSummary)();
-  record('turnover',true,nowISO.slice(0,10),'',{dateIsRetrieved:true,notes:'Turnover snapshot retrieved; official trade date not verified'});
+  const verified=marketSummary?.verifiedTradeDate===true&&/^\d{4}-\d{2}-\d{2}$/.test(marketSummary.asOf||'');
+  record('turnover',true,verified?marketSummary.asOf:null,'',{
+    ...(verified?{freshWindowDays:7}:{dateIsRetrieved:true}),
+    notes:verified?'Verified CSE daily market turnover (LKR), trade date '+marketSummary.asOf+'. Not streaming.':
+      'Retrieved market turnover, official trading date not independently confirmed.'
+  });
  }catch(e){record('turnover',false,null,e.message)}
  let headlines=old.headlines||[];
  try{
@@ -177,4 +224,4 @@ async function collect(now=new Date(),injected={}){
  return snapshot;
 }
 if(require.main===module){collect().catch(e=>{console.error('Collector crashed:',e.message);process.exitCode=1})}
-module.exports={collect,marketReport,fetchCSE,fetchWB,fetchWBBulk,parseCSETradeSummary,fetchAllStock};
+module.exports={collect,marketReport,fetchCSE,fetchWB,fetchWBBulk,parseCSETradeSummary,fetchAllStock,parseOfficialTurnover,fetchSummary};
