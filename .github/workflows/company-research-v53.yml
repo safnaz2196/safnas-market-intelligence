@@ -32,13 +32,28 @@ jobs:
         run: node collector/company-evidence-v5.cjs
       - name: Publish autonomous research without waiting for macro collector
         run: node collector/research-v5-publish.cjs
-      - name: Commit verified reports
+      - name: Publish with safe retry if another collector updated main
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add market-intelligence/company-evidence-v5.json market-intelligence/research-v5.json
-          if ! git diff --cached --quiet; then
+          for attempt in 1 2 3; do
+            if [ "$attempt" -gt 1 ]; then
+              git fetch origin main
+              git reset --hard origin/main
+              node collector/company-evidence-v5.cjs
+              node collector/research-v5-publish.cjs
+            fi
+            git add market-intelligence/company-evidence-v5.json market-intelligence/research-v5.json
+            if git diff --staged --quiet; then
+              echo "No verified company research changes to publish."
+              exit 0
+            fi
             git commit -m "Publish verified CSE company coverage"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+            if git push origin HEAD:main; then
+              echo "AutoPilot company research published."
+              exit 0
+            fi
+            echo "Branch advanced while publishing; refreshing before retry $attempt"
+          done
+          echo "Failed to publish after three non-destructive retries" >&2
+          exit 1
