@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'gold-push-worker/check.cjs'
+      - 'gold-push-worker/check-cooldown.test.cjs'
       - '.github/workflows/gold-push-alerts.yml'
   schedule:
     # Best-effort every 15 min; GitHub may delay/skip some scheduled runs.
