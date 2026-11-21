@@ -1,0 +1,820 @@
+{
+  "schemaVersion": 1,
+  "version": "5.4",
+  "generatedAt": "2026-11-21T07:47:59.246Z",
+  "status": "observed",
+  "dateSemantics": "Approximate calendar windows, never a guaranteed date",
+  "current": {
+    "usdOz": 3539,
+    "asOf": "2026-11-21T07:47:37Z",
+    "source": "https://api.gold-api.com/price/XAU",
+    "historical": false,
+    "fx": {
+      "SAR": 3.75,
+      "LKR": 332.636029,
+      "asOf": "2026-11-20T00:02:32.000Z",
+      "source": "https://open.er-api.com/v6/latest/USD"
+    },
+    "localPerGram": {
+      "SAR": {
+        "pure24": 426.681,
+        "jewellery22": 391.124,
+        "currency": "SAR"
+      },
+      "LKR": {
+        "pure24": 37847.824,
+        "jewellery22": 34693.838,
+        "currency": "LKR"
+      }
+    }
+  },
+  "history": {
+    "source": "https://xaus.com/api/v1/history",
+    "asOf": "2026-11-20",
+    "observations": 900,
+    "points": [
+      {
+        "date": "2026-04-21",
+        "usdOz": 4719.6
+      },
+      {
+        "date": "2026-04-22",
+        "usdOz": 4753
+      },
+      {
+        "date": "2026-04-23",
+        "usdOz": 4724
+      },
+      {
+        "date": "2026-04-24",
+        "usdOz": 4740.9
+      },
+      {
+        "date": "2026-04-27",
+        "usdOz": 4693.7
+      },
+      {
+        "date": "2026-04-28",
+        "usdOz": 4608.4
+      },
+      {
+        "date": "2026-04-29",
+        "usdOz": 4561.5
+      },
+      {
+        "date": "2026-04-30",
+        "usdOz": 4629.6
+      },
+      {
+        "date": "2026-05-01",
+        "usdOz": 4644.5
+      },
+      {
+        "date": "2026-05-04",
+        "usdOz": 4533.3
+      },
+      {
+        "date": "2026-05-05",
+        "usdOz": 4568.5
+      },
+      {
+        "date": "2026-05-06",
+        "usdOz": 4694.3
+      },
+      {
+        "date": "2026-05-07",
+        "usdOz": 4710.9
+      },
+      {
+        "date": "2026-05-08",
+        "usdOz": 4730.7
+      },
+      {
+        "date": "2026-05-11",
+        "usdOz": 4728.7
+      },
+      {
+        "date": "2026-05-12",
+        "usdOz": 4686.7
+      },
+      {
+        "date": "2026-05-13",
+        "usdOz": 4706.7
+      },
+      {
+        "date": "2026-05-14",
+        "usdOz": 4685.3
+      },
+      {
+        "date": "2026-05-15",
+        "usdOz": 4561.9
+      },
+      {
+        "date": "2026-05-18",
+        "usdOz": 4558
+      },
+      {
+        "date": "2026-05-19",
+        "usdOz": 4511.2
+      },
+      {
+        "date": "2026-05-20",
+        "usdOz": 4535.3
+      },
+      {
+        "date": "2026-05-21",
+        "usdOz": 4542.5
+      },
+      {
+        "date": "2026-05-22",
+        "usdOz": 4523.2
+      },
+      {
+        "date": "2026-05-26",
+        "usdOz": 4502.3
+      },
+      {
+        "date": "2026-05-27",
+        "usdOz": 4448.4
+      },
+      {
+        "date": "2026-05-28",
+        "usdOz": 4499.3
+      },
+      {
+        "date": "2026-05-29",
+        "usdOz": 4593
+      },
+      {
+        "date": "2026-06-01",
+        "usdOz": 4506.3
+      },
+      {
+        "date": "2026-06-02",
+        "usdOz": 4519.9
+      },
+      {
+        "date": "2026-06-03",
+        "usdOz": 4466.9
+      },
+      {
+        "date": "2026-06-04",
+        "usdOz": 4505
+      },
+      {
+        "date": "2026-06-05",
+        "usdOz": 4365.3
+      },
+      {
+        "date": "2026-06-08",
+        "usdOz": 4363.4
+      },
+      {
+        "date": "2026-06-09",
+        "usdOz": 4286.4
+      },
+      {
+        "date": "2026-06-10",
+        "usdOz": 4133.3
+      },
+      {
+        "date": "2026-06-11",
+        "usdOz": 4114
+      },
+      {
+        "date": "2026-06-12",
+        "usdOz": 4238.8
+      },
+      {
+        "date": "2026-06-15",
+        "usdOz": 4351.6
+      },
+      {
+        "date": "2026-06-16",
+        "usdOz": 4354.4
+      },
+      {
+        "date": "2026-06-17",
+        "usdOz": 4381.4
+      },
+      {
+        "date": "2026-06-18",
+        "usdOz": 4245.9
+      },
+      {
+        "date": "2026-06-22",
+        "usdOz": 4202.7
+      },
+      {
+        "date": "2026-06-23",
+        "usdOz": 4149.4
+      },
+      {
+        "date": "2026-06-24",
+        "usdOz": 4008.8
+      },
+      {
+        "date": "2026-06-25",
+        "usdOz": 4047.6
+      },
+      {
+        "date": "2026-06-26",
+        "usdOz": 4096.3
+      },
+      {
+        "date": "2026-06-29",
+        "usdOz": 4038.9
+      },
+      {
+        "date": "2026-06-30",
+        "usdOz": 4038.5
+      },
+      {
+        "date": "2026-07-01",
+        "usdOz": 4082.4
+      },
+      {
+        "date": "2026-07-02",
+        "usdOz": 4125.7
+      },
+      {
+        "date": "2026-07-06",
+        "usdOz": 4167.5
+      },
+      {
+        "date": "2026-07-07",
+        "usdOz": 4157.4
+      },
+      {
+        "date": "2026-07-08",
+        "usdOz": 4082.4
+      },
+      {
+        "date": "2026-07-09",
+        "usdOz": 4140.8
+      },
+      {
+        "date": "2026-07-10",
+        "usdOz": 4113.7
+      },
+      {
+        "date": "2026-07-13",
+        "usdOz": 4005.7
+      },
+      {
+        "date": "2026-07-14",
+        "usdOz": 4069.7
+      },
+      {
+        "date": "2026-07-15",
+        "usdOz": 4051.8
+      },
+      {
+        "date": "2026-07-16",
+        "usdOz": 3992.1
+      },
+      {
+        "date": "2026-07-17",
+        "usdOz": 4018.8
+      },
+      {
+        "date": "2026-07-20",
+        "usdOz": 4015.9
+      },
+      {
+        "date": "2026-07-21",
+        "usdOz": 4076.4
+      },
+      {
+        "date": "2026-07-22",
+        "usdOz": 4151.9
+      },
+      {
+        "date": "2026-07-23",
+        "usdOz": 4050.2
+      },
+      {
+        "date": "2026-07-24",
+        "usdOz": 4070.8
+      },
+      {
+        "date": "2026-07-27",
+        "usdOz": 4077
+      },
+      {
+        "date": "2026-07-28",
+        "usdOz": 4038.7
+      },
+      {
+        "date": "2026-07-29",
+        "usdOz": 4036.3
+      },
+      {
+        "date": "2026-07-30",
+        "usdOz": 4100.1
+      },
+      {
+        "date": "2026-07-31",
+        "usdOz": 4107
+      },
+      {
+        "date": "2026-08-03",
+        "usdOz": 4090.5
+      },
+      {
+        "date": "2026-08-04",
+        "usdOz": 4152.6
+      },
+      {
+        "date": "2026-08-05",
+        "usdOz": 4305.2
+      },
+      {
+        "date": "2026-08-06",
+        "usdOz": 4299.6
+      },
+      {
+        "date": "2026-08-07",
+        "usdOz": 4399.7
+      },
+      {
+        "date": "2026-08-10",
+        "usdOz": 4419.7
+      },
+      {
+        "date": "2026-08-11",
+        "usdOz": 4441.1
+      },
+      {
+        "date": "2026-08-12",
+        "usdOz": 4467.5
+      },
+      {
+        "date": "2026-08-13",
+        "usdOz": 4420.4
+      },
+      {
+        "date": "2026-08-14",
+        "usdOz": 4437.3
+      },
+      {
+        "date": "2026-08-17",
+        "usdOz": 4473.7
+      },
+      {
+        "date": "2026-08-18",
+        "usdOz": 4420.6
+      },
+      {
+        "date": "2026-08-19",
+        "usdOz": 4545.3
+      },
+      {
+        "date": "2026-08-20",
+        "usdOz": 4571.4
+      },
+      {
+        "date": "2026-08-21",
+        "usdOz": 4680.6
+      },
+      {
+        "date": "2026-08-24",
+        "usdOz": 4697.8
+      },
+      {
+        "date": "2026-08-25",
+        "usdOz": 4694.5
+      },
+      {
+        "date": "2026-08-26",
+        "usdOz": 4653.3
+      },
+      {
+        "date": "2026-08-27",
+        "usdOz": 4664
+      },
+      {
+        "date": "2026-08-28",
+        "usdOz": 4529.9
+      },
+      {
+        "date": "2026-08-31",
+        "usdOz": 4481.5
+      },
+      {
+        "date": "2026-09-01",
+        "usdOz": 4396.4
+      },
+      {
+        "date": "2026-09-02",
+        "usdOz": 4414.6
+      },
+      {
+        "date": "2026-09-03",
+        "usdOz": 4539.9
+      },
+      {
+        "date": "2026-09-04",
+        "usdOz": 4476.6
+      },
+      {
+        "date": "2026-09-08",
+        "usdOz": 4439
+      },
+      {
+        "date": "2026-09-09",
+        "usdOz": 4460.7
+      },
+      {
+        "date": "2026-09-10",
+        "usdOz": 4407.3
+      },
+      {
+        "date": "2026-09-11",
+        "usdOz": 4408.9
+      },
+      {
+        "date": "2026-09-14",
+        "usdOz": 4351.9
+      },
+      {
+        "date": "2026-09-15",
+        "usdOz": 4332.8
+      },
+      {
+        "date": "2026-09-16",
+        "usdOz": 4387.5
+      },
+      {
+        "date": "2026-09-17",
+        "usdOz": 4399.7
+      },
+      {
+        "date": "2026-09-18",
+        "usdOz": 4424.9
+      },
+      {
+        "date": "2026-09-21",
+        "usdOz": 4383.9
+      },
+      {
+        "date": "2026-09-22",
+        "usdOz": 4376.4
+      },
+      {
+        "date": "2026-09-23",
+        "usdOz": 4318.4
+      },
+      {
+        "date": "2026-09-24",
+        "usdOz": 4298
+      },
+      {
+        "date": "2026-09-25",
+        "usdOz": 4321.2
+      },
+      {
+        "date": "2026-09-28",
+        "usdOz": 4168.4
+      },
+      {
+        "date": "2026-09-29",
+        "usdOz": 4179.7
+      },
+      {
+        "date": "2026-09-30",
+        "usdOz": 4186.7
+      },
+      {
+        "date": "2026-10-01",
+        "usdOz": 4202.3
+      },
+      {
+        "date": "2026-10-02",
+        "usdOz": 4162.3
+      },
+      {
+        "date": "2026-10-05",
+        "usdOz": 4156.8
+      },
+      {
+        "date": "2026-10-06",
+        "usdOz": 4187.1
+      },
+      {
+        "date": "2026-10-07",
+        "usdOz": 4140.7
+      },
+      {
+        "date": "2026-10-08",
+        "usdOz": 4157
+      },
+      {
+        "date": "2026-10-09",
+        "usdOz": 4216.3
+      },
+      {
+        "date": "2026-10-12",
+        "usdOz": 4190.6
+      },
+      {
+        "date": "2026-10-13",
+        "usdOz": 4177.3
+      },
+      {
+        "date": "2026-10-14",
+        "usdOz": 4107.9
+      },
+      {
+        "date": "2026-10-15",
+        "usdOz": 4170.1
+      },
+      {
+        "date": "2026-10-16",
+        "usdOz": 4181.1
+      },
+      {
+        "date": "2026-10-19",
+        "usdOz": 4160.1
+      },
+      {
+        "date": "2026-10-20",
+        "usdOz": 4142.6
+      },
+      {
+        "date": "2026-10-21",
+        "usdOz": 4150
+      },
+      {
+        "date": "2026-10-22",
+        "usdOz": 4060.4
+      },
+      {
+        "date": "2026-10-23",
+        "usdOz": 4007.9
+      },
+      {
+        "date": "2026-10-26",
+        "usdOz": 4038.4
+      },
+      {
+        "date": "2026-10-27",
+        "usdOz": 4074.6
+      },
+      {
+        "date": "2026-10-28",
+        "usdOz": 4051.6
+      },
+      {
+        "date": "2026-10-29",
+        "usdOz": 4031.4
+      },
+      {
+        "date": "2026-10-30",
+        "usdOz": 3898.9
+      },
+      {
+        "date": "2026-11-02",
+        "usdOz": 3969.6
+      },
+      {
+        "date": "2026-11-03",
+        "usdOz": 3940.4
+      },
+      {
+        "date": "2026-11-04",
+        "usdOz": 4073
+      },
+      {
+        "date": "2026-11-05",
+        "usdOz": 4113.5
+      },
+      {
+        "date": "2026-11-06",
+        "usdOz": 4074.9
+      },
+      {
+        "date": "2026-11-09",
+        "usdOz": 4114.5
+      },
+      {
+        "date": "2026-11-10",
+        "usdOz": 4030.2
+      },
+      {
+        "date": "2026-11-11",
+        "usdOz": 4000.5
+      },
+      {
+        "date": "2026-11-12",
+        "usdOz": 3885.3
+      },
+      {
+        "date": "2026-11-13",
+        "usdOz": 3886.3
+      },
+      {
+        "date": "2026-11-16",
+        "usdOz": 3853
+      },
+      {
+        "date": "2026-11-17",
+        "usdOz": 3864.2
+      },
+      {
+        "date": "2026-11-18",
+        "usdOz": 3741.9
+      },
+      {
+        "date": "2026-11-19",
+        "usdOz": 3685.5
+      },
+      {
+        "date": "2026-11-20",
+        "usdOz": 3515.4
+      }
+    ]
+  },
+  "indicators": {
+    "momentum5Pct": -9.544,
+    "momentum20Pct": -12.288,
+    "volatility20AnnualizedPct": 30.735
+  },
+  "horizons": [
+    {
+      "days": 3,
+      "sessions": 2,
+      "direction": "range",
+      "lean": "Mixed / sideways",
+      "probUp": 51.389,
+      "similarCases": 72,
+      "scenarios": {
+        "lowPct": -3.249,
+        "midPct": 0.209,
+        "highPct": 3.287
+      },
+      "validation": {
+        "count": 64,
+        "hitRate": 43.75,
+        "baseRate": 43.75,
+        "brier": 0.264,
+        "baseBrier": 0.246,
+        "edgeDemonstrated": false
+      },
+      "confidence": "not_proven",
+      "warning": "Approximate calendar window, NOT the exact day an event will occur."
+    },
+    {
+      "days": 7,
+      "sessions": 5,
+      "direction": "rise",
+      "lean": "Rising bias",
+      "probUp": 66.667,
+      "similarCases": 72,
+      "scenarios": {
+        "lowPct": -2.628,
+        "midPct": 0.977,
+        "highPct": 5.456
+      },
+      "validation": {
+        "count": 63,
+        "hitRate": 49.206,
+        "baseRate": 47.619,
+        "brier": 0.282,
+        "baseBrier": 0.249,
+        "edgeDemonstrated": false
+      },
+      "confidence": "not_proven",
+      "warning": "Approximate calendar window, NOT the exact day an event will occur."
+    },
+    {
+      "days": 14,
+      "sessions": 10,
+      "direction": "rise",
+      "lean": "Rising bias",
+      "probUp": 59.722,
+      "similarCases": 72,
+      "scenarios": {
+        "lowPct": -3.706,
+        "midPct": 0.56,
+        "highPct": 6.091
+      },
+      "validation": {
+        "count": 60,
+        "hitRate": 31.667,
+        "baseRate": 30,
+        "brier": 0.321,
+        "baseBrier": 0.21,
+        "edgeDemonstrated": false
+      },
+      "confidence": "not_proven",
+      "warning": "Approximate calendar window, NOT the exact day an event will occur."
+    },
+    {
+      "days": 30,
+      "sessions": 21,
+      "direction": "range",
+      "lean": "Mixed / sideways",
+      "probUp": 55.556,
+      "similarCases": 72,
+      "scenarios": {
+        "lowPct": -5.864,
+        "midPct": 1.536,
+        "highPct": 9.626
+      },
+      "validation": {
+        "count": 55,
+        "hitRate": 25.455,
+        "baseRate": 27.273,
+        "brier": 0.419,
+        "baseBrier": 0.198,
+        "edgeDemonstrated": false
+      },
+      "confidence": "not_proven",
+      "warning": "Approximate calendar window, NOT the exact day an event will occur."
+    }
+  ],
+  "method": "Historical analogue similarity: 5/20-session momentum + 20-session volatility; last 130-session walk-forward Brier evaluation.",
+  "evidence": [
+    {
+      "title": "Gold price momentum · 5 sessions",
+      "measurement": "-9.544%",
+      "interpretation": "Recently falling; downward momentum may persist or reverse.",
+      "source": "https://xaus.com/api/v1/history",
+      "asOf": "2026-11-20"
+    },
+    {
+      "title": "Gold price momentum · 20 sessions",
+      "measurement": "-12.288%",
+      "interpretation": "Measured from past daily closes; historical direction alone cannot guarantee future movement.",
+      "source": "https://xaus.com/api/v1/history",
+      "asOf": "2026-11-20"
+    },
+    {
+      "title": "20-session price volatility",
+      "measurement": "30.735% annualized",
+      "interpretation": "Historical fluctuation indicates how wide forecast scenarios may be. It is not a probability of loss.",
+      "source": "https://xaus.com/api/v1/history",
+      "asOf": "2026-11-20"
+    },
+    {
+      "title": "U.S. 10-year inflation-adjusted yield",
+      "measurement": "+0.02 percentage points (5 observations)",
+      "interpretation": "Real yields increased; often a headwind for non-yielding gold, not a certain effect.",
+      "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DFII10&cosd=2026-05-01",
+      "asOf": "2026-11-19"
+    },
+    {
+      "title": "Broad U.S. dollar index",
+      "measurement": "+0.77 index points (5 observations)",
+      "interpretation": "A stronger trade-weighted dollar may constrain USD gold, other factors can dominate.",
+      "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTWEXBGS&cosd=2026-05-01",
+      "asOf": "2026-11-13"
+    }
+  ],
+  "macro": [
+    {
+      "name": "U.S. 10-year inflation-adjusted yield",
+      "available": true,
+      "asOf": "2026-11-19",
+      "last": 2.88,
+      "change5": 0.02,
+      "unit": "percentage points",
+      "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DFII10&cosd=2026-05-01"
+    },
+    {
+      "name": "Broad U.S. dollar index",
+      "available": true,
+      "asOf": "2026-11-13",
+      "last": 122.65,
+      "change5": 0.77,
+      "unit": "index points",
+      "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTWEXBGS&cosd=2026-05-01"
+    }
+  ],
+  "overallCaution": "Forecasts are statistical scenarios based on past observations, not predictions of an exact price or date. If model calibration does not outperform a historical baseline, no predictive edge is claimed. FX changes can alter SAR and LKR outcomes.",
+  "sources": [
+    {
+      "name": "XAUS daily history",
+      "url": "https://xaus.com/api/v1/history"
+    },
+    {
+      "name": "Gold spot",
+      "url": "https://api.gold-api.com/price/XAU"
+    },
+    {
+      "name": "USD FX rates",
+      "url": "https://open.er-api.com/v6/latest/USD"
+    },
+    {
+      "name": "U.S. 10-year inflation-adjusted yield",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DFII10&cosd=2026-05-01"
+    },
+    {
+      "name": "Broad U.S. dollar index",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTWEXBGS&cosd=2026-05-01"
+    }
+  ],
+  "alertsNotice": "Directional outlook is not a trading instruction. Jewellery charges and retail margins excluded.",
+  "warnings": []
+}
