@@ -22,7 +22,7 @@ function normalize(rows,now){
 function hKey(e){return e.originDate+'|'+e.days;}
 function digest(e){return crypto.createHash('sha256').update(JSON.stringify([
  e.originDate,e.days,e.sessions,e.referenceUsdOz,e.predictedDirection,
- e.scenario,e.rawPositivePct,e.modelVersion])).digest('hex').slice(0,16);}
+ e.scenario,e.rawPositivePct,e.modelVersion,e.multiModelSnapshot||null])).digest('hex').slice(0,16);}
 function brier(list,fn){
  return list.reduce((s,r)=>{const d=fn(r)-(r.actualDirection==='rise'?1:0);return s+d*d;},0)/list.length;
 }
@@ -103,6 +103,34 @@ function summarize(entries,models){
   horizonRule:'A horizon is settled after the required number of NEW dated provider closing observations, not at a promised exact calendar time.',
   warning:'Past accuracy is not guaranteed future performance. Models are not trained on pending outcomes.'};
 }
+function scoreCandidateModels(settled){
+ // Scores reference only forecasts that were recorded before the outcome.
+ const ids=['analogue','trend','reversion','regime'];
+ return DAYS.map(days=>{
+  const rows=settled.filter(e=>e.days===days&&Array.isArray(e.multiModelResults)&&
+    e.multiModelResults.length>=4).sort((a,b)=>String(a.actualDate).localeCompare(String(b.actualDate)));
+  const scores=ids.map(id=>{
+   const data=rows.map(e=>e.multiModelResults.find(x=>x.id===id)).filter(x=>Number.isFinite(x?.multiclassBrier));
+   const n=data.length,split=Math.floor(n*.7);
+   const early=data.slice(0,split),later=data.slice(split);
+   const average=a=>a.reduce((s,x)=>s+x.multiclassBrier,0)/a.length;
+   const earlier=early.length?rounded(average(early),4):null,laterBrier=later.length?rounded(average(later),4):null;
+   const baselineBrier=rounded(2/3,4);
+   return {id,recorded:n,earlyChecks:early.length,laterChecks:later.length,earlierBrier:earlier,
+     laterBrier,baselineBrier,improvement:laterBrier===null?null:rounded(baselineBrier-laterBrier,4),
+     historicallyValidated:n>=60&&early.length>=42&&later.length>=18&&baselineBrier-laterBrier>=.03};
+  });
+  const eligible=scores.filter(s=>s.earlyChecks>=42).sort((a,b)=>a.earlierBrier-b.earlierBrier);
+  const selected=eligible[0]||null;
+  const verified=!!selected?.historicallyValidated;
+  return {days,completed:rows.length,selectedModel:verified?selected.id:null,
+   candidateSelectedOnEarlierResults:selected?.id||null,
+   learning:verified?'limited_forward_holdout_support':'collecting_or_unproven',
+   verifiedForwardGain:verified,models:scores,
+   warning:verified?'Past forward observations show some skill, but this can disappear.':
+    'Not enough later verified outcomes or no advantage over a simple uniform baseline.'};
+ });
+}
 function updateLedger({previous=null,legacy=null,history=[],horizons=[],now=new Date(),modelVersion='5.6',sourceUrl='https://xaus.com/api/v1/history'}={}){
  const rows=normalize(history,now),byDate=new Map(rows.map((row,i)=>[row.date,i]));
  let entries=Array.isArray(previous?.entries)?previous.entries.filter(validOldEntry).map(e=>({...e})):importLegacy(legacy,now);
@@ -129,6 +157,19 @@ function updateLedger({previous=null,legacy=null,history=[],horizons=[],now=new 
   e.passed=rubric(e,changePct);
   e.verdict=e.passed?'PASS':'FAIL';
   e.resolvedAt=now.toISOString();e.settlementSourceUrl=e.sourceUrl||sourceUrl;
+  // Score each originally stored candidate model against the LATER verified close.
+  // No candidate may be added to an old locked record after its outcome is known.
+  if(Array.isArray(e.multiModelSnapshot?.models)){
+    const threshold=Number(e.multiModelSnapshot.thresholdPct)||.5;
+    const actualClass=changePct>threshold?'rise':changePct< -threshold?'fall':'range';
+    e.multiModelResults=e.multiModelSnapshot.models.map(m=>{
+      const p=m.probabilities||{};
+      const finiteProb=['rise','fall','range'].every(k=>Number.isFinite(p[k])&&p[k]>=0&&p[k]<=100);
+      const brier=finiteProb?['rise','fall','range'].reduce((s,k)=>s+(p[k]/100-(k===actualClass?1:0))**2,0):null;
+      return {id:m.id,forecastClass:m.direction,actualClass,passed:m.direction===actualClass,
+        multiclassBrier:Number.isFinite(brier)?rounded(brier,4):null};
+    });
+  }
   if(range&&Number.isFinite(range.lowPct)&&Number.isFinite(range.midPct)&&Number.isFinite(range.highPct)){
    const mid=e.referenceUsdOz*(1+range.midPct/100);
    e.predictedMiddleUsdOz=rounded(mid,2);
@@ -169,6 +210,18 @@ function updateLedger({previous=null,legacy=null,history=[],horizons=[],now=new 
     status:'pending',sourceUrl,
     evidence:{historyAsOf:current.date,historyCount:rows.length},
     note:'Forecast was frozen before the next required dated closing observations. Historical scenario bounds are descriptive, not guaranteed limits.'};
+   const adaptive=h.multiModel;
+   if(adaptive&&Array.isArray(adaptive.models)){
+     entry.multiModelSnapshot={
+       modelVersion:'5.8',thresholdPct:adaptive.thresholdPct,
+       selectedByEarlierValidation:adaptive.validation?.selectedByEarlyPeriod||null,
+       historicalHoldoutValidated:!!adaptive.validation?.selectedModelValidated,
+       researchBias:adaptive.bias,models:adaptive.models.map(m=>({
+        id:m.id,direction:m.direction,referenceCases:m.referenceCases,
+        probabilities:m.probabilities,scenarios:m.scenarios
+       }))
+     };
+   }
    entry.snapshotHash=digest(entry);entries.push(entry);seen.add(hKey(entry));newlyRecorded++;
   }
  }
@@ -190,6 +243,7 @@ function updateLedger({previous=null,legacy=null,history=[],horizons=[],now=new 
   sourceUrl,entries,summary,
   learning:{status:models.some(m=>m.applied)?'validation_enabled':'learning_or_unproven',
    models,settledForLearning:settled.length,
+   multiModelScorecards:scoreCandidateModels(settled),
    note:'Training requires at least 40 settled predictions per period. Uses earlier 70% to train and later 30% to test calibration. Only adjusts new forecasts if holdout Brier improves by at least 0.01.',
    warning:'Learning can reduce some historical error, but no improvement or future predictive skill is guaranteed.'},
   newlyRecorded,newlySettled};
