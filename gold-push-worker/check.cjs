@@ -71,8 +71,13 @@ async function deliverOne(doc, spot, fx, now) {
     await doc.ref.update({baseline:latest,settingsFingerprint:settingHash,lastObservedAt:spot.asOf});
   }
   const movements = policy.moves(baseline, latest, settings);
-  const cooldown = now - Number(d.lastAlertAt||0) < policy.MIN_COOLDOWN_MS;
-  const movementMarkets = cooldown ? [] : movements.map(m=>m.currency);
+  // Independent country cooldowns: a Saudi alert must not suppress a Sri Lankan
+  // movement (or vice versa). The previous global lastAlertAt is retained only
+  // as historical audit metadata, not as a blocking timer.
+  const lastAlertAtByMarket={...(d.lastAlertAtByMarket||{})};
+  const movementMarkets=movements.filter(m=>
+    now - Number(lastAlertAtByMarket[m.currency]||0) >= policy.MIN_COOLDOWN_MS
+  ).map(m=>m.currency);
   const day = policy.localDayKey(now);
   const summaryDue = policy.summaryDue(d.lastSummaryDay, now);
   const dailyDays = {...(d.mobileDailyDays || {})};
@@ -95,7 +100,9 @@ async function deliverOne(doc, spot, fx, now) {
       if (isMovement) {
         workingBaseline[currency]=latest[currency];
         changes.baseline={...workingBaseline};
-        changes.lastAlertAt=now;
+        lastAlertAtByMarket[currency]=now;
+        changes.lastAlertAtByMarket={...lastAlertAtByMarket};
+        changes.lastAlertAt=now; // legacy audit field
         sentMovement=true;
       }
       if (isSummary) {
@@ -162,4 +169,4 @@ async function main() {
   console.log(JSON.stringify({market:spot.source,observedAt:spot.asOf,checks:tally,pushCount}));
 }
 if (require.main===module) main().catch(err=>{console.error('Gold push worker failed:',err.message);process.exitCode=1;});
-module.exports={readSecrets,normalizeDoc,checksum,makePayload,spotQuote,fxQuote};
+module.exports={readSecrets,normalizeDoc,checksum,makePayload,spotQuote,fxQuote,deliverOne};
