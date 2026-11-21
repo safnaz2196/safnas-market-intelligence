@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "version": "5.7",
-  "generatedAt": "2026-11-21T08:38:12.764Z",
+  "generatedAt": "2026-11-21T08:53:16.421Z",
   "provider": "Dated gold closing prices, collected from a public historical feed",
   "sourceUrl": "https://xaus.com/api/v1/history",
   "entries": [
@@ -20,7 +20,9 @@
       "modelEdgeDemonstrated": false,
       "status": "pending",
       "sourceUrl": "https://xaus.com/api/v1/history",
-      "note": "Migrated from the original v5.6 journal. No new historical forecasts were invented."
+      "note": "Migrated from the original v5.6 journal. No new historical forecasts were invented.",
+      "observedCloses": 0,
+      "remainingCloses": 1
     },
     {
       "id": "2026-11-20|3",
@@ -37,7 +39,9 @@
       "modelEdgeDemonstrated": false,
       "status": "pending",
       "sourceUrl": "https://xaus.com/api/v1/history",
-      "note": "Migrated from the original v5.6 journal. No new historical forecasts were invented."
+      "note": "Migrated from the original v5.6 journal. No new historical forecasts were invented.",
+      "observedCloses": 0,
+      "remainingCloses": 2
     },
     {
       "id": "2026-11-20|7",
@@ -54,7 +58,9 @@
       "modelEdgeDemonstrated": false,
       "status": "pending",
       "sourceUrl": "https://xaus.com/api/v1/history",
-      "note": "Migrated from the original v5.6 journal. No new historical forecasts were invented."
+      "note": "Migrated from the original v5.6 journal. No new historical forecasts were invented.",
+      "observedCloses": 0,
+      "remainingCloses": 5
     },
     {
       "id": "2026-11-20|14",
@@ -71,7 +77,9 @@
       "modelEdgeDemonstrated": false,
       "status": "pending",
       "sourceUrl": "https://xaus.com/api/v1/history",
-      "note": "Migrated from the original v5.6 journal. No new historical forecasts were invented."
+      "note": "Migrated from the original v5.6 journal. No new historical forecasts were invented.",
+      "observedCloses": 0,
+      "remainingCloses": 10
     },
     {
       "id": "2026-11-20|30",
@@ -88,7 +96,9 @@
       "modelEdgeDemonstrated": false,
       "status": "pending",
       "sourceUrl": "https://xaus.com/api/v1/history",
-      "note": "Migrated from the original v5.6 journal. No new historical forecasts were invented."
+      "note": "Migrated from the original v5.6 journal. No new historical forecasts were invented.",
+      "observedCloses": 0,
+      "remainingCloses": 21
     },
     {
       "id": "2026-11-20|90",
@@ -105,7 +115,9 @@
       "modelEdgeDemonstrated": false,
       "status": "pending",
       "sourceUrl": "https://xaus.com/api/v1/history",
-      "note": "Migrated from the original v5.6 journal. No new historical forecasts were invented."
+      "note": "Migrated from the original v5.6 journal. No new historical forecasts were invented.",
+      "observedCloses": 0,
+      "remainingCloses": 63
     }
   ],
   "summary": {
