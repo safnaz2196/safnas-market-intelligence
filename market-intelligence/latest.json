@@ -8,7 +8,7 @@
     "forest",
     "boost"
   ],
-  "generatedAt": "2026-11-21T07:27:27.608Z",
+  "generatedAt": "2026-11-21T10:28:56.329Z",
   "status": "updated",
   "market": {
     "aspi": {
@@ -461,7 +461,7 @@
     "sl20": {
       "value": 6075.28,
       "changePercent": -1.09,
-      "retrievedAt": "2026-11-21T07:27:29.984Z",
+      "retrievedAt": "2026-11-21T10:28:59.254Z",
       "sourceURL": "https://www.cse.lk/api/snpData",
       "note": "Retrieved snapshot; source may not include a reliable trade date."
     },
@@ -834,6 +834,18 @@
   "shares": [],
   "headlines": [
     {
+      "title": "Digital microlending in ‘regulatory black hole’, Sri Lanka think tank finds",
+      "url": "https://economynext.com/digital-microlending-in-regulatory-black-hole-sri-lanka-think-tank-finds-290827/",
+      "date": "2026-11-21",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka central bank to get marketable bonds next year to mop up liquidity",
+      "url": "https://economynext.com/sri-lanka-central-bank-to-get-marketable-bonds-next-year-to-mop-up-liquidity-290861/",
+      "date": "2026-11-21",
+      "publisher": "EconomyNext"
+    },
+    {
       "title": "Sri Lanka Supreme Court clears Prevention of Organized Crime Bill with changes",
       "url": "https://economynext.com/sri-lanka-supreme-court-clears-prevention-of-organized-crime-bill-with-changes-290866/",
       "date": "2026-11-21",
@@ -908,18 +920,6 @@
     {
       "title": "Sri Lanka stocks open 0.69-pct down after surprise central bank rate hike",
       "url": "https://economynext.com/sri-lanka-stocks-open-0-69-pct-down-after-surprise-central-bank-rate-hike-290723/",
-      "date": "2026-11-20",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka sells extra Rs1.7bn Treasury bills after auction",
-      "url": "https://economynext.com/sri-lanka-sells-extra-rs1-7bn-treasury-bills-after-auction-290714/",
-      "date": "2026-11-20",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Open-source firm WSO2 rebrands as Choreo Labs to focus on AI agent control",
-      "url": "https://economynext.com/open-source-firm-wso2-rebrands-as-choreo-labs-to-focus-on-ai-agent-control-290705/",
       "date": "2026-11-20",
       "publisher": "EconomyNext"
     }
@@ -1037,8 +1037,8 @@
       "asOf": "2026-11-20",
       "ageDays": 1,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T07:27:27.608Z",
-      "lastSuccessAt": "2026-11-21T07:27:27.608Z",
+      "lastAttemptAt": "2026-11-21T10:28:56.329Z",
+      "lastSuccessAt": "2026-11-21T10:28:56.329Z",
       "failures": 0,
       "note": "CSE daily closes validated and appended to dated archive"
     },
@@ -1047,8 +1047,8 @@
       "asOf": "2025",
       "ageDays": null,
       "ageYears": 1,
-      "lastAttemptAt": "2026-11-21T07:27:27.608Z",
-      "lastSuccessAt": "2026-11-21T07:27:27.608Z",
+      "lastAttemptAt": "2026-11-21T10:28:56.329Z",
+      "lastSuccessAt": "2026-11-21T10:28:56.329Z",
       "failures": 0,
       "note": "6 of 6 annual indicators refreshed"
     },
@@ -1057,8 +1057,8 @@
       "asOf": "2026-11-20",
       "ageDays": 1,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T07:27:27.608Z",
-      "lastSuccessAt": "2026-11-21T07:27:27.608Z",
+      "lastAttemptAt": "2026-11-21T10:28:56.329Z",
+      "lastSuccessAt": "2026-11-21T10:28:56.329Z",
       "failures": 0,
       "note": "Provider response accepted"
     },
@@ -1067,18 +1067,18 @@
       "asOf": null,
       "ageDays": null,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T07:27:27.608Z",
+      "lastAttemptAt": "2026-11-21T10:28:56.329Z",
       "lastSuccessAt": null,
-      "failures": 17,
-      "note": "HTTP 400"
+      "failures": 18,
+      "note": "HTTP 403"
     },
     "sl20": {
       "status": "retrieved_only",
       "asOf": "2026-11-21",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T07:27:27.608Z",
-      "lastSuccessAt": "2026-11-21T07:27:27.608Z",
+      "lastAttemptAt": "2026-11-21T10:28:56.329Z",
+      "lastSuccessAt": "2026-11-21T10:28:56.329Z",
       "failures": 0,
       "note": "Index snapshot retrieved; official trade date not verified"
     },
@@ -1087,9 +1087,9 @@
       "asOf": null,
       "ageDays": null,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T07:27:27.608Z",
+      "lastAttemptAt": "2026-11-21T10:28:56.329Z",
       "lastSuccessAt": null,
-      "failures": 17,
+      "failures": 18,
       "note": "Daily turnover not reported"
     },
     "headlines": {
@@ -1097,8 +1097,8 @@
       "asOf": "2026-11-21",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T07:27:27.608Z",
-      "lastSuccessAt": "2026-11-21T07:27:27.608Z",
+      "lastAttemptAt": "2026-11-21T10:28:56.329Z",
+      "lastSuccessAt": "2026-11-21T10:28:56.329Z",
       "failures": 0,
       "note": "Provider response accepted"
     }
@@ -1283,7 +1283,7 @@
     "sec": "https://www.sec.gov.lk/"
   },
   "warnings": [
-    "shares: HTTP 400",
+    "shares: HTTP 403",
     "turnover: Daily turnover not reported"
   ],
   "disclaimer": "Educational research only. Reliable data collection does not establish predictive skill or guarantee returns. No specific security is recommended.",
@@ -1300,7 +1300,7 @@
     "edgeModels": 1,
     "modelClaim": "Limited historical statistical edge — not investment advice",
     "dataLimit": "The public CSE chart endpoint supplies roughly one trailing year. Older dates require permitted, verified historical data; no synthetic backfill.",
-    "refreshedAt": "2026-11-21T07:27:27.608Z",
+    "refreshedAt": "2026-11-21T10:28:56.329Z",
     "disclaimer": "Source health is not model accuracy or probability of market growth."
   }
 }
