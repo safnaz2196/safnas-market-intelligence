@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "version": "6.0",
-  "generatedAt": "2026-11-22T01:33:24.103Z",
+  "generatedAt": "2026-11-22T08:46:49.900Z",
   "status": "research_available",
   "brand": "Safnas Finance v6.0 · Ultra Autonomous Gold Intelligence",
   "latestReference": {
     "usdOz": 3539,
-    "asOf": "2026-11-22T01:33:09Z",
+    "asOf": "2026-11-22T08:46:39Z",
     "source": "https://api.gold-api.com/price/XAU",
     "goldHistoryAsOf": "2026-11-20",
     "fxAsOf": "2026-11-22T00:02:32.000Z",
@@ -31,18 +31,18 @@
   },
   "sourceIntegrity": {
     "spot": {
-      "observedAt": "2026-11-22T01:33:09Z",
+      "observedAt": "2026-11-22T08:46:39Z",
       "ageHours": 0,
       "status": "recent"
     },
     "fx": {
       "observedAt": "2026-11-22T00:02:32.000Z",
-      "ageHours": 1.5,
+      "ageHours": 8.7,
       "status": "recent"
     },
     "history": {
       "observedAt": "2026-11-20T00:00:00Z",
-      "ageHours": 49.6,
+      "ageHours": 56.8,
       "status": "recent"
     },
     "cftc": "dated_weekly",
@@ -51,7 +51,7 @@
     "priceComparison": {
       "status": "consistent",
       "discrepancyPct": 0,
-      "comparedAt": "2026-11-22T01:33:24.103Z",
+      "comparedAt": "2026-11-22T08:46:49.900Z",
       "providers": [
         "https://api.gold-api.com/price/XAU",
         "https://xaus.com/api/v1/spot?compact=1"
