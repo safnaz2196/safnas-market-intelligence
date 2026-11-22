@@ -8,7 +8,7 @@
     "forest",
     "boost"
   ],
-  "generatedAt": "2026-11-21T11:08:39.672Z",
+  "generatedAt": "2026-11-22T12:49:26.702Z",
   "status": "updated",
   "market": {
     "aspi": {
@@ -285,7 +285,7 @@
         "horizon": 5,
         "asOf": "2026-11-20",
         "latest": 21369.72,
-        "ageDays": 1,
+        "ageDays": 2,
         "direction": "Indecisive / sideways",
         "upScore": 0.5534,
         "edgeDemonstrated": false,
@@ -369,7 +369,7 @@
         "horizon": 20,
         "asOf": "2026-11-20",
         "latest": 21369.72,
-        "ageDays": 1,
+        "ageDays": 2,
         "direction": "Downward lean",
         "upScore": 0.2582,
         "edgeDemonstrated": true,
@@ -461,7 +461,7 @@
     "sl20": {
       "value": 6075.28,
       "changePercent": -1.09,
-      "retrievedAt": "2026-11-21T11:08:42.712Z",
+      "retrievedAt": "2026-11-22T12:49:30.123Z",
       "sourceURL": "https://www.cse.lk/api/snpData",
       "note": "Retrieved snapshot; source may not include a reliable trade date."
     },
@@ -472,7 +472,7 @@
       "sharesTraded": 121790416,
       "trades": 14416,
       "marketScope": "CSE market",
-      "retrievedAt": "2026-11-21T11:08:42.919Z",
+      "retrievedAt": "2026-11-22T12:49:32.037Z",
       "sourceURL": "https://www.cse.lk/api/dailyMarketSummery",
       "verifiedTradeDate": true,
       "note": "Official CSE LKR daily equity turnover, trade date verified. Not streaming."
@@ -837,8 +837,8 @@
     }
   },
   "forex": {
-    "asOf": "2026-11-20",
-    "rate": 332.68,
+    "asOf": "2026-11-22",
+    "rate": 332.45,
     "source": "Frankfurter daily FX reference",
     "sourceURL": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=LKR"
   },
@@ -850,7 +850,7 @@
       "turnover": 72581575.3,
       "asOf": "2026-11-20",
       "verifiedTradeDate": true,
-      "retrievedAt": "2026-11-21T11:07:59.349Z",
+      "retrievedAt": "2026-11-22T12:42:25.441Z",
       "sourceURL": "https://www.cse.lk/api/tradeSummary",
       "verifiedVia": "CSE official dated last-trade archive",
       "archivedObservation": true,
@@ -863,7 +863,7 @@
       "turnover": 53194670.75,
       "asOf": "2026-11-20",
       "verifiedTradeDate": true,
-      "retrievedAt": "2026-11-21T11:07:59.349Z",
+      "retrievedAt": "2026-11-22T12:42:25.441Z",
       "sourceURL": "https://www.cse.lk/api/tradeSummary",
       "verifiedVia": "CSE official dated last-trade archive",
       "archivedObservation": true,
@@ -876,7 +876,7 @@
       "turnover": 42797953.25,
       "asOf": "2026-11-20",
       "verifiedTradeDate": true,
-      "retrievedAt": "2026-11-21T11:07:59.349Z",
+      "retrievedAt": "2026-11-22T12:42:25.441Z",
       "sourceURL": "https://www.cse.lk/api/tradeSummary",
       "verifiedVia": "CSE official dated last-trade archive",
       "archivedObservation": true,
@@ -889,7 +889,7 @@
       "turnover": 21935847.75,
       "asOf": "2026-11-20",
       "verifiedTradeDate": true,
-      "retrievedAt": "2026-11-21T11:07:59.349Z",
+      "retrievedAt": "2026-11-22T12:42:25.441Z",
       "sourceURL": "https://www.cse.lk/api/tradeSummary",
       "verifiedVia": "CSE official dated last-trade archive",
       "archivedObservation": true,
@@ -902,7 +902,7 @@
       "turnover": 15021422.5,
       "asOf": "2026-11-20",
       "verifiedTradeDate": true,
-      "retrievedAt": "2026-11-21T11:07:59.349Z",
+      "retrievedAt": "2026-11-22T12:42:25.441Z",
       "sourceURL": "https://www.cse.lk/api/tradeSummary",
       "verifiedVia": "CSE official dated last-trade archive",
       "archivedObservation": true,
@@ -915,7 +915,7 @@
       "turnover": 11461786.7,
       "asOf": "2026-11-20",
       "verifiedTradeDate": true,
-      "retrievedAt": "2026-11-21T11:07:59.349Z",
+      "retrievedAt": "2026-11-22T12:42:25.441Z",
       "sourceURL": "https://www.cse.lk/api/tradeSummary",
       "verifiedVia": "CSE official dated last-trade archive",
       "archivedObservation": true,
@@ -928,7 +928,7 @@
       "turnover": 7236404.7,
       "asOf": "2026-11-20",
       "verifiedTradeDate": true,
-      "retrievedAt": "2026-11-21T11:07:59.349Z",
+      "retrievedAt": "2026-11-22T12:42:25.441Z",
       "sourceURL": "https://www.cse.lk/api/tradeSummary",
       "verifiedVia": "CSE official dated last-trade archive",
       "archivedObservation": true,
@@ -941,7 +941,7 @@
       "turnover": 4782008.8,
       "asOf": "2026-11-20",
       "verifiedTradeDate": true,
-      "retrievedAt": "2026-11-21T11:07:59.349Z",
+      "retrievedAt": "2026-11-22T12:42:25.441Z",
       "sourceURL": "https://www.cse.lk/api/tradeSummary",
       "verifiedVia": "CSE official dated last-trade archive",
       "archivedObservation": true,
@@ -954,7 +954,7 @@
       "turnover": 4519212.75,
       "asOf": "2026-11-20",
       "verifiedTradeDate": true,
-      "retrievedAt": "2026-11-21T11:07:59.349Z",
+      "retrievedAt": "2026-11-22T12:42:25.441Z",
       "sourceURL": "https://www.cse.lk/api/tradeSummary",
       "verifiedVia": "CSE official dated last-trade archive",
       "archivedObservation": true,
@@ -967,7 +967,7 @@
       "turnover": 4509726.5,
       "asOf": "2026-11-20",
       "verifiedTradeDate": true,
-      "retrievedAt": "2026-11-21T11:07:59.349Z",
+      "retrievedAt": "2026-11-22T12:42:25.441Z",
       "sourceURL": "https://www.cse.lk/api/tradeSummary",
       "verifiedVia": "CSE official dated last-trade archive",
       "archivedObservation": true,
@@ -980,7 +980,7 @@
       "turnover": 4282244.25,
       "asOf": "2026-11-20",
       "verifiedTradeDate": true,
-      "retrievedAt": "2026-11-21T11:07:59.349Z",
+      "retrievedAt": "2026-11-22T12:42:25.441Z",
       "sourceURL": "https://www.cse.lk/api/tradeSummary",
       "verifiedVia": "CSE official dated last-trade archive",
       "archivedObservation": true,
@@ -993,7 +993,7 @@
       "turnover": 3450950.75,
       "asOf": "2026-11-20",
       "verifiedTradeDate": true,
-      "retrievedAt": "2026-11-21T11:07:59.349Z",
+      "retrievedAt": "2026-11-22T12:42:25.441Z",
       "sourceURL": "https://www.cse.lk/api/tradeSummary",
       "verifiedVia": "CSE official dated last-trade archive",
       "archivedObservation": true,
@@ -1006,7 +1006,7 @@
       "turnover": 3259017.1,
       "asOf": "2026-11-20",
       "verifiedTradeDate": true,
-      "retrievedAt": "2026-11-21T11:07:59.349Z",
+      "retrievedAt": "2026-11-22T12:42:25.441Z",
       "sourceURL": "https://www.cse.lk/api/tradeSummary",
       "verifiedVia": "CSE official dated last-trade archive",
       "archivedObservation": true,
@@ -1019,7 +1019,7 @@
       "turnover": 1892698.25,
       "asOf": "2026-11-20",
       "verifiedTradeDate": true,
-      "retrievedAt": "2026-11-21T11:07:59.349Z",
+      "retrievedAt": "2026-11-22T12:42:25.441Z",
       "sourceURL": "https://www.cse.lk/api/tradeSummary",
       "verifiedVia": "CSE official dated last-trade archive",
       "archivedObservation": true,
@@ -1032,7 +1032,7 @@
       "turnover": 1146733.9,
       "asOf": "2026-11-20",
       "verifiedTradeDate": true,
-      "retrievedAt": "2026-11-21T11:07:59.349Z",
+      "retrievedAt": "2026-11-22T12:42:25.441Z",
       "sourceURL": "https://www.cse.lk/api/tradeSummary",
       "verifiedVia": "CSE official dated last-trade archive",
       "archivedObservation": true,
@@ -1045,7 +1045,7 @@
       "turnover": 36739,
       "asOf": "2026-11-20",
       "verifiedTradeDate": true,
-      "retrievedAt": "2026-11-21T11:07:59.349Z",
+      "retrievedAt": "2026-11-22T12:42:25.441Z",
       "sourceURL": "https://www.cse.lk/api/tradeSummary",
       "verifiedVia": "CSE official dated last-trade archive",
       "archivedObservation": true,
@@ -1054,14 +1054,32 @@
   ],
   "headlines": [
     {
-      "title": "Digital microlending in ‘regulatory black hole’, Sri Lanka think tank finds",
-      "url": "https://economynext.com/digital-microlending-in-regulatory-black-hole-sri-lanka-think-tank-finds-290827/",
+      "title": "Sri Lanka central bank rejects claims account freezes stopped plantation payouts.",
+      "url": "https://economynext.com/sri-lanka-central-bank-rejects-claims-account-freezes-stopped-plantation-payouts-290777/",
+      "date": "2026-11-22",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka-France Business Council to host wine evening, fashion show",
+      "url": "https://economynext.com/sri-lanka-france-business-council-to-host-wine-evening-fashion-show-290840/",
+      "date": "2026-11-22",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka plugs $50,000 import advance loophole as banks, Customs tighten checks",
+      "url": "https://economynext.com/sri-lanka-plugs-50000-import-advance-loophole-as-banks-customs-tighten-checks-290864/",
       "date": "2026-11-21",
       "publisher": "EconomyNext"
     },
     {
       "title": "Sri Lanka central bank to get marketable bonds next year to mop up liquidity",
       "url": "https://economynext.com/sri-lanka-central-bank-to-get-marketable-bonds-next-year-to-mop-up-liquidity-290861/",
+      "date": "2026-11-21",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Digital microlending in ‘regulatory black hole’, Sri Lanka think tank finds",
+      "url": "https://economynext.com/digital-microlending-in-regulatory-black-hole-sri-lanka-think-tank-finds-290827/",
       "date": "2026-11-21",
       "publisher": "EconomyNext"
     },
@@ -1075,6 +1093,18 @@
       "title": "Deloitte Sri Lanka examines Budget 2027",
       "url": "https://economynext.com/deloitte-sri-lanka-examines-budget-2027-290831/",
       "date": "2026-11-21",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka central bank raises reserve ratio to 3-pct to absorb Rs150bn liquidity",
+      "url": "https://economynext.com/sri-lanka-central-bank-raises-reserve-ratio-to-3-pct-to-absorb-rs150bn-liquidity-290814/",
+      "date": "2026-11-20",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka rate hike aimed at curbing oil spillovers, anchoring inflation expectations",
+      "url": "https://economynext.com/sri-lanka-rate-hike-aimed-at-curbing-oil-spillovers-anchoring-inflation-expectations-290800/",
+      "date": "2026-11-20",
       "publisher": "EconomyNext"
     },
     {
@@ -1110,36 +1140,6 @@
     {
       "title": "Fitch assigns Asia Asset Finance’s Rs3bn debt ‘A-(lka)’ rating",
       "url": "https://economynext.com/fitch-assigns-asia-asset-finances-rs3bn-debt-a-lka-rating-290734/",
-      "date": "2026-11-20",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka inflation projected to reach 9-pct by month-end: Central Bank Governor",
-      "url": "https://economynext.com/sri-lanka-inflation-projected-to-reach-9-pct-by-month-end-central-bank-governor-290755/",
-      "date": "2026-11-20",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka lawmakers weigh asset sales, legal action over Sanasa crisis",
-      "url": "https://economynext.com/sri-lanka-lawmakers-weigh-asset-sales-legal-action-over-sanasa-crisis-290748/",
-      "date": "2026-11-20",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Fitch assigns Asia Asset Finance’s Rs2bn debt an ‘A+(lka)’ Rating",
-      "url": "https://economynext.com/fitch-assigns-asia-asset-finances-rs2bn-debt-an-alka-rating-290736/",
-      "date": "2026-11-20",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka regulator extends Sanasa Life Insurance suspension",
-      "url": "https://economynext.com/sri-lanka-regulator-extends-sanasa-life-insurance-suspension-290740/",
-      "date": "2026-11-20",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Sri Lanka stocks open 0.69-pct down after surprise central bank rate hike",
-      "url": "https://economynext.com/sri-lanka-stocks-open-0-69-pct-down-after-surprise-central-bank-rate-hike-290723/",
       "date": "2026-11-20",
       "publisher": "EconomyNext"
     }
@@ -1227,7 +1227,7 @@
       "forex": {
         "status": "available",
         "label": "USD/LKR exchange reference",
-        "asOf": "2026-11-20"
+        "asOf": "2026-11-22"
       },
       "shares": {
         "status": "available",
@@ -1255,10 +1255,10 @@
     "aspi": {
       "status": "current",
       "asOf": "2026-11-20",
-      "ageDays": 1,
+      "ageDays": 2,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T11:08:39.672Z",
-      "lastSuccessAt": "2026-11-21T11:08:39.672Z",
+      "lastAttemptAt": "2026-11-22T12:49:26.702Z",
+      "lastSuccessAt": "2026-11-22T12:49:26.702Z",
       "failures": 0,
       "note": "CSE daily closes validated and appended to dated archive"
     },
@@ -1267,60 +1267,60 @@
       "asOf": "2025",
       "ageDays": null,
       "ageYears": 1,
-      "lastAttemptAt": "2026-11-21T11:08:39.672Z",
-      "lastSuccessAt": "2026-11-21T11:08:39.672Z",
+      "lastAttemptAt": "2026-11-22T12:49:26.702Z",
+      "lastSuccessAt": "2026-11-22T12:49:26.702Z",
       "failures": 0,
       "note": "6 of 6 annual indicators refreshed"
     },
     "forex": {
       "status": "current",
-      "asOf": "2026-11-20",
-      "ageDays": 1,
+      "asOf": "2026-11-22",
+      "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T11:08:39.672Z",
-      "lastSuccessAt": "2026-11-21T11:08:39.672Z",
+      "lastAttemptAt": "2026-11-22T12:49:26.702Z",
+      "lastSuccessAt": "2026-11-22T12:49:26.702Z",
       "failures": 0,
       "note": "Provider response accepted"
     },
     "shares": {
       "status": "current",
       "asOf": "2026-11-20",
-      "ageDays": 1,
+      "ageDays": 2,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T11:08:39.672Z",
-      "lastSuccessAt": "2026-11-21T11:08:39.672Z",
+      "lastAttemptAt": "2026-11-22T12:49:26.702Z",
+      "lastSuccessAt": "2026-11-22T12:49:26.702Z",
       "failures": 0,
       "note": "Cached · 16 verified CSE last-traded shares, as of 2026-11-20. Not streaming. Direct request unavailable (HTTP 403)."
     },
     "sl20": {
       "status": "retrieved_only",
-      "asOf": "2026-11-21",
+      "asOf": "2026-11-22",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T11:08:39.672Z",
-      "lastSuccessAt": "2026-11-21T11:08:39.672Z",
+      "lastAttemptAt": "2026-11-22T12:49:26.702Z",
+      "lastSuccessAt": "2026-11-22T12:49:26.702Z",
       "failures": 0,
       "note": "Index snapshot retrieved; official trade date not verified"
     },
     "turnover": {
       "status": "current",
       "asOf": "2026-11-20",
-      "ageDays": 1,
+      "ageDays": 2,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T11:08:39.672Z",
-      "lastSuccessAt": "2026-11-21T11:08:39.672Z",
+      "lastAttemptAt": "2026-11-22T12:49:26.702Z",
+      "lastSuccessAt": "2026-11-22T12:49:26.702Z",
       "failures": 0,
       "note": "Verified CSE daily market turnover (LKR), trade date 2026-11-20. Not streaming."
     },
     "headlines": {
-      "status": "cached",
-      "asOf": "2026-11-21",
+      "status": "current",
+      "asOf": "2026-11-22",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-21T11:08:39.672Z",
-      "lastSuccessAt": "2026-11-21T10:44:31.835Z",
-      "failures": 1,
-      "note": "Publisher did not return an RSS feed"
+      "lastAttemptAt": "2026-11-22T12:49:26.702Z",
+      "lastSuccessAt": "2026-11-22T12:49:26.702Z",
+      "failures": 0,
+      "note": "Provider response accepted"
     }
   },
   "learning": {
@@ -1502,13 +1502,11 @@
     "fx": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=LKR",
     "sec": "https://www.sec.gov.lk/"
   },
-  "warnings": [
-    "headlines: Publisher did not return an RSS feed"
-  ],
+  "warnings": [],
   "disclaimer": "Educational research only. Reliable data collection does not establish predictive skill or guarantee returns. No specific security is recommended.",
   "reliability": {
-    "currentSources": 5,
-    "staleSources": 1,
+    "currentSources": 6,
+    "staleSources": 0,
     "retrievedOnlySources": 1,
     "unavailableSources": 0,
     "totalSources": 7,
@@ -1519,7 +1517,7 @@
     "edgeModels": 1,
     "modelClaim": "Limited historical statistical edge — not investment advice",
     "dataLimit": "The public CSE chart endpoint supplies roughly one trailing year. Older dates require permitted, verified historical data; no synthetic backfill.",
-    "refreshedAt": "2026-11-21T11:08:39.672Z",
+    "refreshedAt": "2026-11-22T12:49:26.702Z",
     "disclaimer": "Source health is not model accuracy or probability of market growth."
   }
 }

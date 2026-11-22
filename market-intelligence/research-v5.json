@@ -1,8 +1,8 @@
 {
   "schemaVersion": 5,
   "engineVersion": "5.3.0",
-  "generatedAt": "2026-11-22T12:42:34.341Z",
-  "sourceSnapshotAt": "2026-11-21T11:08:39.672Z",
+  "generatedAt": "2026-11-22T12:49:33.367Z",
+  "sourceSnapshotAt": "2026-11-22T12:49:26.702Z",
   "status": "research_available",
   "briefing": {
     "title": "Sri Lanka · Autonomous Market Brief",
@@ -38,12 +38,11 @@
       {
         "id": "news-topics",
         "tone": "info",
-        "title": "4 headlines matched economic research topics",
+        "title": "2 headlines matched economic research topics",
         "detail": "Topic matching identifies subjects to investigate; it cannot confirm causation or returns.",
         "evidenceIds": [
-          "news-2",
-          "news-5",
-          "news-6"
+          "news-1",
+          "news-4"
         ]
       },
       {
@@ -89,15 +88,35 @@
   "news": [
     {
       "id": "news-1",
-      "title": "Digital microlending in ‘regulatory black hole’, Sri Lanka think tank finds",
-      "url": "https://economynext.com/digital-microlending-in-regulatory-black-hole-sri-lanka-think-tank-finds-290827/",
+      "title": "Sri Lanka central bank rejects claims account freezes stopped plantation payouts.",
+      "url": "https://economynext.com/sri-lanka-central-bank-rejects-claims-account-freezes-stopped-plantation-payouts-290777/",
+      "date": "2026-11-22",
+      "publisher": "EconomyNext",
+      "topics": [
+        "Interest rates"
+      ],
+      "impactNote": "Interest rates can affect bank margins, borrowing costs and demand; company effects are unverified."
+    },
+    {
+      "id": "news-2",
+      "title": "Sri Lanka-France Business Council to host wine evening, fashion show",
+      "url": "https://economynext.com/sri-lanka-france-business-council-to-host-wine-evening-fashion-show-290840/",
+      "date": "2026-11-22",
+      "publisher": "EconomyNext",
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+    },
+    {
+      "id": "news-3",
+      "title": "Sri Lanka plugs $50,000 import advance loophole as banks, Customs tighten checks",
+      "url": "https://economynext.com/sri-lanka-plugs-50000-import-advance-loophole-as-banks-customs-tighten-checks-290864/",
       "date": "2026-11-21",
       "publisher": "EconomyNext",
       "topics": [],
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
-      "id": "news-2",
+      "id": "news-4",
       "title": "Sri Lanka central bank to get marketable bonds next year to mop up liquidity",
       "url": "https://economynext.com/sri-lanka-central-bank-to-get-marketable-bonds-next-year-to-mop-up-liquidity-290861/",
       "date": "2026-11-21",
@@ -108,7 +127,16 @@
       "impactNote": "Interest rates can affect bank margins, borrowing costs and demand; company effects are unverified."
     },
     {
-      "id": "news-3",
+      "id": "news-5",
+      "title": "Digital microlending in ‘regulatory black hole’, Sri Lanka think tank finds",
+      "url": "https://economynext.com/digital-microlending-in-regulatory-black-hole-sri-lanka-think-tank-finds-290827/",
+      "date": "2026-11-21",
+      "publisher": "EconomyNext",
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+    },
+    {
+      "id": "news-6",
       "title": "Sri Lanka Supreme Court clears Prevention of Organized Crime Bill with changes",
       "url": "https://economynext.com/sri-lanka-supreme-court-clears-prevention-of-organized-crime-bill-with-changes-290866/",
       "date": "2026-11-21",
@@ -117,46 +145,13 @@
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
-      "id": "news-4",
+      "id": "news-7",
       "title": "Deloitte Sri Lanka examines Budget 2027",
       "url": "https://economynext.com/deloitte-sri-lanka-examines-budget-2027-290831/",
       "date": "2026-11-21",
       "publisher": "EconomyNext",
       "topics": [],
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
-    },
-    {
-      "id": "news-5",
-      "title": "Sri Lanka central bank has no credit target, backs borrowing within repayment capacity: Governor",
-      "url": "https://economynext.com/sri-lanka-central-bank-has-no-credit-target-backs-borrowing-within-repayment-capacity-governor-290821/",
-      "date": "2026-11-20",
-      "publisher": "EconomyNext",
-      "topics": [
-        "Interest rates"
-      ],
-      "impactNote": "Interest rates can affect bank margins, borrowing costs and demand; company effects are unverified."
-    },
-    {
-      "id": "news-6",
-      "title": "Sri Lanka stocks close down 0.80-pct after rate hike",
-      "url": "https://economynext.com/sri-lanka-stocks-close-down-0-80-pct-after-rate-hike-290851/",
-      "date": "2026-11-20",
-      "publisher": "EconomyNext",
-      "topics": [
-        "Interest rates"
-      ],
-      "impactNote": "Interest rates can affect bank margins, borrowing costs and demand; company effects are unverified."
-    },
-    {
-      "id": "news-7",
-      "title": "Sri Lanka rupee closes at 332.60/65 to US dollar spot, bond yields rise",
-      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-60-65-to-us-dollar-spot-bond-yields-rise-290850/",
-      "date": "2026-11-20",
-      "publisher": "EconomyNext",
-      "topics": [
-        "Currency"
-      ],
-      "impactNote": "Currency changes can affect importers, exporters and foreign-currency debts."
     }
   ],
   "companies": [
@@ -1553,51 +1548,51 @@
     },
     {
       "id": "news-1",
-      "label": "Publisher headline · Digital microlending in ‘regulatory black hole’, Sri Lanka think tank finds",
-      "url": "https://economynext.com/digital-microlending-in-regulatory-black-hole-sri-lanka-think-tank-finds-290827/",
-      "asOf": "2026-11-21",
+      "label": "Publisher headline · Sri Lanka central bank rejects claims account freezes stopped plantation payouts.",
+      "url": "https://economynext.com/sri-lanka-central-bank-rejects-claims-account-freezes-stopped-plantation-payouts-290777/",
+      "asOf": "2026-11-22",
       "kind": "dated_headline"
     },
     {
       "id": "news-2",
+      "label": "Publisher headline · Sri Lanka-France Business Council to host wine evening, fashion show",
+      "url": "https://economynext.com/sri-lanka-france-business-council-to-host-wine-evening-fashion-show-290840/",
+      "asOf": "2026-11-22",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-3",
+      "label": "Publisher headline · Sri Lanka plugs $50,000 import advance loophole as banks, Customs tighten checks",
+      "url": "https://economynext.com/sri-lanka-plugs-50000-import-advance-loophole-as-banks-customs-tighten-checks-290864/",
+      "asOf": "2026-11-21",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-4",
       "label": "Publisher headline · Sri Lanka central bank to get marketable bonds next year to mop up liquidity",
       "url": "https://economynext.com/sri-lanka-central-bank-to-get-marketable-bonds-next-year-to-mop-up-liquidity-290861/",
       "asOf": "2026-11-21",
       "kind": "dated_headline"
     },
     {
-      "id": "news-3",
+      "id": "news-5",
+      "label": "Publisher headline · Digital microlending in ‘regulatory black hole’, Sri Lanka think tank finds",
+      "url": "https://economynext.com/digital-microlending-in-regulatory-black-hole-sri-lanka-think-tank-finds-290827/",
+      "asOf": "2026-11-21",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-6",
       "label": "Publisher headline · Sri Lanka Supreme Court clears Prevention of Organized Crime Bill with changes",
       "url": "https://economynext.com/sri-lanka-supreme-court-clears-prevention-of-organized-crime-bill-with-changes-290866/",
       "asOf": "2026-11-21",
       "kind": "dated_headline"
     },
     {
-      "id": "news-4",
+      "id": "news-7",
       "label": "Publisher headline · Deloitte Sri Lanka examines Budget 2027",
       "url": "https://economynext.com/deloitte-sri-lanka-examines-budget-2027-290831/",
       "asOf": "2026-11-21",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-5",
-      "label": "Publisher headline · Sri Lanka central bank has no credit target, backs borrowing within repayment capacity: Go",
-      "url": "https://economynext.com/sri-lanka-central-bank-has-no-credit-target-backs-borrowing-within-repayment-capacity-governor-290821/",
-      "asOf": "2026-11-20",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-6",
-      "label": "Publisher headline · Sri Lanka stocks close down 0.80-pct after rate hike",
-      "url": "https://economynext.com/sri-lanka-stocks-close-down-0-80-pct-after-rate-hike-290851/",
-      "asOf": "2026-11-20",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-7",
-      "label": "Publisher headline · Sri Lanka rupee closes at 332.60/65 to US dollar spot, bond yields rise",
-      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-60-65-to-us-dollar-spot-bond-yields-rise-290850/",
-      "asOf": "2026-11-20",
       "kind": "dated_headline"
     },
     {
@@ -2444,9 +2439,7 @@
       "Current company financial statements have not been verified",
       "No live brokerage integration"
     ],
-    "sourceWarnings": [
-      "headlines: Publisher did not return an RSS feed"
-    ],
+    "sourceWarnings": [],
     "verifiedCompanyQuotes": 16,
     "companyFacts": 16,
     "companyFilings": 16,
