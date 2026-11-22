@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "version": "5.7",
-  "generatedAt": "2026-11-22T08:46:49.900Z",
+  "generatedAt": "2026-11-22T17:05:06.449Z",
   "lastObservedCloseDate": "2026-11-20",
   "provider": "Dated gold closing prices, collected from a public historical feed",
   "sourceUrl": "https://xaus.com/api/v1/history",
