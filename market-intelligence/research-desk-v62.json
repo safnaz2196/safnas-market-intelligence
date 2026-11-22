@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "version": "6.2",
-  "generatedAt": "2026-11-21T20:11:54.090Z",
+  "generatedAt": "2026-11-22T08:28:08.231Z",
   "status": "observed_public_research",
   "snapshot": {
     "aspiDate": "2026-11-20",
-    "goldQuoteDate": "2026-11-21T16:06:08Z",
+    "goldQuoteDate": "2026-11-22T01:33:09Z",
     "predictionResolved": 0,
     "companies": {
       "DIAL.N0000": {
@@ -77,7 +77,7 @@
   "coverage": {
     "cseQuotes": "16 / 16",
     "cseDataDate": "2026-11-20",
-    "goldDataDate": "2026-11-21T16:06:08Z",
+    "goldDataDate": "2026-11-22T01:33:09Z",
     "collectorAt": "2026-11-21T11:08:39.672Z",
     "researchAt": "2026-11-21T11:08:43.295Z",
     "predictionResults": 0,
@@ -92,7 +92,7 @@
   },
   "gold": {
     "referenceUsdOz": 3539,
-    "quoteAsOf": "2026-11-21T16:06:08Z",
+    "quoteAsOf": "2026-11-22T01:33:09Z",
     "goldModelWindows": 6,
     "historicalWindowsValidated": 0,
     "forwardPending": 6,
@@ -105,15 +105,23 @@
   "publishers": 7,
   "changes": [
     {
-      "id": "ebdb60d29f55768d",
+      "id": "f9242e44ae2b642b",
       "kind": "gold",
       "label": "New gold spot observation",
-      "detail": "USD 3539/oz as of 2026-11-21T16:06:08Z",
-      "asOf": "2026-11-21T16:06:08Z",
+      "detail": "USD 3539/oz as of 2026-11-22T01:33:09Z",
+      "asOf": "2026-11-22T01:33:09Z",
       "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
     }
   ],
   "history": [
+    {
+      "id": "f9242e44ae2b642b",
+      "kind": "gold",
+      "label": "New gold spot observation",
+      "detail": "USD 3539/oz as of 2026-11-22T01:33:09Z",
+      "asOf": "2026-11-22T01:33:09Z",
+      "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
+    },
     {
       "id": "ebdb60d29f55768d",
       "kind": "gold",
