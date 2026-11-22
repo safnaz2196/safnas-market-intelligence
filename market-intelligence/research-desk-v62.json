@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "version": "6.2",
-  "generatedAt": "2026-11-22T08:28:08.231Z",
+  "generatedAt": "2026-11-22T20:26:07.987Z",
   "status": "observed_public_research",
   "snapshot": {
     "aspiDate": "2026-11-20",
-    "goldQuoteDate": "2026-11-22T01:33:09Z",
+    "goldQuoteDate": "2026-11-22T17:04:40Z",
     "predictionResolved": 0,
     "companies": {
       "DIAL.N0000": {
@@ -77,9 +77,9 @@
   "coverage": {
     "cseQuotes": "16 / 16",
     "cseDataDate": "2026-11-20",
-    "goldDataDate": "2026-11-22T01:33:09Z",
-    "collectorAt": "2026-11-21T11:08:39.672Z",
-    "researchAt": "2026-11-21T11:08:43.295Z",
+    "goldDataDate": "2026-11-22T17:04:40Z",
+    "collectorAt": "2026-11-22T12:49:26.702Z",
+    "researchAt": "2026-11-22T12:49:33.367Z",
     "predictionResults": 0,
     "warning": "Source dates are observations, not live exchange-streaming commitments."
   },
@@ -92,7 +92,7 @@
   },
   "gold": {
     "referenceUsdOz": 3539,
-    "quoteAsOf": "2026-11-22T01:33:09Z",
+    "quoteAsOf": "2026-11-22T17:04:40Z",
     "goldModelWindows": 6,
     "historicalWindowsValidated": 0,
     "forwardPending": 6,
@@ -105,15 +105,23 @@
   "publishers": 7,
   "changes": [
     {
-      "id": "f9242e44ae2b642b",
+      "id": "e62916ca6def6d7a",
       "kind": "gold",
       "label": "New gold spot observation",
-      "detail": "USD 3539/oz as of 2026-11-22T01:33:09Z",
-      "asOf": "2026-11-22T01:33:09Z",
+      "detail": "USD 3539/oz as of 2026-11-22T17:04:40Z",
+      "asOf": "2026-11-22T17:04:40Z",
       "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
     }
   ],
   "history": [
+    {
+      "id": "e62916ca6def6d7a",
+      "kind": "gold",
+      "label": "New gold spot observation",
+      "detail": "USD 3539/oz as of 2026-11-22T17:04:40Z",
+      "asOf": "2026-11-22T17:04:40Z",
+      "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
+    },
     {
       "id": "f9242e44ae2b642b",
       "kind": "gold",
