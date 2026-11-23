@@ -1,6 +1,6 @@
 {
   "source": "https://www.cse.lk/api/chartData",
-  "lastCaptured": "2026-11-22T12:49:26.702Z",
+  "lastCaptured": "2026-11-23T11:08:22.064Z",
   "historyLimit": "CSE free endpoint offers about one trailing year; archive expands only with verified dated observations.",
   "points": [
     {
@@ -990,6 +990,10 @@
     {
       "date": "2026-11-20",
       "close": 21369.72
+    },
+    {
+      "date": "2026-11-23",
+      "close": 21259.83
     }
   ]
 }
