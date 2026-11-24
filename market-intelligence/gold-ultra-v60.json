@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "version": "6.0",
-  "generatedAt": "2026-11-24T10:23:47.813Z",
+  "generatedAt": "2026-11-24T20:51:38.824Z",
   "status": "research_available",
   "brand": "Safnas Finance v6.0 · Ultra Autonomous Gold Intelligence",
   "latestReference": {
-    "usdOz": 3620.45,
-    "asOf": "2026-11-24T10:23:43Z",
+    "usdOz": 3547.35,
+    "asOf": "2026-11-24T20:51:14Z",
     "source": "https://api.gold-api.com/price/XAU",
     "goldHistoryAsOf": "2026-11-24",
     "fxAsOf": "2026-11-24T00:02:31.000Z",
@@ -16,14 +16,14 @@
     },
     "localGramPrices": {
       "SAR": {
-        "purity22": 400.13,
-        "purity24": 436.5,
+        "purity22": 392.05,
+        "purity24": 427.69,
         "currency": "SAR",
         "unit": "SAR/gram"
       },
       "LKR": {
-        "purity22": 35464.7,
-        "purity24": 38688.77,
+        "purity22": 34748.64,
+        "purity24": 37907.61,
         "currency": "LKR",
         "unit": "LKR/gram"
       }
@@ -31,18 +31,18 @@
   },
   "sourceIntegrity": {
     "spot": {
-      "observedAt": "2026-11-24T10:23:43Z",
+      "observedAt": "2026-11-24T20:51:14Z",
       "ageHours": 0,
       "status": "recent"
     },
     "fx": {
       "observedAt": "2026-11-24T00:02:31.000Z",
-      "ageHours": 10.4,
+      "ageHours": 20.8,
       "status": "recent"
     },
     "history": {
       "observedAt": "2026-11-24T00:00:00Z",
-      "ageHours": 10.4,
+      "ageHours": 20.9,
       "status": "recent"
     },
     "cftc": "dated_weekly",
@@ -50,8 +50,8 @@
     "news": "not_verified",
     "priceComparison": {
       "status": "consistent",
-      "discrepancyPct": 0.014,
-      "comparedAt": "2026-11-24T10:23:47.813Z",
+      "discrepancyPct": 0.069,
+      "comparedAt": "2026-11-24T20:51:38.824Z",
       "providers": [
         "https://api.gold-api.com/price/XAU",
         "https://xaus.com/api/v1/spot?compact=1"
@@ -61,7 +61,7 @@
   },
   "risk": {
     "grade": "ELEVATED_VOLATILITY",
-    "volatility20AnnualizedPct": 33.88,
+    "volatility20AnnualizedPct": 34.51,
     "trend": "downtrend",
     "explanation": "Gold prices and exchange rates can change in either direction. No risk grade guarantees an outcome."
   },
@@ -88,12 +88,12 @@
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
             "rise": 33.72,
-            "fall": 32.56,
-            "range": 33.72
+            "fall": 33.72,
+            "range": 32.56
           },
           "scenarios": {
-            "lowPct": -2.908,
-            "midPct": -0.03,
+            "lowPct": -2.481,
+            "midPct": -0.058,
             "highPct": 1.611
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
@@ -104,13 +104,13 @@
           "direction": "fall",
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
-            "rise": 33.72,
-            "fall": 34.88,
+            "rise": 32.56,
+            "fall": 36.05,
             "range": 31.4
           },
           "scenarios": {
             "lowPct": -2.908,
-            "midPct": -0.097,
+            "midPct": -0.115,
             "highPct": 1.611
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
@@ -121,13 +121,13 @@
           "direction": "fall",
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
-            "rise": 33.72,
-            "fall": 37.21,
+            "rise": 34.88,
+            "fall": 36.05,
             "range": 29.07
           },
           "scenarios": {
             "lowPct": -2.908,
-            "midPct": -0.115,
+            "midPct": -0.097,
             "highPct": 1.74
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
@@ -155,14 +155,14 @@
           "direction": "fall",
           "referenceCases": 60,
           "conditionalHistoricalFrequencies": {
-            "rise": 25.81,
-            "fall": 50.22,
-            "range": 23.97
+            "rise": 24.24,
+            "fall": 52.7,
+            "range": 23.06
           },
           "scenarios": {
-            "lowPct": -2.47,
-            "midPct": -0.509,
-            "highPct": 1.492
+            "lowPct": -2.605,
+            "midPct": -0.607,
+            "highPct": 1.433
           },
           "note": "Lognormal time-series approximation, not calibrated market odds."
         }
@@ -252,9 +252,9 @@
         "selectionNote": "Candidate chosen on earlier outcomes only; later outcomes are separated by the full forecast horizon to reduce label overlap. Minimum 35 early and 20 later checks, Brier improvement ≥ 0.025 and scenario coverage ≥ 50%."
       },
       "goldScenarioUSD": {
-        "lowUsdOz": 3530.28,
-        "midUsdOz": 3634.42,
-        "highUsdOz": 3727.75
+        "lowUsdOz": 3464.46,
+        "midUsdOz": 3566.66,
+        "highUsdOz": 3658.25
       },
       "localScenarios": {
         "available": true,
@@ -270,13 +270,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 390.16,
-              "middle": 401.67,
-              "high": 411.98
+              "low": 382.89,
+              "middle": 394.18,
+              "high": 404.3
             },
             "hypotheticalStress": {
-              "low": 388.21,
-              "high": 414.04
+              "low": 380.98,
+              "high": 406.32
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -288,13 +288,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 425.63,
-              "middle": 438.18,
-              "high": 449.44
+              "low": 417.69,
+              "middle": 430.02,
+              "high": 441.06
             },
             "hypotheticalStress": {
-              "low": 423.5,
-              "high": 451.69
+              "low": 415.6,
+              "high": 443.27
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -306,13 +306,13 @@
             "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 34581.43,
-              "middle": 35601.55,
-              "high": 36515.78
+              "low": 33936.68,
+              "middle": 34937.79,
+              "high": 35834.98
             },
             "hypotheticalStress": {
-              "low": 33543.99,
-              "high": 37611.25
+              "low": 32918.58,
+              "high": 36910.03
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -324,13 +324,13 @@
             "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 37725.19,
-              "middle": 38838.05,
-              "high": 39835.39
+              "low": 37021.83,
+              "middle": 38113.96,
+              "high": 39092.7
             },
             "hypotheticalStress": {
-              "low": 36593.43,
-              "high": 41030.45
+              "low": 35911.18,
+              "high": 40265.48
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
@@ -365,14 +365,14 @@
           "direction": "fall",
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
-            "rise": 36.05,
+            "rise": 34.88,
             "fall": 37.21,
-            "range": 26.74
+            "range": 27.91
           },
           "scenarios": {
             "lowPct": -3.804,
-            "midPct": -0.125,
-            "highPct": 3.075
+            "midPct": -0.37,
+            "highPct": 2.76
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
         },
@@ -382,14 +382,14 @@
           "direction": "fall",
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
-            "rise": 36.05,
-            "fall": 39.53,
+            "rise": 34.88,
+            "fall": 40.7,
             "range": 24.42
           },
           "scenarios": {
             "lowPct": -3.77,
-            "midPct": -0.443,
-            "highPct": 3.255
+            "midPct": -0.512,
+            "highPct": 2.617
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
         },
@@ -399,14 +399,14 @@
           "direction": "fall",
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
-            "rise": 36.05,
+            "rise": 37.21,
             "fall": 39.53,
-            "range": 24.42
+            "range": 23.26
           },
           "scenarios": {
             "lowPct": -3.77,
-            "midPct": -0.443,
-            "highPct": 3.13
+            "midPct": -0.382,
+            "highPct": 2.766
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
         },
@@ -423,7 +423,7 @@
           "scenarios": {
             "lowPct": -3.614,
             "midPct": -0.227,
-            "highPct": 3.291
+            "highPct": 3.134
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
         },
@@ -433,14 +433,14 @@
           "direction": "fall",
           "referenceCases": 60,
           "conditionalHistoricalFrequencies": {
-            "rise": 21.62,
-            "fall": 55.62,
-            "range": 22.76
+            "rise": 19.56,
+            "fall": 58.96,
+            "range": 21.48
           },
           "scenarios": {
-            "lowPct": -3.763,
-            "midPct": -1.015,
-            "highPct": 1.812
+            "lowPct": -4.007,
+            "midPct": -1.21,
+            "highPct": 1.669
           },
           "note": "Lognormal time-series approximation, not calibrated market odds."
         }
@@ -468,7 +468,7 @@
         "baselineBrier": 0.677,
         "improvement": -0.0067,
         "hitRatePct": 35.4,
-        "rangeCoveragePct": 69.6,
+        "rangeCoveragePct": 70.9,
         "modelAudits": [
           {
             "id": "analogue",
@@ -479,7 +479,7 @@
             "baselineBrier": 0.677,
             "improvement": -0.0323,
             "laterHitRatePct": 31.6,
-            "rangeCoveragePct": 65.8
+            "rangeCoveragePct": 67.1
           },
           {
             "id": "trend",
@@ -490,7 +490,7 @@
             "baselineBrier": 0.677,
             "improvement": -0.0314,
             "laterHitRatePct": 35.4,
-            "rangeCoveragePct": 58.2
+            "rangeCoveragePct": 59.5
           },
           {
             "id": "reversion",
@@ -501,7 +501,7 @@
             "baselineBrier": 0.677,
             "improvement": -0.035,
             "laterHitRatePct": 31.6,
-            "rangeCoveragePct": 60.8
+            "rangeCoveragePct": 62
           },
           {
             "id": "regime",
@@ -512,7 +512,7 @@
             "baselineBrier": 0.677,
             "improvement": -0.0067,
             "laterHitRatePct": 35.4,
-            "rangeCoveragePct": 69.6
+            "rangeCoveragePct": 70.9
           },
           {
             "id": "ewma",
@@ -530,9 +530,9 @@
         "selectionNote": "Candidate chosen on earlier outcomes only; later outcomes are separated by the full forecast horizon to reduce label overlap. Minimum 35 early and 20 later checks, Brier improvement ≥ 0.025 and scenario coverage ≥ 50%."
       },
       "goldScenarioUSD": {
-        "lowUsdOz": 3500.06,
-        "midUsdOz": 3623.06,
-        "highUsdOz": 3750.81
+        "lowUsdOz": 3434.81,
+        "midUsdOz": 3555.51,
+        "highUsdOz": 3675.28
       },
       "localScenarios": {
         "available": true,
@@ -548,13 +548,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 386.82,
-              "middle": 400.41,
-              "high": 414.53
+              "low": 379.61,
+              "middle": 392.95,
+              "high": 406.19
             },
             "hypotheticalStress": {
-              "low": 384.89,
-              "high": 416.6
+              "low": 377.71,
+              "high": 408.22
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -566,13 +566,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 421.99,
-              "middle": 436.82,
-              "high": 452.22
+              "low": 414.12,
+              "middle": 428.67,
+              "high": 443.11
             },
             "hypotheticalStress": {
-              "low": 419.88,
-              "high": 454.48
+              "low": 412.05,
+              "high": 445.33
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -584,13 +584,13 @@
             "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 34285.4,
-              "middle": 35490.27,
-              "high": 36741.67
+              "low": 33646.24,
+              "middle": 34828.57,
+              "high": 36001.8
             },
             "hypotheticalStress": {
-              "low": 33256.84,
-              "high": 37843.92
+              "low": 32636.85,
+              "high": 37081.85
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -602,13 +602,13 @@
             "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 37402.26,
-              "middle": 38716.66,
-              "high": 40081.82
+              "low": 36704.99,
+              "middle": 37994.81,
+              "high": 39274.69
             },
             "hypotheticalStress": {
-              "low": 36280.19,
-              "high": 41284.27
+              "low": 35603.84,
+              "high": 40452.93
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
@@ -643,14 +643,14 @@
           "direction": "rise",
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
-            "rise": 39.53,
-            "fall": 26.74,
+            "rise": 38.37,
+            "fall": 27.91,
             "range": 33.72
           },
           "scenarios": {
             "lowPct": -4.997,
-            "midPct": 0.493,
-            "highPct": 4.615
+            "midPct": 0.389,
+            "highPct": 4.331
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
         },
@@ -660,13 +660,13 @@
           "direction": "rise",
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
-            "rise": 41.86,
+            "rise": 40.7,
             "fall": 29.07,
-            "range": 29.07
+            "range": 30.23
           },
           "scenarios": {
-            "lowPct": -4.193,
-            "midPct": 0.863,
+            "lowPct": -3.922,
+            "midPct": 0.691,
             "highPct": 4.331
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
@@ -677,14 +677,14 @@
           "direction": "rise",
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
-            "rise": 40.7,
+            "rise": 41.86,
             "fall": 27.91,
-            "range": 31.4
+            "range": 30.23
           },
           "scenarios": {
             "lowPct": -3.465,
-            "midPct": 0.671,
-            "highPct": 4.331
+            "midPct": 0.863,
+            "highPct": 4.585
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
         },
@@ -694,13 +694,13 @@
           "direction": "rise",
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
-            "rise": 39.53,
-            "fall": 34.88,
+            "rise": 40.7,
+            "fall": 33.72,
             "range": 25.58
           },
           "scenarios": {
             "lowPct": -4.68,
-            "midPct": 0.133,
+            "midPct": 0.171,
             "highPct": 3.543
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
@@ -711,14 +711,14 @@
           "direction": "fall",
           "referenceCases": 60,
           "conditionalHistoricalFrequencies": {
-            "rise": 14.59,
-            "fall": 65.92,
-            "range": 19.49
+            "rise": 12.05,
+            "fall": 70.59,
+            "range": 17.36
           },
           "scenarios": {
-            "lowPct": -6.762,
-            "midPct": -2.517,
-            "highPct": 1.92
+            "lowPct": -7.304,
+            "midPct": -2.997,
+            "highPct": 1.51
           },
           "note": "Lognormal time-series approximation, not calibrated market odds."
         }
@@ -808,9 +808,9 @@
         "selectionNote": "Candidate chosen on earlier outcomes only; later outcomes are separated by the full forecast horizon to reduce label overlap. Minimum 35 early and 20 later checks, Brier improvement ≥ 0.025 and scenario coverage ≥ 50%."
       },
       "goldScenarioUSD": {
-        "lowUsdOz": 3461.36,
-        "midUsdOz": 3636.13,
-        "highUsdOz": 3759.96
+        "lowUsdOz": 3396.82,
+        "midUsdOz": 3569.69,
+        "highUsdOz": 3689.86
       },
       "localScenarios": {
         "available": true,
@@ -826,13 +826,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 382.54,
-              "middle": 401.86,
-              "high": 415.54
+              "low": 375.41,
+              "middle": 394.52,
+              "high": 407.8
             },
             "hypotheticalStress": {
-              "low": 380.63,
-              "high": 417.62
+              "low": 373.53,
+              "high": 409.84
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -844,13 +844,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 417.32,
-              "middle": 438.39,
-              "high": 453.32
+              "low": 409.54,
+              "middle": 430.38,
+              "high": 444.87
             },
             "hypotheticalStress": {
-              "low": 415.23,
-              "high": 455.59
+              "low": 407.49,
+              "high": 447.09
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -862,13 +862,13 @@
             "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 33906.31,
-              "middle": 35618.3,
-              "high": 36831.3
+              "low": 33274.1,
+              "middle": 34967.48,
+              "high": 36144.62
             },
             "hypotheticalStress": {
-              "low": 32889.12,
-              "high": 37936.24
+              "low": 32275.88,
+              "high": 37228.96
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -880,13 +880,13 @@
             "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 36988.7,
-              "middle": 38856.33,
-              "high": 40179.6
+              "low": 36299.02,
+              "middle": 38146.34,
+              "high": 39430.49
             },
             "hypotheticalStress": {
-              "low": 35879.04,
-              "high": 41384.99
+              "low": 35210.05,
+              "high": 40613.4
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
@@ -917,13 +917,13 @@
           "direction": "rise",
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
-            "rise": 38.37,
-            "fall": 30.23,
-            "range": 31.4
+            "rise": 37.21,
+            "fall": 29.07,
+            "range": 33.72
           },
           "scenarios": {
-            "lowPct": -4.253,
-            "midPct": 0.492,
+            "lowPct": -4.125,
+            "midPct": 0.391,
             "highPct": 4.755
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
@@ -948,16 +948,16 @@
         {
           "id": "reversion",
           "label": "RSI / Reversal (kNN)",
-          "direction": "range",
+          "direction": "rise",
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
-            "rise": 36.05,
-            "fall": 26.74,
+            "rise": 38.37,
+            "fall": 24.42,
             "range": 37.21
           },
           "scenarios": {
-            "lowPct": -3.742,
-            "midPct": 0.229,
+            "lowPct": -3.315,
+            "midPct": 0.391,
             "highPct": 5.865
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
@@ -968,13 +968,13 @@
           "direction": "fall",
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
-            "rise": 26.74,
-            "fall": 38.37,
+            "rise": 27.91,
+            "fall": 37.21,
             "range": 34.88
           },
           "scenarios": {
             "lowPct": -5.877,
-            "midPct": -0.801,
+            "midPct": -0.764,
             "highPct": 3.342
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
@@ -985,22 +985,22 @@
           "direction": "fall",
           "referenceCases": 60,
           "conditionalHistoricalFrequencies": {
-            "rise": 8.73,
-            "fall": 76.23,
-            "range": 15.04
+            "rise": 6.33,
+            "fall": 81.5,
+            "range": 12.17
           },
           "scenarios": {
-            "lowPct": -10.77,
-            "midPct": -4.972,
-            "highPct": 1.203
+            "lowPct": -11.757,
+            "midPct": -5.904,
+            "highPct": 0.337
           },
           "note": "Lognormal time-series approximation, not calibrated market odds."
         }
       ],
       "modelVotes": {
-        "rise": 1,
+        "rise": 2,
         "fall": 2,
-        "range": 2
+        "range": 1
       },
       "modelCount": 5,
       "statisticalDirectionReliable": false,
@@ -1082,9 +1082,9 @@
         "selectionNote": "Candidate chosen on earlier outcomes only; later outcomes are separated by the full forecast horizon to reduce label overlap. Minimum 35 early and 20 later checks, Brier improvement ≥ 0.025 and scenario coverage ≥ 50%."
       },
       "goldScenarioUSD": {
-        "lowUsdOz": 3464.51,
-        "midUsdOz": 3633.3,
-        "highUsdOz": 3844.28
+        "lowUsdOz": 3399.92,
+        "midUsdOz": 3565.56,
+        "highUsdOz": 3772.61
       },
       "localScenarios": {
         "available": true,
@@ -1100,13 +1100,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 382.89,
-              "middle": 401.55,
-              "high": 424.86
+              "low": 375.75,
+              "middle": 394.06,
+              "high": 416.94
             },
             "hypotheticalStress": {
-              "low": 380.98,
-              "high": 426.98
+              "low": 373.87,
+              "high": 419.02
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -1118,13 +1118,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 417.7,
-              "middle": 438.05,
-              "high": 463.49
+              "low": 409.91,
+              "middle": 429.88,
+              "high": 454.85
             },
             "hypotheticalStress": {
-              "low": 415.61,
-              "high": 465.81
+              "low": 407.86,
+              "high": 457.12
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -1136,13 +1136,13 @@
             "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 33937.17,
-              "middle": 35590.58,
-              "high": 37657.27
+              "low": 33304.47,
+              "middle": 34927.02,
+              "high": 36955.21
             },
             "hypotheticalStress": {
-              "low": 32919.05,
-              "high": 38786.99
+              "low": 32305.34,
+              "high": 38063.87
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -1154,13 +1154,13 @@
             "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 37022.36,
-              "middle": 38826.08,
-              "high": 41080.65
+              "low": 36332.14,
+              "middle": 38102.2,
+              "high": 40314.78
             },
             "hypotheticalStress": {
-              "low": 35911.69,
-              "high": 42313.07
+              "low": 35242.18,
+              "high": 41524.22
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
@@ -1182,8 +1182,8 @@
     {
       "days": 30,
       "sessions": 21,
-      "expectedBias": "fall",
-      "modelAgreement": 80,
+      "expectedBias": "rise",
+      "modelAgreement": 60,
       "models": [
         {
           "id": "analogue",
@@ -1191,30 +1191,30 @@
           "direction": "rise",
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
-            "rise": 39.53,
-            "fall": 39.53,
-            "range": 20.93
+            "rise": 43.02,
+            "fall": 38.37,
+            "range": 18.6
           },
           "scenarios": {
-            "lowPct": -6.797,
-            "midPct": -0.741,
-            "highPct": 7.852
+            "lowPct": -6.565,
+            "midPct": 0.308,
+            "highPct": 7.986
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
         },
         {
           "id": "trend",
           "label": "Trend / Momentum (kNN)",
-          "direction": "fall",
+          "direction": "rise",
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
-            "rise": 39.53,
-            "fall": 41.86,
+            "rise": 40.7,
+            "fall": 40.7,
             "range": 18.6
           },
           "scenarios": {
             "lowPct": -7.95,
-            "midPct": -1.143,
+            "midPct": -0.867,
             "highPct": 8.694
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
@@ -1222,17 +1222,17 @@
         {
           "id": "reversion",
           "label": "RSI / Reversal (kNN)",
-          "direction": "fall",
+          "direction": "rise",
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
-            "rise": 38.37,
-            "fall": 39.53,
+            "rise": 40.7,
+            "fall": 37.21,
             "range": 22.09
           },
           "scenarios": {
-            "lowPct": -7.95,
-            "midPct": -0.498,
-            "highPct": 8.238
+            "lowPct": -7.231,
+            "midPct": 0.308,
+            "highPct": 8.202
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
         },
@@ -1243,12 +1243,12 @@
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
             "rise": 24.42,
-            "fall": 44.19,
-            "range": 31.4
+            "fall": 45.35,
+            "range": 30.23
           },
           "scenarios": {
             "lowPct": -8.269,
-            "midPct": -1.579,
+            "midPct": -1.752,
             "highPct": 7.479
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
@@ -1259,21 +1259,21 @@
           "direction": "fall",
           "referenceCases": 60,
           "conditionalHistoricalFrequencies": {
-            "rise": 3.42,
-            "fall": 88.07,
-            "range": 8.51
+            "rise": 1.91,
+            "fall": 92.52,
+            "range": 5.57
           },
           "scenarios": {
-            "lowPct": -17.989,
-            "midPct": -10.155,
-            "highPct": -1.573
+            "lowPct": -19.818,
+            "midPct": -11.997,
+            "highPct": -3.414
           },
           "note": "Lognormal time-series approximation, not calibrated market odds."
         }
       ],
       "modelVotes": {
-        "rise": 1,
-        "fall": 4,
+        "rise": 3,
+        "fall": 2,
         "range": 0
       },
       "modelCount": 5,
@@ -1356,9 +1356,9 @@
         "selectionNote": "Candidate chosen on earlier outcomes only; later outcomes are separated by the full forecast horizon to reduce label overlap. Minimum 35 early and 20 later checks, Brier improvement ≥ 0.025 and scenario coverage ≥ 50%."
       },
       "goldScenarioUSD": {
-        "lowUsdOz": 3384.48,
-        "midUsdOz": 3604.39,
-        "highUsdOz": 3916.43
+        "lowUsdOz": 3329.65,
+        "midUsdOz": 3574.58,
+        "highUsdOz": 3848.19
       },
       "localScenarios": {
         "available": true,
@@ -1374,13 +1374,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 374.05,
-              "middle": 398.35,
-              "high": 432.84
+              "low": 367.99,
+              "middle": 395.06,
+              "high": 425.29
             },
             "hypotheticalStress": {
-              "low": 372.18,
-              "high": 435
+              "low": 366.15,
+              "high": 427.42
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -1392,13 +1392,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 408.05,
-              "middle": 434.56,
-              "high": 472.19
+              "low": 401.44,
+              "middle": 430.97,
+              "high": 463.96
             },
             "hypotheticalStress": {
-              "low": 406.01,
-              "high": 474.55
+              "low": 399.43,
+              "high": 466.28
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -1410,13 +1410,13 @@
             "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 33153.22,
-              "middle": 35307.38,
-              "high": 38364.02
+              "low": 32616.12,
+              "middle": 35015.38,
+              "high": 37695.57
             },
             "hypotheticalStress": {
-              "low": 32158.62,
-              "high": 39514.94
+              "low": 31637.64,
+              "high": 38826.44
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -1428,13 +1428,13 @@
             "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 36167.15,
-              "middle": 38517.15,
-              "high": 41851.66
+              "low": 35581.23,
+              "middle": 38198.59,
+              "high": 41122.44
             },
             "hypotheticalStress": {
-              "low": 35082.14,
-              "high": 43107.21
+              "low": 34513.79,
+              "high": 42356.11
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
@@ -1465,13 +1465,13 @@
           "direction": "rise",
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
-            "rise": 52.33,
-            "fall": 22.09,
-            "range": 25.58
+            "rise": 58.14,
+            "fall": 20.93,
+            "range": 20.93
           },
           "scenarios": {
-            "lowPct": -10.155,
-            "midPct": 4.39,
+            "lowPct": -10.099,
+            "midPct": 5.364,
             "highPct": 15.659
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
@@ -1482,14 +1482,14 @@
           "direction": "rise",
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
-            "rise": 48.84,
+            "rise": 50,
             "fall": 18.6,
-            "range": 32.56
+            "range": 31.4
           },
           "scenarios": {
             "lowPct": -8.451,
-            "midPct": 3.963,
-            "highPct": 14.736
+            "midPct": 4.09,
+            "highPct": 15.065
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
         },
@@ -1500,13 +1500,13 @@
           "referenceCases": 80,
           "conditionalHistoricalFrequencies": {
             "rise": 47.67,
-            "fall": 23.26,
-            "range": 29.07
+            "fall": 24.42,
+            "range": 27.91
           },
           "scenarios": {
-            "lowPct": -10.572,
+            "lowPct": -11.107,
             "midPct": 3.73,
-            "highPct": 14.736
+            "highPct": 13.91
           },
           "note": "Historical matched-case frequency. Not a calibrated future probability."
         },
@@ -1533,14 +1533,14 @@
           "direction": "fall",
           "referenceCases": 60,
           "conditionalHistoricalFrequencies": {
-            "rise": 0.17,
-            "fall": 98.86,
-            "range": 0.96
+            "rise": 0.04,
+            "fall": 99.68,
+            "range": 0.28
           },
           "scenarios": {
-            "lowPct": -38.077,
-            "midPct": -27.476,
-            "highPct": -15.062
+            "lowPct": -41.993,
+            "midPct": -31.846,
+            "highPct": -19.925
           },
           "note": "Lognormal time-series approximation, not calibrated market odds."
         }
@@ -1573,9 +1573,9 @@
         "explanation": "Not enough independent, dated observations to evaluate this horizon."
       },
       "goldScenarioUSD": {
-        "lowUsdOz": 3262.54,
-        "midUsdOz": 3790.71,
-        "highUsdOz": 4199.93
+        "lowUsdOz": 3203.71,
+        "midUsdOz": 3754.75,
+        "highUsdOz": 4121.62
       },
       "localScenarios": {
         "available": true,
@@ -1591,13 +1591,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 360.57,
-              "middle": 418.94,
-              "high": 464.17
+              "low": 354.07,
+              "middle": 414.97,
+              "high": 455.51
             },
             "hypotheticalStress": {
-              "low": 358.77,
-              "high": 466.49
+              "low": 352.3,
+              "high": 457.79
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -1609,13 +1609,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 393.35,
-              "middle": 457.03,
-              "high": 506.37
+              "low": 386.26,
+              "middle": 452.69,
+              "high": 496.92
             },
             "hypotheticalStress": {
-              "low": 391.38,
-              "high": 508.9
+              "low": 384.33,
+              "high": 499.4
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -1627,13 +1627,13 @@
             "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 31958.74,
-              "middle": 37132.51,
-              "high": 41141.09
+              "low": 31382.46,
+              "middle": 36780.26,
+              "high": 40374
             },
             "hypotheticalStress": {
-              "low": 30999.98,
-              "high": 42375.32
+              "low": 30440.99,
+              "high": 41585.22
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -1645,13 +1645,13 @@
             "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 34864.08,
-              "middle": 40508.2,
-              "high": 44881.19
+              "low": 34235.41,
+              "middle": 40123.92,
+              "high": 44044.36
             },
             "hypotheticalStress": {
-              "low": 33818.16,
-              "high": 46227.63
+              "low": 33208.35,
+              "high": 45365.69
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
@@ -2020,7 +2020,7 @@
       "actualReturnPct": null,
       "status": "pending",
       "verdict": null,
-      "remainingCloses": 1,
+      "remainingCloses": null,
       "frozenRange": {
         "lowUsdOz": 3517.42,
         "midUsdOz": 3631.59,
@@ -2039,7 +2039,7 @@
       "actualReturnPct": null,
       "status": "pending",
       "verdict": null,
-      "remainingCloses": 2,
+      "remainingCloses": null,
       "frozenRange": {
         "lowUsdOz": 3486.12,
         "midUsdOz": 3622.55,
@@ -2058,7 +2058,7 @@
       "actualReturnPct": null,
       "status": "pending",
       "verdict": null,
-      "remainingCloses": 5,
+      "remainingCloses": null,
       "frozenRange": {
         "lowUsdOz": 3454.35,
         "midUsdOz": 3650.4,
@@ -2077,7 +2077,7 @@
       "actualReturnPct": null,
       "status": "pending",
       "verdict": null,
-      "remainingCloses": 10,
+      "remainingCloses": null,
       "frozenRange": {
         "lowUsdOz": 3482.63,
         "midUsdOz": 3649.17,
@@ -2096,7 +2096,7 @@
       "actualReturnPct": null,
       "status": "pending",
       "verdict": null,
-      "remainingCloses": 21,
+      "remainingCloses": null,
       "frozenRange": {
         "lowUsdOz": 3393.89,
         "midUsdOz": 3651.02,
@@ -2115,7 +2115,7 @@
       "actualReturnPct": null,
       "status": "pending",
       "verdict": null,
-      "remainingCloses": 63,
+      "remainingCloses": null,
       "frozenRange": {
         "lowUsdOz": 3222.13,
         "midUsdOz": 3783.42,
@@ -2435,7 +2435,7 @@
     },
     {
       "label": "Technical volatility (20 sessions)",
-      "value": 33.88,
+      "value": 34.51,
       "unit": "% annualized",
       "explanation": "Historical variability, not a directional signal.",
       "asOf": "2026-11-24",

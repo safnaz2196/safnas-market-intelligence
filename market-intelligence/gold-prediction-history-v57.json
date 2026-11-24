@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "version": "5.7",
-  "generatedAt": "2026-11-24T10:23:47.813Z",
+  "generatedAt": "2026-11-24T20:51:38.824Z",
   "lastObservedCloseDate": "2026-11-24",
   "provider": "Dated gold closing prices, collected from a public historical feed",
   "sourceUrl": "https://xaus.com/api/v1/history",
@@ -1474,7 +1474,7 @@
       "rangePassLowUsdOz": 3613.14,
       "rangePassHighUsdOz": 3649.46,
       "observedCloses": 0,
-      "remainingCloses": 1,
+      "remainingCloses": null,
       "status": "pending",
       "sourceUrl": "https://xaus.com/api/v1/history",
       "evidence": {
@@ -1583,7 +1583,7 @@
       "rangePassLowUsdOz": 3613.14,
       "rangePassHighUsdOz": 3649.46,
       "observedCloses": 0,
-      "remainingCloses": 2,
+      "remainingCloses": null,
       "status": "pending",
       "sourceUrl": "https://xaus.com/api/v1/history",
       "evidence": {
@@ -1692,7 +1692,7 @@
       "rangePassLowUsdOz": null,
       "rangePassHighUsdOz": null,
       "observedCloses": 0,
-      "remainingCloses": 5,
+      "remainingCloses": null,
       "status": "pending",
       "sourceUrl": "https://xaus.com/api/v1/history",
       "evidence": {
@@ -1801,7 +1801,7 @@
       "rangePassLowUsdOz": 3613.14,
       "rangePassHighUsdOz": 3649.46,
       "observedCloses": 0,
-      "remainingCloses": 10,
+      "remainingCloses": null,
       "status": "pending",
       "sourceUrl": "https://xaus.com/api/v1/history",
       "evidence": {
@@ -1910,7 +1910,7 @@
       "rangePassLowUsdOz": 3613.14,
       "rangePassHighUsdOz": 3649.46,
       "observedCloses": 0,
-      "remainingCloses": 21,
+      "remainingCloses": null,
       "status": "pending",
       "sourceUrl": "https://xaus.com/api/v1/history",
       "evidence": {
@@ -2019,7 +2019,7 @@
       "rangePassLowUsdOz": null,
       "rangePassHighUsdOz": null,
       "observedCloses": 0,
-      "remainingCloses": 63,
+      "remainingCloses": null,
       "status": "pending",
       "sourceUrl": "https://xaus.com/api/v1/history",
       "evidence": {
@@ -2627,6 +2627,6 @@
     "note": "Training requires at least 40 settled predictions per period. Uses earlier 70% to train and later 30% to test calibration. Only adjusts new forecasts if holdout Brier improves by at least 0.01.",
     "warning": "Learning can reduce some historical error, but no improvement or future predictive skill is guaranteed."
   },
-  "newlyRecorded": 6,
-  "newlySettled": 1
+  "newlyRecorded": 0,
+  "newlySettled": 0
 }
