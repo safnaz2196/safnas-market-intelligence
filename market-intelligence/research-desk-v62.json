@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "version": "6.2",
-  "generatedAt": "2026-11-24T11:22:01.404Z",
+  "generatedAt": "2026-11-24T23:11:27.501Z",
   "status": "observed_public_research",
   "snapshot": {
     "aspiDate": "2026-11-23",
-    "goldQuoteDate": "2026-11-24T10:23:43Z",
+    "goldQuoteDate": "2026-11-24T20:51:14Z",
     "predictionResolved": 2,
     "companies": {
       "DIAL.N0000": {
@@ -77,9 +77,9 @@
   "coverage": {
     "cseQuotes": "16 / 16",
     "cseDataDate": "2026-11-23",
-    "goldDataDate": "2026-11-24T10:23:43Z",
-    "collectorAt": "2026-11-24T00:16:17.394Z",
-    "researchAt": "2026-11-24T00:16:24.003Z",
+    "goldDataDate": "2026-11-24T20:51:14Z",
+    "collectorAt": "2026-11-24T12:52:04.638Z",
+    "researchAt": "2026-11-24T13:58:57.915Z",
     "predictionResults": 2,
     "warning": "Source dates are observations, not live exchange-streaming commitments."
   },
@@ -91,8 +91,8 @@
     "turnoverAsOf": "2026-11-23"
   },
   "gold": {
-    "referenceUsdOz": 3620.45,
-    "quoteAsOf": "2026-11-24T10:23:43Z",
+    "referenceUsdOz": 3547.35,
+    "quoteAsOf": "2026-11-24T20:51:14Z",
     "goldModelWindows": 6,
     "historicalWindowsValidated": 0,
     "forwardPending": 22,
@@ -105,23 +105,23 @@
   "publishers": 7,
   "changes": [
     {
-      "id": "a8b908d6a33312b8",
+      "id": "d12ebe0923a51071",
       "kind": "gold",
       "label": "New gold spot observation",
-      "detail": "USD 3620.45/oz as of 2026-11-24T10:23:43Z",
-      "asOf": "2026-11-24T10:23:43Z",
+      "detail": "USD 3547.35/oz as of 2026-11-24T20:51:14Z",
+      "asOf": "2026-11-24T20:51:14Z",
       "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
-    },
-    {
-      "id": "40f20c68ddf92a16",
-      "kind": "audit",
-      "label": "Gold forecast outcomes added",
-      "detail": "1 newly completed forward result(s)",
-      "asOf": "2026-11-24T11:22:01.404Z",
-      "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-prediction-history-v57.json"
     }
   ],
   "history": [
+    {
+      "id": "d12ebe0923a51071",
+      "kind": "gold",
+      "label": "New gold spot observation",
+      "detail": "USD 3547.35/oz as of 2026-11-24T20:51:14Z",
+      "asOf": "2026-11-24T20:51:14Z",
+      "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
+    },
     {
       "id": "a8b908d6a33312b8",
       "kind": "gold",
