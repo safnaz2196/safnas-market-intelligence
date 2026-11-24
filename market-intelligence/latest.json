@@ -8,7 +8,7 @@
     "forest",
     "boost"
   ],
-  "generatedAt": "2026-11-24T00:16:17.394Z",
+  "generatedAt": "2026-11-24T12:52:04.638Z",
   "status": "updated",
   "market": {
     "aspi": {
@@ -461,7 +461,7 @@
     "sl20": {
       "value": 6046.17,
       "changePercent": -0.48,
-      "retrievedAt": "2026-11-24T00:16:21.575Z",
+      "retrievedAt": "2026-11-24T12:52:08.829Z",
       "sourceURL": "https://www.cse.lk/api/snpData",
       "note": "Retrieved snapshot; source may not include a reliable trade date."
     },
@@ -472,7 +472,7 @@
       "sharesTraded": 46548352,
       "trades": 14902,
       "marketScope": "CSE market",
-      "retrievedAt": "2026-11-24T00:16:23.200Z",
+      "retrievedAt": "2026-11-24T12:52:09.065Z",
       "sourceURL": "https://www.cse.lk/api/dailyMarketSummery",
       "verifiedTradeDate": true,
       "note": "Official CSE LKR daily equity turnover, trade date verified. Not streaming."
@@ -837,8 +837,8 @@
     }
   },
   "forex": {
-    "asOf": "2026-11-23",
-    "rate": 332.8,
+    "asOf": "2026-11-24",
+    "rate": 332.4,
     "source": "Frankfurter daily FX reference",
     "sourceURL": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=LKR"
   },
@@ -1054,6 +1054,18 @@
   ],
   "headlines": [
     {
+      "title": "Sri Lanka faces 419-engineer shortfall in state service amid allowance row",
+      "url": "https://economynext.com/sri-lanka-faces-419-engineer-shortfall-in-state-service-amid-allowance-row-291035/",
+      "date": "2026-11-24",
+      "publisher": "EconomyNext"
+    },
+    {
+      "title": "Sri Lanka’s Bank of Ceylon to list 13-pct debentures",
+      "url": "https://economynext.com/sri-lankas-bank-of-ceylon-to-list-13-pct-debentures-291025/",
+      "date": "2026-11-24",
+      "publisher": "EconomyNext"
+    },
+    {
       "title": "Sri Lanka’s national inflation rises to 41-month high of 8.5-pct in October; transport leads",
       "url": "https://economynext.com/sri-lankas-national-inflation-rises-to-41-month-high-of-8-5-pct-in-october-transport-leads-291009/",
       "date": "2026-11-23",
@@ -1129,18 +1141,6 @@
       "title": "Sri Lanka stocks trend down; ASPI dips 0.59-pct",
       "url": "https://economynext.com/sri-lanka-stocks-trend-down-aspi-dips-0-59-pct-290925/",
       "date": "2026-11-23",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Central Bank says 70-pct gold loan cap limits risks as pawning grows",
-      "url": "https://economynext.com/central-bank-says-70-pct-gold-loan-cap-limits-risks-as-pawning-grows-290903/",
-      "date": "2026-11-23",
-      "publisher": "EconomyNext"
-    },
-    {
-      "title": "Central Bank does not target specific growth, focuses on inflation: Governor",
-      "url": "https://economynext.com/central-bank-does-not-target-specific-growth-focuses-on-inflation-governor-290859/",
-      "date": "2026-11-22",
       "publisher": "EconomyNext"
     }
   ],
@@ -1227,7 +1227,7 @@
       "forex": {
         "status": "available",
         "label": "USD/LKR exchange reference",
-        "asOf": "2026-11-23"
+        "asOf": "2026-11-24"
       },
       "shares": {
         "status": "available",
@@ -1257,8 +1257,8 @@
       "asOf": "2026-11-23",
       "ageDays": 1,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-24T00:16:17.394Z",
-      "lastSuccessAt": "2026-11-24T00:16:17.394Z",
+      "lastAttemptAt": "2026-11-24T12:52:04.638Z",
+      "lastSuccessAt": "2026-11-24T12:52:04.638Z",
       "failures": 0,
       "note": "CSE daily closes validated and appended to dated archive"
     },
@@ -1267,18 +1267,18 @@
       "asOf": "2025",
       "ageDays": null,
       "ageYears": 1,
-      "lastAttemptAt": "2026-11-24T00:16:17.394Z",
-      "lastSuccessAt": "2026-11-24T00:16:17.394Z",
+      "lastAttemptAt": "2026-11-24T12:52:04.638Z",
+      "lastSuccessAt": "2026-11-24T12:52:04.638Z",
       "failures": 0,
       "note": "6 of 6 annual indicators refreshed"
     },
     "forex": {
       "status": "current",
-      "asOf": "2026-11-23",
-      "ageDays": 1,
+      "asOf": "2026-11-24",
+      "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-24T00:16:17.394Z",
-      "lastSuccessAt": "2026-11-24T00:16:17.394Z",
+      "lastAttemptAt": "2026-11-24T12:52:04.638Z",
+      "lastSuccessAt": "2026-11-24T12:52:04.638Z",
       "failures": 0,
       "note": "Provider response accepted"
     },
@@ -1287,8 +1287,8 @@
       "asOf": "2026-11-23",
       "ageDays": 1,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-24T00:16:17.394Z",
-      "lastSuccessAt": "2026-11-24T00:16:17.394Z",
+      "lastAttemptAt": "2026-11-24T12:52:04.638Z",
+      "lastSuccessAt": "2026-11-24T12:52:04.638Z",
       "failures": 0,
       "note": "Cached · 16 verified CSE last-traded shares, as of 2026-11-23. Not streaming. Direct request unavailable (HTTP 403)."
     },
@@ -1297,8 +1297,8 @@
       "asOf": "2026-11-24",
       "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-24T00:16:17.394Z",
-      "lastSuccessAt": "2026-11-24T00:16:17.394Z",
+      "lastAttemptAt": "2026-11-24T12:52:04.638Z",
+      "lastSuccessAt": "2026-11-24T12:52:04.638Z",
       "failures": 0,
       "note": "Index snapshot retrieved; official trade date not verified"
     },
@@ -1307,18 +1307,18 @@
       "asOf": "2026-11-23",
       "ageDays": 1,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-24T00:16:17.394Z",
-      "lastSuccessAt": "2026-11-24T00:16:17.394Z",
+      "lastAttemptAt": "2026-11-24T12:52:04.638Z",
+      "lastSuccessAt": "2026-11-24T12:52:04.638Z",
       "failures": 0,
       "note": "Verified CSE daily market turnover (LKR), trade date 2026-11-23. Not streaming."
     },
     "headlines": {
       "status": "current",
-      "asOf": "2026-11-23",
-      "ageDays": 1,
+      "asOf": "2026-11-24",
+      "ageDays": 0,
       "ageYears": null,
-      "lastAttemptAt": "2026-11-24T00:16:17.394Z",
-      "lastSuccessAt": "2026-11-24T00:16:17.394Z",
+      "lastAttemptAt": "2026-11-24T12:52:04.638Z",
+      "lastSuccessAt": "2026-11-24T12:52:04.638Z",
       "failures": 0,
       "note": "Provider response accepted"
     }
@@ -1517,7 +1517,7 @@
     "edgeModels": 1,
     "modelClaim": "Limited historical statistical edge — not investment advice",
     "dataLimit": "The public CSE chart endpoint supplies roughly one trailing year. Older dates require permitted, verified historical data; no synthetic backfill.",
-    "refreshedAt": "2026-11-24T00:16:17.394Z",
+    "refreshedAt": "2026-11-24T12:52:04.638Z",
     "disclaimer": "Source health is not model accuracy or probability of market growth."
   }
 }
