@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "version": "6.2",
-  "generatedAt": "2026-11-24T01:06:56.485Z",
+  "generatedAt": "2026-11-24T11:22:01.404Z",
   "status": "observed_public_research",
   "snapshot": {
     "aspiDate": "2026-11-23",
-    "goldQuoteDate": "2026-11-24T00:18:43Z",
-    "predictionResolved": 1,
+    "goldQuoteDate": "2026-11-24T10:23:43Z",
+    "predictionResolved": 2,
     "companies": {
       "DIAL.N0000": {
         "asOf": "2026-11-23",
@@ -77,10 +77,10 @@
   "coverage": {
     "cseQuotes": "16 / 16",
     "cseDataDate": "2026-11-23",
-    "goldDataDate": "2026-11-24T00:18:43Z",
+    "goldDataDate": "2026-11-24T10:23:43Z",
     "collectorAt": "2026-11-24T00:16:17.394Z",
     "researchAt": "2026-11-24T00:16:24.003Z",
-    "predictionResults": 1,
+    "predictionResults": 2,
     "warning": "Source dates are observations, not live exchange-streaming commitments."
   },
   "market": {
@@ -91,12 +91,12 @@
     "turnoverAsOf": "2026-11-23"
   },
   "gold": {
-    "referenceUsdOz": 3636,
-    "quoteAsOf": "2026-11-24T00:18:43Z",
+    "referenceUsdOz": 3620.45,
+    "quoteAsOf": "2026-11-24T10:23:43Z",
     "goldModelWindows": 6,
     "historicalWindowsValidated": 0,
-    "forwardPending": 17,
-    "forwardResolved": 1,
+    "forwardPending": 22,
+    "forwardResolved": 2,
     "sources": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
   },
   "companies": 16,
@@ -105,103 +105,39 @@
   "publishers": 7,
   "changes": [
     {
-      "id": "2896deeec0f17a18",
-      "kind": "market",
-      "label": "New dated ASPI close",
-      "detail": "ASPI 21259.83 on 2026-11-23",
-      "asOf": "2026-11-23",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "47c79588f3a69cf6",
+      "id": "a8b908d6a33312b8",
       "kind": "gold",
       "label": "New gold spot observation",
-      "detail": "USD 3636/oz as of 2026-11-24T00:18:43Z",
-      "asOf": "2026-11-24T00:18:43Z",
+      "detail": "USD 3620.45/oz as of 2026-11-24T10:23:43Z",
+      "asOf": "2026-11-24T10:23:43Z",
       "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
     },
     {
-      "id": "617fb30d8d456f35",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · DIAL.N0000",
-      "detail": "Dialog Axiata PLC last traded at LKR 47.5 on 2026-11-23",
-      "asOf": "2026-11-23",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "542a4ecddc659a86",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · COMB.N0000",
-      "detail": "Commercial Bank of Ceylon PLC last traded at LKR 213.5 on 2026-11-23",
-      "asOf": "2026-11-23",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "36582a1ff082f666",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · JKH.N0000",
-      "detail": "John Keells Holdings PLC last traded at LKR 18.4 on 2026-11-23",
-      "asOf": "2026-11-23",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "2d0d64007f9818d5",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · HNB.N0000",
-      "detail": "Hatton National Bank PLC last traded at LKR 394.5 on 2026-11-23",
-      "asOf": "2026-11-23",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "85c7790ab38520e3",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · SAMP.N0000",
-      "detail": "Sampath Bank PLC last traded at LKR 148.25 on 2026-11-23",
-      "asOf": "2026-11-23",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "765e4f10d748ea9d",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · HAYL.N0000",
-      "detail": "Hayleys PLC last traded at LKR 228 on 2026-11-23",
-      "asOf": "2026-11-23",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "2ada69f56da49e07",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · LOLC.N0000",
-      "detail": "LOLC Holdings PLC last traded at LKR 402 on 2026-11-23",
-      "asOf": "2026-11-23",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "ada8c36e90403d75",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · CTC.N0000",
-      "detail": "Ceylon Tobacco Company PLC last traded at LKR 1821 on 2026-11-23",
-      "asOf": "2026-11-23",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "0000e1ba41689f4c",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · DIST.N0000",
-      "detail": "Distilleries Company of Sri Lanka PLC last traded at LKR 58 on 2026-11-23",
-      "asOf": "2026-11-23",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "35a2f5b2d8720601",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · MELS.N0000",
-      "detail": "Melstacorp PLC last traded at LKR 193 on 2026-11-23",
-      "asOf": "2026-11-23",
-      "url": "https://www.cse.lk/"
+      "id": "40f20c68ddf92a16",
+      "kind": "audit",
+      "label": "Gold forecast outcomes added",
+      "detail": "1 newly completed forward result(s)",
+      "asOf": "2026-11-24T11:22:01.404Z",
+      "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-prediction-history-v57.json"
     }
   ],
   "history": [
+    {
+      "id": "a8b908d6a33312b8",
+      "kind": "gold",
+      "label": "New gold spot observation",
+      "detail": "USD 3620.45/oz as of 2026-11-24T10:23:43Z",
+      "asOf": "2026-11-24T10:23:43Z",
+      "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
+    },
+    {
+      "id": "40f20c68ddf92a16",
+      "kind": "audit",
+      "label": "Gold forecast outcomes added",
+      "detail": "1 newly completed forward result(s)",
+      "asOf": "2026-11-24T11:22:01.404Z",
+      "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-prediction-history-v57.json"
+    },
     {
       "id": "2896deeec0f17a18",
       "kind": "market",
