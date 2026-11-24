@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "version": "5.7",
-  "generatedAt": "2026-11-24T00:19:06.584Z",
-  "lastObservedCloseDate": "2026-11-23",
+  "generatedAt": "2026-11-24T10:23:47.813Z",
+  "lastObservedCloseDate": "2026-11-24",
   "provider": "Dated gold closing prices, collected from a public historical feed",
   "sourceUrl": "https://xaus.com/api/v1/history",
   "entries": [
@@ -46,11 +46,19 @@
       "legacy": true,
       "scenario": null,
       "modelEdgeDemonstrated": false,
-      "status": "pending",
+      "status": "resolved",
       "sourceUrl": "https://xaus.com/api/v1/history",
       "note": "Migrated from the original v5.6 journal. No new historical forecasts were invented.",
-      "observedCloses": 1,
-      "remainingCloses": 1
+      "observedCloses": 2,
+      "remainingCloses": 0,
+      "actualDate": "2026-11-24",
+      "actualUsdOz": 3631.3,
+      "actualReturnPct": 3.2969,
+      "actualDirection": "rise",
+      "passed": false,
+      "verdict": "FAIL",
+      "resolvedAt": "2026-11-24T10:23:47.813Z",
+      "settlementSourceUrl": "https://xaus.com/api/v1/history"
     },
     {
       "id": "2026-11-20|7",
@@ -68,8 +76,8 @@
       "status": "pending",
       "sourceUrl": "https://xaus.com/api/v1/history",
       "note": "Migrated from the original v5.6 journal. No new historical forecasts were invented.",
-      "observedCloses": 1,
-      "remainingCloses": 4
+      "observedCloses": 2,
+      "remainingCloses": 3
     },
     {
       "id": "2026-11-20|14",
@@ -87,8 +95,8 @@
       "status": "pending",
       "sourceUrl": "https://xaus.com/api/v1/history",
       "note": "Migrated from the original v5.6 journal. No new historical forecasts were invented.",
-      "observedCloses": 1,
-      "remainingCloses": 9
+      "observedCloses": 2,
+      "remainingCloses": 8
     },
     {
       "id": "2026-11-20|30",
@@ -106,8 +114,8 @@
       "status": "pending",
       "sourceUrl": "https://xaus.com/api/v1/history",
       "note": "Migrated from the original v5.6 journal. No new historical forecasts were invented.",
-      "observedCloses": 1,
-      "remainingCloses": 20
+      "observedCloses": 2,
+      "remainingCloses": 19
     },
     {
       "id": "2026-11-20|90",
@@ -125,8 +133,8 @@
       "status": "pending",
       "sourceUrl": "https://xaus.com/api/v1/history",
       "note": "Migrated from the original v5.6 journal. No new historical forecasts were invented.",
-      "observedCloses": 1,
-      "remainingCloses": 62
+      "observedCloses": 2,
+      "remainingCloses": 61
     },
     {
       "id": "2026-11-22|1",
@@ -1435,22 +1443,676 @@
         ]
       },
       "snapshotHash": "51c5e17e93c40768"
+    },
+    {
+      "id": "2026-11-24|1",
+      "originDate": "2026-11-24",
+      "createdAt": "2026-11-24T10:23:47.813Z",
+      "days": 1,
+      "sessions": 1,
+      "referenceUsdOz": 3631.3,
+      "predictedDirection": "range",
+      "rawDirection": "range",
+      "rawPositivePct": 50,
+      "adaptedPositivePct": null,
+      "learningApplied": false,
+      "learnedModelId": null,
+      "decisionSource": "original_analogue_unproven",
+      "modelVersion": "5.8-ensemble-research-analogue-locked",
+      "modelEdgeDemonstrated": false,
+      "scenario": {
+        "lowPct": -3.136,
+        "midPct": 0.008,
+        "highPct": 1.805
+      },
+      "frozenPriceRange": {
+        "lowUsdOz": 3517.42,
+        "midUsdOz": 3631.59,
+        "highUsdOz": 3696.84
+      },
+      "evaluationRule": "Closing price within ±0.5% of starting price",
+      "rangePassLowUsdOz": 3613.14,
+      "rangePassHighUsdOz": 3649.46,
+      "observedCloses": 0,
+      "remainingCloses": 1,
+      "status": "pending",
+      "sourceUrl": "https://xaus.com/api/v1/history",
+      "evidence": {
+        "historyAsOf": "2026-11-24",
+        "historyCount": 900
+      },
+      "note": "Forecast was frozen before the next required dated closing observations. Historical scenario bounds are descriptive, not guaranteed limits.",
+      "multiModelSnapshot": {
+        "modelVersion": "5.8",
+        "thresholdPct": 0.5,
+        "selectedByEarlierValidation": "regime",
+        "historicalHoldoutValidated": false,
+        "researchBias": "rise",
+        "models": [
+          {
+            "id": "analogue",
+            "direction": "rise",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 33.72,
+              "fall": 32.56,
+              "range": 33.72
+            },
+            "scenarios": {
+              "lowPct": -2.908,
+              "midPct": -0.03,
+              "highPct": 1.611
+            }
+          },
+          {
+            "id": "trend",
+            "direction": "fall",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 33.72,
+              "fall": 34.88,
+              "range": 31.4
+            },
+            "scenarios": {
+              "lowPct": -2.908,
+              "midPct": -0.097,
+              "highPct": 1.611
+            }
+          },
+          {
+            "id": "reversion",
+            "direction": "fall",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 33.72,
+              "fall": 37.21,
+              "range": 29.07
+            },
+            "scenarios": {
+              "lowPct": -2.908,
+              "midPct": -0.115,
+              "highPct": 1.74
+            }
+          },
+          {
+            "id": "regime",
+            "direction": "rise",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 38.37,
+              "fall": 32.56,
+              "range": 29.07
+            },
+            "scenarios": {
+              "lowPct": -2.782,
+              "midPct": 0.086,
+              "highPct": 2.656
+            }
+          }
+        ]
+      },
+      "snapshotHash": "1d8cdd99f965679e"
+    },
+    {
+      "id": "2026-11-24|3",
+      "originDate": "2026-11-24",
+      "createdAt": "2026-11-24T10:23:47.813Z",
+      "days": 3,
+      "sessions": 2,
+      "referenceUsdOz": 3631.3,
+      "predictedDirection": "range",
+      "rawDirection": "range",
+      "rawPositivePct": 47.222,
+      "adaptedPositivePct": null,
+      "learningApplied": false,
+      "learnedModelId": null,
+      "decisionSource": "original_analogue_unproven",
+      "modelVersion": "5.8-ensemble-research-analogue-locked",
+      "modelEdgeDemonstrated": false,
+      "scenario": {
+        "lowPct": -3.998,
+        "midPct": -0.241,
+        "highPct": 3.023
+      },
+      "frozenPriceRange": {
+        "lowUsdOz": 3486.12,
+        "midUsdOz": 3622.55,
+        "highUsdOz": 3741.07
+      },
+      "evaluationRule": "Closing price within ±0.5% of starting price",
+      "rangePassLowUsdOz": 3613.14,
+      "rangePassHighUsdOz": 3649.46,
+      "observedCloses": 0,
+      "remainingCloses": 2,
+      "status": "pending",
+      "sourceUrl": "https://xaus.com/api/v1/history",
+      "evidence": {
+        "historyAsOf": "2026-11-24",
+        "historyCount": 900
+      },
+      "note": "Forecast was frozen before the next required dated closing observations. Historical scenario bounds are descriptive, not guaranteed limits.",
+      "multiModelSnapshot": {
+        "modelVersion": "5.8",
+        "thresholdPct": 0.707,
+        "selectedByEarlierValidation": "regime",
+        "historicalHoldoutValidated": false,
+        "researchBias": "rise",
+        "models": [
+          {
+            "id": "analogue",
+            "direction": "fall",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 36.05,
+              "fall": 37.21,
+              "range": 26.74
+            },
+            "scenarios": {
+              "lowPct": -3.804,
+              "midPct": -0.125,
+              "highPct": 3.075
+            }
+          },
+          {
+            "id": "trend",
+            "direction": "fall",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 36.05,
+              "fall": 39.53,
+              "range": 24.42
+            },
+            "scenarios": {
+              "lowPct": -3.77,
+              "midPct": -0.443,
+              "highPct": 3.255
+            }
+          },
+          {
+            "id": "reversion",
+            "direction": "fall",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 36.05,
+              "fall": 39.53,
+              "range": 24.42
+            },
+            "scenarios": {
+              "lowPct": -3.77,
+              "midPct": -0.443,
+              "highPct": 3.13
+            }
+          },
+          {
+            "id": "regime",
+            "direction": "rise",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 37.21,
+              "fall": 37.21,
+              "range": 25.58
+            },
+            "scenarios": {
+              "lowPct": -3.614,
+              "midPct": -0.227,
+              "highPct": 3.291
+            }
+          }
+        ]
+      },
+      "snapshotHash": "248c35a4a16983c1"
+    },
+    {
+      "id": "2026-11-24|7",
+      "originDate": "2026-11-24",
+      "createdAt": "2026-11-24T10:23:47.813Z",
+      "days": 7,
+      "sessions": 5,
+      "referenceUsdOz": 3631.3,
+      "predictedDirection": "rise",
+      "rawDirection": "rise",
+      "rawPositivePct": 59.722,
+      "adaptedPositivePct": null,
+      "learningApplied": false,
+      "learnedModelId": null,
+      "decisionSource": "original_analogue_unproven",
+      "modelVersion": "5.8-ensemble-research-analogue-locked",
+      "modelEdgeDemonstrated": false,
+      "scenario": {
+        "lowPct": -4.873,
+        "midPct": 0.526,
+        "highPct": 4.494
+      },
+      "frozenPriceRange": {
+        "lowUsdOz": 3454.35,
+        "midUsdOz": 3650.4,
+        "highUsdOz": 3794.49
+      },
+      "evaluationRule": "Closing price above starting price",
+      "rangePassLowUsdOz": null,
+      "rangePassHighUsdOz": null,
+      "observedCloses": 0,
+      "remainingCloses": 5,
+      "status": "pending",
+      "sourceUrl": "https://xaus.com/api/v1/history",
+      "evidence": {
+        "historyAsOf": "2026-11-24",
+        "historyCount": 900
+      },
+      "note": "Forecast was frozen before the next required dated closing observations. Historical scenario bounds are descriptive, not guaranteed limits.",
+      "multiModelSnapshot": {
+        "modelVersion": "5.8",
+        "thresholdPct": 1.118,
+        "selectedByEarlierValidation": "regime",
+        "historicalHoldoutValidated": false,
+        "researchBias": "rise",
+        "models": [
+          {
+            "id": "analogue",
+            "direction": "rise",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 39.53,
+              "fall": 26.74,
+              "range": 33.72
+            },
+            "scenarios": {
+              "lowPct": -4.997,
+              "midPct": 0.493,
+              "highPct": 4.615
+            }
+          },
+          {
+            "id": "trend",
+            "direction": "rise",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 41.86,
+              "fall": 29.07,
+              "range": 29.07
+            },
+            "scenarios": {
+              "lowPct": -4.193,
+              "midPct": 0.863,
+              "highPct": 4.331
+            }
+          },
+          {
+            "id": "reversion",
+            "direction": "rise",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 40.7,
+              "fall": 27.91,
+              "range": 31.4
+            },
+            "scenarios": {
+              "lowPct": -3.465,
+              "midPct": 0.671,
+              "highPct": 4.331
+            }
+          },
+          {
+            "id": "regime",
+            "direction": "rise",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 39.53,
+              "fall": 34.88,
+              "range": 25.58
+            },
+            "scenarios": {
+              "lowPct": -4.68,
+              "midPct": 0.133,
+              "highPct": 3.543
+            }
+          }
+        ]
+      },
+      "snapshotHash": "58ca43f81ebbcbb6"
+    },
+    {
+      "id": "2026-11-24|14",
+      "originDate": "2026-11-24",
+      "createdAt": "2026-11-24T10:23:47.813Z",
+      "days": 14,
+      "sessions": 10,
+      "referenceUsdOz": 3631.3,
+      "predictedDirection": "range",
+      "rawDirection": "range",
+      "rawPositivePct": 56.944,
+      "adaptedPositivePct": null,
+      "learningApplied": false,
+      "learnedModelId": null,
+      "decisionSource": "original_analogue_unproven",
+      "modelVersion": "5.8-ensemble-research-analogue-locked",
+      "modelEdgeDemonstrated": false,
+      "scenario": {
+        "lowPct": -4.094,
+        "midPct": 0.492,
+        "highPct": 4.406
+      },
+      "frozenPriceRange": {
+        "lowUsdOz": 3482.63,
+        "midUsdOz": 3649.17,
+        "highUsdOz": 3791.3
+      },
+      "evaluationRule": "Closing price within ±0.5% of starting price",
+      "rangePassLowUsdOz": 3613.14,
+      "rangePassHighUsdOz": 3649.46,
+      "observedCloses": 0,
+      "remainingCloses": 10,
+      "status": "pending",
+      "sourceUrl": "https://xaus.com/api/v1/history",
+      "evidence": {
+        "historyAsOf": "2026-11-24",
+        "historyCount": 900
+      },
+      "note": "Forecast was frozen before the next required dated closing observations. Historical scenario bounds are descriptive, not guaranteed limits.",
+      "multiModelSnapshot": {
+        "modelVersion": "5.8",
+        "thresholdPct": 1.581,
+        "selectedByEarlierValidation": "trend",
+        "historicalHoldoutValidated": false,
+        "researchBias": "range",
+        "models": [
+          {
+            "id": "analogue",
+            "direction": "rise",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 38.37,
+              "fall": 30.23,
+              "range": 31.4
+            },
+            "scenarios": {
+              "lowPct": -4.253,
+              "midPct": 0.492,
+              "highPct": 4.755
+            }
+          },
+          {
+            "id": "trend",
+            "direction": "range",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 33.72,
+              "fall": 29.07,
+              "range": 37.21
+            },
+            "scenarios": {
+              "lowPct": -4.593,
+              "midPct": 0.055,
+              "highPct": 5.865
+            }
+          },
+          {
+            "id": "reversion",
+            "direction": "range",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 36.05,
+              "fall": 26.74,
+              "range": 37.21
+            },
+            "scenarios": {
+              "lowPct": -3.742,
+              "midPct": 0.229,
+              "highPct": 5.865
+            }
+          },
+          {
+            "id": "regime",
+            "direction": "fall",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 26.74,
+              "fall": 38.37,
+              "range": 34.88
+            },
+            "scenarios": {
+              "lowPct": -5.877,
+              "midPct": -0.801,
+              "highPct": 3.342
+            }
+          }
+        ]
+      },
+      "snapshotHash": "87f32b8f3ab8ec7d"
+    },
+    {
+      "id": "2026-11-24|30",
+      "originDate": "2026-11-24",
+      "createdAt": "2026-11-24T10:23:47.813Z",
+      "days": 30,
+      "sessions": 21,
+      "referenceUsdOz": 3631.3,
+      "predictedDirection": "range",
+      "rawDirection": "range",
+      "rawPositivePct": 51.389,
+      "adaptedPositivePct": null,
+      "learningApplied": false,
+      "learnedModelId": null,
+      "decisionSource": "original_analogue_unproven",
+      "modelVersion": "5.8-ensemble-research-analogue-locked",
+      "modelEdgeDemonstrated": false,
+      "scenario": {
+        "lowPct": -6.538,
+        "midPct": 0.543,
+        "highPct": 7.794
+      },
+      "frozenPriceRange": {
+        "lowUsdOz": 3393.89,
+        "midUsdOz": 3651.02,
+        "highUsdOz": 3914.32
+      },
+      "evaluationRule": "Closing price within ±0.5% of starting price",
+      "rangePassLowUsdOz": 3613.14,
+      "rangePassHighUsdOz": 3649.46,
+      "observedCloses": 0,
+      "remainingCloses": 21,
+      "status": "pending",
+      "sourceUrl": "https://xaus.com/api/v1/history",
+      "evidence": {
+        "historyAsOf": "2026-11-24",
+        "historyCount": 900
+      },
+      "note": "Forecast was frozen before the next required dated closing observations. Historical scenario bounds are descriptive, not guaranteed limits.",
+      "multiModelSnapshot": {
+        "modelVersion": "5.8",
+        "thresholdPct": 2.291,
+        "selectedByEarlierValidation": null,
+        "historicalHoldoutValidated": false,
+        "researchBias": "rise",
+        "models": [
+          {
+            "id": "analogue",
+            "direction": "rise",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 39.53,
+              "fall": 39.53,
+              "range": 20.93
+            },
+            "scenarios": {
+              "lowPct": -6.797,
+              "midPct": -0.741,
+              "highPct": 7.852
+            }
+          },
+          {
+            "id": "trend",
+            "direction": "fall",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 39.53,
+              "fall": 41.86,
+              "range": 18.6
+            },
+            "scenarios": {
+              "lowPct": -7.95,
+              "midPct": -1.143,
+              "highPct": 8.694
+            }
+          },
+          {
+            "id": "reversion",
+            "direction": "fall",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 38.37,
+              "fall": 39.53,
+              "range": 22.09
+            },
+            "scenarios": {
+              "lowPct": -7.95,
+              "midPct": -0.498,
+              "highPct": 8.238
+            }
+          },
+          {
+            "id": "regime",
+            "direction": "fall",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 24.42,
+              "fall": 44.19,
+              "range": 31.4
+            },
+            "scenarios": {
+              "lowPct": -8.269,
+              "midPct": -1.579,
+              "highPct": 7.479
+            }
+          }
+        ]
+      },
+      "snapshotHash": "2e034bdd60edb9ed"
+    },
+    {
+      "id": "2026-11-24|90",
+      "originDate": "2026-11-24",
+      "createdAt": "2026-11-24T10:23:47.813Z",
+      "days": 90,
+      "sessions": 63,
+      "referenceUsdOz": 3631.3,
+      "predictedDirection": "rise",
+      "rawDirection": "rise",
+      "rawPositivePct": 70.833,
+      "adaptedPositivePct": null,
+      "learningApplied": false,
+      "learnedModelId": null,
+      "decisionSource": "original_analogue_unproven",
+      "modelVersion": "5.8-ensemble-research-analogue-locked",
+      "modelEdgeDemonstrated": false,
+      "scenario": {
+        "lowPct": -11.268,
+        "midPct": 4.189,
+        "highPct": 23.376
+      },
+      "frozenPriceRange": {
+        "lowUsdOz": 3222.13,
+        "midUsdOz": 3783.42,
+        "highUsdOz": 4480.15
+      },
+      "evaluationRule": "Closing price above starting price",
+      "rangePassLowUsdOz": null,
+      "rangePassHighUsdOz": null,
+      "observedCloses": 0,
+      "remainingCloses": 63,
+      "status": "pending",
+      "sourceUrl": "https://xaus.com/api/v1/history",
+      "evidence": {
+        "historyAsOf": "2026-11-24",
+        "historyCount": 900
+      },
+      "note": "Forecast was frozen before the next required dated closing observations. Historical scenario bounds are descriptive, not guaranteed limits.",
+      "multiModelSnapshot": {
+        "modelVersion": "5.8",
+        "thresholdPct": 3.969,
+        "selectedByEarlierValidation": null,
+        "historicalHoldoutValidated": false,
+        "researchBias": "rise",
+        "models": [
+          {
+            "id": "analogue",
+            "direction": "rise",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 52.33,
+              "fall": 22.09,
+              "range": 25.58
+            },
+            "scenarios": {
+              "lowPct": -10.155,
+              "midPct": 4.39,
+              "highPct": 15.659
+            }
+          },
+          {
+            "id": "trend",
+            "direction": "rise",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 48.84,
+              "fall": 18.6,
+              "range": 32.56
+            },
+            "scenarios": {
+              "lowPct": -8.451,
+              "midPct": 3.963,
+              "highPct": 14.736
+            }
+          },
+          {
+            "id": "reversion",
+            "direction": "rise",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 47.67,
+              "fall": 23.26,
+              "range": 29.07
+            },
+            "scenarios": {
+              "lowPct": -10.572,
+              "midPct": 3.73,
+              "highPct": 14.736
+            }
+          },
+          {
+            "id": "regime",
+            "direction": "range",
+            "referenceCases": 80,
+            "probabilities": {
+              "rise": 24.42,
+              "fall": 33.72,
+              "range": 41.86
+            },
+            "scenarios": {
+              "lowPct": -12.903,
+              "midPct": 0.587,
+              "highPct": 6.683
+            }
+          }
+        ]
+      },
+      "snapshotHash": "a7b21800322d5d94"
     }
   ],
   "summary": {
-    "recorded": 18,
-    "pending": 17,
-    "resolved": 1,
+    "recorded": 24,
+    "pending": 22,
+    "resolved": 2,
     "passed": 0,
-    "failed": 1,
+    "failed": 2,
     "overallDirectionHitRate": 0,
     "averageMidPriceErrorPct": null,
     "byHorizon": [
       {
         "days": 1,
-        "recorded": 3,
+        "recorded": 4,
         "resolved": 1,
-        "pending": 2,
+        "pending": 3,
         "passed": 0,
         "failed": 1,
         "hitRate": 0,
@@ -1460,21 +2122,21 @@
       },
       {
         "days": 3,
-        "recorded": 3,
-        "resolved": 0,
+        "recorded": 4,
+        "resolved": 1,
         "pending": 3,
         "passed": 0,
-        "failed": 0,
-        "hitRate": null,
+        "failed": 1,
+        "hitRate": 0,
         "averageMidPriceErrorPct": null,
         "rangeCoveragePct": null,
         "learning": "collecting"
       },
       {
         "days": 7,
-        "recorded": 3,
+        "recorded": 4,
         "resolved": 0,
-        "pending": 3,
+        "pending": 4,
         "passed": 0,
         "failed": 0,
         "hitRate": null,
@@ -1484,9 +2146,9 @@
       },
       {
         "days": 14,
-        "recorded": 3,
+        "recorded": 4,
         "resolved": 0,
-        "pending": 3,
+        "pending": 4,
         "passed": 0,
         "failed": 0,
         "hitRate": null,
@@ -1496,9 +2158,9 @@
       },
       {
         "days": 30,
-        "recorded": 3,
+        "recorded": 4,
         "resolved": 0,
-        "pending": 3,
+        "pending": 4,
         "passed": 0,
         "failed": 0,
         "hitRate": null,
@@ -1508,9 +2170,9 @@
       },
       {
         "days": 90,
-        "recorded": 3,
+        "recorded": 4,
         "resolved": 0,
-        "pending": 3,
+        "pending": 4,
         "passed": 0,
         "failed": 0,
         "hitRate": null,
@@ -1545,7 +2207,7 @@
       },
       {
         "days": 3,
-        "settled": 0,
+        "settled": 1,
         "minimum": 40,
         "learning": "collecting",
         "applied": false,
@@ -1629,7 +2291,7 @@
         "description": "Only forecasts recorded BEFORE their outcomes can train this model."
       }
     ],
-    "settledForLearning": 1,
+    "settledForLearning": 2,
     "multiModelScorecards": [
       {
         "days": 1,
@@ -1965,6 +2627,6 @@
     "note": "Training requires at least 40 settled predictions per period. Uses earlier 70% to train and later 30% to test calibration. Only adjusts new forecasts if holdout Brier improves by at least 0.01.",
     "warning": "Learning can reduce some historical error, but no improvement or future predictive skill is guaranteed."
   },
-  "newlyRecorded": 0,
-  "newlySettled": 0
+  "newlyRecorded": 6,
+  "newlySettled": 1
 }
