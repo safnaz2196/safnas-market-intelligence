@@ -1,8 +1,8 @@
 {
   "schemaVersion": 5,
   "engineVersion": "5.3.0",
-  "generatedAt": "2026-11-23T13:17:36.181Z",
-  "sourceSnapshotAt": "2026-11-23T11:08:22.064Z",
+  "generatedAt": "2026-11-24T00:16:24.003Z",
+  "sourceSnapshotAt": "2026-11-24T00:16:17.394Z",
   "status": "research_available",
   "briefing": {
     "title": "Sri Lanka · Autonomous Market Brief",
@@ -38,11 +38,12 @@
       {
         "id": "news-topics",
         "tone": "info",
-        "title": "2 headlines matched economic research topics",
+        "title": "3 headlines matched economic research topics",
         "detail": "Topic matching identifies subjects to investigate; it cannot confirm causation or returns.",
         "evidenceIds": [
           "news-1",
-          "news-7"
+          "news-2",
+          "news-3"
         ]
       },
       {
@@ -61,7 +62,7 @@
   "market": {
     "status": "current",
     "asOf": "2026-11-23",
-    "ageDays": 0,
+    "ageDays": 1,
     "close": 21259.83,
     "lastObservedClose": 21259.83,
     "changePct": -0.51,
@@ -88,6 +89,28 @@
   "news": [
     {
       "id": "news-1",
+      "title": "Sri Lanka’s national inflation rises to 41-month high of 8.5-pct in October; transport leads",
+      "url": "https://economynext.com/sri-lankas-national-inflation-rises-to-41-month-high-of-8-5-pct-in-october-transport-leads-291009/",
+      "date": "2026-11-23",
+      "publisher": "EconomyNext",
+      "topics": [
+        "Inflation"
+      ],
+      "impactNote": "Inflation may affect spending and input costs; no specific price reaction is established."
+    },
+    {
+      "id": "news-2",
+      "title": "Sri Lanka rupee closes at 332.55/60 to US dollar spot, bond yields rise",
+      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-55-60-to-us-dollar-spot-bond-yields-rise-291011/",
+      "date": "2026-11-23",
+      "publisher": "EconomyNext",
+      "topics": [
+        "Currency"
+      ],
+      "impactNote": "Currency changes can affect importers, exporters and foreign-currency debts."
+    },
+    {
+      "id": "news-3",
       "title": "Foreign outflows from Sri Lanka rupee bonds continue for fifth straight week",
       "url": "https://economynext.com/foreign-outflows-from-sri-lanka-rupee-bonds-continue-for-fifth-straight-week-291007/",
       "date": "2026-11-23",
@@ -98,7 +121,7 @@
       "impactNote": "Currency changes can affect importers, exporters and foreign-currency debts."
     },
     {
-      "id": "news-2",
+      "id": "news-4",
       "title": "Sri Lanka stocks close down 0.60-pct, turnover Rs1.05bn",
       "url": "https://economynext.com/sri-lanka-stocks-close-down-0-60-pct-turnover-rs1-05bn-291000/",
       "date": "2026-11-23",
@@ -107,7 +130,7 @@
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
-      "id": "news-3",
+      "id": "news-5",
       "title": "Sri Lanka opens draft labour law reforms for public views, briefs lawmakers",
       "url": "https://economynext.com/sri-lanka-opens-draft-labour-law-reforms-for-public-views-briefs-lawmakers-290992/",
       "date": "2026-11-23",
@@ -116,7 +139,7 @@
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
-      "id": "news-4",
+      "id": "news-6",
       "title": "Sri Lanka urged to fill vacant diplomatic posts in US, China",
       "url": "https://economynext.com/sri-lanka-urged-to-fill-vacant-diplomatic-posts-in-us-china-290983/",
       "date": "2026-11-23",
@@ -125,33 +148,13 @@
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
-      "id": "news-5",
+      "id": "news-7",
       "title": "ADB approves $200mn loan to boost MSME financing in Sri Lanka",
       "url": "https://economynext.com/adb-approves-200mn-loan-to-boost-msme-financing-in-sri-lanka-290974/",
       "date": "2026-11-23",
       "publisher": "EconomyNext",
       "topics": [],
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
-    },
-    {
-      "id": "news-6",
-      "title": "Sierra Cables public stake rises to 49.72-pct after Rs1.23bn share sale",
-      "url": "https://economynext.com/sierra-cables-public-stake-rises-to-49-72-pct-after-rs1-23bn-share-sale-290964/",
-      "date": "2026-11-23",
-      "publisher": "EconomyNext",
-      "topics": [],
-      "impactNote": "Relevant headline recorded. Financial impact is not verified."
-    },
-    {
-      "id": "news-7",
-      "title": "Sri Lanka lawmaker questions central bank rate, SRR hike over debt costs, SME hit",
-      "url": "https://economynext.com/sri-lanka-lawmaker-questions-central-bank-rate-srr-hike-over-debt-costs-sme-hit-290949/",
-      "date": "2026-11-23",
-      "publisher": "EconomyNext",
-      "topics": [
-        "Interest rates"
-      ],
-      "impactNote": "Interest rates can affect bank margins, borrowing costs and demand; company effects are unverified."
     }
   ],
   "companies": [
@@ -1259,7 +1262,9 @@
         "low": 110.5,
         "marketStatus": "last traded (may be prior session)"
       },
-      "recentHeadlines": [],
+      "recentHeadlines": [
+        "news-1"
+      ],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
@@ -1548,50 +1553,50 @@
     },
     {
       "id": "news-1",
+      "label": "Publisher headline · Sri Lanka’s national inflation rises to 41-month high of 8.5-pct in October; transport lea",
+      "url": "https://economynext.com/sri-lankas-national-inflation-rises-to-41-month-high-of-8-5-pct-in-october-transport-leads-291009/",
+      "asOf": "2026-11-23",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-2",
+      "label": "Publisher headline · Sri Lanka rupee closes at 332.55/60 to US dollar spot, bond yields rise",
+      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-55-60-to-us-dollar-spot-bond-yields-rise-291011/",
+      "asOf": "2026-11-23",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-3",
       "label": "Publisher headline · Foreign outflows from Sri Lanka rupee bonds continue for fifth straight week",
       "url": "https://economynext.com/foreign-outflows-from-sri-lanka-rupee-bonds-continue-for-fifth-straight-week-291007/",
       "asOf": "2026-11-23",
       "kind": "dated_headline"
     },
     {
-      "id": "news-2",
+      "id": "news-4",
       "label": "Publisher headline · Sri Lanka stocks close down 0.60-pct, turnover Rs1.05bn",
       "url": "https://economynext.com/sri-lanka-stocks-close-down-0-60-pct-turnover-rs1-05bn-291000/",
       "asOf": "2026-11-23",
       "kind": "dated_headline"
     },
     {
-      "id": "news-3",
+      "id": "news-5",
       "label": "Publisher headline · Sri Lanka opens draft labour law reforms for public views, briefs lawmakers",
       "url": "https://economynext.com/sri-lanka-opens-draft-labour-law-reforms-for-public-views-briefs-lawmakers-290992/",
       "asOf": "2026-11-23",
       "kind": "dated_headline"
     },
     {
-      "id": "news-4",
+      "id": "news-6",
       "label": "Publisher headline · Sri Lanka urged to fill vacant diplomatic posts in US, China",
       "url": "https://economynext.com/sri-lanka-urged-to-fill-vacant-diplomatic-posts-in-us-china-290983/",
       "asOf": "2026-11-23",
       "kind": "dated_headline"
     },
     {
-      "id": "news-5",
+      "id": "news-7",
       "label": "Publisher headline · ADB approves $200mn loan to boost MSME financing in Sri Lanka",
       "url": "https://economynext.com/adb-approves-200mn-loan-to-boost-msme-financing-in-sri-lanka-290974/",
-      "asOf": "2026-11-23",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-6",
-      "label": "Publisher headline · Sierra Cables public stake rises to 49.72-pct after Rs1.23bn share sale",
-      "url": "https://economynext.com/sierra-cables-public-stake-rises-to-49-72-pct-after-rs1-23bn-share-sale-290964/",
-      "asOf": "2026-11-23",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-7",
-      "label": "Publisher headline · Sri Lanka lawmaker questions central bank rate, SRR hike over debt costs, SME hit",
-      "url": "https://economynext.com/sri-lanka-lawmaker-questions-central-bank-rate-srr-hike-over-debt-costs-sme-hit-290949/",
       "asOf": "2026-11-23",
       "kind": "dated_headline"
     },
