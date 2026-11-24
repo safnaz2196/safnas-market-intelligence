@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "engineVersion": "5.3.0",
-  "generatedAt": "2026-11-24T12:52:09.925Z",
+  "generatedAt": "2026-11-24T13:58:57.915Z",
   "sourceSnapshotAt": "2026-11-24T12:52:04.638Z",
   "status": "research_available",
   "briefing": {
@@ -167,7 +167,7 @@
         "currency": "LKR",
         "asOf": "2026-11-23",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-23T13:17:27.675Z",
+        "retrievedAt": "2026-11-24T13:58:47.844Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 48,
@@ -193,7 +193,7 @@
         "sharesIssued": 9200334994,
         "marketCapLKR": 437015912215,
         "betaASPI": 1.4018782,
-        "retrievedAt": "2026-11-23T13:17:29.765Z",
+        "retrievedAt": "2026-11-24T13:58:50.450Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -250,7 +250,7 @@
         "currency": "LKR",
         "asOf": "2026-11-23",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-23T13:17:27.675Z",
+        "retrievedAt": "2026-11-24T13:58:47.844Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 214,
@@ -276,7 +276,7 @@
         "sharesIssued": 1557648229,
         "marketCapLKR": 332557896891.5,
         "betaASPI": 0.79103035,
-        "retrievedAt": "2026-11-23T13:17:29.956Z",
+        "retrievedAt": "2026-11-24T13:58:50.674Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -333,7 +333,7 @@
         "currency": "LKR",
         "asOf": "2026-11-23",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-23T13:17:27.675Z",
+        "retrievedAt": "2026-11-24T13:58:47.844Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 18.7,
@@ -359,7 +359,7 @@
         "sharesIssued": 17741405405,
         "marketCapLKR": 326441859452,
         "betaASPI": 1.0031595,
-        "retrievedAt": "2026-11-23T13:17:30.170Z",
+        "retrievedAt": "2026-11-24T13:58:50.882Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -416,7 +416,7 @@
         "currency": "LKR",
         "asOf": "2026-11-23",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-23T13:17:27.675Z",
+        "retrievedAt": "2026-11-24T13:58:47.844Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 393.75,
@@ -442,7 +442,7 @@
         "sharesIssued": 460218180,
         "marketCapLKR": 181556072010,
         "betaASPI": 0.5533614,
-        "retrievedAt": "2026-11-23T13:17:30.371Z",
+        "retrievedAt": "2026-11-24T13:58:51.272Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -499,7 +499,7 @@
         "currency": "LKR",
         "asOf": "2026-11-23",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-23T13:17:27.675Z",
+        "retrievedAt": "2026-11-24T13:58:47.844Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 148.25,
@@ -525,7 +525,7 @@
         "sharesIssued": 1172700760,
         "marketCapLKR": 173852887670,
         "betaASPI": 0.6757065,
-        "retrievedAt": "2026-11-23T13:17:30.649Z",
+        "retrievedAt": "2026-11-24T13:58:51.479Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -582,7 +582,7 @@
         "currency": "LKR",
         "asOf": "2026-11-23",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-23T13:17:27.675Z",
+        "retrievedAt": "2026-11-24T13:58:47.844Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 230.25,
@@ -608,7 +608,7 @@
         "sharesIssued": 795000000,
         "marketCapLKR": 181260000000,
         "betaASPI": 0.84930664,
-        "retrievedAt": "2026-11-23T13:17:30.842Z",
+        "retrievedAt": "2026-11-24T13:58:51.753Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -665,7 +665,7 @@
         "currency": "LKR",
         "asOf": "2026-11-23",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-23T13:17:27.675Z",
+        "retrievedAt": "2026-11-24T13:58:47.844Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 406,
@@ -691,7 +691,7 @@
         "sharesIssued": 475200000,
         "marketCapLKR": 191030400000,
         "betaASPI": 0.8594875,
-        "retrievedAt": "2026-11-23T13:17:31.042Z",
+        "retrievedAt": "2026-11-24T13:58:51.960Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -748,7 +748,7 @@
         "currency": "LKR",
         "asOf": "2026-11-23",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-23T13:17:27.675Z",
+        "retrievedAt": "2026-11-24T13:58:47.844Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 1844.5,
@@ -776,7 +776,7 @@
         "sharesIssued": 187323751,
         "marketCapLKR": 341116550571,
         "betaASPI": 0.20484465,
-        "retrievedAt": "2026-11-23T13:17:31.305Z",
+        "retrievedAt": "2026-11-24T13:58:52.239Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -833,7 +833,7 @@
         "currency": "LKR",
         "asOf": "2026-11-23",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-23T13:17:27.675Z",
+        "retrievedAt": "2026-11-24T13:58:47.844Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 58.3,
@@ -859,7 +859,7 @@
         "sharesIssued": 4600000000,
         "marketCapLKR": 266800000000,
         "betaASPI": 0.7319642,
-        "retrievedAt": "2026-11-23T13:17:31.564Z",
+        "retrievedAt": "2026-11-24T13:58:52.518Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -916,7 +916,7 @@
         "currency": "LKR",
         "asOf": "2026-11-23",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-23T13:17:27.675Z",
+        "retrievedAt": "2026-11-24T13:58:47.844Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 192,
@@ -942,7 +942,7 @@
         "sharesIssued": 1165397072,
         "marketCapLKR": 224921634896,
         "betaASPI": 0.7826927,
-        "retrievedAt": "2026-11-23T13:17:31.758Z",
+        "retrievedAt": "2026-11-24T13:58:52.790Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -999,7 +999,7 @@
         "currency": "LKR",
         "asOf": "2026-11-23",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-23T13:17:27.675Z",
+        "retrievedAt": "2026-11-24T13:58:47.844Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 680.25,
@@ -1025,7 +1025,7 @@
         "sharesIssued": 257677731,
         "marketCapLKR": 173095015799.25,
         "betaASPI": 0.43022645,
-        "retrievedAt": "2026-11-23T13:17:31.952Z",
+        "retrievedAt": "2026-11-24T13:58:53.072Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -1082,7 +1082,7 @@
         "currency": "LKR",
         "asOf": "2026-11-23",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-23T13:17:27.675Z",
+        "retrievedAt": "2026-11-24T13:58:47.844Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 90.6,
@@ -1111,7 +1111,7 @@
         "sharesIssued": 1804860000,
         "marketCapLKR": 162617886000,
         "betaASPI": 1.1619273,
-        "retrievedAt": "2026-11-23T13:17:32.150Z",
+        "retrievedAt": "2026-11-24T13:58:53.411Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -1168,7 +1168,7 @@
         "currency": "LKR",
         "asOf": "2026-11-23",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-23T13:17:27.675Z",
+        "retrievedAt": "2026-11-24T13:58:47.844Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 32,
@@ -1194,7 +1194,7 @@
         "sharesIssued": 2995985015,
         "marketCapLKR": 95272323477,
         "betaASPI": 1.1194488,
-        "retrievedAt": "2026-11-23T13:17:32.340Z",
+        "retrievedAt": "2026-11-24T13:58:53.617Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -1251,7 +1251,7 @@
         "currency": "LKR",
         "asOf": "2026-11-23",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-23T13:17:27.675Z",
+        "retrievedAt": "2026-11-24T13:58:47.844Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 111.25,
@@ -1279,7 +1279,7 @@
         "sharesIssued": 432197834,
         "marketCapLKR": 48190058491,
         "betaASPI": 0.8006846,
-        "retrievedAt": "2026-11-23T13:17:32.531Z",
+        "retrievedAt": "2026-11-24T13:58:53.831Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -1336,7 +1336,7 @@
         "currency": "LKR",
         "asOf": "2026-11-23",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-23T13:17:27.675Z",
+        "retrievedAt": "2026-11-24T13:58:47.844Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 83,
@@ -1362,7 +1362,7 @@
         "sharesIssued": 294030000,
         "marketCapLKR": 24404490000,
         "betaASPI": 0.94540983,
-        "retrievedAt": "2026-11-23T13:17:32.800Z",
+        "retrievedAt": "2026-11-24T13:58:54.042Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -1419,7 +1419,7 @@
         "currency": "LKR",
         "asOf": "2026-11-23",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-23T13:17:27.675Z",
+        "retrievedAt": "2026-11-24T13:58:47.844Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 154,
@@ -1445,7 +1445,7 @@
         "sharesIssued": 554057136,
         "marketCapLKR": 84770741808,
         "betaASPI": 0.8785326,
-        "retrievedAt": "2026-11-23T13:17:32.990Z",
+        "retrievedAt": "2026-11-24T13:58:54.384Z",
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery"
       },
       "filings": [
@@ -2450,7 +2450,7 @@
     "verifiedCompanyQuotes": 16,
     "companyFacts": 16,
     "companyFilings": 16,
-    "companyEvidenceAt": "2026-11-23T13:17:27.675Z"
+    "companyEvidenceAt": "2026-11-24T13:58:47.844Z"
   },
   "ai": {
     "status": "not_configured",
