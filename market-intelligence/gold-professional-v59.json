@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "version": "5.9",
-  "generatedAt": "2026-11-23T12:19:20.269Z",
+  "generatedAt": "2026-11-24T00:19:06.584Z",
   "status": "research_available",
   "sourceReport": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ensemble-v58.json",
   "goldHistoryAsOf": "2026-11-23",
-  "referenceUsdOz": 3621.9,
+  "referenceUsdOz": 3626.9,
   "summary": {
     "modelsCompared": 5,
     "periods": 6,
@@ -17,11 +17,11 @@
   "quality": {
     "history": "observed",
     "historyAsOf": "2026-11-23",
-    "historyDaysOld": 0,
+    "historyDaysOld": 1,
     "spot": "recent",
-    "spotAsOf": "2026-11-23T12:19:11Z",
+    "spotAsOf": "2026-11-24T00:18:43Z",
     "fx": "recent",
-    "fxAsOf": "2026-11-23T00:02:32.000Z",
+    "fxAsOf": "2026-11-24T00:02:31.000Z",
     "managedMoney": "dated_weekly",
     "macroAvailable": 2,
     "news": "unavailable",
@@ -33,9 +33,9 @@
       "sessions": 1,
       "originalDirection": "rise",
       "scenario": {
-        "lowUsdOz": 3516.58,
-        "midUsdOz": 3622.19,
-        "highUsdOz": 3679.2
+        "lowUsdOz": 3521.43,
+        "midUsdOz": 3627.19,
+        "highUsdOz": 3684.28
       },
       "historicalConfidence": "NOT_PROVEN",
       "validation": {
@@ -116,7 +116,7 @@
       },
       "currencyScenarios": {
         "available": true,
-        "fxObservedAt": "2026-11-23T00:02:32.000Z",
+        "fxObservedAt": "2026-11-24T00:02:31.000Z",
         "goldHistoryAsOf": "2026-11-23",
         "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
         "contexts": [
@@ -128,13 +128,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 388.65,
-              "middle": 400.32,
-              "high": 406.62
+              "low": 389.18,
+              "middle": 400.87,
+              "high": 407.18
             },
             "hypotheticalStress": {
-              "low": 386.71,
-              "high": 408.65
+              "low": 387.23,
+              "high": 409.22
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -146,13 +146,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 423.98,
-              "middle": 436.71,
-              "high": 443.58
+              "low": 424.56,
+              "middle": 437.31,
+              "high": 444.2
             },
             "hypotheticalStress": {
-              "low": 421.86,
-              "high": 445.8
+              "low": 422.44,
+              "high": 446.42
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -161,16 +161,16 @@
             "region": "Sri Lanka",
             "karat": 22,
             "unit": "LKR/gram",
-            "fxReference": 332.39272,
+            "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 34448.83,
-              "middle": 35483.4,
-              "high": 36041.88
+              "low": 34494.74,
+              "middle": 35530.73,
+              "high": 36089.96
             },
             "hypotheticalStress": {
-              "low": 33415.37,
-              "high": 37123.14
+              "low": 33459.9,
+              "high": 37172.66
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -179,16 +179,16 @@
             "region": "Sri Lanka",
             "karat": 24,
             "unit": "LKR/gram",
-            "fxReference": 332.39272,
+            "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 37580.54,
-              "middle": 38709.16,
-              "high": 39318.41
+              "low": 37630.62,
+              "middle": 38760.79,
+              "high": 39370.87
             },
             "hypotheticalStress": {
-              "low": 36453.12,
-              "high": 40497.96
+              "low": 36501.7,
+              "high": 40552
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
@@ -201,9 +201,9 @@
       "sessions": 2,
       "originalDirection": "fall",
       "scenario": {
-        "lowUsdOz": 3485.35,
-        "midUsdOz": 3605.85,
-        "highUsdOz": 3735.27
+        "lowUsdOz": 3519.11,
+        "midUsdOz": 3610.83,
+        "highUsdOz": 3740.42
       },
       "historicalConfidence": "NOT_PROVEN",
       "validation": {
@@ -284,7 +284,7 @@
       },
       "currencyScenarios": {
         "available": true,
-        "fxObservedAt": "2026-11-23T00:02:32.000Z",
+        "fxObservedAt": "2026-11-24T00:02:31.000Z",
         "goldHistoryAsOf": "2026-11-23",
         "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
         "contexts": [
@@ -296,13 +296,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 385.19,
-              "middle": 398.51,
-              "high": 412.82
+              "low": 388.93,
+              "middle": 399.06,
+              "high": 413.38
             },
             "hypotheticalStress": {
-              "low": 383.26,
-              "high": 414.88
+              "low": 386.99,
+              "high": 415.45
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -314,13 +314,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 420.21,
-              "middle": 434.74,
-              "high": 450.34
+              "low": 424.28,
+              "middle": 435.34,
+              "high": 450.96
             },
             "hypotheticalStress": {
-              "low": 418.11,
-              "high": 452.59
+              "low": 422.16,
+              "high": 453.21
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -329,16 +329,16 @@
             "region": "Sri Lanka",
             "karat": 22,
             "unit": "LKR/gram",
-            "fxReference": 332.39272,
+            "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 34142.9,
-              "middle": 35323.33,
-              "high": 36591.15
+              "low": 34472.01,
+              "middle": 35370.47,
+              "high": 36639.89
             },
             "hypotheticalStress": {
-              "low": 33118.61,
-              "high": 37688.88
+              "low": 33437.85,
+              "high": 37739.09
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -347,16 +347,16 @@
             "region": "Sri Lanka",
             "karat": 24,
             "unit": "LKR/gram",
-            "fxReference": 332.39272,
+            "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 37246.8,
-              "middle": 38534.54,
-              "high": 39917.61
+              "low": 37605.83,
+              "middle": 38585.97,
+              "high": 39970.79
             },
             "hypotheticalStress": {
-              "low": 36129.4,
-              "high": 41115.14
+              "low": 36477.66,
+              "high": 41169.91
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
@@ -369,9 +369,9 @@
       "sessions": 5,
       "originalDirection": "rise",
       "scenario": {
-        "lowUsdOz": 3479.85,
-        "midUsdOz": 3653.16,
-        "highUsdOz": 3778.76
+        "lowUsdOz": 3484.65,
+        "midUsdOz": 3658.2,
+        "highUsdOz": 3783.98
       },
       "historicalConfidence": "NOT_PROVEN",
       "validation": {
@@ -452,7 +452,7 @@
       },
       "currencyScenarios": {
         "available": true,
-        "fxObservedAt": "2026-11-23T00:02:32.000Z",
+        "fxObservedAt": "2026-11-24T00:02:31.000Z",
         "goldHistoryAsOf": "2026-11-23",
         "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
         "contexts": [
@@ -464,13 +464,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 384.59,
-              "middle": 403.74,
-              "high": 417.62
+              "low": 385.12,
+              "middle": 404.3,
+              "high": 418.2
             },
             "hypotheticalStress": {
-              "low": 382.67,
-              "high": 419.71
+              "low": 383.19,
+              "high": 420.29
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -482,13 +482,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 419.55,
-              "middle": 440.44,
-              "high": 455.59
+              "low": 420.13,
+              "middle": 441.05,
+              "high": 456.22
             },
             "hypotheticalStress": {
-              "low": 417.45,
-              "high": 457.87
+              "low": 418.03,
+              "high": 458.5
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -497,16 +497,16 @@
             "region": "Sri Lanka",
             "karat": 22,
             "unit": "LKR/gram",
-            "fxReference": 332.39272,
+            "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 34089.02,
-              "middle": 35786.79,
-              "high": 37017.18
+              "low": 34134.45,
+              "middle": 35834.49,
+              "high": 37066.59
             },
             "hypotheticalStress": {
-              "low": 33066.35,
-              "high": 38127.7
+              "low": 33110.42,
+              "high": 38178.59
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -515,16 +515,16 @@
             "region": "Sri Lanka",
             "karat": 24,
             "unit": "LKR/gram",
-            "fxReference": 332.39272,
+            "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 37188.02,
-              "middle": 39040.13,
-              "high": 40382.38
+              "low": 37237.58,
+              "middle": 39092.17,
+              "high": 40436.28
             },
             "hypotheticalStress": {
-              "low": 36072.38,
-              "high": 41593.85
+              "low": 36120.45,
+              "high": 41649.37
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
@@ -537,9 +537,9 @@
       "sessions": 10,
       "originalDirection": "range",
       "scenario": {
-        "lowUsdOz": 3478.15,
-        "midUsdOz": 3623.89,
-        "highUsdOz": 3844.18
+        "lowUsdOz": 3482.95,
+        "midUsdOz": 3628.89,
+        "highUsdOz": 3849.48
       },
       "historicalConfidence": "NOT_PROVEN",
       "validation": {
@@ -620,7 +620,7 @@
       },
       "currencyScenarios": {
         "available": true,
-        "fxObservedAt": "2026-11-23T00:02:32.000Z",
+        "fxObservedAt": "2026-11-24T00:02:31.000Z",
         "goldHistoryAsOf": "2026-11-23",
         "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
         "contexts": [
@@ -632,13 +632,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 384.4,
-              "middle": 400.51,
-              "high": 424.85
+              "low": 384.93,
+              "middle": 401.06,
+              "high": 425.44
             },
             "hypotheticalStress": {
-              "low": 382.48,
-              "high": 426.97
+              "low": 383.01,
+              "high": 427.57
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -650,13 +650,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 419.34,
-              "middle": 436.92,
-              "high": 463.47
+              "low": 419.92,
+              "middle": 437.52,
+              "high": 464.11
             },
             "hypotheticalStress": {
-              "low": 417.24,
-              "high": 465.79
+              "low": 417.82,
+              "high": 466.43
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -665,16 +665,16 @@
             "region": "Sri Lanka",
             "karat": 22,
             "unit": "LKR/gram",
-            "fxReference": 332.39272,
+            "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 34072.37,
-              "middle": 35500.05,
-              "high": 37658.04
+              "low": 34117.8,
+              "middle": 35547.38,
+              "high": 37708.2
             },
             "hypotheticalStress": {
-              "low": 33050.2,
-              "high": 38787.78
+              "low": 33094.27,
+              "high": 38839.45
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -683,16 +683,16 @@
             "region": "Sri Lanka",
             "karat": 24,
             "unit": "LKR/gram",
-            "fxReference": 332.39272,
+            "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 37169.86,
-              "middle": 38727.33,
-              "high": 41081.5
+              "low": 37219.42,
+              "middle": 38778.96,
+              "high": 41136.22
             },
             "hypotheticalStress": {
-              "low": 36054.76,
-              "high": 42313.94
+              "low": 36102.84,
+              "high": 42370.31
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
@@ -705,9 +705,9 @@
       "sessions": 21,
       "originalDirection": "rise",
       "scenario": {
-        "lowUsdOz": 3384.12,
-        "midUsdOz": 3641.57,
-        "highUsdOz": 3907.63
+        "lowUsdOz": 3388.79,
+        "midUsdOz": 3641.41,
+        "highUsdOz": 3896.85
       },
       "historicalConfidence": "NOT_PROVEN",
       "validation": {
@@ -788,7 +788,7 @@
       },
       "currencyScenarios": {
         "available": true,
-        "fxObservedAt": "2026-11-23T00:02:32.000Z",
+        "fxObservedAt": "2026-11-24T00:02:31.000Z",
         "goldHistoryAsOf": "2026-11-23",
         "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
         "contexts": [
@@ -800,13 +800,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 374.01,
-              "middle": 402.46,
-              "high": 431.86
+              "low": 374.52,
+              "middle": 402.44,
+              "high": 430.67
             },
             "hypotheticalStress": {
-              "low": 372.14,
-              "high": 434.02
+              "low": 372.65,
+              "high": 432.82
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -818,13 +818,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 408.01,
-              "middle": 439.05,
-              "high": 471.12
+              "low": 408.57,
+              "middle": 439.03,
+              "high": 469.82
             },
             "hypotheticalStress": {
-              "low": 405.97,
-              "high": 473.48
+              "low": 406.53,
+              "high": 472.17
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -833,16 +833,16 @@
             "region": "Sri Lanka",
             "karat": 22,
             "unit": "LKR/gram",
-            "fxReference": 332.39272,
+            "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 33151.24,
-              "middle": 35673.25,
-              "high": 38279.6
+              "low": 33195.44,
+              "middle": 35670.02,
+              "high": 38172.22
             },
             "hypotheticalStress": {
-              "low": 32156.7,
-              "high": 39427.99
+              "low": 32199.58,
+              "high": 39317.39
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -851,16 +851,16 @@
             "region": "Sri Lanka",
             "karat": 24,
             "unit": "LKR/gram",
-            "fxReference": 332.39272,
+            "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 36164.99,
-              "middle": 38916.27,
-              "high": 41759.57
+              "low": 36213.21,
+              "middle": 38912.75,
+              "high": 41642.43
             },
             "hypotheticalStress": {
-              "low": 35080.04,
-              "high": 43012.36
+              "low": 35126.81,
+              "high": 42891.7
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
@@ -873,9 +873,9 @@
       "sessions": 63,
       "originalDirection": "rise",
       "scenario": {
-        "lowUsdOz": 3254.1,
-        "midUsdOz": 3794.09,
-        "highUsdOz": 4227.45
+        "lowUsdOz": 3258.59,
+        "midUsdOz": 3810.24,
+        "highUsdOz": 4233.28
       },
       "historicalConfidence": "NOT_PROVEN",
       "validation": {
@@ -899,7 +899,7 @@
       },
       "currencyScenarios": {
         "available": true,
-        "fxObservedAt": "2026-11-23T00:02:32.000Z",
+        "fxObservedAt": "2026-11-24T00:02:31.000Z",
         "goldHistoryAsOf": "2026-11-23",
         "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
         "contexts": [
@@ -911,13 +911,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 359.64,
-              "middle": 419.32,
-              "high": 467.21
+              "low": 360.13,
+              "middle": 421.1,
+              "high": 467.85
             },
             "hypotheticalStress": {
-              "low": 357.84,
-              "high": 469.55
+              "low": 358.33,
+              "high": 470.19
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -929,13 +929,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 392.33,
-              "middle": 457.44,
-              "high": 509.68
+              "low": 392.87,
+              "middle": 459.38,
+              "high": 510.39
             },
             "hypotheticalStress": {
-              "low": 390.37,
-              "high": 512.23
+              "low": 390.91,
+              "high": 512.94
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -944,16 +944,16 @@
             "region": "Sri Lanka",
             "karat": 22,
             "unit": "LKR/gram",
-            "fxReference": 332.39272,
+            "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 31877.55,
-              "middle": 37167.35,
-              "high": 41412.6
+              "low": 31920.05,
+              "middle": 37323.82,
+              "high": 41467.78
             },
             "hypotheticalStress": {
-              "low": 30921.22,
-              "high": 42654.98
+              "low": 30962.45,
+              "high": 42711.81
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -962,16 +962,16 @@
             "region": "Sri Lanka",
             "karat": 24,
             "unit": "LKR/gram",
-            "fxReference": 332.39272,
+            "fxReference": 332.37724,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 34775.51,
-              "middle": 40546.2,
-              "high": 45177.38
+              "low": 34821.87,
+              "middle": 40716.9,
+              "high": 45237.58
             },
             "hypotheticalStress": {
-              "low": 33732.24,
-              "high": 46532.7
+              "low": 33777.21,
+              "high": 46594.71
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
