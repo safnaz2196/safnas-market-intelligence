@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "version": "5.8",
   "engine": "adaptive_four_model_causal_research",
-  "generatedAt": "2026-11-25T04:07:08.903Z",
-  "historyAsOf": "2026-11-24",
-  "referenceUsdOz": 3552.7,
+  "generatedAt": "2026-11-25T14:12:54.068Z",
+  "historyAsOf": "2026-11-25",
+  "referenceUsdOz": 3541.2,
   "historyCount": 900,
   "sources": [
     {
@@ -25,8 +25,8 @@
       "thresholdPct": 0.5,
       "bias": "rise",
       "consensus": {
-        "rise": 2,
-        "fall": 2,
+        "rise": 3,
+        "fall": 1,
         "range": 0,
         "total": 4
       },
@@ -38,16 +38,16 @@
           "referenceCases": 80,
           "trainingCandidates": 844,
           "probabilities": {
-            "rise": 33.72,
-            "fall": 33.72,
+            "rise": 34.88,
+            "fall": 32.56,
             "range": 32.56
           },
           "scenarios": {
-            "lowPct": -2.749,
-            "midPct": -0.058,
+            "lowPct": -2.522,
+            "midPct": -0.03,
             "highPct": 1.611
           },
-          "medianReturnPct": -0.058,
+          "medianReturnPct": -0.03,
           "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
@@ -57,17 +57,17 @@
           "referenceCases": 80,
           "trainingCandidates": 844,
           "probabilities": {
-            "rise": 32.56,
-            "fall": 36.05,
+            "rise": 34.88,
+            "fall": 33.72,
             "range": 31.4
           },
           "scenarios": {
-            "lowPct": -2.908,
-            "midPct": -0.115,
-            "highPct": 1.611
+            "lowPct": -2.494,
+            "midPct": -0.058,
+            "highPct": 1.74
           },
-          "medianReturnPct": -0.115,
-          "direction": "fall",
+          "medianReturnPct": -0.058,
+          "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
         {
@@ -81,7 +81,7 @@
             "range": 29.07
           },
           "scenarios": {
-            "lowPct": -2.908,
+            "lowPct": -2.651,
             "midPct": -0.097,
             "highPct": 1.74
           },
@@ -100,7 +100,7 @@
             "range": 27.91
           },
           "scenarios": {
-            "lowPct": -2.901,
+            "lowPct": -2.782,
             "midPct": 0.045,
             "highPct": 2.656
           },
@@ -110,23 +110,23 @@
         }
       ],
       "validation": {
-        "selectedByEarlyPeriod": "regime",
+        "selectedByEarlyPeriod": "analogue",
         "selectedModelValidated": false,
         "checksEarly": 94,
         "checksLater": 52,
-        "laterBrier": 0.6738,
-        "laterBaselineBrier": 0.6546,
-        "laterImprovement": -0.0192,
+        "laterBrier": 0.7009,
+        "laterBaselineBrier": 0.6717,
+        "laterImprovement": -0.0292,
         "models": [
           {
             "id": "analogue",
             "trainCount": 94,
             "holdoutCount": 52,
-            "selectionBrier": 0.6572,
-            "holdoutBrier": 0.6879,
-            "holdoutBaselineBrier": 0.6546,
-            "holdoutDirectionHitRate": 26.9,
-            "holdoutImprovement": -0.0333,
+            "selectionBrier": 0.6746,
+            "holdoutBrier": 0.7009,
+            "holdoutBaselineBrier": 0.6717,
+            "holdoutDirectionHitRate": 25,
+            "holdoutImprovement": -0.0292,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -134,11 +134,11 @@
             "id": "trend",
             "trainCount": 94,
             "holdoutCount": 52,
-            "selectionBrier": 0.6585,
-            "holdoutBrier": 0.6758,
-            "holdoutBaselineBrier": 0.6546,
-            "holdoutDirectionHitRate": 30.8,
-            "holdoutImprovement": -0.0212,
+            "selectionBrier": 0.6876,
+            "holdoutBrier": 0.7007,
+            "holdoutBaselineBrier": 0.6717,
+            "holdoutDirectionHitRate": 32.7,
+            "holdoutImprovement": -0.029,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -146,11 +146,11 @@
             "id": "reversion",
             "trainCount": 94,
             "holdoutCount": 52,
-            "selectionBrier": 0.6589,
-            "holdoutBrier": 0.6829,
-            "holdoutBaselineBrier": 0.6546,
-            "holdoutDirectionHitRate": 32.7,
-            "holdoutImprovement": -0.0283,
+            "selectionBrier": 0.6918,
+            "holdoutBrier": 0.7055,
+            "holdoutBaselineBrier": 0.6717,
+            "holdoutDirectionHitRate": 28.8,
+            "holdoutImprovement": -0.0338,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -158,11 +158,11 @@
             "id": "regime",
             "trainCount": 94,
             "holdoutCount": 52,
-            "selectionBrier": 0.6471,
-            "holdoutBrier": 0.6738,
-            "holdoutBaselineBrier": 0.6546,
-            "holdoutDirectionHitRate": 32.7,
-            "holdoutImprovement": -0.0192,
+            "selectionBrier": 0.6764,
+            "holdoutBrier": 0.6934,
+            "holdoutBaselineBrier": 0.6717,
+            "holdoutDirectionHitRate": 28.8,
+            "holdoutImprovement": -0.0217,
             "minHoldoutNeeded": 20,
             "validated": false
           }
@@ -172,19 +172,19 @@
       },
       "confidence": "unproven",
       "conditionalHistoricalFrequencies": {
-        "rise": 38.37,
-        "fall": 33.72,
-        "range": 27.91
+        "rise": 34.88,
+        "fall": 32.56,
+        "range": 32.56
       },
       "scenarios": {
-        "lowPct": -2.901,
-        "midPct": 0.045,
-        "highPct": 2.656
+        "lowPct": -2.522,
+        "midPct": -0.03,
+        "highPct": 1.611
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3449.64,
-        "midUsdOz": 3554.3,
-        "highUsdOz": 3647.06
+        "lowUsdOz": 3451.89,
+        "midUsdOz": 3540.14,
+        "highUsdOz": 3598.25
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -195,8 +195,8 @@
       "thresholdPct": 0.707,
       "bias": "rise",
       "consensus": {
-        "rise": 1,
-        "fall": 3,
+        "rise": 2,
+        "fall": 2,
         "range": 0,
         "total": 4
       },
@@ -208,17 +208,17 @@
           "referenceCases": 80,
           "trainingCandidates": 843,
           "probabilities": {
-            "rise": 34.88,
-            "fall": 37.21,
-            "range": 27.91
+            "rise": 39.53,
+            "fall": 36.05,
+            "range": 24.42
           },
           "scenarios": {
             "lowPct": -3.804,
-            "midPct": -0.37,
+            "midPct": 0.015,
             "highPct": 2.76
           },
-          "medianReturnPct": -0.37,
-          "direction": "fall",
+          "medianReturnPct": 0.015,
+          "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
         {
@@ -227,17 +227,17 @@
           "referenceCases": 80,
           "trainingCandidates": 843,
           "probabilities": {
-            "rise": 34.88,
-            "fall": 40.7,
-            "range": 24.42
+            "rise": 37.21,
+            "fall": 37.21,
+            "range": 25.58
           },
           "scenarios": {
-            "lowPct": -3.77,
-            "midPct": -0.512,
-            "highPct": 2.617
+            "lowPct": -3.093,
+            "midPct": -0.255,
+            "highPct": 3.13
           },
-          "medianReturnPct": -0.512,
-          "direction": "fall",
+          "medianReturnPct": -0.255,
+          "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
         {
@@ -247,15 +247,15 @@
           "trainingCandidates": 843,
           "probabilities": {
             "rise": 37.21,
-            "fall": 39.53,
-            "range": 23.26
+            "fall": 38.37,
+            "range": 24.42
           },
           "scenarios": {
-            "lowPct": -3.77,
-            "midPct": -0.382,
+            "lowPct": -3.093,
+            "midPct": -0.327,
             "highPct": 2.766
           },
-          "medianReturnPct": -0.382,
+          "medianReturnPct": -0.327,
           "direction": "fall",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
@@ -266,8 +266,8 @@
           "trainingCandidates": 843,
           "probabilities": {
             "rise": 37.21,
-            "fall": 37.21,
-            "range": 25.58
+            "fall": 38.37,
+            "range": 24.42
           },
           "scenarios": {
             "lowPct": -3.614,
@@ -275,28 +275,28 @@
             "highPct": 3.134
           },
           "medianReturnPct": -0.227,
-          "direction": "rise",
+          "direction": "fall",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         }
       ],
       "validation": {
-        "selectedByEarlyPeriod": "regime",
+        "selectedByEarlyPeriod": "trend",
         "selectedModelValidated": false,
         "checksEarly": 94,
         "checksLater": 52,
-        "laterBrier": 0.6701,
-        "laterBaselineBrier": 0.6596,
-        "laterImprovement": -0.0105,
+        "laterBrier": 0.7142,
+        "laterBaselineBrier": 0.6469,
+        "laterImprovement": -0.0673,
         "models": [
           {
             "id": "analogue",
             "trainCount": 94,
             "holdoutCount": 52,
-            "selectionBrier": 0.6936,
-            "holdoutBrier": 0.6874,
-            "holdoutBaselineBrier": 0.6596,
-            "holdoutDirectionHitRate": 36.5,
-            "holdoutImprovement": -0.0278,
+            "selectionBrier": 0.6969,
+            "holdoutBrier": 0.6997,
+            "holdoutBaselineBrier": 0.6469,
+            "holdoutDirectionHitRate": 34.6,
+            "holdoutImprovement": -0.0528,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -304,11 +304,11 @@
             "id": "trend",
             "trainCount": 94,
             "holdoutCount": 52,
-            "selectionBrier": 0.6893,
-            "holdoutBrier": 0.6942,
-            "holdoutBaselineBrier": 0.6596,
-            "holdoutDirectionHitRate": 36.5,
-            "holdoutImprovement": -0.0346,
+            "selectionBrier": 0.6877,
+            "holdoutBrier": 0.7142,
+            "holdoutBaselineBrier": 0.6469,
+            "holdoutDirectionHitRate": 28.8,
+            "holdoutImprovement": -0.0673,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -316,11 +316,11 @@
             "id": "reversion",
             "trainCount": 94,
             "holdoutCount": 52,
-            "selectionBrier": 0.6892,
-            "holdoutBrier": 0.6984,
-            "holdoutBaselineBrier": 0.6596,
-            "holdoutDirectionHitRate": 28.8,
-            "holdoutImprovement": -0.0388,
+            "selectionBrier": 0.6934,
+            "holdoutBrier": 0.7015,
+            "holdoutBaselineBrier": 0.6469,
+            "holdoutDirectionHitRate": 36.5,
+            "holdoutImprovement": -0.0546,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -328,11 +328,11 @@
             "id": "regime",
             "trainCount": 94,
             "holdoutCount": 52,
-            "selectionBrier": 0.6776,
-            "holdoutBrier": 0.6701,
-            "holdoutBaselineBrier": 0.6596,
-            "holdoutDirectionHitRate": 32.7,
-            "holdoutImprovement": -0.0105,
+            "selectionBrier": 0.694,
+            "holdoutBrier": 0.6887,
+            "holdoutBaselineBrier": 0.6469,
+            "holdoutDirectionHitRate": 36.5,
+            "holdoutImprovement": -0.0418,
             "minHoldoutNeeded": 20,
             "validated": false
           }
@@ -347,14 +347,14 @@
         "range": 25.58
       },
       "scenarios": {
-        "lowPct": -3.614,
-        "midPct": -0.227,
-        "highPct": 3.134
+        "lowPct": -3.093,
+        "midPct": -0.255,
+        "highPct": 3.13
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3424.31,
-        "midUsdOz": 3544.64,
-        "highUsdOz": 3664.04
+        "lowUsdOz": 3431.67,
+        "midUsdOz": 3532.17,
+        "highUsdOz": 3652.04
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -378,16 +378,16 @@
           "referenceCases": 80,
           "trainingCandidates": 840,
           "probabilities": {
-            "rise": 39.53,
+            "rise": 38.37,
             "fall": 26.74,
-            "range": 33.72
+            "range": 34.88
           },
           "scenarios": {
-            "lowPct": -4.006,
-            "midPct": 0.493,
+            "lowPct": -4.997,
+            "midPct": 0.389,
             "highPct": 4.331
           },
-          "medianReturnPct": 0.493,
+          "medianReturnPct": 0.389,
           "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
@@ -397,16 +397,16 @@
           "referenceCases": 80,
           "trainingCandidates": 840,
           "probabilities": {
-            "rise": 39.53,
+            "rise": 41.86,
             "fall": 29.07,
-            "range": 31.4
+            "range": 29.07
           },
           "scenarios": {
-            "lowPct": -3.922,
-            "midPct": 0.549,
+            "lowPct": -4.193,
+            "midPct": 0.863,
             "highPct": 4.331
           },
-          "medianReturnPct": 0.549,
+          "medianReturnPct": 0.863,
           "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
@@ -416,16 +416,16 @@
           "referenceCases": 80,
           "trainingCandidates": 840,
           "probabilities": {
-            "rise": 43.02,
-            "fall": 27.91,
-            "range": 29.07
+            "rise": 39.53,
+            "fall": 26.74,
+            "range": 33.72
           },
           "scenarios": {
-            "lowPct": -3.465,
-            "midPct": 0.919,
-            "highPct": 4.585
+            "lowPct": -4.006,
+            "midPct": 0.472,
+            "highPct": 4.331
           },
-          "medianReturnPct": 0.919,
+          "medianReturnPct": 0.472,
           "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
@@ -440,7 +440,7 @@
             "range": 25.58
           },
           "scenarios": {
-            "lowPct": -4.68,
+            "lowPct": -4.997,
             "midPct": 0.171,
             "highPct": 3.543
           },
@@ -450,23 +450,23 @@
         }
       ],
       "validation": {
-        "selectedByEarlyPeriod": "regime",
+        "selectedByEarlyPeriod": "trend",
         "selectedModelValidated": false,
         "checksEarly": 94,
         "checksLater": 52,
-        "laterBrier": 0.6754,
-        "laterBaselineBrier": 0.6684,
-        "laterImprovement": -0.007,
+        "laterBrier": 0.7204,
+        "laterBaselineBrier": 0.6884,
+        "laterImprovement": -0.032,
         "models": [
           {
             "id": "analogue",
             "trainCount": 94,
             "holdoutCount": 52,
-            "selectionBrier": 0.6927,
-            "holdoutBrier": 0.6614,
-            "holdoutBaselineBrier": 0.6684,
-            "holdoutDirectionHitRate": 40.4,
-            "holdoutImprovement": 0.007,
+            "selectionBrier": 0.7068,
+            "holdoutBrier": 0.702,
+            "holdoutBaselineBrier": 0.6884,
+            "holdoutDirectionHitRate": 38.5,
+            "holdoutImprovement": -0.0136,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -474,11 +474,11 @@
             "id": "trend",
             "trainCount": 94,
             "holdoutCount": 52,
-            "selectionBrier": 0.6877,
-            "holdoutBrier": 0.6954,
-            "holdoutBaselineBrier": 0.6684,
-            "holdoutDirectionHitRate": 32.7,
-            "holdoutImprovement": -0.027,
+            "selectionBrier": 0.6974,
+            "holdoutBrier": 0.7204,
+            "holdoutBaselineBrier": 0.6884,
+            "holdoutDirectionHitRate": 23.1,
+            "holdoutImprovement": -0.032,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -486,11 +486,11 @@
             "id": "reversion",
             "trainCount": 94,
             "holdoutCount": 52,
-            "selectionBrier": 0.6861,
-            "holdoutBrier": 0.6947,
-            "holdoutBaselineBrier": 0.6684,
-            "holdoutDirectionHitRate": 32.7,
-            "holdoutImprovement": -0.0263,
+            "selectionBrier": 0.7041,
+            "holdoutBrier": 0.7302,
+            "holdoutBaselineBrier": 0.6884,
+            "holdoutDirectionHitRate": 15.4,
+            "holdoutImprovement": -0.0418,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -498,11 +498,11 @@
             "id": "regime",
             "trainCount": 94,
             "holdoutCount": 52,
-            "selectionBrier": 0.6852,
-            "holdoutBrier": 0.6754,
-            "holdoutBaselineBrier": 0.6684,
-            "holdoutDirectionHitRate": 40.4,
-            "holdoutImprovement": -0.007,
+            "selectionBrier": 0.7027,
+            "holdoutBrier": 0.7214,
+            "holdoutBaselineBrier": 0.6884,
+            "holdoutDirectionHitRate": 28.8,
+            "holdoutImprovement": -0.033,
             "minHoldoutNeeded": 20,
             "validated": false
           }
@@ -512,19 +512,19 @@
       },
       "confidence": "unproven",
       "conditionalHistoricalFrequencies": {
-        "rise": 40.7,
-        "fall": 33.72,
-        "range": 25.58
+        "rise": 41.86,
+        "fall": 29.07,
+        "range": 29.07
       },
       "scenarios": {
-        "lowPct": -4.68,
-        "midPct": 0.171,
-        "highPct": 3.543
+        "lowPct": -4.193,
+        "midPct": 0.863,
+        "highPct": 4.331
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3386.43,
-        "midUsdOz": 3558.78,
-        "highUsdOz": 3678.57
+        "lowUsdOz": 3392.72,
+        "midUsdOz": 3571.76,
+        "highUsdOz": 3694.57
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -548,16 +548,16 @@
           "referenceCases": 80,
           "trainingCandidates": 835,
           "probabilities": {
-            "rise": 38.37,
-            "fall": 27.91,
-            "range": 33.72
+            "rise": 37.21,
+            "fall": 31.4,
+            "range": 31.4
           },
           "scenarios": {
-            "lowPct": -4.125,
-            "midPct": 0.492,
-            "highPct": 4.755
+            "lowPct": -4.591,
+            "midPct": 0.391,
+            "highPct": 4.468
           },
-          "medianReturnPct": 0.492,
+          "medianReturnPct": 0.391,
           "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
@@ -567,17 +567,17 @@
           "referenceCases": 80,
           "trainingCandidates": 835,
           "probabilities": {
-            "rise": 33.72,
-            "fall": 29.07,
-            "range": 37.21
+            "rise": 34.88,
+            "fall": 30.23,
+            "range": 34.88
           },
           "scenarios": {
-            "lowPct": -4.593,
-            "midPct": 0.055,
+            "lowPct": -4.724,
+            "midPct": 0.011,
             "highPct": 5.865
           },
-          "medianReturnPct": 0.055,
-          "direction": "range",
+          "medianReturnPct": 0.011,
+          "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
         {
@@ -586,17 +586,17 @@
           "referenceCases": 80,
           "trainingCandidates": 835,
           "probabilities": {
-            "rise": 38.37,
-            "fall": 24.42,
+            "rise": 36.05,
+            "fall": 26.74,
             "range": 37.21
           },
           "scenarios": {
-            "lowPct": -3.315,
-            "midPct": 0.391,
+            "lowPct": -3.982,
+            "midPct": 0.152,
             "highPct": 5.865
           },
-          "medianReturnPct": 0.391,
-          "direction": "rise",
+          "medianReturnPct": 0.152,
+          "direction": "range",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
         {
@@ -606,11 +606,11 @@
           "trainingCandidates": 835,
           "probabilities": {
             "rise": 27.91,
-            "fall": 37.21,
-            "range": 34.88
+            "fall": 38.37,
+            "range": 33.72
           },
           "scenarios": {
-            "lowPct": -5.877,
+            "lowPct": -6.27,
             "midPct": -0.801,
             "highPct": 3.342
           },
@@ -620,23 +620,23 @@
         }
       ],
       "validation": {
-        "selectedByEarlyPeriod": "trend",
+        "selectedByEarlyPeriod": "reversion",
         "selectedModelValidated": false,
         "checksEarly": 63,
         "checksLater": 34,
-        "laterBrier": 0.7745,
-        "laterBaselineBrier": 0.6644,
-        "laterImprovement": -0.1101,
+        "laterBrier": 0.7453,
+        "laterBaselineBrier": 0.6449,
+        "laterImprovement": -0.1004,
         "models": [
           {
             "id": "analogue",
             "trainCount": 63,
             "holdoutCount": 34,
-            "selectionBrier": 0.7288,
-            "holdoutBrier": 0.7589,
-            "holdoutBaselineBrier": 0.6644,
-            "holdoutDirectionHitRate": 23.5,
-            "holdoutImprovement": -0.0945,
+            "selectionBrier": 0.7198,
+            "holdoutBrier": 0.7011,
+            "holdoutBaselineBrier": 0.6449,
+            "holdoutDirectionHitRate": 35.3,
+            "holdoutImprovement": -0.0562,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -644,11 +644,11 @@
             "id": "trend",
             "trainCount": 63,
             "holdoutCount": 34,
-            "selectionBrier": 0.7114,
-            "holdoutBrier": 0.7745,
-            "holdoutBaselineBrier": 0.6644,
-            "holdoutDirectionHitRate": 17.6,
-            "holdoutImprovement": -0.1101,
+            "selectionBrier": 0.7208,
+            "holdoutBrier": 0.7598,
+            "holdoutBaselineBrier": 0.6449,
+            "holdoutDirectionHitRate": 26.5,
+            "holdoutImprovement": -0.1149,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -656,11 +656,11 @@
             "id": "reversion",
             "trainCount": 63,
             "holdoutCount": 34,
-            "selectionBrier": 0.7126,
-            "holdoutBrier": 0.7887,
-            "holdoutBaselineBrier": 0.6644,
-            "holdoutDirectionHitRate": 11.8,
-            "holdoutImprovement": -0.1243,
+            "selectionBrier": 0.7149,
+            "holdoutBrier": 0.7453,
+            "holdoutBaselineBrier": 0.6449,
+            "holdoutDirectionHitRate": 32.4,
+            "holdoutImprovement": -0.1004,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -668,11 +668,11 @@
             "id": "regime",
             "trainCount": 63,
             "holdoutCount": 34,
-            "selectionBrier": 0.7463,
-            "holdoutBrier": 0.7569,
-            "holdoutBaselineBrier": 0.6644,
+            "selectionBrier": 0.7468,
+            "holdoutBrier": 0.7736,
+            "holdoutBaselineBrier": 0.6449,
             "holdoutDirectionHitRate": 20.6,
-            "holdoutImprovement": -0.0925,
+            "holdoutImprovement": -0.1287,
             "minHoldoutNeeded": 20,
             "validated": false
           }
@@ -682,19 +682,19 @@
       },
       "confidence": "unproven",
       "conditionalHistoricalFrequencies": {
-        "rise": 33.72,
-        "fall": 29.07,
+        "rise": 36.05,
+        "fall": 26.74,
         "range": 37.21
       },
       "scenarios": {
-        "lowPct": -4.593,
-        "midPct": 0.055,
+        "lowPct": -3.982,
+        "midPct": 0.152,
         "highPct": 5.865
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3389.52,
-        "midUsdOz": 3554.65,
-        "highUsdOz": 3761.07
+        "lowUsdOz": 3400.19,
+        "midUsdOz": 3546.58,
+        "highUsdOz": 3748.89
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -703,10 +703,10 @@
       "days": 30,
       "sessions": 21,
       "thresholdPct": 2.291,
-      "bias": "rise",
+      "bias": "fall",
       "consensus": {
-        "rise": 3,
-        "fall": 1,
+        "rise": 0,
+        "fall": 4,
         "range": 0,
         "total": 4
       },
@@ -718,17 +718,17 @@
           "referenceCases": 80,
           "trainingCandidates": 824,
           "probabilities": {
-            "rise": 43.02,
-            "fall": 38.37,
-            "range": 18.6
+            "rise": 38.37,
+            "fall": 39.53,
+            "range": 22.09
           },
           "scenarios": {
-            "lowPct": -6.565,
-            "midPct": 0.308,
-            "highPct": 7.986
+            "lowPct": -7.231,
+            "midPct": -0.741,
+            "highPct": 7.368
           },
-          "medianReturnPct": 0.308,
-          "direction": "rise",
+          "medianReturnPct": -0.741,
+          "direction": "fall",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
         {
@@ -737,17 +737,17 @@
           "referenceCases": 80,
           "trainingCandidates": 824,
           "probabilities": {
-            "rise": 40.7,
-            "fall": 40.7,
+            "rise": 38.37,
+            "fall": 43.02,
             "range": 18.6
           },
           "scenarios": {
-            "lowPct": -7.95,
-            "midPct": -0.867,
-            "highPct": 8.694
+            "lowPct": -8.301,
+            "midPct": -1.299,
+            "highPct": 9.101
           },
-          "medianReturnPct": -0.867,
-          "direction": "rise",
+          "medianReturnPct": -1.299,
+          "direction": "fall",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
         {
@@ -756,17 +756,17 @@
           "referenceCases": 80,
           "trainingCandidates": 824,
           "probabilities": {
-            "rise": 41.86,
-            "fall": 36.05,
-            "range": 22.09
+            "rise": 37.21,
+            "fall": 41.86,
+            "range": 20.93
           },
           "scenarios": {
-            "lowPct": -7.231,
-            "midPct": 0.686,
-            "highPct": 8.202
+            "lowPct": -8.301,
+            "midPct": -1.143,
+            "highPct": 8.694
           },
-          "medianReturnPct": 0.686,
-          "direction": "rise",
+          "medianReturnPct": -1.143,
+          "direction": "fall",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
         {
@@ -802,11 +802,11 @@
             "id": "analogue",
             "trainCount": 27,
             "holdoutCount": 15,
-            "selectionBrier": 0.7143,
-            "holdoutBrier": 0.8064,
-            "holdoutBaselineBrier": 0.7199,
-            "holdoutDirectionHitRate": 33.3,
-            "holdoutImprovement": -0.0865,
+            "selectionBrier": 0.6975,
+            "holdoutBrier": 0.8338,
+            "holdoutBaselineBrier": 0.7259,
+            "holdoutDirectionHitRate": 26.7,
+            "holdoutImprovement": -0.1079,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -814,11 +814,11 @@
             "id": "trend",
             "trainCount": 27,
             "holdoutCount": 15,
-            "selectionBrier": 0.6886,
-            "holdoutBrier": 0.886,
-            "holdoutBaselineBrier": 0.7199,
-            "holdoutDirectionHitRate": 20,
-            "holdoutImprovement": -0.1661,
+            "selectionBrier": 0.7353,
+            "holdoutBrier": 0.8662,
+            "holdoutBaselineBrier": 0.7259,
+            "holdoutDirectionHitRate": 26.7,
+            "holdoutImprovement": -0.1403,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -826,11 +826,11 @@
             "id": "reversion",
             "trainCount": 27,
             "holdoutCount": 15,
-            "selectionBrier": 0.7209,
-            "holdoutBrier": 0.9229,
-            "holdoutBaselineBrier": 0.7199,
-            "holdoutDirectionHitRate": 20,
-            "holdoutImprovement": -0.203,
+            "selectionBrier": 0.7324,
+            "holdoutBrier": 0.9191,
+            "holdoutBaselineBrier": 0.7259,
+            "holdoutDirectionHitRate": 13.3,
+            "holdoutImprovement": -0.1932,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -838,11 +838,11 @@
             "id": "regime",
             "trainCount": 27,
             "holdoutCount": 15,
-            "selectionBrier": 0.7932,
-            "holdoutBrier": 0.8611,
-            "holdoutBaselineBrier": 0.7199,
+            "selectionBrier": 0.7646,
+            "holdoutBrier": 0.841,
+            "holdoutBaselineBrier": 0.7259,
             "holdoutDirectionHitRate": 13.3,
-            "holdoutImprovement": -0.1412,
+            "holdoutImprovement": -0.1151,
             "minHoldoutNeeded": 20,
             "validated": false
           }
@@ -852,19 +852,19 @@
       },
       "confidence": "unproven",
       "conditionalHistoricalFrequencies": {
-        "rise": 43.02,
-        "fall": 38.37,
-        "range": 18.6
+        "rise": 38.37,
+        "fall": 39.53,
+        "range": 22.09
       },
       "scenarios": {
-        "lowPct": -6.565,
-        "midPct": 0.308,
-        "highPct": 7.986
+        "lowPct": -7.231,
+        "midPct": -0.741,
+        "highPct": 7.368
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3319.47,
-        "midUsdOz": 3563.64,
-        "highUsdOz": 3836.42
+        "lowUsdOz": 3285.14,
+        "midUsdOz": 3514.96,
+        "highUsdOz": 3802.12
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -888,16 +888,16 @@
           "referenceCases": 80,
           "trainingCandidates": 782,
           "probabilities": {
-            "rise": 58.14,
-            "fall": 20.93,
-            "range": 20.93
+            "rise": 55.81,
+            "fall": 19.77,
+            "range": 24.42
           },
           "scenarios": {
-            "lowPct": -10.099,
-            "midPct": 5.364,
-            "highPct": 15.659
+            "lowPct": -9.049,
+            "midPct": 4.754,
+            "highPct": 15.065
           },
-          "medianReturnPct": 5.364,
+          "medianReturnPct": 4.754,
           "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
@@ -907,16 +907,16 @@
           "referenceCases": 80,
           "trainingCandidates": 782,
           "probabilities": {
-            "rise": 48.84,
-            "fall": 19.77,
-            "range": 31.4
+            "rise": 40.7,
+            "fall": 20.93,
+            "range": 38.37
           },
           "scenarios": {
-            "lowPct": -9.049,
-            "midPct": 3.963,
-            "highPct": 15.065
+            "lowPct": -10.099,
+            "midPct": 3.069,
+            "highPct": 13.134
           },
-          "medianReturnPct": 3.963,
+          "medianReturnPct": 3.069,
           "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
@@ -926,16 +926,16 @@
           "referenceCases": 80,
           "trainingCandidates": 782,
           "probabilities": {
-            "rise": 47.67,
-            "fall": 24.42,
-            "range": 27.91
+            "rise": 44.19,
+            "fall": 23.26,
+            "range": 32.56
           },
           "scenarios": {
-            "lowPct": -11.107,
-            "midPct": 3.73,
-            "highPct": 13.91
+            "lowPct": -10.54,
+            "midPct": 3.352,
+            "highPct": 13.179
           },
-          "medianReturnPct": 3.73,
+          "medianReturnPct": 3.352,
           "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
@@ -972,11 +972,11 @@
             "id": "analogue",
             "trainCount": 9,
             "holdoutCount": 5,
-            "selectionBrier": 0.4335,
-            "holdoutBrier": 1.7214,
-            "holdoutBaselineBrier": 1.3661,
+            "selectionBrier": 0.4576,
+            "holdoutBrier": 1.6811,
+            "holdoutBaselineBrier": 1.3635,
             "holdoutDirectionHitRate": 0,
-            "holdoutImprovement": -0.3553,
+            "holdoutImprovement": -0.3176,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -984,11 +984,11 @@
             "id": "trend",
             "trainCount": 9,
             "holdoutCount": 5,
-            "selectionBrier": 0.436,
-            "holdoutBrier": 1.4792,
-            "holdoutBaselineBrier": 1.3661,
+            "selectionBrier": 0.4819,
+            "holdoutBrier": 1.4764,
+            "holdoutBaselineBrier": 1.3635,
             "holdoutDirectionHitRate": 0,
-            "holdoutImprovement": -0.1131,
+            "holdoutImprovement": -0.1129,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -996,11 +996,11 @@
             "id": "reversion",
             "trainCount": 9,
             "holdoutCount": 5,
-            "selectionBrier": 0.4749,
-            "holdoutBrier": 1.4672,
-            "holdoutBaselineBrier": 1.3661,
+            "selectionBrier": 0.5042,
+            "holdoutBrier": 1.4201,
+            "holdoutBaselineBrier": 1.3635,
             "holdoutDirectionHitRate": 0,
-            "holdoutImprovement": -0.1011,
+            "holdoutImprovement": -0.0566,
             "minHoldoutNeeded": 20,
             "validated": false
           },
@@ -1008,11 +1008,11 @@
             "id": "regime",
             "trainCount": 9,
             "holdoutCount": 5,
-            "selectionBrier": 0.3717,
-            "holdoutBrier": 1.7391,
-            "holdoutBaselineBrier": 1.3661,
+            "selectionBrier": 0.4066,
+            "holdoutBrier": 1.7624,
+            "holdoutBaselineBrier": 1.3635,
             "holdoutDirectionHitRate": 0,
-            "holdoutImprovement": -0.373,
+            "holdoutImprovement": -0.3989,
             "minHoldoutNeeded": 20,
             "validated": false
           }
@@ -1022,19 +1022,19 @@
       },
       "confidence": "unproven",
       "conditionalHistoricalFrequencies": {
-        "rise": 58.14,
-        "fall": 20.93,
-        "range": 20.93
+        "rise": 55.81,
+        "fall": 19.77,
+        "range": 24.42
       },
       "scenarios": {
-        "lowPct": -10.099,
-        "midPct": 5.364,
-        "highPct": 15.659
+        "lowPct": -9.049,
+        "midPct": 4.754,
+        "highPct": 15.065
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3193.91,
-        "midUsdOz": 3743.27,
-        "highUsdOz": 4109.02
+        "lowUsdOz": 3220.76,
+        "midUsdOz": 3709.55,
+        "highUsdOz": 4074.68
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
