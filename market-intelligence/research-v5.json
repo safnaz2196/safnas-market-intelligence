@@ -1,8 +1,8 @@
 {
   "schemaVersion": 5,
   "engineVersion": "5.3.0",
-  "generatedAt": "2026-11-24T13:58:57.915Z",
-  "sourceSnapshotAt": "2026-11-24T12:52:04.638Z",
+  "generatedAt": "2026-11-25T11:38:53.182Z",
+  "sourceSnapshotAt": "2026-11-25T11:38:47.732Z",
   "status": "research_available",
   "briefing": {
     "title": "Sri Lanka · Autonomous Market Brief",
@@ -11,8 +11,8 @@
       {
         "id": "aspi",
         "tone": "neutral",
-        "title": "ASPI decreased in the last recorded session",
-        "detail": "Verified close 21259.83 on 2026-11-23 (-0.51% versus previous close).",
+        "title": "ASPI increased in the last recorded session",
+        "detail": "Verified close 21315.84 on 2026-11-25 (+0.26% versus previous close).",
         "evidenceIds": [
           "aspi"
         ]
@@ -21,7 +21,7 @@
         "id": "avg20",
         "tone": "info",
         "title": "Historical 20-session checkpoint",
-        "detail": "The latest ASPI close is above its 20-session average of 21108.19. This does not predict future returns.",
+        "detail": "The latest ASPI close is above its 20-session average of 21187.6. This does not predict future returns.",
         "evidenceIds": [
           "aspi"
         ]
@@ -30,7 +30,7 @@
         "id": "cse-turnover",
         "tone": "info",
         "title": "Verified CSE daily market turnover",
-        "detail": "LKR 1,054,881,410 traded in the recorded session on 2026-11-23. This measures market activity, not market direction.",
+        "detail": "LKR 1,453,014,530 traded in the recorded session on 2026-11-25. This measures market activity, not market direction.",
         "evidenceIds": [
           "cse-turnover"
         ]
@@ -38,12 +38,10 @@
       {
         "id": "news-topics",
         "tone": "info",
-        "title": "3 headlines matched economic research topics",
+        "title": "1 headlines matched economic research topics",
         "detail": "Topic matching identifies subjects to investigate; it cannot confirm causation or returns.",
         "evidenceIds": [
-          "news-3",
-          "news-4",
-          "news-5"
+          "news-1"
         ]
       },
       {
@@ -61,97 +59,93 @@
   },
   "market": {
     "status": "current",
-    "asOf": "2026-11-23",
-    "ageDays": 1,
-    "close": 21259.83,
-    "lastObservedClose": 21259.83,
-    "changePct": -0.51,
-    "average20": 21108.19,
+    "asOf": "2026-11-25",
+    "ageDays": 0,
+    "close": 21315.84,
+    "lastObservedClose": 21315.84,
+    "changePct": 0.26,
+    "average20": 21187.6,
     "annualizedHistoricalVolatilityPct": 19.78,
     "observations": 65,
     "modelAudit": {
       "edgeDemonstrated": true,
       "audit5": true,
       "audit20": true,
-      "journalResolved": 1,
+      "journalResolved": 2,
       "notice": "Backtesting does not establish reliable future prediction."
     },
     "turnover": {
-      "valueLKR": 1054881410,
-      "asOf": "2026-11-23",
+      "valueLKR": 1453014530,
+      "asOf": "2026-11-25",
       "status": "dated_observation",
       "sourceURL": "https://www.cse.lk/api/dailyMarketSummery",
-      "sharesTraded": 46548352,
-      "tradeCount": 14902,
+      "sharesTraded": 53899332,
+      "tradeCount": 14906,
       "notice": "CSE daily market equity turnover, recorded at the stated trade date. Not live streaming."
     }
   },
   "news": [
     {
       "id": "news-1",
-      "title": "Sri Lanka faces 419-engineer shortfall in state service amid allowance row",
-      "url": "https://economynext.com/sri-lanka-faces-419-engineer-shortfall-in-state-service-amid-allowance-row-291035/",
-      "date": "2026-11-24",
+      "title": "Sri Lanka revises down 2026 export revenue target to US$18.5bn from US$20bn",
+      "url": "https://economynext.com/sri-lanka-revises-down-2026-export-revenue-target-to-us18-5bn-from-us20bn-291114/",
+      "date": "2026-11-25",
       "publisher": "EconomyNext",
-      "topics": [],
-      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+      "topics": [
+        "Earnings"
+      ],
+      "impactNote": "Company results require original financial disclosures before drawing valuation conclusions."
     },
     {
       "id": "news-2",
-      "title": "Sri Lanka’s Bank of Ceylon to list 13-pct debentures",
-      "url": "https://economynext.com/sri-lankas-bank-of-ceylon-to-list-13-pct-debentures-291025/",
-      "date": "2026-11-24",
+      "title": "SriLankan Airlines adds fuel surcharge to break even by March after $35mn first-half loss",
+      "url": "https://economynext.com/srilankan-airlines-adds-fuel-surcharge-to-break-even-by-march-after-35mn-first-half-loss-291103/",
+      "date": "2026-11-25",
       "publisher": "EconomyNext",
       "topics": [],
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
       "id": "news-3",
-      "title": "Sri Lanka’s national inflation rises to 41-month high of 8.5-pct in October; transport leads",
-      "url": "https://economynext.com/sri-lankas-national-inflation-rises-to-41-month-high-of-8-5-pct-in-october-transport-leads-291009/",
-      "date": "2026-11-23",
+      "title": "Sri Lanka Cabinet approves purchasing of medicinal drugs from Indian, Chinese firms",
+      "url": "https://economynext.com/sri-lanka-cabinet-approves-purchasing-of-medicinal-drugs-from-indian-chinese-firms-291105/",
+      "date": "2026-11-25",
       "publisher": "EconomyNext",
-      "topics": [
-        "Inflation"
-      ],
-      "impactNote": "Inflation may affect spending and input costs; no specific price reaction is established."
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
       "id": "news-4",
-      "title": "Sri Lanka rupee closes at 332.55/60 to US dollar spot, bond yields rise",
-      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-55-60-to-us-dollar-spot-bond-yields-rise-291011/",
-      "date": "2026-11-23",
+      "title": "Tourism destinations need more than visitors to deliver lasting benefit: ADB",
+      "url": "https://economynext.com/tourism-destinations-need-more-than-visitors-to-deliver-lasting-benefit-adb-291094/",
+      "date": "2026-11-25",
       "publisher": "EconomyNext",
-      "topics": [
-        "Currency"
-      ],
-      "impactNote": "Currency changes can affect importers, exporters and foreign-currency debts."
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
       "id": "news-5",
-      "title": "Foreign outflows from Sri Lanka rupee bonds continue for fifth straight week",
-      "url": "https://economynext.com/foreign-outflows-from-sri-lanka-rupee-bonds-continue-for-fifth-straight-week-291007/",
-      "date": "2026-11-23",
+      "title": "Sri Lanka to start partial operations at East Container Terminal this month; Full operations in 2028",
+      "url": "https://economynext.com/sri-lanka-to-start-partial-operations-at-east-container-terminal-this-month-full-operations-in-2028-291085/",
+      "date": "2026-11-25",
       "publisher": "EconomyNext",
-      "topics": [
-        "Currency"
-      ],
-      "impactNote": "Currency changes can affect importers, exporters and foreign-currency debts."
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
       "id": "news-6",
-      "title": "Sri Lanka stocks close down 0.60-pct, turnover Rs1.05bn",
-      "url": "https://economynext.com/sri-lanka-stocks-close-down-0-60-pct-turnover-rs1-05bn-291000/",
-      "date": "2026-11-23",
+      "title": "Sri Lanka’s reserve ratio hike to lock up Rs140bn, cost banks Rs12bn in interest: First Capital",
+      "url": "https://economynext.com/sri-lankas-reserve-ratio-hike-to-lock-up-rs140bn-cost-banks-rs12bn-in-interest-first-capital-291056/",
+      "date": "2026-11-25",
       "publisher": "EconomyNext",
       "topics": [],
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
       "id": "news-7",
-      "title": "Sri Lanka opens draft labour law reforms for public views, briefs lawmakers",
-      "url": "https://economynext.com/sri-lanka-opens-draft-labour-law-reforms-for-public-views-briefs-lawmakers-290992/",
-      "date": "2026-11-23",
+      "title": "Foreign YouTuber slams ‘failed management’ at Sri Lanka’s Sigiriya over two-hour queues",
+      "url": "https://economynext.com/foreign-youtuber-slams-failed-management-at-sri-lankas-sigiriya-over-two-hour-queues-291058/",
+      "date": "2026-11-25",
       "publisher": "EconomyNext",
       "topics": [],
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
@@ -761,9 +755,7 @@
         "low": 1820,
         "marketStatus": "last traded (may be prior session)"
       },
-      "recentHeadlines": [
-        "news-2"
-      ],
+      "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
@@ -1264,9 +1256,7 @@
         "low": 110.5,
         "marketStatus": "last traded (may be prior session)"
       },
-      "recentHeadlines": [
-        "news-3"
-      ],
+      "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
@@ -1543,63 +1533,63 @@
       "id": "aspi",
       "label": "ASPI dated observations · CSE",
       "url": "https://www.cse.lk/api/chartData",
-      "asOf": "2026-11-23",
+      "asOf": "2026-11-25",
       "kind": "dated_market_observation"
     },
     {
       "id": "cse-turnover",
       "label": "Official daily CSE market turnover · LKR",
       "url": "https://www.cse.lk/api/dailyMarketSummery",
-      "asOf": "2026-11-23",
+      "asOf": "2026-11-25",
       "kind": "dated_market_turnover"
     },
     {
       "id": "news-1",
-      "label": "Publisher headline · Sri Lanka faces 419-engineer shortfall in state service amid allowance row",
-      "url": "https://economynext.com/sri-lanka-faces-419-engineer-shortfall-in-state-service-amid-allowance-row-291035/",
-      "asOf": "2026-11-24",
+      "label": "Publisher headline · Sri Lanka revises down 2026 export revenue target to US$18.5bn from US$20bn",
+      "url": "https://economynext.com/sri-lanka-revises-down-2026-export-revenue-target-to-us18-5bn-from-us20bn-291114/",
+      "asOf": "2026-11-25",
       "kind": "dated_headline"
     },
     {
       "id": "news-2",
-      "label": "Publisher headline · Sri Lanka’s Bank of Ceylon to list 13-pct debentures",
-      "url": "https://economynext.com/sri-lankas-bank-of-ceylon-to-list-13-pct-debentures-291025/",
-      "asOf": "2026-11-24",
+      "label": "Publisher headline · SriLankan Airlines adds fuel surcharge to break even by March after $35mn first-half loss",
+      "url": "https://economynext.com/srilankan-airlines-adds-fuel-surcharge-to-break-even-by-march-after-35mn-first-half-loss-291103/",
+      "asOf": "2026-11-25",
       "kind": "dated_headline"
     },
     {
       "id": "news-3",
-      "label": "Publisher headline · Sri Lanka’s national inflation rises to 41-month high of 8.5-pct in October; transport lea",
-      "url": "https://economynext.com/sri-lankas-national-inflation-rises-to-41-month-high-of-8-5-pct-in-october-transport-leads-291009/",
-      "asOf": "2026-11-23",
+      "label": "Publisher headline · Sri Lanka Cabinet approves purchasing of medicinal drugs from Indian, Chinese firms",
+      "url": "https://economynext.com/sri-lanka-cabinet-approves-purchasing-of-medicinal-drugs-from-indian-chinese-firms-291105/",
+      "asOf": "2026-11-25",
       "kind": "dated_headline"
     },
     {
       "id": "news-4",
-      "label": "Publisher headline · Sri Lanka rupee closes at 332.55/60 to US dollar spot, bond yields rise",
-      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-55-60-to-us-dollar-spot-bond-yields-rise-291011/",
-      "asOf": "2026-11-23",
+      "label": "Publisher headline · Tourism destinations need more than visitors to deliver lasting benefit: ADB",
+      "url": "https://economynext.com/tourism-destinations-need-more-than-visitors-to-deliver-lasting-benefit-adb-291094/",
+      "asOf": "2026-11-25",
       "kind": "dated_headline"
     },
     {
       "id": "news-5",
-      "label": "Publisher headline · Foreign outflows from Sri Lanka rupee bonds continue for fifth straight week",
-      "url": "https://economynext.com/foreign-outflows-from-sri-lanka-rupee-bonds-continue-for-fifth-straight-week-291007/",
-      "asOf": "2026-11-23",
+      "label": "Publisher headline · Sri Lanka to start partial operations at East Container Terminal this month; Full operatio",
+      "url": "https://economynext.com/sri-lanka-to-start-partial-operations-at-east-container-terminal-this-month-full-operations-in-2028-291085/",
+      "asOf": "2026-11-25",
       "kind": "dated_headline"
     },
     {
       "id": "news-6",
-      "label": "Publisher headline · Sri Lanka stocks close down 0.60-pct, turnover Rs1.05bn",
-      "url": "https://economynext.com/sri-lanka-stocks-close-down-0-60-pct-turnover-rs1-05bn-291000/",
-      "asOf": "2026-11-23",
+      "label": "Publisher headline · Sri Lanka’s reserve ratio hike to lock up Rs140bn, cost banks Rs12bn in interest: First Ca",
+      "url": "https://economynext.com/sri-lankas-reserve-ratio-hike-to-lock-up-rs140bn-cost-banks-rs12bn-in-interest-first-capital-291056/",
+      "asOf": "2026-11-25",
       "kind": "dated_headline"
     },
     {
       "id": "news-7",
-      "label": "Publisher headline · Sri Lanka opens draft labour law reforms for public views, briefs lawmakers",
-      "url": "https://economynext.com/sri-lanka-opens-draft-labour-law-reforms-for-public-views-briefs-lawmakers-290992/",
-      "asOf": "2026-11-23",
+      "label": "Publisher headline · Foreign YouTuber slams ‘failed management’ at Sri Lanka’s Sigiriya over two-hour queues",
+      "url": "https://economynext.com/foreign-youtuber-slams-failed-management-at-sri-lankas-sigiriya-over-two-hour-queues-291058/",
+      "asOf": "2026-11-25",
       "kind": "dated_headline"
     },
     {
