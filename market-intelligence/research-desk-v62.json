@@ -1,101 +1,101 @@
 {
   "schemaVersion": 1,
   "version": "6.2",
-  "generatedAt": "2026-11-25T10:06:33.890Z",
+  "generatedAt": "2026-11-25T22:39:17.338Z",
   "status": "observed_public_research",
   "snapshot": {
-    "aspiDate": "2026-11-23",
-    "goldQuoteDate": "2026-11-25T04:06:45Z",
+    "aspiDate": "2026-11-25",
+    "goldQuoteDate": "2026-11-25T14:12:46Z",
     "predictionResolved": 2,
     "companies": {
       "DIAL.N0000": {
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "priceLKR": 47.5
       },
       "COMB.N0000": {
-        "asOf": "2026-11-23",
-        "priceLKR": 213.5
+        "asOf": "2026-11-25",
+        "priceLKR": 213
       },
       "JKH.N0000": {
-        "asOf": "2026-11-23",
-        "priceLKR": 18.4
+        "asOf": "2026-11-25",
+        "priceLKR": 18.5
       },
       "HNB.N0000": {
-        "asOf": "2026-11-23",
-        "priceLKR": 394.5
+        "asOf": "2026-11-25",
+        "priceLKR": 391.5
       },
       "SAMP.N0000": {
-        "asOf": "2026-11-23",
-        "priceLKR": 148.25
+        "asOf": "2026-11-25",
+        "priceLKR": 149.75
       },
       "HAYL.N0000": {
-        "asOf": "2026-11-23",
-        "priceLKR": 228
+        "asOf": "2026-11-25",
+        "priceLKR": 228.25
       },
       "LOLC.N0000": {
-        "asOf": "2026-11-23",
-        "priceLKR": 402
+        "asOf": "2026-11-25",
+        "priceLKR": 410.5
       },
       "CTC.N0000": {
-        "asOf": "2026-11-23",
-        "priceLKR": 1821
+        "asOf": "2026-11-25",
+        "priceLKR": 1820
       },
       "DIST.N0000": {
-        "asOf": "2026-11-23",
-        "priceLKR": 58
+        "asOf": "2026-11-25",
+        "priceLKR": 59
       },
       "MELS.N0000": {
-        "asOf": "2026-11-23",
-        "priceLKR": 193
+        "asOf": "2026-11-25",
+        "priceLKR": 194
       },
       "CARG.N0000": {
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "priceLKR": 671.75
       },
       "SLTL.N0000": {
-        "asOf": "2026-11-23",
-        "priceLKR": 90.1
+        "asOf": "2026-11-25",
+        "priceLKR": 90.2
       },
       "HHL.N0000": {
-        "asOf": "2026-11-23",
-        "priceLKR": 31.8
+        "asOf": "2026-11-25",
+        "priceLKR": 31.9
       },
       "NDB.N0000": {
-        "asOf": "2026-11-23",
-        "priceLKR": 111.5
+        "asOf": "2026-11-25",
+        "priceLKR": 110.5
       },
       "TKYO.N0000": {
-        "asOf": "2026-11-23",
-        "priceLKR": 83
+        "asOf": "2026-11-25",
+        "priceLKR": 82.9
       },
       "LFIN.N0000": {
-        "asOf": "2026-11-23",
-        "priceLKR": 153
+        "asOf": "2026-11-25",
+        "priceLKR": 154.5
       }
     }
   },
   "coverage": {
     "cseQuotes": "16 / 16",
-    "cseDataDate": "2026-11-23",
-    "goldDataDate": "2026-11-25T04:06:45Z",
-    "collectorAt": "2026-11-24T12:52:04.638Z",
-    "researchAt": "2026-11-24T13:58:57.915Z",
+    "cseDataDate": "2026-11-25",
+    "goldDataDate": "2026-11-25T14:12:46Z",
+    "collectorAt": "2026-11-25T21:56:41.493Z",
+    "researchAt": "2026-11-25T21:56:48.667Z",
     "predictionResults": 2,
     "warning": "Source dates are observations, not live exchange-streaming commitments."
   },
   "market": {
-    "asOf": "2026-11-23",
-    "close": 21259.83,
-    "changePct": -0.51,
-    "turnoverLKR": 1054881410,
-    "turnoverAsOf": "2026-11-23"
+    "asOf": "2026-11-25",
+    "close": 21315.84,
+    "changePct": 0.26,
+    "turnoverLKR": 1453014530,
+    "turnoverAsOf": "2026-11-25"
   },
   "gold": {
-    "referenceUsdOz": 3547.2,
-    "quoteAsOf": "2026-11-25T04:06:45Z",
+    "referenceUsdOz": 3483.15,
+    "quoteAsOf": "2026-11-25T14:12:46Z",
     "goldModelWindows": 6,
-    "historicalWindowsValidated": 0,
-    "forwardPending": 22,
+    "historicalWindowsValidated": 1,
+    "forwardPending": 28,
     "forwardResolved": 2,
     "sources": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
   },
@@ -105,15 +105,247 @@
   "publishers": 7,
   "changes": [
     {
-      "id": "c28ca67a9d9f67e1",
+      "id": "12dcb64e312b6854",
+      "kind": "market",
+      "label": "New dated ASPI close",
+      "detail": "ASPI 21315.84 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "2c913c4377654b50",
       "kind": "gold",
       "label": "New gold spot observation",
-      "detail": "USD 3547.2/oz as of 2026-11-25T04:06:45Z",
-      "asOf": "2026-11-25T04:06:45Z",
+      "detail": "USD 3483.15/oz as of 2026-11-25T14:12:46Z",
+      "asOf": "2026-11-25T14:12:46Z",
       "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
+    },
+    {
+      "id": "683c7794ba041a43",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · DIAL.N0000",
+      "detail": "Dialog Axiata PLC last traded at LKR 47.5 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "734bdf838bda4a0e",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · COMB.N0000",
+      "detail": "Commercial Bank of Ceylon PLC last traded at LKR 213 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "8c07e2d366f6e297",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · JKH.N0000",
+      "detail": "John Keells Holdings PLC last traded at LKR 18.5 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "ad94a7b6f958180b",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · HNB.N0000",
+      "detail": "Hatton National Bank PLC last traded at LKR 391.5 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "5ef7e073789efd6d",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · SAMP.N0000",
+      "detail": "Sampath Bank PLC last traded at LKR 149.75 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "c5e81e5d322341ce",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · HAYL.N0000",
+      "detail": "Hayleys PLC last traded at LKR 228.25 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "08ff22761cf03005",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · LOLC.N0000",
+      "detail": "LOLC Holdings PLC last traded at LKR 410.5 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "8a185d4dec5f6361",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · CTC.N0000",
+      "detail": "Ceylon Tobacco Company PLC last traded at LKR 1820 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "e1c83414064dc854",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · DIST.N0000",
+      "detail": "Distilleries Company of Sri Lanka PLC last traded at LKR 59 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "e1229030cc7813ca",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · MELS.N0000",
+      "detail": "Melstacorp PLC last traded at LKR 194 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
     }
   ],
   "history": [
+    {
+      "id": "12dcb64e312b6854",
+      "kind": "market",
+      "label": "New dated ASPI close",
+      "detail": "ASPI 21315.84 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "2c913c4377654b50",
+      "kind": "gold",
+      "label": "New gold spot observation",
+      "detail": "USD 3483.15/oz as of 2026-11-25T14:12:46Z",
+      "asOf": "2026-11-25T14:12:46Z",
+      "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
+    },
+    {
+      "id": "683c7794ba041a43",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · DIAL.N0000",
+      "detail": "Dialog Axiata PLC last traded at LKR 47.5 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "734bdf838bda4a0e",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · COMB.N0000",
+      "detail": "Commercial Bank of Ceylon PLC last traded at LKR 213 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "8c07e2d366f6e297",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · JKH.N0000",
+      "detail": "John Keells Holdings PLC last traded at LKR 18.5 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "ad94a7b6f958180b",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · HNB.N0000",
+      "detail": "Hatton National Bank PLC last traded at LKR 391.5 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "5ef7e073789efd6d",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · SAMP.N0000",
+      "detail": "Sampath Bank PLC last traded at LKR 149.75 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "c5e81e5d322341ce",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · HAYL.N0000",
+      "detail": "Hayleys PLC last traded at LKR 228.25 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "08ff22761cf03005",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · LOLC.N0000",
+      "detail": "LOLC Holdings PLC last traded at LKR 410.5 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "8a185d4dec5f6361",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · CTC.N0000",
+      "detail": "Ceylon Tobacco Company PLC last traded at LKR 1820 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "e1c83414064dc854",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · DIST.N0000",
+      "detail": "Distilleries Company of Sri Lanka PLC last traded at LKR 59 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "e1229030cc7813ca",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · MELS.N0000",
+      "detail": "Melstacorp PLC last traded at LKR 194 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "88f84a6f751ddbbd",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · CARG.N0000",
+      "detail": "Cargills (Ceylon) PLC last traded at LKR 671.75 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "87c54732f7631d41",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · SLTL.N0000",
+      "detail": "Sri Lanka Telecom PLC last traded at LKR 90.2 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "f2e17921eec0a558",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · HHL.N0000",
+      "detail": "Hemas Holdings PLC last traded at LKR 31.9 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "8a9070550ee2b136",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · NDB.N0000",
+      "detail": "National Development Bank PLC last traded at LKR 110.5 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "96b027fc1473344a",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · TKYO.N0000",
+      "detail": "Tokyo Cement Company (Lanka) PLC last traded at LKR 82.9 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
+    {
+      "id": "7329d112f32e95b9",
+      "kind": "company",
+      "label": "Dated CSE quote recorded · LFIN.N0000",
+      "detail": "LB Finance PLC last traded at LKR 154.5 on 2026-11-25",
+      "asOf": "2026-11-25",
+      "url": "https://www.cse.lk/"
+    },
     {
       "id": "c28ca67a9d9f67e1",
       "kind": "gold",
@@ -329,150 +561,6 @@
       "detail": "USD 3539/oz as of 2026-11-21T16:06:08Z",
       "asOf": "2026-11-21T16:06:08Z",
       "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
-    },
-    {
-      "id": "918a5b49d5febc46",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · COMB.N0000",
-      "detail": "Commercial Bank of Ceylon PLC last traded at LKR 214 on 2026-11-20",
-      "asOf": "2026-11-20",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "d55ab75fc42b812e",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · JKH.N0000",
-      "detail": "John Keells Holdings PLC last traded at LKR 18.7 on 2026-11-20",
-      "asOf": "2026-11-20",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "50b57908a6263e86",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · HNB.N0000",
-      "detail": "Hatton National Bank PLC last traded at LKR 393.75 on 2026-11-20",
-      "asOf": "2026-11-20",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "f2632580bb2681ad",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · SAMP.N0000",
-      "detail": "Sampath Bank PLC last traded at LKR 148.25 on 2026-11-20",
-      "asOf": "2026-11-20",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "23a03dfc57cbbaa0",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · HAYL.N0000",
-      "detail": "Hayleys PLC last traded at LKR 230.25 on 2026-11-20",
-      "asOf": "2026-11-20",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "e6426189a3c2ce1c",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · LOLC.N0000",
-      "detail": "LOLC Holdings PLC last traded at LKR 406 on 2026-11-20",
-      "asOf": "2026-11-20",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "f620c8bbcae3bfa9",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · CTC.N0000",
-      "detail": "Ceylon Tobacco Company PLC last traded at LKR 1844.5 on 2026-11-20",
-      "asOf": "2026-11-20",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "8c73bc7e43067b84",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · DIST.N0000",
-      "detail": "Distilleries Company of Sri Lanka PLC last traded at LKR 58.3 on 2026-11-20",
-      "asOf": "2026-11-20",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "878d7545f91a4fd3",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · MELS.N0000",
-      "detail": "Melstacorp PLC last traded at LKR 192 on 2026-11-20",
-      "asOf": "2026-11-20",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "311d5a3d0dc50731",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · CARG.N0000",
-      "detail": "Cargills (Ceylon) PLC last traded at LKR 680.25 on 2026-11-20",
-      "asOf": "2026-11-20",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "6a8a0cd4c64a8c86",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · SLTL.N0000",
-      "detail": "Sri Lanka Telecom PLC last traded at LKR 90.6 on 2026-11-20",
-      "asOf": "2026-11-20",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "1a8718e05f9eb566",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · HHL.N0000",
-      "detail": "Hemas Holdings PLC last traded at LKR 32 on 2026-11-20",
-      "asOf": "2026-11-20",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "f883c9771ba55028",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · NDB.N0000",
-      "detail": "National Development Bank PLC last traded at LKR 111.25 on 2026-11-20",
-      "asOf": "2026-11-20",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "53c3f89226c93f41",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · TKYO.N0000",
-      "detail": "Tokyo Cement Company (Lanka) PLC last traded at LKR 83 on 2026-11-20",
-      "asOf": "2026-11-20",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "7b3014077f3bd5af",
-      "kind": "company",
-      "label": "Dated CSE quote recorded · LFIN.N0000",
-      "detail": "LB Finance PLC last traded at LKR 154 on 2026-11-20",
-      "asOf": "2026-11-20",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "e186f360288be672",
-      "kind": "market",
-      "label": "New dated ASPI close",
-      "detail": "ASPI 21369.72 on 2026-11-20",
-      "asOf": "2026-11-20",
-      "url": "https://www.cse.lk/"
-    },
-    {
-      "id": "b16fd9318052e651",
-      "kind": "gold",
-      "label": "New gold spot observation",
-      "detail": "USD 3539/oz as of 2026-11-21T11:24:07Z",
-      "asOf": "2026-11-21T11:24:07Z",
-      "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
-    },
-    {
-      "id": "74ed28975692658c",
-      "kind": "company",
-      "label": "New dated CSE quote · DIAL.N0000",
-      "detail": "Dialog Axiata PLC last traded at LKR 48 on 2026-11-20",
-      "asOf": "2026-11-20",
-      "url": "https://www.cse.lk/"
     }
   ],
   "disclaimer": "Public market research facts only. No LLM inference, private brokerage data, verified trading signals or investment recommendations.",
