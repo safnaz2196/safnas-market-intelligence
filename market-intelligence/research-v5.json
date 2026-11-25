@@ -1,8 +1,8 @@
 {
   "schemaVersion": 5,
   "engineVersion": "5.3.0",
-  "generatedAt": "2026-11-25T13:13:44.678Z",
-  "sourceSnapshotAt": "2026-11-25T11:38:47.732Z",
+  "generatedAt": "2026-11-25T21:56:48.667Z",
+  "sourceSnapshotAt": "2026-11-25T21:56:41.493Z",
   "status": "research_available",
   "briefing": {
     "title": "Sri Lanka · Autonomous Market Brief",
@@ -38,10 +38,11 @@
       {
         "id": "news-topics",
         "tone": "info",
-        "title": "1 headlines matched economic research topics",
+        "title": "2 headlines matched economic research topics",
         "detail": "Topic matching identifies subjects to investigate; it cannot confirm causation or returns.",
         "evidenceIds": [
-          "news-1"
+          "news-3",
+          "news-4"
         ]
       },
       {
@@ -87,6 +88,35 @@
   "news": [
     {
       "id": "news-1",
+      "title": "Sri Lanka services exports rise 18.87-pct in October, driven by financial services",
+      "url": "https://economynext.com/sri-lanka-services-exports-rise-18-87-pct-in-october-driven-by-financial-services-291162/",
+      "date": "2026-11-25",
+      "publisher": "EconomyNext",
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+    },
+    {
+      "id": "news-2",
+      "title": "Sri Lanka goods exports rise 9.65-pct in October, boosted by spices, electronics",
+      "url": "https://economynext.com/sri-lanka-goods-exports-rise-9-65-pct-in-october-boosted-by-spices-electronics-291107/",
+      "date": "2026-11-25",
+      "publisher": "EconomyNext",
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+    },
+    {
+      "id": "news-3",
+      "title": "Sri Lanka rupee closes at 332.62/72 to US dollar spot, bond yields steady",
+      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-62-72-to-us-dollar-spot-bond-yields-steady-291116/",
+      "date": "2026-11-25",
+      "publisher": "EconomyNext",
+      "topics": [
+        "Currency"
+      ],
+      "impactNote": "Currency changes can affect importers, exporters and foreign-currency debts."
+    },
+    {
+      "id": "news-4",
       "title": "Sri Lanka revises down 2026 export revenue target to US$18.5bn from US$20bn",
       "url": "https://economynext.com/sri-lanka-revises-down-2026-export-revenue-target-to-us18-5bn-from-us20bn-291114/",
       "date": "2026-11-25",
@@ -97,7 +127,7 @@
       "impactNote": "Company results require original financial disclosures before drawing valuation conclusions."
     },
     {
-      "id": "news-2",
+      "id": "news-5",
       "title": "SriLankan Airlines adds fuel surcharge to break even by March after $35mn first-half loss",
       "url": "https://economynext.com/srilankan-airlines-adds-fuel-surcharge-to-break-even-by-march-after-35mn-first-half-loss-291103/",
       "date": "2026-11-25",
@@ -106,7 +136,7 @@
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
-      "id": "news-3",
+      "id": "news-6",
       "title": "Sri Lanka Cabinet approves purchasing of medicinal drugs from Indian, Chinese firms",
       "url": "https://economynext.com/sri-lanka-cabinet-approves-purchasing-of-medicinal-drugs-from-indian-chinese-firms-291105/",
       "date": "2026-11-25",
@@ -115,36 +145,9 @@
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
-      "id": "news-4",
+      "id": "news-7",
       "title": "Tourism destinations need more than visitors to deliver lasting benefit: ADB",
       "url": "https://economynext.com/tourism-destinations-need-more-than-visitors-to-deliver-lasting-benefit-adb-291094/",
-      "date": "2026-11-25",
-      "publisher": "EconomyNext",
-      "topics": [],
-      "impactNote": "Relevant headline recorded. Financial impact is not verified."
-    },
-    {
-      "id": "news-5",
-      "title": "Sri Lanka to start partial operations at East Container Terminal this month; Full operations in 2028",
-      "url": "https://economynext.com/sri-lanka-to-start-partial-operations-at-east-container-terminal-this-month-full-operations-in-2028-291085/",
-      "date": "2026-11-25",
-      "publisher": "EconomyNext",
-      "topics": [],
-      "impactNote": "Relevant headline recorded. Financial impact is not verified."
-    },
-    {
-      "id": "news-6",
-      "title": "Sri Lanka’s reserve ratio hike to lock up Rs140bn, cost banks Rs12bn in interest: First Capital",
-      "url": "https://economynext.com/sri-lankas-reserve-ratio-hike-to-lock-up-rs140bn-cost-banks-rs12bn-in-interest-first-capital-291056/",
-      "date": "2026-11-25",
-      "publisher": "EconomyNext",
-      "topics": [],
-      "impactNote": "Relevant headline recorded. Financial impact is not verified."
-    },
-    {
-      "id": "news-7",
-      "title": "Foreign YouTuber slams ‘failed management’ at Sri Lanka’s Sigiriya over two-hour queues",
-      "url": "https://economynext.com/foreign-youtuber-slams-failed-management-at-sri-lankas-sigiriya-over-two-hour-queues-291058/",
       "date": "2026-11-25",
       "publisher": "EconomyNext",
       "topics": [],
@@ -1545,50 +1548,50 @@
     },
     {
       "id": "news-1",
+      "label": "Publisher headline · Sri Lanka services exports rise 18.87-pct in October, driven by financial services",
+      "url": "https://economynext.com/sri-lanka-services-exports-rise-18-87-pct-in-october-driven-by-financial-services-291162/",
+      "asOf": "2026-11-25",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-2",
+      "label": "Publisher headline · Sri Lanka goods exports rise 9.65-pct in October, boosted by spices, electronics",
+      "url": "https://economynext.com/sri-lanka-goods-exports-rise-9-65-pct-in-october-boosted-by-spices-electronics-291107/",
+      "asOf": "2026-11-25",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-3",
+      "label": "Publisher headline · Sri Lanka rupee closes at 332.62/72 to US dollar spot, bond yields steady",
+      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-62-72-to-us-dollar-spot-bond-yields-steady-291116/",
+      "asOf": "2026-11-25",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-4",
       "label": "Publisher headline · Sri Lanka revises down 2026 export revenue target to US$18.5bn from US$20bn",
       "url": "https://economynext.com/sri-lanka-revises-down-2026-export-revenue-target-to-us18-5bn-from-us20bn-291114/",
       "asOf": "2026-11-25",
       "kind": "dated_headline"
     },
     {
-      "id": "news-2",
+      "id": "news-5",
       "label": "Publisher headline · SriLankan Airlines adds fuel surcharge to break even by March after $35mn first-half loss",
       "url": "https://economynext.com/srilankan-airlines-adds-fuel-surcharge-to-break-even-by-march-after-35mn-first-half-loss-291103/",
       "asOf": "2026-11-25",
       "kind": "dated_headline"
     },
     {
-      "id": "news-3",
+      "id": "news-6",
       "label": "Publisher headline · Sri Lanka Cabinet approves purchasing of medicinal drugs from Indian, Chinese firms",
       "url": "https://economynext.com/sri-lanka-cabinet-approves-purchasing-of-medicinal-drugs-from-indian-chinese-firms-291105/",
       "asOf": "2026-11-25",
       "kind": "dated_headline"
     },
     {
-      "id": "news-4",
+      "id": "news-7",
       "label": "Publisher headline · Tourism destinations need more than visitors to deliver lasting benefit: ADB",
       "url": "https://economynext.com/tourism-destinations-need-more-than-visitors-to-deliver-lasting-benefit-adb-291094/",
-      "asOf": "2026-11-25",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-5",
-      "label": "Publisher headline · Sri Lanka to start partial operations at East Container Terminal this month; Full operatio",
-      "url": "https://economynext.com/sri-lanka-to-start-partial-operations-at-east-container-terminal-this-month-full-operations-in-2028-291085/",
-      "asOf": "2026-11-25",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-6",
-      "label": "Publisher headline · Sri Lanka’s reserve ratio hike to lock up Rs140bn, cost banks Rs12bn in interest: First Ca",
-      "url": "https://economynext.com/sri-lankas-reserve-ratio-hike-to-lock-up-rs140bn-cost-banks-rs12bn-in-interest-first-capital-291056/",
-      "asOf": "2026-11-25",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-7",
-      "label": "Publisher headline · Foreign YouTuber slams ‘failed management’ at Sri Lanka’s Sigiriya over two-hour queues",
-      "url": "https://economynext.com/foreign-youtuber-slams-failed-management-at-sri-lankas-sigiriya-over-two-hour-queues-291058/",
       "asOf": "2026-11-25",
       "kind": "dated_headline"
     },
