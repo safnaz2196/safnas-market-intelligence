@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "version": "5.8",
   "engine": "adaptive_four_model_causal_research",
-  "generatedAt": "2026-11-24T20:51:38.824Z",
+  "generatedAt": "2026-11-25T04:07:08.903Z",
   "historyAsOf": "2026-11-24",
-  "referenceUsdOz": 3563.6,
+  "referenceUsdOz": 3552.7,
   "historyCount": 900,
   "sources": [
     {
@@ -43,7 +43,7 @@
             "range": 32.56
           },
           "scenarios": {
-            "lowPct": -2.481,
+            "lowPct": -2.749,
             "midPct": -0.058,
             "highPct": 1.611
           },
@@ -96,15 +96,15 @@
           "trainingCandidates": 844,
           "probabilities": {
             "rise": 38.37,
-            "fall": 32.56,
-            "range": 29.07
+            "fall": 33.72,
+            "range": 27.91
           },
           "scenarios": {
-            "lowPct": -2.782,
-            "midPct": 0.086,
+            "lowPct": -2.901,
+            "midPct": 0.045,
             "highPct": 2.656
           },
-          "medianReturnPct": 0.086,
+          "medianReturnPct": 0.045,
           "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         }
@@ -173,18 +173,18 @@
       "confidence": "unproven",
       "conditionalHistoricalFrequencies": {
         "rise": 38.37,
-        "fall": 32.56,
-        "range": 29.07
+        "fall": 33.72,
+        "range": 27.91
       },
       "scenarios": {
-        "lowPct": -2.782,
-        "midPct": 0.086,
+        "lowPct": -2.901,
+        "midPct": 0.045,
         "highPct": 2.656
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3464.46,
-        "midUsdOz": 3566.66,
-        "highUsdOz": 3658.25
+        "lowUsdOz": 3449.64,
+        "midUsdOz": 3554.3,
+        "highUsdOz": 3647.06
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -352,9 +352,9 @@
         "highPct": 3.134
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3434.81,
-        "midUsdOz": 3555.51,
-        "highUsdOz": 3675.28
+        "lowUsdOz": 3424.31,
+        "midUsdOz": 3544.64,
+        "highUsdOz": 3664.04
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -378,16 +378,16 @@
           "referenceCases": 80,
           "trainingCandidates": 840,
           "probabilities": {
-            "rise": 38.37,
-            "fall": 27.91,
+            "rise": 39.53,
+            "fall": 26.74,
             "range": 33.72
           },
           "scenarios": {
-            "lowPct": -4.997,
-            "midPct": 0.389,
+            "lowPct": -4.006,
+            "midPct": 0.493,
             "highPct": 4.331
           },
-          "medianReturnPct": 0.389,
+          "medianReturnPct": 0.493,
           "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
@@ -397,16 +397,16 @@
           "referenceCases": 80,
           "trainingCandidates": 840,
           "probabilities": {
-            "rise": 40.7,
+            "rise": 39.53,
             "fall": 29.07,
-            "range": 30.23
+            "range": 31.4
           },
           "scenarios": {
             "lowPct": -3.922,
-            "midPct": 0.691,
+            "midPct": 0.549,
             "highPct": 4.331
           },
-          "medianReturnPct": 0.691,
+          "medianReturnPct": 0.549,
           "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
@@ -416,16 +416,16 @@
           "referenceCases": 80,
           "trainingCandidates": 840,
           "probabilities": {
-            "rise": 41.86,
+            "rise": 43.02,
             "fall": 27.91,
-            "range": 30.23
+            "range": 29.07
           },
           "scenarios": {
             "lowPct": -3.465,
-            "midPct": 0.863,
+            "midPct": 0.919,
             "highPct": 4.585
           },
-          "medianReturnPct": 0.863,
+          "medianReturnPct": 0.919,
           "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
@@ -522,9 +522,9 @@
         "highPct": 3.543
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3396.82,
-        "midUsdOz": 3569.69,
-        "highUsdOz": 3689.86
+        "lowUsdOz": 3386.43,
+        "midUsdOz": 3558.78,
+        "highUsdOz": 3678.57
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -548,16 +548,16 @@
           "referenceCases": 80,
           "trainingCandidates": 835,
           "probabilities": {
-            "rise": 37.21,
-            "fall": 29.07,
+            "rise": 38.37,
+            "fall": 27.91,
             "range": 33.72
           },
           "scenarios": {
             "lowPct": -4.125,
-            "midPct": 0.391,
+            "midPct": 0.492,
             "highPct": 4.755
           },
-          "medianReturnPct": 0.391,
+          "medianReturnPct": 0.492,
           "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
@@ -611,10 +611,10 @@
           },
           "scenarios": {
             "lowPct": -5.877,
-            "midPct": -0.764,
+            "midPct": -0.801,
             "highPct": 3.342
           },
-          "medianReturnPct": -0.764,
+          "medianReturnPct": -0.801,
           "direction": "fall",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         }
@@ -692,9 +692,9 @@
         "highPct": 5.865
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3399.92,
-        "midUsdOz": 3565.56,
-        "highUsdOz": 3772.61
+        "lowUsdOz": 3389.52,
+        "midUsdOz": 3554.65,
+        "highUsdOz": 3761.07
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -756,16 +756,16 @@
           "referenceCases": 80,
           "trainingCandidates": 824,
           "probabilities": {
-            "rise": 40.7,
-            "fall": 37.21,
+            "rise": 41.86,
+            "fall": 36.05,
             "range": 22.09
           },
           "scenarios": {
             "lowPct": -7.231,
-            "midPct": 0.308,
+            "midPct": 0.686,
             "highPct": 8.202
           },
-          "medianReturnPct": 0.308,
+          "medianReturnPct": 0.686,
           "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
@@ -862,9 +862,9 @@
         "highPct": 7.986
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3329.65,
-        "midUsdOz": 3574.58,
-        "highUsdOz": 3848.19
+        "lowUsdOz": 3319.47,
+        "midUsdOz": 3563.64,
+        "highUsdOz": 3836.42
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -907,16 +907,16 @@
           "referenceCases": 80,
           "trainingCandidates": 782,
           "probabilities": {
-            "rise": 50,
-            "fall": 18.6,
+            "rise": 48.84,
+            "fall": 19.77,
             "range": 31.4
           },
           "scenarios": {
-            "lowPct": -8.451,
-            "midPct": 4.09,
+            "lowPct": -9.049,
+            "midPct": 3.963,
             "highPct": 15.065
           },
-          "medianReturnPct": 4.09,
+          "medianReturnPct": 3.963,
           "direction": "rise",
           "note": "Conditional frequencies of similar historical samples, NOT verified forward probabilities."
         },
@@ -1032,9 +1032,9 @@
         "highPct": 15.659
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3203.71,
-        "midUsdOz": 3754.75,
-        "highUsdOz": 4121.62
+        "lowUsdOz": 3193.91,
+        "midUsdOz": 3743.27,
+        "highUsdOz": 4109.02
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
