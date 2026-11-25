@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T13:58:47.844Z",
+  "generatedAt": "2026-11-25T13:13:35.755Z",
   "status": "observed",
   "source": "Colombo Stock Exchange public market and document endpoints",
   "sources": {
@@ -22,19 +22,19 @@
       "quote": {
         "value": 47.5,
         "currency": "LKR",
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-24T13:58:47.844Z",
+        "retrievedAt": "2026-11-25T13:13:35.755Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
-        "previousClose": 48,
-        "changePct": -1.042,
-        "volume": 803350,
-        "trades": 636,
-        "turnoverLKR": 38143687.1,
+        "previousClose": 47.5,
+        "changePct": 0,
+        "volume": 2947807,
+        "trades": 864,
+        "turnoverLKR": 140241310.3,
         "marketCapLKR": 437015912215,
-        "high": 47.9,
-        "low": 47.4,
+        "high": 48.5,
+        "low": 47.5,
         "marketStatus": "last traded (may be prior session)"
       },
       "facts": {
@@ -46,7 +46,7 @@
         "betaASPI": 1.4018782,
         "reportedLastTradedPrice": 47.5,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-24T13:58:50.450Z"
+        "retrievedAt": "2026-11-25T13:13:38.000Z"
       },
       "filings": [
         {
@@ -92,26 +92,26 @@
           "source": "CSE official per-company financial report archive"
         }
       ],
-      "dataAsOf": "2026-11-24T13:58:47.844Z"
+      "dataAsOf": "2026-11-25T13:13:35.755Z"
     },
     "COMB.N0000": {
       "ticker": "COMB.N0000",
       "quote": {
-        "value": 213.5,
+        "value": 213,
         "currency": "LKR",
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-24T13:58:47.844Z",
+        "retrievedAt": "2026-11-25T13:13:35.755Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
-        "previousClose": 214,
+        "previousClose": 213.5,
         "changePct": -0.234,
-        "volume": 134039,
-        "trades": 239,
-        "turnoverLKR": 28592813.5,
-        "marketCapLKR": 332557896891.5,
-        "high": 214,
-        "low": 213,
+        "volume": 104163,
+        "trades": 232,
+        "turnoverLKR": 22238602,
+        "marketCapLKR": 331779072777,
+        "high": 215,
+        "low": 212.75,
         "marketStatus": "last traded (may be prior session)"
       },
       "facts": {
@@ -119,11 +119,11 @@
         "low52Week": 170,
         "isin": "LK0053N00005",
         "sharesIssued": 1557648229,
-        "marketCapLKR": 332557896891.5,
+        "marketCapLKR": 331779072777,
         "betaASPI": 0.79103035,
-        "reportedLastTradedPrice": 213.5,
+        "reportedLastTradedPrice": 213,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-24T13:58:50.674Z"
+        "retrievedAt": "2026-11-25T13:13:38.200Z"
       },
       "filings": [
         {
@@ -169,26 +169,26 @@
           "source": "CSE official per-company financial report archive"
         }
       ],
-      "dataAsOf": "2026-11-24T13:58:47.844Z"
+      "dataAsOf": "2026-11-25T13:13:35.755Z"
     },
     "JKH.N0000": {
       "ticker": "JKH.N0000",
       "quote": {
-        "value": 18.4,
+        "value": 18.5,
         "currency": "LKR",
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-24T13:58:47.844Z",
+        "retrievedAt": "2026-11-25T13:13:35.755Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
-        "previousClose": 18.7,
-        "changePct": -1.604,
-        "volume": 2267227,
-        "trades": 613,
-        "turnoverLKR": 41862674.1,
-        "marketCapLKR": 326441859452,
-        "high": 18.6,
-        "low": 18.3,
+        "previousClose": 18.4,
+        "changePct": 0.543,
+        "volume": 839509,
+        "trades": 387,
+        "turnoverLKR": 15550215.3,
+        "marketCapLKR": 328215999992.5,
+        "high": 18.7,
+        "low": 18.4,
         "marketStatus": "last traded (may be prior session)"
       },
       "facts": {
@@ -196,11 +196,11 @@
         "low52Week": 17.5,
         "isin": "LK0092N00003",
         "sharesIssued": 17741405405,
-        "marketCapLKR": 326441859452,
+        "marketCapLKR": 328215999992.5,
         "betaASPI": 1.0031595,
-        "reportedLastTradedPrice": 18.4,
+        "reportedLastTradedPrice": 18.5,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-24T13:58:50.882Z"
+        "retrievedAt": "2026-11-25T13:13:38.400Z"
       },
       "filings": [
         {
@@ -246,26 +246,26 @@
           "source": "CSE official per-company financial report archive"
         }
       ],
-      "dataAsOf": "2026-11-24T13:58:47.844Z"
+      "dataAsOf": "2026-11-25T13:13:35.755Z"
     },
     "HNB.N0000": {
       "ticker": "HNB.N0000",
       "quote": {
-        "value": 394.5,
+        "value": 391.5,
         "currency": "LKR",
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-24T13:58:47.844Z",
+        "retrievedAt": "2026-11-25T13:13:35.755Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
-        "previousClose": 393.75,
-        "changePct": 0.19,
-        "volume": 3356,
-        "trades": 76,
-        "turnoverLKR": 1322352.25,
-        "marketCapLKR": 181556072010,
-        "high": 395,
-        "low": 393.25,
+        "previousClose": 394.5,
+        "changePct": -0.76,
+        "volume": 90334,
+        "trades": 237,
+        "turnoverLKR": 35495121.25,
+        "marketCapLKR": 180175417470,
+        "high": 397.75,
+        "low": 390.25,
         "marketStatus": "last traded (may be prior session)"
       },
       "facts": {
@@ -273,11 +273,11 @@
         "low52Week": 366.75,
         "isin": "LK0078N00002",
         "sharesIssued": 460218180,
-        "marketCapLKR": 181556072010,
+        "marketCapLKR": 180175417470,
         "betaASPI": 0.5533614,
-        "reportedLastTradedPrice": 394.5,
+        "reportedLastTradedPrice": 391.5,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-24T13:58:51.272Z"
+        "retrievedAt": "2026-11-25T13:13:38.603Z"
       },
       "filings": [
         {
@@ -323,25 +323,25 @@
           "source": "CSE official per-company financial report archive"
         }
       ],
-      "dataAsOf": "2026-11-24T13:58:47.844Z"
+      "dataAsOf": "2026-11-25T13:13:35.755Z"
     },
     "SAMP.N0000": {
       "ticker": "SAMP.N0000",
       "quote": {
-        "value": 148.25,
+        "value": 149.75,
         "currency": "LKR",
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-24T13:58:47.844Z",
+        "retrievedAt": "2026-11-25T13:13:35.755Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 148.25,
-        "changePct": 0,
-        "volume": 347840,
-        "trades": 544,
-        "turnoverLKR": 51720357,
-        "marketCapLKR": 173852887670,
-        "high": 149.5,
+        "changePct": 1.012,
+        "volume": 219593,
+        "trades": 343,
+        "turnoverLKR": 32856791.5,
+        "marketCapLKR": 175611938810,
+        "high": 151.5,
         "low": 148,
         "marketStatus": "last traded (may be prior session)"
       },
@@ -350,11 +350,11 @@
         "low52Week": 135,
         "isin": "LK0090N00007",
         "sharesIssued": 1172700760,
-        "marketCapLKR": 173852887670,
+        "marketCapLKR": 175611938810,
         "betaASPI": 0.6757065,
-        "reportedLastTradedPrice": 148.25,
+        "reportedLastTradedPrice": 149.75,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-24T13:58:51.479Z"
+        "retrievedAt": "2026-11-25T13:13:38.802Z"
       },
       "filings": [
         {
@@ -400,26 +400,26 @@
           "source": "CSE official per-company financial report archive"
         }
       ],
-      "dataAsOf": "2026-11-24T13:58:47.844Z"
+      "dataAsOf": "2026-11-25T13:13:35.755Z"
     },
     "HAYL.N0000": {
       "ticker": "HAYL.N0000",
       "quote": {
-        "value": 228,
+        "value": 228.25,
         "currency": "LKR",
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-24T13:58:47.844Z",
+        "retrievedAt": "2026-11-25T13:13:35.755Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
-        "previousClose": 230.25,
-        "changePct": -0.977,
-        "volume": 94242,
-        "trades": 128,
-        "turnoverLKR": 21446581.25,
-        "marketCapLKR": 181260000000,
-        "high": 229.75,
-        "low": 226.5,
+        "previousClose": 228,
+        "changePct": 0.11,
+        "volume": 30138,
+        "trades": 92,
+        "turnoverLKR": 6881200.5,
+        "marketCapLKR": 181458750000,
+        "high": 230,
+        "low": 227.5,
         "marketStatus": "last traded (may be prior session)"
       },
       "facts": {
@@ -427,11 +427,11 @@
         "low52Week": 178,
         "isin": "LK0080N00008",
         "sharesIssued": 795000000,
-        "marketCapLKR": 181260000000,
+        "marketCapLKR": 181458750000,
         "betaASPI": 0.84930664,
-        "reportedLastTradedPrice": 228,
+        "reportedLastTradedPrice": 228.25,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-24T13:58:51.753Z"
+        "retrievedAt": "2026-11-25T13:13:39.066Z"
       },
       "filings": [
         {
@@ -477,26 +477,26 @@
           "source": "CSE official per-company financial report archive"
         }
       ],
-      "dataAsOf": "2026-11-24T13:58:47.844Z"
+      "dataAsOf": "2026-11-25T13:13:35.755Z"
     },
     "LOLC.N0000": {
       "ticker": "LOLC.N0000",
       "quote": {
-        "value": 402,
+        "value": 410.5,
         "currency": "LKR",
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-24T13:58:47.844Z",
+        "retrievedAt": "2026-11-25T13:13:35.755Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
-        "previousClose": 406,
-        "changePct": -0.985,
-        "volume": 10945,
-        "trades": 31,
-        "turnoverLKR": 4383481,
-        "marketCapLKR": 191030400000,
-        "high": 409,
-        "low": 400,
+        "previousClose": 402,
+        "changePct": 2.114,
+        "volume": 3852,
+        "trades": 62,
+        "turnoverLKR": 1578635,
+        "marketCapLKR": 195069600000,
+        "high": 414.75,
+        "low": 401.25,
         "marketStatus": "last traded (may be prior session)"
       },
       "facts": {
@@ -504,11 +504,11 @@
         "low52Week": 370,
         "isin": "LK0113N00007",
         "sharesIssued": 475200000,
-        "marketCapLKR": 191030400000,
+        "marketCapLKR": 195069600000,
         "betaASPI": 0.8594875,
-        "reportedLastTradedPrice": 402,
+        "reportedLastTradedPrice": 410.5,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-24T13:58:51.960Z"
+        "retrievedAt": "2026-11-25T13:13:39.265Z"
       },
       "filings": [
         {
@@ -554,26 +554,26 @@
           "source": "CSE official per-company financial report archive"
         }
       ],
-      "dataAsOf": "2026-11-24T13:58:47.844Z"
+      "dataAsOf": "2026-11-25T13:13:35.755Z"
     },
     "CTC.N0000": {
       "ticker": "CTC.N0000",
       "quote": {
-        "value": 1821,
+        "value": 1820,
         "currency": "LKR",
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-24T13:58:47.844Z",
+        "retrievedAt": "2026-11-25T13:13:35.755Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
-        "previousClose": 1844.5,
-        "changePct": -1.274,
-        "volume": 2084,
-        "trades": 52,
-        "turnoverLKR": 3806809.5,
-        "marketCapLKR": 341116550571,
-        "high": 1844.5,
-        "low": 1820,
+        "previousClose": 1821,
+        "changePct": -0.055,
+        "volume": 612,
+        "trades": 31,
+        "turnoverLKR": 1114499.25,
+        "marketCapLKR": 340929226820,
+        "high": 1835.5,
+        "low": 1815.25,
         "marketStatus": "last traded (may be prior session)"
       },
       "facts": {
@@ -581,11 +581,11 @@
         "low52Week": 1654.75,
         "isin": "LK0042N00008",
         "sharesIssued": 187323751,
-        "marketCapLKR": 341116550571,
+        "marketCapLKR": 340929226820,
         "betaASPI": 0.20484465,
-        "reportedLastTradedPrice": 1821,
+        "reportedLastTradedPrice": 1820,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-24T13:58:52.239Z"
+        "retrievedAt": "2026-11-25T13:13:39.466Z"
       },
       "filings": [
         {
@@ -631,26 +631,26 @@
           "source": "CSE official per-company financial report archive"
         }
       ],
-      "dataAsOf": "2026-11-24T13:58:47.844Z"
+      "dataAsOf": "2026-11-25T13:13:35.755Z"
     },
     "DIST.N0000": {
       "ticker": "DIST.N0000",
       "quote": {
-        "value": 58,
+        "value": 59,
         "currency": "LKR",
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-24T13:58:47.844Z",
+        "retrievedAt": "2026-11-25T13:13:35.755Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
-        "previousClose": 58.3,
-        "changePct": -0.515,
-        "volume": 34496,
-        "trades": 104,
-        "turnoverLKR": 2000027.3,
-        "marketCapLKR": 266800000000,
-        "high": 58.4,
-        "low": 57.6,
+        "previousClose": 58,
+        "changePct": 1.724,
+        "volume": 102600,
+        "trades": 132,
+        "turnoverLKR": 6046213.9,
+        "marketCapLKR": 271400000000,
+        "high": 59.5,
+        "low": 58,
         "marketStatus": "last traded (may be prior session)"
       },
       "facts": {
@@ -658,11 +658,11 @@
         "low52Week": 49.2,
         "isin": "LK0191N00003",
         "sharesIssued": 4600000000,
-        "marketCapLKR": 266800000000,
+        "marketCapLKR": 271400000000,
         "betaASPI": 0.7319642,
-        "reportedLastTradedPrice": 58,
+        "reportedLastTradedPrice": 59,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-24T13:58:52.518Z"
+        "retrievedAt": "2026-11-25T13:13:39.665Z"
       },
       "filings": [
         {
@@ -708,26 +708,26 @@
           "source": "CSE official per-company financial report archive"
         }
       ],
-      "dataAsOf": "2026-11-24T13:58:47.844Z"
+      "dataAsOf": "2026-11-25T13:13:35.755Z"
     },
     "MELS.N0000": {
       "ticker": "MELS.N0000",
       "quote": {
-        "value": 193,
+        "value": 194,
         "currency": "LKR",
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-24T13:58:47.844Z",
+        "retrievedAt": "2026-11-25T13:13:35.755Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
-        "previousClose": 192,
-        "changePct": 0.521,
-        "volume": 186082,
-        "trades": 74,
-        "turnoverLKR": 35845336,
-        "marketCapLKR": 224921634896,
-        "high": 193.5,
-        "low": 192,
+        "previousClose": 193,
+        "changePct": 0.518,
+        "volume": 17452,
+        "trades": 51,
+        "turnoverLKR": 3400470.5,
+        "marketCapLKR": 226087031968,
+        "high": 195.25,
+        "low": 193.25,
         "marketStatus": "last traded (may be prior session)"
       },
       "facts": {
@@ -735,11 +735,11 @@
         "low52Week": 158.5,
         "isin": "LK0450N00003",
         "sharesIssued": 1165397072,
-        "marketCapLKR": 224921634896,
+        "marketCapLKR": 226087031968,
         "betaASPI": 0.7826927,
-        "reportedLastTradedPrice": 193,
+        "reportedLastTradedPrice": 194,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-24T13:58:52.790Z"
+        "retrievedAt": "2026-11-25T13:13:39.862Z"
       },
       "filings": [
         {
@@ -785,30 +785,30 @@
           "source": "CSE official per-company financial report archive"
         }
       ],
-      "dataAsOf": "2026-11-24T13:58:47.844Z"
+      "dataAsOf": "2026-11-25T13:13:35.755Z"
     },
     "CARG.N0000": {
       "ticker": "CARG.N0000",
       "quote": {
         "value": 671.75,
         "currency": "LKR",
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-24T13:58:47.844Z",
+        "retrievedAt": "2026-11-25T13:13:35.755Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
-        "previousClose": 680.25,
-        "changePct": -1.25,
-        "volume": 382,
-        "trades": 21,
-        "turnoverLKR": 257385,
+        "previousClose": 671.75,
+        "changePct": 0,
+        "volume": 92,
+        "trades": 18,
+        "turnoverLKR": 61737,
         "marketCapLKR": 173095015799.25,
-        "high": 681,
-        "low": 670,
+        "high": 680,
+        "low": 661,
         "marketStatus": "last traded (may be prior session)"
       },
       "facts": {
-        "high52Week": 820,
+        "high52Week": 809.75,
         "low52Week": 600,
         "isin": "LK0020N00004",
         "sharesIssued": 257677731,
@@ -816,7 +816,7 @@
         "betaASPI": 0.43022645,
         "reportedLastTradedPrice": 671.75,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-24T13:58:53.072Z"
+        "retrievedAt": "2026-11-25T13:13:40.061Z"
       },
       "filings": [
         {
@@ -862,26 +862,26 @@
           "source": "CSE official per-company financial report archive"
         }
       ],
-      "dataAsOf": "2026-11-24T13:58:47.844Z"
+      "dataAsOf": "2026-11-25T13:13:35.755Z"
     },
     "SLTL.N0000": {
       "ticker": "SLTL.N0000",
       "quote": {
-        "value": 90.1,
+        "value": 90.2,
         "currency": "LKR",
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-24T13:58:47.844Z",
+        "retrievedAt": "2026-11-25T13:13:35.755Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
-        "previousClose": 90.6,
-        "changePct": -0.552,
-        "volume": 41165,
-        "trades": 52,
-        "turnoverLKR": 3706942.2,
-        "marketCapLKR": 162617886000,
-        "high": 93,
-        "low": 88.7,
+        "previousClose": 90.1,
+        "changePct": 0.111,
+        "volume": 27734,
+        "trades": 39,
+        "turnoverLKR": 2502816.9,
+        "marketCapLKR": 162798372000,
+        "high": 92.5,
+        "low": 90.1,
         "marketStatus": "last traded (may be prior session)"
       },
       "facts": {
@@ -889,11 +889,11 @@
         "low52Week": 75.6,
         "isin": "LK0312N00005",
         "sharesIssued": 1804860000,
-        "marketCapLKR": 162617886000,
+        "marketCapLKR": 162798372000,
         "betaASPI": 1.1619273,
-        "reportedLastTradedPrice": 90.1,
+        "reportedLastTradedPrice": 90.2,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-24T13:58:53.411Z"
+        "retrievedAt": "2026-11-25T13:13:40.265Z"
       },
       "filings": [
         {
@@ -939,24 +939,24 @@
           "source": "CSE official per-company financial report archive"
         }
       ],
-      "dataAsOf": "2026-11-24T13:58:47.844Z"
+      "dataAsOf": "2026-11-25T13:13:35.755Z"
     },
     "HHL.N0000": {
       "ticker": "HHL.N0000",
       "quote": {
-        "value": 31.8,
+        "value": 31.9,
         "currency": "LKR",
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-24T13:58:47.844Z",
+        "retrievedAt": "2026-11-25T13:13:35.755Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
-        "previousClose": 32,
-        "changePct": -0.625,
-        "volume": 93277,
-        "trades": 104,
-        "turnoverLKR": 2974111.4,
-        "marketCapLKR": 95272323477,
+        "previousClose": 31.8,
+        "changePct": 0.314,
+        "volume": 190377,
+        "trades": 107,
+        "turnoverLKR": 6061511.8,
+        "marketCapLKR": 95571921978.5,
         "high": 32,
         "low": 31.8,
         "marketStatus": "last traded (may be prior session)"
@@ -966,11 +966,11 @@
         "low52Week": 27.6,
         "isin": "LK0337N00002",
         "sharesIssued": 2995985015,
-        "marketCapLKR": 95272323477,
+        "marketCapLKR": 95571921978.5,
         "betaASPI": 1.1194488,
-        "reportedLastTradedPrice": 31.8,
+        "reportedLastTradedPrice": 31.9,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-24T13:58:53.617Z"
+        "retrievedAt": "2026-11-25T13:13:40.522Z"
       },
       "filings": [
         {
@@ -1016,25 +1016,25 @@
           "source": "CSE official per-company financial report archive"
         }
       ],
-      "dataAsOf": "2026-11-24T13:58:47.844Z"
+      "dataAsOf": "2026-11-25T13:13:35.755Z"
     },
     "NDB.N0000": {
       "ticker": "NDB.N0000",
       "quote": {
-        "value": 111.5,
+        "value": 110.5,
         "currency": "LKR",
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-24T13:58:47.844Z",
+        "retrievedAt": "2026-11-25T13:13:35.755Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
-        "previousClose": 111.25,
-        "changePct": 0.225,
-        "volume": 40416,
-        "trades": 63,
-        "turnoverLKR": 4491453.75,
-        "marketCapLKR": 48190058491,
-        "high": 112,
+        "previousClose": 111.5,
+        "changePct": -0.897,
+        "volume": 77047,
+        "trades": 75,
+        "turnoverLKR": 8531070.25,
+        "marketCapLKR": 47757860657,
+        "high": 111.75,
         "low": 110.5,
         "marketStatus": "last traded (may be prior session)"
       },
@@ -1043,11 +1043,11 @@
         "low52Week": 100.5,
         "isin": "LK0207N00007",
         "sharesIssued": 432197834,
-        "marketCapLKR": 48190058491,
+        "marketCapLKR": 47757860657,
         "betaASPI": 0.8006846,
-        "reportedLastTradedPrice": 111.5,
+        "reportedLastTradedPrice": 110.5,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-24T13:58:53.831Z"
+        "retrievedAt": "2026-11-25T13:13:40.724Z"
       },
       "filings": [
         {
@@ -1093,25 +1093,25 @@
           "source": "CSE official per-company financial report archive"
         }
       ],
-      "dataAsOf": "2026-11-24T13:58:47.844Z"
+      "dataAsOf": "2026-11-25T13:13:35.755Z"
     },
     "TKYO.N0000": {
       "ticker": "TKYO.N0000",
       "quote": {
-        "value": 83,
+        "value": 82.9,
         "currency": "LKR",
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-24T13:58:47.844Z",
+        "retrievedAt": "2026-11-25T13:13:35.755Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
         "previousClose": 83,
-        "changePct": 0,
-        "volume": 8887,
-        "trades": 32,
-        "turnoverLKR": 733665.9,
-        "marketCapLKR": 24404490000,
-        "high": 83,
+        "changePct": -0.12,
+        "volume": 24882,
+        "trades": 71,
+        "turnoverLKR": 2064515.8,
+        "marketCapLKR": 24375087000,
+        "high": 85,
         "low": 82,
         "marketStatus": "last traded (may be prior session)"
       },
@@ -1120,11 +1120,11 @@
         "low52Week": 72.8,
         "isin": "LK0165N00007",
         "sharesIssued": 294030000,
-        "marketCapLKR": 24404490000,
+        "marketCapLKR": 24375087000,
         "betaASPI": 0.94540983,
-        "reportedLastTradedPrice": 83,
+        "reportedLastTradedPrice": 82.9,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-24T13:58:54.042Z"
+        "retrievedAt": "2026-11-25T13:13:40.924Z"
       },
       "filings": [
         {
@@ -1170,26 +1170,26 @@
           "source": "CSE official per-company financial report archive"
         }
       ],
-      "dataAsOf": "2026-11-24T13:58:47.844Z"
+      "dataAsOf": "2026-11-25T13:13:35.755Z"
     },
     "LFIN.N0000": {
       "ticker": "LFIN.N0000",
       "quote": {
-        "value": 153,
+        "value": 154.5,
         "currency": "LKR",
-        "asOf": "2026-11-23",
+        "asOf": "2026-11-25",
         "verifiedTradeDate": true,
-        "retrievedAt": "2026-11-24T13:58:47.844Z",
+        "retrievedAt": "2026-11-25T13:13:35.755Z",
         "sourceUrl": "https://www.cse.lk/api/tradeSummary",
         "source": "CSE trade summary",
-        "previousClose": 154,
-        "changePct": -0.649,
-        "volume": 71802,
-        "trades": 101,
-        "turnoverLKR": 10952933,
-        "marketCapLKR": 84770741808,
-        "high": 154,
-        "low": 149.5,
+        "previousClose": 153,
+        "changePct": 0.98,
+        "volume": 335480,
+        "trades": 41,
+        "turnoverLKR": 51670946,
+        "marketCapLKR": 85601827512,
+        "high": 155,
+        "low": 154,
         "marketStatus": "last traded (may be prior session)"
       },
       "facts": {
@@ -1197,11 +1197,11 @@
         "low52Week": 130,
         "isin": "LK0301N00008",
         "sharesIssued": 554057136,
-        "marketCapLKR": 84770741808,
+        "marketCapLKR": 85601827512,
         "betaASPI": 0.8785326,
-        "reportedLastTradedPrice": 153,
+        "reportedLastTradedPrice": 154.5,
         "sourceUrl": "https://www.cse.lk/api/companyInfoSummery",
-        "retrievedAt": "2026-11-24T13:58:54.384Z"
+        "retrievedAt": "2026-11-25T13:13:41.127Z"
       },
       "filings": [
         {
@@ -1247,7 +1247,7 @@
           "source": "CSE official per-company financial report archive"
         }
       ],
-      "dataAsOf": "2026-11-24T13:58:47.844Z"
+      "dataAsOf": "2026-11-25T13:13:35.755Z"
     }
   }
 }
