@@ -1,8 +1,8 @@
 {
   "schemaVersion": 5,
   "engineVersion": "5.3.0",
-  "generatedAt": "2026-11-25T21:56:48.667Z",
-  "sourceSnapshotAt": "2026-11-25T21:56:41.493Z",
+  "generatedAt": "2026-11-26T11:25:07.393Z",
+  "sourceSnapshotAt": "2026-11-26T11:25:02.602Z",
   "status": "research_available",
   "briefing": {
     "title": "Sri Lanka · Autonomous Market Brief",
@@ -11,8 +11,8 @@
       {
         "id": "aspi",
         "tone": "neutral",
-        "title": "ASPI increased in the last recorded session",
-        "detail": "Verified close 21315.84 on 2026-11-25 (+0.26% versus previous close).",
+        "title": "ASPI decreased in the last recorded session",
+        "detail": "Verified close 21244.91 on 2026-11-26 (-0.33% versus previous close).",
         "evidenceIds": [
           "aspi"
         ]
@@ -21,7 +21,7 @@
         "id": "avg20",
         "tone": "info",
         "title": "Historical 20-session checkpoint",
-        "detail": "The latest ASPI close is above its 20-session average of 21187.6. This does not predict future returns.",
+        "detail": "The latest ASPI close is below its 20-session average of 21251.36. This does not predict future returns.",
         "evidenceIds": [
           "aspi"
         ]
@@ -30,7 +30,7 @@
         "id": "cse-turnover",
         "tone": "info",
         "title": "Verified CSE daily market turnover",
-        "detail": "LKR 1,453,014,530 traded in the recorded session on 2026-11-25. This measures market activity, not market direction.",
+        "detail": "LKR 2,654,050,300 traded in the recorded session on 2026-11-26. This measures market activity, not market direction.",
         "evidenceIds": [
           "cse-turnover"
         ]
@@ -38,11 +38,12 @@
       {
         "id": "news-topics",
         "tone": "info",
-        "title": "2 headlines matched economic research topics",
+        "title": "4 headlines matched economic research topics",
         "detail": "Topic matching identifies subjects to investigate; it cannot confirm causation or returns.",
         "evidenceIds": [
+          "news-2",
           "news-3",
-          "news-4"
+          "news-6"
         ]
       },
       {
@@ -60,55 +61,57 @@
   },
   "market": {
     "status": "current",
-    "asOf": "2026-11-25",
+    "asOf": "2026-11-26",
     "ageDays": 0,
-    "close": 21315.84,
-    "lastObservedClose": 21315.84,
-    "changePct": 0.26,
-    "average20": 21187.6,
-    "annualizedHistoricalVolatilityPct": 19.78,
+    "close": 21244.91,
+    "lastObservedClose": 21244.91,
+    "changePct": -0.33,
+    "average20": 21251.36,
+    "annualizedHistoricalVolatilityPct": 19.68,
     "observations": 65,
     "modelAudit": {
       "edgeDemonstrated": true,
       "audit5": true,
       "audit20": true,
-      "journalResolved": 2,
+      "journalResolved": 3,
       "notice": "Backtesting does not establish reliable future prediction."
     },
     "turnover": {
-      "valueLKR": 1453014530,
-      "asOf": "2026-11-25",
+      "valueLKR": 2654050300,
+      "asOf": "2026-11-26",
       "status": "dated_observation",
       "sourceURL": "https://www.cse.lk/api/dailyMarketSummery",
-      "sharesTraded": 53899332,
-      "tradeCount": 14906,
+      "sharesTraded": 89319488,
+      "tradeCount": 19517,
       "notice": "CSE daily market equity turnover, recorded at the stated trade date. Not live streaming."
     }
   },
   "news": [
     {
       "id": "news-1",
-      "title": "Sri Lanka services exports rise 18.87-pct in October, driven by financial services",
-      "url": "https://economynext.com/sri-lanka-services-exports-rise-18-87-pct-in-october-driven-by-financial-services-291162/",
-      "date": "2026-11-25",
+      "title": "Sri Lanka’s electronics, spices export help cushion fall in garment, tea foreign buying",
+      "url": "https://economynext.com/sri-lankas-electronics-spices-export-help-cushion-fall-in-garment-tea-foreign-buying-291247/",
+      "date": "2026-11-26",
       "publisher": "EconomyNext",
       "topics": [],
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
       "id": "news-2",
-      "title": "Sri Lanka goods exports rise 9.65-pct in October, boosted by spices, electronics",
-      "url": "https://economynext.com/sri-lanka-goods-exports-rise-9-65-pct-in-october-boosted-by-spices-electronics-291107/",
-      "date": "2026-11-25",
+      "title": "Sri Lanka’s Janashakthi Finance meets central bank capital adequacy requirements",
+      "url": "https://economynext.com/sri-lankas-janashakthi-finance-meets-central-bank-capital-adequacy-requirements-291239/",
+      "date": "2026-11-26",
       "publisher": "EconomyNext",
-      "topics": [],
-      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+      "topics": [
+        "Interest rates"
+      ],
+      "impactNote": "Interest rates can affect bank margins, borrowing costs and demand; company effects are unverified."
     },
     {
       "id": "news-3",
-      "title": "Sri Lanka rupee closes at 332.62/72 to US dollar spot, bond yields steady",
-      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-62-72-to-us-dollar-spot-bond-yields-steady-291116/",
-      "date": "2026-11-25",
+      "title": "Sri Lanka rupee weakens to 332.90/333.10 against US dollar spot, bond yields steady",
+      "url": "https://economynext.com/sri-lanka-rupee-weakens-to-332-90-333-10-against-us-dollar-spot-bond-yields-steady-291190/",
+      "date": "2026-11-26",
       "publisher": "EconomyNext",
       "topics": [
         "Currency"
@@ -117,41 +120,43 @@
     },
     {
       "id": "news-4",
-      "title": "Sri Lanka revises down 2026 export revenue target to US$18.5bn from US$20bn",
-      "url": "https://economynext.com/sri-lanka-revises-down-2026-export-revenue-target-to-us18-5bn-from-us20bn-291114/",
-      "date": "2026-11-25",
+      "title": "APAC banks’ resilient fundamentals support ‘Neutral’ 2027 outlooks: Fitch",
+      "url": "https://economynext.com/apac-banks-resilient-fundamentals-support-neutral-2027-outlooks-fitch-291214/",
+      "date": "2026-11-26",
       "publisher": "EconomyNext",
-      "topics": [
-        "Earnings"
-      ],
-      "impactNote": "Company results require original financial disclosures before drawing valuation conclusions."
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
       "id": "news-5",
-      "title": "SriLankan Airlines adds fuel surcharge to break even by March after $35mn first-half loss",
-      "url": "https://economynext.com/srilankan-airlines-adds-fuel-surcharge-to-break-even-by-march-after-35mn-first-half-loss-291103/",
-      "date": "2026-11-25",
+      "title": "Sri Lanka stocks dip 0.13-pct, banks lead turnover",
+      "url": "https://economynext.com/sri-lanka-stocks-dip-0-13-pct-banks-lead-turnover-291183/",
+      "date": "2026-11-26",
       "publisher": "EconomyNext",
       "topics": [],
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
       "id": "news-6",
-      "title": "Sri Lanka Cabinet approves purchasing of medicinal drugs from Indian, Chinese firms",
-      "url": "https://economynext.com/sri-lanka-cabinet-approves-purchasing-of-medicinal-drugs-from-indian-chinese-firms-291105/",
-      "date": "2026-11-25",
+      "title": "Sri Lanka rejects all bids at Treasury bill auction following rate hike",
+      "url": "https://economynext.com/sri-lanka-rejects-all-bids-at-treasury-bill-auction-following-rate-hike-291192/",
+      "date": "2026-11-26",
       "publisher": "EconomyNext",
-      "topics": [],
-      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+      "topics": [
+        "Interest rates"
+      ],
+      "impactNote": "Interest rates can affect bank margins, borrowing costs and demand; company effects are unverified."
     },
     {
       "id": "news-7",
-      "title": "Tourism destinations need more than visitors to deliver lasting benefit: ADB",
-      "url": "https://economynext.com/tourism-destinations-need-more-than-visitors-to-deliver-lasting-benefit-adb-291094/",
-      "date": "2026-11-25",
+      "title": "Sri Lanka loses Rs549bn to alcohol, tobacco harm against Rs347bn tax take",
+      "url": "https://economynext.com/sri-lanka-loses-rs549bn-to-alcohol-tobacco-harm-against-rs347bn-tax-take-291178/",
+      "date": "2026-11-26",
       "publisher": "EconomyNext",
-      "topics": [],
-      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+      "topics": [
+        "Regulation"
+      ],
+      "impactNote": "Policy changes may affect costs and demand; direction and magnitude require verification."
     }
   ],
   "companies": [
@@ -1536,63 +1541,63 @@
       "id": "aspi",
       "label": "ASPI dated observations · CSE",
       "url": "https://www.cse.lk/api/chartData",
-      "asOf": "2026-11-25",
+      "asOf": "2026-11-26",
       "kind": "dated_market_observation"
     },
     {
       "id": "cse-turnover",
       "label": "Official daily CSE market turnover · LKR",
       "url": "https://www.cse.lk/api/dailyMarketSummery",
-      "asOf": "2026-11-25",
+      "asOf": "2026-11-26",
       "kind": "dated_market_turnover"
     },
     {
       "id": "news-1",
-      "label": "Publisher headline · Sri Lanka services exports rise 18.87-pct in October, driven by financial services",
-      "url": "https://economynext.com/sri-lanka-services-exports-rise-18-87-pct-in-october-driven-by-financial-services-291162/",
-      "asOf": "2026-11-25",
+      "label": "Publisher headline · Sri Lanka’s electronics, spices export help cushion fall in garment, tea foreign buying",
+      "url": "https://economynext.com/sri-lankas-electronics-spices-export-help-cushion-fall-in-garment-tea-foreign-buying-291247/",
+      "asOf": "2026-11-26",
       "kind": "dated_headline"
     },
     {
       "id": "news-2",
-      "label": "Publisher headline · Sri Lanka goods exports rise 9.65-pct in October, boosted by spices, electronics",
-      "url": "https://economynext.com/sri-lanka-goods-exports-rise-9-65-pct-in-october-boosted-by-spices-electronics-291107/",
-      "asOf": "2026-11-25",
+      "label": "Publisher headline · Sri Lanka’s Janashakthi Finance meets central bank capital adequacy requirements",
+      "url": "https://economynext.com/sri-lankas-janashakthi-finance-meets-central-bank-capital-adequacy-requirements-291239/",
+      "asOf": "2026-11-26",
       "kind": "dated_headline"
     },
     {
       "id": "news-3",
-      "label": "Publisher headline · Sri Lanka rupee closes at 332.62/72 to US dollar spot, bond yields steady",
-      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-62-72-to-us-dollar-spot-bond-yields-steady-291116/",
-      "asOf": "2026-11-25",
+      "label": "Publisher headline · Sri Lanka rupee weakens to 332.90/333.10 against US dollar spot, bond yields steady",
+      "url": "https://economynext.com/sri-lanka-rupee-weakens-to-332-90-333-10-against-us-dollar-spot-bond-yields-steady-291190/",
+      "asOf": "2026-11-26",
       "kind": "dated_headline"
     },
     {
       "id": "news-4",
-      "label": "Publisher headline · Sri Lanka revises down 2026 export revenue target to US$18.5bn from US$20bn",
-      "url": "https://economynext.com/sri-lanka-revises-down-2026-export-revenue-target-to-us18-5bn-from-us20bn-291114/",
-      "asOf": "2026-11-25",
+      "label": "Publisher headline · APAC banks’ resilient fundamentals support ‘Neutral’ 2027 outlooks: Fitch",
+      "url": "https://economynext.com/apac-banks-resilient-fundamentals-support-neutral-2027-outlooks-fitch-291214/",
+      "asOf": "2026-11-26",
       "kind": "dated_headline"
     },
     {
       "id": "news-5",
-      "label": "Publisher headline · SriLankan Airlines adds fuel surcharge to break even by March after $35mn first-half loss",
-      "url": "https://economynext.com/srilankan-airlines-adds-fuel-surcharge-to-break-even-by-march-after-35mn-first-half-loss-291103/",
-      "asOf": "2026-11-25",
+      "label": "Publisher headline · Sri Lanka stocks dip 0.13-pct, banks lead turnover",
+      "url": "https://economynext.com/sri-lanka-stocks-dip-0-13-pct-banks-lead-turnover-291183/",
+      "asOf": "2026-11-26",
       "kind": "dated_headline"
     },
     {
       "id": "news-6",
-      "label": "Publisher headline · Sri Lanka Cabinet approves purchasing of medicinal drugs from Indian, Chinese firms",
-      "url": "https://economynext.com/sri-lanka-cabinet-approves-purchasing-of-medicinal-drugs-from-indian-chinese-firms-291105/",
-      "asOf": "2026-11-25",
+      "label": "Publisher headline · Sri Lanka rejects all bids at Treasury bill auction following rate hike",
+      "url": "https://economynext.com/sri-lanka-rejects-all-bids-at-treasury-bill-auction-following-rate-hike-291192/",
+      "asOf": "2026-11-26",
       "kind": "dated_headline"
     },
     {
       "id": "news-7",
-      "label": "Publisher headline · Tourism destinations need more than visitors to deliver lasting benefit: ADB",
-      "url": "https://economynext.com/tourism-destinations-need-more-than-visitors-to-deliver-lasting-benefit-adb-291094/",
-      "asOf": "2026-11-25",
+      "label": "Publisher headline · Sri Lanka loses Rs549bn to alcohol, tobacco harm against Rs347bn tax take",
+      "url": "https://economynext.com/sri-lanka-loses-rs549bn-to-alcohol-tobacco-harm-against-rs347bn-tax-take-291178/",
+      "asOf": "2026-11-26",
       "kind": "dated_headline"
     },
     {

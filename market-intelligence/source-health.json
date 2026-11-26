@@ -1,11 +1,11 @@
 {
   "aspi": {
     "status": "current",
-    "asOf": "2026-11-25",
+    "asOf": "2026-11-26",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-25T21:56:41.493Z",
-    "lastSuccessAt": "2026-11-25T21:56:41.493Z",
+    "lastAttemptAt": "2026-11-26T11:25:02.602Z",
+    "lastSuccessAt": "2026-11-26T11:25:02.602Z",
     "failures": 0,
     "note": "CSE daily closes validated and appended to dated archive"
   },
@@ -14,58 +14,58 @@
     "asOf": "2025",
     "ageDays": null,
     "ageYears": 1,
-    "lastAttemptAt": "2026-11-25T21:56:41.493Z",
-    "lastSuccessAt": "2026-11-25T21:56:41.493Z",
+    "lastAttemptAt": "2026-11-26T11:25:02.602Z",
+    "lastSuccessAt": "2026-11-26T11:25:02.602Z",
     "failures": 0,
     "note": "6 of 6 annual indicators refreshed"
   },
   "forex": {
     "status": "current",
-    "asOf": "2026-11-25",
+    "asOf": "2026-11-26",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-25T21:56:41.493Z",
-    "lastSuccessAt": "2026-11-25T21:56:41.493Z",
+    "lastAttemptAt": "2026-11-26T11:25:02.602Z",
+    "lastSuccessAt": "2026-11-26T11:25:02.602Z",
     "failures": 0,
     "note": "Provider response accepted"
   },
   "shares": {
     "status": "current",
     "asOf": "2026-11-25",
-    "ageDays": 0,
+    "ageDays": 1,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-25T21:56:41.493Z",
-    "lastSuccessAt": "2026-11-25T21:56:41.493Z",
+    "lastAttemptAt": "2026-11-26T11:25:02.602Z",
+    "lastSuccessAt": "2026-11-26T11:25:02.602Z",
     "failures": 0,
     "note": "Cached · 16 verified CSE last-traded shares, as of 2026-11-25. Not streaming. Direct request unavailable (HTTP 403)."
   },
   "sl20": {
     "status": "retrieved_only",
-    "asOf": "2026-11-25",
+    "asOf": "2026-11-26",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-25T21:56:41.493Z",
-    "lastSuccessAt": "2026-11-25T21:56:41.493Z",
+    "lastAttemptAt": "2026-11-26T11:25:02.602Z",
+    "lastSuccessAt": "2026-11-26T11:25:02.602Z",
     "failures": 0,
     "note": "Index snapshot retrieved; official trade date not verified"
   },
   "turnover": {
     "status": "current",
-    "asOf": "2026-11-25",
+    "asOf": "2026-11-26",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-25T21:56:41.493Z",
-    "lastSuccessAt": "2026-11-25T21:56:41.493Z",
+    "lastAttemptAt": "2026-11-26T11:25:02.602Z",
+    "lastSuccessAt": "2026-11-26T11:25:02.602Z",
     "failures": 0,
-    "note": "Verified CSE daily market turnover (LKR), trade date 2026-11-25. Not streaming."
+    "note": "Verified CSE daily market turnover (LKR), trade date 2026-11-26. Not streaming."
   },
   "headlines": {
     "status": "current",
-    "asOf": "2026-11-25",
+    "asOf": "2026-11-26",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-25T21:56:41.493Z",
-    "lastSuccessAt": "2026-11-25T21:56:41.493Z",
+    "lastAttemptAt": "2026-11-26T11:25:02.602Z",
+    "lastSuccessAt": "2026-11-26T11:25:02.602Z",
     "failures": 0,
     "note": "Provider response accepted"
   }
