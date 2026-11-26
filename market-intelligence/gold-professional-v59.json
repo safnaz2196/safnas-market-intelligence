@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "version": "5.9",
-  "generatedAt": "2026-11-26T04:58:09.934Z",
+  "generatedAt": "2026-11-26T15:04:02.235Z",
   "status": "research_available",
   "sourceReport": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ensemble-v58.json",
-  "goldHistoryAsOf": "2026-11-25",
-  "referenceUsdOz": 3604.8,
+  "goldHistoryAsOf": "2026-11-26",
+  "referenceUsdOz": 3594.3,
   "summary": {
     "modelsCompared": 5,
     "periods": 6,
-    "purgedHoldoutSupported": 1,
+    "purgedHoldoutSupported": 0,
     "forwardSettled": 2,
-    "forwardPending": 28,
+    "forwardPending": 34,
     "headline": "Evidence-first gold intelligence — no unfounded price certainty"
   },
   "quality": {
     "history": "observed",
-    "historyAsOf": "2026-11-25",
-    "historyDaysOld": 1,
+    "historyAsOf": "2026-11-26",
+    "historyDaysOld": 0,
     "spot": "recent",
-    "spotAsOf": "2026-11-26T04:57:47Z",
+    "spotAsOf": "2026-11-26T15:03:48Z",
     "fx": "recent",
-    "fxAsOf": "2026-11-25T00:02:31.000Z",
+    "fxAsOf": "2026-11-26T00:02:31.000Z",
     "managedMoney": "dated_weekly",
     "macroAvailable": 2,
     "news": "unavailable",
@@ -33,9 +33,9 @@
       "sessions": 1,
       "originalDirection": "rise",
       "scenario": {
-        "lowUsdOz": 3513.89,
-        "midUsdOz": 3609.81,
-        "highUsdOz": 3662.87
+        "lowUsdOz": 3494.31,
+        "midUsdOz": 3597.39,
+        "highUsdOz": 3689.76
       },
       "historicalConfidence": "NOT_PROVEN",
       "validation": {
@@ -49,53 +49,53 @@
         "gapSessions": 1,
         "selectedModel": "analogue",
         "validated": false,
-        "modelBrier": 0.6946,
-        "baselineBrier": 0.6725,
-        "improvement": -0.0221,
+        "modelBrier": 0.6943,
+        "baselineBrier": 0.6712,
+        "improvement": -0.0231,
         "hitRatePct": 30.6,
-        "rangeCoveragePct": 68.2,
+        "rangeCoveragePct": 67.5,
         "modelAudits": [
           {
             "id": "analogue",
             "trainChecks": 293,
             "laterChecks": 157,
-            "earlyBrier": 0.6603,
-            "laterBrier": 0.6946,
-            "baselineBrier": 0.6725,
-            "improvement": -0.0221,
+            "earlyBrier": 0.6606,
+            "laterBrier": 0.6943,
+            "baselineBrier": 0.6712,
+            "improvement": -0.0231,
             "laterHitRatePct": 30.6,
-            "rangeCoveragePct": 68.2
+            "rangeCoveragePct": 67.5
           },
           {
             "id": "trend",
             "trainChecks": 293,
             "laterChecks": 157,
-            "earlyBrier": 0.6745,
-            "laterBrier": 0.6932,
-            "baselineBrier": 0.6725,
-            "improvement": -0.0207,
-            "laterHitRatePct": 31.2,
-            "rangeCoveragePct": 61.1
+            "earlyBrier": 0.6748,
+            "laterBrier": 0.6908,
+            "baselineBrier": 0.6712,
+            "improvement": -0.0196,
+            "laterHitRatePct": 32.5,
+            "rangeCoveragePct": 60.5
           },
           {
             "id": "reversion",
             "trainChecks": 293,
             "laterChecks": 157,
-            "earlyBrier": 0.6735,
-            "laterBrier": 0.6978,
-            "baselineBrier": 0.6725,
-            "improvement": -0.0254,
-            "laterHitRatePct": 31.2,
+            "earlyBrier": 0.6744,
+            "laterBrier": 0.6958,
+            "baselineBrier": 0.6712,
+            "improvement": -0.0246,
+            "laterHitRatePct": 31.8,
             "rangeCoveragePct": 61.8
           },
           {
             "id": "regime",
             "trainChecks": 293,
             "laterChecks": 157,
-            "earlyBrier": 0.6637,
-            "laterBrier": 0.6873,
-            "baselineBrier": 0.6725,
-            "improvement": -0.0149,
+            "earlyBrier": 0.6638,
+            "laterBrier": 0.6871,
+            "baselineBrier": 0.6712,
+            "improvement": -0.0158,
             "laterHitRatePct": 29.9,
             "rangeCoveragePct": 66.2
           },
@@ -103,12 +103,12 @@
             "id": "ewma",
             "trainChecks": 293,
             "laterChecks": 157,
-            "earlyBrier": 0.6677,
-            "laterBrier": 0.6889,
-            "baselineBrier": 0.6725,
-            "improvement": -0.0164,
-            "laterHitRatePct": 34.4,
-            "rangeCoveragePct": 83.4
+            "earlyBrier": 0.6674,
+            "laterBrier": 0.6875,
+            "baselineBrier": 0.6712,
+            "improvement": -0.0163,
+            "laterHitRatePct": 35,
+            "rangeCoveragePct": 82.8
           }
         ],
         "explanation": "No model met the minimum independent holdout checks, score improvement and scenario coverage requirements.",
@@ -116,8 +116,8 @@
       },
       "currencyScenarios": {
         "available": true,
-        "fxObservedAt": "2026-11-25T00:02:31.000Z",
-        "goldHistoryAsOf": "2026-11-25",
+        "fxObservedAt": "2026-11-26T00:02:31.000Z",
+        "goldHistoryAsOf": "2026-11-26",
         "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
         "contexts": [
           {
@@ -128,13 +128,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 388.35,
-              "middle": 398.95,
-              "high": 404.81
+              "low": 386.18,
+              "middle": 397.58,
+              "high": 407.79
             },
             "hypotheticalStress": {
-              "low": 386.41,
-              "high": 406.83
+              "low": 384.25,
+              "high": 409.83
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -146,13 +146,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 423.65,
-              "middle": 435.22,
-              "high": 441.62
+              "low": 421.29,
+              "middle": 433.72,
+              "high": 444.86
             },
             "hypotheticalStress": {
-              "low": 421.53,
-              "high": 443.83
+              "low": 419.18,
+              "high": 447.08
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -161,16 +161,16 @@
             "region": "Sri Lanka",
             "karat": 22,
             "unit": "LKR/gram",
-            "fxReference": 332.4243,
+            "fxReference": 332.12101,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 34425.75,
-              "middle": 35365.48,
-              "high": 35885.32
+              "low": 34202.69,
+              "middle": 35211.65,
+              "high": 36115.78
             },
             "hypotheticalStress": {
-              "low": 33392.98,
-              "high": 36961.88
+              "low": 33176.61,
+              "high": 37199.25
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -179,16 +179,16 @@
             "region": "Sri Lanka",
             "karat": 24,
             "unit": "LKR/gram",
-            "fxReference": 332.4243,
+            "fxReference": 332.12101,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 37555.37,
-              "middle": 38580.53,
-              "high": 39147.62
+              "low": 37312.03,
+              "middle": 38412.71,
+              "high": 39399.03
             },
             "hypotheticalStress": {
-              "low": 36428.71,
-              "high": 40322.05
+              "low": 36192.67,
+              "high": 40581
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
@@ -201,9 +201,9 @@
       "sessions": 2,
       "originalDirection": "rise",
       "scenario": {
-        "lowUsdOz": 3514.93,
-        "midUsdOz": 3597.81,
-        "highUsdOz": 3704.51
+        "lowUsdOz": 3464.4,
+        "midUsdOz": 3592.36,
+        "highUsdOz": 3706.95
       },
       "historicalConfidence": "NOT_PROVEN",
       "validation": {
@@ -217,66 +217,66 @@
         "gapSessions": 2,
         "selectedModel": "regime",
         "validated": false,
-        "modelBrier": 0.7002,
-        "baselineBrier": 0.6675,
-        "improvement": -0.0328,
+        "modelBrier": 0.6841,
+        "baselineBrier": 0.6787,
+        "improvement": -0.0054,
         "hitRatePct": 35.4,
-        "rangeCoveragePct": 67.1,
+        "rangeCoveragePct": 70.9,
         "modelAudits": [
           {
             "id": "analogue",
             "trainChecks": 146,
             "laterChecks": 79,
-            "earlyBrier": 0.6704,
-            "laterBrier": 0.7084,
-            "baselineBrier": 0.6675,
-            "improvement": -0.0409,
-            "laterHitRatePct": 34.2,
-            "rangeCoveragePct": 63.3
+            "earlyBrier": 0.6686,
+            "laterBrier": 0.7087,
+            "baselineBrier": 0.6787,
+            "improvement": -0.03,
+            "laterHitRatePct": 31.6,
+            "rangeCoveragePct": 67.1
           },
           {
             "id": "trend",
             "trainChecks": 146,
             "laterChecks": 79,
-            "earlyBrier": 0.6669,
-            "laterBrier": 0.7168,
-            "baselineBrier": 0.6675,
-            "improvement": -0.0493,
-            "laterHitRatePct": 30.4,
-            "rangeCoveragePct": 62
+            "earlyBrier": 0.6657,
+            "laterBrier": 0.7083,
+            "baselineBrier": 0.6787,
+            "improvement": -0.0296,
+            "laterHitRatePct": 35.4,
+            "rangeCoveragePct": 59.5
           },
           {
             "id": "reversion",
             "trainChecks": 146,
             "laterChecks": 79,
-            "earlyBrier": 0.6754,
-            "laterBrier": 0.7045,
-            "baselineBrier": 0.6675,
-            "improvement": -0.0371,
-            "laterHitRatePct": 38,
-            "rangeCoveragePct": 64.6
+            "earlyBrier": 0.6749,
+            "laterBrier": 0.7103,
+            "baselineBrier": 0.6787,
+            "improvement": -0.0316,
+            "laterHitRatePct": 31.6,
+            "rangeCoveragePct": 62
           },
           {
             "id": "regime",
             "trainChecks": 146,
             "laterChecks": 79,
-            "earlyBrier": 0.6648,
-            "laterBrier": 0.7002,
-            "baselineBrier": 0.6675,
-            "improvement": -0.0328,
+            "earlyBrier": 0.6645,
+            "laterBrier": 0.6841,
+            "baselineBrier": 0.6787,
+            "improvement": -0.0054,
             "laterHitRatePct": 35.4,
-            "rangeCoveragePct": 67.1
+            "rangeCoveragePct": 70.9
           },
           {
             "id": "ewma",
             "trainChecks": 146,
             "laterChecks": 79,
-            "earlyBrier": 0.6765,
-            "laterBrier": 0.6667,
-            "baselineBrier": 0.6675,
-            "improvement": 0.0008,
-            "laterHitRatePct": 43,
-            "rangeCoveragePct": 77.2
+            "earlyBrier": 0.6874,
+            "laterBrier": 0.6768,
+            "baselineBrier": 0.6787,
+            "improvement": 0.0019,
+            "laterHitRatePct": 41.8,
+            "rangeCoveragePct": 82.3
           }
         ],
         "explanation": "No model met the minimum independent holdout checks, score improvement and scenario coverage requirements.",
@@ -284,8 +284,8 @@
       },
       "currencyScenarios": {
         "available": true,
-        "fxObservedAt": "2026-11-25T00:02:31.000Z",
-        "goldHistoryAsOf": "2026-11-25",
+        "fxObservedAt": "2026-11-26T00:02:31.000Z",
+        "goldHistoryAsOf": "2026-11-26",
         "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
         "contexts": [
           {
@@ -296,13 +296,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 388.46,
-              "middle": 397.62,
-              "high": 409.42
+              "low": 382.88,
+              "middle": 397.02,
+              "high": 409.69
             },
             "hypotheticalStress": {
-              "low": 386.52,
-              "high": 411.47
+              "low": 380.97,
+              "high": 411.74
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -314,13 +314,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 423.78,
-              "middle": 433.77,
-              "high": 446.64
+              "low": 417.69,
+              "middle": 433.11,
+              "high": 446.93
             },
             "hypotheticalStress": {
-              "low": 421.66,
-              "high": 448.87
+              "low": 415.6,
+              "high": 449.16
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -329,16 +329,16 @@
             "region": "Sri Lanka",
             "karat": 22,
             "unit": "LKR/gram",
-            "fxReference": 332.4243,
+            "fxReference": 332.12101,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 34435.94,
-              "middle": 35247.92,
-              "high": 36293.26
+              "low": 33909.93,
+              "middle": 35162.42,
+              "high": 36284.03
             },
             "hypotheticalStress": {
-              "low": 33402.86,
-              "high": 37382.06
+              "low": 32892.63,
+              "high": 37372.55
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -347,16 +347,16 @@
             "region": "Sri Lanka",
             "karat": 24,
             "unit": "LKR/gram",
-            "fxReference": 332.4243,
+            "fxReference": 332.12101,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 37566.48,
-              "middle": 38452.28,
-              "high": 39592.65
+              "low": 36992.65,
+              "middle": 38359,
+              "high": 39582.58
             },
             "hypotheticalStress": {
-              "low": 36439.49,
-              "high": 40780.43
+              "low": 35882.87,
+              "high": 40770.06
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
@@ -369,11 +369,11 @@
       "sessions": 5,
       "originalDirection": "rise",
       "scenario": {
-        "lowUsdOz": 3471.89,
-        "midUsdOz": 3617.52,
-        "highUsdOz": 3759.12
+        "lowUsdOz": 3451.53,
+        "midUsdOz": 3602.06,
+        "highUsdOz": 3748.17
       },
-      "historicalConfidence": "limited_historical_support",
+      "historicalConfidence": "NOT_PROVEN",
       "validation": {
         "days": 7,
         "sessions": 5,
@@ -383,77 +383,77 @@
         "earlyChecks": 59,
         "laterChecks": 31,
         "gapSessions": 5,
-        "selectedModel": "ewma",
-        "validated": true,
-        "modelBrier": 0.668,
-        "baselineBrier": 0.7466,
-        "improvement": 0.0786,
-        "hitRatePct": 45.2,
-        "rangeCoveragePct": 83.9,
+        "selectedModel": "analogue",
+        "validated": false,
+        "modelBrier": 0.7134,
+        "baselineBrier": 0.736,
+        "improvement": 0.0226,
+        "hitRatePct": 32.3,
+        "rangeCoveragePct": 77.4,
         "modelAudits": [
           {
             "id": "analogue",
             "trainChecks": 59,
             "laterChecks": 31,
-            "earlyBrier": 0.6648,
-            "laterBrier": 0.7403,
-            "baselineBrier": 0.7466,
-            "improvement": 0.0063,
-            "laterHitRatePct": 29,
-            "rangeCoveragePct": 64.5
+            "earlyBrier": 0.6604,
+            "laterBrier": 0.7134,
+            "baselineBrier": 0.736,
+            "improvement": 0.0226,
+            "laterHitRatePct": 32.3,
+            "rangeCoveragePct": 77.4
           },
           {
             "id": "trend",
             "trainChecks": 59,
             "laterChecks": 31,
-            "earlyBrier": 0.6712,
-            "laterBrier": 0.7596,
-            "baselineBrier": 0.7466,
-            "improvement": -0.013,
+            "earlyBrier": 0.6618,
+            "laterBrier": 0.7449,
+            "baselineBrier": 0.736,
+            "improvement": -0.0089,
             "laterHitRatePct": 19.4,
-            "rangeCoveragePct": 58.1
+            "rangeCoveragePct": 61.3
           },
           {
             "id": "reversion",
             "trainChecks": 59,
             "laterChecks": 31,
-            "earlyBrier": 0.6748,
-            "laterBrier": 0.7462,
-            "baselineBrier": 0.7466,
-            "improvement": 0.0004,
-            "laterHitRatePct": 19.4,
-            "rangeCoveragePct": 58.1
+            "earlyBrier": 0.6674,
+            "laterBrier": 0.7538,
+            "baselineBrier": 0.736,
+            "improvement": -0.0178,
+            "laterHitRatePct": 9.7,
+            "rangeCoveragePct": 61.3
           },
           {
             "id": "regime",
             "trainChecks": 59,
             "laterChecks": 31,
-            "earlyBrier": 0.6833,
-            "laterBrier": 0.7379,
-            "baselineBrier": 0.7466,
-            "improvement": 0.0087,
-            "laterHitRatePct": 32.3,
-            "rangeCoveragePct": 71
+            "earlyBrier": 0.6673,
+            "laterBrier": 0.7191,
+            "baselineBrier": 0.736,
+            "improvement": 0.0169,
+            "laterHitRatePct": 22.6,
+            "rangeCoveragePct": 74.2
           },
           {
             "id": "ewma",
             "trainChecks": 59,
             "laterChecks": 31,
-            "earlyBrier": 0.6611,
-            "laterBrier": 0.668,
-            "baselineBrier": 0.7466,
-            "improvement": 0.0786,
+            "earlyBrier": 0.6796,
+            "laterBrier": 0.6513,
+            "baselineBrier": 0.736,
+            "improvement": 0.0847,
             "laterHitRatePct": 45.2,
-            "rangeCoveragePct": 83.9
+            "rangeCoveragePct": 90.3
           }
         ],
-        "explanation": "The candidate selected using earlier observations beat a rolling baseline on later, purged, non-overlapping historical outcomes. This is still not future proof.",
+        "explanation": "No model met the minimum independent holdout checks, score improvement and scenario coverage requirements.",
         "selectionNote": "Candidate chosen on earlier outcomes only; later outcomes are separated by the full forecast horizon to reduce label overlap. Minimum 35 early and 20 later checks, Brier improvement ≥ 0.025 and scenario coverage ≥ 50%."
       },
       "currencyScenarios": {
         "available": true,
-        "fxObservedAt": "2026-11-25T00:02:31.000Z",
-        "goldHistoryAsOf": "2026-11-25",
+        "fxObservedAt": "2026-11-26T00:02:31.000Z",
+        "goldHistoryAsOf": "2026-11-26",
         "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
         "contexts": [
           {
@@ -464,13 +464,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 383.71,
-              "middle": 399.8,
-              "high": 415.45
+              "low": 381.46,
+              "middle": 398.09,
+              "high": 414.24
             },
             "hypotheticalStress": {
-              "low": 381.79,
-              "high": 417.53
+              "low": 379.55,
+              "high": 416.31
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -482,13 +482,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 418.59,
-              "middle": 436.15,
-              "high": 453.22
+              "low": 416.13,
+              "middle": 434.28,
+              "high": 451.9
             },
             "hypotheticalStress": {
-              "low": 416.5,
-              "high": 455.49
+              "low": 414.05,
+              "high": 454.16
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -497,16 +497,16 @@
             "region": "Sri Lanka",
             "karat": 22,
             "unit": "LKR/gram",
-            "fxReference": 332.4243,
+            "fxReference": 332.12101,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 34014.28,
-              "middle": 35441.02,
-              "high": 36828.28
+              "low": 33783.96,
+              "middle": 35257.36,
+              "high": 36687.5
             },
             "hypotheticalStress": {
-              "low": 32993.85,
-              "high": 37933.13
+              "low": 32770.44,
+              "high": 37788.13
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -515,16 +515,16 @@
             "region": "Sri Lanka",
             "karat": 24,
             "unit": "LKR/gram",
-            "fxReference": 332.4243,
+            "fxReference": 332.12101,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 37106.48,
-              "middle": 38662.93,
-              "high": 40176.31
+              "low": 36855.22,
+              "middle": 38462.57,
+              "high": 40022.73
             },
             "hypotheticalStress": {
-              "low": 35993.29,
-              "high": 41381.6
+              "low": 35749.56,
+              "high": 41223.41
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
@@ -535,11 +535,11 @@
     {
       "days": 14,
       "sessions": 10,
-      "originalDirection": "range",
+      "originalDirection": "fall",
       "scenario": {
-        "lowUsdOz": 3434.51,
-        "midUsdOz": 3600.33,
-        "highUsdOz": 3791.82
+        "lowUsdOz": 3421.63,
+        "midUsdOz": 3575.43,
+        "highUsdOz": 3805.11
       },
       "historicalConfidence": "NOT_PROVEN",
       "validation": {
@@ -563,56 +563,56 @@
             "id": "analogue",
             "trainChecks": 29,
             "laterChecks": 16,
-            "earlyBrier": 0.634,
-            "laterBrier": 0.8228,
-            "baselineBrier": 0.7978,
-            "improvement": -0.025,
-            "laterHitRatePct": 25,
-            "rangeCoveragePct": 68.8
+            "earlyBrier": 0.658,
+            "laterBrier": 0.8122,
+            "baselineBrier": 0.72,
+            "improvement": -0.0922,
+            "laterHitRatePct": 31.3,
+            "rangeCoveragePct": 56.3
           },
           {
             "id": "trend",
             "trainChecks": 29,
             "laterChecks": 16,
-            "earlyBrier": 0.6231,
-            "laterBrier": 0.8506,
-            "baselineBrier": 0.7978,
-            "improvement": -0.0528,
-            "laterHitRatePct": 18.8,
+            "earlyBrier": 0.661,
+            "laterBrier": 0.8035,
+            "baselineBrier": 0.72,
+            "improvement": -0.0835,
+            "laterHitRatePct": 31.3,
             "rangeCoveragePct": 56.3
           },
           {
             "id": "reversion",
             "trainChecks": 29,
             "laterChecks": 16,
-            "earlyBrier": 0.6599,
-            "laterBrier": 0.8424,
-            "baselineBrier": 0.7978,
-            "improvement": -0.0446,
-            "laterHitRatePct": 12.5,
+            "earlyBrier": 0.6515,
+            "laterBrier": 0.7974,
+            "baselineBrier": 0.72,
+            "improvement": -0.0774,
+            "laterHitRatePct": 25,
             "rangeCoveragePct": 56.3
           },
           {
             "id": "regime",
             "trainChecks": 29,
             "laterChecks": 16,
-            "earlyBrier": 0.6329,
-            "laterBrier": 0.8458,
-            "baselineBrier": 0.7978,
-            "improvement": -0.048,
-            "laterHitRatePct": 18.8,
-            "rangeCoveragePct": 56.3
+            "earlyBrier": 0.6752,
+            "laterBrier": 0.8164,
+            "baselineBrier": 0.72,
+            "improvement": -0.0964,
+            "laterHitRatePct": 12.5,
+            "rangeCoveragePct": 50
           },
           {
             "id": "ewma",
             "trainChecks": 29,
             "laterChecks": 16,
-            "earlyBrier": 0.6844,
-            "laterBrier": 0.6544,
-            "baselineBrier": 0.7978,
-            "improvement": 0.1434,
-            "laterHitRatePct": 37.5,
-            "rangeCoveragePct": 87.5
+            "earlyBrier": 0.6847,
+            "laterBrier": 0.6265,
+            "baselineBrier": 0.72,
+            "improvement": 0.0935,
+            "laterHitRatePct": 50,
+            "rangeCoveragePct": 100
           }
         ],
         "explanation": "No model met the minimum independent holdout checks, score improvement and scenario coverage requirements.",
@@ -620,8 +620,8 @@
       },
       "currencyScenarios": {
         "available": true,
-        "fxObservedAt": "2026-11-25T00:02:31.000Z",
-        "goldHistoryAsOf": "2026-11-25",
+        "fxObservedAt": "2026-11-26T00:02:31.000Z",
+        "goldHistoryAsOf": "2026-11-26",
         "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
         "contexts": [
           {
@@ -632,13 +632,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 379.58,
-              "middle": 397.9,
-              "high": 419.07
+              "low": 378.15,
+              "middle": 395.15,
+              "high": 420.53
             },
             "hypotheticalStress": {
-              "low": 377.68,
-              "high": 421.17
+              "low": 376.26,
+              "high": 422.63
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -650,13 +650,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 414.08,
-              "middle": 434.07,
-              "high": 457.16
+              "low": 412.53,
+              "middle": 431.07,
+              "high": 458.76
             },
             "hypotheticalStress": {
-              "low": 412.01,
-              "high": 459.45
+              "low": 410.47,
+              "high": 461.05
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -665,16 +665,16 @@
             "region": "Sri Lanka",
             "karat": 22,
             "unit": "LKR/gram",
-            "fxReference": 332.4243,
+            "fxReference": 332.12101,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 33648.06,
-              "middle": 35272.61,
-              "high": 37148.65
+              "low": 33491.29,
+              "middle": 34996.7,
+              "high": 37244.84
             },
             "hypotheticalStress": {
-              "low": 32638.62,
-              "high": 38263.11
+              "low": 32486.55,
+              "high": 38362.19
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -683,16 +683,16 @@
             "region": "Sri Lanka",
             "karat": 24,
             "unit": "LKR/gram",
-            "fxReference": 332.4243,
+            "fxReference": 332.12101,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 36706.98,
-              "middle": 38479.21,
-              "high": 40525.79
+              "low": 36535.95,
+              "middle": 38178.22,
+              "high": 40630.73
             },
             "hypotheticalStress": {
-              "low": 35605.77,
-              "high": 41741.56
+              "low": 35439.87,
+              "high": 41849.65
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
@@ -705,9 +705,9 @@
       "sessions": 21,
       "originalDirection": "fall",
       "scenario": {
-        "lowUsdOz": 3344.14,
-        "midUsdOz": 3563.6,
-        "highUsdOz": 3832.88
+        "lowUsdOz": 3334.4,
+        "midUsdOz": 3567.67,
+        "highUsdOz": 3851.11
       },
       "historicalConfidence": "NOT_PROVEN",
       "validation": {
@@ -731,10 +731,10 @@
             "id": "analogue",
             "trainChecks": 14,
             "laterChecks": 7,
-            "earlyBrier": 0.5289,
-            "laterBrier": 0.9802,
-            "baselineBrier": 0.8245,
-            "improvement": -0.1557,
+            "earlyBrier": 0.5556,
+            "laterBrier": 0.9431,
+            "baselineBrier": 0.8549,
+            "improvement": -0.0882,
             "laterHitRatePct": 14.3,
             "rangeCoveragePct": 42.9
           },
@@ -742,10 +742,10 @@
             "id": "trend",
             "trainChecks": 14,
             "laterChecks": 7,
-            "earlyBrier": 0.5559,
-            "laterBrier": 1.0549,
-            "baselineBrier": 0.8245,
-            "improvement": -0.2304,
+            "earlyBrier": 0.5714,
+            "laterBrier": 0.9795,
+            "baselineBrier": 0.8549,
+            "improvement": -0.1246,
             "laterHitRatePct": 14.3,
             "rangeCoveragePct": 14.3
           },
@@ -753,32 +753,32 @@
             "id": "reversion",
             "trainChecks": 14,
             "laterChecks": 7,
-            "earlyBrier": 0.5247,
-            "laterBrier": 1.0483,
-            "baselineBrier": 0.8245,
-            "improvement": -0.2238,
+            "earlyBrier": 0.5554,
+            "laterBrier": 1.0044,
+            "baselineBrier": 0.8549,
+            "improvement": -0.1495,
             "laterHitRatePct": 14.3,
-            "rangeCoveragePct": 28.6
+            "rangeCoveragePct": 14.3
           },
           {
             "id": "regime",
             "trainChecks": 14,
             "laterChecks": 7,
-            "earlyBrier": 0.5981,
-            "laterBrier": 1.0434,
-            "baselineBrier": 0.8245,
-            "improvement": -0.2189,
-            "laterHitRatePct": 14.3,
-            "rangeCoveragePct": 28.6
+            "earlyBrier": 0.5171,
+            "laterBrier": 0.9909,
+            "baselineBrier": 0.8549,
+            "improvement": -0.136,
+            "laterHitRatePct": 0,
+            "rangeCoveragePct": 14.3
           },
           {
             "id": "ewma",
             "trainChecks": 14,
             "laterChecks": 7,
-            "earlyBrier": 0.6421,
-            "laterBrier": 0.6557,
-            "baselineBrier": 0.8245,
-            "improvement": 0.1688,
+            "earlyBrier": 0.7251,
+            "laterBrier": 0.6444,
+            "baselineBrier": 0.8549,
+            "improvement": 0.2105,
             "laterHitRatePct": 57.1,
             "rangeCoveragePct": 85.7
           }
@@ -788,8 +788,8 @@
       },
       "currencyScenarios": {
         "available": true,
-        "fxObservedAt": "2026-11-25T00:02:31.000Z",
-        "goldHistoryAsOf": "2026-11-25",
+        "fxObservedAt": "2026-11-26T00:02:31.000Z",
+        "goldHistoryAsOf": "2026-11-26",
         "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
         "contexts": [
           {
@@ -800,13 +800,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 369.59,
-              "middle": 393.84,
-              "high": 423.6
+              "low": 368.51,
+              "middle": 394.29,
+              "high": 425.62
             },
             "hypotheticalStress": {
-              "low": 367.74,
-              "high": 425.72
+              "low": 366.67,
+              "high": 427.75
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -818,13 +818,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 403.19,
-              "middle": 429.65,
-              "high": 462.11
+              "low": 402.01,
+              "middle": 430.14,
+              "high": 464.31
             },
             "hypotheticalStress": {
-              "low": 401.17,
-              "high": 464.42
+              "low": 400,
+              "high": 466.63
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -833,16 +833,16 @@
             "region": "Sri Lanka",
             "karat": 22,
             "unit": "LKR/gram",
-            "fxReference": 332.4243,
+            "fxReference": 332.12101,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 32762.7,
-              "middle": 34912.76,
-              "high": 37550.91
+              "low": 32637.47,
+              "middle": 34920.75,
+              "high": 37695.09
             },
             "hypotheticalStress": {
-              "low": 31779.82,
-              "high": 38677.44
+              "low": 31658.35,
+              "high": 38825.94
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -851,16 +851,16 @@
             "region": "Sri Lanka",
             "karat": 24,
             "unit": "LKR/gram",
-            "fxReference": 332.4243,
+            "fxReference": 332.12101,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 35741.13,
-              "middle": 38086.65,
-              "high": 40964.63
+              "low": 35604.52,
+              "middle": 38095.36,
+              "high": 41121.91
             },
             "hypotheticalStress": {
-              "low": 34668.9,
-              "high": 42193.57
+              "low": 34536.38,
+              "high": 42355.57
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
@@ -873,9 +873,9 @@
       "sessions": 63,
       "originalDirection": "rise",
       "scenario": {
-        "lowUsdOz": 3238.73,
-        "midUsdOz": 3757.28,
-        "highUsdOz": 4207.49
+        "lowUsdOz": 3215.46,
+        "midUsdOz": 3727.76,
+        "highUsdOz": 4121.08
       },
       "historicalConfidence": "NOT_PROVEN",
       "validation": {
@@ -899,8 +899,8 @@
       },
       "currencyScenarios": {
         "available": true,
-        "fxObservedAt": "2026-11-25T00:02:31.000Z",
-        "goldHistoryAsOf": "2026-11-25",
+        "fxObservedAt": "2026-11-26T00:02:31.000Z",
+        "goldHistoryAsOf": "2026-11-26",
         "label": "Gold historical analogue range + hypothetical FX stress, NOT a future FX prediction",
         "contexts": [
           {
@@ -911,13 +911,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 357.94,
-              "middle": 415.25,
-              "high": 465
+              "low": 355.37,
+              "middle": 411.99,
+              "high": 455.45
             },
             "hypotheticalStress": {
-              "low": 356.15,
-              "high": 467.32
+              "low": 353.59,
+              "high": 457.73
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -929,13 +929,13 @@
             "fxReference": 3.75,
             "fxStressPct": 0.5,
             "constantFx": {
-              "low": 390.48,
-              "middle": 453,
-              "high": 507.28
+              "low": 387.67,
+              "middle": 449.44,
+              "high": 496.86
             },
             "hypotheticalStress": {
-              "low": 388.53,
-              "high": 509.82
+              "low": 385.73,
+              "high": 499.34
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -944,16 +944,16 @@
             "region": "Sri Lanka",
             "karat": 22,
             "unit": "LKR/gram",
-            "fxReference": 332.4243,
+            "fxReference": 332.12101,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 31730,
-              "middle": 36810.26,
-              "high": 41220.98
+              "low": 31473.28,
+              "middle": 36487.73,
+              "high": 40337.58
             },
             "hypotheticalStress": {
-              "low": 30778.1,
-              "high": 42457.61
+              "low": 30529.08,
+              "high": 41547.71
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           },
@@ -962,16 +962,16 @@
             "region": "Sri Lanka",
             "karat": 24,
             "unit": "LKR/gram",
-            "fxReference": 332.4243,
+            "fxReference": 332.12101,
             "fxStressPct": 3,
             "constantFx": {
-              "low": 34614.54,
-              "middle": 40156.64,
-              "high": 44968.35
+              "low": 34334.48,
+              "middle": 39804.79,
+              "high": 44004.64
             },
             "hypotheticalStress": {
-              "low": 33576.1,
-              "high": 46317.4
+              "low": 33304.45,
+              "high": 45324.78
             },
             "caution": "FX movements are hypothetical sensitivities, not forecasted exchange rates. Taxes and jewellery fees excluded."
           }
