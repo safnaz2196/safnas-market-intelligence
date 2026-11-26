@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "version": "5.4",
-  "generatedAt": "2026-11-26T15:04:02.235Z",
+  "generatedAt": "2026-11-26T23:47:24.521Z",
   "status": "observed",
   "dateSemantics": "Approximate calendar windows, never a guaranteed date",
   "current": {
-    "usdOz": 3579.5,
-    "asOf": "2026-11-26T15:03:48Z",
+    "usdOz": 3562,
+    "asOf": "2026-11-26T23:47:18Z",
     "source": "https://api.gold-api.com/price/XAU",
     "historical": false,
     "fx": {
@@ -17,13 +17,13 @@
     },
     "localPerGram": {
       "SAR": {
-        "pure24": 431.563,
-        "jewellery22": 395.6,
+        "pure24": 429.454,
+        "jewellery22": 393.666,
         "currency": "SAR"
       },
       "LKR": {
-        "pure24": 38221.68,
-        "jewellery22": 35036.54,
+        "pure24": 38034.816,
+        "jewellery22": 34865.248,
         "currency": "LKR"
       }
     }
@@ -631,14 +631,14 @@
       },
       {
         "date": "2026-11-26",
-        "usdOz": 3594.3
+        "usdOz": 3594.2
       }
     ]
   },
   "indicators": {
-    "momentum5Pct": -2.475,
-    "momentum20Pct": -10.842,
-    "volatility20AnnualizedPct": 35.513
+    "momentum5Pct": -2.477,
+    "momentum20Pct": -10.845,
+    "volatility20AnnualizedPct": 35.511
   },
   "horizons": [
     {
@@ -766,21 +766,21 @@
   "evidence": [
     {
       "title": "Gold price momentum · 5 sessions",
-      "measurement": "-2.475%",
+      "measurement": "-2.477%",
       "interpretation": "Recently falling; downward momentum may persist or reverse.",
       "source": "https://xaus.com/api/v1/history",
       "asOf": "2026-11-26"
     },
     {
       "title": "Gold price momentum · 20 sessions",
-      "measurement": "-10.842%",
+      "measurement": "-10.845%",
       "interpretation": "Measured from past daily closes; historical direction alone cannot guarantee future movement.",
       "source": "https://xaus.com/api/v1/history",
       "asOf": "2026-11-26"
     },
     {
       "title": "20-session price volatility",
-      "measurement": "35.513% annualized",
+      "measurement": "35.511% annualized",
       "interpretation": "Historical fluctuation indicates how wide forecast scenarios may be. It is not a probability of loss.",
       "source": "https://xaus.com/api/v1/history",
       "asOf": "2026-11-26"
@@ -827,20 +827,20 @@
       "source": "https://xaus.com/api/v1/history",
       "asOf": "2026-11-26",
       "observations": 900,
-      "last": 3594.3,
+      "last": 3594.2,
       "rsi14": 33.79,
       "macd": {
-        "macd": -145.13,
+        "macd": -145.14,
         "signal": -116.42,
-        "histogram": -28.71
+        "histogram": -28.72
       },
-      "ma20": 3849.53,
+      "ma20": 3849.52,
       "ma50": 4048.29,
       "ma200": 4415.45,
       "bands": {
-        "upper": 4249.45,
-        "middle": 3849.53,
-        "lower": 3449.6
+        "upper": 4249.46,
+        "middle": 3849.52,
+        "lower": 3449.58
       },
       "volatilityAnnualizedPct": 35.51,
       "drawdown90Pct": -23.49,
@@ -858,14 +858,14 @@
         },
         {
           "name": "MACD (12,26,9)",
-          "value": -28.71,
+          "value": -28.72,
           "unit": "USD/oz spread",
           "reading": "Negative MACD gap",
           "note": "MACD is based on the same closing-price history as momentum."
         },
         {
           "name": "20-day band position",
-          "value": 18.09,
+          "value": 18.08,
           "unit": "% across bands",
           "reading": "Within statistical bands",
           "note": "Bands describe past dispersion, not guaranteed support or resistance."
@@ -977,9 +977,9 @@
       "schemaVersion": 1,
       "version": "5.8",
       "engine": "adaptive_four_model_causal_research",
-      "generatedAt": "2026-11-26T15:04:02.235Z",
+      "generatedAt": "2026-11-26T23:47:24.521Z",
       "historyAsOf": "2026-11-26",
-      "referenceUsdOz": 3594.3,
+      "referenceUsdOz": 3594.2,
       "historyCount": 900,
       "sources": [
         {
@@ -1020,7 +1020,7 @@
               "scenarios": {
                 "lowPct": -1.833,
                 "midPct": 0.284,
-                "highPct": 1.662
+                "highPct": 1.66
               },
               "medianReturnPct": 0.284,
               "direction": "rise",
@@ -1039,7 +1039,7 @@
               "scenarios": {
                 "lowPct": -1.833,
                 "midPct": 0.045,
-                "highPct": 1.662
+                "highPct": 1.66
               },
               "medianReturnPct": 0.045,
               "direction": "rise",
@@ -1058,7 +1058,7 @@
               "scenarios": {
                 "lowPct": -2.469,
                 "midPct": -0.027,
-                "highPct": 1.662
+                "highPct": 1.66
               },
               "medianReturnPct": -0.027,
               "direction": "rise",
@@ -1157,9 +1157,9 @@
             "highPct": 2.656
           },
           "indicativeUsdOzRange": {
-            "lowUsdOz": 3494.31,
-            "midUsdOz": 3597.39,
-            "highUsdOz": 3689.76
+            "lowUsdOz": 3494.21,
+            "midUsdOz": 3597.29,
+            "highUsdOz": 3689.66
           },
           "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
           "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -1327,9 +1327,9 @@
             "highPct": 3.134
           },
           "indicativeUsdOzRange": {
-            "lowUsdOz": 3464.4,
-            "midUsdOz": 3592.36,
-            "highUsdOz": 3706.95
+            "lowUsdOz": 3464.31,
+            "midUsdOz": 3592.26,
+            "highUsdOz": 3706.84
           },
           "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
           "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -1497,9 +1497,9 @@
             "highPct": 4.281
           },
           "indicativeUsdOzRange": {
-            "lowUsdOz": 3451.53,
-            "midUsdOz": 3602.06,
-            "highUsdOz": 3748.17
+            "lowUsdOz": 3451.44,
+            "midUsdOz": 3601.96,
+            "highUsdOz": 3748.07
           },
           "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
           "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -1667,9 +1667,9 @@
             "highPct": 5.865
           },
           "indicativeUsdOzRange": {
-            "lowUsdOz": 3421.63,
-            "midUsdOz": 3575.43,
-            "highUsdOz": 3805.11
+            "lowUsdOz": 3421.53,
+            "midUsdOz": 3575.33,
+            "highUsdOz": 3805
           },
           "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
           "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -1837,9 +1837,9 @@
             "highPct": 7.145
           },
           "indicativeUsdOzRange": {
-            "lowUsdOz": 3334.4,
-            "midUsdOz": 3567.67,
-            "highUsdOz": 3851.11
+            "lowUsdOz": 3334.3,
+            "midUsdOz": 3567.57,
+            "highUsdOz": 3851.01
           },
           "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
           "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -2007,9 +2007,9 @@
             "highPct": 14.656
           },
           "indicativeUsdOzRange": {
-            "lowUsdOz": 3215.46,
-            "midUsdOz": 3727.76,
-            "highUsdOz": 4121.08
+            "lowUsdOz": 3215.37,
+            "midUsdOz": 3727.65,
+            "highUsdOz": 4120.97
           },
           "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
           "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -2025,12 +2025,12 @@
     "ultra": {
       "version": "6.0",
       "status": "research_available",
-      "generatedAt": "2026-11-26T15:04:02.235Z",
+      "generatedAt": "2026-11-26T23:47:24.521Z",
       "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
     },
     "professional": {
       "version": "5.9",
-      "generatedAt": "2026-11-26T15:04:02.235Z",
+      "generatedAt": "2026-11-26T23:47:24.521Z",
       "status": "research_available",
       "summary": {
         "modelsCompared": 5,
@@ -2572,7 +2572,7 @@
     },
     "predictionHistory": {
       "version": "5.7",
-      "generatedAt": "2026-11-26T15:04:02.235Z",
+      "generatedAt": "2026-11-26T23:47:24.521Z",
       "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-prediction-history-v57.json",
       "recent": [
         {
@@ -2605,7 +2605,7 @@
           "rangePassLowUsdOz": null,
           "rangePassHighUsdOz": null,
           "observedCloses": 0,
-          "remainingCloses": 63,
+          "remainingCloses": null,
           "status": "pending",
           "sourceUrl": "https://xaus.com/api/v1/history",
           "evidence": {
@@ -2714,7 +2714,7 @@
           "rangePassLowUsdOz": 3576.33,
           "rangePassHighUsdOz": 3612.27,
           "observedCloses": 0,
-          "remainingCloses": 21,
+          "remainingCloses": null,
           "status": "pending",
           "sourceUrl": "https://xaus.com/api/v1/history",
           "evidence": {
@@ -2823,7 +2823,7 @@
           "rangePassLowUsdOz": 3576.33,
           "rangePassHighUsdOz": 3612.27,
           "observedCloses": 0,
-          "remainingCloses": 10,
+          "remainingCloses": null,
           "status": "pending",
           "sourceUrl": "https://xaus.com/api/v1/history",
           "evidence": {
@@ -2932,7 +2932,7 @@
           "rangePassLowUsdOz": null,
           "rangePassHighUsdOz": null,
           "observedCloses": 0,
-          "remainingCloses": 5,
+          "remainingCloses": null,
           "status": "pending",
           "sourceUrl": "https://xaus.com/api/v1/history",
           "evidence": {
@@ -3041,7 +3041,7 @@
           "rangePassLowUsdOz": 3576.33,
           "rangePassHighUsdOz": 3612.27,
           "observedCloses": 0,
-          "remainingCloses": 2,
+          "remainingCloses": null,
           "status": "pending",
           "sourceUrl": "https://xaus.com/api/v1/history",
           "evidence": {
@@ -3150,7 +3150,7 @@
           "rangePassLowUsdOz": 3576.33,
           "rangePassHighUsdOz": 3612.27,
           "observedCloses": 0,
-          "remainingCloses": 1,
+          "remainingCloses": null,
           "status": "pending",
           "sourceUrl": "https://xaus.com/api/v1/history",
           "evidence": {
@@ -3890,7 +3890,7 @@
     "kind": "evidence_based_research_not_live_prediction",
     "classification": "downward_pressure",
     "bullishDrivers": 1,
-    "bearishDrivers": 3,
+    "bearishDrivers": 4,
     "sourceSignals": [
       {
         "key": "Five-session momentum",
@@ -3904,7 +3904,7 @@
       },
       {
         "key": "20-session trend",
-        "measurement": "-10.84%",
+        "measurement": "-10.85%",
         "pressure": "down",
         "weight": 0.8,
         "explanation": "A longer recent trend is context, not a buy/sell instruction.",
@@ -3934,13 +3934,13 @@
       },
       {
         "key": "Latest spot vs last historical close",
-        "measurement": "-0.412%",
-        "pressure": "neutral",
+        "measurement": "-0.896%",
+        "pressure": "down",
         "weight": 0.55,
         "explanation": "Intraday spot versus the most recent dated close, which may reflect different quote conventions.",
-        "asOf": "2026-11-26T15:03:48Z",
+        "asOf": "2026-11-26T23:47:18Z",
         "source": "https://api.gold-api.com/price/XAU",
-        "rawSign": 0
+        "rawSign": -1
       }
     ],
     "driverReasons": [
@@ -3963,7 +3963,7 @@
       {
         "direction": "down",
         "title": "20-session trend",
-        "evidence": "-10.84%",
+        "evidence": "-10.85%",
         "explanation": "A longer recent trend is context, not a buy/sell instruction.",
         "asOf": "2026-11-26",
         "source": "https://xaus.com/api/v1/history"
@@ -3979,19 +3979,19 @@
       {
         "direction": "risk",
         "title": "High historical volatility",
-        "evidence": "35.513% annualized (20 sessions)",
+        "evidence": "35.511% annualized (20 sessions)",
         "explanation": "Outcomes may swing widely in either direction. Do not interpret scenario percentiles as guaranteed limits.",
         "asOf": "2026-11-26",
         "source": "https://xaus.com/api/v1/history"
       }
     ],
     "levels": {
-      "lastHistoryClose": 3594.3,
-      "movingAverage20": 3849.525,
-      "movingAverage50": 4048.292,
+      "lastHistoryClose": 3594.2,
+      "movingAverage20": 3849.52,
+      "movingAverage50": 4048.29,
       "prior20High": 4114.5,
       "prior20Low": 3515.4,
-      "spotVsLastHistoryClosePct": -0.412
+      "spotVsLastHistoryClosePct": -0.896
     },
     "volatilityRisk": "high",
     "modelAudit": {
@@ -4060,7 +4060,7 @@
       "A 3/7/14/30-day window is a rough calendar period, not a precise event date.",
       "SAR/LKR outcomes also depend on currency rates; spot and local jewellery prices can differ."
     ],
-    "evaluatedAt": "2026-11-26T15:04:02.235Z"
+    "evaluatedAt": "2026-11-26T23:47:24.521Z"
   },
   "overallCaution": "Forecasts are statistical scenarios based on past observations, not predictions of an exact price or date. If model calibration does not outperform a historical baseline, no predictive edge is claimed. FX changes can alter SAR and LKR outcomes.",
   "sources": [

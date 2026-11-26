@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "version": "5.8",
   "engine": "adaptive_four_model_causal_research",
-  "generatedAt": "2026-11-26T15:04:02.235Z",
+  "generatedAt": "2026-11-26T23:47:24.521Z",
   "historyAsOf": "2026-11-26",
-  "referenceUsdOz": 3594.3,
+  "referenceUsdOz": 3594.2,
   "historyCount": 900,
   "sources": [
     {
@@ -45,7 +45,7 @@
           "scenarios": {
             "lowPct": -1.833,
             "midPct": 0.284,
-            "highPct": 1.662
+            "highPct": 1.66
           },
           "medianReturnPct": 0.284,
           "direction": "rise",
@@ -64,7 +64,7 @@
           "scenarios": {
             "lowPct": -1.833,
             "midPct": 0.045,
-            "highPct": 1.662
+            "highPct": 1.66
           },
           "medianReturnPct": 0.045,
           "direction": "rise",
@@ -83,7 +83,7 @@
           "scenarios": {
             "lowPct": -2.469,
             "midPct": -0.027,
-            "highPct": 1.662
+            "highPct": 1.66
           },
           "medianReturnPct": -0.027,
           "direction": "rise",
@@ -182,9 +182,9 @@
         "highPct": 2.656
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3494.31,
-        "midUsdOz": 3597.39,
-        "highUsdOz": 3689.76
+        "lowUsdOz": 3494.21,
+        "midUsdOz": 3597.29,
+        "highUsdOz": 3689.66
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -352,9 +352,9 @@
         "highPct": 3.134
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3464.4,
-        "midUsdOz": 3592.36,
-        "highUsdOz": 3706.95
+        "lowUsdOz": 3464.31,
+        "midUsdOz": 3592.26,
+        "highUsdOz": 3706.84
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -522,9 +522,9 @@
         "highPct": 4.281
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3451.53,
-        "midUsdOz": 3602.06,
-        "highUsdOz": 3748.17
+        "lowUsdOz": 3451.44,
+        "midUsdOz": 3601.96,
+        "highUsdOz": 3748.07
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -692,9 +692,9 @@
         "highPct": 5.865
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3421.63,
-        "midUsdOz": 3575.43,
-        "highUsdOz": 3805.11
+        "lowUsdOz": 3421.53,
+        "midUsdOz": 3575.33,
+        "highUsdOz": 3805
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -862,9 +862,9 @@
         "highPct": 7.145
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3334.4,
-        "midUsdOz": 3567.67,
-        "highUsdOz": 3851.11
+        "lowUsdOz": 3334.3,
+        "midUsdOz": 3567.57,
+        "highUsdOz": 3851.01
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
@@ -1032,9 +1032,9 @@
         "highPct": 14.656
       },
       "indicativeUsdOzRange": {
-        "lowUsdOz": 3215.46,
-        "midUsdOz": 3727.76,
-        "highUsdOz": 4121.08
+        "lowUsdOz": 3215.37,
+        "midUsdOz": 3727.65,
+        "highUsdOz": 4120.97
       },
       "explanation": "Research only: disagreement and model errors prevent a reliable price-direction claim.",
       "note": "Percentage values represent frequencies from matched historical cases, not a validated probability of future returns."
