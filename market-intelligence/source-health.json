@@ -4,8 +4,8 @@
     "asOf": "2026-11-26",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-26T11:25:02.602Z",
-    "lastSuccessAt": "2026-11-26T11:25:02.602Z",
+    "lastAttemptAt": "2026-11-26T21:51:45.135Z",
+    "lastSuccessAt": "2026-11-26T21:51:45.135Z",
     "failures": 0,
     "note": "CSE daily closes validated and appended to dated archive"
   },
@@ -14,8 +14,8 @@
     "asOf": "2025",
     "ageDays": null,
     "ageYears": 1,
-    "lastAttemptAt": "2026-11-26T11:25:02.602Z",
-    "lastSuccessAt": "2026-11-26T11:25:02.602Z",
+    "lastAttemptAt": "2026-11-26T21:51:45.135Z",
+    "lastSuccessAt": "2026-11-26T21:51:45.135Z",
     "failures": 0,
     "note": "6 of 6 annual indicators refreshed"
   },
@@ -24,28 +24,28 @@
     "asOf": "2026-11-26",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-26T11:25:02.602Z",
-    "lastSuccessAt": "2026-11-26T11:25:02.602Z",
+    "lastAttemptAt": "2026-11-26T21:51:45.135Z",
+    "lastSuccessAt": "2026-11-26T21:51:45.135Z",
     "failures": 0,
     "note": "Provider response accepted"
   },
   "shares": {
     "status": "current",
-    "asOf": "2026-11-25",
-    "ageDays": 1,
+    "asOf": "2026-11-26",
+    "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-26T11:25:02.602Z",
-    "lastSuccessAt": "2026-11-26T11:25:02.602Z",
+    "lastAttemptAt": "2026-11-26T21:51:45.135Z",
+    "lastSuccessAt": "2026-11-26T21:51:45.135Z",
     "failures": 0,
-    "note": "Cached · 16 verified CSE last-traded shares, as of 2026-11-25. Not streaming. Direct request unavailable (HTTP 403)."
+    "note": "Cached · 16 verified CSE last-traded shares, as of 2026-11-26. Not streaming. Direct request unavailable (HTTP 403)."
   },
   "sl20": {
     "status": "retrieved_only",
     "asOf": "2026-11-26",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-26T11:25:02.602Z",
-    "lastSuccessAt": "2026-11-26T11:25:02.602Z",
+    "lastAttemptAt": "2026-11-26T21:51:45.135Z",
+    "lastSuccessAt": "2026-11-26T21:51:45.135Z",
     "failures": 0,
     "note": "Index snapshot retrieved; official trade date not verified"
   },
@@ -54,8 +54,8 @@
     "asOf": "2026-11-26",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-26T11:25:02.602Z",
-    "lastSuccessAt": "2026-11-26T11:25:02.602Z",
+    "lastAttemptAt": "2026-11-26T21:51:45.135Z",
+    "lastSuccessAt": "2026-11-26T21:51:45.135Z",
     "failures": 0,
     "note": "Verified CSE daily market turnover (LKR), trade date 2026-11-26. Not streaming."
   },
@@ -64,8 +64,8 @@
     "asOf": "2026-11-26",
     "ageDays": 0,
     "ageYears": null,
-    "lastAttemptAt": "2026-11-26T11:25:02.602Z",
-    "lastSuccessAt": "2026-11-26T11:25:02.602Z",
+    "lastAttemptAt": "2026-11-26T21:51:45.135Z",
+    "lastSuccessAt": "2026-11-26T21:51:45.135Z",
     "failures": 0,
     "note": "Provider response accepted"
   }

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 5,
   "engineVersion": "5.3.0",
-  "generatedAt": "2026-11-26T12:55:00.377Z",
-  "sourceSnapshotAt": "2026-11-26T11:25:02.602Z",
+  "generatedAt": "2026-11-26T21:51:50.395Z",
+  "sourceSnapshotAt": "2026-11-26T21:51:45.135Z",
   "status": "research_available",
   "briefing": {
     "title": "Sri Lanka · Autonomous Market Brief",
@@ -41,7 +41,7 @@
         "title": "4 headlines matched economic research topics",
         "detail": "Topic matching identifies subjects to investigate; it cannot confirm causation or returns.",
         "evidenceIds": [
-          "news-2",
+          "news-1",
           "news-3",
           "news-6"
         ]
@@ -89,6 +89,46 @@
   "news": [
     {
       "id": "news-1",
+      "title": "Top 36-pct PAYE tax threshold to be raised above 500,000 rupees: President",
+      "url": "https://economynext.com/top-36-pct-paye-tax-threshold-to-be-raised-above-500000-rupees-president-291260/",
+      "date": "2026-11-26",
+      "publisher": "EconomyNext",
+      "topics": [
+        "Regulation"
+      ],
+      "impactNote": "Policy changes may affect costs and demand; direction and magnitude require verification."
+    },
+    {
+      "id": "news-2",
+      "title": "Sri Lanka inks US$200mn ADB loan to build capacity of MSMEs",
+      "url": "https://economynext.com/sri-lanka-inks-us200mn-adb-loan-to-build-capacity-of-msmes-291257/",
+      "date": "2026-11-26",
+      "publisher": "EconomyNext",
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+    },
+    {
+      "id": "news-3",
+      "title": "Sri Lanka rupee closes at 332.80/333.10 to US dollar spot, bond yields steady",
+      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-80-333-10-to-us-dollar-spot-bond-yields-steady-291263/",
+      "date": "2026-11-26",
+      "publisher": "EconomyNext",
+      "topics": [
+        "Currency"
+      ],
+      "impactNote": "Currency changes can affect importers, exporters and foreign-currency debts."
+    },
+    {
+      "id": "news-4",
+      "title": "Sri Lanka stocks close down 0.33-pct",
+      "url": "https://economynext.com/sri-lanka-stocks-close-down-0-33-pct-291250/",
+      "date": "2026-11-26",
+      "publisher": "EconomyNext",
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+    },
+    {
+      "id": "news-5",
       "title": "Sri Lanka’s electronics, spices export help cushion fall in garment, tea foreign buying",
       "url": "https://economynext.com/sri-lankas-electronics-spices-export-help-cushion-fall-in-garment-tea-foreign-buying-291247/",
       "date": "2026-11-26",
@@ -97,7 +137,7 @@
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
-      "id": "news-2",
+      "id": "news-6",
       "title": "Sri Lanka’s Janashakthi Finance meets central bank capital adequacy requirements",
       "url": "https://economynext.com/sri-lankas-janashakthi-finance-meets-central-bank-capital-adequacy-requirements-291239/",
       "date": "2026-11-26",
@@ -108,7 +148,7 @@
       "impactNote": "Interest rates can affect bank margins, borrowing costs and demand; company effects are unverified."
     },
     {
-      "id": "news-3",
+      "id": "news-7",
       "title": "Sri Lanka rupee weakens to 332.90/333.10 against US dollar spot, bond yields steady",
       "url": "https://economynext.com/sri-lanka-rupee-weakens-to-332-90-333-10-against-us-dollar-spot-bond-yields-steady-291190/",
       "date": "2026-11-26",
@@ -117,46 +157,6 @@
         "Currency"
       ],
       "impactNote": "Currency changes can affect importers, exporters and foreign-currency debts."
-    },
-    {
-      "id": "news-4",
-      "title": "APAC banks’ resilient fundamentals support ‘Neutral’ 2027 outlooks: Fitch",
-      "url": "https://economynext.com/apac-banks-resilient-fundamentals-support-neutral-2027-outlooks-fitch-291214/",
-      "date": "2026-11-26",
-      "publisher": "EconomyNext",
-      "topics": [],
-      "impactNote": "Relevant headline recorded. Financial impact is not verified."
-    },
-    {
-      "id": "news-5",
-      "title": "Sri Lanka stocks dip 0.13-pct, banks lead turnover",
-      "url": "https://economynext.com/sri-lanka-stocks-dip-0-13-pct-banks-lead-turnover-291183/",
-      "date": "2026-11-26",
-      "publisher": "EconomyNext",
-      "topics": [],
-      "impactNote": "Relevant headline recorded. Financial impact is not verified."
-    },
-    {
-      "id": "news-6",
-      "title": "Sri Lanka rejects all bids at Treasury bill auction following rate hike",
-      "url": "https://economynext.com/sri-lanka-rejects-all-bids-at-treasury-bill-auction-following-rate-hike-291192/",
-      "date": "2026-11-26",
-      "publisher": "EconomyNext",
-      "topics": [
-        "Interest rates"
-      ],
-      "impactNote": "Interest rates can affect bank margins, borrowing costs and demand; company effects are unverified."
-    },
-    {
-      "id": "news-7",
-      "title": "Sri Lanka loses Rs549bn to alcohol, tobacco harm against Rs347bn tax take",
-      "url": "https://economynext.com/sri-lanka-loses-rs549bn-to-alcohol-tobacco-harm-against-rs347bn-tax-take-291178/",
-      "date": "2026-11-26",
-      "publisher": "EconomyNext",
-      "topics": [
-        "Regulation"
-      ],
-      "impactNote": "Policy changes may affect costs and demand; direction and magnitude require verification."
     }
   ],
   "companies": [
@@ -1096,8 +1096,8 @@
         "marketStatus": "last traded (may be prior session)"
       },
       "recentHeadlines": [
-        "news-1",
-        "news-2"
+        "news-2",
+        "news-3"
       ],
       "fundamentals": {
         "status": "not_available",
@@ -1553,50 +1553,50 @@
     },
     {
       "id": "news-1",
+      "label": "Publisher headline · Top 36-pct PAYE tax threshold to be raised above 500,000 rupees: President",
+      "url": "https://economynext.com/top-36-pct-paye-tax-threshold-to-be-raised-above-500000-rupees-president-291260/",
+      "asOf": "2026-11-26",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-2",
+      "label": "Publisher headline · Sri Lanka inks US$200mn ADB loan to build capacity of MSMEs",
+      "url": "https://economynext.com/sri-lanka-inks-us200mn-adb-loan-to-build-capacity-of-msmes-291257/",
+      "asOf": "2026-11-26",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-3",
+      "label": "Publisher headline · Sri Lanka rupee closes at 332.80/333.10 to US dollar spot, bond yields steady",
+      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-80-333-10-to-us-dollar-spot-bond-yields-steady-291263/",
+      "asOf": "2026-11-26",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-4",
+      "label": "Publisher headline · Sri Lanka stocks close down 0.33-pct",
+      "url": "https://economynext.com/sri-lanka-stocks-close-down-0-33-pct-291250/",
+      "asOf": "2026-11-26",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-5",
       "label": "Publisher headline · Sri Lanka’s electronics, spices export help cushion fall in garment, tea foreign buying",
       "url": "https://economynext.com/sri-lankas-electronics-spices-export-help-cushion-fall-in-garment-tea-foreign-buying-291247/",
       "asOf": "2026-11-26",
       "kind": "dated_headline"
     },
     {
-      "id": "news-2",
+      "id": "news-6",
       "label": "Publisher headline · Sri Lanka’s Janashakthi Finance meets central bank capital adequacy requirements",
       "url": "https://economynext.com/sri-lankas-janashakthi-finance-meets-central-bank-capital-adequacy-requirements-291239/",
       "asOf": "2026-11-26",
       "kind": "dated_headline"
     },
     {
-      "id": "news-3",
+      "id": "news-7",
       "label": "Publisher headline · Sri Lanka rupee weakens to 332.90/333.10 against US dollar spot, bond yields steady",
       "url": "https://economynext.com/sri-lanka-rupee-weakens-to-332-90-333-10-against-us-dollar-spot-bond-yields-steady-291190/",
-      "asOf": "2026-11-26",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-4",
-      "label": "Publisher headline · APAC banks’ resilient fundamentals support ‘Neutral’ 2027 outlooks: Fitch",
-      "url": "https://economynext.com/apac-banks-resilient-fundamentals-support-neutral-2027-outlooks-fitch-291214/",
-      "asOf": "2026-11-26",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-5",
-      "label": "Publisher headline · Sri Lanka stocks dip 0.13-pct, banks lead turnover",
-      "url": "https://economynext.com/sri-lanka-stocks-dip-0-13-pct-banks-lead-turnover-291183/",
-      "asOf": "2026-11-26",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-6",
-      "label": "Publisher headline · Sri Lanka rejects all bids at Treasury bill auction following rate hike",
-      "url": "https://economynext.com/sri-lanka-rejects-all-bids-at-treasury-bill-auction-following-rate-hike-291192/",
-      "asOf": "2026-11-26",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-7",
-      "label": "Publisher headline · Sri Lanka loses Rs549bn to alcohol, tobacco harm against Rs347bn tax take",
-      "url": "https://economynext.com/sri-lanka-loses-rs549bn-to-alcohol-tobacco-harm-against-rs347bn-tax-take-291178/",
       "asOf": "2026-11-26",
       "kind": "dated_headline"
     },
