@@ -1,8 +1,8 @@
 {
   "schemaVersion": 5,
   "engineVersion": "5.3.0",
-  "generatedAt": "2026-11-27T12:49:47.784Z",
-  "sourceSnapshotAt": "2026-11-27T11:19:43.058Z",
+  "generatedAt": "2026-11-27T21:35:21.207Z",
+  "sourceSnapshotAt": "2026-11-27T21:35:13.605Z",
   "status": "research_available",
   "briefing": {
     "title": "Sri Lanka · Autonomous Market Brief",
@@ -33,15 +33,6 @@
         "detail": "LKR 1,434,258,940 traded in the recorded session on 2026-11-27. This measures market activity, not market direction.",
         "evidenceIds": [
           "cse-turnover"
-        ]
-      },
-      {
-        "id": "news-topics",
-        "tone": "info",
-        "title": "1 headlines matched economic research topics",
-        "detail": "Topic matching identifies subjects to investigate; it cannot confirm causation or returns.",
-        "evidenceIds": [
-          "news-6"
         ]
       },
       {
@@ -87,6 +78,24 @@
   "news": [
     {
       "id": "news-1",
+      "title": "EXPLAINER – Why S&P warns Sri Lanka’s recovery facing storm clouds ahead?",
+      "url": "https://economynext.com/explainer-why-sp-warns-sri-lankas-recovery-facing-storm-clouds-ahead-291368/",
+      "date": "2026-11-27",
+      "publisher": "EconomyNext",
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+    },
+    {
+      "id": "news-2",
+      "title": "S&P raises Sri Lanka’s credit rating to B- on a stable outlook",
+      "url": "https://economynext.com/sp-raises-sri-lankas-credit-rating-to-b-on-a-stable-outlook-291366/",
+      "date": "2026-11-27",
+      "publisher": "EconomyNext",
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+    },
+    {
+      "id": "news-3",
       "title": "Sri Lanka designates 5.7 km Port Access Elevated Road as an expressway",
       "url": "https://economynext.com/sri-lanka-designates-5-7-km-port-access-elevated-road-as-an-expressway-291351/",
       "date": "2026-11-27",
@@ -95,7 +104,7 @@
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
-      "id": "news-2",
+      "id": "news-4",
       "title": "Sri Lanka stocks close down 0.22-pct, dragged by banks",
       "url": "https://economynext.com/sri-lanka-stocks-close-down-0-22-pct-dragged-by-banks-291349/",
       "date": "2026-11-27",
@@ -104,7 +113,7 @@
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
-      "id": "news-3",
+      "id": "news-5",
       "title": "Sri Lanka’s CBC Finance to raise Rs1bn via debenture sale",
       "url": "https://economynext.com/sri-lankas-cbc-finance-to-raise-rs1bn-via-debenture-sale-291341/",
       "date": "2026-11-27",
@@ -113,7 +122,7 @@
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
-      "id": "news-4",
+      "id": "news-6",
       "title": "Sri Lanka’s Laugfs Gas faces trading suspension over delayed annual report",
       "url": "https://economynext.com/sri-lankas-laugfs-gas-faces-trading-suspension-over-delayed-annual-report-291335/",
       "date": "2026-11-27",
@@ -122,29 +131,9 @@
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
-      "id": "news-5",
+      "id": "news-7",
       "title": "Sri Lanka state fuel firms slash over 1,000 jobs with AI queues",
       "url": "https://economynext.com/sri-lanka-state-fuel-firms-slash-over-1000-jobs-with-ai-queues-291321/",
-      "date": "2026-11-27",
-      "publisher": "EconomyNext",
-      "topics": [],
-      "impactNote": "Relevant headline recorded. Financial impact is not verified."
-    },
-    {
-      "id": "news-6",
-      "title": "Sri Lanka rupee at 332.90/95 to US dollar spot, bond yields steady",
-      "url": "https://economynext.com/sri-lanka-rupee-at-332-90-95-to-us-dollar-spot-bond-yields-steady-291320/",
-      "date": "2026-11-27",
-      "publisher": "EconomyNext",
-      "topics": [
-        "Currency"
-      ],
-      "impactNote": "Currency changes can affect importers, exporters and foreign-currency debts."
-    },
-    {
-      "id": "news-7",
-      "title": "Sri Lanka stocks marginally higher, led by Distilleries and Hemas",
-      "url": "https://economynext.com/sri-lanka-stocks-marginally-higher-led-by-distilleries-and-hemas-291306/",
       "date": "2026-11-27",
       "publisher": "EconomyNext",
       "topics": [],
@@ -838,9 +827,7 @@
         "low": 58.3,
         "marketStatus": "last traded (may be prior session)"
       },
-      "recentHeadlines": [
-        "news-7"
-      ],
+      "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
@@ -1175,9 +1162,7 @@
         "low": 31.5,
         "marketStatus": "last traded (may be prior session)"
       },
-      "recentHeadlines": [
-        "news-7"
-      ],
+      "recentHeadlines": [],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
@@ -1549,50 +1534,50 @@
     },
     {
       "id": "news-1",
+      "label": "Publisher headline · EXPLAINER – Why S&P warns Sri Lanka’s recovery facing storm clouds ahead?",
+      "url": "https://economynext.com/explainer-why-sp-warns-sri-lankas-recovery-facing-storm-clouds-ahead-291368/",
+      "asOf": "2026-11-27",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-2",
+      "label": "Publisher headline · S&P raises Sri Lanka’s credit rating to B- on a stable outlook",
+      "url": "https://economynext.com/sp-raises-sri-lankas-credit-rating-to-b-on-a-stable-outlook-291366/",
+      "asOf": "2026-11-27",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-3",
       "label": "Publisher headline · Sri Lanka designates 5.7 km Port Access Elevated Road as an expressway",
       "url": "https://economynext.com/sri-lanka-designates-5-7-km-port-access-elevated-road-as-an-expressway-291351/",
       "asOf": "2026-11-27",
       "kind": "dated_headline"
     },
     {
-      "id": "news-2",
+      "id": "news-4",
       "label": "Publisher headline · Sri Lanka stocks close down 0.22-pct, dragged by banks",
       "url": "https://economynext.com/sri-lanka-stocks-close-down-0-22-pct-dragged-by-banks-291349/",
       "asOf": "2026-11-27",
       "kind": "dated_headline"
     },
     {
-      "id": "news-3",
+      "id": "news-5",
       "label": "Publisher headline · Sri Lanka’s CBC Finance to raise Rs1bn via debenture sale",
       "url": "https://economynext.com/sri-lankas-cbc-finance-to-raise-rs1bn-via-debenture-sale-291341/",
       "asOf": "2026-11-27",
       "kind": "dated_headline"
     },
     {
-      "id": "news-4",
+      "id": "news-6",
       "label": "Publisher headline · Sri Lanka’s Laugfs Gas faces trading suspension over delayed annual report",
       "url": "https://economynext.com/sri-lankas-laugfs-gas-faces-trading-suspension-over-delayed-annual-report-291335/",
       "asOf": "2026-11-27",
       "kind": "dated_headline"
     },
     {
-      "id": "news-5",
+      "id": "news-7",
       "label": "Publisher headline · Sri Lanka state fuel firms slash over 1,000 jobs with AI queues",
       "url": "https://economynext.com/sri-lanka-state-fuel-firms-slash-over-1000-jobs-with-ai-queues-291321/",
-      "asOf": "2026-11-27",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-6",
-      "label": "Publisher headline · Sri Lanka rupee at 332.90/95 to US dollar spot, bond yields steady",
-      "url": "https://economynext.com/sri-lanka-rupee-at-332-90-95-to-us-dollar-spot-bond-yields-steady-291320/",
-      "asOf": "2026-11-27",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-7",
-      "label": "Publisher headline · Sri Lanka stocks marginally higher, led by Distilleries and Hemas",
-      "url": "https://economynext.com/sri-lanka-stocks-marginally-higher-led-by-distilleries-and-hemas-291306/",
       "asOf": "2026-11-27",
       "kind": "dated_headline"
     },
