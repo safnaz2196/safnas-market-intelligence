@@ -1,8 +1,8 @@
 {
   "schemaVersion": 5,
   "engineVersion": "5.3.0",
-  "generatedAt": "2026-11-26T21:51:50.395Z",
-  "sourceSnapshotAt": "2026-11-26T21:51:45.135Z",
+  "generatedAt": "2026-11-27T11:19:48.749Z",
+  "sourceSnapshotAt": "2026-11-27T11:19:43.058Z",
   "status": "research_available",
   "briefing": {
     "title": "Sri Lanka · Autonomous Market Brief",
@@ -12,7 +12,7 @@
         "id": "aspi",
         "tone": "neutral",
         "title": "ASPI decreased in the last recorded session",
-        "detail": "Verified close 21244.91 on 2026-11-26 (-0.33% versus previous close).",
+        "detail": "Verified close 21198.24 on 2026-11-27 (-0.22% versus previous close).",
         "evidenceIds": [
           "aspi"
         ]
@@ -21,7 +21,7 @@
         "id": "avg20",
         "tone": "info",
         "title": "Historical 20-session checkpoint",
-        "detail": "The latest ASPI close is below its 20-session average of 21251.36. This does not predict future returns.",
+        "detail": "The latest ASPI close is below its 20-session average of 21298.82. This does not predict future returns.",
         "evidenceIds": [
           "aspi"
         ]
@@ -30,7 +30,7 @@
         "id": "cse-turnover",
         "tone": "info",
         "title": "Verified CSE daily market turnover",
-        "detail": "LKR 2,654,050,300 traded in the recorded session on 2026-11-26. This measures market activity, not market direction.",
+        "detail": "LKR 1,434,258,940 traded in the recorded session on 2026-11-27. This measures market activity, not market direction.",
         "evidenceIds": [
           "cse-turnover"
         ]
@@ -38,11 +38,9 @@
       {
         "id": "news-topics",
         "tone": "info",
-        "title": "4 headlines matched economic research topics",
+        "title": "1 headlines matched economic research topics",
         "detail": "Topic matching identifies subjects to investigate; it cannot confirm causation or returns.",
         "evidenceIds": [
-          "news-1",
-          "news-3",
           "news-6"
         ]
       },
@@ -61,102 +59,96 @@
   },
   "market": {
     "status": "current",
-    "asOf": "2026-11-26",
+    "asOf": "2026-11-27",
     "ageDays": 0,
-    "close": 21244.91,
-    "lastObservedClose": 21244.91,
-    "changePct": -0.33,
-    "average20": 21251.36,
-    "annualizedHistoricalVolatilityPct": 19.68,
+    "close": 21198.24,
+    "lastObservedClose": 21198.24,
+    "changePct": -0.22,
+    "average20": 21298.82,
+    "annualizedHistoricalVolatilityPct": 19.34,
     "observations": 65,
     "modelAudit": {
       "edgeDemonstrated": true,
       "audit5": true,
       "audit20": true,
-      "journalResolved": 3,
+      "journalResolved": 4,
       "notice": "Backtesting does not establish reliable future prediction."
     },
     "turnover": {
-      "valueLKR": 2654050300,
-      "asOf": "2026-11-26",
+      "valueLKR": 1434258940,
+      "asOf": "2026-11-27",
       "status": "dated_observation",
       "sourceURL": "https://www.cse.lk/api/dailyMarketSummery",
-      "sharesTraded": 89319488,
-      "tradeCount": 19517,
+      "sharesTraded": 39477612,
+      "tradeCount": 15692,
       "notice": "CSE daily market equity turnover, recorded at the stated trade date. Not live streaming."
     }
   },
   "news": [
     {
       "id": "news-1",
-      "title": "Top 36-pct PAYE tax threshold to be raised above 500,000 rupees: President",
-      "url": "https://economynext.com/top-36-pct-paye-tax-threshold-to-be-raised-above-500000-rupees-president-291260/",
-      "date": "2026-11-26",
+      "title": "Sri Lanka designates 5.7 km Port Access Elevated Road as an expressway",
+      "url": "https://economynext.com/sri-lanka-designates-5-7-km-port-access-elevated-road-as-an-expressway-291351/",
+      "date": "2026-11-27",
       "publisher": "EconomyNext",
-      "topics": [
-        "Regulation"
-      ],
-      "impactNote": "Policy changes may affect costs and demand; direction and magnitude require verification."
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
       "id": "news-2",
-      "title": "Sri Lanka inks US$200mn ADB loan to build capacity of MSMEs",
-      "url": "https://economynext.com/sri-lanka-inks-us200mn-adb-loan-to-build-capacity-of-msmes-291257/",
-      "date": "2026-11-26",
+      "title": "Sri Lanka stocks close down 0.22-pct, dragged by banks",
+      "url": "https://economynext.com/sri-lanka-stocks-close-down-0-22-pct-dragged-by-banks-291349/",
+      "date": "2026-11-27",
       "publisher": "EconomyNext",
       "topics": [],
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
       "id": "news-3",
-      "title": "Sri Lanka rupee closes at 332.80/333.10 to US dollar spot, bond yields steady",
-      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-80-333-10-to-us-dollar-spot-bond-yields-steady-291263/",
-      "date": "2026-11-26",
+      "title": "Sri Lanka’s CBC Finance to raise Rs1bn via debenture sale",
+      "url": "https://economynext.com/sri-lankas-cbc-finance-to-raise-rs1bn-via-debenture-sale-291341/",
+      "date": "2026-11-27",
       "publisher": "EconomyNext",
-      "topics": [
-        "Currency"
-      ],
-      "impactNote": "Currency changes can affect importers, exporters and foreign-currency debts."
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
       "id": "news-4",
-      "title": "Sri Lanka stocks close down 0.33-pct",
-      "url": "https://economynext.com/sri-lanka-stocks-close-down-0-33-pct-291250/",
-      "date": "2026-11-26",
+      "title": "Sri Lanka’s Laugfs Gas faces trading suspension over delayed annual report",
+      "url": "https://economynext.com/sri-lankas-laugfs-gas-faces-trading-suspension-over-delayed-annual-report-291335/",
+      "date": "2026-11-27",
       "publisher": "EconomyNext",
       "topics": [],
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
       "id": "news-5",
-      "title": "Sri Lanka’s electronics, spices export help cushion fall in garment, tea foreign buying",
-      "url": "https://economynext.com/sri-lankas-electronics-spices-export-help-cushion-fall-in-garment-tea-foreign-buying-291247/",
-      "date": "2026-11-26",
+      "title": "Sri Lanka state fuel firms slash over 1,000 jobs with AI queues",
+      "url": "https://economynext.com/sri-lanka-state-fuel-firms-slash-over-1000-jobs-with-ai-queues-291321/",
+      "date": "2026-11-27",
       "publisher": "EconomyNext",
       "topics": [],
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
       "id": "news-6",
-      "title": "Sri Lanka’s Janashakthi Finance meets central bank capital adequacy requirements",
-      "url": "https://economynext.com/sri-lankas-janashakthi-finance-meets-central-bank-capital-adequacy-requirements-291239/",
-      "date": "2026-11-26",
-      "publisher": "EconomyNext",
-      "topics": [
-        "Interest rates"
-      ],
-      "impactNote": "Interest rates can affect bank margins, borrowing costs and demand; company effects are unverified."
-    },
-    {
-      "id": "news-7",
-      "title": "Sri Lanka rupee weakens to 332.90/333.10 against US dollar spot, bond yields steady",
-      "url": "https://economynext.com/sri-lanka-rupee-weakens-to-332-90-333-10-against-us-dollar-spot-bond-yields-steady-291190/",
-      "date": "2026-11-26",
+      "title": "Sri Lanka rupee at 332.90/95 to US dollar spot, bond yields steady",
+      "url": "https://economynext.com/sri-lanka-rupee-at-332-90-95-to-us-dollar-spot-bond-yields-steady-291320/",
+      "date": "2026-11-27",
       "publisher": "EconomyNext",
       "topics": [
         "Currency"
       ],
       "impactNote": "Currency changes can affect importers, exporters and foreign-currency debts."
+    },
+    {
+      "id": "news-7",
+      "title": "Sri Lanka stocks marginally higher, led by Distilleries and Hemas",
+      "url": "https://economynext.com/sri-lanka-stocks-marginally-higher-led-by-distilleries-and-hemas-291306/",
+      "date": "2026-11-27",
+      "publisher": "EconomyNext",
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
     }
   ],
   "companies": [
@@ -846,7 +838,9 @@
         "low": 58.2,
         "marketStatus": "last traded (may be prior session)"
       },
-      "recentHeadlines": [],
+      "recentHeadlines": [
+        "news-7"
+      ],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
@@ -1096,8 +1090,8 @@
         "marketStatus": "last traded (may be prior session)"
       },
       "recentHeadlines": [
-        "news-2",
-        "news-3"
+        "news-1",
+        "news-2"
       ],
       "fundamentals": {
         "status": "not_available",
@@ -1181,7 +1175,9 @@
         "low": 31.7,
         "marketStatus": "last traded (may be prior session)"
       },
-      "recentHeadlines": [],
+      "recentHeadlines": [
+        "news-7"
+      ],
       "fundamentals": {
         "status": "not_available",
         "reason": "Original company financial statements have not been verified by the collector."
@@ -1541,63 +1537,63 @@
       "id": "aspi",
       "label": "ASPI dated observations · CSE",
       "url": "https://www.cse.lk/api/chartData",
-      "asOf": "2026-11-26",
+      "asOf": "2026-11-27",
       "kind": "dated_market_observation"
     },
     {
       "id": "cse-turnover",
       "label": "Official daily CSE market turnover · LKR",
       "url": "https://www.cse.lk/api/dailyMarketSummery",
-      "asOf": "2026-11-26",
+      "asOf": "2026-11-27",
       "kind": "dated_market_turnover"
     },
     {
       "id": "news-1",
-      "label": "Publisher headline · Top 36-pct PAYE tax threshold to be raised above 500,000 rupees: President",
-      "url": "https://economynext.com/top-36-pct-paye-tax-threshold-to-be-raised-above-500000-rupees-president-291260/",
-      "asOf": "2026-11-26",
+      "label": "Publisher headline · Sri Lanka designates 5.7 km Port Access Elevated Road as an expressway",
+      "url": "https://economynext.com/sri-lanka-designates-5-7-km-port-access-elevated-road-as-an-expressway-291351/",
+      "asOf": "2026-11-27",
       "kind": "dated_headline"
     },
     {
       "id": "news-2",
-      "label": "Publisher headline · Sri Lanka inks US$200mn ADB loan to build capacity of MSMEs",
-      "url": "https://economynext.com/sri-lanka-inks-us200mn-adb-loan-to-build-capacity-of-msmes-291257/",
-      "asOf": "2026-11-26",
+      "label": "Publisher headline · Sri Lanka stocks close down 0.22-pct, dragged by banks",
+      "url": "https://economynext.com/sri-lanka-stocks-close-down-0-22-pct-dragged-by-banks-291349/",
+      "asOf": "2026-11-27",
       "kind": "dated_headline"
     },
     {
       "id": "news-3",
-      "label": "Publisher headline · Sri Lanka rupee closes at 332.80/333.10 to US dollar spot, bond yields steady",
-      "url": "https://economynext.com/sri-lanka-rupee-closes-at-332-80-333-10-to-us-dollar-spot-bond-yields-steady-291263/",
-      "asOf": "2026-11-26",
+      "label": "Publisher headline · Sri Lanka’s CBC Finance to raise Rs1bn via debenture sale",
+      "url": "https://economynext.com/sri-lankas-cbc-finance-to-raise-rs1bn-via-debenture-sale-291341/",
+      "asOf": "2026-11-27",
       "kind": "dated_headline"
     },
     {
       "id": "news-4",
-      "label": "Publisher headline · Sri Lanka stocks close down 0.33-pct",
-      "url": "https://economynext.com/sri-lanka-stocks-close-down-0-33-pct-291250/",
-      "asOf": "2026-11-26",
+      "label": "Publisher headline · Sri Lanka’s Laugfs Gas faces trading suspension over delayed annual report",
+      "url": "https://economynext.com/sri-lankas-laugfs-gas-faces-trading-suspension-over-delayed-annual-report-291335/",
+      "asOf": "2026-11-27",
       "kind": "dated_headline"
     },
     {
       "id": "news-5",
-      "label": "Publisher headline · Sri Lanka’s electronics, spices export help cushion fall in garment, tea foreign buying",
-      "url": "https://economynext.com/sri-lankas-electronics-spices-export-help-cushion-fall-in-garment-tea-foreign-buying-291247/",
-      "asOf": "2026-11-26",
+      "label": "Publisher headline · Sri Lanka state fuel firms slash over 1,000 jobs with AI queues",
+      "url": "https://economynext.com/sri-lanka-state-fuel-firms-slash-over-1000-jobs-with-ai-queues-291321/",
+      "asOf": "2026-11-27",
       "kind": "dated_headline"
     },
     {
       "id": "news-6",
-      "label": "Publisher headline · Sri Lanka’s Janashakthi Finance meets central bank capital adequacy requirements",
-      "url": "https://economynext.com/sri-lankas-janashakthi-finance-meets-central-bank-capital-adequacy-requirements-291239/",
-      "asOf": "2026-11-26",
+      "label": "Publisher headline · Sri Lanka rupee at 332.90/95 to US dollar spot, bond yields steady",
+      "url": "https://economynext.com/sri-lanka-rupee-at-332-90-95-to-us-dollar-spot-bond-yields-steady-291320/",
+      "asOf": "2026-11-27",
       "kind": "dated_headline"
     },
     {
       "id": "news-7",
-      "label": "Publisher headline · Sri Lanka rupee weakens to 332.90/333.10 against US dollar spot, bond yields steady",
-      "url": "https://economynext.com/sri-lanka-rupee-weakens-to-332-90-333-10-against-us-dollar-spot-bond-yields-steady-291190/",
-      "asOf": "2026-11-26",
+      "label": "Publisher headline · Sri Lanka stocks marginally higher, led by Distilleries and Hemas",
+      "url": "https://economynext.com/sri-lanka-stocks-marginally-higher-led-by-distilleries-and-hemas-291306/",
+      "asOf": "2026-11-27",
       "kind": "dated_headline"
     },
     {
