@@ -1,8 +1,8 @@
 {
   "schemaVersion": 5,
   "engineVersion": "5.3.0",
-  "generatedAt": "2026-11-28T13:17:37.054Z",
-  "sourceSnapshotAt": "2026-11-27T21:35:13.605Z",
+  "generatedAt": "2026-11-28T13:30:30.039Z",
+  "sourceSnapshotAt": "2026-11-28T13:30:22.858Z",
   "status": "research_available",
   "briefing": {
     "title": "Sri Lanka · Autonomous Market Brief",
@@ -78,6 +78,33 @@
   "news": [
     {
       "id": "news-1",
+      "title": "Sri Lanka eyes foreign markets after rating upgrades, waits for global rates to ease",
+      "url": "https://economynext.com/sri-lanka-eyes-foreign-markets-after-rating-upgrades-waits-for-global-rates-to-ease-291377/",
+      "date": "2026-11-28",
+      "publisher": "EconomyNext",
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+    },
+    {
+      "id": "news-2",
+      "title": "Sri Lanka targets 89 pct debt-to-GDP ratio this year after S&P, Fitch upgrades",
+      "url": "https://economynext.com/sri-lanka-targets-89-pct-debt-to-gdp-ratio-this-year-after-sp-fitch-upgrades-291380/",
+      "date": "2026-11-28",
+      "publisher": "EconomyNext",
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+    },
+    {
+      "id": "news-3",
+      "title": "Sri Lanka pushes hospital digitalization, specialist reforms to fix health gaps",
+      "url": "https://economynext.com/sri-lanka-pushes-hospital-digitalization-specialist-reforms-to-fix-health-gaps-291373/",
+      "date": "2026-11-28",
+      "publisher": "EconomyNext",
+      "topics": [],
+      "impactNote": "Relevant headline recorded. Financial impact is not verified."
+    },
+    {
+      "id": "news-4",
       "title": "EXPLAINER – Why S&P warns Sri Lanka’s recovery facing storm clouds ahead?",
       "url": "https://economynext.com/explainer-why-sp-warns-sri-lankas-recovery-facing-storm-clouds-ahead-291368/",
       "date": "2026-11-27",
@@ -86,7 +113,7 @@
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
-      "id": "news-2",
+      "id": "news-5",
       "title": "S&P raises Sri Lanka’s credit rating to B- on a stable outlook",
       "url": "https://economynext.com/sp-raises-sri-lankas-credit-rating-to-b-on-a-stable-outlook-291366/",
       "date": "2026-11-27",
@@ -95,7 +122,7 @@
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
-      "id": "news-3",
+      "id": "news-6",
       "title": "Sri Lanka designates 5.7 km Port Access Elevated Road as an expressway",
       "url": "https://economynext.com/sri-lanka-designates-5-7-km-port-access-elevated-road-as-an-expressway-291351/",
       "date": "2026-11-27",
@@ -104,36 +131,9 @@
       "impactNote": "Relevant headline recorded. Financial impact is not verified."
     },
     {
-      "id": "news-4",
+      "id": "news-7",
       "title": "Sri Lanka stocks close down 0.22-pct, dragged by banks",
       "url": "https://economynext.com/sri-lanka-stocks-close-down-0-22-pct-dragged-by-banks-291349/",
-      "date": "2026-11-27",
-      "publisher": "EconomyNext",
-      "topics": [],
-      "impactNote": "Relevant headline recorded. Financial impact is not verified."
-    },
-    {
-      "id": "news-5",
-      "title": "Sri Lanka’s CBC Finance to raise Rs1bn via debenture sale",
-      "url": "https://economynext.com/sri-lankas-cbc-finance-to-raise-rs1bn-via-debenture-sale-291341/",
-      "date": "2026-11-27",
-      "publisher": "EconomyNext",
-      "topics": [],
-      "impactNote": "Relevant headline recorded. Financial impact is not verified."
-    },
-    {
-      "id": "news-6",
-      "title": "Sri Lanka’s Laugfs Gas faces trading suspension over delayed annual report",
-      "url": "https://economynext.com/sri-lankas-laugfs-gas-faces-trading-suspension-over-delayed-annual-report-291335/",
-      "date": "2026-11-27",
-      "publisher": "EconomyNext",
-      "topics": [],
-      "impactNote": "Relevant headline recorded. Financial impact is not verified."
-    },
-    {
-      "id": "news-7",
-      "title": "Sri Lanka state fuel firms slash over 1,000 jobs with AI queues",
-      "url": "https://economynext.com/sri-lanka-state-fuel-firms-slash-over-1000-jobs-with-ai-queues-291321/",
       "date": "2026-11-27",
       "publisher": "EconomyNext",
       "topics": [],
@@ -1534,50 +1534,50 @@
     },
     {
       "id": "news-1",
+      "label": "Publisher headline · Sri Lanka eyes foreign markets after rating upgrades, waits for global rates to ease",
+      "url": "https://economynext.com/sri-lanka-eyes-foreign-markets-after-rating-upgrades-waits-for-global-rates-to-ease-291377/",
+      "asOf": "2026-11-28",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-2",
+      "label": "Publisher headline · Sri Lanka targets 89 pct debt-to-GDP ratio this year after S&P, Fitch upgrades",
+      "url": "https://economynext.com/sri-lanka-targets-89-pct-debt-to-gdp-ratio-this-year-after-sp-fitch-upgrades-291380/",
+      "asOf": "2026-11-28",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-3",
+      "label": "Publisher headline · Sri Lanka pushes hospital digitalization, specialist reforms to fix health gaps",
+      "url": "https://economynext.com/sri-lanka-pushes-hospital-digitalization-specialist-reforms-to-fix-health-gaps-291373/",
+      "asOf": "2026-11-28",
+      "kind": "dated_headline"
+    },
+    {
+      "id": "news-4",
       "label": "Publisher headline · EXPLAINER – Why S&P warns Sri Lanka’s recovery facing storm clouds ahead?",
       "url": "https://economynext.com/explainer-why-sp-warns-sri-lankas-recovery-facing-storm-clouds-ahead-291368/",
       "asOf": "2026-11-27",
       "kind": "dated_headline"
     },
     {
-      "id": "news-2",
+      "id": "news-5",
       "label": "Publisher headline · S&P raises Sri Lanka’s credit rating to B- on a stable outlook",
       "url": "https://economynext.com/sp-raises-sri-lankas-credit-rating-to-b-on-a-stable-outlook-291366/",
       "asOf": "2026-11-27",
       "kind": "dated_headline"
     },
     {
-      "id": "news-3",
+      "id": "news-6",
       "label": "Publisher headline · Sri Lanka designates 5.7 km Port Access Elevated Road as an expressway",
       "url": "https://economynext.com/sri-lanka-designates-5-7-km-port-access-elevated-road-as-an-expressway-291351/",
       "asOf": "2026-11-27",
       "kind": "dated_headline"
     },
     {
-      "id": "news-4",
+      "id": "news-7",
       "label": "Publisher headline · Sri Lanka stocks close down 0.22-pct, dragged by banks",
       "url": "https://economynext.com/sri-lanka-stocks-close-down-0-22-pct-dragged-by-banks-291349/",
-      "asOf": "2026-11-27",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-5",
-      "label": "Publisher headline · Sri Lanka’s CBC Finance to raise Rs1bn via debenture sale",
-      "url": "https://economynext.com/sri-lankas-cbc-finance-to-raise-rs1bn-via-debenture-sale-291341/",
-      "asOf": "2026-11-27",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-6",
-      "label": "Publisher headline · Sri Lanka’s Laugfs Gas faces trading suspension over delayed annual report",
-      "url": "https://economynext.com/sri-lankas-laugfs-gas-faces-trading-suspension-over-delayed-annual-report-291335/",
-      "asOf": "2026-11-27",
-      "kind": "dated_headline"
-    },
-    {
-      "id": "news-7",
-      "label": "Publisher headline · Sri Lanka state fuel firms slash over 1,000 jobs with AI queues",
-      "url": "https://economynext.com/sri-lanka-state-fuel-firms-slash-over-1000-jobs-with-ai-queues-291321/",
       "asOf": "2026-11-27",
       "kind": "dated_headline"
     },
