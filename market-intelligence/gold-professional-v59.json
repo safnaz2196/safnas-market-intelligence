@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "version": "5.9",
-  "generatedAt": "2026-11-28T09:25:43.939Z",
+  "generatedAt": "2026-11-28T17:47:50.709Z",
   "status": "research_available",
   "sourceReport": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ensemble-v58.json",
   "goldHistoryAsOf": "2026-11-27",
@@ -19,7 +19,7 @@
     "historyAsOf": "2026-11-27",
     "historyDaysOld": 1,
     "spot": "recent",
-    "spotAsOf": "2026-11-28T09:25:21Z",
+    "spotAsOf": "2026-11-28T17:47:26Z",
     "fx": "recent",
     "fxAsOf": "2026-11-28T00:02:31.000Z",
     "managedMoney": "dated_weekly",

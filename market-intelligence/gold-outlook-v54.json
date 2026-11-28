@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "version": "5.4",
-  "generatedAt": "2026-11-28T09:25:43.939Z",
+  "generatedAt": "2026-11-28T17:47:50.709Z",
   "status": "observed",
   "dateSemantics": "Approximate calendar windows, never a guaranteed date",
   "current": {
     "usdOz": 3650,
-    "asOf": "2026-11-28T09:25:21Z",
+    "asOf": "2026-11-28T17:47:26Z",
     "source": "https://api.gold-api.com/price/XAU",
     "historical": false,
     "fx": {
@@ -977,7 +977,7 @@
       "schemaVersion": 1,
       "version": "5.8",
       "engine": "adaptive_four_model_causal_research",
-      "generatedAt": "2026-11-28T09:25:43.939Z",
+      "generatedAt": "2026-11-28T17:47:50.709Z",
       "historyAsOf": "2026-11-27",
       "referenceUsdOz": 3639.6,
       "historyCount": 900,
@@ -2025,12 +2025,12 @@
     "ultra": {
       "version": "6.0",
       "status": "research_available",
-      "generatedAt": "2026-11-28T09:25:43.939Z",
+      "generatedAt": "2026-11-28T17:47:50.709Z",
       "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-ultra-v60.json"
     },
     "professional": {
       "version": "5.9",
-      "generatedAt": "2026-11-28T09:25:43.939Z",
+      "generatedAt": "2026-11-28T17:47:50.709Z",
       "status": "research_available",
       "summary": {
         "modelsCompared": 5,
@@ -2572,7 +2572,7 @@
     },
     "predictionHistory": {
       "version": "5.7",
-      "generatedAt": "2026-11-28T09:25:43.939Z",
+      "generatedAt": "2026-11-28T17:47:50.709Z",
       "url": "https://raw.githubusercontent.com/safnaz2196/safnas-market-intelligence/main/market-intelligence/gold-prediction-history-v57.json",
       "recent": [
         {
@@ -3938,7 +3938,7 @@
         "pressure": "neutral",
         "weight": 0.55,
         "explanation": "Intraday spot versus the most recent dated close, which may reflect different quote conventions.",
-        "asOf": "2026-11-28T09:25:21Z",
+        "asOf": "2026-11-28T17:47:26Z",
         "source": "https://api.gold-api.com/price/XAU",
         "rawSign": 0
       }
@@ -4060,7 +4060,7 @@
       "A 3/7/14/30-day window is a rough calendar period, not a precise event date.",
       "SAR/LKR outcomes also depend on currency rates; spot and local jewellery prices can differ."
     ],
-    "evaluatedAt": "2026-11-28T09:25:43.939Z"
+    "evaluatedAt": "2026-11-28T17:47:50.709Z"
   },
   "overallCaution": "Forecasts are statistical scenarios based on past observations, not predictions of an exact price or date. If model calibration does not outperform a historical baseline, no predictive edge is claimed. FX changes can alter SAR and LKR outcomes.",
   "sources": [
